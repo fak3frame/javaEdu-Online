@@ -130,6 +130,22 @@ public class ProgramStartowy {
         System.out.println(sb);
         String s = sb.toString(); //zapisuje do Stringa gotowa wartosc
 
+        /*
+        inne metody:
+        sb.insert(0, "Java Rocks"); doda w miesce 0 podany napis
+         w przypadku bledu (dodanie wartosci po za zakres bufora powatanie blad IndexOutOfBoundsException
+        sb.replace(0, 6, "Zmiana"); zmieni przedzial bufora od 0 do 6 na napis "Zmiana"
+        sb.delete(0,6); usunie ciag od pozycji 0 do 6
+        sb.reverse(); odwroci ciag
+        sb.capacity(); zwroci liczbowy aktualny rozmiar bufora
+        sb.length(); zwroci rozmiar przechowywanego ciagu znakow
+        sb.charAt(1); zwroci znak przechowywany na pozycji 1
+        sb.substring(0,4); zwroci ciag znakow z przedzialu od 0 do 4
+
+
+         */
+        System.out.println(sb.capacity());
+        System.out.println(sb);
 
 
 
@@ -139,7 +155,7 @@ public class ProgramStartowy {
 
 
 
-        
+
 
         /*
         System.out.println("\n"+"-x-");
