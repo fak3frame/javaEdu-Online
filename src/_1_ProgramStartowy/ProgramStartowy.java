@@ -212,6 +212,49 @@ public class ProgramStartowy {
         System.out.println(bi3.divide(bi2)); //15 / 5
 
 
+
+        //----------KONWERSJA I RZUTOWNIE TYPOW-----------------
+
+        System.out.println("\n"+"---KONWERSJA I RZUTOWNIE TYPOW---");
+        /*
+            Priorytety typow prostych: int<double<float<long
+         */
+        System.out.println("-1-");
+        int a1 = 5;
+        double b = 3;
+        System.out.println(a1/b);//przkonwertuje na double
+        System.out.println((int)(a1/b));//sztywne rzutowanie, pokaze bez reszty
+        System.out.println( (a1/b) - (int)(a1/b)); // sama reszta
+        System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty
+
+        //---------ZAPIS I KONWENCJA NAZEWNICTWA----------------
+        /*
+        Nazwa klas z duzej litery
+        class MojaKlasa(){} - uzywam nazewnictwa PascalCase (zaczynam z duzej litery i kazdy
+         kolejny wyraz takze z duzej)
+
+        metody i zmienne z malej
+        public void dodajLiczby(int x){} - uzywam camelCase - zaczynam od malej litery -/-
+        int mojeImie;
+
+        static final int MOJA_ZMIENNA
+         zmienne finalne tylko z duzej a kolejne slowa oddzielam "_"
+         */
+
+
+        //-------------PODSTAWOWE TERMINY-----------------------
+        /*
+        Klasa jest to przestrzen w ktorej umieszczamy inne elementy, przechowujemy informacje
+         oraz przetwarzamy je. Jest ona tzw foremka do tworzenia obiektow
+
+        Obiekt jest reprezentacja klasy i jej nosnikiem. Poprzez obiekt mozemy sie odwolac do
+         zmiennych i metod zawartych w klasie
+
+         Klasa funkcja(){return new Klasa;}//metoda zwroci nowy obiekt klasy Klasa
+        */
+
+
+
         //------------INSTRUKCJE STARUJACE-----------------
 
         System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
@@ -248,40 +291,6 @@ public class ProgramStartowy {
             System.out.println("liczba 2 jest podzialna przez 2 lub 5");
 
 
-
-        //----------KONWERSJA I RZUTOWNIE TYPOW-----------------
-
-        System.out.println("\n"+"---KONWERSJA I RZUTOWNIE TYPOW---");
-        /*
-            Priorytety typow prostych: int<double<float<long
-         */
-        System.out.println("-1-");
-        int a1 = 5;
-        double b = 3;
-        System.out.println(a1/b);//przkonwertuje na double
-        System.out.println((int)(a1/b));//sztywne rzutowanie, pokaze bez reszty
-        System.out.println( (a1/b) - (int)(a1/b)); // sama reszta
-        System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty
-
-        //---------ZAPIS I KONWENCJA NAZEWNICTWA----------------
-        /*
-        Nazwa klas z duzej litery
-        class MojaKlasa(){} - uzywam nazewnictwa PascalCase (zaczynam z duzej litery i kazdy
-         kolejny wyraz takze z duzej)
-
-        metody i zmienne z malej
-        public void dodajLiczby(int x){} - uzywam camelCase - zaczynam od malej litery -/-
-        int mojeImie;
-
-        static final int MOJA_ZMIENNA
-         zmienne finalne tylko z duzej a kolejne slowa oddzielam "_"
-         */
-
-
-        //-------------PODSTAWOWE TERMINY-----------------------
-        /*
-
-         */
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
 
