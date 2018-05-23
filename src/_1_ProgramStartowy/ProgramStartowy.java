@@ -277,6 +277,12 @@ public class ProgramStartowy {
          zmienne finalne tylko z duzej a kolejne slowa oddzielam "_"
          */
 
+
+        //-------------PODSTAWOWE TERMINY-----------------------
+        /*
+
+         */
+
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
 
         System.out.println("\n"+"---PODSTAWOWE WEJSCIE / WYJSCIE---");
