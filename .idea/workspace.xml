@@ -19,8 +19,8 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state relative-caret-position="918">
+              <caret line="196" column="72" selection-start-line="196" selection-start-column="72" selection-end-line="196" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527089059440</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="INSTRUKCJE STARUJACE">
+      <created>1527089395438</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527089395438</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -258,7 +265,8 @@
     <MESSAGE value="operatory matematyczne i logiczne" />
     <MESSAGE value="operatory matematyczne i logiczne 2" />
     <MESSAGE value="operatory matematyczne i logiczne 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="operatory matematyczne i logiczne 3" />
+    <MESSAGE value="INSTRUKCJE STARUJACE" />
+    <option name="LAST_COMMIT_MESSAGE" value="INSTRUKCJE STARUJACE" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
@@ -343,8 +351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="918">
+          <caret line="196" column="72" selection-start-line="196" selection-start-column="72" selection-end-line="196" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

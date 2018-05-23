@@ -49,45 +49,6 @@ public class ProgramStartowy {
 
         final double liczbaPi=3.14; //zmienna stala, nie mozna jej juz zmienic
 
-        //---------OPERATORY MATEMATYCZNE I LOGICZNE-----------
-
-
-
-        //------------INSTRUKCJE STARUJACE-----------------
-        System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
-        System.out.println("-1-");
-        if(5>6){
-            System.out.println("Instrukcja 1 jesli prawda");
-        }
-        else{
-            System.out.println("Instrukcja 2 gdy 1 falszywa");
-        }
-        if(6>7){
-            System.out.println("Instrukcja 3 jesli prawda");
-        }
-        else if(3>2){
-            System.out.println("Instrukcja 4 jesli prawda  && jesli 3 falszywy");
-        }
-
-        System.out.println("\n"+"-2-");
-        String imie = "kamil";
-        switch(imie){
-            case "kamil":
-                System.out.println("jest kamil");
-                break;
-            case "tomek":
-                System.out.println("jest tomek");
-            default:
-                System.out.println("nie ma kamila ani tomka");
-        }
-
-        System.out.println("\n"+"-3-");
-        int liczba2 = 5;
-
-        if(liczba%2==0 || liczba2%5==0)
-            System.out.println("liczba 2 jest podzialna przez 2 lub 5");
-
-
         //-----------------STRING-----------------------
 
         System.out.println("\n"+"---String---");
@@ -189,6 +150,52 @@ public class ProgramStartowy {
          */
         System.out.println(sb.capacity());
         System.out.println(sb);
+
+        //---------OPERATORY MATEMATYCZNE I LOGICZNE-----------
+        System.out.println("\n"+"---OPERATORY MATEMATYCZNE I LOGICZNE---");
+        System.out.println("-1-");
+        int a = 5;
+        System.out.println(a++);//zwiekszam po wyswietleniu
+        System.out.println(a);
+        System.out.println(++a);//zwiekszam przed wyswietlaniem
+        System.out.println("\n"+"-2-");
+        boolean czyPrawda = (5>6) || (5>4);
+        System.out.println("czyPrwda = "+czyPrawda);
+
+        //------------INSTRUKCJE STARUJACE-----------------
+        System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
+        System.out.println("-1-");
+        if(5>6){
+            System.out.println("Instrukcja 1 jesli prawda");
+        }
+        else{
+            System.out.println("Instrukcja 2 gdy 1 falszywa");
+        }
+        if(6>7){
+            System.out.println("Instrukcja 3 jesli prawda");
+        }
+        else if(3>2){
+            System.out.println("Instrukcja 4 jesli prawda  && jesli 3 falszywy");
+        }
+
+        System.out.println("\n"+"-2-");
+        String imie = "kamil";
+        switch(imie){
+            case "kamil":
+                System.out.println("jest kamil");
+                break;
+            case "tomek":
+                System.out.println("jest tomek");
+            default:
+                System.out.println("nie ma kamila ani tomka");
+        }
+
+        System.out.println("\n"+"-3-");
+        int liczba2 = 5;
+
+        if(liczba%2==0 || liczba2%5==0)
+            System.out.println("liczba 2 jest podzialna przez 2 lub 5");
+
 
         /*
         System.out.println("\n"+"-x-");
