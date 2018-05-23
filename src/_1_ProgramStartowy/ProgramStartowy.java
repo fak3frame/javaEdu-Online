@@ -10,7 +10,6 @@ public class ProgramStartowy {
     public static void main(String[] args) {
 
         //-----------ZMIENNE------------
-
         System.out.println("---Zmienne----");
         System.out.println("-1-");
         System.out.println("Hello World");
@@ -31,7 +30,6 @@ public class ProgramStartowy {
          \\ - backslash
 
          boolean - true/false
-
          */
         System.out.println("\n"+"-2-");
         float liczbaZm = 3.4f;//kropka + f
@@ -48,6 +46,7 @@ public class ProgramStartowy {
         System.out.println("a"+"f");
 
         final double liczbaPi=3.14; //zmienna stala, nie mozna jej juz zmienic
+
 
         //-----------------STRING-----------------------
 
@@ -114,6 +113,7 @@ public class ProgramStartowy {
         byte[] b = str1.getBytes(); zamieni Stringa na tablice bajtow, kazdy elem. to jeden znak
         */
 
+
         //------------------STRING BUILDER-----------------------
 
         System.out.println("\n"+"---StringBuilder---");
@@ -151,6 +151,7 @@ public class ProgramStartowy {
         System.out.println(sb.capacity());
         System.out.println(sb);
 
+
         //---------OPERATORY MATEMATYCZNE I LOGICZNE-----------
         System.out.println("\n"+"---OPERATORY MATEMATYCZNE I LOGICZNE---");
         System.out.println("-1-");
@@ -169,6 +170,12 @@ public class ProgramStartowy {
         System.out.println(ja==ty);//pokaze true ale tylko dla Stringa poniewaz Java przypisuje ten sam
         // adres pamieci (ta sama referencja) dla takich samych stringow
         System.out.println(ja.equals(ty));//wlasciwe porownanie
+
+
+        //--------FUNKCJE MATEMATYCZNE I WIELKIE LICZBY------------
+        System.out.println("\n"+"---FUNKCJE MATEMATYCZNE I WIELKIE LICZBY---");
+        System.out.println("-1-");
+
 
         //------------INSTRUKCJE STARUJACE-----------------
         System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
