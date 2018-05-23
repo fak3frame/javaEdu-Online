@@ -11,7 +11,7 @@ public class ProgramStartowy {
 
         //-----------ZMIENNE------------
 
-        System.out.println("---Start----"+"\n");
+        System.out.println("---Zmienne----");
         System.out.println("-1-");
         System.out.println("Hello World");
         /*
@@ -49,9 +49,20 @@ public class ProgramStartowy {
 
         final double liczbaPi=3.14; //zmienna stala, nie mozna jej juz zmienic
 
+        //---------OPERATORY MATEMATYCZNE I LOGICZNE-----------
+        System.out.println("\n"+"---Operatory matematyczne i logiczne---");
+        System.out.println("-1-");
+        if(5>6){
+            System.out.println("Warunek 1");
+        }
+        else{
+            System.out.println("Warunek 2");
+        }
+
         //-----------------STRING-----------------------
 
-        System.out.println("\n"+"-4-");
+        System.out.println("\n"+"---String---");
+        System.out.println("-1-");
         String hello = "Witaj ";
         String world = "Świecie!";
         String powitanie = hello+world; //łączenie Stringów
@@ -115,20 +126,25 @@ public class ProgramStartowy {
 
         //------------------STRING BUILDER-----------------------
 
-        System.out.println("\n"+"-5-");
+        System.out.println("\n"+"---StringBuilder---");
         /*
         Klasa String jest niemodyfikalna przez co zmiana Strina wiaze sie z utworzeniem noweg obiektu, przydatne
          w mapach
          String value = "Java";
          value = value + " Rocks";
         StringBuilder jest modyfikowalny przez co laczenie jego obiektow nie wymaga tworzenia nowego obiektu
+        StringBuilder wykorzystuje bufor ktory mozna okreslic za pomoca konstruktora lub metody ensureCapacity();
+        StringBuilder sb1 = new StringBuilder(23);
+        sb1.ensureCapacity(10);
+        StringBildera nalezy uzywac gdy chcemy laczyc wiele stringow natomiast StringBuffera w aplikacjach
+         wielowatkowych
          */
-
+        System.out.println("-1-");
         StringBuilder sb = new StringBuilder(); //tworze pusty bufor, moze przyjac w nawiasie wartosc
         sb.append("Java").append(" ").append("Rocks! ");
         sb.append(69); //dzieki przeciązeniu metod moge dodac dowolny typ (wywoluje metode toString)
         System.out.println(sb);
-        String s = sb.toString(); //zapisuje do Stringa gotowa wartosc
+        String s = sb.toString();//zapisuje do Stringa gotowa wartosc
 
         /*
         inne metody:
@@ -141,22 +157,9 @@ public class ProgramStartowy {
         sb.length(); zwroci rozmiar przechowywanego ciagu znakow
         sb.charAt(1); zwroci znak przechowywany na pozycji 1
         sb.substring(0,4); zwroci ciag znakow z przedzialu od 0 do 4
-        ss
-
-
          */
         System.out.println(sb.capacity());
         System.out.println(sb);
-
-
-
-
-
-
-
-
-
-
 
         /*
         System.out.println("\n"+"-x-");
