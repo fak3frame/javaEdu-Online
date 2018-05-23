@@ -58,6 +58,22 @@ public class ProgramStartowy {
         else{
             System.out.println("Warunek 2");
         }
+        if(6>7){
+            System.out.println("Warunek 3");
+        }
+        else if(3>2){
+            System.out.println("Warunek 4");
+        }
+
+        String[] imiona = {"kamil", "tome", "pawel"};
+        for(String x : imiona){
+            switch(x){
+                case "kamil":
+                    System.out.println("jest kamil");
+                    break;
+
+            }
+        }
 
         //-----------------STRING-----------------------
 
