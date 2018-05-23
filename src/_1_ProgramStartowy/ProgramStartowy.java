@@ -50,6 +50,7 @@ public class ProgramStartowy {
         final double liczbaPi=3.14; //zmienna stala, nie mozna jej juz zmienic
 
 
+
         //-----------------STRING-----------------------
 
         System.out.println("\n"+"---String---");
@@ -116,6 +117,7 @@ public class ProgramStartowy {
         */
 
 
+
         //------------------STRING BUILDER-----------------------
 
         System.out.println("\n"+"---StringBuilder---");
@@ -154,7 +156,9 @@ public class ProgramStartowy {
         System.out.println(sb);
 
 
+
         //---------OPERATORY MATEMATYCZNE I LOGICZNE-----------
+
         System.out.println("\n"+"---OPERATORY MATEMATYCZNE I LOGICZNE---");
         System.out.println("-1-");
         int a = 5;
@@ -174,7 +178,9 @@ public class ProgramStartowy {
         System.out.println(ja.equals(ty));//wlasciwe porownanie
 
 
+
         //--------FUNKCJE MATEMATYCZNE I WIELKIE LICZBY------------
+
         System.out.println("\n"+"---FUNKCJE MATEMATYCZNE I WIELKIE LICZBY---");
         System.out.println("-1-");
         System.out.println(Math.abs(9));
@@ -204,7 +210,9 @@ public class ProgramStartowy {
         System.out.println(bi3.multiply(bi2)); //15 * 5
         System.out.println(bi3.divide(bi2)); //15 / 5
 
+
         //------------INSTRUKCJE STARUJACE-----------------
+
         System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
         System.out.println("-1-");
         if(5>6){
@@ -238,6 +246,21 @@ public class ProgramStartowy {
         if(liczba%2==0 || liczba2%5==0)
             System.out.println("liczba 2 jest podzialna przez 2 lub 5");
 
+
+
+        //----------KONWERSJA I RZUTOWNIE TYPOW-----------------
+
+        System.out.println("\n"+"---KONWERSJA I RZUTOWNIE TYPOW---");
+        /*
+            Priorytety typow prostych: int<double<float<long
+         */
+        System.out.println("-1-");
+        int a1 = 5;
+        double b = 3;
+        System.out.println(a1/b);//przkonwertuje na double
+        System.out.println((int)(a1/b));//sztywne rzutowanie, pokaze bez reszty
+        System.out.println( (a1/b) - (int)(a1/b)); // sama reszta
+        System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty
 
         /*
         System.out.println("\n"+"-x-");
