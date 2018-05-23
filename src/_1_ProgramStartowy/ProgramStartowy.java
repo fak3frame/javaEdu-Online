@@ -167,7 +167,7 @@ public class ProgramStartowy {
         String ja = "kamil";
         String ty = "kamil";
         System.out.println(ja==ty);//pokaze true ale tylko dla Stringa poniewaz Java przypisuje ten sam
-        // adres pamieci dla takich samych stringow
+        // adres pamieci (ta sama referencja) dla takich samych stringow
         System.out.println(ja.equals(ty));//wlasciwe porownanie
 
         //------------INSTRUKCJE STARUJACE-----------------
