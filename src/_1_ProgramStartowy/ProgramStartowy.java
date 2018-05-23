@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.Scanner;
 
 import static java.lang.Math.*;
 
@@ -262,10 +263,38 @@ public class ProgramStartowy {
         System.out.println( (a1/b) - (int)(a1/b)); // sama reszta
         System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty
 
+        //---------ZAPIS I KONWENCJA NAZEWNICTWA----------------
+        /*
+        Nazwa klas z duzej litery
+        class MojaKlasa(){} - uzywam nazewnictwa PascalCase (zaczynam z duzej litery i kazdy
+         kolejny wyraz takze z duzej)
+
+        metody i zmienne z malej
+        public void dodajLiczby(int x){} - uzywam camelCase - zaczynam od malej litery -/-
+        int mojeImie;
+
+        static final int MOJA_ZMIENNA
+         zmienne finalne tylko z duzej a kolejne slowa oddzielam "_"
+         */
+
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
 
         System.out.println("\n"+"---PODSTAWOWE WEJSCIE / WYJSCIE---");
         System.out.println("-1-");
+        String imie2;
+        //nalezy zaimportowac klase Scanner
+        Scanner odczyt = new Scanner(System.in); //tworze obiekt typu Scanner i jako parametr
+        // konstruktowa uzywam strumien wejscia System.in
+
+        System.out.println("Podaj imie:");
+
+        imie2 = odczyt.nextLine();//wykorzystyje obiekt Scanner do wywolania metody nextLine()
+        // przyjmuje ona ciag znakow i czeka na zakoncznie poprzez klawisz enter
+        //moge wykorztac do liczba metode nextInt() lub nextDouble()`
+
+        System.out.println("Witaj "+ imie2);
+
+
         /*
         System.out.println("\n"+"-x-");
         try{
