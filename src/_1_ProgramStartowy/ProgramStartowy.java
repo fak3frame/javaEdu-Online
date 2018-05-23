@@ -158,9 +158,17 @@ public class ProgramStartowy {
         System.out.println(a++);//zwiekszam po wyswietleniu
         System.out.println(a);
         System.out.println(++a);//zwiekszam przed wyswietlaniem
+
         System.out.println("\n"+"-2-");
         boolean czyPrawda = (5>6) || (5>4);
         System.out.println("czyPrwda = "+czyPrawda);
+
+        System.out.println("\n"+"-23");
+        String ja = "kamil";
+        String ty = "kamil";
+        System.out.println(ja==ty);//pokaze true ale tylko dla Stringa poniewaz Java przypisuje ten sam
+        // adres pamieci dla takich samych stringow
+        System.out.println(ja.equals(ty));//wlasciwe porownanie
 
         //------------INSTRUKCJE STARUJACE-----------------
         System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
