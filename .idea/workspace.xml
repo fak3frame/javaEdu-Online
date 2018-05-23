@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="test2">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javaStartMojSkrypt/_1_ProgramStartowy/ProgramStartowy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaStartMojSkrypt/_1_ProgramStartowy/ProgramStartowy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" afterDir="false" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="144" column="47" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
+            <state relative-caret-position="374">
+              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,6 +38,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Kamil Zajac" />
+      </list>
+    </option>
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -187,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527079140210</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="operatory matematyczne i logiczne">
+      <created>1527084070667</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527084070667</updated>
+    </task>
+    <task id="LOCAL-00004" summary="operatory matematyczne i logiczne 2">
+      <created>1527087694595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527087694595</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -228,7 +247,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2" />
+    <MESSAGE value="operatory matematyczne i logicnze" />
+    <MESSAGE value="operatory matematyczne i logiczne" />
+    <MESSAGE value="operatory matematyczne i logiczne 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="operatory matematyczne i logiczne 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
@@ -313,8 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="144" column="47" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
+        <state relative-caret-position="374">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

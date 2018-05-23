@@ -53,27 +53,36 @@ public class ProgramStartowy {
         System.out.println("\n"+"---Operatory matematyczne i logiczne---");
         System.out.println("-1-");
         if(5>6){
-            System.out.println("Warunek 1");
+            System.out.println("Instrukcja 1 jesli prawda");
         }
         else{
-            System.out.println("Warunek 2");
+            System.out.println("Instrukcja 2 gdy 1 falszywa");
         }
         if(6>7){
-            System.out.println("Warunek 3");
+            System.out.println("Instrukcja 3 jesli prawda");
         }
         else if(3>2){
-            System.out.println("Warunek 4");
+            System.out.println("Instrukcja 4 jesli prawda  && jesli 3 falszywy");
         }
 
-        String[] imiona = {"kamil", "tome", "pawel"};
-        for(String x : imiona){
-            switch(x){
-                case "kamil":
-                    System.out.println("jest kamil");
-                    break;
-
-            }
+        System.out.println("\n"+"-2-");
+        String imie = "kamil";
+        switch(imie){
+            case "kamil":
+                System.out.println("jest kamil");
+                break;
+            case "tomek":
+                System.out.println("jest tomek");
+            default:
+                System.out.println("nie ma kamila ani tomka");
         }
+
+        System.out.println("\n"+"-3-");
+        int liczba2 = 5;
+
+        if(liczba%2==0 || liczba2%5==0)
+            System.out.println("liczba 2 jest podzialna przez 2 lub 5");
+
 
         //-----------------STRING-----------------------
 
