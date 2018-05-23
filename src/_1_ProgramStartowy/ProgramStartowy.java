@@ -188,17 +188,21 @@ public class ProgramStartowy {
         System.out.println("PI = "+PI+ " E = "+E);
 
 
+        System.out.println("\n"+"-4-");
         /*Do przechowywyania wielkich liczb sluzy BigInteger (liczby calkowite) oraz BigDecimal
            (liczby zmiennoprzecinkowe)
         */
-        BigInteger bi = new BigInteger("12453463423435");//podaje w "" ale moge takze w formie liczby
+        BigInteger bi = new BigInteger("10");//podaje w "" ale moge takze w formie liczby
+        // BigInteger bi4 = BigInteger.valueOf(123534);
         // lecz tylko w zakresie long poniewaz wykorzystywana jest konwersja valueOf()
 
-        System.out.println("\n"+"-4-");
         //operacje na wielkich liczbach:
-        BigInteger bi2 = new BigInteger("213432466");
+        BigInteger bi2 = BigInteger.valueOf(5);
         BigInteger bi3 = bi.add(bi2);//musze podac obiekt a nie wartosc
-        System.out.println(bi3);
+        System.out.println(bi3); //10 + 5
+        System.out.println(bi3.subtract(bi)); //15 - 10
+        System.out.println(bi3.multiply(bi2)); //15 * 5
+        System.out.println(bi3.divide(bi2)); //15 / 5
 
         //------------INSTRUKCJE STARUJACE-----------------
         System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
