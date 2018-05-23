@@ -141,7 +141,7 @@ public class ProgramStartowy {
         sb.length(); zwroci rozmiar przechowywanego ciagu znakow
         sb.charAt(1); zwroci znak przechowywany na pozycji 1
         sb.substring(0,4); zwroci ciag znakow z przedzialu od 0 do 4
-        s
+        ss
 
 
          */
