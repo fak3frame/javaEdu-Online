@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javaStartMojSkrypt/_1_ProgramStartowy/ProgramStartowy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaStartMojSkrypt/_1_ProgramStartowy/ProgramStartowy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" afterDir="false" />
     </list>
@@ -19,8 +18,8 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="196" column="72" selection-start-line="196" selection-start-column="72" selection-end-line="196" selection-end-column="72" />
+            <state relative-caret-position="306">
+              <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,7 +219,35 @@
       <option name="project" value="LOCAL" />
       <updated>1527089395438</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="INSTRUKCJE STARUJACE 2">
+      <created>1527090954642</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527090954642</updated>
+    </task>
+    <task id="LOCAL-00008" summary="OPERATORY MATEMATYCZNE I LOGICZNE 2">
+      <created>1527091152399</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1527091152399</updated>
+    </task>
+    <task id="LOCAL-00009" summary="OPERATORY MATEMATYCZNE I LOGICZNE 3">
+      <created>1527091214805</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1527091214805</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FUNKCJE MATEMATYCZNE I WIELKIE LICZBY 1">
+      <created>1527091343548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1527091343548</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -266,7 +293,11 @@
     <MESSAGE value="operatory matematyczne i logiczne 2" />
     <MESSAGE value="operatory matematyczne i logiczne 3" />
     <MESSAGE value="INSTRUKCJE STARUJACE" />
-    <option name="LAST_COMMIT_MESSAGE" value="INSTRUKCJE STARUJACE" />
+    <MESSAGE value="INSTRUKCJE STARUJACE 2" />
+    <MESSAGE value="OPERATORY MATEMATYCZNE I LOGICZNE 2" />
+    <MESSAGE value="OPERATORY MATEMATYCZNE I LOGICZNE 3" />
+    <MESSAGE value="FUNKCJE MATEMATYCZNE I WIELKIE LICZBY 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="FUNKCJE MATEMATYCZNE I WIELKIE LICZBY 1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
@@ -351,8 +382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="196" column="72" selection-start-line="196" selection-start-column="72" selection-end-line="196" selection-end-column="72" />
+        <state relative-caret-position="306">
+          <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

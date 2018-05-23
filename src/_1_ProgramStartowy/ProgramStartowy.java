@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
+import static java.lang.Math.*;
+
 public class ProgramStartowy {
     public static void main(String[] args) {
 
@@ -175,6 +177,12 @@ public class ProgramStartowy {
         //--------FUNKCJE MATEMATYCZNE I WIELKIE LICZBY------------
         System.out.println("\n"+"---FUNKCJE MATEMATYCZNE I WIELKIE LICZBY---");
         System.out.println("-1-");
+        System.out.println(Math.abs(9));
+
+        //Mozna zaimportowac biblioteke Math statycznie aby wykonywac operacje bez nazwy klasy Math
+        //import static java.lang.Math.*;
+        System.out.println("\n"+"-2-");
+        System.out.println(pow(2,3));
 
 
         //------------INSTRUKCJE STARUJACE-----------------
