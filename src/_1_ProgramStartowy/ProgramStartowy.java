@@ -262,6 +262,10 @@ public class ProgramStartowy {
         System.out.println( (a1/b) - (int)(a1/b)); // sama reszta
         System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty
 
+        //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
+
+        System.out.println("\n"+"---PODSTAWOWE WEJSCIE / WYJSCIE---");
+        System.out.println("-1-");
         /*
         System.out.println("\n"+"-x-");
         try{
