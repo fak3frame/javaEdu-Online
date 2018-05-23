@@ -50,7 +50,11 @@ public class ProgramStartowy {
         final double liczbaPi=3.14; //zmienna stala, nie mozna jej juz zmienic
 
         //---------OPERATORY MATEMATYCZNE I LOGICZNE-----------
-        System.out.println("\n"+"---Operatory matematyczne i logiczne---");
+
+
+
+        //------------INSTRUKCJE STARUJACE-----------------
+        System.out.println("\n"+"---INSTRUKCJE STARUJACE---");
         System.out.println("-1-");
         if(5>6){
             System.out.println("Instrukcja 1 jesli prawda");
