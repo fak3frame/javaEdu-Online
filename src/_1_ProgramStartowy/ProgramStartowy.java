@@ -37,7 +37,7 @@ public class ProgramStartowy {
         System.out.println("\n"+"-2-");
         float liczbaZm = 3.4f;//kropka + f
         int liczba = 5;
-        String mojaLiczbaSlownie = Integer.toString(liczba); //wykorzystuje klase oslonowa Integer
+        String mojaLiczbaSlownie = Integer.toString(liczba); //wykorzystuje klase oslonowa Integer                      !
         // posiadajaca metody takie jak toString();
         System.out.println(mojaLiczbaSlownie);
 
@@ -48,7 +48,7 @@ public class ProgramStartowy {
         System.out.println('a'+'f');//zamieni na standardowy typ int, typ char jest zamienny na int
         System.out.println("a"+"f");
 
-        final double liczbaPi=3.14; //zmienna stala, nie mozna jej juz zmienic
+        final double LICZBA_PI=3.14; //zmienna stala, nie mozna jej juz zmienic
 
 
 
@@ -58,10 +58,9 @@ public class ProgramStartowy {
         System.out.println("-1-");
         String hello = "Witaj ";
         String world = "Świecie!";
-        String powitanie = hello+world; //łączenie Stringów
+        String powitanie = hello+world; //łączenie Stringów                                                             !
         System.out.println(powitanie);
 
-        String str1 = "aa2aaa";
         /*
         inne metody Stringa:
 
@@ -117,8 +116,6 @@ public class ProgramStartowy {
         byte[] b = str1.getBytes(); zamieni Stringa na tablice bajtow, kazdy elem. to jeden znak
         */
 
-
-
         //------------------STRING BUILDER-----------------------
 
         System.out.println("\n"+"---StringBuilder---");
@@ -136,10 +133,10 @@ public class ProgramStartowy {
          */
         System.out.println("-1-");
         StringBuilder sb = new StringBuilder(); //tworze pusty bufor, moze przyjac w nawiasie wartosc
-        sb.append("Java").append(" ").append("Rocks! ");
+        sb.append("Java").append(" ").append("Rocks! ");//                                                              !
         sb.append(69); //dzieki przeciązeniu metod moge dodac dowolny typ (wywoluje metode toString)
         System.out.println(sb);
-        String s = sb.toString();//zapisuje do Stringa gotowa wartosc
+        String s = sb.toString();//zapisuje do Stringa gotowa wartosc                                                   !
 
         /*
         inne metody:
@@ -207,7 +204,7 @@ public class ProgramStartowy {
         BigInteger bi2 = BigInteger.valueOf(5);
         BigInteger bi3 = bi.add(bi2);//musze podac obiekt a nie wartosc
         System.out.println(bi3); //10 + 5
-        System.out.println(bi3.subtract(bi)); //15 - 10
+        System.out.println(bi3.subtract(bi)); //15 - 10                                                                 !
         System.out.println(bi3.multiply(bi2)); //15 * 5
         System.out.println(bi3.divide(bi2)); //15 / 5
 
@@ -225,7 +222,7 @@ public class ProgramStartowy {
         System.out.println(a1/b);//przkonwertuje na double
         System.out.println((int)(a1/b));//sztywne rzutowanie, pokaze bez reszty
         System.out.println( (a1/b) - (int)(a1/b)); // sama reszta
-        System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty
+        System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty                        !
 
         //---------ZAPIS I KONWENCJA NAZEWNICTWA----------------
         /*
@@ -280,6 +277,7 @@ public class ProgramStartowy {
                 break;
             case "tomek":
                 System.out.println("jest tomek");
+                break;
             default:
                 System.out.println("nie ma kamila ani tomka");
         }
@@ -290,7 +288,7 @@ public class ProgramStartowy {
         if(liczba%2==0 || liczba2%5==0)
             System.out.println("liczba 2 jest podzialna przez 2 lub 5");
 
-
+        //----------ZAPIS I ODCZYT Z PLIKOW------------------------
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
 
