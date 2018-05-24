@@ -346,7 +346,7 @@ public class ProgramStartowy {
         }
         while (a3<12);
 
-        System.out.println("\n"+"-2-");
+        System.out.println("\n"+"-3-");
         //wykona sie i razy, uzywam gdy znam ilosc wykonan
         for(int i = 10; i<12; i++)
             System.out.println(i);
@@ -354,6 +354,26 @@ public class ProgramStartowy {
 
 
         //-----------------TABLICE-----------------
+
+        System.out.println("\n"+"---TABLICE---");
+        System.out.println("-1-");
+        //Tablice maja stala wartosc
+        int[] tab = new int[3];
+        int[]tab2 = {2,3,4};
+        tab2[0] = 10; // zmiana wartosci
+        System.out.println("1 elemtent tablicy wynosi : "+tab2[0]); //pobranie wartosci
+
+        System.out.println("\n"+"-2-");
+        //ArrayIndexOutOfBoundsException wyjatek przekroczenia tablicy
+        try{
+            System.out.println(tab[4]);
+        }
+        catch (ArrayIndexOutOfBoundsException ex){
+            System.out.println("przekroscyles rozmiar tablice : "+ex.getMessage());
+        }
+
+        //Tablice wielowymiarowe
+
 
 
 
