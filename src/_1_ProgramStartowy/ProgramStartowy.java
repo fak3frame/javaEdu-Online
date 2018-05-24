@@ -1,9 +1,6 @@
 package _1_ProgramStartowy;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
@@ -293,19 +290,32 @@ public class ProgramStartowy {
 
 
         //----------ZAPIS I ODCZYT Z PLIKOW------------------------
+
         System.out.println("\n"+"---ZAPIS I ODCZYT Z PLIKOW---");
         System.out.println("-1-");
         //import java.io.File;
         File plik = new File("moj_plik.txt");
-        if(!plik.exists()) {//czy plik NIE istnieje
+        //if(!plik.exists()) {//czy plik NIE istnieje                                                                   !
             try {
                 plik.createNewFile();//tworze plik
                 System.out.println("stworzylem plik");
+                Scanner wczytajZPliku = new Scanner(plik); //tworze obiekt wczytaj typu Scanner posiadajacy
+                // plik
+                String daneZPliku = wczytajZPliku.nextLine();
+                System.out.println(daneZPliku);
             } catch (IOException e) {
                 System.out.println("Plik juz byl, " + e.getMessage());
             }
+        //}
+        try{
+            PrintWriter zapis = new PrintWriter("moj_plik.txt");//usunie cala zawartosc pliku
+            zapis.println("moje zdanie"); //doda zdanie
+            zapis.println("moje zdanie 2");
+            zapis.close();
         }
-        //Scanner wczytajPlik = new Scanner(new File("moj_plik.txt"));
+        catch (FileNotFoundException ex){
+            System.out.println("Nie znalazlem pliku "+ex.getMessage());
+        }
 
 
 
