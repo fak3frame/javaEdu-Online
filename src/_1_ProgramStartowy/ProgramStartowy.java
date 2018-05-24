@@ -328,10 +328,23 @@ public class ProgramStartowy {
         System.out.println("\n"+"---PĘTLE---");
         System.out.println("-1-");
         int a2 = 10;
+        int a3 = 10;
+
+        //dopóki warunek jest spełniony to wykonuj instrukcje
         while (a2<12) {
             System.out.println("a2<12 a2="+a2);
             a2++;
         }
+
+        System.out.println("\n"+"-2-");
+        //wykona sie conajmniej raz
+        do{
+            System.out.println("a3<12 a3="+a3);
+            a3++;
+        }
+        while (a3<12);
+
+
 
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
