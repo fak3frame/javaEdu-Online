@@ -324,7 +324,9 @@ public class ProgramStartowy {
         }
 
 
+
         //----------------PĘTLE----------------------------------
+
         System.out.println("\n"+"---PĘTLE---");
         System.out.println("-1-");
         int a2 = 10;
@@ -344,6 +346,14 @@ public class ProgramStartowy {
         }
         while (a3<12);
 
+        System.out.println("\n"+"-2-");
+        //wykona sie i razy, uzywam gdy znam ilosc wykonan
+        for(int i = 10; i<12; i++)
+            System.out.println(i);
+
+
+
+        //-----------------TABLICE-----------------
 
 
 
@@ -363,6 +373,7 @@ public class ProgramStartowy {
         //moge wykorztac do liczba metode nextInt() lub nextDouble()`
 
         System.out.println("Witaj "+ imie2);
+
 
 
         /*
