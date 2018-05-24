@@ -3,6 +3,8 @@ package _1_ProgramStartowy;
 import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.nio.file.NoSuchFileException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 import static java.lang.Math.*;
@@ -305,17 +307,24 @@ public class ProgramStartowy {
                 System.out.println(daneZPliku);
             } catch (IOException e) {
                 System.out.println("Plik juz byl, " + e.getMessage());
+            } catch (NoSuchElementException ex){
+                System.out.println("Pusty plik "+ex.getMessage());
             }
         //}
         try{
             PrintWriter zapis = new PrintWriter("moj_plik.txt");//usunie cala zawartosc pliku
             zapis.println("moje zdanie"); //doda zdanie
             zapis.println("moje zdanie 2");
-            zapis.close();
+            zapis.close();//musze zamknac strumien
         }
         catch (FileNotFoundException ex){
             System.out.println("Nie znalazlem pliku "+ex.getMessage());
         }
+
+
+        //----------------PĘTLE----------------------------------
+        System.out.println("\n"+"---PĘTLE---");
+        System.out.println("-1-");
 
 
 
