@@ -418,7 +418,72 @@ public class ProgramStartowy {
         //------------BAINARNY ZAPIS I ODCZYT PLIKOW--------------
 
         System.out.println("\n"+"---BAINARNY ZAPIS I ODCZYT PLIKOW---");
+
+        //Operacja na 1 pliku - RandomAccessFile (odczyt i zapis)
+
         System.out.println("-1-");
+        RandomAccessFile strumien = null; //obiekt RandomAccessFile pozwoli na zapisywanie
+        // i odczytywanie w obrebie jednego pliku
+        int iloscBitowWPliku = 0;
+
+        try{
+            strumien = new RandomAccessFile("daneBinarne.txt", "rw"); //tworze plik
+            // (jesli nie istnieje) z "rw" - odczyt/zapis oraz wlaczam go do strumienia
+        }catch (FileNotFoundException ex){
+            System.out.println("Blad otwarcia strumienia");
+        }
+        try{
+            strumien.writeUTF("Kamil"); //dodaje dane
+            strumien.writeInt(1991);
+            strumien.writeDouble(12.03);
+
+            strumien = new RandomAccessFile("daneBinarne.txt", "rw");//otwieram plik
+            // oraz wlaczam go do strumienia
+            while (strumien.read()!=-1) { //metoda po kolei pobiera bity i gdy dojdzie do konca pliku
+                // wyrzuci -1
+                iloscBitowWPliku++;
+            }
+        }catch (IOException ex){
+            System.out.println("Blad WejWyj");
+        }
+        try{
+            strumien.close();//musze zamknac strumien
+        }catch (IOException ex){
+            System.out.println("Blad zamykania strumienia");
+        }
+        System.out.println("Ilosc bitow w pliku wynosi: "+ iloscBitowWPliku);
+
+
+        //Odczyt z jednego pliku i zapis do drugiego
+        System.out.println("\n"+"-2-");
+        DataInputStream strumienWejsciowy = null; //tworze strumien wejsciowy
+        DataOutputStream strumienWyjsciowy = null; //tworze strumien wyjsciowy
+
+        try {
+            strumienWejsciowy = new DataInputStream(new FileInputStream("binarnie.txt"));
+            // pobieram do strumienia wejsciowego plik do odczytu (opkaowuje strumien w strumien)
+            //musi byc ten plik bo inaczej wywali wyjatek filenotfount
+            strumienWyjsciowy = new DataOutputStream(new FileOutputStream("przekopiowane.txt"));
+            //tworze (jeli nie ma) plik przekopiowane.txt oraz pobieram go do strumienia wyjsciowego
+        }catch (FileNotFoundException ex){
+            System.out.println("nie znaleziono pliku");
+        }
+        int iloscPobranychBajtow = 0;
+        int calkowitaIloscBajtow = 0;
+        byte[] bufor = new byte[1000];
+
+        try {
+            while((iloscPobranychBajtow = strumienWejsciowy.read(bufor)) != -1){
+                //wywoluje metode read() na strymieniu wejsciowym ktora przez uzycie bufora
+                // za kazdym obrotem zapelnia bufor (gdy bedzie za maly wykona obrot
+                // kolejny raz) pojedynczymi bajtami oraz zwroci
+                System.out.println(iloscPobranychBajtow + " obrot petli while");
+                strumienWyjsciowy.write(bufor, 0, iloscPobranychBajtow);
+                //
+            }
+        }catch (IOException ex){
+            System.out.println("Blad wej/wyj");
+        }
 
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
