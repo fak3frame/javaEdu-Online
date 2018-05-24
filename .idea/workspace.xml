@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +23,8 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="403" column="94" selection-start-line="403" selection-start-column="94" selection-end-line="403" selection-end-column="94" />
+            <state relative-caret-position="265">
+              <caret line="417" column="22" selection-start-line="417" selection-start-column="22" selection-end-line="417" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -395,7 +396,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527174509002</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="ZAKRES WYDOCZNOSCI ZMIENNYCH 2">
+      <created>1527175085951</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1527175085951</updated>
+    </task>
+    <task id="LOCAL-00031" summary="PETLE 4">
+      <created>1527175306103</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1527175306103</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -411,11 +426,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32958803" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32459426" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32459426" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1777939" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1777939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -434,8 +449,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="operatory matematyczne i logiczne 3" />
-    <MESSAGE value="INSTRUKCJE STARUJACE" />
     <MESSAGE value="INSTRUKCJE STARUJACE 2" />
     <MESSAGE value="OPERATORY MATEMATYCZNE I LOGICZNE 2" />
     <MESSAGE value="OPERATORY MATEMATYCZNE I LOGICZNE 3" />
@@ -459,7 +472,9 @@
     <MESSAGE value="TABLICE" />
     <MESSAGE value="TABLICE 2" />
     <MESSAGE value="ZAKRES WYDOCZNOSCI ZMIENNYCH" />
-    <option name="LAST_COMMIT_MESSAGE" value="ZAKRES WYDOCZNOSCI ZMIENNYCH" />
+    <MESSAGE value="ZAKRES WYDOCZNOSCI ZMIENNYCH 2" />
+    <MESSAGE value="PETLE 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="PETLE 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -559,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="403" column="94" selection-start-line="403" selection-start-column="94" selection-end-line="403" selection-end-column="94" />
+        <state relative-caret-position="265">
+          <caret line="417" column="22" selection-start-line="417" selection-start-column="22" selection-end-line="417" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

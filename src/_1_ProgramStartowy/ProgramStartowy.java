@@ -360,7 +360,6 @@ public class ProgramStartowy {
 
 
 
-
         //-----------------TABLICE-----------------
 
         System.out.println("\n"+"---TABLICE---");
@@ -414,6 +413,12 @@ public class ProgramStartowy {
         }
          */
 
+
+
+        //------------BAINARNY ZAPIS I ODCZYT PLIKOW--------------
+
+        System.out.println("\n"+"---BAINARNY ZAPIS I ODCZYT PLIKOW---");
+        System.out.println("-1-");
 
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
