@@ -394,6 +394,9 @@ public class ProgramStartowy {
 
 
 
+        //----------ZAKRES WYDOCZNOSCI ZMIENNYCH-----------------
+
+
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
 
