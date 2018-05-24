@@ -395,6 +395,16 @@ public class ProgramStartowy {
 
 
         //----------ZAKRES WYDOCZNOSCI ZMIENNYCH-----------------
+        /*
+        class{
+            int zmienna3 = 10;
+            void metoda(){
+                System.out.println(zmienna3); //moge skorzystac
+                zmienna3 = 15; //zmieni sie
+                int zmienna4 = 10;//po zakonczeniu metody zmienna zadeklarowana w niej zniknie
+            }
+        }
+         */
 
 
 
@@ -445,7 +455,6 @@ public class ProgramStartowy {
             System.out.println("blad wprowadznia: "+ ex.getMessage());
         }
         */
-
 
     }
 
