@@ -1,6 +1,7 @@
 package _1_ProgramStartowy;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
@@ -288,7 +289,25 @@ public class ProgramStartowy {
         if(liczba%2==0 || liczba2%5==0)
             System.out.println("liczba 2 jest podzialna przez 2 lub 5");
 
+
+
+
         //----------ZAPIS I ODCZYT Z PLIKOW------------------------
+        System.out.println("\n"+"---ZAPIS I ODCZYT Z PLIKOW---");
+        System.out.println("-1-");
+        //import java.io.File;
+        File plik = new File("moj_plik.txt");
+        if(!plik.exists()) {//czy plik NIE istnieje
+            try {
+                plik.createNewFile();//tworze plik
+                System.out.println("stworzylem plik");
+            } catch (IOException e) {
+                System.out.println("Plik juz byl, " + e.getMessage());
+            }
+        }
+        //Scanner wczytajPlik = new Scanner(new File("moj_plik.txt"));
+
+
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
 
