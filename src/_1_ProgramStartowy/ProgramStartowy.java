@@ -373,6 +373,24 @@ public class ProgramStartowy {
         }
 
         //Tablice wielowymiarowe
+        System.out.println("\n"+"-3-");
+        int[][] tab3 = new int [2][3];
+        tab3[1][2] = 10; //prawy dolny rog
+
+        int[][] tab4 = new int [2][];//nie musze deklarowac wartosci
+        tab4[0] = new int [1];
+        tab4[1] = new int [2];//nie musi byc symetryczna
+        for(int i=0; i<tab4.length; i++){
+            for (int j=0; j<tab4[i].length; j++){
+                tab4[i][j] = 10;
+            }
+        }
+        for(int i=0; i<tab4.length; i++){
+            for (int j=0; j<tab4[i].length; j++){
+                System.out.print(tab4[i][j] + " ");
+            }
+            System.out.println();
+        }
 
 
 
