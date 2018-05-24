@@ -351,6 +351,14 @@ public class ProgramStartowy {
         for(int i = 10; i<12; i++)
             System.out.println(i);
 
+        //petla for each
+        System.out.println("\n"+"-4-");
+        int[] tab6 = {1,2,3,4,5};
+        for(int iterator : tab6){
+            System.out.print(iterator + " ");
+        }
+
+
 
 
         //-----------------TABLICE-----------------
