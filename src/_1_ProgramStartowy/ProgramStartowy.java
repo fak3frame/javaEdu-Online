@@ -1,5 +1,7 @@
 package _1_ProgramStartowy;
 
+import jdk.nashorn.api.tree.WhileLoopTree;
+
 import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -325,7 +327,11 @@ public class ProgramStartowy {
         //----------------PĘTLE----------------------------------
         System.out.println("\n"+"---PĘTLE---");
         System.out.println("-1-");
-
+        int a2 = 10;
+        while (a2<12) {
+            System.out.println("a2<12 a2="+a2);
+            a2++;
+        }
 
 
         //----------PODSTAWOWE WEJSCIE / WYJSCIE-----------------
