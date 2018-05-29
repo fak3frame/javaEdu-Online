@@ -376,7 +376,7 @@ public class ProgramStartowy {
 
 
 
-        //-----------------TABLICE-----------------
+        //---------------TABLICE-----------------
 
         System.out.println("\n"+"---TABLICE---");
         System.out.println("-1-");
