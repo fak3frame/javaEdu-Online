@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaStartMojSkrypt/_1_ProgramStartowy/ProgramStartowy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaStartMojSkrypt/_1_ProgramStartowy/ProgramStartowy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +22,8 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="379">
+              <caret line="406" column="42" lean-forward="true" selection-start-line="406" selection-start-column="42" selection-end-line="406" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -484,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527191858337</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Poprawki postawy 1">
+      <created>1527612055578</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1527612055578</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -524,7 +529,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="FUNKCJE MATEMATYCZNE I WIELKIE LICZBY 3" />
     <MESSAGE value="FUNKCJE MATEMATYCZNE I WIELKIE LICZBY 4" />
     <MESSAGE value="KONWERSJA I RZUTOWNIE TYPOW" />
     <MESSAGE value="PODSTAWOWE WEJSCIE / WYJSCIE" />
@@ -549,7 +553,8 @@
     <MESSAGE value="OBIEKTY 1" />
     <MESSAGE value="OBIEKTY 2" />
     <MESSAGE value="OBIEKTY 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="OBIEKTY 3" />
+    <MESSAGE value="Poprawki postawy 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawki postawy 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -718,10 +723,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/binarnie.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="379">
+          <caret line="406" column="42" lean-forward="true" selection-start-line="406" selection-start-column="42" selection-end-line="406" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
