@@ -38,6 +38,7 @@ public class ProgramStartowy {
          */
         System.out.println("\n"+"-2-");
         float liczbaZm = 3.4f;//kropka + f
+        double liczbaZm2 = 3.5; // nie musi byc "d"
         int liczba = 5;
         String mojaLiczbaSlownie = Integer.toString(liczba); //wykorzystuje klase oslonowa Integer                      !
         // posiadajaca metody takie jak toString();
@@ -66,56 +67,56 @@ public class ProgramStartowy {
         /*
         inne metody Stringa:
 
-        str1 = str1.trim();  usunie biale znaki na poczaku i koncu Stringa
+    1   str1 = str1.trim();  usunie biale znaki na poczaku i koncu Stringa
 
-        str1 = str1.toUpperCase(); zamieni wszystkie znaki na duże
+    2   str1 = str1.toUpperCase(); zamieni wszystkie znaki na duże
         str1 = str1.toLowerCase(); zamieni wszystkie znaki na male
 
-        Boolean f1 = str1.isEmpty(); zwraca flage true jesli String jest pusty
+    3   Boolean f1 = str1.isEmpty(); zwraca flage true jesli String jest pusty
         Boolean f1 = str1.isNotEmpty(); zwraca flage true jesli String nie jest pusty
 
-        int dlugosc = str1.length(); zwraca liczbe znakow Stringa
+    4   int dlugosc = str1.length(); zwraca liczbe znakow Stringa
 
-        char[] tab = str1.toCharArray(); wypelni tablice znakow podzielonym Stringiem na poj. litery
+    5   char[] tab = str1.toCharArray(); wypelni tablice znakow podzielonym Stringiem na poj. litery
 
-        str1 = str1.substring(1, 2); pobierze od 2 do 3 znaku ze Stringa, mozna tez uzyc tylko pozycji
+    6   str1 = str1.substring(1, 2); pobierze od 2 do 3 znaku ze Stringa, mozna tez uzyc tylko pozycji
          startowej str1.substring(1); (zamienne z str.subSequence(1, 2);)
 
-        String[] tab = str1.split(" "); podzieli Stringa w miejscu wystapienia " " i uzupelni nim tablice
+    7   String[] tab = str1.split(" "); podzieli Stringa w miejscu wystapienia " " i uzupelni nim tablice
         String[] tab = str1.split([0-9]); podzieli Stringa w miejscu wystapienia znakow od 0 do 9 i uzupelni
          nim tablice ([0-9] wyrazenie regularne)
         String[] tab = str1.split("", 4); podzieli Stringa na pojedyncze znaki (uzycie "") oraz ograniczy
          podzial do 4 podzialu i jako ostatni element doda cala reszte Stringa
 
-        String str1 = str1.replace("aa", "A"); zemini ciag "aa" na "A"
+    8   String str1 = str1.replace("aa", "A"); zemini ciag "aa" na "A"
         String str1 = str1.replaceFirst("a", "A"); zamieni pierwsze wystapienie "a" na "A"
         String str1 = str1.replaceAll([0-9], "x"); moze przyjac wyrazenie regularne
 
-        boolean b = str1.matches("aa(.*)"); na podstawie wyrazenia regularnego sprawdza czy pasuje
+    9   boolean b = str1.matches("aa(.*)"); na podstawie wyrazenia regularnego sprawdza czy pasuje
 
-        int pozycja = str1.indexOf("a"); pozycja pierwszego wystapienia "a"
+    10  int pozycja = str1.indexOf("a"); pozycja pierwszego wystapienia "a"
         int pozycja = str1.indexOf("a",2); pozycja pierwszego wystapienia "a", rozpoczyna wyszukiwanie
          od 2 elementu Stringa
         int pozycja = str1.lastIndexOf("a"); pozycja ostatniego wystapienia "a"
 
-        boolean czyRowne = str1.equals("aa2aaa"); sprawdzi czy str1 jest rowny podanemu ciagowi znakow
+    11  boolean czyRowne = str1.equals("aa2aaa"); sprawdzi czy str1 jest rowny podanemu ciagowi znakow
         boolean czyRowne = str1.equals(str2); sprawdzi czy str1 jest rowny str2
         boolean czyRowne = str1.equalsIgnoreCase(str2); sprawdzi czy str1 jest rowny str2 pomijajac
          wielkosci znakow
 
-        str1 = str1.concat("10").concat("20").concat(str2); laczenie stringow, moze byc zastapione +
+    12  str1 = str1.concat("10").concat("20").concat(str2); laczenie stringow, moze byc zastapione +
 
-        boolean czyZaczyna = str1.startsWith("aa"); sprawdza czy String zaczyna sie od podanego ciagu
+    13  boolean czyZaczyna = str1.startsWith("aa"); sprawdza czy String zaczyna sie od podanego ciagu
         boolean czyZaczyna = str1.startsWith("aa", 1); sprawdza czy od pozycji 1 wystapi podany ciag
 
-        boolean czyKonczy = str1.endsWith("aa"); sprawdza czy String konczy sie podanym ciagiem
+    14  boolean czyKonczy = str1.endsWith("aa"); sprawdza czy String konczy sie podanym ciagiem
 
-        boolean czyZawiera = str1.contains("aa"); sprawdza czy String zawiera podany ciag
+    15  boolean czyZawiera = str1.contains("aa"); sprawdza czy String zawiera podany ciag
 
-        int porownanie = str1.compareTo(str3); wyrzuca -1 jesli str1 > str3, 0 jesli str1=str3
+    16  int porownanie = str1.compareTo(str3); wyrzuca -1 jesli str1 > str3, 0 jesli str1=str3
          oraz 1 jesli str1 < str3, mozna zignorowac wielkosc liter str1.compareToIgnoreCase(str3)
 
-        byte[] b = str1.getBytes(); zamieni Stringa na tablice bajtow, kazdy elem. to jeden znak
+    17  byte[] b = str1.getBytes(); zamieni Stringa na tablice bajtow, kazdy elem. to jeden znak
         */
 
         //------------------STRING BUILDER-----------------------
@@ -133,24 +134,39 @@ public class ProgramStartowy {
         StringBildera nalezy uzywac gdy chcemy laczyc wiele stringow natomiast StringBuffera w aplikacjach
          wielowatkowych
          */
+        System.out.println("-0-");
+        StringBuilder sb1 = new StringBuilder(23); //sztywne ustawienie bufora pojemnosc bedzie taka sama
+        System.out.println(sb1.capacity());
+        StringBuilder sb2 = new StringBuilder();
+        sb2.ensureCapacity(2); //ponizej lub rowne 16 - ustawi 16
+        StringBuilder sb3 = new StringBuilder();
+        sb3.ensureCapacity(17);//ponizej lub rowne 34 - ustawi 34
+        StringBuilder sb4 = new StringBuilder();
+        sb4.ensureCapacity(234); //powyzej 34 ustawi wartosc podana
+
+        System.out.println(sb2.capacity()+", "+sb3.capacity()+", "+sb4.capacity());
+        //przedzialy <=16, <=34, pozostale rowne
+
         System.out.println("-1-");
         StringBuilder sb = new StringBuilder(); //tworze pusty bufor, moze przyjac w nawiasie wartosc
         sb.append("Java").append(" ").append("Rocks! ");//                                                              !
         sb.append(69); //dzieki przeciązeniu metod moge dodac dowolny typ (wywoluje metode toString)
+        // UWAGA! w przypadku przeciazenia metody int max zakres liczby to long
         System.out.println(sb);
         String s = sb.toString();//zapisuje do Stringa gotowa wartosc                                                   !
 
         /*
-        inne metody:
-        sb.insert(0, "Java Rocks"); doda w miesce 0 podany napis
-         w przypadku bledu (dodanie wartosci po za zakres bufora powatanie blad IndexOutOfBoundsException
-        sb.replace(0, 6, "Zmiana"); zmieni przedzial bufora od 0 do 6 na napis "Zmiana"
-        sb.delete(0,6); usunie ciag od pozycji 0 do 6
-        sb.reverse(); odwroci ciag
-        sb.capacity(); zwroci liczbowy aktualny rozmiar bufora
-        sb.length(); zwroci rozmiar przechowywanego ciagu znakow
-        sb.charAt(1); zwroci znak przechowywany na pozycji 1
-        sb.substring(0,4); zwroci ciag znakow z przedzialu od 0 do 4
+        metody:
+    1   sb  sb.append(sb2)"
+    2   sb  sb.insert(0, "Java Rocks"); doda w miesce 0 podany napis
+             w przypadku bledu (dodanie wartosci po za zakres bufora powatanie blad IndexOutOfBoundsException
+    3   sb   sb.replace(0, 6, "Zmiana"); zmieni przedzial bufora od 0 do 6 na napis "Zmiana"
+    4   sb   sb.delete(0,6); usunie ciag od pozycji 0 do 6
+    5   sb   sb.reverse(); odwroci ciag
+    6   int  sb.capacity(); zwroci liczbowy aktualny rozmiar bufora
+    7   int  sb.length(); zwroci rozmiar przechowywanego ciagu znakow
+    8   char sb.charAt(1); zwroci znak przechowywany na pozycji 1
+    9   sb   sb.substring(0,4); zwroci ciag znakow z przedzialu od 0 do 4
          */
         System.out.println(sb.capacity());
         System.out.println(sb);
@@ -167,7 +183,7 @@ public class ProgramStartowy {
         System.out.println(++a);//zwiekszam przed wyswietlaniem
 
         System.out.println("\n"+"-2-");
-        boolean czyPrawda = (5>6) || (5>4);
+        boolean czyPrawda = (5>6) || (5>4); //alternatywa (wysarczy ze jeden warunek spelniony)
         System.out.println("czyPrwda = "+czyPrawda);
 
         System.out.println("\n"+"-23");
@@ -183,7 +199,7 @@ public class ProgramStartowy {
 
         System.out.println("\n"+"---FUNKCJE MATEMATYCZNE I WIELKIE LICZBY---");
         System.out.println("-1-");
-        System.out.println(Math.abs(9));
+        System.out.println(Math.abs(9));//                                                                              !
 
         //Mozna zaimportowac biblioteke Math statycznie aby wykonywac operacje bez nazwy klasy Math
         //import static java.lang.Math.*;
