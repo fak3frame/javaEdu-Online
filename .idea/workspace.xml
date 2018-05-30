@@ -35,8 +35,8 @@
       <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
+            <state relative-caret-position="357">
+              <caret line="169" column="47" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
               <folding>
                 <element signature="e#1593#1594#0" expanded="true" />
                 <element signature="e#1622#1623#0" expanded="true" />
@@ -108,13 +108,6 @@
               <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
-              <item name="Obiekty_1.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
@@ -233,13 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1527076794770</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1527076794770</updated>
     </task>
     <task id="LOCAL-00002" summary="test2">
       <created>1527079140210</created>
@@ -570,7 +556,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527689495738</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Przeciazanie metod 1">
+      <created>1527690493581</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1527690493581</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Przeciazanie metod 2">
+      <created>1527691898290</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1527691898290</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -610,8 +610,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PETLE 2" />
-    <MESSAGE value="PETLE 3" />
     <MESSAGE value="TABLICE" />
     <MESSAGE value="TABLICE 2" />
     <MESSAGE value="ZAKRES WYDOCZNOSCI ZMIENNYCH" />
@@ -635,7 +633,9 @@
     <MESSAGE value="Argumenty metod 1" />
     <MESSAGE value="Argumenty metod 2" />
     <MESSAGE value="Argumenty metod 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Argumenty metod 3" />
+    <MESSAGE value="Przeciazanie metod 1" />
+    <MESSAGE value="Przeciazanie metod 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przeciazanie metod 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -832,8 +832,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
+        <state relative-caret-position="357">
+          <caret line="169" column="47" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
           <folding>
             <element signature="e#1593#1594#0" expanded="true" />
             <element signature="e#1622#1623#0" expanded="true" />

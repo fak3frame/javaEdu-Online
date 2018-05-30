@@ -44,7 +44,7 @@ public class Obiekty_1 {
             i++;
         }
 
-        //---------------------------------------------------
+        //--------------------METODY-------------------------------
 
         System.out.println("\n"+"METODY");
 
@@ -94,9 +94,26 @@ public class Obiekty_1 {
         //metoda moze nazywac sie tak sama jak inna jesli przyjmuje inna ilosc paramtrow
         // lub inny ich rodzaj
 
-        //-------------------------------------------
-        System.out.println("\n"+"Konstruktory");
 
+        //-------------------Konstruktory------------------------
+
+        System.out.println("\n"+"Konstruktory");
+        /*
+        Konstruktor nie okresla zwracanego typu, nazwa identyczna jak nazwa klasy
+        Sluzy glownie do nadanie wartosci pol podczas tworzenia obiektu
+         moga one wykonywac operacje jak i wywolywac metody
+         */
+        Punkt2 pkt1 = new Punkt2(11,22); //slowo new wywoluje konstuktor
+        //Strworzylem konstruktor przyjmajacy 2 parametry i ustawiacy wartosc
+        // pol obiektu.
+        //w przypadku obiektu bez paramtrow Punkt2 pkt1 = new Punkt2(); musze
+        // stworzyc takze konstruktor bezparametrowy poniewaz ten z parametrami
+        // automatycznie usuwa ten standardowy (niewidoczny) tworzeony automatycznie
+        // przez klase
+
+        Punkt2 pkt2 = new Punkt2(pkt1);//wykorszytyje konstruktor kopiujacy ktory
+        // przyjmuje inny obiekt i korzysta z jego pol do przypisania pol nowemu
+        // obiektowi Punkt2(Punkt2 pkt){this.x = pkt.x; this.y = pkt.y;}
 
 
 
@@ -139,5 +156,19 @@ class Punkt{
 }
 
 class Punkt2{
+    int x;
+    int y;
+    Punkt2(){} //konstruktor domyslny bezparamtrowy
+    //jest on generowany automatycznie i usuwany jesli dodamy wlasny
+    // z parametrami
 
+    Punkt2(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    Punkt2(Punkt2 pkt){//konstruktor kopiujacy
+        this.x = pkt.x;
+        this.y = pkt.y;
+    }
 }
