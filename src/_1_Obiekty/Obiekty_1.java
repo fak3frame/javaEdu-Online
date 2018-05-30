@@ -108,8 +108,9 @@ public class Obiekty_1 {
 
         W pierwszej kolejnosci wywolywany jest konstruktor bezparamtrowy klasy
          nadrzednej ! tzn w kazdym konstrukotrze (niewazne z jaka iloscia param.)
-         na poczatku jest niejawna instukcja super();
-                                                                          !
+         na poczatku jest niejawna instukcja super(); Jesli kasa nie dziedziczy
+         wywolany jest konstruktor klasy Object
+
         Dobra praktyka jest tworznie konstrukotra bezparamtrowego z nadanymi wartosciami
          aby w przypadku proby dostania sie do nich nie otrzymac wyjatku
          NullPointerException !
@@ -137,9 +138,35 @@ public class Obiekty_1 {
         System.out.println(pkt2.x + " " + pkt2.y);
 
 
+        //-------------------Dziedziczenie------------------------
+
+        System.out.println("\n"+"Dziedziczenie");
+
+        System.out.println("-1-");
+        Pracownik prac = new Pracownik("Wlodek", "Zięba", 3000);
+        System.out.println("Imię: "+prac.imie);
+        System.out.println("Nazwisko: "+prac.nazwisko);
+        System.out.println("Wypłata: "+prac.wyplata+"\n");
+
+        Szef szef = new Szef();//dzieki dziedziczneiu mam dostep do pol
+        // i metod klasy nadrzednej.
+
+        System.out.println("Imię: "+szef.imie);
+        System.out.println("Nazwisko: "+szef.nazwisko);
+        System.out.println("Wypłata: "+szef.wyplata);
+        System.out.println("Premia: "+szef.premia+"\n");
+
+        Szef szef2 = new Szef("Tadek","Kowalski",10000,2000);
+
+        System.out.println("Imię: "+szef2.imie);
+        System.out.println("Nazwisko: "+szef2.nazwisko);
+        System.out.println("Wypłata: "+szef2.wyplata);
+        System.out.println("Premia: "+szef2.premia);
+
     }
 }
 
+//----KLASY METODY I OBIEKTY-----
 class Punkt{
     int wspX;
     int wspY;
@@ -174,7 +201,7 @@ class Punkt{
         pkt.ustawX(pkt.dajX()+1);
     }
 }
-
+//-------------------Konstruktory------------------------
 class Punkt2{
     int x;
     int y;
@@ -193,5 +220,35 @@ class Punkt2{
     Punkt2(Punkt2 pkt){//konstruktor kopiujacy
         this.x = pkt.x;
         this.y = pkt.y;
+    }
+}
+//-------------------Dziedziczenie------------------------
+class Pracownik{
+    String imie,nazwisko;
+    int wyplata;
+    public Pracownik(){
+        this.imie="";
+        this.nazwisko="";
+        this.wyplata=0;
+    }
+    public Pracownik(String i, String n, int w){
+        this.imie=i;
+        this.nazwisko=n;
+        this.wyplata=w;
+    }
+}
+class Szef extends Pracownik{
+    int premia;
+    public Szef(){
+        this.imie="";
+        this.nazwisko="";
+        this.wyplata=0;
+        this.premia = 0;
+    }
+    public Szef(String i, String n, int w, int p){
+        this.imie=i;
+        this.nazwisko=n;
+        this.wyplata=w;
+        this.premia = p;
     }
 }
