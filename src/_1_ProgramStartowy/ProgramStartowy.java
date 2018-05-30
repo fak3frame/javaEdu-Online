@@ -154,7 +154,7 @@ public class ProgramStartowy {
         // UWAGA! w przypadku przeciazenia metody int max zakres liczby to long
         System.out.println(sb);
         String s = sb.toString();//zapisuje do Stringa gotowa wartosc                                                   !
-
+        //wprzypadku zapusu licbzy do stringa String s = Integer.toSting(liczba);
         /*
         metody:
     1   sb  sb.append(sb2)"
@@ -215,7 +215,7 @@ public class ProgramStartowy {
            (liczby zmiennoprzecinkowe)
         */
         BigInteger bi = new BigInteger("10");//podaje w "" ale moge takze w formie liczby
-        // BigInteger bi4 = BigInteger.valueOf(123534);
+        // BigInteger bi4 = BigInteger.valueOf(123534);                                                                 !
         // lecz tylko w zakresie long poniewaz wykorzystywana jest konwersja valueOf()
 
         //operacje na wielkich liczbach:
