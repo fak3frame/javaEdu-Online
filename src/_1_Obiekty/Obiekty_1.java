@@ -142,6 +142,8 @@ public class Obiekty_1 {
 
         System.out.println("\n"+"Dziedziczenie");
 
+        //Klasa moze rozszerzac TYLKO 1 klasa
+
         System.out.println("-1-");
         Pracownik prac = new Pracownik("Wlodek", "Zięba", 3000);
         System.out.println("Imię: "+prac.imie);
@@ -162,6 +164,37 @@ public class Obiekty_1 {
         System.out.println("Nazwisko: "+szef2.nazwisko);
         System.out.println("Wypłata: "+szef2.wyplata);
         System.out.println("Premia: "+szef2.premia);
+
+        //-------------------Interfejsy------------------------
+
+        System.out.println("\n"+"Interfejsy");
+        /*
+        Interfejsy jest to wymog jaki narzycamy na klase ktora go implementuje
+        jest to inaczej kontrakt ktora mowi co dana klasa ma robic ale nie wie jak
+         (nie okreslamy w metodach ciala tylko to co zwracaja i co przyjmuja)
+        Klasy implementujace interfejs moga takze posiadac wlasne pola i metody
+        "Dodawanie własnych metod nie jest jednak dobrym podejściem, ponieważ
+         tracimy w ten sposób nieco możliwości jakie niesie ze sobą polimorfizm
+         - aby móc korzystać z metod, których nie ma w interfejsie zarówno typ
+         referencji jak i typ obiektu muszą być zgodne - użycie interfejsu wydaje
+         się wtedy zbędne"
+        Klasa moze implementowac kilka interfejsow
+        Wszystkie metody interfejsu są domyślnie publiczne i abstrakcyjne
+        Wszystkie pola interfejsu muszą być zadeklarowane jako publiczne,
+         statyczne i finalne
+        Interfejs moze rozszerzac tylko interfejsy
+        Metody interfejsu NIE moga byc zadeklarowane jako statyczne
+        */
+
+        //Moge wykorzystac polmorfizm do tworzenia obiektow:
+        Pojazd samochod = new Samochod();
+        Pojazd rower = new Rower();
+
+
+        //-------------------Dziedziczenie  2----------------------
+
+        System.out.println("\n"+"Dziedziczenie 2");
+
 
     }
 }
@@ -241,6 +274,17 @@ class Szef extends Pracownik{
     int premia;
     public Szef(){
         this.imie="";
+        /*
+        moge tak zadeklarwoa tylko dlatego ze  zmienne sa publiczne (a nie powinny)
+        w takim przypadku gdy zmienne klasy nadrzednej sa prywatne nalezy uzyc
+         konstruktora klasy nadrzednej i wyslac do niego zmienne przy uzyciu instrukcji
+         super() z parametrami ktora MUSI byc na poczatku deklaracji w konstruktorze
+         np: super("","",0,0)
+         standardowo jest wykonywana niejawna instukcja super() czyli wywolanie konstruktora
+          bezparamtrowego klasy nadrzednej
+         Najbardziej optymalna opcja jest deklaracja tylko premii na wartosc 0 poniewaz
+          niejawnie wywoluje sie konstruktor klasy nadrzednej ktor ustawia wartosci na domyslne
+        */
         this.nazwisko="";
         this.wyplata=0;
         this.premia = 0;
@@ -251,4 +295,47 @@ class Szef extends Pracownik{
         this.wyplata=w;
         this.premia = p;
     }
+}
+//-------------------Interfejsy-----------------------
+interface Pojazd{
+    public void jazda(int predkosc);
+    public void stop();
+}
+class Samochod implements Pojazd{
+    @Override
+    public void jazda(int predkosc) {
+
+    }
+    @Override
+    public void stop() {
+
+    }
+    public void drift(){}
+}
+class Rower implements Pojazd{
+    @Override
+    public void jazda(int predkosc) {
+
+    }
+    @Override
+    public void stop() {
+
+    }
+    public void skok(){}
+}
+//-------------------Dziedziczenie  2---------------------
+class Pracownik2 {
+    private String imie;
+    private String nazwisko;
+    private double wyplata;
+
+    public Pracownik2(String imie, String nazwisko, double wyplata){
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.wyplata = wyplata;
+    }
+
+    String getImie(){ return imie; }
+    String getNazwisko(){ return nazwisko; }
+    double getWyplata(){ return wyplata; }
 }
