@@ -13,7 +13,7 @@ public class Obiekty_2 {
          obiekty za pomoca metody equals() i zwraca true znaczy ze metoda
          hashCode() powinna zwraca taka sama wartosc.
 
-        Metoda hashCode jest dziedziczona z klasy Object i jesli jej nie
+        Metoda hashCode() jest dziedziczona z klasy Object i jesli jej nie
          nadpiszemy to zwroci ona rozne wartosci dla identycznych pod wzgledem
          wartosci pol obiektow!
 
