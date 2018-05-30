@@ -44,29 +44,35 @@ public class Obiekty_1 {
             i++;
         }
 
+        //---------------------------------------------------
+
         System.out.println("\n"+"METODY");
-        System.out.println("-1-");
+
         //Przeciazanie metod - mozemy nazwyac metody tak samo jesli przyjmuja
         // inne typy zmiennych (to co zwracaja NIE MA ZNACZENIA!)
+
+        System.out.println("-1-");
         Punkt punkt3 = new Punkt();
         punkt3.ustawX(15);
         punkt3.ustawY(3);
-        System.out.println(punkt3.odejmujLiczby(10,7));
+        System.out.println("Klasa.odejmujLiczby(x,y) : "+Punkt.odejmujLiczby(10,7));
         //przekazuje tutaj zmienne poprzez WARTOSC !
+        //wywoluje metode za pomoca klasy poniwaz jest STATYCZNA
 
         System.out.println("\n"+"-2-");
-        System.out.println(punkt3.sumujXY());//wykorzystam zmienne w obiekcie
+        System.out.println("obiekt.sumujXY() : "+punkt3.sumujXY());//wykorzystam zmienne w obiekcie
         //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
         // majac do nich dostep dzieki wywolaniu na konktetnym obiekcie
         // z ustalonymi polami, wykorzystje this.
 
         System.out.println("\n"+"-3-");
-        System.out.println(punkt3.sumujXY(punkt3));
+        System.out.println("obiekt.sumujXY(oiekt)) : "+punkt3.sumujXY(punkt3));
         //teraz korzystam z metody przyjmujacej obiekt na ktorym wewnatrz
         // metody korzysta z akcesorow
 
         System.out.println("\n"+"-4-");
-        System.out.println(punkt3.odejmujLiczby(punkt3.dajX(),punkt3.dajY()));
+        System.out.println("obiekt.sumujXY(obiek.akcesorX(), obiekt.ackesorY())) : "+
+                punkt3.odejmujLiczby(punkt3.dajX(),punkt3.dajY()));
         //tutaj wykorzystje pobranie wartosci z akcesorow i wysalnie ich do metody
 
 
@@ -90,7 +96,7 @@ class Punkt{
         return wspY;
     }
 
-    int odejmujLiczby(int x, int y){
+    static int odejmujLiczby(int x, int y){
         return x-y;
     }
 
@@ -100,5 +106,6 @@ class Punkt{
     }
     int sumujXY(Punkt pkt){ //z wykorzystaniem obiektu
         return pkt.dajX()+pkt.dajY();
+        //uzywam akcesrow na obiekcie na ktorym zostala wywolana metoda
     }
 }
