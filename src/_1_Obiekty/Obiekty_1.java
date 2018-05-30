@@ -191,9 +191,10 @@ public class Obiekty_1 {
         Pojazd rower = new Rower();
 
 
-        //-------------------Dziedziczenie  2----------------------
+        //-------Dziedziczenie  2 + instrukcja super()-------------------
+        /*
 
-        System.out.println("\n"+"Dziedziczenie 2");
+         */
 
 
     }
@@ -323,11 +324,17 @@ class Rower implements Pojazd{
     }
     public void skok(){}
 }
-//-------------------Dziedziczenie  2---------------------
+//-------Dziedziczenie  2 + instrukcja super()-------------------
 class Pracownik2 {
     private String imie;
     private String nazwisko;
     private double wyplata;
+
+    public Pracownik2(){
+        this.imie = "";
+        this.nazwisko = "";
+        this.wyplata = 0;
+    }
 
     public Pracownik2(String imie, String nazwisko, double wyplata){
         this.imie = imie;
@@ -338,4 +345,44 @@ class Pracownik2 {
     String getImie(){ return imie; }
     String getNazwisko(){ return nazwisko; }
     double getWyplata(){ return wyplata; }
+}
+class Pielegniarka extends Pracownik2{
+    private int nadgodziny;
+
+    public Pielegniarka(){
+        //nijawenie wywowla sie instukcja super()
+        //czyli konstuktor bezparam. klasy nadrzednej i usatwi
+        // pozostale pola instancji na wartosci domyslne
+        //przez co nie musze pisac super("","",0) co wywolaloby
+        // mi konstuktor 3-param. ustawiajacy wartosci na domyslne
+        // i powtrzalbym wlasny kod (brak metody DRY)
+        this.nadgodziny = 0;
+    }
+
+    public Pielegniarka(String imie, String nazwisko, double wyplata, int nadgodziny) {
+        super(imie, nazwisko, wyplata);
+        this.nadgodziny = nadgodziny;
+    }
+
+    public int getNadgodziny(){ return nadgodziny; }
+    public void setNadgodziny(int n){
+        nadgodziny += n;
+    }
+}
+class Lekarz extends Pracownik2{
+    private double premia;
+
+    public Lekarz(){
+        this.premia=0;
+    }
+
+    public Lekarz(String imie, String nazwisko, double wyplata, double premia) {
+        super(imie, nazwisko, wyplata);
+        this.premia = premia;
+    }
+
+    public double getPremia(){ return premia; }
+    public void setPremia(double d){
+        premia = d;
+    }
 }
