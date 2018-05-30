@@ -60,7 +60,7 @@ public class Obiekty_1 {
         //wywoluje metode za pomoca klasy poniwaz jest STATYCZNA
 
         System.out.println("\n"+"-2-");
-        System.out.println("obiekt.sumujXY(obiek.akcesorX(), obiekt.ackesorY())) : "+
+        System.out.println("KLASA.sumujXY(obiekt.akcesorX(), obiekt.ackesorY())) : "+
                 Punkt.odejmujLiczby(punkt3.dajX(),punkt3.dajY()));
         //tutaj wykorzystje pobranie wartosci z akcesorow i wysalnie ich do metody
 
