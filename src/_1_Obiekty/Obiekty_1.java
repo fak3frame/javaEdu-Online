@@ -52,14 +52,23 @@ public class Obiekty_1 {
         punkt3.ustawX(15);
         punkt3.ustawY(3);
         System.out.println(punkt3.odejmujLiczby(10,7));
+        //przekazuje tutaj zmienne poprzez WARTOSC !
 
         System.out.println("\n"+"-2-");
         System.out.println(punkt3.sumujXY());//wykorzystam zmienne w obiekcie
         //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
+        // majac do nich dostep dzieki wywolaniu na konktetnym obiekcie
+        // z ustalonymi polami, wykorzystje this.
 
         System.out.println("\n"+"-3-");
+        System.out.println(punkt3.sumujXY(punkt3));
+        //teraz korzystam z metody przyjmujacej obiekt na ktorym wewnatrz
+        // metody korzysta z akcesorow
+
+        System.out.println("\n"+"-4-");
         System.out.println(punkt3.odejmujLiczby(punkt3.dajX(),punkt3.dajY()));
         //tutaj wykorzystje pobranie wartosci z akcesorow i wysalnie ich do metody
+
 
 
     }
@@ -87,5 +96,9 @@ class Punkt{
 
     int sumujXY(){
         return this.wspX + this.wspY; //korzystam ze zmiennych obiektu
+        //na ktorym zostaje wywolana metoda
+    }
+    int sumujXY(Punkt pkt){ //z wykorzystaniem obiektu
+        return pkt.dajX()+pkt.dajY();
     }
 }

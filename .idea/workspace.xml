@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1015">
-              <caret line="385" column="25" selection-start-line="385" selection-start-column="25" selection-end-line="385" selection-end-column="25" />
+            <state relative-caret-position="469">
+              <caret line="285" column="21" lean-forward="true" selection-start-line="285" selection-start-column="21" selection-end-line="285" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
               <folding>
                 <element signature="e#1593#1594#0" expanded="true" />
                 <element signature="e#1622#1623#0" expanded="true" />
@@ -46,6 +46,10 @@
                 <element signature="e#1718#1719#0" expanded="true" />
                 <element signature="e#1734#1735#0" expanded="true" />
                 <element signature="e#1761#1762#0" expanded="true" />
+                <element signature="e#2152#2153#0" expanded="true" />
+                <element signature="e#2176#2177#0" expanded="true" />
+                <element signature="e#2763#2764#0" expanded="true" />
+                <element signature="e#2795#2796#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +77,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ProgramStartowy.java" />
-        <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
       </list>
     </option>
   </component>
@@ -145,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProgramStartowy">
+  <component name="RunManager" selected="Application.Obiekty_1">
     <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
       <module name="javaStartMojSkrypt" />
@@ -215,8 +219,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProgramStartowy" />
         <item itemvalue="Application.Obiekty_1" />
+        <item itemvalue="Application.ProgramStartowy" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527686219494</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Poprawki postawy 6">
+      <created>1527686572776</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1527686572776</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Obiekty 4">
+      <created>1527687537865</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1527687537865</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -520,17 +538,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32709113" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32958803" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32459426" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32459426" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22423802" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22423802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -540,7 +559,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32946298" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32709113" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -551,8 +569,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSTAWOWE TERMINY" />
-    <MESSAGE value="PODSTAWOWE TERMINY 2" />
     <MESSAGE value="PODSTAWOWE TERMINY 3" />
     <MESSAGE value="ZAPIS I ODCZYT Z PLIKOW" />
     <MESSAGE value="ZAPIS I ODCZYT Z PLIKOW 2" />
@@ -576,7 +592,9 @@
     <MESSAGE value="Poprawki postawy 3" />
     <MESSAGE value="Poprawki postawy 4" />
     <MESSAGE value="Poprawki postawy 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawki postawy 5" />
+    <MESSAGE value="Poprawki postawy 6" />
+    <MESSAGE value="Obiekty 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Obiekty 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -607,6 +625,10 @@
             <element signature="e#1718#1719#0" expanded="true" />
             <element signature="e#1734#1735#0" expanded="true" />
             <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2795#2796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -634,6 +656,10 @@
             <element signature="e#1718#1719#0" expanded="true" />
             <element signature="e#1734#1735#0" expanded="true" />
             <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2795#2796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -661,6 +687,10 @@
             <element signature="e#1718#1719#0" expanded="true" />
             <element signature="e#1734#1735#0" expanded="true" />
             <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2795#2796#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -755,10 +785,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="285" column="21" lean-forward="true" selection-start-line="285" selection-start-column="21" selection-end-line="285" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
           <folding>
             <element signature="e#1593#1594#0" expanded="true" />
             <element signature="e#1622#1623#0" expanded="true" />
@@ -768,16 +808,10 @@
             <element signature="e#1718#1719#0" expanded="true" />
             <element signature="e#1734#1735#0" expanded="true" />
             <element signature="e#1761#1762#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1015">
-          <caret line="385" column="25" selection-start-line="385" selection-start-column="25" selection-end-line="385" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2795#2796#0" expanded="true" />
           </folding>
         </state>
       </provider>
