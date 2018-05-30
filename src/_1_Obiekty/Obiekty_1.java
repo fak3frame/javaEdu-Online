@@ -57,6 +57,7 @@ public class Obiekty_1 {
         punkt3.ustawY(3);
         System.out.println("Klasa.odejmujLiczby(x,y) : "+Punkt.odejmujLiczby(10,7));
         //przekazuje tutaj zmienne poprzez WARTOSC !
+        //zmienne proste utworzone w metodzie znikaja po jej zakonczeniu
         //wywoluje metode za pomoca klasy poniwaz jest STATYCZNA
 
         System.out.println("\n"+"-2-");
@@ -72,8 +73,11 @@ public class Obiekty_1 {
         //Motoda bez sensu poniewaz moge uzyc slowka this. i odniesc sie
         // do pol obiektu na ktorym wywolywana jest metoda !
 
-        //WYSYLAM REFERENCJE ! - jest to kopia adresu obieku, jesli zmienie wartosci
+        //WYSYLAM REFERENCJE ! - jest to KOPIA adresu obieku, jesli zmienie wartosci
         // pol obiektu w metodzie ktora na nim operuje - zmiany pozostana
+        //Referencja przyjeta przez metode moze zostac zmieniona przez co nie bedzie
+        // wskazywala juz na ten sam obiekt ktory wyslalismy lecz mozemy to zablokowac
+        // przyjmujac zmienna obiektu final! int sumujXY(final Punkt pkt)
 
         //test referencji
         System.out.println("\n"+"-4-");
@@ -85,9 +89,9 @@ public class Obiekty_1 {
         System.out.println("\n"+"-5-");
         System.out.println("obiekt.sumujXY() : "+punkt3.sumujXY());//wykorzystam zmienne w obiekcie
         //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
-        // majac do nich dostep dzieki wywolaniu na konktetnym obiekcie
+        // majac do nich dostep dzieki wywolaniu jej na konktetnym obiekcie
         // z ustalonymi polami, wykorzystje this.
-        //metoda moze nazywac sie tak sama jak inna jesli przyjmuje inne parametry
+        //metoda moze nazywac sie tak sama jak inna jesli przyjmuje inna ilosc paramtrow
         // lub inny ich rodzaj
 
 
@@ -112,7 +116,8 @@ class Punkt{
         return wspY;
     }
 
-    static int odejmujLiczby(int x, int y){
+    static int odejmujLiczby(int x, int y){ //metoda statyczne - moge ja wywolac
+        // z uzyciem nazwy klasy Punkt.odejmujLiczby(liczba1, liczba2);
         return x-y;
     }
 
