@@ -94,6 +94,9 @@ public class Obiekty_1 {
         //metoda moze nazywac sie tak sama jak inna jesli przyjmuje inna ilosc paramtrow
         // lub inny ich rodzaj
 
+        //-------------------------------------------
+        System.out.println("\n"+"Konstruktory");
+
 
 
 
@@ -133,4 +136,8 @@ class Punkt{
     static void zwiekszX(Punkt pkt){
         pkt.ustawX(pkt.dajX()+1);
     }
+}
+
+class Punkt2{
+
 }
