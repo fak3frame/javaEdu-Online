@@ -167,7 +167,6 @@ public class Obiekty_1 {
 
         //-------------------Interfejsy------------------------
 
-        System.out.println("\n"+"Interfejsy");
         /*
         Interfejsy jest to wymog jaki narzycamy na klase ktora go implementuje
         jest to inaczej kontrakt ktora mowi co dana klasa ma robic ale nie wie jak
@@ -193,8 +192,20 @@ public class Obiekty_1 {
 
         //-------Dziedziczenie  2 + instrukcja super()-------------------
         /*
+        Instrukcji super() uzywam do wywolanie konstruktora klasy nadrzednej.
+        Ilosc parametrow jakie w nim umieszcze decyduje ktory to konstuktor
+         np. super("","",0); wywola mi 3-param. konstruktor klasy nadrzednej
+        Instrukcja super() musi byc ZAWSZE na poczatku w konstruktorze
+        Zawsze dodawana jest automatycznie instukcja niejawna super(); w kazdym
+         konstruktorze
 
+        Wywolanie metody z klasy nadrzednej uzywamy z "." np. super.metoda();
+         i nie musi byc ona juz na poczatku deklracji metody
          */
+        System.out.println("\n"+"Dziedziczenie 2");
+        System.out.println("-1-");
+        Pracownik2 pielegniarka = new Pielegniarka();
+        pielegniarka.pokazCos();
 
 
     }
@@ -337,6 +348,7 @@ class Pracownik2 {
     }
 
     public Pracownik2(String imie, String nazwisko, double wyplata){
+        //konstruktor dla wartosci domyslnych
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.wyplata = wyplata;
@@ -345,11 +357,15 @@ class Pracownik2 {
     String getImie(){ return imie; }
     String getNazwisko(){ return nazwisko; }
     double getWyplata(){ return wyplata; }
+
+    public void pokazCos(){
+        System.out.println("Pracownik");
+    }
 }
 class Pielegniarka extends Pracownik2{
     private int nadgodziny;
 
-    public Pielegniarka(){
+    public Pielegniarka(){ //kontrukror dla wartosci domyslnych
         //nijawenie wywowla sie instukcja super()
         //czyli konstuktor bezparam. klasy nadrzednej i usatwi
         // pozostale pola instancji na wartosci domyslne
@@ -360,6 +376,7 @@ class Pielegniarka extends Pracownik2{
     }
 
     public Pielegniarka(String imie, String nazwisko, double wyplata, int nadgodziny) {
+        //konstruktor ustawiacy
         super(imie, nazwisko, wyplata);
         this.nadgodziny = nadgodziny;
     }
@@ -367,6 +384,13 @@ class Pielegniarka extends Pracownik2{
     public int getNadgodziny(){ return nadgodziny; }
     public void setNadgodziny(int n){
         nadgodziny += n;
+    }
+
+    @Override
+    public void pokazCos() {
+        super.pokazCos(); //wywolanie metody super z metoda nie musi byc na poczatku
+        System.out.println("Pielegniarka");
+        super.pokazCos();
     }
 }
 class Lekarz extends Pracownik2{
