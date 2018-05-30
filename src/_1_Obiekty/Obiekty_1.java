@@ -70,9 +70,19 @@ public class Obiekty_1 {
         //teraz korzystam z metody przyjmujacej obiekt na ktorym wewnatrz
         // metody korzysta z akcesorow
         //Motoda bez sensu poniewaz moge uzyc slowka this. i odniesc sie
-        // do pol obiektu na ktorym jest on wywolywany
+        // do pol obiektu na ktorym wywolywana jest metoda !
 
+        //WYSYLAM REFERENCJE ! - jest to kopia adresu obieku, jesli zmienie wartosci
+        // pol obiektu w metodzie ktora na nim operuje - zmiany pozostana
+
+        //test referencji
         System.out.println("\n"+"-4-");
+        Punkt punkt4 = new Punkt();
+        punkt4.ustawX(77);
+        Punkt.zwiekszX(punkt4);
+        System.out.println(punkt4.dajX());
+
+        System.out.println("\n"+"-5-");
         System.out.println("obiekt.sumujXY() : "+punkt3.sumujXY());//wykorzystam zmienne w obiekcie
         //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
         // majac do nich dostep dzieki wywolaniu na konktetnym obiekcie
@@ -113,5 +123,9 @@ class Punkt{
     int sumujXY(Punkt pkt){ //z wykorzystaniem obiektu
         return pkt.dajX()+pkt.dajY();
         //uzywam akcesrow na obiekcie na ktorym zostala wywolana metoda
+    }
+
+    static void zwiekszX(Punkt pkt){
+        pkt.ustawX(pkt.dajX()+1);
     }
 }
