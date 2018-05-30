@@ -68,16 +68,19 @@ public class Obiekty_1 {
 
         System.out.println("\n"+"-3-");
         System.out.println("obiekt.sumujXY(oiekt)) : "+punkt3.sumujXY(punkt3));
-        //teraz korzystam z metody przyjmujacej obiekt na ktorym wewnatrz
-        // metody korzysta z akcesorow
-        //Motoda bez sensu poniewaz moge uzyc slowka this. i odniesc sie
-        // do pol obiektu na ktorym wywolywana jest metoda !
+        /*
+        teraz korzystam z metody przyjmujacej obiekt na ktorym wewnatrz
+         metody korzysta z akcesorow
+        Motoda bez sensu poniewaz moge uzyc slowka this. i odniesc sie
+         do pol obiektu na ktorym wywolywana jest metoda !
 
-        //WYSYLAM REFERENCJE ! - jest to KOPIA adresu obieku, jesli zmienie wartosci
-        // pol obiektu w metodzie ktora na nim operuje - zmiany pozostana
-        //Referencja przyjeta przez metode moze zostac zmieniona przez co nie bedzie
-        // wskazywala juz na ten sam obiekt ktory wyslalismy lecz mozemy to zablokowac
-        // przyjmujac zmienna obiektu final! int sumujXY(final Punkt pkt)
+
+        WYSYLAM REFERENCJE ! - jest to KOPIA adresu obieku, jesli zmienie wartosci
+         pol obiektu w metodzie ktora na nim operuje - zmiany pozostana
+        Referencja przyjeta przez metode moze zostac zmieniona przez co nie bedzie
+         wskazywala juz na ten sam obiekt ktory wyslalismy lecz mozemy to zablokowac
+         przyjmujac zmienna obiektu final! int sumujXY(final Punkt pkt)
+        */
 
         //test referencji
         System.out.println("\n"+"-4-");
@@ -102,19 +105,36 @@ public class Obiekty_1 {
         Konstruktor nie okresla zwracanego typu, nazwa identyczna jak nazwa klasy
         Sluzy glownie do nadanie wartosci pol podczas tworzenia obiektu
          moga one wykonywac operacje jak i wywolywac metody
-         */
-        Punkt2 pkt1 = new Punkt2(11,22); //slowo new wywoluje konstuktor
-        //Strworzylem konstruktor przyjmajacy 2 parametry i ustawiacy wartosc
-        // pol obiektu.
-        //w przypadku obiektu bez paramtrow Punkt2 pkt1 = new Punkt2(); musze
-        // stworzyc takze konstruktor bezparametrowy poniewaz ten z parametrami
-        // automatycznie usuwa ten standardowy (niewidoczny) tworzeony automatycznie
-        // przez klase
 
-        Punkt2 pkt2 = new Punkt2(pkt1);//wykorszytyje konstruktor kopiujacy ktory
+        W pierwszej kolejnosci wywolywany jest konstruktor bezparamtrowy klasy
+         nadrzednej ! tzn w kazdym konstrukotrze (niewazne z jaka iloscia param.)
+         na poczatku jest niejawna instukcja super();
+                                                                          !
+        Dobra praktyka jest tworznie konstrukotra bezparamtrowego z nadanymi wartosciami
+         aby w przypadku proby dostania sie do nich nie otrzymac wyjatku
+         NullPointerException !
+
+        Moge tworzyc tablice obiektow:
+        Punkt2[] pkt = new Punkt2[2];
+        Punkt2[0] = new Punkt2(10,20);
+        Punkt2[1] = new Punkt2(22,33);
+        */
+
+        Punkt2 pkt1 = new Punkt2(11,22); //slowo new wywoluje konstuktor
+        /*
+        Strworzylem konstruktor przyjmajacy 2 parametry i ustawiacy wartosc
+         pol obiektu.
+        w przypadku obiektu bez paramtrow Punkt2 pkt1 = new Punkt2(); musze
+         stworzyc takze konstruktor bezparametrowy poniewaz ten z parametrami
+         automatycznie usuwa ten standardowy (niewidoczny) tworzeony automatycznie
+         przez klase
+        */
+
+        Punkt2 pkt2 = new Punkt2(pkt1);//wykorszytuje konstruktor kopiujacy ktory
         // przyjmuje inny obiekt i korzysta z jego pol do przypisania pol nowemu
         // obiektowi Punkt2(Punkt2 pkt){this.x = pkt.x; this.y = pkt.y;}
-
+        System.out.println("-1-");
+        System.out.println(pkt2.x + " " + pkt2.y);
 
 
     }
@@ -158,7 +178,10 @@ class Punkt{
 class Punkt2{
     int x;
     int y;
-    Punkt2(){} //konstruktor domyslny bezparamtrowy
+    Punkt2(){
+        this.x = 0;
+        this.y = 0;
+    } //konstruktor domyslny bezparamtrowy
     //jest on generowany automatycznie i usuwany jesli dodamy wlasny
     // z parametrami
 
