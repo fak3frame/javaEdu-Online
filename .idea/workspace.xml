@@ -64,8 +64,8 @@
       <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="340">
+              <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
               <folding>
                 <element signature="e#908#909#0" expanded="true" />
                 <element signature="e#935#936#0" expanded="true" />
@@ -75,8 +75,8 @@
                 <element signature="e#1067#1068#0" expanded="true" />
                 <element signature="e#1109#1110#0" expanded="true" />
                 <element signature="e#1143#1144#0" expanded="true" />
-                <element signature="e#2166#2167#0" expanded="true" />
-                <element signature="e#2214#2215#0" expanded="true" />
+                <element signature="e#3256#3257#0" expanded="true" />
+                <element signature="e#3311#3312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -276,13 +276,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00008" summary="OPERATORY MATEMATYCZNE I LOGICZNE 2">
-      <created>1527091152399</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1527091152399</updated>
     </task>
     <task id="LOCAL-00009" summary="OPERATORY MATEMATYCZNE I LOGICZNE 3">
       <created>1527091214805</created>
@@ -620,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527698360455</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="hashCode i equals">
+      <created>1527701271587</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1527701271587</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -660,7 +660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BAINARNY ZAPIS I ODCZYT PLIKOW 2" />
     <MESSAGE value="OBIEKTY 1" />
     <MESSAGE value="OBIEKTY 2" />
     <MESSAGE value="OBIEKTY 3" />
@@ -685,7 +684,8 @@
     <MESSAGE value="Dziedziczenie 2" />
     <MESSAGE value="Dziedziczenie 3" />
     <MESSAGE value="Dziedziczenie 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dziedziczenie 4" />
+    <MESSAGE value="hashCode i equals" />
+    <option name="LAST_COMMIT_MESSAGE" value="hashCode i equals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,8 +933,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="340">
+          <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
           <folding>
             <element signature="e#908#909#0" expanded="true" />
             <element signature="e#935#936#0" expanded="true" />
@@ -944,8 +944,8 @@
             <element signature="e#1067#1068#0" expanded="true" />
             <element signature="e#1109#1110#0" expanded="true" />
             <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3311#3312#0" expanded="true" />
           </folding>
         </state>
       </provider>

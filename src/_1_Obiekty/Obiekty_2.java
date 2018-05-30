@@ -40,15 +40,20 @@ public class Obiekty_2 {
 
         Na koncu sprawdznie
         return Double.compare(product.price, price) == 0 &&
+                numer == product.numer &&
                 Objects.equals(name, product.name);
         tutaj wykorzystje metode compare klasy Double w ktorej dwa przyjete argumenty
          jesli bede rowne zwroca wartosc 0 oraz metode equals klasy Objects ktorej
-         rowne argumenty String takze zwroca 0;
+         rowne argumenty String zwroca true, dla sprawdzenia wartosci int mozna
+         wokorzystac proste porownanie
 
         Podsumowujac jesli warunek return bedzie prawdziwy zwroci ture.
 
 
-
+        Metoda hashCode ma prosta budowe
+        public int hashCode() {
+            return Objects.hash(name, price, numer);
+        }
         */
         Product prod1 = new Product("Czekolada", 2.99);
         Product prod2 = new Product("Czekolada", 2.99);
@@ -60,6 +65,7 @@ public class Obiekty_2 {
 class Product {
     private String name;
     private double price;
+    private int numer; //dla testu
     public Product() {
         this.name = "";
         this.price = 0;
@@ -81,23 +87,19 @@ class Product {
         this.price = price;
     }
 
+
     @Override
-    public boolean equals(Object o) {//wygenerowalem ja automatcznie
-        if (this == o){
-            return true; //gdy porownuje ten sam obiekt
-        }
-        if (o == null || getClass() != o.getClass()){
-            return false;//gdy obiekty sa innej klasy
-        }
-        Product product = (Product) o; //rzutownie dla wygodniejszego zapisu
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
         return Double.compare(product.price, price) == 0 &&
+                numer == product.numer &&
                 Objects.equals(name, product.name);
-        //metoda Double.compare(wartosc, wartosc) zwroci 0 gdy sa rowne zmienne double
-        //metoda Objects.equals(String, String) rowniez gdy zmienne String sa rowne
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, price);
+        return Objects.hash(name, price, numer);
     }
 }
