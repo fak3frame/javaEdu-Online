@@ -60,20 +60,26 @@ public class Obiekty_1 {
         //wywoluje metode za pomoca klasy poniwaz jest STATYCZNA
 
         System.out.println("\n"+"-2-");
-        System.out.println("obiekt.sumujXY() : "+punkt3.sumujXY());//wykorzystam zmienne w obiekcie
-        //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
-        // majac do nich dostep dzieki wywolaniu na konktetnym obiekcie
-        // z ustalonymi polami, wykorzystje this.
+        System.out.println("obiekt.sumujXY(obiek.akcesorX(), obiekt.ackesorY())) : "+
+                Punkt.odejmujLiczby(punkt3.dajX(),punkt3.dajY()));
+        //tutaj wykorzystje pobranie wartosci z akcesorow i wysalnie ich do metody
+
 
         System.out.println("\n"+"-3-");
         System.out.println("obiekt.sumujXY(oiekt)) : "+punkt3.sumujXY(punkt3));
         //teraz korzystam z metody przyjmujacej obiekt na ktorym wewnatrz
         // metody korzysta z akcesorow
+        //Motoda bez sensu poniewaz moge uzyc slowka this. i odniesc sie
+        // do pol obiektu na ktorym jest on wywolywany
 
         System.out.println("\n"+"-4-");
-        System.out.println("obiekt.sumujXY(obiek.akcesorX(), obiekt.ackesorY())) : "+
-                punkt3.odejmujLiczby(punkt3.dajX(),punkt3.dajY()));
-        //tutaj wykorzystje pobranie wartosci z akcesorow i wysalnie ich do metody
+        System.out.println("obiekt.sumujXY() : "+punkt3.sumujXY());//wykorzystam zmienne w obiekcie
+        //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
+        // majac do nich dostep dzieki wywolaniu na konktetnym obiekcie
+        // z ustalonymi polami, wykorzystje this.
+        //metoda moze nazywac sie tak sama jak inna jesli przyjmuje inne parametry
+        // lub inny ich rodzaj
+
 
 
 
