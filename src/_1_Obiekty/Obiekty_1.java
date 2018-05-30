@@ -44,6 +44,23 @@ public class Obiekty_1 {
             i++;
         }
 
+        System.out.println("\n"+"METODY");
+        System.out.println("-1-");
+        //Przeciazanie metod - mozemy nazwyac metody tak samo jesli przyjmuja
+        // inne typy zmiennych (to co zwracaja NIE MA ZNACZENIA!)
+        Punkt punkt3 = new Punkt();
+        punkt3.ustawX(15);
+        punkt3.ustawY(3);
+        System.out.println(punkt3.odejmujLiczby(10,7));
+
+        System.out.println("\n"+"-2-");
+        System.out.println(punkt3.sumujXY());//wykorzystam zmienne w obiekcie
+        //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
+
+        System.out.println("\n"+"-3-");
+        System.out.println(punkt3.odejmujLiczby(punkt3.dajX(),punkt3.dajY()));
+        //tutaj wykorzystje pobranie wartosci z akcesorow i wysalnie ich do metody
+
 
     }
 }
@@ -62,5 +79,13 @@ class Punkt{
     }
     int dajY(){
         return wspY;
+    }
+
+    int odejmujLiczby(int x, int y){
+        return x-y;
+    }
+
+    int sumujXY(){
+        return this.wspX + this.wspY; //korzystam ze zmiennych obiektu
     }
 }
