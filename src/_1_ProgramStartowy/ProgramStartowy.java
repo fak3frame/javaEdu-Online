@@ -289,7 +289,7 @@ public class ProgramStartowy {
 
         System.out.println("\n"+"-2-");
         String imie = "kamil";
-        switch(imie){
+        switch(imie){//                                                                                                 !
             case "kamil":
                 System.out.println("jest kamil");
                 break;
@@ -380,7 +380,7 @@ public class ProgramStartowy {
 
         System.out.println("\n"+"---TABLICE---");
         System.out.println("-1-");
-        //Tablice maja stala wartosc
+        //Tablice maja stala, raz okreslona pojemnosc !                                                                 !
         int[] tab = new int[3];
         int[]tab2 = {2,3,4};
         tab2[0] = 10; // zmiana wartosci

@@ -23,8 +23,8 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="221" column="47" selection-start-line="221" selection-start-column="47" selection-end-line="221" selection-end-column="47" />
+            <state relative-caret-position="-1015">
+              <caret line="385" column="25" selection-start-line="385" selection-start-column="25" selection-end-line="385" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+            <state relative-caret-position="17">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
                 <element signature="e#1593#1594#0" expanded="true" />
                 <element signature="e#1622#1623#0" expanded="true" />
@@ -504,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527614995427</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Poprawki postawy 5">
+      <created>1527686219479</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1527686219494</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -544,7 +551,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ZAPIS I KONWENCJA NAZEWNICTWA" />
     <MESSAGE value="PODSTAWOWE TERMINY" />
     <MESSAGE value="PODSTAWOWE TERMINY 2" />
     <MESSAGE value="PODSTAWOWE TERMINY 3" />
@@ -569,7 +575,8 @@
     <MESSAGE value="Poprawki postawy 2" />
     <MESSAGE value="Poprawki postawy 3" />
     <MESSAGE value="Poprawki postawy 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawki postawy 4" />
+    <MESSAGE value="Poprawki postawy 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawki postawy 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -750,8 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        <state relative-caret-position="17">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#1593#1594#0" expanded="true" />
             <element signature="e#1622#1623#0" expanded="true" />
@@ -767,8 +774,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="221" column="47" selection-start-line="221" selection-start-column="47" selection-end-line="221" selection-end-column="47" />
+        <state relative-caret-position="-1015">
+          <caret line="385" column="25" selection-start-line="385" selection-start-column="25" selection-end-line="385" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
