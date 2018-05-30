@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="357" column="53" selection-start-line="357" selection-start-column="53" selection-end-line="357" selection-end-column="53" />
+            <state relative-caret-position="272">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="42" />
               <folding>
                 <element signature="e#8206#8207#0" expanded="true" />
                 <element signature="e#8235#8236#0" expanded="true" />
@@ -48,12 +48,35 @@
                 <element signature="e#8374#8375#0" expanded="true" />
                 <element signature="e#8904#8905#0" expanded="true" />
                 <element signature="e#8944#8945#0" expanded="true" />
+                <element signature="e#11844#11845#0" expanded="true" />
+                <element signature="e#11880#11881#0" expanded="true" />
                 <element signature="e#12027#12028#0" expanded="true" />
                 <element signature="e#12058#12059#0" expanded="true" />
                 <element signature="e#12335#12336#0" expanded="true" />
                 <element signature="e#12364#12365#0" expanded="true" />
                 <element signature="e#12332#12333#0" expanded="true" />
                 <element signature="e#12358#12359#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+              <folding>
+                <element signature="e#908#909#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1039#1040#0" expanded="true" />
+                <element signature="e#1067#1068#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#2166#2167#0" expanded="true" />
+                <element signature="e#2214#2215#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
       </list>
     </option>
   </component>
@@ -119,6 +143,13 @@
               <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
+              <item name="Obiekty_1.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_1_ProgramStartowy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -147,9 +178,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Obiekty_1">
+  <component name="RunManager" selected="Application.Obiekty_2">
     <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_Obiekty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Obiekty_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_2" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -214,9 +256,11 @@
     <list>
       <item itemvalue="Application.ProgramStartowy" />
       <item itemvalue="Application.Obiekty_1" />
+      <item itemvalue="Application.Obiekty_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Obiekty_2" />
         <item itemvalue="Application.Obiekty_1" />
         <item itemvalue="Application.ProgramStartowy" />
       </list>
@@ -232,20 +276,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00006" summary="INSTRUKCJE STARUJACE">
-      <created>1527089395438</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1527089395438</updated>
-    </task>
-    <task id="LOCAL-00007" summary="INSTRUKCJE STARUJACE 2">
-      <created>1527090954642</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1527090954642</updated>
     </task>
     <task id="LOCAL-00008" summary="OPERATORY MATEMATYCZNE I LOGICZNE 2">
       <created>1527091152399</created>
@@ -576,7 +606,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527697037871</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Dziedziczenie 3">
+      <created>1527697628013</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1527697628013</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Dziedziczenie 4">
+      <created>1527698360455</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1527698360455</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -616,8 +660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PETLE 4" />
-    <MESSAGE value="BAINARNY ZAPIS I ODCZYT PLIKOW" />
     <MESSAGE value="BAINARNY ZAPIS I ODCZYT PLIKOW 2" />
     <MESSAGE value="OBIEKTY 1" />
     <MESSAGE value="OBIEKTY 2" />
@@ -641,7 +683,9 @@
     <MESSAGE value="Konstruktory 2" />
     <MESSAGE value="Dziedziczenie 1" />
     <MESSAGE value="Dziedziczenie 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dziedziczenie 2" />
+    <MESSAGE value="Dziedziczenie 3" />
+    <MESSAGE value="Dziedziczenie 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dziedziczenie 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -674,6 +718,8 @@
             <element signature="e#8374#8375#0" expanded="true" />
             <element signature="e#8904#8905#0" expanded="true" />
             <element signature="e#8944#8945#0" expanded="true" />
+            <element signature="e#11844#11845#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
             <element signature="e#12027#12028#0" expanded="true" />
             <element signature="e#12058#12059#0" expanded="true" />
             <element signature="e#12335#12336#0" expanded="true" />
@@ -709,6 +755,8 @@
             <element signature="e#8374#8375#0" expanded="true" />
             <element signature="e#8904#8905#0" expanded="true" />
             <element signature="e#8944#8945#0" expanded="true" />
+            <element signature="e#11844#11845#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
             <element signature="e#12027#12028#0" expanded="true" />
             <element signature="e#12058#12059#0" expanded="true" />
             <element signature="e#12335#12336#0" expanded="true" />
@@ -744,6 +792,8 @@
             <element signature="e#8374#8375#0" expanded="true" />
             <element signature="e#8904#8905#0" expanded="true" />
             <element signature="e#8944#8945#0" expanded="true" />
+            <element signature="e#11844#11845#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
             <element signature="e#12027#12028#0" expanded="true" />
             <element signature="e#12058#12059#0" expanded="true" />
             <element signature="e#12335#12336#0" expanded="true" />
@@ -856,8 +906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="357" column="53" selection-start-line="357" selection-start-column="53" selection-end-line="357" selection-end-column="53" />
+        <state relative-caret-position="272">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="42" />
           <folding>
             <element signature="e#8206#8207#0" expanded="true" />
             <element signature="e#8235#8236#0" expanded="true" />
@@ -869,12 +919,33 @@
             <element signature="e#8374#8375#0" expanded="true" />
             <element signature="e#8904#8905#0" expanded="true" />
             <element signature="e#8944#8945#0" expanded="true" />
+            <element signature="e#11844#11845#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
             <element signature="e#12027#12028#0" expanded="true" />
             <element signature="e#12058#12059#0" expanded="true" />
             <element signature="e#12335#12336#0" expanded="true" />
             <element signature="e#12364#12365#0" expanded="true" />
             <element signature="e#12332#12333#0" expanded="true" />
             <element signature="e#12358#12359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
           </folding>
         </state>
       </provider>
