@@ -86,7 +86,7 @@ public class Obiekty_1 {
         System.out.println("\n"+"-4-");
         Punkt punkt4 = new Punkt();
         punkt4.ustawX(77);
-        Punkt.zwiekszX(punkt4);
+        Punkt.zwiekszX(punkt4); //metoda statyczna
         System.out.println(punkt4.dajX());
 
         System.out.println("\n"+"-5-");
@@ -109,7 +109,8 @@ public class Obiekty_1 {
         W pierwszej kolejnosci wywolywany jest konstruktor bezparamtrowy klasy
          nadrzednej ! tzn w kazdym konstrukotrze (niewazne z jaka iloscia param.)
          na poczatku jest niejawna instukcja super(); Jesli kasa nie dziedziczy
-         wywolany jest konstruktor klasy Object
+         wywolany jest konstruktor klasy Object. Gdy dodamy wlasne odwolanie konstruktora
+         z intreukcji super() (niewazne z jaka iloscia param.) ten niejawny przestaje istniec
 
         Dobra praktyka jest tworznie konstrukotra bezparamtrowego z nadanymi wartosciami
          aby w przypadku proby dostania sie do nich nie otrzymac wyjatku
