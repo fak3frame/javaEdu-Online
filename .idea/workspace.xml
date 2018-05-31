@@ -50,8 +50,8 @@
       <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+            <state relative-caret-position="578">
+              <caret line="121" column="68" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -260,13 +260,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00020" summary="ZAPIS I ODCZYT Z PLIKOW">
-      <created>1527163359953</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1527163359953</updated>
     </task>
     <task id="LOCAL-00021" summary="ZAPIS I ODCZYT Z PLIKOW 2">
       <created>1527164781751</created>
@@ -604,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527753746074</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Wyjątki - blok try catch 3">
+      <created>1527755652725</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1527755652725</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -644,7 +644,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Obiekty 6" />
     <MESSAGE value="Obiekty 7" />
     <MESSAGE value="Argumenty metod 1" />
     <MESSAGE value="Argumenty metod 2" />
@@ -669,7 +668,8 @@
     <MESSAGE value="Poprawki Obiekty 2_1" />
     <MESSAGE value="Wyjątki - blok try catch" />
     <MESSAGE value="Wyjątki - blok try catch 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyjątki - blok try catch 2" />
+    <MESSAGE value="Wyjątki - blok try catch 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyjątki - blok try catch 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -913,8 +913,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+        <state relative-caret-position="578">
+          <caret line="121" column="68" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

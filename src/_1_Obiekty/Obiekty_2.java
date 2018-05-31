@@ -68,7 +68,7 @@ public class Obiekty_2 {
 
         //------------Wyjątki - blok try catch----------------------
 
-        System.out.println("\n"+"Metoda hashCode()");
+        System.out.println("\n"+"Wyjątki - blok try catch");
         int[] tab = {1,2,3};
         Scanner wczytaj = new Scanner(System.in);
         System.out.println("Podaj index tablicy 0-2");
@@ -117,6 +117,13 @@ public class Obiekty_2 {
         catch (ArrayIndexOutOfBoundsException ex){
             System.out.println("Niepoprawny parametr, rozmiar tablicy to: "+tab.length);
         }
+
+
+        //------------Zgłaszanie wyjątków - instrukcja throw----------------------
+
+        System.out.println("\n"+"Zgłaszanie wyjątków - instrukcja throw");
+
+
 
     }
 }
