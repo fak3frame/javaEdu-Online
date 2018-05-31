@@ -417,6 +417,10 @@ public class ProgramStartowy {
         }
 
 
+        //-------Metody o zmiennej liczbie argumentów (varargs)----------------
+
+
+
 
         //----------ZAKRES WYDOCZNOSCI ZMIENNYCH-----------------
         /*
