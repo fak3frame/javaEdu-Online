@@ -292,8 +292,9 @@ class Szef extends Pracownik{
         w takim przypadku gdy zmienne klasy nadrzednej sa prywatne nalezy uzyc
          konstruktora klasy nadrzednej i wyslac do niego zmienne przy uzyciu instrukcji
          super() z parametrami ktora MUSI byc na poczatku deklaracji w konstruktorze
-         np: super("","",0,0)
-         standardowo jest wykonywana niejawna instukcja super() czyli wywolanie konstruktora
+         np: super("","",0,0) lub po prostu super(); poniewaz wywolalbym tak konstuktor
+         bezparametrowy klasy nadrzednej ktory juz ustawia pola na wartosci domyslne.
+        Standardowo jest wykonywana niejawna instukcja super() czyli wywolanie konstruktora
           bezparamtrowego klasy nadrzednej
          Najbardziej optymalna opcja jest deklaracja tylko premii na wartosc 0 poniewaz
           niejawnie wywoluje sie konstruktor klasy nadrzednej ktor ustawia wartosci na domyslne
