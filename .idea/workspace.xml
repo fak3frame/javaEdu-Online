@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,13 +62,13 @@
       <file leaf-file-name="Wyjatki_2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wyjatki_3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wyjatki_3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -80,6 +79,15 @@
                 <element signature="e#332#333#0" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wyjatki_4.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -109,8 +117,9 @@
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
-        <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java" />
       </list>
     </option>
   </component>
@@ -153,6 +162,13 @@
               <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
+              <item name="Obiekty_2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_1_ProgramStartowy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -182,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Wyjatki_3">
+  <component name="RunManager" selected="Application.Wyjatki_4">
     <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
       <module name="javaStartMojSkrypt" />
@@ -205,17 +221,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ProgramStartowy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_ProgramStartowy.ProgramStartowy" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_1_ProgramStartowy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="Wyjatki_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Wyjatki_2" />
       <module name="javaStartMojSkrypt" />
@@ -229,6 +234,17 @@
     </configuration>
     <configuration name="Wyjatki_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Wyjatki_3" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_Obiekty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Wyjatki_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Wyjatki_4" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -280,19 +296,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ProgramStartowy" />
       <item itemvalue="Application.Obiekty_1" />
       <item itemvalue="Application.Obiekty_2" />
       <item itemvalue="Application.Wyjatki_2" />
       <item itemvalue="Application.Wyjatki_3" />
+      <item itemvalue="Application.Wyjatki_4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wyjatki_4" />
         <item itemvalue="Application.Wyjatki_3" />
         <item itemvalue="Application.Wyjatki_2" />
         <item itemvalue="Application.Obiekty_2" />
         <item itemvalue="Application.Obiekty_1" />
-        <item itemvalue="Application.ProgramStartowy" />
       </list>
     </recent_temporary>
   </component>
@@ -306,13 +322,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00024" summary="PETLE">
-      <created>1527171783532</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1527171783532</updated>
     </task>
     <task id="LOCAL-00025" summary="PETLE 2">
       <created>1527172108175</created>
@@ -650,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527769219556</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Wyjatki 4_1">
+      <created>1527770174626</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1527770174626</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -666,11 +682,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32207206" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32207206" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -690,7 +706,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Argumenty metod 3" />
     <MESSAGE value="Przeciazanie metod 1" />
     <MESSAGE value="Przeciazanie metod 2" />
     <MESSAGE value="Konstruktory 1" />
@@ -715,7 +730,8 @@
     <MESSAGE value="Zgłaszanie wyjątków - instrukcja throw 1" />
     <MESSAGE value="Zgłaszanie wyjątków - instrukcja throw 2" />
     <MESSAGE value="Wyjatki 2_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyjatki 2_1" />
+    <MESSAGE value="Wyjatki 4_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyjatki 4_1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -957,6 +973,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -964,13 +987,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -984,6 +1000,13 @@
             <element signature="e#332#333#0" expanded="true" />
             <element signature="e#357#358#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
         </state>
       </provider>
     </entry>
