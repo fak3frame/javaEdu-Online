@@ -144,6 +144,11 @@ public class Obiekty_1 {
         System.out.println("\n"+"Dziedziczenie");
 
         //Klasa moze rozszerzac TYLKO 1 klasa
+        //Kazdy konstrukor posiada niejawna instrukcje super() ktora wywoluje
+        // konstrukotr bezparametrowy klasy nadrzednej, chyba ze dodamy
+        // wlasna jej deklaracje. ilosc i rodzaj rzeczy jakie wyslemy
+        // z pomoca instrukcji super(obiekt, liczba) decyduje jaki konstuktor
+        // klasy nadrzednej zostanie wywolany
 
         System.out.println("-1-");
         Pracownik prac = new Pracownik("Wlodek", "Zięba", 3000);
@@ -297,7 +302,8 @@ class Szef extends Pracownik{
         Standardowo jest wykonywana niejawna instukcja super() czyli wywolanie konstruktora
           bezparamtrowego klasy nadrzednej
          Najbardziej optymalna opcja jest deklaracja tylko premii na wartosc 0 poniewaz
-          niejawnie wywoluje sie konstruktor klasy nadrzednej ktor ustawia wartosci na domyslne
+          niejawnie wywoluje sie konstruktor klasy nadrzednej super() ktor ustawia wartosci
+          na domyslne
         */
         this.nazwisko="";
         this.wyplata=0;
