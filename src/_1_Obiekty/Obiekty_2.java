@@ -1,5 +1,8 @@
 package _1_Obiekty;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -77,6 +80,44 @@ public class Obiekty_2 {
             System.out.println("Niepoprawrny rozmiar tablicy, rozmaiar tablicy" +
                     " to : "+tab.length+", wystapil blad : "+ex.getMessage());
         }
+
+        //z wykorzystaniem bufferedReader i pobieraniem az do skutku
+        BufferedReader odczyt = new BufferedReader(new InputStreamReader(System.in));
+        boolean czyPoprawne = false;
+        int index2 = -1;
+
+        while(!czyPoprawne){// dopuki nie zmieni sie z false na true lub true na false
+            // w moim przypadku oczekuje zmiany na true                                                                                         !
+            try{
+                System.out.println("Podaj index tablicy 0-2");
+                index2 = Integer.parseInt(odczyt.readLine());
+                //probuje przyjac liczbe i zrzutowac ja do int
+                // gdy podam np litere powstanie blad i bedzie szukalo obslugi
+                // nie przypisujac zmiennej index wartosci
+            }
+            catch (NumberFormatException ex){
+                System.out.println("Niepoprawne dane! " +
+                        "\n Który element tablicy chcesz zobaczyć: ");
+                //gdy podam np litere
+            }
+            catch (IOException ex){
+                System.out.println("Błąd odczytu danych");
+            }
+            czyPoprawne = index2 == -1? false : true;
+            //jesli index bedzie wynosil -1 (czyli pozostanie niezmieniony)
+            // ustawiona zostanie wartosc false czyli nie wyjdzie z while
+            //gdy try pryjmie jakas wartosc liczbowa (niewazne czy z zakresu tab)
+            // to wyjdzie index zmieni wartosc przez co ustawi sie na true i wyjdzie
+            // z while, kolejny blok try/catch sprawdza czy index zawiera sie przedziale
+            // rozmiaru tablicy
+        }
+        try{
+            System.out.println(tab[index2]);
+        }
+        catch (ArrayIndexOutOfBoundsException ex){
+            System.out.println("Niepoprawny parametr, rozmiar tablicy to: "+tab.length);
+        }
+
     }
 }
 
@@ -122,4 +163,4 @@ class Product {
         return Objects.hash(name, price, numer);
     }
 }
-//------------Wyjątki - blok try catch----------------------
+
