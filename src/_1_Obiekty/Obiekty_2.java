@@ -9,7 +9,7 @@ public class Obiekty_2 {
         System.out.println("\n"+"Metoda hashCode()");
         /*
         Metoda hashCode() służy do zwrócenia unikalnej wartości liczbowej
-         (typu int) dla każdego unikalnego obiektu. Gdy poruwnuje dwa
+         (typu int) dla każdego unikalnego obiektu. Gdy porownuje dwa
          obiekty za pomoca metody equals() i zwraca true znaczy ze metoda
          hashCode() powinna zwraca taka sama wartosc.
 
