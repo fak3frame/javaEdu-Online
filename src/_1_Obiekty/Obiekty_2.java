@@ -3,11 +3,13 @@ package _1_Obiekty;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.sql.SQLException;
 import java.util.Objects;
 import java.util.Scanner;
 
 public class Obiekty_2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //------------Metoda hashCode()----------------------
 
         System.out.println("\n"+"Metoda hashCode()");
@@ -122,9 +124,52 @@ public class Obiekty_2 {
         //------------Zgłaszanie wyjątków - instrukcja throw----------------------
 
         System.out.println("\n"+"Zgłaszanie wyjątków - instrukcja throw");
+        /*
+        Uzywamy tego gdy mamy wyjatki ktorych nie da sie obsluzyc lub ich obsluga
+         nie ma sensu lub wystapienie ich moze spowodowac nieporzadana prace
+         programu
+        Wyjatki sa obiektami i tworzymy je instrukcja new
+        Na poczatku deklarujemy jakie typy wyjatkow nasza metoda mozer zwracac
+         za pomoca instrukcjio throws. wymieniamy je po przecinku.
+        W kodzie metody zazwyczaj zglaszamy je w instrukcji if korzystajac z
+         throw
 
+        Wyjatki mozemy podzielic na te niewymagajce obslugi np:
+         NullPointerException, NumberFormatException, ClassCastException czy
+         IndexOutOfBoundsException ... - grupa wyjatkow RuntimeException
+        Oraz na wyjatki wymagajace obslugi IOException, SQLException czy
+         MalformedURLException ...
+        Wszystkie wyjatki naleza do grupy Throwable bledy Error
+         np(OutOfMemoryException) ktore generowane sa przez maszyne wirtualna
+         albo srodowisko, ich obsluga nie ma sensu.
+        */
+        Obiekty_2 o = new Obiekty_2();
+        //na poczatku wyrzuci mi blad jesli nie dodam obslugi wyjatku IOException
+        // do main, a nastepnie ze trzeba go przechwycic w bloku try catch
+        try {
+            o.obslugaWyjatku();
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        } catch (NumberFormatException e){
+            System.out.println(e.getMessage());
+        }
 
-
+    }
+    public void obslugaWyjatku() throws ArithmeticException, IOException, NumberFormatException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int x,y;
+        System.out.println("Podaj dzielna: ");
+        x = Integer.parseInt(br.readLine());
+        System.out.println("Podaj dzielnik: ");
+        y = Integer.parseInt(br.readLine());
+        if(y == 0){
+            throw new ArithmeticException("Nie mozna dzielic przez 0!");
+        }
+        else{
+            System.out.println(x/(double)y);
+        }
     }
 }
 
