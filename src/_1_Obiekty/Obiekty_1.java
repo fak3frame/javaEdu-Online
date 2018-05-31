@@ -184,9 +184,11 @@ public class Obiekty_1 {
          referencji jak i typ obiektu muszą być zgodne - użycie interfejsu wydaje
          się wtedy zbędne"
         Klasa moze implementowac kilka interfejsow
+
         Wszystkie metody interfejsu są domyślnie publiczne i abstrakcyjne                                               !
         Wszystkie pola interfejsu muszą być zadeklarowane jako publiczne,
          statyczne i finalne
+
         Interfejs moze rozszerzac tylko interfejsy
         Metody interfejsu NIE moga byc zadeklarowane jako statyczne
         */
