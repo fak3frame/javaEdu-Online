@@ -27,9 +27,13 @@ public class Polimorfizm {
 
         //------Klasy abstrakcyjne----------
         /*
-        -moga zawierac metody abstrakcyjne
+        -moga zawierac metody abstrakcyjne (takie ktore klasy dziedziczace
+          musza implementowac)
         -moga zawierac stale (public static final)
         -moga zawierac swoje metody
+        -metody abstrakcyjne nie moga byc statyczne poniewaz nie podiadaja
+          implementacji
+        -nie da sie tworzyc ich instacji
         */
     }
 }
@@ -65,5 +69,30 @@ class B implements A{
     }
     public void y(){
 
+    }
+}
+
+//------Klasy abstrakcyjne----------
+abstract class Emeryt{
+    public static final int ILOSC_OCZU = 2;//stala
+    public abstract String krzyczNaDzieci();
+    //metoda abstrakcyjna bez ciała
+    public void biegnijDoKlepiu(int odleglosc, int predkosc){
+        double czas = (double)odleglosc / predkosc;
+        System.out.println("czas: "+czas);
+    }
+}
+class Dziadek extends Emeryt{
+    @Override
+    public String krzyczNaDzieci() { //musze zaimplementowac
+        return null;
+    }
+
+    @Override
+    public void biegnijDoKlepiu(int odleglosc, int predkosc) {
+        //moge ja nadpisac
+
+        super.biegnijDoKlepiu(odleglosc, predkosc);
+        //wywoluje metode klasy abstrakcyjnej bez jej zmiany
     }
 }
