@@ -37,18 +37,9 @@ public class Wyjatki_4 {
             o.jakasMetodaZCheckedException();
         }
         catch (IOException e){
-            e.printStackTrace();
+            e.printStackTrace(); //metoda pokazuje stos wywolania
         }
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
-        System.out.println("costam");
+
     }
 
     public int pokazLiczbeSekund(int godziny){
@@ -59,6 +50,7 @@ public class Wyjatki_4 {
         return godziny*60*60;
     }
     public void jakasMetodaZCheckedException()throws IOException{
+        //ta metoda wyrzuca wyjatek checked czyli taki jaki musiby obluzyc
         throw new IOException();
     }
 }
