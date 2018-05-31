@@ -156,6 +156,7 @@ public class Obiekty_2 {
             System.out.println(e.getMessage());
         }
 
+
     }
     public void obslugaWyjatku() throws ArithmeticException, IOException, NumberFormatException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -171,6 +172,8 @@ public class Obiekty_2 {
             System.out.println(x/(double)y);
         }
     }
+
+
 }
 
 //------------Metoda hashCode()----------------------

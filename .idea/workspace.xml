@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" afterDir="false" />
     </list>
@@ -47,14 +48,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="121" column="68" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+            <state relative-caret-position="455">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wyjatki_2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -84,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" />
       </list>
     </option>
   </component>
@@ -126,13 +137,6 @@
               <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
-              <item name="Obiekty_2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_1_ProgramStartowy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -162,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Obiekty_2">
+  <component name="RunManager" selected="Application.Wyjatki_2">
     <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
       <module name="javaStartMojSkrypt" />
@@ -192,6 +196,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_1_ProgramStartowy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Wyjatki_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Wyjatki_2" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_Obiekty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,9 +256,11 @@
       <item itemvalue="Application.ProgramStartowy" />
       <item itemvalue="Application.Obiekty_1" />
       <item itemvalue="Application.Obiekty_2" />
+      <item itemvalue="Application.Wyjatki_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wyjatki_2" />
         <item itemvalue="Application.Obiekty_2" />
         <item itemvalue="Application.Obiekty_1" />
         <item itemvalue="Application.ProgramStartowy" />
@@ -260,20 +277,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00021" summary="ZAPIS I ODCZYT Z PLIKOW 2">
-      <created>1527164781751</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1527164781751</updated>
-    </task>
-    <task id="LOCAL-00022" summary="ZAPIS I ODCZYT Z PLIKOW 3">
-      <created>1527169703297</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1527169703297</updated>
     </task>
     <task id="LOCAL-00023" summary="ZAPIS I ODCZYT Z PLIKOW 4">
       <created>1527170005953</created>
@@ -604,7 +607,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527755652725</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Zgłaszanie wyjątków - instrukcja throw 1">
+      <created>1527756885416</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1527756885416</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Zgłaszanie wyjątków - instrukcja throw 2">
+      <created>1527768342504</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1527768342504</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -620,11 +637,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32207206" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32207206" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -644,8 +661,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Obiekty 7" />
-    <MESSAGE value="Argumenty metod 1" />
     <MESSAGE value="Argumenty metod 2" />
     <MESSAGE value="Argumenty metod 3" />
     <MESSAGE value="Przeciazanie metod 1" />
@@ -669,7 +684,9 @@
     <MESSAGE value="Wyjątki - blok try catch" />
     <MESSAGE value="Wyjątki - blok try catch 2" />
     <MESSAGE value="Wyjątki - blok try catch 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyjątki - blok try catch 3" />
+    <MESSAGE value="Zgłaszanie wyjątków - instrukcja throw 1" />
+    <MESSAGE value="Zgłaszanie wyjątków - instrukcja throw 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zgłaszanie wyjątków - instrukcja throw 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -913,11 +930,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="121" column="68" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+        <state relative-caret-position="455">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
