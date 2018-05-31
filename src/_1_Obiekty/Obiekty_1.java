@@ -390,7 +390,7 @@ class Pielegniarka extends Pracownik2{
 
     public Pielegniarka(String imie, String nazwisko, double wyplata, int nadgodziny) {
         //konstruktor ustawiacy
-        super(imie, nazwisko, wyplata);
+        super(imie, nazwisko, wyplata);//wywoluje konstruktor 3-param klasy nadrzednej
         this.nadgodziny = nadgodziny;
     }
 
@@ -401,7 +401,7 @@ class Pielegniarka extends Pracownik2{
 
     @Override
     public void pokazCos() {
-        super.pokazCos(); //wywolanie metody super z metoda nie musi byc na poczatku
+        super.pokazCos(); //wywolanie metody super z metoda, nie musi byc na poczatku
         System.out.println("Pielegniarka");
         super.pokazCos();
     }
