@@ -217,6 +217,7 @@ public class ProgramStartowy {
         BigInteger bi = new BigInteger("10");//podaje w "" ale moge takze w formie liczby
         // BigInteger bi4 = BigInteger.valueOf(123534);                                                                 !
         // lecz tylko w zakresie long poniewaz wykorzystywana jest konwersja valueOf()
+        // *dla stringa zamiana int wyglada Interger.toString(liczba)
 
         //operacje na wielkich liczbach:
         BigInteger bi2 = BigInteger.valueOf(5);
