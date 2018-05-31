@@ -18,7 +18,7 @@ public class Obiekty_2 {
          hashCode() powinna zwraca taka sama wartosc.
 
         Metoda hashCode() jest dziedziczona z klasy Object i jesli jej nie
-         nadpiszemy to zwroci ona rozne wartosci dla identycznych pod wzgledem
+         nadpiszemy to zwroci ona rozne wartosci dla identycznych pod wzgledem,
          wartosci pol obiektow!
 
         Sluzy ona do wylicznia zwracanej wartosci adresu obiektu. ta sama wartosc
