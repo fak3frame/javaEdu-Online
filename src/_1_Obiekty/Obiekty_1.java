@@ -184,7 +184,7 @@ public class Obiekty_1 {
          referencji jak i typ obiektu muszą być zgodne - użycie interfejsu wydaje
          się wtedy zbędne"
         Klasa moze implementowac kilka interfejsow
-        Wszystkie metody interfejsu są domyślnie publiczne i abstrakcyjne
+        Wszystkie metody interfejsu są domyślnie publiczne i abstrakcyjne                                               !
         Wszystkie pola interfejsu muszą być zadeklarowane jako publiczne,
          statyczne i finalne
         Interfejs moze rozszerzac tylko interfejsy
@@ -194,6 +194,11 @@ public class Obiekty_1 {
         //Moge wykorzystac polmorfizm do tworzenia obiektow:
         Pojazd samochod = new Samochod();
         Pojazd rower = new Rower();
+        ((Samochod) samochod).drift(); //przez polimorfizm aby odwolac sie do
+        // "unikalnej" metody klasy (takiej ktorej nie ma w intefejsie) musze
+        // wykorzystac rzutowanie - trace na polimorfizmie
+        Samochod samochod1 = new Samochod();
+        samochod1.drift(); //bez polimorfizmu nie musze rzutowac
 
 
         //-------Dziedziczenie  2 + instrukcja super()-------------------

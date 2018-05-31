@@ -34,8 +34,8 @@
       <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2969">
-              <caret line="288" selection-start-line="288" selection-end-line="288" />
+            <state relative-caret-position="502">
+              <caret line="200" column="64" selection-start-line="200" selection-start-column="64" selection-end-line="200" selection-end-column="64" />
               <folding>
                 <element signature="e#9567#9568#0" expanded="true" />
                 <element signature="e#9607#9608#0" expanded="true" />
@@ -245,20 +245,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00012" summary="FUNKCJE MATEMATYCZNE I WIELKIE LICZBY 3">
-      <created>1527094314597</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1527094314597</updated>
-    </task>
-    <task id="LOCAL-00013" summary="FUNKCJE MATEMATYCZNE I WIELKIE LICZBY 4">
-      <created>1527094801803</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1527094801803</updated>
     </task>
     <task id="LOCAL-00014" summary="KONWERSJA I RZUTOWNIE TYPOW">
       <created>1527095639048</created>
@@ -589,7 +575,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527749536216</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Poprawki Obiekty 1_2">
+      <created>1527749932112</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1527749932112</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Poprawki Obiekty 1_3">
+      <created>1527750104477</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1527750104477</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -598,17 +598,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32709113" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" weight="0.32459426" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" weight="0.3243243" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -622,15 +623,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32709113" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Poprawki postawy 1" />
-    <MESSAGE value="Poprawki postawy 2" />
     <MESSAGE value="Poprawki postawy 3" />
     <MESSAGE value="Poprawki postawy 4" />
     <MESSAGE value="Poprawki postawy 5" />
@@ -654,7 +652,9 @@
     <MESSAGE value="hashCode i equals 2" />
     <MESSAGE value="Poprawki progtam startowy" />
     <MESSAGE value="Poprawki Obiekty 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawki Obiekty 1" />
+    <MESSAGE value="Poprawki Obiekty 1_2" />
+    <MESSAGE value="Poprawki Obiekty 1_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawki Obiekty 1_3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,8 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2969">
-          <caret line="288" selection-start-line="288" selection-end-line="288" />
+        <state relative-caret-position="502">
+          <caret line="200" column="64" selection-start-line="200" selection-start-column="64" selection-end-line="200" selection-end-column="64" />
           <folding>
             <element signature="e#9567#9568#0" expanded="true" />
             <element signature="e#9607#9608#0" expanded="true" />
