@@ -221,6 +221,24 @@ public class Obiekty_1 {
         pielegniarka.pokazCos();
 
 
+        //-------Metody o zmiennej liczbie argumentów (varargs)----------------
+
+        /*
+        Deklaracja:
+        public int sumujLiczby(int...tab){
+          int suma = 0;
+          for(int x : tab){
+                suma+=x;
+          }
+          return suma;
+        }
+         */
+        System.out.println("\n"+"Metody o zmiennej liczbie argumentów (varargs)");
+        Lekarz l1 = new Lekarz();
+        int suma = 0;
+        suma = l1.sumujLiczby(3,4,5,6,7); //25
+        System.out.println(suma);
+
     }
 }
 
@@ -424,4 +442,16 @@ class Lekarz extends Pracownik2{
     public void setPremia(double d){
         premia = d;
     }
+
+
+    //-------Metody o zmiennej liczbie argumentów (varargs)---------------
+
+    public int sumujLiczby(int...tab){
+        int suma = 0;
+        for(int x : tab){
+            suma+=x;
+        }
+        return suma;
+    }
+
 }

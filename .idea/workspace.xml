@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Polimorfizm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Polimorfizm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +25,8 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4479">
-              <caret line="223" column="27" lean-forward="true" selection-start-line="223" selection-start-column="27" selection-end-line="223" selection-end-column="27" />
+            <state relative-caret-position="294">
+              <caret line="416" column="9" selection-start-line="416" selection-start-column="9" selection-end-line="416" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,16 +85,20 @@
       <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="190" selection-start-line="190" selection-end-line="190" />
+            <state relative-caret-position="657">
+              <caret line="238" column="46" selection-start-line="238" selection-start-column="46" selection-end-line="238" selection-end-column="46" />
+              <folding>
+                <element signature="e#14854#14855#0" expanded="true" />
+                <element signature="e#14883#14884#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Polimorfizm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Polimorfizm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Polimorfizm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1280">
+            <state relative-caret-position="821">
               <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
               <folding>
                 <element signature="e#923#924#0" expanded="true" />
@@ -102,6 +108,15 @@
                 <element signature="e#2126#2127#0" expanded="true" />
                 <element signature="e#2153#2154#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfaceList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -128,13 +143,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ProgramStartowy.java" />
-        <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java" />
-        <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Polimorfizm.java" />
+        <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
       </list>
     </option>
   </component>
@@ -170,21 +185,13 @@
               <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
-              <item name="Obiekty_1.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
-              <item name="Obiekty_2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_1_ProgramStartowy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PrzydatneKlasy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -213,9 +220,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Polimorfizm">
-    <configuration name="Obiekty_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_2" />
+  <component name="RunManager" selected="Application.Obiekty_1">
+    <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -311,19 +318,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Obiekty_2" />
       <item itemvalue="Application.Wyjatki_2" />
       <item itemvalue="Application.Wyjatki_3" />
       <item itemvalue="Application.Wyjatki_4" />
       <item itemvalue="Application.Polimorfizm" />
+      <item itemvalue="Application.Obiekty_1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Obiekty_1" />
         <item itemvalue="Application.Polimorfizm" />
         <item itemvalue="Application.Wyjatki_4" />
         <item itemvalue="Application.Wyjatki_3" />
         <item itemvalue="Application.Wyjatki_2" />
-        <item itemvalue="Application.Obiekty_2" />
       </list>
     </recent_temporary>
   </component>
@@ -337,20 +344,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00030" summary="ZAKRES WYDOCZNOSCI ZMIENNYCH 2">
-      <created>1527175085951</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1527175085951</updated>
-    </task>
-    <task id="LOCAL-00031" summary="PETLE 4">
-      <created>1527175306103</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1527175306103</updated>
     </task>
     <task id="LOCAL-00032" summary="BAINARNY ZAPIS I ODCZYT PLIKOW">
       <created>1527178097001</created>
@@ -681,7 +674,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527776543154</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Klasy Abstrakcyjne 2">
+      <created>1527777187524</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1527777187524</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Klasy Abstrakcyjne 3">
+      <created>1527778507557</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1527778507557</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -721,8 +728,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dziedziczenie 2" />
-    <MESSAGE value="Dziedziczenie 3" />
     <MESSAGE value="Dziedziczenie 4" />
     <MESSAGE value="hashCode i equals" />
     <MESSAGE value="hashCode i equals 2" />
@@ -746,7 +751,9 @@
     <MESSAGE value="Wyjatki 4_4" />
     <MESSAGE value="Polimorfizm 1" />
     <MESSAGE value="Klasy Abstrakcyjne 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Klasy Abstrakcyjne 1" />
+    <MESSAGE value="Klasy Abstrakcyjne 2" />
+    <MESSAGE value="Klasy Abstrakcyjne 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Klasy Abstrakcyjne 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -965,16 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4479">
-          <caret line="223" column="27" lean-forward="true" selection-start-line="223" selection-start-column="27" selection-end-line="223" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1026,16 +1023,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Polimorfizm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
+        <state relative-caret-position="821">
           <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
           <folding>
             <element signature="e#923#924#0" expanded="true" />
@@ -1045,6 +1035,34 @@
             <element signature="e#2126#2127#0" expanded="true" />
             <element signature="e#2153#2154#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="416" column="9" selection-start-line="416" selection-start-column="9" selection-end-line="416" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="238" column="46" selection-start-line="238" selection-start-column="46" selection-end-line="238" selection-end-column="46" />
+          <folding>
+            <element signature="e#14854#14855#0" expanded="true" />
+            <element signature="e#14883#14884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
