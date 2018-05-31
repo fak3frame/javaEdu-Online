@@ -208,7 +208,7 @@ public class Obiekty_1 {
          np. super("","",0); wywola mi 3-param. konstruktor klasy nadrzednej
         Instrukcja super() musi byc ZAWSZE na poczatku w konstruktorze
         Zawsze dodawana jest automatycznie instukcja niejawna super(); w kazdym
-         konstruktorze
+         konstruktorze chyba ze zadeklaruje wlasna
 
         Wywolanie metody z klasy nadrzednej uzywamy z "." np. super.metoda();
          i nie musi byc ona juz na poczatku deklracji metody
