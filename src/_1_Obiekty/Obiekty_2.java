@@ -1,6 +1,7 @@
 package _1_Obiekty;
 
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Obiekty_2 {
     public static void main(String[] args) {
@@ -22,13 +23,13 @@ public class Obiekty_2 {
 
         Deklaracja metody equals - public boolean equals(Object o)
 
-        W tej metodzie musze sprawdzicz czy wywoluje ja na tym samym obiekcie
+        W tej metodzie musze sprawdzic:
+        -czy wywoluje ja na tym samym obiekcie
          if(this == o){
             return true;
          }
 
-        Musze takze sprawdzic czy sa tej samej klasy lub czy sprawdzam obiekt z
-         obiektem pustym
+        -czy sprawdzam obiekt z obiektem pustym lub czy sa tej samej klasy
         if (o == null || getClass() != o.getClass()){
             return false;
         }
@@ -36,9 +37,9 @@ public class Obiekty_2 {
         Przydatne jest tez rzutownie w finalnym sprawdzeniu poniewaz metoda
          przyjmuje obiekt klasy Object a wiemy juz ze jest on tej samej klasy
          co obiekt na ktorym ja wywolujemy
-        Product product = (Product) o;
+        Product product = (Product) o;                                                                                  !
 
-        Na koncu sprawdznie
+        -na koncu sprawdznie
         return Double.compare(product.price, price) == 0 &&
                 numer == product.numer &&
                 Objects.equals(name, product.name);
@@ -52,7 +53,7 @@ public class Obiekty_2 {
 
         Metoda hashCode ma prosta budowe
         public int hashCode() {
-            return Objects.hash(name, price, numer);
+            return Objects.hash(name, price, numer); //zmienne do porownania
         }
         */
         Product prod1 = new Product("Czekolada", 2.99);
@@ -60,8 +61,26 @@ public class Obiekty_2 {
         System.out.println(prod1.equals(prod2)); //pokaze ze sa rowne po deklaracji
         System.out.println(prod1.hashCode());
         System.out.println(prod2.hashCode());
+
+
+        //------------Wyjątki - blok try catch----------------------
+
+        System.out.println("\n"+"Metoda hashCode()");
+        int[] tab = {1,2,3};
+        Scanner wczytaj = new Scanner(System.in);
+        System.out.println("Podaj index tablicy 0-2");
+        int index = wczytaj.nextInt();
+        try{
+            System.out.println(tab[index]);
+        }
+        catch (ArrayIndexOutOfBoundsException ex){
+            System.out.println("Niepoprawrny rozmiar tablicy, rozmaiar tablicy" +
+                    " to : "+tab.length+", wystapil blad : "+ex.getMessage());
+        }
     }
 }
+
+//------------Metoda hashCode()----------------------
 class Product {
     private String name;
     private double price;
@@ -103,3 +122,4 @@ class Product {
         return Objects.hash(name, price, numer);
     }
 }
+//------------Wyjątki - blok try catch----------------------

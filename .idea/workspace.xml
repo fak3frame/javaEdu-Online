@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +32,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="210" column="50" selection-start-line="210" selection-start-column="50" selection-end-line="210" selection-end-column="50" />
+            <state relative-caret-position="6222">
+              <caret line="374" column="40" lean-forward="true" selection-start-line="374" selection-start-column="40" selection-end-line="374" selection-end-column="40" />
               <folding>
                 <element signature="e#9567#9568#0" expanded="true" />
                 <element signature="e#9607#9608#0" expanded="true" />
+                <element signature="e#12557#12558#0" expanded="true" />
+                <element signature="e#12604#12605#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="757">
+              <caret line="77" column="75" selection-start-line="77" selection-start-column="75" selection-end-line="77" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,9 +81,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ProgramStartowy.java" />
-        <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
       </list>
     </option>
   </component>
@@ -111,13 +126,6 @@
               <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_1_Obiekty" type="462c0819:PsiDirectoryNode" />
-              <item name="Obiekty_2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_1_ProgramStartowy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -147,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Obiekty_1">
+  <component name="RunManager" selected="Application.Obiekty_2">
     <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
       <module name="javaStartMojSkrypt" />
@@ -229,8 +237,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Obiekty_1" />
         <item itemvalue="Application.Obiekty_2" />
+        <item itemvalue="Application.Obiekty_1" />
         <item itemvalue="Application.ProgramStartowy" />
       </list>
     </recent_temporary>
@@ -245,27 +253,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00015" summary="PODSTAWOWE WEJSCIE / WYJSCIE">
-      <created>1527095724739</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1527095724739</updated>
-    </task>
-    <task id="LOCAL-00016" summary="ZAPIS I KONWENCJA NAZEWNICTWA">
-      <created>1527097316573</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1527097316573</updated>
-    </task>
-    <task id="LOCAL-00017" summary="PODSTAWOWE TERMINY">
-      <created>1527097384236</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1527097384236</updated>
     </task>
     <task id="LOCAL-00018" summary="PODSTAWOWE TERMINY 2">
       <created>1527097737393</created>
@@ -589,7 +576,28 @@
       <option name="project" value="LOCAL" />
       <updated>1527750566177</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Poprawki Obiekty 1_5">
+      <created>1527750677050</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1527750677050</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Poprawki Obiekty 1_6">
+      <created>1527750884337</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1527750884337</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Poprawki Obiekty 2_1">
+      <created>1527750941733</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1527750941733</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -609,7 +617,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1844358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -629,9 +637,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Poprawki postawy 4" />
-    <MESSAGE value="Poprawki postawy 5" />
-    <MESSAGE value="Poprawki postawy 6" />
     <MESSAGE value="Obiekty 4" />
     <MESSAGE value="Obiekty 5" />
     <MESSAGE value="Obiekty 6" />
@@ -654,7 +659,10 @@
     <MESSAGE value="Poprawki Obiekty 1_2" />
     <MESSAGE value="Poprawki Obiekty 1_3" />
     <MESSAGE value="Poprawki Obiekty 1_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawki Obiekty 1_4" />
+    <MESSAGE value="Poprawki Obiekty 1_5" />
+    <MESSAGE value="Poprawki Obiekty 1_6" />
+    <MESSAGE value="Poprawki Obiekty 2_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawki Obiekty 2_1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,32 +891,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="6222">
+          <caret line="374" column="40" lean-forward="true" selection-start-line="374" selection-start-column="40" selection-end-line="374" selection-end-column="40" />
           <folding>
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3311#3312#0" expanded="true" />
+            <element signature="e#9567#9568#0" expanded="true" />
+            <element signature="e#9607#9608#0" expanded="true" />
+            <element signature="e#12557#12558#0" expanded="true" />
+            <element signature="e#12604#12605#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="210" column="50" selection-start-line="210" selection-start-column="50" selection-end-line="210" selection-end-column="50" />
+        <state relative-caret-position="757">
+          <caret line="77" column="75" selection-start-line="77" selection-start-column="75" selection-end-line="77" selection-end-column="75" />
           <folding>
-            <element signature="e#9567#9568#0" expanded="true" />
-            <element signature="e#9607#9608#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
