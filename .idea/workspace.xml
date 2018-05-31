@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,11 +60,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wyjatki_2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wyjatki_2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="136">
+              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wyjatki_3.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java" />
       </list>
     </option>
   </component>
@@ -166,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Wyjatki_2">
+  <component name="RunManager" selected="Application.Wyjatki_3">
     <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
       <module name="javaStartMojSkrypt" />
@@ -202,6 +218,17 @@
     </configuration>
     <configuration name="Wyjatki_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Wyjatki_2" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_Obiekty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Wyjatki_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Wyjatki_3" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -257,9 +284,11 @@
       <item itemvalue="Application.Obiekty_1" />
       <item itemvalue="Application.Obiekty_2" />
       <item itemvalue="Application.Wyjatki_2" />
+      <item itemvalue="Application.Wyjatki_3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wyjatki_3" />
         <item itemvalue="Application.Wyjatki_2" />
         <item itemvalue="Application.Obiekty_2" />
         <item itemvalue="Application.Obiekty_1" />
@@ -277,13 +306,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00023" summary="ZAPIS I ODCZYT Z PLIKOW 4">
-      <created>1527170005953</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1527170005953</updated>
     </task>
     <task id="LOCAL-00024" summary="PETLE">
       <created>1527171783532</created>
@@ -621,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527768342504</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Wyjatki 2_1">
+      <created>1527769219556</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1527769219556</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -661,7 +690,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Argumenty metod 2" />
     <MESSAGE value="Argumenty metod 3" />
     <MESSAGE value="Przeciazanie metod 1" />
     <MESSAGE value="Przeciazanie metod 2" />
@@ -686,7 +714,8 @@
     <MESSAGE value="Wyjątki - blok try catch 3" />
     <MESSAGE value="Zgłaszanie wyjątków - instrukcja throw 1" />
     <MESSAGE value="Zgłaszanie wyjątków - instrukcja throw 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zgłaszanie wyjątków - instrukcja throw 2" />
+    <MESSAGE value="Wyjatki 2_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyjatki 2_1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -940,8 +969,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="136">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
