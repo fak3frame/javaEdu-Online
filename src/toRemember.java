@@ -121,6 +121,8 @@ public class toRemember {
         ((Programista) p1).setLinieKodu(350);
 
         Pracownik p2 = new Programista(((Programista)p1)); //kopiuje
+        System.out.println("p2: "+p2);
+
         p2.pracuj(); //metoda interfejsu ktory implementuje klasa abstr. Pracownik
         // ktora rozszerza Programista
         ((Programista) p2).piszKod();//teraz musze wykonac rzutownie
@@ -128,8 +130,6 @@ public class toRemember {
         // w klasie nadrzednej/badz interf. ktory implementuje
         //Musze wiec rzutowac jesli wywoluje cos cos czego nie ma w TYPIE obiektu
         // badz "nizej"
-        System.out.println("p2: "+p2);
-
 
 
 
