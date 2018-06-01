@@ -142,6 +142,7 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     }
     Programista(int zarobki, int linieKodu){
         super(zarobki); //niejawnie wykonaloby sie samo super()
+        // ustawiajac zarobki na 0 wg konstruktora bezparam. Pracownika
         this.linieKodu = linieKodu;
     }
     Programista(Programista p){

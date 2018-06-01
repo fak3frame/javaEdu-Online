@@ -23,16 +23,22 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+            <state relative-caret-position="255">
+              <caret line="150" column="5" lean-forward="true" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2577#2578#0" expanded="true" />
                 <element signature="e#2613#2614#0" expanded="true" />
                 <element signature="e#2637#2638#0" expanded="true" />
                 <element signature="e#2667#2668#0" expanded="true" />
+                <element signature="e#3469#3470#0" expanded="true" />
+                <element signature="e#3509#3510#0" expanded="true" />
                 <element signature="e#2690#2691#0" expanded="true" />
                 <element signature="e#2728#2729#0" expanded="true" />
+                <element signature="e#3795#3796#0" expanded="true" />
+                <element signature="e#3827#3828#0" expanded="true" />
+                <element signature="e#3873#3874#0" expanded="true" />
+                <element signature="e#3915#3916#0" expanded="true" />
                 <element signature="e#3438#3439#0" expanded="true" />
                 <element signature="e#3506#3507#0" expanded="true" />
                 <element signature="e#3323#3324#0" expanded="true" />
@@ -47,8 +53,8 @@
       <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7038">
-              <caret line="428" column="6" selection-start-line="428" selection-start-column="6" selection-end-line="428" selection-end-column="6" />
+            <state relative-caret-position="-1085">
+              <caret line="269" selection-start-line="269" selection-end-line="269" />
             </state>
           </provider>
         </entry>
@@ -301,20 +307,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Poprawki postawy 1">
-      <created>1527614925777</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1527614925777</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Poprawki postawy 4">
-      <created>1527614995427</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1527614995427</updated>
     </task>
     <task id="LOCAL-00040" summary="Poprawki postawy 5">
       <created>1527686219479</created>
@@ -645,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527879667206</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="toRemember 5">
+      <created>1527881178151</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1527881178151</updated>
+    </task>
+    <task id="LOCAL-00088" summary="toRemember 6">
+      <created>1527881908768</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1527881908768</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -685,8 +691,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Poprawki Obiekty 1_3" />
-    <MESSAGE value="Poprawki Obiekty 1_4" />
     <MESSAGE value="Poprawki Obiekty 1_5" />
     <MESSAGE value="Poprawki Obiekty 1_6" />
     <MESSAGE value="Poprawki Obiekty 2_1" />
@@ -710,11 +714,13 @@
     <MESSAGE value="toRemember 2" />
     <MESSAGE value="toRemember 3" />
     <MESSAGE value="toRemember 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 4" />
+    <MESSAGE value="toRemember 5" />
+    <MESSAGE value="toRemember 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1029,23 +1035,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7038">
-          <caret line="428" column="6" selection-start-line="428" selection-start-column="6" selection-end-line="428" selection-end-column="6" />
+        <state relative-caret-position="-1085">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+        <state relative-caret-position="255">
+          <caret line="150" column="5" lean-forward="true" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2577#2578#0" expanded="true" />
             <element signature="e#2613#2614#0" expanded="true" />
             <element signature="e#2637#2638#0" expanded="true" />
             <element signature="e#2667#2668#0" expanded="true" />
+            <element signature="e#3469#3470#0" expanded="true" />
+            <element signature="e#3509#3510#0" expanded="true" />
             <element signature="e#2690#2691#0" expanded="true" />
             <element signature="e#2728#2729#0" expanded="true" />
+            <element signature="e#3795#3796#0" expanded="true" />
+            <element signature="e#3827#3828#0" expanded="true" />
+            <element signature="e#3873#3874#0" expanded="true" />
+            <element signature="e#3915#3916#0" expanded="true" />
             <element signature="e#3438#3439#0" expanded="true" />
             <element signature="e#3506#3507#0" expanded="true" />
             <element signature="e#3323#3324#0" expanded="true" />
