@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+            <state relative-caret-position="187">
+              <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2577#2578#0" expanded="true" />
@@ -35,16 +35,20 @@
                 <element signature="e#3509#3510#0" expanded="true" />
                 <element signature="e#2690#2691#0" expanded="true" />
                 <element signature="e#2728#2729#0" expanded="true" />
+                <element signature="e#4170#4171#0" expanded="true" />
+                <element signature="e#4234#4235#0" expanded="true" />
                 <element signature="e#3795#3796#0" expanded="true" />
                 <element signature="e#3827#3828#0" expanded="true" />
                 <element signature="e#3873#3874#0" expanded="true" />
                 <element signature="e#3915#3916#0" expanded="true" />
-                <element signature="e#3438#3439#0" expanded="true" />
-                <element signature="e#3506#3507#0" expanded="true" />
+                <element signature="e#5121#5122#0" expanded="true" />
+                <element signature="e#5188#5189#0" expanded="true" />
                 <element signature="e#3323#3324#0" expanded="true" />
                 <element signature="e#3347#3348#0" expanded="true" />
-                <element signature="e#3533#3534#0" expanded="true" />
-                <element signature="e#3550#3551#0" expanded="true" />
+                <element signature="e#5318#5319#0" expanded="true" />
+                <element signature="e#5342#5343#0" expanded="true" />
+                <element signature="e#5237#5238#0" expanded="true" />
+                <element signature="e#5284#5285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +57,8 @@
       <file leaf-file-name="Obiekty_1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2615">
-              <caret line="269" selection-start-line="269" selection-end-line="269" />
+            <state relative-caret-position="176">
+              <caret line="220" column="29" selection-start-line="220" selection-start-column="21" selection-end-line="220" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -307,27 +311,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Poprawki postawy 6">
-      <created>1527686572776</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1527686572776</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Obiekty 4">
-      <created>1527687537865</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1527687537865</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Obiekty 5">
-      <created>1527688102336</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1527688102336</updated>
     </task>
     <task id="LOCAL-00044" summary="Obiekty 6">
       <created>1527688516046</created>
@@ -651,7 +634,28 @@
       <option name="project" value="LOCAL" />
       <updated>1527882090311</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="toRemember 8">
+      <created>1527882929609</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1527882929609</updated>
+    </task>
+    <task id="LOCAL-00091" summary="toRemember 9">
+      <created>1527883884797</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1527883884797</updated>
+    </task>
+    <task id="LOCAL-00092" summary="toRemember 10">
+      <created>1527883961715</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1527883961715</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -691,9 +695,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Poprawki Obiekty 1_6" />
-    <MESSAGE value="Poprawki Obiekty 2_1" />
-    <MESSAGE value="Wyjątki - blok try catch" />
     <MESSAGE value="Wyjątki - blok try catch 2" />
     <MESSAGE value="Wyjątki - blok try catch 3" />
     <MESSAGE value="Zgłaszanie wyjątków - instrukcja throw 1" />
@@ -716,7 +717,10 @@
     <MESSAGE value="toRemember 5" />
     <MESSAGE value="toRemember 6" />
     <MESSAGE value="toRemember 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 7" />
+    <MESSAGE value="toRemember 8" />
+    <MESSAGE value="toRemember 9" />
+    <MESSAGE value="toRemember 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1035,15 +1039,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2615">
-          <caret line="269" selection-start-line="269" selection-end-line="269" />
+        <state relative-caret-position="176">
+          <caret line="220" column="29" selection-start-line="220" selection-start-column="21" selection-end-line="220" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        <state relative-caret-position="187">
+          <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2577#2578#0" expanded="true" />
@@ -1054,16 +1058,20 @@
             <element signature="e#3509#3510#0" expanded="true" />
             <element signature="e#2690#2691#0" expanded="true" />
             <element signature="e#2728#2729#0" expanded="true" />
+            <element signature="e#4170#4171#0" expanded="true" />
+            <element signature="e#4234#4235#0" expanded="true" />
             <element signature="e#3795#3796#0" expanded="true" />
             <element signature="e#3827#3828#0" expanded="true" />
             <element signature="e#3873#3874#0" expanded="true" />
             <element signature="e#3915#3916#0" expanded="true" />
-            <element signature="e#3438#3439#0" expanded="true" />
-            <element signature="e#3506#3507#0" expanded="true" />
+            <element signature="e#5121#5122#0" expanded="true" />
+            <element signature="e#5188#5189#0" expanded="true" />
             <element signature="e#3323#3324#0" expanded="true" />
             <element signature="e#3347#3348#0" expanded="true" />
-            <element signature="e#3533#3534#0" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="e#5318#5319#0" expanded="true" />
+            <element signature="e#5342#5343#0" expanded="true" />
+            <element signature="e#5237#5238#0" expanded="true" />
+            <element signature="e#5284#5285#0" expanded="true" />
           </folding>
         </state>
       </provider>
