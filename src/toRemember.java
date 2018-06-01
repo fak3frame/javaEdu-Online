@@ -86,16 +86,26 @@ public class toRemember {
         }
 
         Pracownik p1 = new Programista(3000, 230);
+        Pracownik[] pracowniks_xD = new Pracownik[2];
+        pracowniks_xD[0] = new Programista(4000,400);
+        pracowniks_xD[1] = new Programista(6000, 800);
+
+
+
         System.out.println(p1);
         Programista.pokazInfo((Programista) p1);
         //musze zrzutowac bo przyjmuje obiekt jest typu Pracownik
         // a metoda przyjmuje programiste
+        // jest statyczna wiec wywoluje z nazwa klasy
         Pracownik.pokazInfo(p1);
 
         p1.getZarobki();
         p1.setZarobki(4000);
         ((Programista) p1).getLinieKodu();
         ((Programista) p1).setLinieKodu(350);
+
+        Pracownik p2 = new Programista(((Programista)p1));
+        System.out.println("p2: "+p2);
 
     }
 }
@@ -110,6 +120,9 @@ abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
     }
     Pracownik(int zarobki){
         this.zarobki = zarobki;
+    }
+    Pracownik(Pracownik p){
+        this.zarobki = p.zarobki; //konstr. kopii
     }
     int getZarobki(){return zarobki;}
 
@@ -130,6 +143,10 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     Programista(int zarobki, int linieKodu){
         super(zarobki); //niejawnie wykonaloby sie samo super()
         this.linieKodu = linieKodu;
+    }
+    Programista(Programista p){
+        super(p);
+        this.linieKodu = p.linieKodu;
     }
     public int getLinieKodu() {
         return linieKodu;
