@@ -1,3 +1,6 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
 public class toRemember {
     public static void main(String[] args) {
         String liczbaSlownie = Integer.toString(10);
@@ -37,6 +40,31 @@ public class toRemember {
         int i6 = sb.length();
         char c = sb.charAt(0);
         String  str2 = sb.substring(1);
+
+        Math.abs(9);
+        Math.pow(2,2);
+        Math.round(9.2134);
+
+        BigInteger bi = new BigInteger("1234");
+        BigInteger bi2 = BigInteger.valueOf(1234);
+        BigDecimal bd = new BigDecimal("123132.3244");
+
+        bi.add(bi2);
+        bi.subtract(bi2);
+        bi.multiply(bi2);
+        bi.divide(bi);
+
+        switch (i2){
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                System.out.println();
+        }
+
+
+
 
     }
 }
