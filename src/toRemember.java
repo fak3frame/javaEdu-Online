@@ -128,7 +128,7 @@ public class toRemember {
         ((Programista) p2).piszKod();//teraz musze wykonac rzutownie
         // poniewaz metoda jest unikalna w programiscie bez deklaracji
         // w klasie nadrzednej/badz interf. ktory implementuje
-        //Musze wiec rzutowac jesli wywoluje cos cos czego nie ma w TYPIE obiektu
+        //Musze wiec rzutowac jesli wywoluje cos czego nie ma w TYPIE obiektu
         // badz "nizej"
 
 
