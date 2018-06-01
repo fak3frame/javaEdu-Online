@@ -1,5 +1,10 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.management.BufferPoolMXBean;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class toRemember {
     public static void main(String[] args) {
@@ -63,6 +68,19 @@ public class toRemember {
                 System.out.println();
         }
 
+        if(1>2){
+            try{
+                Scanner sc = new Scanner(System.in);
+                String nazwa = sc.nextLine();
+                int liczba = sc.nextInt();
+
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                String imie = br.readLine();
+                int wiek = Integer.parseInt(br.readLine());
+            }catch (IOException ex){
+                ex.getMessage();
+            }
+        }
 
 
 
