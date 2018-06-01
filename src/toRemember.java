@@ -69,6 +69,24 @@ public class toRemember {
                 System.out.println();
         }
 
+
+
+        class Funkcje{
+            void main(){
+                int suma = sumujLiczby(1,2,3,4);
+
+            }
+            //////////////
+            int sumujLiczby(int...tab){
+                int suma = 0;
+                for(int x:tab){
+                    suma+=x;
+                }
+                return suma;
+            }
+
+        }
+
         if(1>2){
             try{
                 Scanner sc = new Scanner(System.in);
@@ -90,8 +108,6 @@ public class toRemember {
         pracowniks_xD[0] = new Programista(4000,400);
         pracowniks_xD[1] = new Programista(6000, 800);
 
-
-
         System.out.println(p1);
         Programista.pokazInfo((Programista) p1);
         //musze zrzutowac bo przyjmuje obiekt jest typu Pracownik
@@ -107,7 +123,9 @@ public class toRemember {
         Pracownik p2 = new Programista(((Programista)p1));
         System.out.println("p2: "+p2);
 
+
     }
+
 }
 interface Praca{
     public void pracuj();
