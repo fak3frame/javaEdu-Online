@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.lang.management.BufferPoolMXBean;
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -79,10 +80,73 @@ public class toRemember {
                 int wiek = Integer.parseInt(br.readLine());
             }catch (IOException ex){
                 ex.getMessage();
+            }catch (NumberFormatException ex){
+                ex.getMessage();
             }
         }
 
+        Pracownik p1 = new Programista(3000, 230);
+        System.out.println(p1);
+        Programista.pokazInfo((Programista) p1);
+        //musze zrzutowac bo przyjmuje obiekt jest typu Pracownik
+        // a metoda przyjmuje programiste
+        Pracownik.pokazInfo(p1);
 
+        p1.getZarobki();
+        p1.setZarobki(4000);
+        ((Programista) p1).getLinieKodu();
+        ((Programista) p1).setLinieKodu(350);
 
+    }
+}
+interface Praca{
+    public void pracuj();
+}
+abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
+    //metod implementowego interf. natomiast klasy dziedziczace juz tak
+    private int zarobki;
+    Pracownik(){
+        this.zarobki = 0;
+    }
+    Pracownik(int zarobki){
+        this.zarobki = zarobki;
+    }
+    int getZarobki(){return zarobki;}
+
+    public void setZarobki(int zarobki) {
+        this.zarobki = zarobki;
+    }
+    public static void pokazInfo(Pracownik p){
+        System.out.println(p.getZarobki());
+        //tutaj nie mam dostepu do zawartosci Programisty
+    }
+}
+class Programista extends Pracownik{ //nie musze implementowac interf.
+    private int linieKodu;
+    Programista(){
+        super(); //niejawnie i tak sie wykonaloby
+        this.linieKodu = 0;
+    }
+    Programista(int zarobki, int linieKodu){
+        super(zarobki); //niejawnie wykonaloby sie samo super()
+        this.linieKodu = linieKodu;
+    }
+    public int getLinieKodu() {
+        return linieKodu;
+    }
+
+    public void setLinieKodu(int linieKodu) {
+        this.linieKodu = linieKodu;
+    }
+
+    public String toString(){
+        return String.valueOf(getZarobki()) + " " + linieKodu;
+    }
+    @Override
+    public void pracuj() {
+        linieKodu++;
+    }
+    public static void pokazInfo(Programista p){
+        System.out.println(p.getZarobki()+" "+p.linieKodu);
     }
 }
