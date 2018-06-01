@@ -121,7 +121,13 @@ public class toRemember {
         ((Programista) p1).setLinieKodu(350);
 
         Pracownik p2 = new Programista(((Programista)p1));
+        p2.pracuj();
+        ((Programista) p2).piszKod();//teraz musze wykonac rzutownie
+        // poniewaz metoda jest unikalna w programiscie bez deklaracji
+        // w klasie nadrzednej/badz interf. ktory implementuje
         System.out.println("p2: "+p2);
+
+
 
 
     }
@@ -147,10 +153,15 @@ abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
     public void setZarobki(int zarobki) {
         this.zarobki = zarobki;
     }
-    public static void pokazInfo(Pracownik p){
+    public String toString(){
+        return String.valueOf(zarobki);
+    }
+    public static void pokazInfo(final Pracownik p){ //zablokowalem zmiane
+        // referencji
         System.out.println(p.getZarobki());
         //tutaj nie mam dostepu do zawartosci Programisty
     }
+
 }
 class Programista extends Pracownik{ //nie musze implementowac interf.
     private int linieKodu;
@@ -176,13 +187,16 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     }
 
     public String toString(){
-        return String.valueOf(getZarobki()) + " " + linieKodu;
+        return super.toString()+" "+String.valueOf(linieKodu);
     }
     @Override
     public void pracuj() {
         linieKodu++;
     }
-    public static void pokazInfo(Programista p){
+    public void piszKod(){
+        linieKodu+=10;
+    }
+    public static void pokazInfo(final Programista p){
         System.out.println(p.getZarobki()+" "+p.linieKodu);
     }
 }
