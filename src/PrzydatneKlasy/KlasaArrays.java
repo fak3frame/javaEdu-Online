@@ -30,23 +30,21 @@ public class KlasaArrays {
         Pracownik wlodek = new Pracownik("Wlodek", "Zieba", 2300);
 
         Pracownik[] pracownicy = {krzysiek,piotrek,kasia,wlodek};
+        //uzupelniam tablice obiektami
         mojKomparator komp = new mojKomparator();
+        //tworze obiekt komparatora ktory bedzie potrzebny w sortowniu
         Arrays.sort(pracownicy, komp);
+        //wywoluje metode sort ktora zmodyfikowalem dla wartosci wyplaty
+        pokazPracownikowPosortowanych(pracownicy);
+        //wyswietlam pracownikow z tablicy za pomoca metody toString z klasy Pracownik
 
-        /*umieszczamy naszych pracowników w tablicy
-        Pracownik[] prac = {krzysiek, piotrek, kasia, wlodek};
-        //tworzymy obiekt komparatora, który wcześniej napisaliśmy
-        mojKomparator komp = new mojKomparator();
-        //sortujemy tablicę przy użyciu komparatora
-        Arrays.sort(prac, komp);
-        //wyświetlamy posortowaną tablicę
-        wyswietl(prac);*/
     }
 
     //metoda wyświetlajca tablicę w ładnej formie
-    public static void wyswietl(Pracownik[] prac){
-        for(Pracownik p: prac)
+    public static void pokazPracownikowPosortowanych(Pracownik[] pracownicy){
+        for(Pracownik p : pracownicy){
             System.out.println(p);
+        }
     }
 }
 
@@ -84,6 +82,9 @@ class mojKomparator implements Comparator<Pracownik>{
         // od tej samej wartosci drugiego obiektu i jesli tak to
         // zwracam 1
         else if(o1.getWyplata() < o2.getWyplata()) return -1;
+        //w przeciwnym wypadku -1
         else return 0;
+        //jesli zaden warunek nie jest prawdziwy zwracam 0 co znaczy
+        // zeby nie sortowac drugiego obiektu z 1
     }
 }

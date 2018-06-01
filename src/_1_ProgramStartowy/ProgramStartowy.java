@@ -38,7 +38,7 @@ public class ProgramStartowy {
          */
         System.out.println("\n"+"-2-");
         float liczbaZm = 3.4f;//kropka + f
-        double liczbaZm2 = 3.5; // nie musi byc "d"
+        double liczbaZm2 = 3.5d; // nie musi byc "d"
         int liczba = 5;
         String mojaLiczbaSlownie = Integer.toString(liczba); //wykorzystuje klase oslonowa Integer                      !
         // posiadajaca metody takie jak toString();
