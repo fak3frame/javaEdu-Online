@@ -177,7 +177,8 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
         // ustawiajac zarobki na 0 wg konstruktora bezparam. Pracownika
         this.linieKodu = linieKodu;
     }
-    Programista(Programista p){
+    Programista(Programista p){ //musze przyjac programiste
+        // poniewaz inaczej nie bedzie widzial lini kodu
         super(p);
         this.linieKodu = p.linieKodu;
     }
