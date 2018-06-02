@@ -110,6 +110,7 @@ public class toRemember {
         pracowniks_xD[1] = new Programista(6000, 800);
 
         System.out.println(p1);
+        //laczona metoda toString w obu klasach
         Programista.pokazInfo((Programista) p1);
         //musze zrzutowac bo przyjmuje obiekt jest typu Pracownik
         // a metoda przyjmuje programiste
