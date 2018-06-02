@@ -115,7 +115,7 @@ public class toRemember {
         //musze zrzutowac bo przyjmuje obiekt jest typu Pracownik
         // a metoda przyjmuje programiste
         // jest statyczna wiec wywoluje z nazwa klasy
-        Pracownik.pokazInfo(p1);
+        Pracownik.pokazInfo(p1); //tylko info o zarobkach
 
         p1.getZarobki();
         p1.setZarobki(4000);
