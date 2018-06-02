@@ -18,6 +18,7 @@ public class toRemember {
         boolean b1 = str.isEmpty();
         int i1 = str.length();
         char[] t1 = str.toCharArray();
+        char  ch1 = str.charAt(0);
 
         str.substring(1,2);
         String[] t2 = str.split("1");
@@ -41,7 +42,7 @@ public class toRemember {
         sb.insert(0, "123");
         sb.reverse();
         sb.delete(0,1);
-        int i4 = sb.indexOf("1");
+        int i4 = sb.indexOf("x");
         int i5 = sb.capacity();
         int i6 = sb.length();
         char c = sb.charAt(0);
