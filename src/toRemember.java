@@ -121,6 +121,7 @@ public class toRemember {
         p1.getZarobki();
         p1.setZarobki(4000);
         ((Programista) p1).getLinieKodu(); //rzutowanie bo metoda unikalna nadlasy
+        // a typ jest Pracownika
         ((Programista) p1).setLinieKodu(350);
 
         Pracownik p2 = new Programista(((Programista)p1)); //kopiuje
