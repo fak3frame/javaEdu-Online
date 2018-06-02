@@ -182,7 +182,7 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
         this.linieKodu = linieKodu;
     }
     Programista(Programista p){ //musze przyjac programiste
-        // poniewaz inaczej nie bedzie widzial lini kodu
+        // poniewaz inaczej nie bedzie widzial zmiennej lini kodu
         super(p);
         this.linieKodu = p.linieKodu;
     }
