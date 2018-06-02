@@ -166,6 +166,8 @@ abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
     }
     public static void pokazInfo(final Pracownik p){ //zablokowalem zmiane
         // referencji
+        //Metoda moze takze przyjac Programiste lecz do pola zarobki juz musialbym
+        // odwolac sie przez geter
         System.out.println(p.zarobki);
         //lub System.out.println(p.getZarobki());
         //tutaj nie mam dostepu do zawartosci Programisty
