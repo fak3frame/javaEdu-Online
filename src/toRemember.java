@@ -35,7 +35,7 @@ public class toRemember {
         int i3 = str.compareTo(str);
 
         StringBuilder sb = new StringBuilder(12);
-        sb.ensureCapacity(13);//z zakresem 16/34/niesk.
+        sb.ensureCapacity(13);//z zakresem 16/34/dokladnym
         sb.append("123").append("123");
         sb.replace(0,1,"123");
         sb.insert(0, "123");
