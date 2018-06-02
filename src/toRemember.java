@@ -164,7 +164,9 @@ abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
     public static void pokazInfo(final Pracownik p){ //zablokowalem zmiane
         // referencji
         System.out.println(p.getZarobki());
+        //lub System.out.println(p.zarobki); //poniewaz mam dostep
         //tutaj nie mam dostepu do zawartosci Programisty
+
     }
 
 }
