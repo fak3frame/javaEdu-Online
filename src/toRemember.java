@@ -19,7 +19,7 @@ public class toRemember {
         boolean b1 = str.isEmpty();
         int i1 = str.length();
         char[] t1 = str.toCharArray();
-        char  ch1 = str.charAt(0);
+        char ch1 = str.charAt(0);
 
         str.substring(1,2);
         String[] t2 = str.split("1");
