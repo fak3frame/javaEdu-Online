@@ -113,7 +113,7 @@ public class toRemember {
         System.out.println(p1);
         //laczona metoda toString w obu klasach
         Programista.pokazInfo((Programista) p1);
-        //musze zrzutowac bo przyjmuje obiekt jest typu Pracownik
+        //musze zrzutowac bo metoada PRZYJMUJE OBIEKT a jest on typu Pracownik!
         // a metoda przyjmuje programiste
         // jest statyczna wiec wywoluje z nazwa klasy
         Pracownik.pokazInfo(p1); //tylko info o zarobkach
