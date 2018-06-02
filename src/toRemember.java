@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class toRemember {
     public static void main(String[] args) {
         String liczbaSlownie = Integer.toString(10);
+        String liczbaSlownie2 = String.valueOf(12);
 
         String str = "132";
 
@@ -203,7 +204,7 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     }
     public void piszKod(){
         linieKodu+=10;
-    }
+    }//metoda unikalna, musi byc rzutowanie
     public static void pokazInfo(final Programista p){
         System.out.println(p.getZarobki()+" "+p.linieKodu);
     }

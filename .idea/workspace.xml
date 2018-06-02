@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
-    </list>
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +20,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="362">
+              <caret line="184" column="55" selection-start-line="184" selection-start-column="55" selection-end-line="184" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -284,48 +282,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Konstruktory 2">
-      <created>1527693818825</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1527693818825</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Dziedziczenie 1">
-      <created>1527694863223</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1527694863223</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Dziedziczenie 2">
-      <created>1527697037871</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1527697037871</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Dziedziczenie 3">
-      <created>1527697628013</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1527697628013</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Dziedziczenie 4">
-      <created>1527698360455</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1527698360455</updated>
-    </task>
-    <task id="LOCAL-00057" summary="hashCode i equals">
-      <created>1527701271587</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1527701271587</updated>
     </task>
     <task id="LOCAL-00058" summary="hashCode i equals 2">
       <created>1527701851603</created>
@@ -628,7 +584,49 @@
       <option name="project" value="LOCAL" />
       <updated>1527962192679</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="toRemember 19">
+      <created>1527962493369</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1527962493369</updated>
+    </task>
+    <task id="LOCAL-00102" summary="toRemember 20">
+      <created>1527962621934</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1527962621934</updated>
+    </task>
+    <task id="LOCAL-00103" summary="toRemember 21">
+      <created>1527962714868</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1527962714868</updated>
+    </task>
+    <task id="LOCAL-00104" summary="toRemember 22">
+      <created>1527962769078</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1527962769078</updated>
+    </task>
+    <task id="LOCAL-00105" summary="toRemember 23">
+      <created>1527962916274</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1527962916274</updated>
+    </task>
+    <task id="LOCAL-00106" summary="toRemember 24">
+      <created>1527963004494</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1527963004494</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -637,17 +635,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3258427" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" weight="0.32084894" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32084894" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18432511" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18432511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -661,19 +660,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3258427" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wyjatki 4_4" />
-    <MESSAGE value="Polimorfizm 1" />
-    <MESSAGE value="Klasy Abstrakcyjne 1" />
-    <MESSAGE value="Klasy Abstrakcyjne 2" />
-    <MESSAGE value="Klasy Abstrakcyjne 3" />
-    <MESSAGE value="Listy 2" />
     <MESSAGE value="KlasaArrays 1" />
     <MESSAGE value="toRemember 1" />
     <MESSAGE value="toRemember 2" />
@@ -693,7 +685,13 @@
     <MESSAGE value="toRemember 16" />
     <MESSAGE value="toRemember 17" />
     <MESSAGE value="toRemember 18" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 18" />
+    <MESSAGE value="toRemember 19" />
+    <MESSAGE value="toRemember 20" />
+    <MESSAGE value="toRemember 21" />
+    <MESSAGE value="toRemember 22" />
+    <MESSAGE value="toRemember 23" />
+    <MESSAGE value="toRemember 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1027,8 +1025,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="362">
+          <caret line="184" column="55" selection-start-line="184" selection-start-column="55" selection-end-line="184" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
