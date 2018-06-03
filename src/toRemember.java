@@ -138,6 +138,14 @@ public class toRemember {
         //Musze wiec rzutowac jesli wywoluje cos czego nie ma w TYPIE obiektu
         // badz "nizej"
 
+        //equeals / hashcode
+
+        Pracownik p3 = new Programista(3000,300);
+        Pracownik p4 = new Programista(3000,300);
+        System.out.println("equals: "+p3.equals(p4));
+        System.out.println(p3.hashCode());
+        System.out.println(p4.hashCode());
+
 
 
     }
@@ -213,5 +221,19 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     }//metoda unikalna, musi byc rzutowanie
     public static void pokazInfo(final Programista p){
         System.out.println(p.getZarobki()+" "+p.linieKodu);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj) return true;
+        if(this.getClass() != obj.getClass() || obj == null)return false;
+        if(this.linieKodu == ((Programista)obj).linieKodu && this.getZarobki() ==
+                ((Pracownik)obj).getZarobki()) return true;
+        else return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
