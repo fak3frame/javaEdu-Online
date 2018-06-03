@@ -89,25 +89,27 @@ public class toRemember {
             }
         }
 
-        /*SORTOWANIE TABLICY OBIEKTOW
-        KlasaArrays ka = new KlasaArrays(10);
-        KlasaArrays ka2 = new KlasaArrays(9);
-        KlasaArrays ka3 = new KlasaArrays(12);
-        KlasaArrays[] t = {ka,ka2,ka3};
+        //SORTOWANIE TABLICY OBIEKTOW
+        KlasaArrays2 ka = new KlasaArrays2(10);
+        KlasaArrays2 ka2 = new KlasaArrays2(9);
+        KlasaArrays2 ka3 = new KlasaArrays2(12);
+        KlasaArrays2[] t = {ka,ka2,ka3};
         Sortuj sort = new Sortuj();
         Arrays.sort(t,sort);
-        */
-        class KlasaArrays{
+        for(KlasaArrays2 x : t){
+            System.out.println(x.getWielkosc());
+        }
+        class KlasaArrays2{
             private int wielkosc;
-            KlasaArrays(int wielkosc){
+            KlasaArrays2(int wielkosc){
                 this.wielkosc = wielkosc;
             }
             public int getWielkosc(){
                 return wielkosc;
             }
         }
-        class Sortuj implements Comparator<KlasaArrays> {
-            public int compare(KlasaArrays o1, KlasaArrays o2){
+        class Sortuj implements Comparator<KlasaArrays2> {
+            public int compare(KlasaArrays2 o1, KlasaArrays2 o2){
                 if(o2 == null) return -1;
                 if(o1.getWielkosc()>o2.getWielkosc()) return 1;
                 else if(o1.getWielkosc()<o2.getWielkosc()) return -1;
@@ -309,5 +311,23 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     public int hashCode() {
         //return super.hashCode();
         return Objects.hash(getZarobki(), linieKodu);
+    }
+}
+//////////////implementacja wzorca w kodzie
+class KlasaArrays2{
+    private int wielkosc;
+    KlasaArrays2(int wielkosc){
+        this.wielkosc = wielkosc;
+    }
+    public int getWielkosc(){
+        return wielkosc;
+    }
+}
+class Sortuj implements Comparator<KlasaArrays2> {
+    public int compare(KlasaArrays2 o1, KlasaArrays2 o2){
+        if(o2 == null) return -1;
+        if(o1.getWielkosc()>o2.getWielkosc()) return 1;
+        else if(o1.getWielkosc()<o2.getWielkosc()) return -1;
+        else return 0;
     }
 }
