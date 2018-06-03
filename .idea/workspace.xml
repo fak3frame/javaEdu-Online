@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
+            <state relative-caret-position="139">
+              <caret line="207" column="43" selection-start-line="207" selection-start-column="43" selection-end-line="207" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2960#2961#0" expanded="true" />
@@ -53,34 +52,10 @@
                 <element signature="e#10342#10343#0" expanded="true" />
                 <element signature="e#10435#10436#0" expanded="true" />
                 <element signature="e#10501#10502#0" expanded="true" />
-                <element signature="e#11104#11105#0" expanded="true" />
-                <element signature="e#11144#11145#0" expanded="true" />
-                <element signature="e#11174#11175#0" expanded="true" />
-                <element signature="e#11205#11206#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KlasaArrays.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterfaceList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="41" column="40" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="41" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#12013#12014#0" expanded="true" />
+                <element signature="e#12053#12054#0" expanded="true" />
+                <element signature="e#12083#12084#0" expanded="true" />
+                <element signature="e#12114#12115#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,6 +164,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="PrzydatneKlasy" type="462c0819:PsiDirectoryNode" />
               <item name="KlasaArrays.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="toRemember.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -334,13 +315,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00086" summary="toRemember 4">
-      <created>1527879667206</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1527879667206</updated>
     </task>
     <task id="LOCAL-00087" summary="toRemember 5">
       <created>1527881178151</created>
@@ -678,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528045495997</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="toRemember 53 inteface List">
+      <created>1528046354628</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1528046354629</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -694,11 +675,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32084894" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32084894" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18432511" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18432511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -718,7 +699,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 28" />
     <MESSAGE value="toRemember 29" />
     <MESSAGE value="toRemember 30" />
     <MESSAGE value="toRemember 31" />
@@ -743,7 +723,8 @@
     <MESSAGE value="toRemember 50 klasa Arrays" />
     <MESSAGE value="toRemember 51 klasa Arrays" />
     <MESSAGE value="toRemember 52 klasa Arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 52 klasa Arrays" />
+    <MESSAGE value="toRemember 53 inteface List" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 53 inteface List" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,10 +764,10 @@
             <element signature="e#10342#10343#0" expanded="true" />
             <element signature="e#10435#10436#0" expanded="true" />
             <element signature="e#10501#10502#0" expanded="true" />
-            <element signature="e#11104#11105#0" expanded="true" />
-            <element signature="e#11144#11145#0" expanded="true" />
-            <element signature="e#11174#11175#0" expanded="true" />
-            <element signature="e#11205#11206#0" expanded="true" />
+            <element signature="e#12013#12014#0" expanded="true" />
+            <element signature="e#12053#12054#0" expanded="true" />
+            <element signature="e#12083#12084#0" expanded="true" />
+            <element signature="e#12114#12115#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -833,10 +814,10 @@
             <element signature="e#10342#10343#0" expanded="true" />
             <element signature="e#10435#10436#0" expanded="true" />
             <element signature="e#10501#10502#0" expanded="true" />
-            <element signature="e#11104#11105#0" expanded="true" />
-            <element signature="e#11144#11145#0" expanded="true" />
-            <element signature="e#11174#11175#0" expanded="true" />
-            <element signature="e#11205#11206#0" expanded="true" />
+            <element signature="e#12013#12014#0" expanded="true" />
+            <element signature="e#12053#12054#0" expanded="true" />
+            <element signature="e#12083#12084#0" expanded="true" />
+            <element signature="e#12114#12115#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1145,6 +1126,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="41" column="40" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1157,8 +1148,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="138" column="36" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
+        <state relative-caret-position="139">
+          <caret line="207" column="43" selection-start-line="207" selection-start-column="43" selection-end-line="207" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2960#2961#0" expanded="true" />
@@ -1187,20 +1178,10 @@
             <element signature="e#10342#10343#0" expanded="true" />
             <element signature="e#10435#10436#0" expanded="true" />
             <element signature="e#10501#10502#0" expanded="true" />
-            <element signature="e#11104#11105#0" expanded="true" />
-            <element signature="e#11144#11145#0" expanded="true" />
-            <element signature="e#11174#11175#0" expanded="true" />
-            <element signature="e#11205#11206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" column="40" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#12013#12014#0" expanded="true" />
+            <element signature="e#12053#12054#0" expanded="true" />
+            <element signature="e#12083#12084#0" expanded="true" />
+            <element signature="e#12114#12115#0" expanded="true" />
           </folding>
         </state>
       </provider>

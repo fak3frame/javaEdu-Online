@@ -15,6 +15,8 @@ public class toRemember {
         String liczbaSlownie2 = String.valueOf(12);
 
         String str = "132";
+        str = str+"123";
+        //kazda modyfikacja stringa to tworznie nowgo obiektu
 
         str.trim();
         str.toUpperCase().toLowerCase();
