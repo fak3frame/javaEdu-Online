@@ -114,7 +114,8 @@ public class toRemember {
                 ex.getMessage();
             }catch (NumberFormatException | NullPointerException ex){
                 ex.getMessage();
-
+            }finally {
+                System.out.println("zawsze kurde");
             }
         }
         class ObslugaWyjatkow{
