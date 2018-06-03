@@ -19,7 +19,7 @@ public class Wyjatki_4 {
         System.out.println(sekundy);
 
         /*Moge obsluzyc kilka wyjatkow w catch jesli nie sa we wspolnej klasie bazowej
-           catch (IllegalArgumentException || ArithmeticException ex){}
+           catch (IllegalArgumentException | ArithmeticException ex){}
           Wyróżniamy dwa rodzaje wyjątków, tak zwane “checked exceptions” oraz
            “unchecked exceptions”.
           checked exceptions musza byc obluzone przez programiste np IOException
