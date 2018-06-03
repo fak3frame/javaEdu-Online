@@ -90,7 +90,8 @@ public class toRemember {
 
         }
 
-        if(1>2){
+        boolean czyPoprawne = false;
+        if(!czyPoprawne && 1>2){
             try{
                 Scanner sc = new Scanner(System.in);
                 String nazwa = sc.nextLine();
@@ -99,12 +100,15 @@ public class toRemember {
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 String imie = br.readLine();
                 int wiek = Integer.parseInt(br.readLine());
+
+                czyPoprawne = true;
             }catch (IOException ex){
                 ex.getMessage();
             }catch (NumberFormatException | NullPointerException ex){
                 ex.getMessage();
 
             }
+
         }
 
         Pracownik p1 = new Programista(3000, 230);
@@ -145,6 +149,9 @@ public class toRemember {
         //w equals(this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
         // if(this.zmienna==((Nadklasa)obj).zmienna && this.getZmienna()==
         // ((Nadklasa)obj).getzmienna())return true, else return false
+        //Do porownania moge uzyc Double.compare(zmianna, obj.getZmienna2() == 0 // zwroci 0!
+        // dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
+
         //w hashcode
         // public int hashCode() return Objects.hash(zmienna, getZmiannaNadklasy());
         Pracownik p3 = new Programista(3000,300);
