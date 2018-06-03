@@ -89,7 +89,7 @@ public class toRemember {
             }
         }
 
-        //SORTOWANIE TABLICY OBIEKTOW
+        //SORTOWANIE TABLICY OBIEKTOW - klasa Arrays
         KlasaArrays2 ka = new KlasaArrays2(10);
         KlasaArrays2 ka2 = new KlasaArrays2(9);
         KlasaArrays2 ka3 = new KlasaArrays2(12);

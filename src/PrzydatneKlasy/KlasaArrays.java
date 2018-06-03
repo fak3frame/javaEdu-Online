@@ -20,7 +20,7 @@ public class KlasaArrays {
         -asList();
         -binarySearch();
         -equals(); porownuje dwie tablice dowolnych typow
-        -fill(); metoda pozwala usupelnic tablice paramtrem podanym
+        -fill(); metoda pozwala uzupelnic tablice paramtrem podanym
          w tej metodzie
         -sort();
         */
