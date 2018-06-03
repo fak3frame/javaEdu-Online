@@ -100,8 +100,9 @@ public class toRemember {
                 int wiek = Integer.parseInt(br.readLine());
             }catch (IOException ex){
                 ex.getMessage();
-            }catch (NumberFormatException ex){
+            }catch (NumberFormatException | NullPointerException ex){
                 ex.getMessage();
+
             }
         }
 
@@ -112,6 +113,7 @@ public class toRemember {
 
         System.out.println(p1);
         //laczona metoda toString w obu klasach
+        //return super.toString()+" "+String.valueOf(linieKodu);
         Programista.pokazInfo((Programista) p1);
         //musze zrzutowac bo metoada PRZYJMUJE OBIEKT a jest on typu Pracownik!
         // a metoda przyjmuje programiste. Musi przyjmowac programiste poniweaz
