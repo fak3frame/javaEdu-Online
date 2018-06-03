@@ -7,7 +7,8 @@ public class StringBuilderBuffer {
 
         w przypadu polaczenia stringow +, najpierwsz tworzy sie
          obiekt StringBuilder, nastepnie dodawany jest ciag poprzez
-         .append() a nastepnie zamieniony na stringa toString();
+         .append() a nastepnie zamieniony na stringa .toString() na
+         obiekcie stringBuildera
          */
     }
 }
