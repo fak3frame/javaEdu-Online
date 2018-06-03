@@ -116,7 +116,7 @@ public class toRemember {
         //return super.toString()+" "+String.valueOf(linieKodu);
         Programista.pokazInfo((Programista) p1);
         //musze zrzutowac bo metoada PRZYJMUJE OBIEKT a jest on typu Pracownik!
-        // a metoda przyjmuje programiste. Musi przyjmowac programiste poniweaz
+        // a metoda przyjmuje programiste. Musi przyjmowac programiste poniewaz
         // potrzebuje dostac sie do jego pol (linieKodu)
         // jest statyczna wiec wywoluje z nazwa klasy
         Pracownik.pokazInfo(p1); //tylko info o zarobkach
