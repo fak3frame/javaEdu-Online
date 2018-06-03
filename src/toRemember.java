@@ -90,6 +90,13 @@ public class toRemember {
         }
 
         //SORTOWANIE TABLICY OBIEKTOW - klasa Arrays
+        /*
+        .asList();
+        .equals();
+        .fill();
+        .sort();
+         */
+
         KlasaArrays2 ka = new KlasaArrays2(10);
         KlasaArrays2 ka2 = new KlasaArrays2(9);
         KlasaArrays2 ka3 = new KlasaArrays2(12);
@@ -116,6 +123,30 @@ public class toRemember {
                 else return 0;
             }
         }
+
+        /*
+        Jedna ze struktur danych sa listy w ktorych wyrozniamy najlpopularniejsze
+         ArrayList - implemenacja tablicowa oraz LinkedList -/- dowiazana
+        ArrayList uzywamy gdy mamy czesty dostep do elementow natomiast
+         LikedListy gdy bedziemy czesto wynonywac operacje takie jak dodawanie
+         usuwanie elementow itp
+
+        Dobra praktyka jest deklarowanie ich jako List aby moc w przyszlosci
+         podmienic implementajce
+        */
+        List lista1 = new ArrayList(32); // w przypadku listy tablicowej dobrze
+        // jest dodac domyslny poczatkowy rozmiar
+        //Ta lista jest typu OBJECT!
+        lista1.add("Kamil");
+        List lista2 = new LinkedList();
+        /*
+        Podstawowe operacje:
+        add(obj);
+        remove(obj);
+        remove(int);
+        size();
+        get(int);
+        */
 
         //WYJATKI
         //“checked exceptions” wymagaja obslugi (np IOException)
