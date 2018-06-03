@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.lang.management.BufferPoolMXBean;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.InputMismatchException;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -118,6 +119,7 @@ public class toRemember {
             }finally {
                 System.out.println("zawsze kurde");
             }
+
         }
         class ObslugaWyjatkow{
             public void wyjatki()throws NumberFormatException,IOException{
@@ -128,6 +130,20 @@ public class toRemember {
                     throw new ArithmeticException("nie moge dzilic przez 0");
                 }
                 else System.out.println(x/y);
+                //////////////////
+                Scanner wczytaj = new Scanner(System.in);
+                double mojaLiczba = 0;
+                while (true) {
+                    try {
+                        mojaLiczba = wczytaj.nextDouble();
+                        break;//wyjdzie z while
+                    }
+                    catch (InputMismatchException e) {
+                        System.out.println("Podaj poprawną liczbę!");
+                        // ignoring wrong token
+                        wczytaj.next();
+                    }
+                }
             }
         }
 
