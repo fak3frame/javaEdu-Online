@@ -51,7 +51,8 @@ public class toRemember {
         int i5 = sb.capacity();
         int i6 = sb.length();
         char c = sb.charAt(0);
-        String  str2 = sb.substring(1);
+        String str2 = sb.substring(1);
+        String strS = sb.toString();
 
         Math.abs(9);
         Math.pow(2,2);
