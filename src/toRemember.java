@@ -238,7 +238,7 @@ public class toRemember {
         //Musze wiec rzutowac jesli wywoluje cos czego nie ma w TYPIE obiektu
         // badz "nizej"
 
-        //equeals / hashcode
+        //EQUALS HASHCODE
         //moge dodac tylko w klasie "najwyzej obiektu i odwolac sie w metodzie equals i
         // hashcode do zmiennych nadklas przez akcesor
         //w equals(this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
