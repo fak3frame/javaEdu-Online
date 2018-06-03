@@ -18,7 +18,7 @@ public class Polimorfizm {
 
 
         //---------2---------
-        A obiekt = new B(); //przpisuje obiekt B do referecji typu A
+        A obiekt = new B(); //przypisuje obiekt B do referecji typu A
         obiekt.x();//metoda wspolna
         //obiekt.y(); blad poniewaz refencja wskazyje na klase w ktorej
         // nie ma tej metody, mozna wykorzystac rzutowanie

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+            <state relative-caret-position="309">
+              <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4834#4835#0" expanded="true" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="Wyjatki_4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="36" selection-end-column="26" />
+            <state relative-caret-position="187">
+              <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="59" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -292,20 +293,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Klasy Abstrakcyjne 2">
-      <created>1527777187524</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1527777187524</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Klasy Abstrakcyjne 3">
-      <created>1527778507557</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1527778507557</updated>
     </task>
     <task id="LOCAL-00081" summary="Listy 2">
       <created>1527783368944</created>
@@ -636,7 +623,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528037000745</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="toRemember 46 wyjatki">
+      <created>1528037230294</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1528037230294</updated>
+    </task>
+    <task id="LOCAL-00129" summary="toRemember 47 wyjatki">
+      <created>1528037376264</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1528037376264</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -676,8 +677,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 21" />
-    <MESSAGE value="toRemember 22" />
     <MESSAGE value="toRemember 23" />
     <MESSAGE value="toRemember 24" />
     <MESSAGE value="toRemember 25" />
@@ -701,7 +700,9 @@
     <MESSAGE value="toRemember 43 wyjatki" />
     <MESSAGE value="toRemember 44 wyjatki" />
     <MESSAGE value="toRemember 45 wyjatki" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 45 wyjatki" />
+    <MESSAGE value="toRemember 46 wyjatki" />
+    <MESSAGE value="toRemember 47 wyjatki" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 47 wyjatki" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,15 +1060,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="59" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+        <state relative-caret-position="309">
+          <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4834#4835#0" expanded="true" />
