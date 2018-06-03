@@ -110,6 +110,7 @@ public class toRemember {
                 int wiek = Integer.parseInt(br.readLine());
 
                 czyPoprawne = true;
+                //moge tez dac break; do wyjscia z while
             }catch (IOException ex){
                 ex.getMessage();
             }catch (NumberFormatException | NullPointerException ex){
