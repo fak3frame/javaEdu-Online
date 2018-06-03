@@ -96,7 +96,6 @@ public class toRemember {
         .fill();
         .sort();
          */
-
         KlasaArrays2 ka = new KlasaArrays2(10);
         KlasaArrays2 ka2 = new KlasaArrays2(9);
         KlasaArrays2 ka3 = new KlasaArrays2(12);
@@ -124,7 +123,7 @@ public class toRemember {
             }
         }
 
-        /*
+        /* LISTY
         Jedna ze struktur danych sa listy w ktorych wyrozniamy najlpopularniejsze
          ArrayList - implemenacja tablicowa oraz LinkedList -/- dowiazana
         ArrayList uzywamy gdy mamy czesty dostep do elementow natomiast
@@ -206,6 +205,7 @@ public class toRemember {
             }
         }
 
+        //OBIEKTY POLIMORFIZM DZIEDZICZENIE
         Pracownik p1 = new Programista(3000, 230);
         Pracownik[] pracowniks_xD = new Pracownik[2];
         pracowniks_xD[0] = new Programista(4000,400);
