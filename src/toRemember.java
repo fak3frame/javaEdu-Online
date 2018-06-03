@@ -7,10 +7,7 @@ import java.io.PrintWriter;
 import java.lang.management.BufferPoolMXBean;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.Comparator;
-import java.util.InputMismatchException;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
 public class toRemember {
     public static void main(String[] args) {
@@ -77,7 +74,6 @@ public class toRemember {
         }
 
 
-
         class Funkcje{
             void main(){
                 int suma = sumujLiczby(1,2,3,4);
@@ -93,9 +89,14 @@ public class toRemember {
             }
         }
 
+        /*SORTOWANIE TABLICY OBIEKTOW
         KlasaArrays ka = new KlasaArrays(10);
-        KlasaArrays ka2 = new KlasaArrays(102);
-
+        KlasaArrays ka2 = new KlasaArrays(9);
+        KlasaArrays ka3 = new KlasaArrays(12);
+        KlasaArrays[] t = {ka,ka2,ka3};
+        Sortuj sort = new Sortuj();
+        Arrays.sort(t,sort);
+        */
         class KlasaArrays{
             private int wielkosc;
             KlasaArrays(int wielkosc){
