@@ -140,7 +140,13 @@ public class toRemember {
         // badz "nizej"
 
         //equeals / hashcode
-
+        //moge dodac tylko w klasie "najwyzej obiektu i odwolac sie w metodzie equals i
+        // hashcode do zmiennych nadklas przez akcesor
+        //w equals(this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
+        // if(this.zmienna==((Nadklasa)obj).zmienna && this.getZmienna()==
+        // ((Nadklasa)obj).getzmienna())return true, else return false
+        //w hashcode
+        // public int hashCode() return Objects.hash(zmienna, getZmiannaNadklasy());
         Pracownik p3 = new Programista(3000,300);
         Pracownik p4 = new Programista(3000,300);
         System.out.println("equals: "+p3.equals(p4));
