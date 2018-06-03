@@ -206,6 +206,7 @@ public class Obiekty_1 {
         //-------Dziedziczenie  2 + instrukcja super()-------------------
         /*
         Instrukcji super() uzywam do wywolanie konstruktora klasy nadrzednej.
+        // lub metody. super.metoda()
         Ilosc parametrow jakie w nim umieszcze decyduje ktory to konstuktor
          np. super("","",0); wywola mi 3-param. konstruktor klasy nadrzednej
         Instrukcja super() musi byc ZAWSZE na poczatku w konstruktorze
