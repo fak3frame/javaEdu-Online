@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
-    </list>
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="148" column="84" selection-start-line="148" selection-start-column="84" selection-end-line="148" selection-end-column="84" />
+            <state relative-caret-position="139">
+              <caret line="106" column="69" lean-forward="true" selection-start-line="106" selection-start-column="69" selection-end-line="106" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4834#4835#0" expanded="true" />
@@ -34,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Obiekty_2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2683">
-              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            <state relative-caret-position="-1697">
+              <caret line="49" column="51" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -287,20 +284,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Wyjatki 2_1">
-      <created>1527769219556</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1527769219556</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Wyjatki 4_1">
-      <created>1527770174626</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1527770174626</updated>
     </task>
     <task id="LOCAL-00074" summary="Wyjatki 4_2">
       <created>1527771334539</created>
@@ -631,7 +614,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528034467833</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="toRemember 39 hashcode equals">
+      <created>1528034824829</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1528034824829</updated>
+    </task>
+    <task id="LOCAL-00122" summary="toRemember 40">
+      <created>1528035509842</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1528035509842</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +644,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32084894" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.32084894" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -671,8 +668,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 14" />
-    <MESSAGE value="toRemember 15" />
     <MESSAGE value="toRemember 16" />
     <MESSAGE value="toRemember 17" />
     <MESSAGE value="toRemember 18" />
@@ -696,7 +691,9 @@
     <MESSAGE value="toRemember 36" />
     <MESSAGE value="toRemember 37 hashcode equals" />
     <MESSAGE value="toRemember 38 hashcode equals" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 38 hashcode equals" />
+    <MESSAGE value="toRemember 39 hashcode equals" />
+    <MESSAGE value="toRemember 40" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 40" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1049,24 +1046,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2683">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="148" column="84" selection-start-line="148" selection-start-column="84" selection-end-line="148" selection-end-column="84" />
+        <state relative-caret-position="139">
+          <caret line="106" column="69" lean-forward="true" selection-start-line="106" selection-start-column="69" selection-end-line="106" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4834#4835#0" expanded="true" />
             <element signature="e#4890#4891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1697">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

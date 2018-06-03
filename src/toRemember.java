@@ -108,7 +108,17 @@ public class toRemember {
                 ex.getMessage();
 
             }
-
+        }
+        class ObslugaWyjatkow{
+            public void wyjatki()throws NumberFormatException,IOException{
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                int x = Integer.parseInt(br.readLine());
+                int y = Integer.parseInt(br.readLine());
+                if(y==0){
+                    throw new ArithmeticException("nie moge dzilic przez 0");
+                }
+                else System.out.println(x/y);
+            }
         }
 
         Pracownik p1 = new Programista(3000, 230);
