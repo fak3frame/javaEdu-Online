@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.lang.management.BufferPoolMXBean;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class toRemember {
@@ -234,6 +235,7 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        //return super.hashCode();
+        return Objects.hash(getZarobki(), linieKodu);
     }
 }
