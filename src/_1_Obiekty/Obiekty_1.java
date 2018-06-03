@@ -401,7 +401,7 @@ class Pielegniarka extends Pracownik2{
 
     public Pielegniarka(){ //kontrukror dla wartosci domyslnych
         //nijawenie wywowla sie instukcja super()
-        //czyli konstuktor bezparam. klasy nadrzednej i usatwi
+        //czyli konstuktor bezparam. klasy nadrzednej i ustatwi
         // pozostale pola instancji na wartosci domyslne
         //przez co nie musze pisac super("","",0) co wywolaloby
         // mi konstuktor 3-param. ustawiajacy wartosci na domyslne
