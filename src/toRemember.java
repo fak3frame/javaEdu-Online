@@ -89,7 +89,8 @@ public class toRemember {
             }
 
         }
-
+        //“checked exceptions” wymagaja obslugi (np IOException)
+        // oraz “unchecked exceptions” (np. IllegalArgumentException)
         boolean czyPoprawne = false;
         if(!czyPoprawne && 1>2){
             try{
