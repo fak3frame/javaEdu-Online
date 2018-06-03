@@ -1,3 +1,5 @@
+import PrzydatneKlasy.KlasaArrays;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,6 +7,7 @@ import java.io.PrintWriter;
 import java.lang.management.BufferPoolMXBean;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.Objects;
 import java.util.Scanner;
@@ -88,8 +91,30 @@ public class toRemember {
                 }
                 return suma;
             }
-
         }
+
+        KlasaArrays ka = new KlasaArrays(10);
+        KlasaArrays ka2 = new KlasaArrays(102);
+
+        class KlasaArrays{
+            private int wielkosc;
+            KlasaArrays(int wielkosc){
+                this.wielkosc = wielkosc;
+            }
+            public int getWielkosc(){
+                return wielkosc;
+            }
+        }
+        class Sortuj implements Comparator<KlasaArrays> {
+            public int compare(KlasaArrays o1, KlasaArrays o2){
+                if(o2 == null) return -1;
+                if(o1.getWielkosc()>o2.getWielkosc()) return 1;
+                else if(o1.getWielkosc()<o2.getWielkosc()) return -1;
+                else return 0;
+            }
+        }
+
+        //WYJATKI
         //“checked exceptions” wymagaja obslugi (np IOException)
         // oraz “unchecked exceptions” (np. IllegalArgumentException)
         //Throwable <- Exception <- RuntimeException <- IllegalArgumentException
@@ -195,12 +220,9 @@ public class toRemember {
         System.out.println("equals: "+p3.equals(p4));
         System.out.println(p3.hashCode());
         System.out.println(p4.hashCode());
-
-
-
     }
-
 }
+
 interface Praca{
     public void pracuj();
 }
