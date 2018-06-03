@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="117" column="56" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
+            <state relative-caret-position="68">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,7 +35,7 @@
       <file leaf-file-name="ProgramStartowy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
+            <state relative-caret-position="3519">
               <caret line="216" column="89" selection-start-line="216" selection-start-column="89" selection-end-line="216" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,7 +146,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -285,20 +285,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Poprawki Obiekty 1_4">
-      <created>1527750566177</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1527750566177</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Poprawki Obiekty 1_5">
-      <created>1527750677050</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1527750677050</updated>
     </task>
     <task id="LOCAL-00065" summary="Poprawki Obiekty 1_6">
       <created>1527750884337</created>
@@ -629,7 +615,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527963829641</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="toRemember 30">
+      <created>1527963974958</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1527963974958</updated>
+    </task>
+    <task id="LOCAL-00113" summary="toRemember 31">
+      <created>1527964194832</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1527964194832</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -638,7 +638,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3258427" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -663,14 +662,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3258427" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 5" />
-    <MESSAGE value="toRemember 6" />
     <MESSAGE value="toRemember 7" />
     <MESSAGE value="toRemember 8" />
     <MESSAGE value="toRemember 9" />
@@ -694,7 +692,9 @@
     <MESSAGE value="toRemember 27" />
     <MESSAGE value="toRemember 28" />
     <MESSAGE value="toRemember 29" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 29" />
+    <MESSAGE value="toRemember 30" />
+    <MESSAGE value="toRemember 31" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 31" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -702,6 +702,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="169" column="34" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3672">
+          <caret line="216" column="89" selection-start-line="216" selection-start-column="89" selection-end-line="216" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -761,9 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,9 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,7 +1032,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
+        <state relative-caret-position="3519">
           <caret line="216" column="89" selection-start-line="216" selection-start-column="89" selection-end-line="216" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1028,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="117" column="56" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
+        <state relative-caret-position="68">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

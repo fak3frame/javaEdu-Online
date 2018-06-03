@@ -29,7 +29,7 @@ public class toRemember {
 
         boolean b3 = str.equals(str);
         str.concat("123");
-        boolean b4 = str.startsWith("1@3");
+        boolean b4 = str.startsWith("123");
         boolean b5 = str.endsWith("123");
         boolean b6 = str.contains("123");
 
