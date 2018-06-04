@@ -178,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.toRemember">
+  <component name="RunManager" selected="Application.StringBuilderBuffer">
     <configuration name="KlasaArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.KlasaArrays" />
       <module name="javaStartMojSkrypt" />
@@ -212,13 +212,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Wyjatki_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Wyjatki_4" />
+    <configuration name="StringBuilderBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.StringBuilderBuffer" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_Obiekty.*" />
+          <option name="PATTERN" value="PrzydatneKlasy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -270,19 +270,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Wyjatki_4" />
       <item itemvalue="Application.Polimorfizm" />
       <item itemvalue="Application.Obiekty_1" />
       <item itemvalue="Application.KlasaArrays" />
       <item itemvalue="Application.toRemember" />
+      <item itemvalue="Application.StringBuilderBuffer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringBuilderBuffer" />
         <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.KlasaArrays" />
         <item itemvalue="Application.Obiekty_1" />
         <item itemvalue="Application.Polimorfizm" />
-        <item itemvalue="Application.Wyjatki_4" />
       </list>
     </recent_temporary>
   </component>
