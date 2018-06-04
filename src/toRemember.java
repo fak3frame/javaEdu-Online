@@ -176,6 +176,7 @@ public class toRemember {
             }catch (IOException ex){
                 ex.getMessage();
             }catch (NumberFormatException | NullPointerException ex){
+                //obsluga 2 wyjatkow w jednym bloku catch
                 ex.getMessage();
             }finally {
                 System.out.println("zawsze kurde");
