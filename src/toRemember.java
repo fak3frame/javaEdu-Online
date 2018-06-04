@@ -244,7 +244,7 @@ public class toRemember {
         // badz "nizej"
 
         //EQUALS HASHCODE
-        //moge dodac tylko w klasie "najwyzej obiektu i odwolac sie w metodzie equals i
+        //moge dodac tylko w klasie "najwyzej" obiektu i odwolac sie w metodzie equals i
         // hashcode do zmiennych nadklas przez akcesor
         //w equals(this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
         // if(this.zmienna==((Nadklasa)obj).zmienna && this.getZmienna()==
