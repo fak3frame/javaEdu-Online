@@ -5,10 +5,23 @@ public class StringBuilderBuffer {
         /*
         kazda modyfikacja stringa to tworznie nowgo obiektu
 
+        String s = "123";
+        String s2 = "123"+s;
         w przypadu polaczenia stringow +, najpierwsz tworzy sie
          obiekt StringBuilder, nastepnie dodawany jest ciag poprzez
-         .append() a nastepnie zamieniony na stringa .toString() na
+         .append(nowaWartosc) a nastepnie zamieniony na stringa .toString() na
          obiekcie stringBuildera
+
+         String s = "Kasia";
+         s = s+" i Tomek"; // to tak naprawde:
+         s = new StringBuilder(s).append(" i Tomek").toString();
          */
+
+         //aby usprawnic mozemy recznie dodac metode toString() po zakonczemniu operacji dodawania
+        String s = "napis";
+        StringBuilder sb = new StringBuilder(s);
+        for(int i = 0; i<1000; i++)
+            sb.append("a");
+
     }
 }
