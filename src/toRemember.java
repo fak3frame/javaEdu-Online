@@ -247,12 +247,16 @@ public class toRemember {
         //moge dodac tylko w klasie "najwyzej" obiektu i odwolac sie w metodzie equals i
         // hashcode do zmiennych nadklas przez akcesor
         //deklaracja public boolean equals(Obj o){
-        //warunki: (this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
-        // if(this.zmienna==((Nadklasa)obj).zmienna && this.getZmienna()==
-        // ((Nadklasa)obj).getzmienna())return true
-        // else return false
-        //Do porownania moge uzyc Double.compare(zmianna, obj.getZmienna2() == 0 // zwroci 0!
-        // dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
+        //warunki:
+        //if(this==obj) return true;
+        //if(obj==null||this.getClass()=!obj.getClass()) return false;
+        //Klasa k = (Klasa)k;
+        //if(this.zmienna==k.zmienna && this.getZmienna2()==
+        // k.getzmienna2())return true
+        //else return false
+        //Do porownania moge uzyc Double.compare(zmianna, ((Nadklasa)obj).zmianna()) == 0
+        // zwroci 0!
+        //dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
 
         //w hashcode
         // public int hashCode() return Objects.hash(zmienna, getZmiannaNadklasy());
@@ -340,8 +344,9 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     public boolean equals(Object obj) {
         if(this == obj) return true;
         if(this.getClass() != obj.getClass() || obj == null)return false;
-        if(this.linieKodu == ((Programista)obj).linieKodu && this.getZarobki() ==
-                ((Pracownik)obj).getZarobki()) return true;
+        Programista objP = (Programista)obj;
+        if(this.linieKodu == objP.linieKodu && this.getZarobki() ==
+                objP.getZarobki()) return true;
         else return false;
     }
 
@@ -367,5 +372,37 @@ class Sortuj implements Comparator<KlasaArrays2> {
         if(o1.getWielkosc()>o2.getWielkosc()) return 1;
         else if(o1.getWielkosc()<o2.getWielkosc()) return -1;
         else return 0;
+    }
+}
+
+///////
+class toExtend{
+    int lowInt;
+}
+class Testequals{
+    int int1;
+    int int2;
+    double double1;
+    double double2;
+    String str1;
+    String str2;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Testequals that = (Testequals) o;
+        return int1 == that.int1 &&
+                int2 == that.int2 &&
+                Double.compare(that.double1, double1) == 0 &&
+                Double.compare(that.double2, double2) == 0 &&
+                Objects.equals(str1, that.str1) &&
+                Objects.equals(str2, that.str2);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(int1, int2, double1, double2, str1, str2);
     }
 }
