@@ -235,7 +235,8 @@ public class toRemember {
         System.out.println("p2: "+p2);
 
         p2.pracuj(); //metoda interfejsu ktory implementuje klasa abstr. Pracownik
-        // ktora rozszerza Programista
+        // ktora rozszerza Programista (klasa abstr. nie musi go deklarwoac
+        // w kodzie
         ((Programista) p2).piszKod();//teraz musze wykonac rzutownie
         // poniewaz metoda jest unikalna w programiscie bez deklaracji
         // w klasie nadrzednej/badz interf. ktory implementuje
