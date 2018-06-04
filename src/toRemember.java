@@ -257,6 +257,9 @@ public class toRemember {
         //Do porownania moge uzyc Double.compare(zmianna, ((Nadklasa)obj).zmianna()) == 0
         // zwroci 0!
         //dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
+        //zmienne int moge porownywac bezposrenio zmienna==((Klasa)obj).zmienna;
+        //np. return Double.compare(zmienna, ((Klasa)obj.zmienna)==0;
+        //lub return Objects.equals(zmienna, ((Klasa)obj.zmienna); //nie zwroci 0!
 
         //w hashcode
         // public int hashCode() return Objects.hash(zmienna, getZmiannaNadklasy());
@@ -379,13 +382,14 @@ class Sortuj implements Comparator<KlasaArrays2> {
 class toExtend{
     int lowInt;
 }
-class Testequals{
+class Testequals extends toExtend{
     int int1;
     int int2;
     double double1;
     double double2;
     String str1;
     String str2;
+
 
     @Override
     public boolean equals(Object o) {
