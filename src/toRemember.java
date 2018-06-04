@@ -158,8 +158,8 @@ public class toRemember {
         // wyjatkiem checked, w kazdym innym przypadku jest typu unchecked
 
         //Wyjatki mozna obluzyc na 2 sposoby, jeden to poprzez blok try/catch a drugi
-        //to zepchniecie go na poziom nizej czyli do metody wywolujacej za pomoca
-        //klauzuli throws
+        // to zepchniecie go na poziom nizej czyli do metody wywolujacej za pomoca
+        // klauzuli throws
         boolean czyPoprawne = false;
         if(!czyPoprawne && 1>2){
             try{
