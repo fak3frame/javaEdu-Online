@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="238" column="19" selection-start-line="238" selection-start-column="19" selection-end-line="238" selection-end-column="19" />
+            <state relative-caret-position="373">
+              <caret line="252" column="11" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -269,27 +270,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00090" summary="toRemember 8">
-      <created>1527882929609</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1527882929609</updated>
-    </task>
-    <task id="LOCAL-00091" summary="toRemember 9">
-      <created>1527883884797</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1527883884797</updated>
-    </task>
-    <task id="LOCAL-00092" summary="toRemember 10">
-      <created>1527883961715</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1527883961715</updated>
     </task>
     <task id="LOCAL-00093" summary="toRemember 11">
       <created>1527884246963</created>
@@ -613,7 +593,28 @@
       <option name="project" value="LOCAL" />
       <updated>1528139985271</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="toRemember 60">
+      <created>1528140364376</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1528140364376</updated>
+    </task>
+    <task id="LOCAL-00140" summary="toRemember 61">
+      <created>1528140419319</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1528140419319</updated>
+    </task>
+    <task id="LOCAL-00141" summary="toRemember 62">
+      <created>1528140538902</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1528140538902</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -653,9 +654,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 32" />
-    <MESSAGE value="toRemember 33" />
-    <MESSAGE value="toRemember 34" />
     <MESSAGE value="toRemember 35" />
     <MESSAGE value="toRemember 36" />
     <MESSAGE value="toRemember 37 hashcode equals" />
@@ -678,7 +676,10 @@
     <MESSAGE value="toRemember 57" />
     <MESSAGE value="toRemember 58" />
     <MESSAGE value="toRemember 59" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember 59" />
+    <MESSAGE value="toRemember 60" />
+    <MESSAGE value="toRemember 61" />
+    <MESSAGE value="toRemember 62" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember 62" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -948,8 +949,8 @@
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java" />
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="238" column="19" selection-start-line="238" selection-start-column="19" selection-end-line="238" selection-end-column="19" />
+        <state relative-caret-position="373">
+          <caret line="252" column="11" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
         </state>
       </provider>
     </entry>

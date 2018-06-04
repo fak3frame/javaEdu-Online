@@ -249,7 +249,8 @@ public class toRemember {
         //deklaracja public boolean equals(Obj o){
         //warunki: (this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
         // if(this.zmienna==((Nadklasa)obj).zmienna && this.getZmienna()==
-        // ((Nadklasa)obj).getzmienna())return true, else return false
+        // ((Nadklasa)obj).getzmienna())return true
+        // else return false
         //Do porownania moge uzyc Double.compare(zmianna, obj.getZmienna2() == 0 // zwroci 0!
         // dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
 
