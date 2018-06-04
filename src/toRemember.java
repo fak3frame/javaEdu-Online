@@ -246,7 +246,8 @@ public class toRemember {
         //EQUALS HASHCODE
         //moge dodac tylko w klasie "najwyzej" obiektu i odwolac sie w metodzie equals i
         // hashcode do zmiennych nadklas przez akcesor
-        //w equals(this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
+        //deklaracja public boolean equals(Obj o){
+        //warunki: (this==obj)true, (obj==null||this.getClass()=!obj.getClass())false
         // if(this.zmienna==((Nadklasa)obj).zmienna && this.getZmienna()==
         // ((Nadklasa)obj).getzmienna())return true, else return false
         //Do porownania moge uzyc Double.compare(zmianna, obj.getZmienna2() == 0 // zwroci 0!
