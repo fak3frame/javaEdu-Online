@@ -23,7 +23,7 @@ public class StringBuilderBuffer {
         StringBuilder sb = new StringBuilder(s);
         for(int i = 0; i<1000; i++)
             sb.append("a");
-
+        s = sb.toString();
         System.out.println(s);
 
         //StringBuffer jest klasa synchronizowana (wolniejsza od Stringbuildera w przypadku
