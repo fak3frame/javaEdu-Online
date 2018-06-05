@@ -11,7 +11,9 @@ public class String_Joiner {
         StringJoiner upraszcza laczenie Stringow
          */
         StringJoiner joiner = new StringJoiner("");
-        String napis;
+        //musi byc cos w konstruktorze StringJoinera
+
+        String napis = joiner.add("napis").add(" napis2").toString();
 
     }
 }
