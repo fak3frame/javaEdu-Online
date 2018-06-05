@@ -14,6 +14,16 @@ public class String_Joiner {
         //musi byc cos w konstruktorze StringJoinera
 
         String napis = joiner.add("napis").add(" napis2").toString();
+        //operacje dodawania metoda .add("")
+        //moge przypisac do Stringa uzywajac na koncu metody .toString();
+
+        /*
+        StringJoiner przyda się szczególnie wtedy, gdy będziemy chcieli
+         połączyć kilka napisów i dodatkowo rozdzielić je jakimś separatorem
+
+
+
+         */
 
     }
 }
