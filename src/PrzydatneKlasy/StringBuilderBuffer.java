@@ -7,6 +7,7 @@ public class StringBuilderBuffer {
 
         String s = "123";
         String s2 = "123"+s;
+
         w przypadu polaczenia stringow +, najpierwsz tworzy sie
          obiekt StringBuilder, nastepnie dodawany jest ciag poprzez
          .append(nowaWartosc) a nastepnie zamieniony na stringa .toString() na
