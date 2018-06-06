@@ -23,6 +23,10 @@ public class RobotMoj {
 
         //Program piszacy Czesc a nastepnie wykoanuje zrzut ekranu i
         // zapisuje go na dysku
+
+        RobotMoj test = new RobotMoj();
+        test.robot.delay(10);//timer od uruchomienia
+        test.piszTekst();
     }
     Robot robot;
     public RobotMoj(){
@@ -37,6 +41,11 @@ public class RobotMoj {
     //metoda drukownia napisu
     public void piszTekst(){
         int[] napis = {KeyEvent.VK_C,KeyEvent.VK_Z,KeyEvent.VK_E,
-                KeyEvent.VK_S,KeyEvent.VK_C,}
+                KeyEvent.VK_S,KeyEvent.VK_C,};
+        //dodanie odstepu czasowego w wyswieleniu
+        for(int i=0;i<napis.length;i++){
+            robot.keyPress(napis[i]);
+            robot.delay(200);
+        }
     }
 }

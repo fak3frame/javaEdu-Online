@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +53,11 @@
       <file leaf-file-name="RobotMoj.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="378">
+              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.String_Joiner">
+  <component name="RunManager" selected="Application.RobotMoj">
     <configuration name="KlasaArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.KlasaArrays" />
       <module name="javaStartMojSkrypt" />
@@ -176,13 +180,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Obiekty_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Obiekty_1" />
+    <configuration name="RobotMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RobotMoj" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_Obiekty.*" />
+          <option name="PATTERN" value="PrzydatneKlasy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -256,19 +260,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Obiekty_1" />
       <item itemvalue="Application.KlasaArrays" />
       <item itemvalue="Application.toRemember" />
       <item itemvalue="Application.StringBuilderBuffer" />
       <item itemvalue="Application.String_Joiner" />
+      <item itemvalue="Application.RobotMoj" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RobotMoj" />
         <item itemvalue="Application.String_Joiner" />
         <item itemvalue="Application.StringBuilderBuffer" />
         <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.KlasaArrays" />
-        <item itemvalue="Application.Obiekty_1" />
       </list>
     </recent_temporary>
   </component>
@@ -282,27 +286,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00117" summary="toRemember 35">
-      <created>1528032532126</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1528032532126</updated>
-    </task>
-    <task id="LOCAL-00118" summary="toRemember 36">
-      <created>1528033043790</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1528033043790</updated>
-    </task>
-    <task id="LOCAL-00119" summary="toRemember 37 hashcode equals">
-      <created>1528034315552</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1528034315552</updated>
     </task>
     <task id="LOCAL-00120" summary="toRemember 38 hashcode equals">
       <created>1528034467833</created>
@@ -626,7 +609,28 @@
       <option name="project" value="LOCAL" />
       <updated>1528309296517</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="Przydatne Klasy Robot 1">
+      <created>1528309554659</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1528309554659</updated>
+    </task>
+    <task id="LOCAL-00167" summary="Przydatne Klasy Robot 2">
+      <created>1528309697335</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1528309697335</updated>
+    </task>
+    <task id="LOCAL-00168" summary="Przydatne Klasy Robot 3">
+      <created>1528309991092</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1528309991092</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -666,9 +670,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 61" />
-    <MESSAGE value="toRemember 62" />
-    <MESSAGE value="toRemember 63" />
     <MESSAGE value="toRemember 64" />
     <MESSAGE value="toRemember 65" />
     <MESSAGE value="Przydatne Klasy StringBuilder/Buffer 2" />
@@ -691,7 +692,10 @@
     <MESSAGE value="Przydatne Klasy StringJoiner 17" />
     <MESSAGE value="Przydatne Klasy StringJoiner 18" />
     <MESSAGE value="Przydatne Klasy StringJoiner 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy StringJoiner 19" />
+    <MESSAGE value="Przydatne Klasy Robot 1" />
+    <MESSAGE value="Przydatne Klasy Robot 2" />
+    <MESSAGE value="Przydatne Klasy Robot 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy Robot 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1037,8 +1041,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="378">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
