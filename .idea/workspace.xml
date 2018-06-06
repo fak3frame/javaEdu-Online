@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="63" column="82" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
+              <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -273,20 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00114" summary="toRemember 32">
-      <created>1528027971005</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1528027971007</updated>
-    </task>
-    <task id="LOCAL-00115" summary="toRemember 33">
-      <created>1528031002180</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1528031002182</updated>
     </task>
     <task id="LOCAL-00116" summary="toRemember 34">
       <created>1528031029119</created>
@@ -617,7 +603,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528308228596</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="Przydatne Klasy StringJoiner 17">
+      <created>1528308545532</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1528308545532</updated>
+    </task>
+    <task id="LOCAL-00164" summary="Przydatne Klasy StringJoiner 18">
+      <created>1528308946553</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1528308946553</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -657,8 +657,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 58" />
-    <MESSAGE value="toRemember 59" />
     <MESSAGE value="toRemember 60" />
     <MESSAGE value="toRemember 61" />
     <MESSAGE value="toRemember 62" />
@@ -682,7 +680,9 @@
     <MESSAGE value="Przydatne Klasy StringJoiner 14" />
     <MESSAGE value="Przydatne Klasy StringJoiner 15" />
     <MESSAGE value="Przydatne Klasy StringJoiner 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy StringJoiner 16" />
+    <MESSAGE value="Przydatne Klasy StringJoiner 17" />
+    <MESSAGE value="Przydatne Klasy StringJoiner 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy StringJoiner 18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -690,13 +690,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6154">
-          <caret line="362" column="6" selection-start-line="362" selection-start-column="6" selection-end-line="362" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1023,10 +1016,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="63" column="82" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

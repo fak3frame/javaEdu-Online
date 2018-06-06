@@ -78,7 +78,8 @@ public class String_Joiner {
         String zbior = Files.lines(Paths.get(ClassLoader.getSystemResource("plik.txt").toURI()))
                 .filter(str->str.length()>3)
                 .collect(Collectors.joining(", ","{","}"));
-
+        //w tym przypadku odczytuje z pliku ciagi znakow linia po lini o odrzucam
+        // te krotsze od dlugosci 3
 
     }
 }
