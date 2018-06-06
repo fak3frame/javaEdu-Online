@@ -1,5 +1,7 @@
 package PrzydatneKlasy;
 
+import java.awt.*;
+
 public class RobotMoj {
     public static void main(String[] args) {
         /*
@@ -16,5 +18,13 @@ public class RobotMoj {
         createScreenCapture(Rectangle screenRect)
         delay(int time) - wstrzymanie wykonywanego wątku w ms.
          */
+
+
+        //Program piszacy Czesc a nastepnie wykoanuje zrzut ekranu i
+        // zapisuje go na dysku
+
+        Robot robot;
+
+
     }
 }

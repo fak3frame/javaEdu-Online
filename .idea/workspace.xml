@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="String_Joiner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="String_Joiner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -46,6 +45,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotMoj.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -85,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java" />
         <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" />
+        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" />
       </list>
     </option>
   </component>
@@ -273,13 +282,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00116" summary="toRemember 34">
-      <created>1528031029119</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1528031029119</updated>
     </task>
     <task id="LOCAL-00117" summary="toRemember 35">
       <created>1528032532126</created>
@@ -617,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528308946553</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="Przydatne Klasy StringJoiner 19">
+      <created>1528309296517</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1528309296517</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -633,11 +642,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.3196005" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.3196005" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19666183" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19666183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -657,7 +666,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 60" />
     <MESSAGE value="toRemember 61" />
     <MESSAGE value="toRemember 62" />
     <MESSAGE value="toRemember 63" />
@@ -682,7 +690,8 @@
     <MESSAGE value="Przydatne Klasy StringJoiner 16" />
     <MESSAGE value="Przydatne Klasy StringJoiner 17" />
     <MESSAGE value="Przydatne Klasy StringJoiner 18" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy StringJoiner 18" />
+    <MESSAGE value="Przydatne Klasy StringJoiner 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy StringJoiner 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -690,13 +699,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1030,6 +1032,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
