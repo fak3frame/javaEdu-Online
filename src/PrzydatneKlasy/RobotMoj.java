@@ -1,7 +1,11 @@
 package PrzydatneKlasy;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class RobotMoj {
     public static void main(String[] args) {
@@ -25,7 +29,7 @@ public class RobotMoj {
         // zapisuje go na dysku
 
         RobotMoj test = new RobotMoj();
-        test.robot.delay(10);//timer od uruchomienia
+        test.robot.delay(3000);//timer od uruchomienia
         test.piszTekst();
     }
     Robot robot;
@@ -46,6 +50,20 @@ public class RobotMoj {
         for(int i=0;i<napis.length;i++){
             robot.keyPress(napis[i]);
             robot.delay(200);
+        }
+    }
+    //metoda do zrzutu ekranu
+    public void screenCapture() {
+        //pobieramy rozmiar ekranu i tworzymy Rectangle
+        Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+        Rectangle rectangle = new Rectangle(dimension);
+        //robimy screenshot z utworzonego obszaru
+        BufferedImage screen = robot.createScreenCapture(rectangle);
+        try {
+            ImageIO.write(screen, "jpg", new File("screenshot.jpg"));
+        } catch (IOException e) {
+            System.err.println("Błąd zapisu obrazu");
+            e.printStackTrace();
         }
     }
 }
