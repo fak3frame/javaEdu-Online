@@ -35,6 +35,7 @@ public class String_Joiner {
         System.out.println(result);
 
 
+        System.out.println();
         /*
         mam do dyspozycji takie metody jak
         join(CharSequence delimiter, CharSequence... elements) oraz
@@ -44,7 +45,12 @@ public class String_Joiner {
         //wykorzystje klase Arrays do uzupelnienia tablicy
         String wszystkieImiona = "";
         wszystkieImiona = wszystkieImiona.join(", ",lista);
+        //pierwszy argument to separato a drugi lista
         System.out.println(wszystkieImiona);
+        //taka metoda jest niezbyt dobra poniewaz najpierw musze zainicjowac
+        // pustego stringa
+
+
 
 
     }
