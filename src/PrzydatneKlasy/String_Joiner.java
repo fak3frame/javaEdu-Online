@@ -6,7 +6,7 @@ public class String_Joiner {
     public static void main(String[] args) {
         /*
         StringJoiner rozwiazuje problem ze StringBuilder/Buffer koliduje
-        z wyrazeniami lambda oraz z programowniem funckjnym
+         z wyrazeniami lambda oraz z programowniem funckjnym
 
         StringJoiner upraszcza laczenie Stringow
          */
