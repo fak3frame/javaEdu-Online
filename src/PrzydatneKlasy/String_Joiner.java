@@ -13,8 +13,11 @@ public class String_Joiner {
         StringJoiner joiner = new StringJoiner("");
         //Konstruktor StringJoiner przyjmuje albo jeden parametr
         // będący separatorem, albo trzy argumenty (separator, prefix, sufix)
+        //separator - to co oddziela nam napsy - podalem " " czyli nic spacja
+        //prefix - to co bedzie na poczatku ciagu
+        //sufix - na koncu ciagu
 
-        String napis = joiner.add("napis").add(" napis2").toString();
+        String napis = joiner.add("napis").add("napis2").toString();
         //operacje dodawania metoda .add("")
         //moge przypisac do Stringa uzywajac na koncu metody .toString();
         System.out.println(napis);
