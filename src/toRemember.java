@@ -95,6 +95,7 @@ public class toRemember {
         //SORTOWANIE TABLICY OBIEKTOW - klasa Arrays
         /*
         .asList();
+        //np. List<String>imiona = Arrays.asList("kamil","tomek");
         .equals();
         .fill();
         .sort();

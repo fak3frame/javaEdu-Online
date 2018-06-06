@@ -1,5 +1,8 @@
 package PrzydatneKlasy;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.StringJoiner;
 
 public class String_Joiner {
@@ -32,7 +35,13 @@ public class String_Joiner {
         System.out.println(result);
 
 
-
+        /*
+        mam do dyspozycji takie metody jak
+        join(CharSequence delimiter, CharSequence... elements) oraz
+        join(CharSequence delimiter, Iterable<? extends CharSequence> elements)
+         */
+        List<String> lista = Arrays.asList("kamil","tomek");
+        //wykorzystje klase Arrays do uzupelnienia tablicy
 
 
     }
