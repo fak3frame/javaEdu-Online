@@ -1,6 +1,7 @@
 package PrzydatneKlasy;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class RobotMoj {
     public static void main(String[] args) {
@@ -22,9 +23,20 @@ public class RobotMoj {
 
         //Program piszacy Czesc a nastepnie wykoanuje zrzut ekranu i
         // zapisuje go na dysku
+    }
+    Robot robot;
+    public RobotMoj(){
+        try{
+            robot = new Robot();
+        }catch (AWTException e){
+            System.out.println("Co on robi?");
+            e.printStackTrace();
+        }
+    }
 
-        Robot robot;
-
-
+    //metoda drukownia napisu
+    public void piszTekst(){
+        int[] napis = {KeyEvent.VK_C,KeyEvent.VK_Z,KeyEvent.VK_E,
+                KeyEvent.VK_S,KeyEvent.VK_C,}
     }
 }
