@@ -29,5 +29,19 @@ public class StringBuilderBuffer {
         //StringBuffer jest klasa synchronizowana (wolniejsza od Stringbuildera w przypadku
         // dodawania ciagow znakow
 
+        StringBuilder sb = new StringBuilder(12);
+        sb.ensureCapacity(13);//z zakresem 16/34/dokladnym
+        sb.append("123").append("123");
+        sb.replace(0,1,"123");
+        sb.insert(0, "123");
+        sb.reverse();
+        sb.delete(0,1);
+        int i4 = sb.indexOf("x");
+        int i5 = sb.capacity();
+        int i6 = sb.length();
+        char c = sb.charAt(0);
+        String str2 = sb.substring(1);
+        String strS = sb.toString();
+
     }
 }
