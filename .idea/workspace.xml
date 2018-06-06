@@ -100,8 +100,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="124" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="96" />
+    <option name="y" value="5" />
     <option name="width" value="1301" />
     <option name="height" value="1447" />
   </component>
