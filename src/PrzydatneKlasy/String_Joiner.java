@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.StringJoiner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class String_Joiner {
     public static void main(String[] args) {
@@ -51,7 +53,19 @@ public class String_Joiner {
         // pustego stringa
 
 
+        /*
+        najbardziej optymalna jest opcja dodania strumieni oraz Collctorow
 
+        Polega to na wyciagnieciu z listy strumienia a nastepnie wykorzystac metode
+         collect() do zlaczenia napisow. Wymaga ona obiektu Collector lecz mozna
+         skorzystac z metody Collectors.joining() ktora zwraca odpowiedni reduktor
+         wykorzystjacy pod soba StringJoiner
+         */
+        String noweWszystkieImiona =
+                lista.stream().collect(Collectors.joining(",","{","}"));
+        /*
+
+         */
 
     }
 }
