@@ -1,5 +1,11 @@
 package PrzydatneKlasy;
 
+import javafx.scene.shape.Path;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +14,7 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class String_Joiner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws URISyntaxException, IOException {
         /*
         StringJoiner rozwiazuje problem ze StringBuilder/Buffer koliduje
          z wyrazeniami lambda oraz z programowniem funckjnym
@@ -63,9 +69,16 @@ public class String_Joiner {
          */
         String noweWszystkieImiona =
                 lista.stream().collect(Collectors.joining(",","{","}"));
-        /*
+        //w takim przypadku mozemy nawet calkowicie zrezygnowac ze zmiennej string
 
+
+        /*
+        calosc mozna polaczyc takze z klasa Files
          */
+        String zbior = Files.lines(Paths.get(ClassLoader.getSystemResource("plik.txt").toURI()))
+                .filter(str->str.length()>3)
+                .collect(Collectors.joining(", ","{","}"));
+
 
     }
 }
