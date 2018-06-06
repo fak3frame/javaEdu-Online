@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +52,8 @@
       <file leaf-file-name="RobotMoj.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            <state relative-caret-position="123">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -286,20 +285,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00120" summary="toRemember 38 hashcode equals">
-      <created>1528034467833</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1528034467833</updated>
-    </task>
-    <task id="LOCAL-00121" summary="toRemember 39 hashcode equals">
-      <created>1528034824829</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1528034824829</updated>
     </task>
     <task id="LOCAL-00122" summary="toRemember 40">
       <created>1528035509842</created>
@@ -630,12 +615,25 @@
       <option name="project" value="LOCAL" />
       <updated>1528309991092</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Przydatne Klasy Robot 4">
+      <created>1528310208857</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1528310208857</updated>
+    </task>
+    <task id="LOCAL-00170" summary="Przydatne Klasy Robot 5">
+      <created>1528310433276</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1528310433276</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -670,8 +668,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember 64" />
-    <MESSAGE value="toRemember 65" />
     <MESSAGE value="Przydatne Klasy StringBuilder/Buffer 2" />
     <MESSAGE value="Przydatne Klasy StringBuilder/Buffer 3" />
     <MESSAGE value="Przydatne Klasy StringBuilder/Buffer 4" />
@@ -695,7 +691,9 @@
     <MESSAGE value="Przydatne Klasy Robot 1" />
     <MESSAGE value="Przydatne Klasy Robot 2" />
     <MESSAGE value="Przydatne Klasy Robot 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy Robot 3" />
+    <MESSAGE value="Przydatne Klasy Robot 4" />
+    <MESSAGE value="Przydatne Klasy Robot 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy Robot 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1041,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        <state relative-caret-position="123">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
