@@ -42,6 +42,9 @@ public class String_Joiner {
          */
         List<String> lista = Arrays.asList("kamil","tomek");
         //wykorzystje klase Arrays do uzupelnienia tablicy
+        String wszystkieImiona = "";
+        wszystkieImiona = wszystkieImiona.join(", ",lista);
+        System.out.println(wszystkieImiona);
 
 
     }
