@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,11 +71,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MathMoj.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MathMoj.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="374">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfaceSet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ObjectMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java" />
+        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java" />
       </list>
     </option>
   </component>
@@ -188,7 +202,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MathMoj">
+  <component name="RunManager" selected="Application.InterfaceSet">
+    <configuration name="InterfaceSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.InterfaceSet" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PrzydatneKlasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="MathMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.MathMoj" />
       <module name="javaStartMojSkrypt" />
@@ -236,11 +261,6 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="toRemember" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="toRemember" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -280,19 +300,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.toRemember" />
       <item itemvalue="Application.StringBuilderBuffer" />
       <item itemvalue="Application.String_Joiner" />
       <item itemvalue="Application.RobotMoj" />
       <item itemvalue="Application.MathMoj" />
+      <item itemvalue="Application.InterfaceSet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InterfaceSet" />
         <item itemvalue="Application.MathMoj" />
         <item itemvalue="Application.RobotMoj" />
         <item itemvalue="Application.String_Joiner" />
         <item itemvalue="Application.StringBuilderBuffer" />
-        <item itemvalue="Application.toRemember" />
       </list>
     </recent_temporary>
   </component>
@@ -306,34 +326,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00125" summary="toRemember 43 wyjatki">
-      <created>1528036716449</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1528036716449</updated>
-    </task>
-    <task id="LOCAL-00126" summary="toRemember 44 wyjatki">
-      <created>1528036960696</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1528036960696</updated>
-    </task>
-    <task id="LOCAL-00127" summary="toRemember 45 wyjatki">
-      <created>1528037000745</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1528037000745</updated>
-    </task>
-    <task id="LOCAL-00128" summary="toRemember 46 wyjatki">
-      <created>1528037230294</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1528037230294</updated>
     </task>
     <task id="LOCAL-00129" summary="toRemember 47 wyjatki">
       <created>1528037376264</created>
@@ -650,7 +642,35 @@
       <option name="project" value="LOCAL" />
       <updated>1528377152358</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="Przydatne Klasy Math 3">
+      <created>1528377358043</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1528377358043</updated>
+    </task>
+    <task id="LOCAL-00175" summary="Przydatne Klasy Math 4">
+      <created>1528377392005</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1528377392005</updated>
+    </task>
+    <task id="LOCAL-00176" summary="Przydatne Klasy InterfaceSet 2">
+      <created>1528377482949</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1528377482949</updated>
+    </task>
+    <task id="LOCAL-00177" summary="Przydatne Klasy InterfaceSet 3">
+      <created>1528377990040</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1528377990040</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -665,12 +685,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007257" side_tool="true" weight="0.32459426" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.3196005" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992743" visible="true" weight="0.3196005" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19593614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19593614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -690,10 +710,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Przydatne Klasy StringBuilder/Buffer 5" />
-    <MESSAGE value="StringJoiner" />
-    <MESSAGE value="Przydatne Klasy StringJoiner 2" />
-    <MESSAGE value="Przydatne Klasy StringJoiner 3" />
     <MESSAGE value="Przydatne Klasy StringJoiner 7" />
     <MESSAGE value="Przydatne Klasy StringJoiner 8" />
     <MESSAGE value="Przydatne Klasy StringJoiner 9" />
@@ -715,7 +731,11 @@
     <MESSAGE value="Przydatne Klasy Objects 2" />
     <MESSAGE value="Przydatne Klasy Math 1" />
     <MESSAGE value="Przydatne Klasy Math 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy Math 2" />
+    <MESSAGE value="Przydatne Klasy Math 3" />
+    <MESSAGE value="Przydatne Klasy Math 4" />
+    <MESSAGE value="Przydatne Klasy InterfaceSet 2" />
+    <MESSAGE value="Przydatne Klasy InterfaceSet 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy InterfaceSet 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -723,13 +743,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6035">
-          <caret line="394" column="37" selection-start-line="394" selection-start-column="37" selection-end-line="394" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1051,8 +1064,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="374">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
