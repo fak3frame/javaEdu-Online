@@ -1,8 +1,11 @@
 package PrzydatneKlasy;
 
+import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.Map.Entry;
+import java.util.stream.Collector;
 
 public class InterfaceMap {
     public static void main(String[] args) {
@@ -64,9 +67,20 @@ public class InterfaceMap {
         System.out.println("klucze: "+pracownicy.keySet()); //zbior kluczy w []
         System.out.println("wartosci: "+pracownicy.values());
 
+        System.out.println("\n");
+        Set<Integer> zbiorKluczy = pracownicy.keySet();
+        //umieszczam klucze w zbior
+        System.out.println("klucze: "+zbiorKluczy);
 
+        Collection<String> kolekcjaWartosci = pracownicy.values();
+        System.out.println("wartosci: "+kolekcjaWartosci);
 
+        Set<Map.Entry<Integer,String>> zbiorKluczyWartosci = pracownicy.entrySet();
+        //Dodaje zbior zawierajacy elementy typu Map.Entry ktory reprezentuje
+        // rekordy mapy na zasadzie klucz wartosc
+        for(Entry<Integer,String> x : zbiorKluczyWartosci){
+            System.out.println(x.getKey() + " " + x.getValue());
+        }
 
-        //Set<Map.Entry>
     }
 }
