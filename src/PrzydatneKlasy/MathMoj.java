@@ -20,7 +20,7 @@ public class MathMoj {
         System.out.println(Math.pow(a,2));
 
         System.out.println("-5-");
-        System.out.println(Math.sqrt(a));
+        System.out.println(Math.sqrt(4));
 
         System.out.println("-6-");
         System.out.println(Math.round(b)); //zaokraglenie 0.5+ 0.4-
