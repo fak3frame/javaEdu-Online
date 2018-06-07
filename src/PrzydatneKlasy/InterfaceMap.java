@@ -58,6 +58,11 @@ public class InterfaceMap {
 
         System.out.println("ilosc pracownikow: "+pracownicy.size());
         System.out.println("pracownik o id 1: "+pracownicy.get(1));
+        pracownicy.remove(4);
+        System.out.println("ilosc pracownikow 2: "+pracownicy.size());
+        System.out.println("klucze: "+pracownicy.keySet()); //zbior kluczy w []
+
+
 
         //Set<Map.Entry>
     }
