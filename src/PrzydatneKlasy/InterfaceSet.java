@@ -51,7 +51,12 @@ public class InterfaceSet {
          naturalnego porządku, oraz last(), która zwraca największy z nich
 
          */
+
         Set<String> zbior = new TreeSet<>();
+        //Wykorzystalem TreeSet czyli dzieki oprocz unikalnosci bede mial
+        // sortowanie. Jako ze elementy sa Stringiem to wykorzystuje wbudowana
+        // implementacje interfejscu Comparable w klase String
+        //W innym przypadku sam bede musial zadeklarowac wlasny Comparator
         zbior.add("Kamil");
         zbior.add("Tomek");
         zbior.add("Tomek");
@@ -59,8 +64,18 @@ public class InterfaceSet {
         zbior.add("Janusz");
         zbior.add("Janusz");
 
+        System.out.println("-1-");
         int size = zbior.size();
         System.out.println(size);
+
+        System.out.println("\n"+"-2-");
+        boolean czyJestTomek = zbior.contains("Tomek");
+        System.out.println(czyJestTomek);
+
+        System.out.println("\n"+"-3-");
+        for (String x : zbior){
+            System.out.println(x);
+        }
 
 
 
