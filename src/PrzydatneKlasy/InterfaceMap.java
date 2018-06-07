@@ -50,6 +50,7 @@ public class InterfaceMap {
          */
 
         Map<Integer, String> pracownicy = new TreeMap<>();
+        //TreeSet posortuje wg wartosci kluczy
         pracownicy.put(1,"Kamil");
         pracownicy.put(1,"Kamil2");//nadpisuje
         pracownicy.put(2,"Tomek");
@@ -58,9 +59,11 @@ public class InterfaceMap {
 
         System.out.println("ilosc pracownikow: "+pracownicy.size());
         System.out.println("pracownik o id 1: "+pracownicy.get(1));
-        pracownicy.remove(4);
+        pracownicy.remove(4);//wywalam Przemka
         System.out.println("ilosc pracownikow 2: "+pracownicy.size());
         System.out.println("klucze: "+pracownicy.keySet()); //zbior kluczy w []
+        System.out.println("wartosci: "+pracownicy.values());
+
 
 
 
