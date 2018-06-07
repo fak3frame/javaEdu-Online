@@ -29,6 +29,7 @@ public class InterfaceSet {
          liste podwojnie wiazana dzieki czemu zagwarantowana jest
          unikalnosc elementow oraz kolejnosc w jakiej zostaly dodane.
 
+        ROZNICE:
         HashSet jest podstawową implementacją, która zapewnia jedynie
          unikalność elementów, TreeSet gwarantuje dodatkowe sortowanie,
          a LinkedHashSet pamięta  dodatkowo kolejnoś wstawiania.
