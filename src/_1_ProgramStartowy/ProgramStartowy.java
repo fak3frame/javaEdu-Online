@@ -241,7 +241,7 @@ public class ProgramStartowy {
         System.out.println(a1/b);//przkonwertuje na double
         System.out.println((int)(a1/b));//sztywne rzutowanie, pokaze bez reszty
         System.out.println( (a1/b) - (int)(a1/b)); // sama reszta
-        System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do obciecia reszty                        !
+        System.out.println(Math.round(a1/b)); //wykorzystanie funkcji round() do zaokreaglenia                      !
 
         //---------ZAPIS I KONWENCJA NAZEWNICTWA----------------
         /*
