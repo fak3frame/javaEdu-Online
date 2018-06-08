@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +24,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+            <state relative-caret-position="-255">
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -41,7 +42,7 @@
       <file leaf-file-name="InterfaceSet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="510">
               <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,16 +51,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KlasaArrays.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java">
+      <file leaf-file-name="ArraysMoja.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-850">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="-493">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterfaceMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InterfaceMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -67,6 +71,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomMoj.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -104,13 +117,15 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/StringJoiner.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java" />
-        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ObjectMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" />
+        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java" />
+        <option value="$PROJECT_DIR$/src/toRemember.java" />
+        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" />
       </list>
     </option>
   </component>
@@ -127,6 +142,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,7 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InterfaceMap">
+  <component name="RunManager" selected="Application.RandomMoj">
     <configuration name="InterfaceMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.InterfaceMap" />
       <module name="javaStartMojSkrypt" />
@@ -216,8 +231,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RobotMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RobotMoj" />
+    <configuration name="RandomMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RandomMoj" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -227,8 +242,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="String_Joiner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.String_Joiner" />
+    <configuration name="RobotMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RobotMoj" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -280,19 +295,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.String_Joiner" />
       <item itemvalue="Application.RobotMoj" />
       <item itemvalue="Application.MathMoj" />
       <item itemvalue="Application.InterfaceSet" />
       <item itemvalue="Application.InterfaceMap" />
+      <item itemvalue="Application.RandomMoj" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RandomMoj" />
         <item itemvalue="Application.InterfaceMap" />
         <item itemvalue="Application.InterfaceSet" />
         <item itemvalue="Application.MathMoj" />
         <item itemvalue="Application.RobotMoj" />
-        <item itemvalue="Application.String_Joiner" />
       </list>
     </recent_temporary>
   </component>
@@ -306,13 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00134" summary="toRemember 52 klasa Arrays">
-      <created>1528045495997</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1528045495997</updated>
     </task>
     <task id="LOCAL-00135" summary="toRemember 53 inteface List">
       <created>1528046354628</created>
@@ -650,7 +658,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528380175047</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="Przydatne Klasy Random 1">
+      <created>1528462050264</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1528462050264</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -665,8 +680,8 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.3196005" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.3196005" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -675,8 +690,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39950064" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39950064" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32946298" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -690,7 +705,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Przydatne Klasy StringJoiner 12" />
     <MESSAGE value="Przydatne Klasy StringJoiner 13" />
     <MESSAGE value="Przydatne Klasy StringJoiner 14" />
     <MESSAGE value="Przydatne Klasy StringJoiner 15" />
@@ -715,7 +729,8 @@
     <MESSAGE value="Przydatne Klasy InterfaceSet 6" />
     <MESSAGE value="Przydatne Klasy InterfaceMap 1" />
     <MESSAGE value="Przydatne Klasy InterfaceMap 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy InterfaceMap 2" />
+    <MESSAGE value="Przydatne Klasy Random 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne Klasy Random 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -723,13 +738,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java" />
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -781,7 +789,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java" />
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java" />
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7072">
@@ -986,13 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -1005,9 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,9 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,18 +1032,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="510">
           <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-850">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1059,6 +1047,30 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>

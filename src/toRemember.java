@@ -1,4 +1,4 @@
-import PrzydatneKlasy.KlasaArrays;
+import PrzydatneKlasy.ArraysMoja;
 
 import java.io.BufferedReader;
 import java.io.IOException;
