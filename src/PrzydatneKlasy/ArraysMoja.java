@@ -3,7 +3,7 @@ package PrzydatneKlasy;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class KlasaArrays {
+public class ArraysMoja {
     public static void main(String[] args) {
         /*
         Klase Arrays mozemy uzyc jesli chcemy skorzystac i metod
