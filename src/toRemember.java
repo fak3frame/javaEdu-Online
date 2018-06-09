@@ -113,8 +113,12 @@ public class toRemember {
         KlasaArrays2 ka2 = new KlasaArrays2(9);
         KlasaArrays2 ka3 = new KlasaArrays2(12);
         KlasaArrays2[] t = {ka,ka2,ka3};
-        Sortuj sort = new Sortuj();
-        Arrays.sort(t,sort);
+        Sortuj mojSort = new Sortuj();
+        //Tworze obiekt klasy sortujacej
+        Arrays.sort(t,mojSort);
+        //wywoluje metode klasy Arrays - sort() i umieszcza, w moek tablice
+        // obiektow oraz obiekt sorujacy
+        System.out.println("Posortowane wielkosci:");
         for(KlasaArrays2 x : t){
             System.out.println(x.getWielkosc());
         }
