@@ -379,6 +379,7 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
         return Objects.hash(getZarobki(), linieKodu);
     }
 }
+
 //////////////implementacja wzorca w kodzie
 class KlasaArrays2{
     private int wielkosc;
