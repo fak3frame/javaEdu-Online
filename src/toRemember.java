@@ -232,11 +232,15 @@ public class toRemember {
         System.out.println(p1);
         //laczona metoda toString w obu klasach
         //return super.toString()+" "+String.valueOf(linieKodu);
+
         Programista.pokazInfo((Programista) p1);
+        //public static void pokazInfo(final Programista p){
+        //   System.out.println(p.getZarobki()+" "+p.linieKodu); }
         //musze zrzutowac bo metoada PRZYJMUJE OBIEKT a jest on typu Pracownik!
         // a metoda przyjmuje programiste. Musi przyjmowac programiste poniewaz
         // potrzebuje dostac sie do jego pol (linieKodu)
         // jest statyczna wiec wywoluje z nazwa klasy
+
         Pracownik.pokazInfo(p1); //tylko info o zarobkach
 
         p1.getZarobki();
@@ -252,6 +256,7 @@ public class toRemember {
         // ktora rozszerza Programista (klasa abstr. nie musi go deklarwoac
         // w kodzie
         ((Programista) p2).piszKod();//teraz musze wykonac rzutownie
+        // public void piszKod(){ linieKodu+=10; }
         // poniewaz metoda jest unikalna w programiscie bez deklaracji
         // w klasie nadrzednej/badz interf. ktory implementuje
         //Musze wiec rzutowac jesli wywoluje cos czego nie ma w TYPIE obiektu
