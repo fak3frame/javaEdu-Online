@@ -255,6 +255,7 @@ public class toRemember {
         p2.pracuj(); //metoda interfejsu ktory implementuje klasa abstr. Pracownik
         // ktora rozszerza Programista (klasa abstr. nie musi go deklarwoac
         // w kodzie
+
         ((Programista) p2).piszKod();//teraz musze wykonac rzutownie
         // public void piszKod(){ linieKodu+=10; }
         // poniewaz metoda jest unikalna w programiscie bez deklaracji
