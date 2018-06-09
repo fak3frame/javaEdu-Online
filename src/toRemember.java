@@ -274,6 +274,7 @@ public class toRemember {
         //if(this.zmienna==k.zmienna && this.getZmienna2()==
         // k.getzmienna2())return true
         //else return false
+
         //Do porownania moge uzyc Double.compare(zmianna, ((Nadklasa)obj).zmianna()) == 0
         // zwroci 0!
         //dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
