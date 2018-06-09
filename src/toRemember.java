@@ -79,7 +79,7 @@ public class toRemember {
 
         class Funkcje{
             void main(){
-                int suma = sumujLiczby(1,2,3,4);
+                sumujLiczby(1,2,3,4);
                 int[] tabInt = {1,2,3,4};
                 sumujLiczby(tabInt);
 
