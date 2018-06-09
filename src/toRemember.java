@@ -95,13 +95,13 @@ public class toRemember {
         }
 
         //SORTOWANIE TABLICY OBIEKTOW - klasa Arrays
-        /*
-        .asList();
-        //np. List<String>imiona = Arrays.asList("kamil","tomek");
-        .equals();
-        .fill();
-        .sort();
-         */
+
+        // .asList();
+        List<String>imiona = Arrays.asList("kamil","tomek");
+        //.equals();
+        //.fill();
+        //.sort();
+
         KlasaArrays2 ka = new KlasaArrays2(10);
         KlasaArrays2 ka2 = new KlasaArrays2(9);
         KlasaArrays2 ka3 = new KlasaArrays2(12);
