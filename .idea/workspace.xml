@@ -93,9 +93,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="96" />
-    <option name="y" value="5" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="135" />
+    <option name="y" value="4" />
     <option name="width" value="1301" />
     <option name="height" value="1447" />
   </component>
@@ -174,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RandomMoj">
+  <component name="RunManager" selected="Application.toRemember">
     <configuration name="InterfaceMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.InterfaceMap" />
       <module name="javaStartMojSkrypt" />
@@ -219,18 +219,12 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RobotMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RobotMoj" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PrzydatneKlasy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="toRemember" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="toRemember" />
+      <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -272,19 +266,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.RobotMoj" />
       <item itemvalue="Application.MathMoj" />
       <item itemvalue="Application.InterfaceSet" />
       <item itemvalue="Application.InterfaceMap" />
       <item itemvalue="Application.RandomMoj" />
+      <item itemvalue="Application.toRemember" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.RandomMoj" />
         <item itemvalue="Application.InterfaceMap" />
         <item itemvalue="Application.InterfaceSet" />
         <item itemvalue="Application.MathMoj" />
-        <item itemvalue="Application.RobotMoj" />
       </list>
     </recent_temporary>
   </component>
