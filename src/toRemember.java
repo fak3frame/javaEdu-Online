@@ -100,9 +100,12 @@ public class toRemember {
         List<String>imionaLista1 = Arrays.asList("kamil","tomek");
         String[] imionaTablica = {"kamil","tomek"};
         List<String>imionaLista2 = Arrays.asList(imionaTablica);
+
         //.equals();
+
         //.fill();
         Arrays.fill(imionaTablica, "xD");
+        //Arrays.fill(imionaLista2, "xD"); Nie zadziala do listy
 
         //.sort();
 
