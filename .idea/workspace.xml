@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3392">
-              <caret line="276" selection-start-line="276" selection-end-line="276" />
+            <state relative-caret-position="697">
+              <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArraysMoja.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArraysMoja.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <state relative-caret-position="179">
+              <caret line="12" column="63" selection-start-line="11" selection-start-column="22" selection-end-line="12" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java" />
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" />
-        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
+        <option value="$PROJECT_DIR$/src/toRemember.java" />
       </list>
     </option>
   </component>
@@ -303,20 +302,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00151" summary="Przydatne Klasy StringJoiner 2">
-      <created>1528234062224</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1528234062224</updated>
-    </task>
-    <task id="LOCAL-00152" summary="Przydatne Klasy StringJoiner 3">
-      <created>1528234236729</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1528234236729</updated>
     </task>
     <task id="LOCAL-00153" summary="Przydatne Klasy StringJoiner 7">
       <created>1528287758428</created>
@@ -647,7 +632,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528581546952</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="Podsumowanie poprawki 13">
+      <created>1528634762639</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1528634762640</updated>
+    </task>
+    <task id="LOCAL-00201" summary="Podsumowanie poprawki 14">
+      <created>1528635343977</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1528635343977</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -687,8 +686,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Przydatne Klasy Math 4" />
-    <MESSAGE value="Przydatne Klasy InterfaceSet 2" />
     <MESSAGE value="Przydatne Klasy InterfaceSet 3" />
     <MESSAGE value="Przydatne Klasy InterfaceSet 4" />
     <MESSAGE value="Przydatne Klasy InterfaceSet 5" />
@@ -712,7 +709,9 @@
     <MESSAGE value="Podsumowanie poprawki 10" />
     <MESSAGE value="Podsumowanie poprawki 11" />
     <MESSAGE value="Podsumowanie poprawki 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Podsumowanie poprawki 12" />
+    <MESSAGE value="Podsumowanie poprawki 13" />
+    <MESSAGE value="Podsumowanie poprawki 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Podsumowanie poprawki 14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1033,20 +1032,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3392">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        <state relative-caret-position="179">
+          <caret line="12" column="63" selection-start-line="11" selection-start-column="22" selection-end-line="12" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java">
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        <state relative-caret-position="697">
+          <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

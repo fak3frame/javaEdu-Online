@@ -94,7 +94,7 @@ public class toRemember {
             }
         }
 
-        //SORTOWANIE TABLICY OBIEKTOW - klasa Arrays
+        //SORTOWANIE TABLICY OBIEKTOW / KLASA ARRAYS
 
         // .asList(); //zamiana tablicy na liste
         List<String>imionaLista1 = Arrays.asList("kamil","tomek");
@@ -116,7 +116,7 @@ public class toRemember {
         Sortuj mojSort = new Sortuj();
         //Tworze obiekt klasy sortujacej
         Arrays.sort(t, mojSort);
-        //wywoluje metode klasy Arrays - sort() i umieszcza, w niej tablice
+        //wywoluje metode klasy Arrays - sort() i umieszczam w niej tablice
         // obiektow oraz obiekt sorujacy
         System.out.println("Posortowane wielkosci:");
         for(KlasaArrays2 x : t){
