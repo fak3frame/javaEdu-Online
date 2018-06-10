@@ -74,48 +74,6 @@ public class toRemember {
         Math.max(10,12);
 
 
-        // RANDOM
-        Random random = new Random();
-        boolean prawdaFalsz = random.nextBoolean();
-        double los = random.nextDouble();
-        // pokaze od 0 do 1 po przecinku, moge pomnozyc aby przesunac ,
-        float los2 = random.nextFloat();//mniejszy zakres
-        int los3 = random.nextInt();//standardowo pokaze z calego zakresu
-        // int lecz moge to zawezic podajac liczbe w paramterze np:
-        // random.nextInt(10) to bedzie losowac liczby z zakresu od 0 do 9
-
-
-        // ROBOT
-        /*
-        Klasa robot sluzy do automatycznego uzywania klawiatury, myszy,
-         robienia zrzutow ekranu i odczytywaniu informacji o pixelach
-
-        METODY:
-        keyPress(int keycode) np keyPress(KeyEvent.VK_C)
-        keyRelease(int keycode)
-        mousePress(int buttons) - podaje stale z klasy InputEvent:
-         (BUTTON1_MASK, BUTTON2_MASK, BUTTON3_MASK)
-        mouseRelease(int buttons)
-        createScreenCapture(Rectangle screenRect)
-        delay(czas) - opoznienie
-
-         */
-        try {
-            Robot mojRobot = new Robot();
-            //robot moze byc umieszczony w klasie jako zmienna Robot robot;
-            mojRobot.delay(1000);
-            int[]tabPrzyciskow={KeyEvent.VK_C,KeyEvent.VK_Z,KeyEvent.VK_E,
-                    KeyEvent.VK_S,KeyEvent.VK_C};
-            for (int i=0;i<0;i++){
-                mojRobot.keyPress(tabPrzyciskow[i]);
-                mojRobot.delay(100);
-            }
-        }catch (AWTException e){
-            System.out.println("Co on robi?");
-            e.printStackTrace();
-        }
-
-
         // WIELKIE LICZBY
         BigInteger bi = new BigInteger("1234");
         BigInteger bi2 = BigInteger.valueOf(1234);
@@ -154,6 +112,50 @@ public class toRemember {
                 }
                 return suma;
             }
+        }
+
+        //------------------------------------------------------------------------
+
+        // RANDOM
+        Random random = new Random();
+        boolean prawdaFalsz = random.nextBoolean();
+        double los = random.nextDouble();
+        // pokaze od 0 do 1 po przecinku, moge pomnozyc aby przesunac ,
+        float los2 = random.nextFloat();//mniejszy zakres
+        int los3 = random.nextInt();//standardowo pokaze z calego zakresu
+        // int lecz moge to zawezic podajac liczbe w paramterze np:
+        // random.nextInt(10) to bedzie losowac liczby z zakresu od 0 do 9
+
+        //------------------------------------------------------------------------
+
+        // ROBOT
+        /*
+        Klasa robot sluzy do automatycznego uzywania klawiatury, myszy,
+         robienia zrzutow ekranu i odczytywaniu informacji o pixelach
+
+        METODY:
+        keyPress(int keycode) np keyPress(KeyEvent.VK_C)
+        keyRelease(int keycode)
+        mousePress(int buttons) - podaje stale z klasy InputEvent:
+         (BUTTON1_MASK, BUTTON2_MASK, BUTTON3_MASK)
+        mouseRelease(int buttons)
+        createScreenCapture(Rectangle screenRect)
+        delay(czas) - opoznienie
+
+         */
+        try {
+            Robot mojRobot = new Robot();
+            //robot moze byc umieszczony w klasie jako zmienna Robot robot;
+            mojRobot.delay(1000);
+            int[]tabPrzyciskow={KeyEvent.VK_C,KeyEvent.VK_Z,KeyEvent.VK_E,
+                    KeyEvent.VK_S,KeyEvent.VK_C};
+            for (int i=0;i<0;i++){
+                mojRobot.keyPress(tabPrzyciskow[i]);
+                mojRobot.delay(100);
+            }
+        }catch (AWTException e){
+            System.out.println("Co on robi?");
+            e.printStackTrace();
         }
 
         //------------------------------------------------------------------------
