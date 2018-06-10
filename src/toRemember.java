@@ -93,7 +93,7 @@ public class toRemember {
             }
         }
 
-
+        //------------------------------------------------------------------------
 
         //SORTOWANIE TABLICY OBIEKTOW / KLASA ARRAYS
 
@@ -140,7 +140,7 @@ public class toRemember {
             }
         }
 
-
+        //------------------------------------------------------------------------
 
         // LISTY
         /*
@@ -167,7 +167,7 @@ public class toRemember {
         get(int);
         */
 
-
+        //------------------------------------------------------------------------
 
         // MAPY
 
@@ -207,8 +207,6 @@ public class toRemember {
          Wypisanie w petli foreach bedzie wygladalo:
          for(Entry<Integer,String> x: zbiorKluczWartosc){
             sout(x.getKey()+x.getValue());
-
-
          */
         System.out.println("MAPY:");
 
@@ -235,7 +233,7 @@ public class toRemember {
             System.out.println("klucz:"+x.getKey()+" wartosc:"+x.getValue());
         }
 
-
+        //------------------------------------------------------------------------
 
         // WYJATKI
 
@@ -297,7 +295,7 @@ public class toRemember {
             }
         }
 
-
+        //------------------------------------------------------------------------
 
         // OBIEKTY POLIMORFIZM DZIEDZICZENIE
 
