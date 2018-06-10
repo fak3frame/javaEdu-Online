@@ -400,26 +400,29 @@ public class toRemember {
         // badz "nizej"
 
         //EQUALS HASHCODE
-        //moge dodac tylko w klasie "najwyzej" obiektu i odwolac sie w metodzie equals i
-        // hashcode do zmiennych nadklas przez akcesor
-        //deklaracja public boolean equals(Obj o){
-        //warunki:
-        //if(this==obj) return true;
-        //if(obj==null||this.getClass()=!obj.getClass()) return false;
-        //Klasa k = (Klasa)k;
-        //if(this.zmienna==k.zmienna && this.getZmienna2()==
-        // k.getzmienna2())return true
-        //else return false
+        /*
+        moge dodac tylko w klasie "najwyzej" obiektu i odwolac sie w metodzie equals i
+         hashcode do zmiennych nadklas przez akcesor
 
-        //Do porownania moge uzyc Double.compare(zmianna, ((Nadklasa)obj).zmianna()) == 0
-        // zwroci 0!
-        //dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
-        //zmienne int moge porownywac bezposrenio zmienna==((Klasa)obj).zmienna;
-        //np. return Double.compare(zmienna, ((Klasa)obj.zmienna)==0;
-        //lub return Objects.equals(zmienna, ((Klasa)obj.zmienna); //nie zwroci 0!
+        deklaracja public boolean equals(Obj o){
+        warunki:
+         if(this==obj) return true;
+         if(obj==null||this.getClass()=!obj.getClass()) return false;
+         Klasa k = (Klasa)k;
+         if(this.zmienna==k.zmienna && this.getZmienna2()==
+            k.getzmienna2())return true
+         else return false
 
-        //w hashcode
-        // public int hashCode() return Objects.hash(zmienna, getZmiannaNadklasy());
+        Do porownania moge uzyc Double.compare(zmianna, ((Nadklasa)obj).zmianna()) == 0
+         zwroci 0!
+        dla zmiennoprzecinkowych a dla stringow Objects.equals(name, obj.getZmienna2());
+        zmienne int moge porownywac bezposrenio zmienna==((Klasa)obj).zmienna;
+        np. return Double.compare(zmienna, ((Klasa)obj.zmienna)==0;
+        lub return Objects.equals(zmienna, ((Klasa)obj.zmienna); //nie zwroci 0!
+
+        w hashcode
+         public int hashCode() return Objects.hash(zmienna, getZmiannaNadklasy());
+        */
         Pracownik p3 = new Programista(3000,300);
         Pracownik p4 = new Programista(3000,300);
         System.out.println("equals: "+p3.equals(p4));
