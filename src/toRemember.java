@@ -103,9 +103,9 @@ public class toRemember {
 
         //.equals();
 
-        //.fill();
+        //.fill();//tylko dla tablic!
         Arrays.fill(imionaTablica, "xD");
-        //Arrays.fill(imionaLista2, "xD"); Nie zadziala do listy
+
 
         //.sort();
 
