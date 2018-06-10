@@ -44,7 +44,7 @@ public class toRemember {
         int i3 = str.compareTo(str);
 
 
-        // STRINGBUILDER
+        // STRING_BUILDER
         StringBuilder sb = new StringBuilder(12);
         sb.ensureCapacity(13);//z zakresem 16/34/dokladnym
         sb.append("123").append("123");
@@ -59,6 +59,11 @@ public class toRemember {
         String str2 = sb.substring(1);
         String strS = sb.toString();
 
+
+        // STRING_JOINER
+        /*
+        rozwiazuje problem wyrazen lambda
+         */
 
         // MATH
         Math.abs(9);
