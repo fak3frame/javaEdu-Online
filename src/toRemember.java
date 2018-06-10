@@ -169,8 +169,11 @@ public class toRemember {
 
         //------------------------------------------------------------------------
 
-        // MAPY
+        // ZBIORY
 
+        //------------------------------------------------------------------------
+
+        // MAPY
         /*
         Mapa nie rozszerza kolekcji, obiekty skladaja sie z Klucz-Wartosc
 
