@@ -45,7 +45,7 @@ public class InterfaceMap {
         size() - zwraca rozmiar (ilość elementów) mapy
         keySet() - zwraca zbiór kluczy
         values() - zwraca kolekcję wartości
-        Set<Map.Entry<K,V>> entrySet() - zwraca zbiór obiektów typu Map.Entry,
+            Set<Map.Entry<K,V>> entrySet() - zwraca zbiór obiektów typu Map.Entry,
          które reprezentują kolejne rekordy w mapie na zasadzie klucz-wartość
 
         W TreeMap znajdziemy dodatkowe metody wynikające z implementacji takie

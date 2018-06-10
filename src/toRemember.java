@@ -200,6 +200,13 @@ public class toRemember {
          zbioru kluczy
         values() - zwroci wartosci, moge uzyc gdy chce przypisac wartosci do nowej
          kolekcji
+        entrySet() - zwroci klucz z przypisana do niego wartoscia, moge to wykorzystac
+         do stworzenia zbioru z elementami typu Entry z klasy Map posiadajace elementy
+         klucz-wartosc
+         np:Set<Map.Entry<Integer,String>>zbiorKluczWartosc = mapa.entrySet();
+         Wypisanie w petli foreach bedzie wygladalo:
+         for(Entry<Integer,String> x: zbiorKluczWartosc){
+            sout(x.getKey()+x.getValue());
 
 
          */
@@ -218,11 +225,15 @@ public class toRemember {
         System.out.println("wartosc w id:2 to:"+pracownicy.get(2));
         System.out.println("klucze mapy:"+pracownicy.keySet());
         System.out.println("wartosci mapy:"+pracownicy.values());
+        System.out.println("klucze i wartosci:"+pracownicy.entrySet());
 
+        Set<Integer> zbiorKluczy = pracownicy.keySet();
+        Collection<String> kolekcjaWartosci = pracownicy.values();
 
-
-
-
+        Set<Map.Entry<Integer,String>> zbiorKluczWartosc = pracownicy.entrySet();
+        for(Map.Entry<Integer,String>x:zbiorKluczWartosc){
+            System.out.println("klucz:"+x.getKey()+" wartosc:"+x.getValue());
+        }
 
 
 

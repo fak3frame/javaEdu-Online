@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +24,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="204" column="49" selection-start-line="204" selection-start-column="49" selection-end-line="204" selection-end-column="49" />
+            <state relative-caret-position="355">
+              <caret line="234" column="75" selection-start-line="234" selection-start-column="75" selection-end-line="234" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +36,8 @@
       <file leaf-file-name="InterfaceMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+            <state relative-caret-position="-233">
+              <caret line="47" column="31" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -53,6 +54,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>arrays</find>
+      <find>key</find>
+      <find>value</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,11 +86,11 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ObjectMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceSet.java" />
-        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java" />
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
+        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" />
         <option value="$PROJECT_DIR$/src/toRemember.java" />
       </list>
     </option>
@@ -278,20 +281,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00154" summary="Przydatne Klasy StringJoiner 8">
-      <created>1528288149673</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1528288149673</updated>
-    </task>
-    <task id="LOCAL-00155" summary="Przydatne Klasy StringJoiner 9">
-      <created>1528307060366</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1528307060367</updated>
     </task>
     <task id="LOCAL-00156" summary="Przydatne Klasy StringJoiner 10">
       <created>1528307083943</created>
@@ -622,7 +611,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528649210159</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="Podsumowanie poprawki 18">
+      <created>1528650124835</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1528650124835</updated>
+    </task>
+    <task id="LOCAL-00204" summary="Podsumowanie poprawki 19">
+      <created>1528650414725</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1528650414725</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -662,8 +665,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Przydatne Klasy InterfaceSet 4" />
-    <MESSAGE value="Przydatne Klasy InterfaceSet 5" />
     <MESSAGE value="Przydatne Klasy InterfaceSet 6" />
     <MESSAGE value="Przydatne Klasy InterfaceMap 1" />
     <MESSAGE value="Przydatne Klasy InterfaceMap 2" />
@@ -687,7 +688,9 @@
     <MESSAGE value="Podsumowanie poprawki 13" />
     <MESSAGE value="Podsumowanie poprawki 14" />
     <MESSAGE value="Podsumowanie poprawki 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="Podsumowanie poprawki 17" />
+    <MESSAGE value="Podsumowanie poprawki 18" />
+    <MESSAGE value="Podsumowanie poprawki 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Podsumowanie poprawki 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1013,15 +1016,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        <state relative-caret-position="-233">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="204" column="49" selection-start-line="204" selection-start-column="49" selection-end-line="204" selection-end-column="49" />
+        <state relative-caret-position="355">
+          <caret line="234" column="75" selection-start-line="234" selection-start-column="75" selection-end-line="234" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
