@@ -181,7 +181,16 @@ public class toRemember {
          Comparatora
         LinkedHashSet - dodatkowo zapamietuje kolejnosc dodawnych elementow
 
+        METODY:
+        add() -
          */
+        System.out.println("MAPY:");
+
+        Set<String>imiona = new TreeSet<>();
+        imiona.add("kamil");
+        imiona.add("kamil");
+        imiona.add("tomek");
+        System.out.println();
 
         //------------------------------------------------------------------------
 
