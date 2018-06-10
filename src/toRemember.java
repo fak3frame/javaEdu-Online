@@ -76,7 +76,6 @@ public class toRemember {
                 System.out.println();
         }
 
-
         class Funkcje{
             void main(){
                 sumujLiczby(1,2,3,4);
@@ -94,6 +93,8 @@ public class toRemember {
             }
         }
 
+
+
         //SORTOWANIE TABLICY OBIEKTOW / KLASA ARRAYS
 
         // .asList(); //zamiana tablicy na liste
@@ -105,7 +106,6 @@ public class toRemember {
 
         //.fill();//tylko dla tablic!
         Arrays.fill(imionaTablica, "xD");
-
 
         //.sort();
 
@@ -140,7 +140,10 @@ public class toRemember {
             }
         }
 
-        /* LISTY
+
+
+        // LISTY
+        /*
         Jedna ze struktur danych sa listy w ktorych wyrozniamy najlpopularniejsze
          ArrayList - implemenacja tablicowa oraz LinkedList -/- dowiazana
         ArrayList uzywamy gdy mamy czesty dostep do elementow natomiast
@@ -164,7 +167,10 @@ public class toRemember {
         get(int);
         */
 
-        //WYJATKI
+
+
+        // WYJATKI
+
         //“checked exceptions” wymagaja obslugi (np IOException)
         // oraz “unchecked exceptions” (np. IllegalArgumentException)
         //Throwable <- Exception <- RuntimeException <- IllegalArgumentException
@@ -223,7 +229,10 @@ public class toRemember {
             }
         }
 
-        //OBIEKTY POLIMORFIZM DZIEDZICZENIE
+
+
+        // OBIEKTY POLIMORFIZM DZIEDZICZENIE
+
         Pracownik p1 = new Programista(3000, 230);
         Pracownik[] pracowniks_xD = new Pracownik[2];
         pracowniks_xD[0] = new Programista(4000,400);
