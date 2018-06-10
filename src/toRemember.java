@@ -40,6 +40,7 @@ public class toRemember {
         byte[] t3 = str.getBytes();
         int i3 = str.compareTo(str);
 
+        // STRINGBUILDER
         StringBuilder sb = new StringBuilder(12);
         sb.ensureCapacity(13);//z zakresem 16/34/dokladnym
         sb.append("123").append("123");
@@ -54,10 +55,15 @@ public class toRemember {
         String str2 = sb.substring(1);
         String strS = sb.toString();
 
+        // MATH
         Math.abs(9);
         Math.pow(2,2);
+        Math.sqrt(4);
         Math.round(9.26134); //zaokrlaglenie
+        Math.min(10,12);
+        Math.max(10,12);
 
+        // WIELKIE LUCZBY
         BigInteger bi = new BigInteger("1234");
         BigInteger bi2 = BigInteger.valueOf(1234);
         BigDecimal bd = new BigDecimal("123132.3244");
@@ -67,6 +73,7 @@ public class toRemember {
         bi.multiply(bi2);
         bi.divide(bi);
 
+        // SWITCH
         switch (i2){
             case 1:
                 break;
@@ -76,6 +83,7 @@ public class toRemember {
                 System.out.println();
         }
 
+        // METODY
         class Funkcje{
             void main(){
                 sumujLiczby(1,2,3,4);
