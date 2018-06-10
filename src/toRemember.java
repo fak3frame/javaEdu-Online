@@ -1,5 +1,6 @@
 import PrzydatneKlasy.ArraysMoja;
 
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,6 +9,7 @@ import java.lang.management.BufferPoolMXBean;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.*;
+import java.util.List;
 
 public class toRemember {
     public static void main(String[] args) {
@@ -72,6 +74,23 @@ public class toRemember {
         int los3 = random.nextInt();//standardowo pokaze z calego zakresu
         // int lecz moge to zawezic podajac liczbe w paramterze np:
         // random.nextInt(10) to bedzie losowac liczby z zakresu od 0 do 9
+
+        // ROBOT
+        /*
+        Klasa robot sluzy do automatycznego uzywania klawiatury, myszy,
+         robienia zrzutow ekranu i odczytywaniu informacji o pixelach
+
+        METODY:
+        keyPress(int keycode) np keyPress(KeyEvent.VK_C)
+        keyRelease(int keycode)
+        mousePress(int buttons) - podaje stale z klasy InputEvent:
+         (BUTTON1_MASK, BUTTON2_MASK, BUTTON3_MASK)
+        mouseRelease(int buttons)
+        createScreenCapture(Rectangle screenRect)
+        delay(czas) - opoznienie
+
+         */
+        Robot mojRobot;
 
 
         // WIELKIE LICZBY
