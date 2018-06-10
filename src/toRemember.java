@@ -182,15 +182,21 @@ public class toRemember {
         LinkedHashSet - dodatkowo zapamietuje kolejnosc dodawnych elementow
 
         METODY:
-        add() -
+        add() - dodanie elem. gdy taki juz wystepuje, dodawnie jest pominienete
+         w przypadku obiektow sprawdzanie odbywa sie za pomoca wartosci hashCode
+         oraz equals wiec nalezy je zaimpelemntowac
+        contains(wartosc) - zwraca flage czy zbior posiada podana wartosc
+        isEmpty() - zwraca flage czy zbior jest pusty
          */
-        System.out.println("MAPY:");
+        System.out.println("\n"+"ZBIORY:");
 
         Set<String>imiona = new TreeSet<>();
         imiona.add("kamil");
         imiona.add("kamil");
         imiona.add("tomek");
-        System.out.println();
+        System.out.println("rozmiar:"+imiona.size());
+        System.out.println("czy jest tomek:"+imiona.contains("tomek"));
+        System.out.println("czy zbior jest pusty"+imiona.isEmpty());
 
         //------------------------------------------------------------------------
 
@@ -232,7 +238,7 @@ public class toRemember {
          for(Entry<Integer,String> x: zbiorKluczWartosc){
             sout(x.getKey()+x.getValue());
          */
-        System.out.println("MAPY:");
+        System.out.println("\n"+"MAPY:");
 
         Map<Integer, String> pracownicy = new TreeMap<>();
         //treeMap posortuje wg klucza
