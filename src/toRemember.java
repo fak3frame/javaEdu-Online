@@ -170,6 +170,11 @@ public class toRemember {
         //------------------------------------------------------------------------
 
         // ZBIORY
+        /*
+        Zbior ma unikalne elementy standardowo bez ustalonej kolejnosci
+
+        TYPY
+         */
 
         //------------------------------------------------------------------------
 
@@ -180,7 +185,7 @@ public class toRemember {
         Wartosc klucza jest unikalna, gdy dodamy taka sama wartosc klucza
          stara zostanie zastapiona
 
-        Mapy dzielimy na:
+        TYPY:
         HashMap - posiada tablice mieszajaca i kolejnosc elementow nie jest
          ustalona
         TreeMap - Dodatkowo posiada sortowanie, wymagana implementacja interfejsu
