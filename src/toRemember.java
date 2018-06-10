@@ -173,7 +173,14 @@ public class toRemember {
         /*
         Zbior ma unikalne elementy standardowo bez ustalonej kolejnosci
 
-        TYPY
+        TYPY:
+        HashSet - w srodku umieszczona jest tablica mieszajaca, wymaga
+         implementacji hashCode oraz equals
+        TreeSet - uporzadkowywwuje elementy wg naturalnego porzedku, wymagane
+         jest do tego implementacja interfejsu Comparable lub uzycie odpowiedniego
+         Comparatora
+        LinkedHashSet - dodatkowo zapamietuje kolejnosc dodawnych elementow
+
          */
 
         //------------------------------------------------------------------------
