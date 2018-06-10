@@ -194,9 +194,9 @@ public class toRemember {
         imiona.add("kamil");
         imiona.add("kamil");
         imiona.add("tomek");
-        System.out.println("rozmiar:"+imiona.size());
-        System.out.println("czy jest tomek:"+imiona.contains("tomek"));
-        System.out.println("czy zbior jest pusty"+imiona.isEmpty());
+        System.out.println("rozmiar: "+imiona.size());
+        System.out.println("czy jest tomek: "+imiona.contains("tomek"));
+        System.out.println("czy zbior jest pusty: "+imiona.isEmpty());
 
         //------------------------------------------------------------------------
 
