@@ -169,6 +169,25 @@ public class toRemember {
 
 
 
+        // MAPY
+
+        /*
+        Mapa nie rozszerza kolekcji, obiekty skladaja sie z Klucz-Wartosc
+
+        Wartosc klucza jest unikalna, gdy dodamy taka sama wartosc klucza
+         stara zostanie zastapiona
+
+        Mapy dzielimy na:
+        HashMap - posiada tablice mieszajaca i kolejnosc elementow nie jest
+         ustalona
+        TreeMap - Dodatkowo posiada sortowanie, wymagana implementacja interfejsu
+         Comprable lub implementacji Comparatora
+        LinkedHashMap -
+
+         */
+
+
+
         // WYJATKI
 
         //“checked exceptions” wymagaja obslugi (np IOException)
