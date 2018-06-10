@@ -1,6 +1,7 @@
 import PrzydatneKlasy.ArraysMoja;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,6 +43,7 @@ public class toRemember {
         byte[] t3 = str.getBytes();
         int i3 = str.compareTo(str);
 
+
         // STRINGBUILDER
         StringBuilder sb = new StringBuilder(12);
         sb.ensureCapacity(13);//z zakresem 16/34/dokladnym
@@ -57,6 +59,7 @@ public class toRemember {
         String str2 = sb.substring(1);
         String strS = sb.toString();
 
+
         // MATH
         Math.abs(9);
         Math.pow(2,2);
@@ -64,6 +67,7 @@ public class toRemember {
         Math.round(9.26134); //zaokrlaglenie
         Math.min(10,12);
         Math.max(10,12);
+
 
         // RANDOM
         Random random = new Random();
@@ -74,6 +78,7 @@ public class toRemember {
         int los3 = random.nextInt();//standardowo pokaze z calego zakresu
         // int lecz moge to zawezic podajac liczbe w paramterze np:
         // random.nextInt(10) to bedzie losowac liczby z zakresu od 0 do 9
+
 
         // ROBOT
         /*
@@ -90,7 +95,20 @@ public class toRemember {
         delay(czas) - opoznienie
 
          */
-        Robot mojRobot;
+        try {
+            Robot mojRobot = new Robot();
+            //robot moze byc umieszczony w klasie jako zmienna Robot robot;
+            mojRobot.delay(1000);
+            int[]tabPrzyciskow={KeyEvent.VK_C,KeyEvent.VK_Z,KeyEvent.VK_E,
+                    KeyEvent.VK_S,KeyEvent.VK_C};
+            for (int i=0;i<0;i++){
+                mojRobot.keyPress(tabPrzyciskow[i]);
+                mojRobot.delay(100);
+            }
+        }catch (AWTException e){
+            System.out.println("Co on robi?");
+            e.printStackTrace();
+        }
 
 
         // WIELKIE LICZBY
@@ -103,6 +121,7 @@ public class toRemember {
         bi.multiply(bi2);
         bi.divide(bi);
 
+
         // SWITCH
         switch (i2){
             case 1:
@@ -112,6 +131,7 @@ public class toRemember {
             default:
                 System.out.println();
         }
+
 
         // METODY
         class Funkcje{
