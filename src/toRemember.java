@@ -187,6 +187,11 @@ public class toRemember {
          oraz equals wiec nalezy je zaimpelemntowac
         contains(wartosc) - zwraca flage czy zbior posiada podana wartosc
         isEmpty() - zwraca flage czy zbior jest pusty
+        size() - zwraca rozmiar zbioru
+        remove(wartosc) - usuniecie wartosci ze zbioru
+        iterator() - zwraca iterator (typ Iterator)
+        *dodatkowo w TreeSet mamy dodatkowo mozliwosc zworcenia "najmniejszego"
+          elementu first() oraz najwiekszego()
          */
         System.out.println("\n"+"ZBIORY:");
 
@@ -197,6 +202,9 @@ public class toRemember {
         System.out.println("rozmiar: "+imiona.size());
         System.out.println("czy jest tomek: "+imiona.contains("tomek"));
         System.out.println("czy zbior jest pusty: "+imiona.isEmpty());
+        imiona.remove("kamil");
+        System.out.println(imiona);
+        System.out.println(imiona.iterator());
 
         //------------------------------------------------------------------------
 
