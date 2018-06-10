@@ -349,7 +349,7 @@ public class toRemember {
         // potrzebuje dostac sie do jego pol (linieKodu)
         // jest statyczna wiec wywoluje z nazwa klasy
 
-        System.out.println("Pracownik.pokazInfo(p1)");
+        System.out.println("Pracownik.pokazInfo(p1):");
         Pracownik.pokazInfo(p1); //tylko info o zarobkach
 
         p1.getZarobki();
