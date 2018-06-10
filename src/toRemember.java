@@ -340,6 +340,7 @@ public class toRemember {
         //laczona metoda toString w obu klasach
         //return super.toString()+" "+String.valueOf(linieKodu);
 
+        System.out.println("Programista.pokazInfo((Programista) p1):");
         Programista.pokazInfo((Programista) p1);
         //public static void pokazInfo(final Programista p){
         //   System.out.println(p.getZarobki()+" "+p.linieKodu); }
@@ -348,6 +349,7 @@ public class toRemember {
         // potrzebuje dostac sie do jego pol (linieKodu)
         // jest statyczna wiec wywoluje z nazwa klasy
 
+        System.out.println("Pracownik.pokazInfo(p1)");
         Pracownik.pokazInfo(p1); //tylko info o zarobkach
 
         p1.getZarobki();
@@ -394,8 +396,8 @@ public class toRemember {
         Pracownik p3 = new Programista(3000,300);
         Pracownik p4 = new Programista(3000,300);
         System.out.println("equals: "+p3.equals(p4));
-        System.out.println(p3.hashCode());
-        System.out.println(p4.hashCode());
+        System.out.println("hashCode obiektu 1: "+p3.hashCode());
+        System.out.println("hashCode obiektu 2: "+p4.hashCode());
     }
 }
 
@@ -420,7 +422,7 @@ abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
         this.zarobki = zarobki;
     }
     public String toString(){
-        return String.valueOf(zarobki);
+        return "zarobki: "+String.valueOf(zarobki);
     }
     public static void pokazInfo(final Pracownik p){ //zablokowalem zmiane
         // referencji
@@ -458,7 +460,7 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     }
 
     public String toString(){
-        return super.toString()+" "+String.valueOf(linieKodu);
+        return super.toString()+" linie kodu: "+String.valueOf(linieKodu);
     }
     @Override
     public void pracuj() {
