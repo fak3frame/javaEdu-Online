@@ -115,7 +115,6 @@ public class toRemember {
         //------------------------------------------------------------------------
 
         //SORTOWANIE TABLICY OBIEKTOW / KLASA ARRAYS
-
         // .asList(); //zamiana tablicy na liste
         List<String>imionaLista1 = Arrays.asList("kamil","tomek");
         String[] imionaTablica = {"kamil","tomek"};
@@ -293,16 +292,17 @@ public class toRemember {
         //------------------------------------------------------------------------
 
         // WYJATKI
+        /*
+        “checked exceptions” wymagaja obslugi (np IOException)
+          oraz “unchecked exceptions” (np. IllegalArgumentException)
+        Throwable <- Exception <- RuntimeException <- IllegalArgumentException
+        W przypadku gdy wyjatek dziedziczy po Exception a nie ma RuntimeException jest
+         wyjatkiem checked, w kazdym innym przypadku jest typu unchecked
 
-        //“checked exceptions” wymagaja obslugi (np IOException)
-        // oraz “unchecked exceptions” (np. IllegalArgumentException)
-        //Throwable <- Exception <- RuntimeException <- IllegalArgumentException
-        //W przypadku gdy wyjatek dziedziczy po Exception a nie ma RuntimeException jest
-        // wyjatkiem checked, w kazdym innym przypadku jest typu unchecked
-
-        //Wyjatki mozna obluzyc na 2 sposoby, jeden to poprzez blok try/catch a drugi
-        // to zepchniecie go na poziom nizej czyli do metody wywolujacej za pomoca
-        // klauzuli throws
+        Wyjatki mozna obluzyc na 2 sposoby, jeden to poprzez blok try/catch a drugi
+         to zepchniecie go na poziom nizej czyli do metody wywolujacej za pomoca
+         klauzuli throws
+        */
         boolean czyPoprawne = false;
         if(!czyPoprawne && 1>2){
             try{
