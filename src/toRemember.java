@@ -43,6 +43,14 @@ public class toRemember {
         byte[] t3 = str.getBytes();
         int i3 = str.compareTo(str);
 
+        //Moge przeniesc zawartosc listy do Stringa za pomoca metody join
+        List<String>auta = Arrays.asList("audi","mercedes");
+        //wykorzystuje metode asListy klasy Arrays
+        String autaString = "";//musze zainicjowac wartoscia do metody join
+        autaString = autaString.join(",",auta);
+        //przypisuje do Stringa z metoda join()
+        System.out.println("String zrobiony z listy: "+autaString);
+
 
         // STRING_BUILDER
         StringBuilder sb = new StringBuilder(12);
@@ -74,7 +82,6 @@ public class toRemember {
         System.out.println("StringJoiner: "+joiner2);
         String napisSJ = joiner2.toString();
         System.out.println("StringJoiner na String: "+napisSJ);
-
 
 
         // MATH

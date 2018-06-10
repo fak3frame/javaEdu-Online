@@ -50,11 +50,11 @@ public class String_Joiner {
         join(CharSequence delimiter, Iterable<? extends CharSequence> elements)
          */
         List<String> lista = Arrays.asList("kamil","tomek");
-        //wykorzystje klase Arrays do uzupelnienia tablicy
+        //wykorzystje klase Arrays do uzupelnienia listy
         String wszystkieImiona = "";
         wszystkieImiona = wszystkieImiona.join(", ",lista);
         //pierwszy argument to separato a drugi lista
-        System.out.println(wszystkieImiona);
+        System.out.println("wszytskie imiona: "+wszystkieImiona);
         //taka metoda jest niezbyt dobra poniewaz najpierw musze zainicjowac
         // pustego stringa
 
