@@ -196,7 +196,11 @@ public class toRemember {
          wartosc bedzie ustawiona na null
         isEmpty() - zwroci flage czy mapa jest pusta
         size() - zwroci rozmiar mapy
-        keySet()
+        keySet() - zwroci wartosci kluczy, mozemy uzyc aby przypisac je do nowego
+         zbioru kluczy
+        values() - zwroci wartosci, moge uzyc gdy chce przypisac wartosci do nowej
+         kolekcji
+
 
          */
         System.out.println("MAPY:");
@@ -208,10 +212,13 @@ public class toRemember {
         pracownicy.put(7,"przemek");
         pracownicy.put(1,"waclaw");
 
-        System.out.println(pracownicy.isEmpty());
-        System.out.println(pracownicy.size());
+        System.out.println("czy jest puste:"+pracownicy.isEmpty());
+        System.out.println("rozmiar:"+pracownicy.size());
         pracownicy.remove(2);
-        System.out.println(pracownicy.get(2));
+        System.out.println("wartosc w id:2 to:"+pracownicy.get(2));
+        System.out.println("klucze mapy:"+pracownicy.keySet());
+        System.out.println("wartosci mapy:"+pracownicy.values());
+
 
 
 
