@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.*;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class toRemember {
     public static void main(String[] args) {
@@ -50,6 +51,14 @@ public class toRemember {
         autaString = autaString.join(",",auta);
         //przypisuje do Stringa z metoda join()
         System.out.println("String zrobiony z listy: "+autaString);
+
+        //Bardziej zaawansownym uzyciem metody join jest uzycie strumienia
+        // oraz metody collect() w ktorej uzyje klasy Collectors z metoda
+        // joining() w ktorej okresle co ma oddzielac napisy oraz jak ciag
+        // ma sie zaczynac i konczyc
+        String autaString2 = auta.stream().collect(Collectors
+                .joining(", ","{","}"));
+        System.out.println("String zrobiony ze strumienia: "+autaString2);
 
 
         // STRING_BUILDER

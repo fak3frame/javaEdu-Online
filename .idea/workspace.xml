@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+            <state relative-caret-position="390">
+              <caret line="60" column="72" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +34,8 @@
       <file leaf-file-name="String_Joiner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+            <state relative-caret-position="56">
+              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -81,7 +80,6 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/KlasaArrays.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/StringJoiner.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java" />
-        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RobotMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ObjectMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/MathMoj.java" />
@@ -91,6 +89,7 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" />
+        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" />
         <option value="$PROJECT_DIR$/src/toRemember.java" />
       </list>
     </option>
@@ -186,8 +185,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="MathMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.MathMoj" />
+    <configuration name="RandomMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RandomMoj" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -197,8 +196,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RandomMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RandomMoj" />
+    <configuration name="String_Joiner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.String_Joiner" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -255,19 +254,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.MathMoj" />
       <item itemvalue="Application.InterfaceSet" />
       <item itemvalue="Application.InterfaceMap" />
       <item itemvalue="Application.RandomMoj" />
       <item itemvalue="Application.toRemember" />
+      <item itemvalue="Application.String_Joiner" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.toRemember" />
+        <item itemvalue="Application.String_Joiner" />
         <item itemvalue="Application.RandomMoj" />
         <item itemvalue="Application.InterfaceMap" />
         <item itemvalue="Application.InterfaceSet" />
-        <item itemvalue="Application.MathMoj" />
       </list>
     </recent_temporary>
   </component>
@@ -281,20 +280,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00176" summary="Przydatne Klasy InterfaceSet 2">
-      <created>1528377482949</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1528377482949</updated>
-    </task>
-    <task id="LOCAL-00177" summary="Przydatne Klasy InterfaceSet 3">
-      <created>1528377990040</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1528377990040</updated>
     </task>
     <task id="LOCAL-00178" summary="Przydatne Klasy InterfaceSet 4">
       <created>1528378426209</created>
@@ -625,7 +610,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528673392859</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="Podsumowanie poprawki 39">
+      <created>1528673970733</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1528673970733</updated>
+    </task>
+    <task id="LOCAL-00226" summary="Podsumowanie poprawki 40">
+      <created>1528674795883</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1528674795883</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -665,8 +664,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Podsumowanie poprawki 12" />
-    <MESSAGE value="Podsumowanie poprawki 13" />
     <MESSAGE value="Podsumowanie poprawki 14" />
     <MESSAGE value="Podsumowanie poprawki 17" />
     <MESSAGE value="Podsumowanie poprawki 18" />
@@ -690,7 +687,9 @@
     <MESSAGE value="Podsumowanie poprawki 36" />
     <MESSAGE value="Podsumowanie poprawki 37" />
     <MESSAGE value="Podsumowanie poprawki 38" />
-    <option name="LAST_COMMIT_MESSAGE" value="Podsumowanie poprawki 38" />
+    <MESSAGE value="Podsumowanie poprawki 39" />
+    <MESSAGE value="Podsumowanie poprawki 40" />
+    <option name="LAST_COMMIT_MESSAGE" value="Podsumowanie poprawki 40" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -932,7 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Predicate.java" />
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1011,17 +1009,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+        <state relative-caret-position="56">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+        <state relative-caret-position="390">
+          <caret line="60" column="72" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
