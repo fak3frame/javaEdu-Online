@@ -328,12 +328,14 @@ public class toRemember {
         //------------------------------------------------------------------------
 
         // OBIEKTY POLIMORFIZM DZIEDZICZENIE
+        System.out.println("\n"+"OBIEKTY");
 
         Pracownik p1 = new Programista(3000, 230);
         Pracownik[] pracowniks_xD = new Pracownik[2];
         pracowniks_xD[0] = new Programista(4000,400);
         pracowniks_xD[1] = new Programista(6000, 800);
 
+        System.out.println("wyswietlenie proste obiektu (metoda toString):");
         System.out.println(p1);
         //laczona metoda toString w obu klasach
         //return super.toString()+" "+String.valueOf(linieKodu);
