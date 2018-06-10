@@ -74,7 +74,7 @@ public class toRemember {
         // random.nextInt(10) to bedzie losowac liczby z zakresu od 0 do 9
 
 
-        // WIELKIE LUCZBY
+        // WIELKIE LICZBY
         BigInteger bi = new BigInteger("1234");
         BigInteger bi2 = BigInteger.valueOf(1234);
         BigDecimal bd = new BigDecimal("123132.3244");
