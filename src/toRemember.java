@@ -182,9 +182,40 @@ public class toRemember {
          ustalona
         TreeMap - Dodatkowo posiada sortowanie, wymagana implementacja interfejsu
          Comprable lub implementacji Comparatora
-        LinkedHashMap -
+        LinkedHashMap - zapamietuje dodatkowo kolejnosc dodawanych elementow,
+         wykorzystuje liste wiazana. Prdzydatne przy iteracji
+
+        Klasa definiujaca wymaga implementacji equals oraz hashCode
+
+        Mapy nie posiadaja metody add();
+
+        METODY:
+        put(K, V) - wstawia do mapy wartosci K-V np mapa.put(17,"kamil");
+        get(wartoscKlucza) - pobieram wartosc przypisana do podanego klucza
+        remove(wartoscKlucza) - usuwam wartosc przypisana do klucza, po usunieciu
+         wartosc bedzie ustawiona na null
+        isEmpty() - zwroci flage czy mapa jest pusta
+        size() - zwroci rozmiar mapy
+        keySet()
 
          */
+        System.out.println("MAPY:");
+
+        Map<Integer, String> pracownicy = new TreeMap<>();
+        //treeMap posortuje wg klucza
+        pracownicy.put(3,"kamil");
+        pracownicy.put(2,"tomek");
+        pracownicy.put(7,"przemek");
+        pracownicy.put(1,"waclaw");
+
+        System.out.println(pracownicy.isEmpty());
+        System.out.println(pracownicy.size());
+        pracownicy.remove(2);
+        System.out.println(pracownicy.get(2));
+
+
+
+
 
 
 
