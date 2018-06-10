@@ -63,6 +63,17 @@ public class toRemember {
         Math.min(10,12);
         Math.max(10,12);
 
+        // RANDOM
+        Random random = new Random();
+        boolean prawdaFalsz = random.nextBoolean();
+        double los = random.nextDouble();
+        // pokaze od 0 do 1 po przecinku, moge pomnozyc aby przesunac ,
+        float los2 = random.nextFloat();//mniejszy zakres
+        int los3 = random.nextInt();//standardowo pokaze z calego zakresu
+        // int lecz moge to zawezic podajac liczbe w paramterze np:
+        // random.nextInt(10) to bedzie losowac liczby z zakresu od 0 do 9
+
+
         // WIELKIE LUCZBY
         BigInteger bi = new BigInteger("1234");
         BigInteger bi2 = BigInteger.valueOf(1234);
