@@ -263,7 +263,10 @@ public class toRemember {
         remove(int);
         size();
         get(int);
+        contains(value);
+        isEmpty();
         */
+
 
         //------------------------------------------------------------------------
 
