@@ -487,11 +487,11 @@ public class toRemember {
         moge dodac tylko w klasie "najwyzej" obiektu i odwolac sie w metodzie equals i
          hashcode do zmiennych nadklas przez akcesor
 
-        deklaracja public boolean equals(Obj o){
+        deklaracja public boolean equals(Object o){
         warunki:
-         if(this==obj) return true;
-         if(obj==null||this.getClass()=!obj.getClass()) return false;
-         Klasa k = (Klasa)k;
+         if(this==o) return true;
+         if(o==null||this.getClass()=!o.getClass()) return false;
+         Klasa k = (Klasa)o;
          if(this.zmienna==k.zmienna && this.getZmienna2()==
             k.getzmienna2())return true
          else return false
