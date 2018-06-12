@@ -32,7 +32,7 @@ public class toRemember {
         char ch1 = str.charAt(0);
 
         str.substring(1,2);
-        String[] t2 = str.split("1");
+        String[] t2 = str.split("1");//podzieli tam gdzie wystapi "1"
         str.replace(""," ");
         boolean b2 = str.matches("");
         int i2 = str.indexOf("1"); i2 = str.lastIndexOf("1");
