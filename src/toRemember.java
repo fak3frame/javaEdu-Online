@@ -22,7 +22,11 @@ public class toRemember {
 
         String str = "132";
         str = str+"123";
-        //kazda modyfikacja stringa to tworznie nowgo obiektu
+        /*kazda modyfikacja stringa to tworznie nowgo obiektu
+        String x = "Kasia"
+        s = x+" i Tomek"; // to tak naprawde:
+        s = new StringBuilder(x).append(" i Tomek").toString();
+        */
 
         str.trim(); //usuniecie bialych znakow na poczaku i koncu
         str.toUpperCase().toLowerCase();
