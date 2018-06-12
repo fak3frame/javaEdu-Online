@@ -33,8 +33,8 @@ public class toRemember {
 
         str.substring(1,2);
         String[] t2 = str.split("1");//podzieli tam gdzie wystapi "1"
-        str.replace(""," ");
-        boolean b2 = str.matches("");
+        str.replace("1","2");
+        boolean b2 = str.matches("test");
         int i2 = str.indexOf("1"); i2 = str.lastIndexOf("1");
 
         boolean b3 = str.equals(str);
