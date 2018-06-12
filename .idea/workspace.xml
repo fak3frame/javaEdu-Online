@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+            <state relative-caret-position="544">
+              <caret line="96" column="39" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,6 +37,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringBuilderBuffer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="64" selection-start-line="16" selection-start-column="9" selection-end-line="17" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -116,7 +125,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,8 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,41 +300,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00183" summary="Przydatne Klasy Random 1">
-      <created>1528462050264</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1528462050264</updated>
-    </task>
-    <task id="LOCAL-00184" summary="Przydatne Klasy Random 2">
-      <created>1528463173200</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1528463173200</updated>
-    </task>
-    <task id="LOCAL-00185" summary="Przydatne Klasy Random 3">
-      <created>1528464578263</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1528464578263</updated>
-    </task>
-    <task id="LOCAL-00186" summary="Przydatne Klasy Random 4">
-      <created>1528464866279</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1528464866279</updated>
-    </task>
-    <task id="LOCAL-00187" summary="Przydatne Klasy Random 5">
-      <created>1528466537115</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1528466537115</updated>
     </task>
     <task id="LOCAL-00188" summary="Podsumowanie poprawki 1">
       <created>1528576051215</created>
@@ -635,7 +609,42 @@
       <option name="project" value="LOCAL" />
       <updated>1528811522192</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="Przydatne klasy File 5">
+      <created>1528812385207</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1528812385207</updated>
+    </task>
+    <task id="LOCAL-00233" summary="Przydatne klasy File 6">
+      <created>1528812420681</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1528812420681</updated>
+    </task>
+    <task id="LOCAL-00234" summary="Przydatne klasy File 7">
+      <created>1528812488685</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1528812488685</updated>
+    </task>
+    <task id="LOCAL-00235" summary="Przydatne klasy File 8">
+      <created>1528812594273</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1528812594273</updated>
+    </task>
+    <task id="LOCAL-00236" summary="Przydatne klasy File 9">
+      <created>1528812843574</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1528812843574</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -675,11 +684,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Podsumowanie poprawki 21" />
-    <MESSAGE value="Podsumowanie poprawki 22" />
-    <MESSAGE value="Podsumowanie poprawki 23" />
-    <MESSAGE value="Podsumowanie poprawki 24" />
-    <MESSAGE value="Podsumowanie poprawki 24\5" />
     <MESSAGE value="Podsumowanie poprawki 26" />
     <MESSAGE value="Podsumowanie poprawki 27" />
     <MESSAGE value="Podsumowanie poprawki 28" />
@@ -700,7 +704,12 @@
     <MESSAGE value="Przydatne klasy File 2" />
     <MESSAGE value="Przydatne klasy File 3" />
     <MESSAGE value="Przydatne klasy File 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne klasy File 4" />
+    <MESSAGE value="Przydatne klasy File 5" />
+    <MESSAGE value="Przydatne klasy File 6" />
+    <MESSAGE value="Przydatne klasy File 7" />
+    <MESSAGE value="Przydatne klasy File 8" />
+    <MESSAGE value="Przydatne klasy File 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne klasy File 9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -948,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/Random.java" />
     <entry file="file://$PROJECT_DIR$/src/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1026,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/FileMoj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1040,10 +1035,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/StringBuilderBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="64" selection-start-line="16" selection-start-column="9" selection-end-line="17" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/FileMoj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+        <state relative-caret-position="544">
+          <caret line="96" column="39" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
