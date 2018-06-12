@@ -38,7 +38,7 @@ public class toRemember {
         int i2 = str.indexOf("1"); i2 = str.lastIndexOf("1");
 
         boolean b3 = str.equals(str);
-        str.concat("123");
+        str.concat("123").concat(str);
         boolean b4 = str.startsWith("123");
         boolean b5 = str.endsWith("123");
         boolean b6 = str.contains("123");
