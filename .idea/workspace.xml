@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
-    </list>
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="187">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -291,13 +288,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00181" summary="Przydatne Klasy InterfaceMap 1">
-      <created>1528379148440</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1528379148440</updated>
     </task>
     <task id="LOCAL-00182" summary="Przydatne Klasy InterfaceMap 2">
       <created>1528380175047</created>
@@ -635,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528677436086</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="Przydatne klasy File 3">
+      <created>1528811057015</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1528811057015</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -675,7 +672,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Podsumowanie poprawki 19" />
     <MESSAGE value="Podsumowanie poprawki 20" />
     <MESSAGE value="Podsumowanie poprawki 21" />
     <MESSAGE value="Podsumowanie poprawki 22" />
@@ -700,7 +696,8 @@
     <MESSAGE value="Podsumowanie poprawki 41" />
     <MESSAGE value="Przydatne klasy File 1" />
     <MESSAGE value="Przydatne klasy File 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przydatne klasy File 2" />
+    <MESSAGE value="Przydatne klasy File 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przydatne klasy File 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="187">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

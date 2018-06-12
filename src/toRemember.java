@@ -24,7 +24,7 @@ public class toRemember {
         str = str+"123";
         //kazda modyfikacja stringa to tworznie nowgo obiektu
 
-        str.trim();
+        str.trim(); //usuniecie bialych znakow na poczaku i koncu
         str.toUpperCase().toLowerCase();
         boolean b1 = str.isEmpty();
         int i1 = str.length();
