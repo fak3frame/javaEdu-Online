@@ -15,6 +15,8 @@ import java.util.stream.Collectors;
 
 public class toRemember {
     public static void main(String[] args) {
+
+        // STRING
         String liczbaSlownie = Integer.toString(10);
         String liczbaSlownie2 = String.valueOf(12);
 
