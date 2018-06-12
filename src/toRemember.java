@@ -289,7 +289,7 @@ public class toRemember {
         remove(wartosc) - usuniecie wartosci ze zbioru
         iterator() - zwraca iterator (typ Iterator)
         *dodatkowo w TreeSet mamy dodatkowo mozliwosc zworcenia "najmniejszego"
-          elementu first() oraz najwiekszego()
+          elementu first() oraz najwiekszego last()
          */
         System.out.println("\n"+"ZBIORY:");
 
