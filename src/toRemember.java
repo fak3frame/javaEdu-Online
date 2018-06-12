@@ -31,7 +31,7 @@ public class toRemember {
         char[] t1 = str.toCharArray();
         char ch1 = str.charAt(0);
 
-        str.substring(1,2);
+        str.substring(1,2);//wiciaga przedzial stringa od poz 1 do 2
         String[] t2 = str.split("1");//podzieli tam gdzie wystapi "1"
         str.replace("1","2");
         boolean b2 = str.matches("test");
