@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.lang.management.BufferPoolMXBean;
+import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.*;
@@ -256,6 +257,7 @@ public class toRemember {
         //Ta lista jest typu OBJECT!
         lista1.add("Kamil");
         List lista2 = new LinkedList();
+        List<String>lista3 = Arrays.asList("costam");
         /*
         Podstawowe operacje:
         add(obj);
