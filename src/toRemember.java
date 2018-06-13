@@ -383,6 +383,29 @@ public class toRemember {
 
         //------------------------------------------------------------------------
 
+        // SORTOWANIE LIST COMPARABLE COMPARATOR
+
+        System.out.println("\n"+"SORTOWANIE LIST COMPARABLE COMPARATOR:");
+        Czlowiek c1 = new Czlowiek("Kamil","bbb", 'm' );
+        Czlowiek c2 = new Czlowiek("Pauilna","ddd", 'k' );
+        Czlowiek c3 = new Czlowiek("Agata","ccc", 'k' );
+        Czlowiek c4 = new Czlowiek("Tomek","aaa", 'm' );
+        List<Czlowiek> listaLudzi = new ArrayList<Czlowiek>();
+        listaLudzi.add(c1);
+        listaLudzi.add(c2);
+        listaLudzi.add(c3);
+        listaLudzi.add(c4);
+        for (Czlowiek x : listaLudzi)
+            System.out.println(x);
+
+        System.out.println("po sortowaniu wg nazwiska:");
+        Collections.sort(listaLudzi);
+        for (Czlowiek x : listaLudzi)
+            System.out.println(x);
+
+
+        //------------------------------------------------------------------------
+
         // WYJATKI
         /*
         “checked exceptions” wymagaja obslugi (np IOException)
@@ -722,5 +745,35 @@ class Testequals extends toExtend{
     public int hashCode() {
 
         return Objects.hash(int1, int2, double1, double2, str1, str2);
+    }
+}
+//---------------------------------------
+class Czlowiek implements Comparable<Czlowiek>{
+    private String imie,nazwisko;
+    private char plec;
+    public Czlowiek(String imie, String nazwisko, char plec){
+        this.imie=imie;
+        this.nazwisko=nazwisko;
+        this.plec=plec;
+    }
+    public String getImie() {
+        return imie;
+    }
+    public String getNazwisko() {
+        return nazwisko;
+    }
+    public char getPlec(){
+        return plec;
+    }
+    public String toString(){
+        return imie+" "+nazwisko+" "+Character.toString(plec);
+    }
+
+    public int compareTo(Czlowiek o){
+        int wyjscie = this.nazwisko.compareTo(o.nazwisko);
+        if(wyjscie==0)
+            return this.imie.compareTo(o.imie);
+        else
+            return wyjscie;
     }
 }
