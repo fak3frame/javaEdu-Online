@@ -390,11 +390,13 @@ public class toRemember {
         Czlowiek c2 = new Czlowiek("Pauilna","ddd", 'k' );
         Czlowiek c3 = new Czlowiek("Agata","ccc", 'k' );
         Czlowiek c4 = new Czlowiek("Tomek","aaa", 'm' );
+        Czlowiek c5 = new Czlowiek("Filip","eee", 'm' );
         List<Czlowiek> listaLudzi = new ArrayList<Czlowiek>();
         listaLudzi.add(c1);
         listaLudzi.add(c2);
         listaLudzi.add(c3);
         listaLudzi.add(c4);
+        listaLudzi.add(c5);
         for (Czlowiek x : listaLudzi)
             System.out.println(x);
 
@@ -415,17 +417,14 @@ public class toRemember {
             public char getPlec() {
                 return plec;
             }
-
             public Czlowiek(String imie, String nazwisko, char plec){
                 this.imie=imie;
                 this.nazwisko=nazwisko;
                 this.plec=plec;
             }
-
             public String toString(){
                 return imie+" "+nazwisko+" "+Character.toString(plec);
             }
-
             public int compareTo(Czlowiek o){
                 int wyjscie = this.nazwisko.compareTo(o.nazwisko);
                 if(wyjscie==0)
@@ -437,7 +436,12 @@ public class toRemember {
         class CzlowiekKomparator implements Comparator<Czlowiek>{
             public int compare(Czlowiek o1, Czlowiek o2) {
                 //najpierw kobiety iksde k<m
-                return Character.compare(o1.getPlec(), o2.getPlec());
+                int wyjscie = Character.compare(o1.getPlec(), o2.getPlec());
+                //lub  int wyjscie = o1.getPlec() - o2.getPlec();
+                if(wyjscie == 0)
+                    return o1.compareTo(o2);
+                else
+                    return wyjscie;
             }
         }
 
@@ -815,6 +819,11 @@ class Czlowiek implements Comparable<Czlowiek>{
 class CzlowiekKomparator implements Comparator<Czlowiek>{
     public int compare(Czlowiek o1, Czlowiek o2) {
         //najpierw kobiety iksde k<m
-        return Character.compare(o1.getPlec(), o2.getPlec());
+        int wyjscie = Character.compare(o1.getPlec(), o2.getPlec());
+        //lub  int wyjscie = o1.getPlec() - o2.getPlec();
+        if(wyjscie == 0)
+            return o1.compareTo(o2);
+        else
+            return wyjscie;
     }
 }
