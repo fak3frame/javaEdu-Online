@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,10 +23,19 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2168">
-              <caret line="582" column="65" selection-start-line="582" selection-start-column="65" selection-end-line="582" selection-end-column="65" />
+            <state relative-caret-position="-6087">
+              <caret line="410" column="22" lean-forward="true" selection-start-line="410" selection-start-column="22" selection-end-line="410" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#14544#14554#0" expanded="true" />
+                <element signature="e#15465#15466#0" expanded="true" />
+                <element signature="e#15508#15509#0" expanded="true" />
+                <element signature="e#15736#15737#0" expanded="true" />
+                <element signature="e#15821#15822#0" expanded="true" />
+                <element signature="e#28320#28321#0" expanded="true" />
+                <element signature="e#28347#28348#0" expanded="true" />
+                <element signature="e#28410#28411#0" expanded="true" />
+                <element signature="e#28479#28480#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -276,20 +288,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00197" summary="Podsumowanie poprawki 10">
-      <created>1528581093590</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1528581093590</updated>
-    </task>
-    <task id="LOCAL-00198" summary="Podsumowanie poprawki 11">
-      <created>1528581519962</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1528581519962</updated>
     </task>
     <task id="LOCAL-00199" summary="Podsumowanie poprawki 12">
       <created>1528581546952</created>
@@ -620,7 +618,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528892588315</updated>
     </task>
-    <option name="localTasksCounter" value="246" />
+    <task id="LOCAL-00246" summary="toRemember poprawki 2">
+      <created>1528893455142</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1528893455142</updated>
+    </task>
+    <task id="LOCAL-00247" summary="toRemember poprawki 3">
+      <created>1528897756512</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1528897756512</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -660,8 +672,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Podsumowanie poprawki 35" />
-    <MESSAGE value="Podsumowanie poprawki 36" />
     <MESSAGE value="Podsumowanie poprawki 37" />
     <MESSAGE value="Podsumowanie poprawki 38" />
     <MESSAGE value="Podsumowanie poprawki 39" />
@@ -685,7 +695,9 @@
     <MESSAGE value="Przydatne klasy File 16" />
     <MESSAGE value="Przydatne klasy File 17" />
     <MESSAGE value="toRemember poprawki" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki" />
+    <MESSAGE value="toRemember poprawki 2" />
+    <MESSAGE value="toRemember poprawki 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1030,10 +1042,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2168">
-          <caret line="582" column="65" selection-start-line="582" selection-start-column="65" selection-end-line="582" selection-end-column="65" />
+        <state relative-caret-position="-6087">
+          <caret line="410" column="22" lean-forward="true" selection-start-line="410" selection-start-column="22" selection-end-line="410" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14544#14554#0" expanded="true" />
+            <element signature="e#15465#15466#0" expanded="true" />
+            <element signature="e#15508#15509#0" expanded="true" />
+            <element signature="e#15736#15737#0" expanded="true" />
+            <element signature="e#15821#15822#0" expanded="true" />
+            <element signature="e#28320#28321#0" expanded="true" />
+            <element signature="e#28347#28348#0" expanded="true" />
+            <element signature="e#28410#28411#0" expanded="true" />
+            <element signature="e#28479#28480#0" expanded="true" />
           </folding>
         </state>
       </provider>

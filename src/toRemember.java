@@ -399,9 +399,47 @@ public class toRemember {
             System.out.println(x);
 
         System.out.println("po sortowaniu wg nazwiska:");
-        Collections.sort(listaLudzi);
+        Collections.sort(listaLudzi);//sortowanie listy obiektow
         for (Czlowiek x : listaLudzi)
             System.out.println(x);
+
+        System.out.println("po sortowaniu wg plci");
+        Collections.sort(listaLudzi, new CzlowiekKomparator());
+        for (Czlowiek x : listaLudzi)
+            System.out.println(x);
+
+        class Czlowiek implements Comparable<Czlowiek>{
+            private String imie,nazwisko;
+            private char plec;
+
+            public char getPlec() {
+                return plec;
+            }
+
+            public Czlowiek(String imie, String nazwisko, char plec){
+                this.imie=imie;
+                this.nazwisko=nazwisko;
+                this.plec=plec;
+            }
+
+            public String toString(){
+                return imie+" "+nazwisko+" "+Character.toString(plec);
+            }
+
+            public int compareTo(Czlowiek o){
+                int wyjscie = this.nazwisko.compareTo(o.nazwisko);
+                if(wyjscie==0)
+                    return this.imie.compareTo(o.imie);
+                else
+                    return wyjscie;
+            }
+        }
+        class CzlowiekKomparator implements Comparator<Czlowiek>{
+            public int compare(Czlowiek o1, Czlowiek o2) {
+                //najpierw kobiety iksde k<m
+                return Character.compare(o1.getPlec(), o2.getPlec());
+            }
+        }
 
 
         //------------------------------------------------------------------------
@@ -751,20 +789,17 @@ class Testequals extends toExtend{
 class Czlowiek implements Comparable<Czlowiek>{
     private String imie,nazwisko;
     private char plec;
+
+    public char getPlec() {
+        return plec;
+    }
+
     public Czlowiek(String imie, String nazwisko, char plec){
         this.imie=imie;
         this.nazwisko=nazwisko;
         this.plec=plec;
     }
-    public String getImie() {
-        return imie;
-    }
-    public String getNazwisko() {
-        return nazwisko;
-    }
-    public char getPlec(){
-        return plec;
-    }
+
     public String toString(){
         return imie+" "+nazwisko+" "+Character.toString(plec);
     }
@@ -775,5 +810,11 @@ class Czlowiek implements Comparable<Czlowiek>{
             return this.imie.compareTo(o.imie);
         else
             return wyjscie;
+    }
+}
+class CzlowiekKomparator implements Comparator<Czlowiek>{
+    public int compare(Czlowiek o1, Czlowiek o2) {
+        //najpierw kobiety iksde k<m
+        return Character.compare(o1.getPlec(), o2.getPlec());
     }
 }
