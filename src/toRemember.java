@@ -273,6 +273,7 @@ public class toRemember {
         get(int);
         contains(value);
         isEmpty();
+        clear();
         */
 
 
