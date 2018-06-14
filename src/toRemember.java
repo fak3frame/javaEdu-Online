@@ -233,7 +233,7 @@ public class toRemember {
         //lub umieszczam nowy obiekt prosto w metodie
         System.out.println("\n"+"Posortowane wielkosci z uzyciem komparatora:");
         for(KlasaArrays2 x : t){
-            System.out.println(x.getWielkosc());
+            System.out.print(x.getWielkosc()+" ");
         }
         class KlasaArrays2{
             private int wielkosc;
@@ -311,7 +311,7 @@ public class toRemember {
         *dodatkowo w TreeSet mamy dodatkowo mozliwosc zworcenia "najmniejszego"
           elementu first() oraz najwiekszego last()
          */
-        System.out.println("\n"+"ZBIORY:");
+        System.out.println("\n\n"+"ZBIORY:");
 
         Set<String>imiona = new TreeSet<>();
         imiona.add("kamil");
