@@ -232,12 +232,20 @@ public class toRemember {
         //------------------------------------------------------------------------
 
         //SORTOWANIE TABLICY OBIEKTOW / KLASA ARRAYS
+        System.out.println("KLASA ARRAYS:");
         // .asList(); //zamiana tablicy na liste
         List<String>imionaLista1 = Arrays.asList("kamil","tomek");
         String[] imionaTablica = {"kamil","tomek"};
         List<String>imionaLista2 = Arrays.asList(imionaTablica);
 
-        //.equals();
+        //.equals(); - porownywanie tablic
+        int[] tabEquals1 = {1,2,3,4};
+        int[] tabEquals2 = {1,2,3,5};
+        int[] tabEquals3 = {1,2,3,4};
+        System.out.println("Porownanie tablic 1:");
+        System.out.println(Arrays.equals(tabEquals1,tabEquals2));
+        System.out.println("Porownanie tablic 2:");
+        System.out.println(Arrays.equals(tabEquals1,tabEquals3));
 
         //.toString()
         int[] tabToString = {1,5,3,62};
@@ -290,6 +298,30 @@ public class toRemember {
                 if(o2 == null) return -1;
                 if(o1.getWielkosc()>o2.getWielkosc()) return 1;
                 else if(o1.getWielkosc()<o2.getWielkosc()) return -1;
+                else return 0;
+            }
+        }
+        //.sort() z wykorzystaniem interfejsu Comparable
+        KlasaArrays3 ka4 = new KlasaArrays3(10);
+        KlasaArrays3 ka5 = new KlasaArrays3(9);
+        KlasaArrays3 ka6 = new KlasaArrays3(12);
+        KlasaArrays3[] t4 = {ka4,ka5,ka6};
+        Arrays.sort(t4);
+        System.out.println("\n"+"Posortowane wielkosci z uzyciem Comparable:");
+        for(KlasaArrays3 x : t4){
+            System.out.print(x.getWielkosc()+" ");
+        }
+        class KlasaArrays3 implements Comparable{
+            private int wielkosc;
+            KlasaArrays3(int wielkosc){
+                this.wielkosc = wielkosc;
+            }
+            public int getWielkosc(){
+                return wielkosc;
+            }
+            public int compareTo(Object o){
+                if(this.wielkosc>((KlasaArrays3)o).getWielkosc()) return 1;
+                else if(this.wielkosc<((KlasaArrays3)o).getWielkosc()) return 0;
                 else return 0;
             }
         }
@@ -892,5 +924,20 @@ class CzlowiekKomparator implements Comparator<Czlowiek>{
             return o1.compareTo(o2);
         else
             return wyjscie;
+    }
+}
+
+class KlasaArrays3 implements Comparable{
+    private int wielkosc;
+    KlasaArrays3(int wielkosc){
+        this.wielkosc = wielkosc;
+    }
+    public int getWielkosc(){
+        return wielkosc;
+    }
+    public int compareTo(Object o){
+        if(this.wielkosc>((KlasaArrays3)o).getWielkosc()) return 1;
+        else if(this.wielkosc<((KlasaArrays3)o).getWielkosc()) return -1;
+        else return 0;
     }
 }

@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+            <state relative-caret-position="305">
+              <caret line="939" column="72" selection-start-line="939" selection-start-column="72" selection-end-line="939" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,12 +139,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="PrzydatneKlasy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="toRemember.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -172,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test1">
+  <component name="RunManager" selected="Application.toRemember">
     <configuration name="FileMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.FileMoj" />
       <module name="javaStartMojSkrypt" />
@@ -266,8 +260,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.toRemember" />
+        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.FileMoj" />
         <item itemvalue="Application.String_Joiner" />
         <item itemvalue="Application.RandomMoj" />
@@ -284,13 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00212" summary="Podsumowanie poprawki 26">
-      <created>1528652547216</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1528652547216</updated>
     </task>
     <task id="LOCAL-00213" summary="Podsumowanie poprawki 27">
       <created>1528652642270</created>
@@ -628,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528984474274</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="toRemember poprawki 17">
+      <created>1528990270636</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1528990270639</updated>
+    </task>
+    <option name="localTasksCounter" value="262" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -637,13 +631,14 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3196005" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36828965" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.36828965" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -661,14 +656,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3196005" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Przydatne klasy File 9" />
     <MESSAGE value="Przydatne klasy File 10" />
     <MESSAGE value="Przydatne klasy File 11" />
     <MESSAGE value="Przydatne klasy File 12" />
@@ -693,7 +686,8 @@
     <MESSAGE value="toRemember poprawki 14" />
     <MESSAGE value="toRemember poprawki 15" />
     <MESSAGE value="toRemember poprawki 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 16" />
+    <MESSAGE value="toRemember poprawki 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 17" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1035,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+        <state relative-caret-position="305">
+          <caret line="939" column="72" selection-start-line="939" selection-start-column="72" selection-end-line="939" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
