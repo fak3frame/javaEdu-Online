@@ -209,6 +209,11 @@ public class toRemember {
 
         //.equals();
 
+        //.toString()
+        int[] tabToString = {1,5,3,62};
+        System.out.println("Arrays.toString():");
+        System.out.println(Arrays.toString(tabToString));
+
         //.fill();//tylko dla tablic!
         Arrays.fill(imionaTablica, "xD");
 
