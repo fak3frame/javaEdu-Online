@@ -113,6 +113,7 @@ public class toRemember {
         joiner2.add("napis").add("napis2");
         System.out.println("StringJoiner: "+joiner2);
         String napisSJ = joiner2.toString();
+        //nie ma metody substring();
         System.out.println("StringJoiner na String: "+napisSJ);
 
 
