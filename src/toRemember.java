@@ -34,6 +34,8 @@ public class toRemember {
          */
 
         // STRING
+        Integer stringInteger = 54637;
+        String liczbaSlownie3 = Integer.toString(stringInteger);
         String liczbaSlownie = Integer.toString(10);
         String liczbaSlownie2 = String.valueOf(12);
 
@@ -127,6 +129,11 @@ public class toRemember {
         Math.max(10,12);
 
         // KLASY OSLONOWE
+        Integer testInteger = 1234;
+        Integer testInteger2 = new Integer(12343);
+        // z uzyciem boxingu
+
+        //metody:
         Integer mojInteger1 = Integer.valueOf(10);
         Integer mojInteger2 = Integer.valueOf("123");
         int mojInt1 = Integer.valueOf(444);
