@@ -40,6 +40,7 @@ public class toRemember {
         String liczbaSlownie2 = String.valueOf(12);
 
         String str = "132";
+        String strX = "1234";
         str = str+"123";
         /*kazda modyfikacja stringa to tworznie nowgo obiektu
         String x = "Kasia"
@@ -67,7 +68,9 @@ public class toRemember {
         boolean b6 = str.contains("123");
 
         byte[] t3 = str.getBytes();
-        int i3 = str.compareTo(str);
+        int i3 = str.compareTo(strX);//porowna alfabetycznie
+        //gdy str bedzie "wiekszy" zwroci -1, gdy "mniejszy" 1 i gdy rowny to 0
+
 
         //Moge przeniesc zawartosc listy do Stringa za pomoca metody join
         List<String>auta = Arrays.asList("audi","mercedes");
@@ -144,6 +147,10 @@ public class toRemember {
         Integer mojInteger3 = Integer.parseInt("123");
         int mojInt3 = Integer.parseInt("123");
         //parseInt dla stringa i moze zapisac do Integera i inta
+
+        Integer.compare(mojInteger1, mojInteger2);
+        //zwroci 1 gdy mojInteger1 wiekszy, -1 gdy mniejszy i 0 gdy rowny
+        //przydante podczas tworzenia metod compare() oraz compareTo()
 
         // WIELKIE LICZBY
         BigInteger bi = new BigInteger("1234");
