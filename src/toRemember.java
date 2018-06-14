@@ -511,6 +511,17 @@ public class toRemember {
 
         //------------------------------------------------------------------------
 
+        // WCZYTYWANIE WEJSCIA
+        Scanner mojScanner = new Scanner(System.in);
+        if(1>2){
+            int liczba = mojScanner.nextInt();
+            String napis = mojScanner.nextLine();
+            mojScanner.close();
+        }
+
+
+        //------------------------------------------------------------------------
+
         // PLIKI
         if(1>2){
             //stary rodzaj tworzenia plikow
