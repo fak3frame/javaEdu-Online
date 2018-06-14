@@ -23,6 +23,13 @@ import java.util.stream.Collectors;
 public class toRemember {
     public static void main(String[] args) throws IOException, URISyntaxException {
 
+        /*
+        TEORIA:
+        Hermetyzajca - ustawianie pol klas jako prywatne/protected i dostep
+         do niech poprzez akcesory i mutatory
+
+         */
+
         // STRING
         String liczbaSlownie = Integer.toString(10);
         String liczbaSlownie2 = String.valueOf(12);
@@ -213,6 +220,12 @@ public class toRemember {
         int[] tabToString = {1,5,3,62};
         System.out.println("Arrays.toString():");
         System.out.println(Arrays.toString(tabToString));
+
+
+        //.copyOf();
+        int[] tabCopyOf = Arrays.copyOf(tabToString, tabToString.length);
+        System.out.println("copyOf():");
+        System.out.println(Arrays.toString(tabCopyOf);
 
         //.fill();//tylko dla tablic!
         Arrays.fill(imionaTablica, "xD");
@@ -646,7 +659,7 @@ public class toRemember {
         //Musze wiec rzutowac jesli wywoluje cos czego nie ma w TYPIE obiektu
         // badz "nizej"
 
-        //EQUALS HASHCODE
+        // EQUALS HASHCODE
         /*
         moge dodac tylko w klasie "najwyzej" obiektu i odwolac sie w metodzie equals i
          hashcode do zmiennych nadklas przez akcesor
@@ -686,6 +699,7 @@ abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
     private int zarobki;
     Pracownik(){
         this.zarobki = 0;
+        //konstruktor domyslny (bez deklaracji ustawia wartosici pol na 0
     }
     Pracownik(int zarobki){
         this.zarobki = zarobki;
