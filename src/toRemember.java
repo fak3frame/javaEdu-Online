@@ -41,7 +41,7 @@ public class toRemember {
         str = str+"123";
         /*kazda modyfikacja stringa to tworznie nowgo obiektu
         String x = "Kasia"
-        s = x+" i Tomek"; // to tak naprawde:
+        String s = x+" i Tomek"; // to tak naprawde:
         s = new StringBuilder(x).append(" i Tomek").toString();
         */
 
