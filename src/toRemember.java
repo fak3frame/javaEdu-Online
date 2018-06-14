@@ -27,6 +27,8 @@ public class toRemember {
         TEORIA:
         Hermetyzajca - ustawianie pol klas jako prywatne/protected i dostep
          do niech poprzez akcesory i mutatory
+        Rekursja - odwolanie sie do innego konstruktora
+        Klasy/meotdy final nie mozna rozszerzac
 
          */
 
@@ -225,7 +227,7 @@ public class toRemember {
         //.copyOf();
         int[] tabCopyOf = Arrays.copyOf(tabToString, tabToString.length);
         System.out.println("copyOf():");
-        System.out.println(Arrays.toString(tabCopyOf);
+        System.out.println(Arrays.toString(tabCopyOf));
 
         //.fill();//tylko dla tablic!
         Arrays.fill(imionaTablica, "xD");
@@ -697,6 +699,7 @@ interface Praca{
 abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
     //metod implementowego interf. natomiast klasy dziedziczace juz tak
     private int zarobki;
+    private static int id = 0;
     Pracownik(){
         this.zarobki = 0;
         //konstruktor domyslny (bez deklaracji ustawia wartosici pol na 0
