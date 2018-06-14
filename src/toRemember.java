@@ -214,6 +214,7 @@ public class toRemember {
 
         //.sort();
 
+        //.sort() z wykorzystaniem komparatora
         KlasaArrays2 ka = new KlasaArrays2(10);
         KlasaArrays2 ka2 = new KlasaArrays2(9);
         KlasaArrays2 ka3 = new KlasaArrays2(12);
@@ -223,6 +224,8 @@ public class toRemember {
         Arrays.sort(t, mojSort);
         //wywoluje metode klasy Arrays - sort() i umieszczam w niej tablice
         // obiektow oraz obiekt sorujacy
+        Arrays.sort(t, new Sortuj());
+        //lub umieszczam nowy obiekt prosto w metodie
         System.out.println("Posortowane wielkosci:");
         for(KlasaArrays2 x : t){
             System.out.println(x.getWielkosc());
@@ -517,6 +520,11 @@ public class toRemember {
             int liczba = mojScanner.nextInt();
             String napis = mojScanner.nextLine();
             mojScanner.close();
+
+            while(mojScanner.hasNext()){
+                List<Integer> liczbySkaner = new LinkedList<>();
+                liczbySkaner.add(mojScanner.nextInt());
+            }
         }
 
 

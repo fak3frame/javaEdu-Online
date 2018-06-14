@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="520" column="8" selection-start-line="520" selection-start-column="8" selection-end-line="520" selection-end-column="8" />
+            <state relative-caret-position="393">
+              <caret line="227" column="53" selection-start-line="227" selection-start-column="53" selection-end-line="227" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#14760#14770#0" expanded="true" />
@@ -48,6 +48,7 @@
       <find>value</find>
       <find>itera</find>
       <find>key</find>
+      <find>scanner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -274,13 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00200" summary="Podsumowanie poprawki 13">
-      <created>1528634762639</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1528634762640</updated>
     </task>
     <task id="LOCAL-00201" summary="Podsumowanie poprawki 14">
       <created>1528635343977</created>
@@ -618,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528898960332</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="toRemember poprawki 5">
+      <created>1528965689912</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1528965689913</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -658,7 +659,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Podsumowanie poprawki 38" />
     <MESSAGE value="Podsumowanie poprawki 39" />
     <MESSAGE value="Podsumowanie poprawki 40" />
     <MESSAGE value="Podsumowanie poprawki 41" />
@@ -683,7 +683,8 @@
     <MESSAGE value="toRemember poprawki 2" />
     <MESSAGE value="toRemember poprawki 3" />
     <MESSAGE value="toRemember poprawki 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 4" />
+    <MESSAGE value="toRemember poprawki 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1025,8 +1026,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="520" column="8" selection-start-line="520" selection-start-column="8" selection-end-line="520" selection-end-column="8" />
+        <state relative-caret-position="393">
+          <caret line="227" column="53" selection-start-line="227" selection-start-column="53" selection-end-line="227" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#14760#14770#0" expanded="true" />
