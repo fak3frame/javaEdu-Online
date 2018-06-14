@@ -213,6 +213,11 @@ public class toRemember {
         Arrays.fill(imionaTablica, "xD");
 
         //.sort();
+        int[] tabSort = {2,5,1,8};
+        Arrays.sort(tabSort);
+        System.out.println("Sort klasy Arrays:");
+        for(int x:tabSort)
+            System.out.print(x+" ");
 
         //.sort() z wykorzystaniem komparatora
         KlasaArrays2 ka = new KlasaArrays2(10);
@@ -226,7 +231,7 @@ public class toRemember {
         // obiektow oraz obiekt sorujacy
         Arrays.sort(t, new Sortuj());
         //lub umieszczam nowy obiekt prosto w metodie
-        System.out.println("Posortowane wielkosci:");
+        System.out.println("\n"+"Posortowane wielkosci z uzyciem komparatora:");
         for(KlasaArrays2 x : t){
             System.out.println(x.getWielkosc());
         }
