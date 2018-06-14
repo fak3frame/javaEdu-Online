@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,12 +24,21 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="111" column="61" lean-forward="true" selection-start-line="111" selection-start-column="61" selection-end-line="111" selection-end-column="61" />
+            <state relative-caret-position="330">
+              <caret line="138" column="64" selection-start-line="138" selection-start-column="64" selection-end-line="138" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#14760#14770#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -49,6 +59,7 @@
       <find>itera</find>
       <find>key</find>
       <find>scanner</find>
+      <find>Integer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,10 +92,10 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java" />
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" />
-        <option value="$PROJECT_DIR$/src/Test1.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/FileMoj.java" />
+        <option value="$PROJECT_DIR$/src/Test1.java" />
         <option value="$PROJECT_DIR$/src/toRemember.java" />
       </list>
     </option>
@@ -163,20 +174,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.toRemember">
+  <component name="RunManager" selected="Application.Test1">
     <configuration name="FileMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.FileMoj" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PrzydatneKlasy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="InterfaceMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.InterfaceMap" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -207,6 +207,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+    </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test1" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -255,19 +260,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.InterfaceMap" />
       <item itemvalue="Application.RandomMoj" />
       <item itemvalue="Application.toRemember" />
       <item itemvalue="Application.String_Joiner" />
       <item itemvalue="Application.FileMoj" />
+      <item itemvalue="Application.Test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.FileMoj" />
         <item itemvalue="Application.String_Joiner" />
         <item itemvalue="Application.RandomMoj" />
-        <item itemvalue="Application.InterfaceMap" />
       </list>
     </recent_temporary>
   </component>
@@ -281,20 +286,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00209" summary="Podsumowanie poprawki 24">
-      <created>1528652062616</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1528652062616</updated>
-    </task>
-    <task id="LOCAL-00210" summary="Podsumowanie poprawki 24">
-      <created>1528652243944</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1528652243944</updated>
     </task>
     <task id="LOCAL-00211" summary="Podsumowanie poprawki 24\5">
       <created>1528652504744</created>
@@ -625,7 +616,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528971270033</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="toRemember poprawki 14">
+      <created>1528982292338</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1528982292338</updated>
+    </task>
+    <task id="LOCAL-00259" summary="toRemember poprawki 15">
+      <created>1528983405061</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1528983405061</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -641,7 +646,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36828965" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.36828965" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -665,8 +670,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Przydatne klasy File 6" />
-    <MESSAGE value="Przydatne klasy File 7" />
     <MESSAGE value="Przydatne klasy File 8" />
     <MESSAGE value="Przydatne klasy File 9" />
     <MESSAGE value="Przydatne klasy File 10" />
@@ -690,7 +693,9 @@
     <MESSAGE value="toRemember poprawki 11" />
     <MESSAGE value="toRemember poprawki 12" />
     <MESSAGE value="toRemember poprawki 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 13" />
+    <MESSAGE value="toRemember poprawki 14" />
+    <MESSAGE value="toRemember poprawki 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -932,13 +937,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/Random.java" />
-    <entry file="file://$PROJECT_DIR$/src/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1030,10 +1028,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="111" column="61" lean-forward="true" selection-start-line="111" selection-start-column="61" selection-end-line="111" selection-end-column="61" />
+        <state relative-caret-position="330">
+          <caret line="138" column="64" selection-start-line="138" selection-start-column="64" selection-end-line="138" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#14760#14770#0" expanded="true" />

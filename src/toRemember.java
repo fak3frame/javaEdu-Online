@@ -126,6 +126,17 @@ public class toRemember {
         Math.min(10,12);
         Math.max(10,12);
 
+        // KLASY OSLONOWE
+        Integer mojInteger1 = Integer.valueOf(10);
+        Integer mojInteger2 = Integer.valueOf("123");
+        int mojInt1 = Integer.valueOf(444);
+        int mojInt2 = Integer.valueOf("1234");
+        //metoda value of dziala dla int i string
+        //moze zaisac wartosci liczbowe go Integera i int
+
+        Integer mojInteger3 = Integer.parseInt("123");
+        int mojInt3 = Integer.parseInt("123");
+        //parseInt dla stringa i moze zapisac do Integera i inta
 
         // WIELKIE LICZBY
         BigInteger bi = new BigInteger("1234");
