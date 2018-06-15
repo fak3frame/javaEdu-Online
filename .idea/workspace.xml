@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="939" column="72" selection-start-line="939" selection-start-column="72" selection-end-line="939" selection-end-column="72" />
+            <state relative-caret-position="391">
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -278,20 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00213" summary="Podsumowanie poprawki 27">
-      <created>1528652642270</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
-      <option name="project" value="LOCAL" />
-      <updated>1528652642270</updated>
-    </task>
-    <task id="LOCAL-00214" summary="Podsumowanie poprawki 28">
-      <created>1528652835925</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1528652835925</updated>
     </task>
     <task id="LOCAL-00215" summary="Podsumowanie poprawki 29">
       <created>1528652868317</created>
@@ -622,7 +608,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528990270639</updated>
     </task>
-    <option name="localTasksCounter" value="262" />
+    <task id="LOCAL-00262" summary="toRemember poprawki 18">
+      <created>1529017656399</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1529017656401</updated>
+    </task>
+    <task id="LOCAL-00263" summary="toRemember poprawki 19">
+      <created>1529018227800</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1529018227800</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -638,7 +638,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.36828965" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36828965" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -662,8 +662,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Przydatne klasy File 10" />
-    <MESSAGE value="Przydatne klasy File 11" />
     <MESSAGE value="Przydatne klasy File 12" />
     <MESSAGE value="Przydatne klasy File 13" />
     <MESSAGE value="Przydatne klasy File 14" />
@@ -687,7 +685,9 @@
     <MESSAGE value="toRemember poprawki 15" />
     <MESSAGE value="toRemember poprawki 16" />
     <MESSAGE value="toRemember poprawki 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 17" />
+    <MESSAGE value="toRemember poprawki 18" />
+    <MESSAGE value="toRemember poprawki 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1029,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="939" column="72" selection-start-line="939" selection-start-column="72" selection-end-line="939" selection-end-column="72" />
+        <state relative-caret-position="391">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

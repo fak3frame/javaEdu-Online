@@ -23,6 +23,25 @@ import java.util.stream.Collectors;
 public class toRemember {
     public static void main(String[] args) throws IOException, URISyntaxException {
 
+        String string1 = "asd";
+        String string2 = "asd";
+        int[] intsTab = {1234,2134};
+        //Objects.compare(bb1,bb1,bb1); ??
+        Integer.compare(1,2);
+        Character.compare('c','d');
+        Double.compare(23.2, 234.2);
+
+        Arrays.compare(intsTab,intsTab);
+
+        string1.compareTo(string2);
+        string1.compareToIgnoreCase(string2);
+
+        Objects.equals(string1,string2);
+        string1.equals(string2);
+
+
+
+
         /*
         TEORIA:
         Hermetyzajca - ustawianie pol klas jako prywatne/protected i dostep
