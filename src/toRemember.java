@@ -25,19 +25,24 @@ public class toRemember {
 
         String string1 = "asd";
         String string2 = "asd";
+        Integer mojInteger = 1234;
         int[] intsTab = {1234,2134};
+
         //Objects.compare(bb1,bb1,bb1); ??
         Integer.compare(1,2);
         Character.compare('c','d');
         Double.compare(23.2, 234.2);
-
         Arrays.compare(intsTab,intsTab);
 
         string1.compareTo(string2);
         string1.compareToIgnoreCase(string2);
+        mojInteger.compareTo(mojInteger);
 
         Objects.equals(string1,string2);
         string1.equals(string2);
+        Arrays.equals(intsTab,intsTab);
+        intsTab.equals(intsTab);
+
 
 
 
