@@ -49,6 +49,9 @@ public class toRemember {
         //mozna wywolac tylko na obiekcie
         //jesli obiek wlasnej klasy wymagana implementacja w klasie
         // inerfacu Comparable i definicji metody compareTo()
+        //Mozna implementowac interfejs z typem generycznym to
+        // w deklaracji metody compareTo uzywamy obiektu tego typu
+        // compareTo(Klasa o1) - 1 obiekt!
 
         Objects.equals(string1,string2);
         string1.equals(string2);
