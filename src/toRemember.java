@@ -57,6 +57,7 @@ public class toRemember {
         string1.equals(string2);
         Arrays.equals(intsTab,intsTab);
         intsTab.equals(intsTab);
+        //mozna wywolac na nazwie klasy TYLKO standardowej
 
 
 
