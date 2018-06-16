@@ -57,7 +57,11 @@ public class toRemember {
         string1.equals(string2);
         Arrays.equals(intsTab,intsTab);
         intsTab.equals(intsTab);
-        //mozna wywolac na nazwie klasy TYLKO standardowej
+
+        //mozna wywolac na nazwie klasy TYLKO standardowej (Objects/Arrays)
+        // inaczej wywoluje na obiekcie lub tablicy
+        //w przypadku obiektu klasy wlasnej wymagana jest deklaracja
+        // metody equals(Object o) oraz metody hashCode()
 
 
 
