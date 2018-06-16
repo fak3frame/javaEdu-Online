@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
 public class toRemember {
     public static void main(String[] args) throws IOException, URISyntaxException {
 
+        KlasaArrays3 obiektKlasy = new KlasaArrays3(10);
         String string1 = "asd";
         String string2 = "asd";
         Integer mojInteger = 1234;
@@ -33,6 +34,8 @@ public class toRemember {
         Character.compare('c','d');
         Double.compare(23.2, 234.2);
         Arrays.compare(intsTab,intsTab);
+        //mozna wywolac tylko z nazwy klasy a nie obiektu
+
 
         string1.compareTo(string2);
         string1.compareToIgnoreCase(string2);
