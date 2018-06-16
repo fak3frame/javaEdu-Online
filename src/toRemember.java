@@ -35,7 +35,8 @@ public class toRemember {
         Double.compare(23.2, 234.2);
         Arrays.compare(intsTab,intsTab);
         //mozna wywolac tylko z nazwy klasy a nie obiektu
-        //Mozna z klas domyslnych albo wlasnych z komparatorem
+        //Mozna z klas domyslnych albo wlasnych ktore implementuja
+        // interface Comparator + defnicji metody compare();
 
 
         string1.compareTo(string2);
