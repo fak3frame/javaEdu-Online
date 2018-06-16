@@ -48,7 +48,7 @@ public class toRemember {
         obiektKlasy.compareTo(obiektKlasy);
         //mozna wywolac tylko na obiekcie
         //jesli obiek wlasnej klasy wymagana implementacja w klasie
-        // inerfacu Comparable i definicji metody compareTo()
+        // inerfacu Comparable i definicji metody compareTo(Object o)
         //Mozna implementowac interfejs z typem generycznym to
         // w deklaracji metody compareTo uzywamy obiektu tego typu
         // compareTo(Klasa o1) - 1 obiekt!
