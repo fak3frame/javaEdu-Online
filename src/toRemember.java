@@ -61,7 +61,7 @@ public class toRemember {
         //mozna wywolac na nazwie klasy TYLKO standardowej (Objects/Arrays)
         // inaczej wywoluje na obiekcie lub tablicy
         //w przypadku obiektu klasy wlasnej wymagana jest deklaracja
-        // metody equals(Object o) oraz metody hashCode()
+        // metody boolean equals(Object o) oraz metody int hashCode()
 
 
 
