@@ -28,7 +28,7 @@ public class toRemember {
         Integer mojInteger = 1234;
         int[] intsTab = {1234,2134};
 
-        //Objects.compare(bb1,bb1,bb1); ??
+        //Objects.compare(bb1,bb1,bb1); ?
         Integer.compare(1,2);
         Character.compare('c','d');
         Double.compare(23.2, 234.2);
