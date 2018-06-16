@@ -40,9 +40,9 @@ public class toRemember {
         //Mozna implementowac interfejs z typem generycznym to
         // w deklaracji metody compare uzywamy obiektu tego typu
         // compare(Klasa o1, Klasa o2)
-        //Metody compare deklaruje do sortowania tablicy obiektow metoda sort klasy
-        // Arrays - Arrays.sort(tab, new Comparator) - uzywam w argumencie
-        // takze obiektu COMARATORA!
+        //Metode compareTo deklaruje w klasie obiekow do sortowania tablicy
+        // obiektow metoda sort klasy Arrays - Arrays.sort(tab, new Comparator)
+        // - uzywam w argumencie takze obiektu COMARATORA!
 
 
         string1.compareTo(string2);
@@ -55,6 +55,9 @@ public class toRemember {
         //Mozna implementowac interfejs z typem generycznym to
         // w deklaracji metody compareTo uzywamy obiektu tego typu
         // compareTo(Klasa o1) - 1 obiekt!
+        //Metode compareTo deklaruje w klasie obiekow do sortowania tablicy
+        // obiektow metoda sort klasy Arrays - Arrays.sort(tab) - tutaj
+        // jako argumaent metody uzywam tylko tablicy
 
         Objects.equals(string1,string2);
         string1.equals(string2);
