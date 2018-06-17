@@ -72,9 +72,6 @@ public class toRemember {
         // metody boolean equals(Object o) oraz metody int hashCode()
 
 
-
-
-
         /*
         TEORIA:
         Hermetyzajca - ustawianie pol klas jako prywatne/protected i dostep
