@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="335" column="36" selection-start-line="335" selection-start-column="36" selection-end-line="335" selection-end-column="36" />
+            <state relative-caret-position="305">
+              <caret line="336" column="52" lean-forward="true" selection-start-line="336" selection-start-column="52" selection-end-line="336" selection-end-column="52" />
               <folding>
                 <element signature="e#13493#13494#0" expanded="true" />
                 <element signature="e#13549#13550#0" expanded="true" />
@@ -322,20 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00242" summary="Przydatne klasy File 15">
-      <created>1528822797472</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1528822797472</updated>
-    </task>
-    <task id="LOCAL-00243" summary="Przydatne klasy File 16">
-      <created>1528843184762</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1528843184762</updated>
     </task>
     <task id="LOCAL-00244" summary="Przydatne klasy File 17">
       <created>1528884141456</created>
@@ -666,7 +651,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529328106670</updated>
     </task>
-    <option name="localTasksCounter" value="291" />
+    <task id="LOCAL-00291" summary="toRemember poprawki 48">
+      <created>1529330248758</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1529330248758</updated>
+    </task>
+    <task id="LOCAL-00292" summary="toRemember poprawki 49">
+      <created>1529330422081</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1529330422081</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -675,17 +674,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3191648" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36828965" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.36763608" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19498357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19498357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -699,15 +699,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3196005" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 22" />
-    <MESSAGE value="toRemember poprawki 23" />
     <MESSAGE value="toRemember poprawki 24" />
     <MESSAGE value="toRemember poprawki 25" />
     <MESSAGE value="toRemember poprawki 26" />
@@ -731,7 +728,9 @@
     <MESSAGE value="toRemember poprawki 45" />
     <MESSAGE value="toRemember poprawki 46" />
     <MESSAGE value="toRemember poprawki 47" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 47" />
+    <MESSAGE value="toRemember poprawki 48" />
+    <MESSAGE value="toRemember poprawki 49" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 49" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1061,8 +1060,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="335" column="36" selection-start-line="335" selection-start-column="36" selection-end-line="335" selection-end-column="36" />
+        <state relative-caret-position="305">
+          <caret line="336" column="52" lean-forward="true" selection-start-line="336" selection-start-column="52" selection-end-line="336" selection-end-column="52" />
           <folding>
             <element signature="e#13493#13494#0" expanded="true" />
             <element signature="e#13549#13550#0" expanded="true" />
