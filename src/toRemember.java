@@ -53,7 +53,7 @@ public class toRemember {
         string1.compareToIgnoreCase(string2);
         mojInteger.compareTo(mojInteger);
         obiektKlasy.compareTo(obiektKlasy);
-        //mozna wywolac tylko na obiekcie
+        //mozna wywolac TYLKO na obiekcie
 
         //jesli obiek wlasnej klasy wymagana implementacja w klasie
         // inerfacu Comparable i definicji metody compareTo(Object o)
