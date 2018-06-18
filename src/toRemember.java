@@ -46,7 +46,7 @@ public class toRemember {
 
         //Mozna implementowac interfejs z typem generycznym to
         // w deklaracji metody compare uzywamy obiektu typu tej klasy
-        // compare(Klasa o1, Klasa o2)
+        // public int compare(Klasa o1, Klasa o2)
 
         //Moge wykorzystac TYLKO w przypadku metody compare oddzielna klase
         // dla komparatora aby miec mozliwosc DODATKOWEGO rodzaju sortowania
@@ -59,12 +59,17 @@ public class toRemember {
         obiektKlasy.compareTo(obiektKlasy);
         //mozna wywolac TYLKO na obiekcie
 
-        //jesli obiek wlasnej klasy wymagana implementacja w klasie
-        // inerfacu Comparable i definicji metody compareTo(Object o)
+        //Metode compareTo deklaruje w klasie obiekow aby miec mozliwosc sortowania
+        // tablicy obiektow metoda sort klasy Arrays -
+        // Arrays.sort(tab)
+        // uzywam w argumencie tylko tablicy obiekow!
+
+        //Klasa taka musi implementowac inteface Comparable i deklarwoac metode
+        // public int compareTo(Object o1)
 
         //Mozna implementowac interfejs z typem generycznym to
-        // w deklaracji metody compareTo uzywamy obiektu tego typu
-        // compareTo(Klasa o1) - 1 obiekt!
+        // w deklaracji metody compareTo uzywamy obiektu typu tej klasy
+        // public int compare(Klasa o1) - 1 OBIEKT!
 
         //Metode compareTo deklaruje w klasie obiekow do sortowania tablicy
         // obiektow metoda sort klasy Arrays - Arrays.sort(tab) - tutaj
