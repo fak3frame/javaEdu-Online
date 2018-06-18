@@ -335,6 +335,8 @@ public class toRemember {
         String tabToStringX = Arrays.toString(tabToString);
         //zapisze do stringa tablice w [] oddzielajac elem ,
         System.out.println("xxxxxx: "+tabToStringX);
+        //zeby wybrac co ma oddzielac mozna uzyc metody join
+        // deklaracja wczesniej
 
         //.copyOf();
         int[] tabCopyOf = Arrays.copyOf(tabToString, tabToString.length);
