@@ -75,7 +75,7 @@ public class toRemember {
         // uzywam w argumencie tylko tablicy obiekow!
 
         //Klasa taka musi implementowac interface Comparable i deklarwoac metode
-        // public int compareTo(Object o1)
+        // public int compareTo(Object o1) - przyjmuje 1 obiekt!
 
         //Mozna implementowac interfejs z typem generycznym to
         // w deklaracji metody compareTo uzywamy obiektu typu tej klasy
