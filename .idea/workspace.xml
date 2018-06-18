@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="314" column="25" selection-start-line="314" selection-start-column="25" selection-end-line="314" selection-end-column="25" />
               <folding>
                 <element signature="e#13770#13771#0" expanded="true" />
                 <element signature="e#13826#13827#0" expanded="true" />
@@ -290,20 +290,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00238" summary="Przydatne klasy File 11">
-      <created>1528818972512</created>
-      <option name="number" value="00238" />
-      <option name="presentableId" value="LOCAL-00238" />
-      <option name="project" value="LOCAL" />
-      <updated>1528818972512</updated>
-    </task>
-    <task id="LOCAL-00239" summary="Przydatne klasy File 12">
-      <created>1528819851592</created>
-      <option name="number" value="00239" />
-      <option name="presentableId" value="LOCAL-00239" />
-      <option name="project" value="LOCAL" />
-      <updated>1528819851592</updated>
     </task>
     <task id="LOCAL-00240" summary="Przydatne klasy File 13">
       <created>1528821788395</created>
@@ -634,7 +620,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529321703855</updated>
     </task>
-    <option name="localTasksCounter" value="287" />
+    <task id="LOCAL-00287" summary="toRemember poprawki 44">
+      <created>1529321921289</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1529321921289</updated>
+    </task>
+    <task id="LOCAL-00288" summary="toRemember poprawki 45">
+      <created>1529322071812</created>
+      <option name="number" value="00288" />
+      <option name="presentableId" value="LOCAL-00288" />
+      <option name="project" value="LOCAL" />
+      <updated>1529322071812</updated>
+    </task>
+    <option name="localTasksCounter" value="289" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -674,8 +674,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 18" />
-    <MESSAGE value="toRemember poprawki 19" />
     <MESSAGE value="toRemember poprawki 20" />
     <MESSAGE value="toRemember poprawki 21" />
     <MESSAGE value="toRemember poprawki 22" />
@@ -699,7 +697,9 @@
     <MESSAGE value="toRemember poprawki 41" />
     <MESSAGE value="toRemember poprawki 42" />
     <MESSAGE value="toRemember poprawki 43" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 43" />
+    <MESSAGE value="toRemember poprawki 44" />
+    <MESSAGE value="toRemember poprawki 45" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 45" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1029,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="314" column="25" selection-start-line="314" selection-start-column="25" selection-end-line="314" selection-end-column="25" />
           <folding>
             <element signature="e#13770#13771#0" expanded="true" />
             <element signature="e#13826#13827#0" expanded="true" />
