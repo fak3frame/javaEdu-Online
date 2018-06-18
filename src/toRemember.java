@@ -74,7 +74,7 @@ public class toRemember {
         // Arrays.sort(tab)
         // uzywam w argumencie tylko tablicy obiekow!
 
-        //Klasa taka musi implementowac inteface Comparable i deklarwoac metode
+        //Klasa taka musi implementowac interface Comparable i deklarwoac metode
         // public int compareTo(Object o1)
 
         //Mozna implementowac interfejs z typem generycznym to
