@@ -81,10 +81,6 @@ public class toRemember {
         // w deklaracji metody compareTo uzywamy obiektu typu tej klasy
         // public int compare(Klasa o1) - 1 OBIEKT!
 
-        //Metode compareTo deklaruje w klasie obiekow do sortowania tablicy
-        // obiektow metoda sort klasy Arrays - Arrays.sort(tab) - tutaj
-        // jako argumaent metody uzywam tylko tablicy
-
 
         Objects.equals(string1,string2);
         string1.equals(string2);
