@@ -35,11 +35,14 @@ public class toRemember {
         Double.compare(23.2, 234.2);
         Arrays.compare(intsTab,intsTab);
         //mozna wywolac TYLKO z nazwy klasy (STANDAROWEJ) a nie obiektu
+
         //Mozna z klas domyslnych albo wlasnych ktore implementuja
         // interface COMPARATOR + defnicji metody compare(Object o1, Object o2);
+
         //Mozna implementowac interfejs z typem generycznym to
         // w deklaracji metody compare uzywamy obiektu tego typu
         // compare(Klasa o1, Klasa o2)
+
         //Metode compareTo deklaruje w klasie obiekow do sortowania tablicy
         // obiektow metoda sort klasy Arrays - Arrays.sort(tab, new Comparator)
         // - uzywam w argumencie takze obiektu COMARATORA!
@@ -50,14 +53,18 @@ public class toRemember {
         mojInteger.compareTo(mojInteger);
         obiektKlasy.compareTo(obiektKlasy);
         //mozna wywolac tylko na obiekcie
+
         //jesli obiek wlasnej klasy wymagana implementacja w klasie
         // inerfacu Comparable i definicji metody compareTo(Object o)
+
         //Mozna implementowac interfejs z typem generycznym to
         // w deklaracji metody compareTo uzywamy obiektu tego typu
         // compareTo(Klasa o1) - 1 obiekt!
+
         //Metode compareTo deklaruje w klasie obiekow do sortowania tablicy
         // obiektow metoda sort klasy Arrays - Arrays.sort(tab) - tutaj
         // jako argumaent metody uzywam tylko tablicy
+
 
         Objects.equals(string1,string2);
         string1.equals(string2);
@@ -68,6 +75,7 @@ public class toRemember {
 
         //mozna wywolac na nazwie klasy TYLKO standardowej (Objects/Arrays)
         // inaczej wywoluje na obiekcie lub tablicy
+
         //w przypadku obiektu klasy wlasnej wymagana jest deklaracja
         // metody boolean equals(Object o) oraz metody int hashCode()
 
