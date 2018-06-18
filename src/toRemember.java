@@ -36,21 +36,20 @@ public class toRemember {
         Arrays.compare(intsTab,intsTab);
         //mozna wywolac TYLKO z nazwy klasy (STANDAROWEJ) a nie obiektu
 
-        //Metode compare deklaruje w klasie obiekow aby miec mozliwosc sortowania
-        // tablicy obiektow metoda sort klasy Arrays -
-        // Arrays.sort(tab, new Comparator)
-        // uzywam w argumencie takze obiektu COMARATORA!
+        //Metode copare uzywam glownie gdy chce posortowac tablice wlasnych
+        // obiekow za pomoca metody sort z klasy Arrays
+        // Arrays.sort(tablicaObiektow, new ObiektKlasySortujacej)
 
-        //Klasa taka musi implementowac inteface Comparator i deklarwoac metode
-        // public int compare(Object o1, Object o2)
+        //Taka metoda oprocz tablicy przyjmuje obiekt klasy sortujacej
 
-        //Mozna implementowac interfejs z typem generycznym to
-        // w deklaracji metody compare uzywamy obiektu typu tej klasy
-        // public int compare(Klasa o1, Klasa o2)
+        //Klasa sortujaca implementuje intefejs Comparator z typem generycznym
+        // klasy obiektow ktore chcemy posrotowac i w niej deklarauje
+        // metode public int compare(Klasa o1, Klasa o2)
 
-        //Moge wykorzystac TYLKO w przypadku metody compare oddzielna klase
-        // dla komparatora aby miec mozliwosc DODATKOWEGO rodzaju sortowania
-        // klasa taka musi implementowac komparator z typem generycznym
+        //Glowny rodzaj sortowania robie w glownej klasie z uzyciem interfejsu
+        // Comparable i metoda compareTo()
+
+
 
 
         string1.compareTo(string2);
@@ -1012,6 +1011,15 @@ class KlasaArrays3 implements Comparable{
     public int compareTo(Object o){
         if(this.wielkosc>((KlasaArrays3)o).getWielkosc()) return 1;
         else if(this.wielkosc<((KlasaArrays3)o).getWielkosc()) return -1;
+        else return 0;
+    }
+}
+//---------------------------
+class TestKomparatora implements Comparator<TestKomparatora>{
+    int wielkosc;
+    public int compare(TestKomparatora o1, TestKomparatora o2){
+        if(o1.wielkosc>o2.wielkosc) return 1;
+        else if(o1.wielkosc<o2.wielkosc) return -1;
         else return 0;
     }
 }
