@@ -332,7 +332,9 @@ public class toRemember {
         int[] tabToString = {1,5,3,62};
         System.out.println("Arrays.toString():");
         System.out.println(Arrays.toString(tabToString));
-
+        String tabToStringX = Arrays.toString(tabToString);
+        //zapisze do stringa tablice w [] oddzielajac elem ,
+        System.out.println("xxxxxx: "+tabToStringX);
 
         //.copyOf();
         int[] tabCopyOf = Arrays.copyOf(tabToString, tabToString.length);

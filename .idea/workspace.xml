@@ -23,22 +23,54 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="314" column="25" selection-start-line="314" selection-start-column="25" selection-end-line="314" selection-end-column="25" />
+            <state relative-caret-position="1224">
+              <caret line="335" column="36" selection-start-line="335" selection-start-column="36" selection-end-line="335" selection-end-column="36" />
               <folding>
-                <element signature="e#13770#13771#0" expanded="true" />
-                <element signature="e#13826#13827#0" expanded="true" />
-                <element signature="e#13864#13865#0" expanded="true" />
-                <element signature="e#13911#13912#0" expanded="true" />
-                <element signature="e#14847#14848#0" expanded="true" />
-                <element signature="e#14903#14904#0" expanded="true" />
-                <element signature="e#14941#14942#0" expanded="true" />
-                <element signature="e#14988#14989#0" expanded="true" />
-                <element signature="e#21458#21468#0" expanded="true" />
-                <element signature="e#22238#22239#0" expanded="true" />
-                <element signature="e#22281#22282#0" expanded="true" />
-                <element signature="e#22507#22508#0" expanded="true" />
-                <element signature="e#22592#22593#0" expanded="true" />
+                <element signature="e#13493#13494#0" expanded="true" />
+                <element signature="e#13549#13550#0" expanded="true" />
+                <element signature="e#13587#13588#0" expanded="true" />
+                <element signature="e#13634#13635#0" expanded="true" />
+                <element signature="e#15004#15005#0" expanded="true" />
+                <element signature="e#15060#15061#0" expanded="true" />
+                <element signature="e#15098#15099#0" expanded="true" />
+                <element signature="e#15145#15146#0" expanded="true" />
+                <element signature="e#21615#21625#0" expanded="true" />
+                <element signature="e#22395#22396#0" expanded="true" />
+                <element signature="e#22438#22439#0" expanded="true" />
+                <element signature="e#22664#22665#0" expanded="true" />
+                <element signature="e#22749#22750#0" expanded="true" />
+                <element signature="e#33392#33393#0" expanded="true" />
+                <element signature="e#33430#33431#0" expanded="true" />
+                <element signature="e#33458#33459#0" expanded="true" />
+                <element signature="e#33514#33515#0" expanded="true" />
+                <element signature="e#33595#33596#0" expanded="true" />
+                <element signature="e#33633#33634#0" expanded="true" />
+                <element signature="e#33663#33664#0" expanded="true" />
+                <element signature="e#33721#33722#0" expanded="true" />
+                <element signature="e#34737#34738#0" expanded="true" />
+                <element signature="e#34769#34770#0" expanded="true" />
+                <element signature="e#34816#34817#0" expanded="true" />
+                <element signature="e#34858#34859#0" expanded="true" />
+                <element signature="e#34889#34890#0" expanded="true" />
+                <element signature="e#34970#34971#0" expanded="true" />
+                <element signature="e#35011#35012#0" expanded="true" />
+                <element signature="e#35038#35039#0" expanded="true" />
+                <element signature="e#35065#35066#0" expanded="true" />
+                <element signature="e#35094#35095#0" expanded="true" />
+                <element signature="e#35187#35188#0" expanded="true" />
+                <element signature="e#35253#35254#0" expanded="true" />
+                <element signature="e#35876#35877#0" expanded="true" />
+                <element signature="e#35916#35917#0" expanded="true" />
+                <element signature="e#35946#35947#0" expanded="true" />
+                <element signature="e#35977#35978#0" expanded="true" />
+                <element signature="e#37252#37253#0" expanded="true" />
+                <element signature="e#37279#37280#0" expanded="true" />
+                <element signature="e#37459#37460#0" expanded="true" />
+                <element signature="e#37528#37529#0" expanded="true" />
+                <element signature="e#38231#38232#0" expanded="true" />
+                <element signature="e#38271#38272#0" expanded="true" />
+                <element signature="e#38301#38302#0" expanded="true" />
+                <element signature="e#38332#38333#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,9 +153,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,20 +322,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00240" summary="Przydatne klasy File 13">
-      <created>1528821788395</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1528821788395</updated>
-    </task>
-    <task id="LOCAL-00241" summary="Przydatne klasy File 14">
-      <created>1528822266377</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1528822266377</updated>
     </task>
     <task id="LOCAL-00242" summary="Przydatne klasy File 15">
       <created>1528822797472</created>
@@ -634,33 +652,46 @@
       <option name="project" value="LOCAL" />
       <updated>1529322071812</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="toRemember poprawki 46">
+      <created>1529327785619</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1529327785619</updated>
+    </task>
+    <task id="LOCAL-00290" summary="toRemember poprawki 47">
+      <created>1529328106670</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1529328106670</updated>
+    </task>
+    <option name="localTasksCounter" value="291" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="83" y="-8" width="3365" height="1456" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3196005" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36828965" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19521046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19498357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39950064" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32946298" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -668,14 +699,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3196005" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 20" />
-    <MESSAGE value="toRemember poprawki 21" />
     <MESSAGE value="toRemember poprawki 22" />
     <MESSAGE value="toRemember poprawki 23" />
     <MESSAGE value="toRemember poprawki 24" />
@@ -699,7 +729,9 @@
     <MESSAGE value="toRemember poprawki 43" />
     <MESSAGE value="toRemember poprawki 44" />
     <MESSAGE value="toRemember poprawki 45" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 45" />
+    <MESSAGE value="toRemember poprawki 46" />
+    <MESSAGE value="toRemember poprawki 47" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 47" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1029,22 +1061,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="314" column="25" selection-start-line="314" selection-start-column="25" selection-end-line="314" selection-end-column="25" />
+        <state relative-caret-position="1224">
+          <caret line="335" column="36" selection-start-line="335" selection-start-column="36" selection-end-line="335" selection-end-column="36" />
           <folding>
-            <element signature="e#13770#13771#0" expanded="true" />
-            <element signature="e#13826#13827#0" expanded="true" />
-            <element signature="e#13864#13865#0" expanded="true" />
-            <element signature="e#13911#13912#0" expanded="true" />
-            <element signature="e#14847#14848#0" expanded="true" />
-            <element signature="e#14903#14904#0" expanded="true" />
-            <element signature="e#14941#14942#0" expanded="true" />
-            <element signature="e#14988#14989#0" expanded="true" />
-            <element signature="e#21458#21468#0" expanded="true" />
-            <element signature="e#22238#22239#0" expanded="true" />
-            <element signature="e#22281#22282#0" expanded="true" />
-            <element signature="e#22507#22508#0" expanded="true" />
-            <element signature="e#22592#22593#0" expanded="true" />
+            <element signature="e#13493#13494#0" expanded="true" />
+            <element signature="e#13549#13550#0" expanded="true" />
+            <element signature="e#13587#13588#0" expanded="true" />
+            <element signature="e#13634#13635#0" expanded="true" />
+            <element signature="e#15004#15005#0" expanded="true" />
+            <element signature="e#15060#15061#0" expanded="true" />
+            <element signature="e#15098#15099#0" expanded="true" />
+            <element signature="e#15145#15146#0" expanded="true" />
+            <element signature="e#21615#21625#0" expanded="true" />
+            <element signature="e#22395#22396#0" expanded="true" />
+            <element signature="e#22438#22439#0" expanded="true" />
+            <element signature="e#22664#22665#0" expanded="true" />
+            <element signature="e#22749#22750#0" expanded="true" />
+            <element signature="e#33392#33393#0" expanded="true" />
+            <element signature="e#33430#33431#0" expanded="true" />
+            <element signature="e#33458#33459#0" expanded="true" />
+            <element signature="e#33514#33515#0" expanded="true" />
+            <element signature="e#33595#33596#0" expanded="true" />
+            <element signature="e#33633#33634#0" expanded="true" />
+            <element signature="e#33663#33664#0" expanded="true" />
+            <element signature="e#33721#33722#0" expanded="true" />
+            <element signature="e#34737#34738#0" expanded="true" />
+            <element signature="e#34769#34770#0" expanded="true" />
+            <element signature="e#34816#34817#0" expanded="true" />
+            <element signature="e#34858#34859#0" expanded="true" />
+            <element signature="e#34889#34890#0" expanded="true" />
+            <element signature="e#34970#34971#0" expanded="true" />
+            <element signature="e#35011#35012#0" expanded="true" />
+            <element signature="e#35038#35039#0" expanded="true" />
+            <element signature="e#35065#35066#0" expanded="true" />
+            <element signature="e#35094#35095#0" expanded="true" />
+            <element signature="e#35187#35188#0" expanded="true" />
+            <element signature="e#35253#35254#0" expanded="true" />
+            <element signature="e#35876#35877#0" expanded="true" />
+            <element signature="e#35916#35917#0" expanded="true" />
+            <element signature="e#35946#35947#0" expanded="true" />
+            <element signature="e#35977#35978#0" expanded="true" />
+            <element signature="e#37252#37253#0" expanded="true" />
+            <element signature="e#37279#37280#0" expanded="true" />
+            <element signature="e#37459#37460#0" expanded="true" />
+            <element signature="e#37528#37529#0" expanded="true" />
+            <element signature="e#38231#38232#0" expanded="true" />
+            <element signature="e#38271#38272#0" expanded="true" />
+            <element signature="e#38301#38302#0" expanded="true" />
+            <element signature="e#38332#38333#0" expanded="true" />
           </folding>
         </state>
       </provider>
