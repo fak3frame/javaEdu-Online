@@ -34,6 +34,7 @@ public class toRemember {
         Character.compare('c','d');
         Double.compare(23.2, 234.2);
         Arrays.compare(intsTab,intsTab);
+        //brak String.compare();
         //mozna wywolac TYLKO z nazwy klasy (STANDAROWEJ) a nie obiektu
 
         //Metode compare() uzywam glownie gdy chce posortowac tablice wlasnych
