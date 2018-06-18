@@ -34,7 +34,7 @@ public class toRemember {
         Character.compare('c','d');
         Double.compare(23.2, 234.2);
         Arrays.compare(intsTab,intsTab);
-        //mozna wywolac tylko z nazwy klasy (STANDAROWEJ) a nie obiektu
+        //mozna wywolac TYLKO z nazwy klasy (STANDAROWEJ) a nie obiektu
         //Mozna z klas domyslnych albo wlasnych ktore implementuja
         // interface COMPARATOR + defnicji metody compare(Object o1, Object o2);
         //Mozna implementowac interfejs z typem generycznym to
