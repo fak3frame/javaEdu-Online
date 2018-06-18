@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+            <state relative-caret-position="425">
+              <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
               <folding>
                 <element signature="e#13770#13771#0" expanded="true" />
                 <element signature="e#13826#13827#0" expanded="true" />
@@ -290,27 +290,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00235" summary="Przydatne klasy File 8">
-      <created>1528812594273</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1528812594273</updated>
-    </task>
-    <task id="LOCAL-00236" summary="Przydatne klasy File 9">
-      <created>1528812843574</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1528812843574</updated>
-    </task>
-    <task id="LOCAL-00237" summary="Przydatne klasy File 10">
-      <created>1528817636132</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
-      <option name="project" value="LOCAL" />
-      <updated>1528817636147</updated>
     </task>
     <task id="LOCAL-00238" summary="Przydatne klasy File 11">
       <created>1528818972512</created>
@@ -634,7 +613,28 @@
       <option name="project" value="LOCAL" />
       <updated>1529319975881</updated>
     </task>
-    <option name="localTasksCounter" value="284" />
+    <task id="LOCAL-00284" summary="toRemember poprawki 41">
+      <created>1529321622719</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1529321622719</updated>
+    </task>
+    <task id="LOCAL-00285" summary="toRemember poprawki 42">
+      <created>1529321661504</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1529321661504</updated>
+    </task>
+    <task id="LOCAL-00286" summary="toRemember poprawki 43">
+      <created>1529321703855</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1529321703855</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -674,9 +674,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 15" />
-    <MESSAGE value="toRemember poprawki 16" />
-    <MESSAGE value="toRemember poprawki 17" />
     <MESSAGE value="toRemember poprawki 18" />
     <MESSAGE value="toRemember poprawki 19" />
     <MESSAGE value="toRemember poprawki 20" />
@@ -699,7 +696,10 @@
     <MESSAGE value="toRemember poprawki 37" />
     <MESSAGE value="toRemember poprawki 39" />
     <MESSAGE value="toRemember poprawki 40" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 40" />
+    <MESSAGE value="toRemember poprawki 41" />
+    <MESSAGE value="toRemember poprawki 42" />
+    <MESSAGE value="toRemember poprawki 43" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 43" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1029,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+        <state relative-caret-position="425">
+          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
           <folding>
             <element signature="e#13770#13771#0" expanded="true" />
             <element signature="e#13826#13827#0" expanded="true" />

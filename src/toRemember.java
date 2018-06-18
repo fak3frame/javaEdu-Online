@@ -82,9 +82,9 @@ public class toRemember {
         // public int compare(Klasa o1) - 1 OBIEKT!
 
 
-        Objects.equals(string1,string2);
+        Objects.equals(string1, string2);
         string1.equals(string2);
-        Arrays.equals(intsTab,intsTab);
+        Arrays.equals(intsTab, intsTab);
         intsTab.equals(intsTab);
         mojInteger.equals(mojInteger);
         obiektKlasy.equals(obiektKlasy);
