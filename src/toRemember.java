@@ -36,7 +36,7 @@ public class toRemember {
         Arrays.compare(intsTab,intsTab);
         //mozna wywolac TYLKO z nazwy klasy (STANDAROWEJ) a nie obiektu
 
-        //Metode copare uzywam glownie gdy chce posortowac tablice wlasnych
+        //Metode compare() uzywam glownie gdy chce posortowac tablice wlasnych
         // obiekow za pomoca metody sort z klasy Arrays
         // Arrays.sort(tablicaObiektow, new ObiektKlasySortujacej)
 
@@ -46,10 +46,21 @@ public class toRemember {
         // klasy obiektow ktore chcemy posrotowac i w niej deklarauje
         // metode public int compare(Klasa o1, Klasa o2)
 
+        //Moge takze uzyc klasy anonimowej aby nie deklarowac oddzilnej klasy
+        // na potrzebe tworzenia Coparatora
+        /*
+        Arrays.sort(tabObiektow, new Comparator<KlasaObiektow>() {
+            @Override
+            public int compare(KlasaObiektow o1, KlasaObiektow o2) {
+                if(o1.wielkosc>o2.wielkosc) return 1;
+                else if(o1.wielkosc<o2.wielkosc) return -1;
+                else return 0;
+            }
+        });
+        */
+
         //Glowny rodzaj sortowania robie w glownej klasie z uzyciem interfejsu
         // Comparable i metoda compareTo()
-
-
 
 
         string1.compareTo(string2);

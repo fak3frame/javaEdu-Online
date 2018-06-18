@@ -23,8 +23,23 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+            <state relative-caret-position="408">
+              <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+              <folding>
+                <element signature="e#13770#13771#0" expanded="true" />
+                <element signature="e#13826#13827#0" expanded="true" />
+                <element signature="e#13864#13865#0" expanded="true" />
+                <element signature="e#13911#13912#0" expanded="true" />
+                <element signature="e#14847#14848#0" expanded="true" />
+                <element signature="e#14903#14904#0" expanded="true" />
+                <element signature="e#14941#14942#0" expanded="true" />
+                <element signature="e#14988#14989#0" expanded="true" />
+                <element signature="e#21458#21468#0" expanded="true" />
+                <element signature="e#22238#22239#0" expanded="true" />
+                <element signature="e#22281#22282#0" expanded="true" />
+                <element signature="e#22507#22508#0" expanded="true" />
+                <element signature="e#22592#22593#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -275,13 +290,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00233" summary="Przydatne klasy File 6">
-      <created>1528812420681</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1528812420681</updated>
     </task>
     <task id="LOCAL-00234" summary="Przydatne klasy File 7">
       <created>1528812488685</created>
@@ -619,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529317723614</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="toRemember poprawki 39">
+      <created>1529319265582</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1529319265582</updated>
+    </task>
+    <option name="localTasksCounter" value="283" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -659,7 +674,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 13" />
     <MESSAGE value="toRemember poprawki 14" />
     <MESSAGE value="toRemember poprawki 15" />
     <MESSAGE value="toRemember poprawki 16" />
@@ -684,7 +698,8 @@
     <MESSAGE value="toRemember poprawki 35" />
     <MESSAGE value="toRemember poprawki 36" />
     <MESSAGE value="toRemember poprawki 37" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 37" />
+    <MESSAGE value="toRemember poprawki 39" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 39" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,8 +1029,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding>
+            <element signature="e#13770#13771#0" expanded="true" />
+            <element signature="e#13826#13827#0" expanded="true" />
+            <element signature="e#13864#13865#0" expanded="true" />
+            <element signature="e#13911#13912#0" expanded="true" />
+            <element signature="e#14847#14848#0" expanded="true" />
+            <element signature="e#14903#14904#0" expanded="true" />
+            <element signature="e#14941#14942#0" expanded="true" />
+            <element signature="e#14988#14989#0" expanded="true" />
+            <element signature="e#21458#21468#0" expanded="true" />
+            <element signature="e#22238#22239#0" expanded="true" />
+            <element signature="e#22281#22282#0" expanded="true" />
+            <element signature="e#22507#22508#0" expanded="true" />
+            <element signature="e#22592#22593#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
