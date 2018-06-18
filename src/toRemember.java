@@ -314,6 +314,7 @@ public class toRemember {
 
         //KLASA ARRAYS / SORTOWANIE TABLICY OBIEKTOW
         System.out.println("KLASA ARRAYS:");
+
         // .asList(); //zamiana tablicy na liste
         List<String>imionaLista1 = Arrays.asList("kamil","tomek");
         String[] imionaTablica = {"kamil","tomek"};
