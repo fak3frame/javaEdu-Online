@@ -383,6 +383,18 @@ public class toRemember {
                 else return 0;
             }
         }
+        //lub z uzyciem klasy anonimowej
+        /*Arrays.sort(t, new Comparator<KlasaArrays2>() {
+            @Override
+            public int compare(KlasaArrays2 o1, KlasaArrays2 o2) {
+                if(o2 == null) return -1;
+                if(o1.getWielkosc()>o2.getWielkosc()) return 1;
+                else if(o1.getWielkosc()<o2.getWielkosc()) return -1;
+                else return 0;
+            }
+        });
+         */
+
         //.sort() z wykorzystaniem interfejsu Comparable
         KlasaArrays3 ka4 = new KlasaArrays3(10);
         KlasaArrays3 ka5 = new KlasaArrays3(9);
