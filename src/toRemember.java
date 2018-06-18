@@ -83,13 +83,12 @@ public class toRemember {
         // public int compare(Klasa o1) - 1 OBIEKT!
 
 
-        Objects.equals(string1, string2);
+        Objects.equals(string1, string2); //dla Stringow
+        Arrays.equals(intsTab, intsTab); //dla tablic
         string1.equals(string2);
-        Arrays.equals(intsTab, intsTab);
-        intsTab.equals(intsTab);
         mojInteger.equals(mojInteger);
+        intsTab.equals(intsTab);
         obiektKlasy.equals(obiektKlasy);
-
         //mozna wywolac na nazwie klasy TYLKO standardowej (Objects/Arrays)
         // inaczej wywoluje na obiekcie lub tablicy
 
