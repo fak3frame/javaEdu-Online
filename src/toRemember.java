@@ -48,6 +48,10 @@ public class toRemember {
         // w deklaracji metody compare uzywamy obiektu typu tej klasy
         // compare(Klasa o1, Klasa o2)
 
+        //Moge wykorzystac TYLKO w przypadku metody compare oddzielna klase
+        // dla komparatora aby miec mozliwosc DODATKOWEGO rodzaju sortowania
+        // klasa taka musi implementowac komparator z typem generycznym
+
 
         string1.compareTo(string2);
         string1.compareToIgnoreCase(string2);
