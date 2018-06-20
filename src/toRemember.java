@@ -147,7 +147,7 @@ public class toRemember {
 
         //Moge przeniesc zawartosc listy do Stringa za pomoca metody join
         List<String>auta = Arrays.asList("audi","mercedes");
-        //wykorzystuje metode asListy klasy Arrays
+        //Wykorzystuje metode asListy klasy Arrays
         String autaString = "";//musze zainicjowac wartoscia do metody join
         autaString = autaString.join(",",auta);
         //przypisuje do Stringa z metoda join()
