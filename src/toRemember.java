@@ -222,8 +222,8 @@ public class toRemember {
         //parseInt dla stringa i moze zapisac do Integera i inta
 
         Integer.compare(mojInteger1, mojInteger2);
-        //zwroci 1 gdy mojInteger1 wiekszy, -1 gdy mniejszy i 0 gdy rowny
-        //przydante podczas tworzenia metod compare() oraz compareTo()
+        //Zwroci 1 gdy mojInteger1 wiekszy, -1 gdy mniejszy i 0 gdy rowny
+        //Przydante podczas tworzenia metod compare() oraz compareTo()
 
         // WIELKIE LICZBY
         BigInteger bi = new BigInteger("1234");
