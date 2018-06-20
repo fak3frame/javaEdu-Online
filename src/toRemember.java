@@ -207,7 +207,7 @@ public class toRemember {
         // KLASY OSLONOWE
         Integer testInteger = 1234;
         Integer testInteger2 = new Integer(12343);
-        // z uzyciem boxingu
+        //Z uzyciem boxingu
 
         //metody:
         Integer mojInteger1 = Integer.valueOf(10);
