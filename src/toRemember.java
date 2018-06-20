@@ -184,7 +184,7 @@ public class toRemember {
          */
         System.out.println("StringJoiner");
         StringJoiner joiner = new StringJoiner("");
-        //musze okreslic w konstruktorze 1 lub 3 parametry, gdy podam jeden
+        //Musze okreslic w konstruktorze 1 lub 3 parametry, gdy podam jeden
         // bedzie to separator oddzielajacy stringi, gdy podam 3 bedzie to
         // separator, prefix(to co na poczatku ciagu) i suffix(na koncu)
         StringJoiner joiner2 = new StringJoiner(",","{","}");
