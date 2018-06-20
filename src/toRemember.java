@@ -89,10 +89,10 @@ public class toRemember {
         mojInteger.equals(mojInteger);
         intsTab.equals(intsTab);
         obiektKlasy.equals(obiektKlasy);
-        //mozna wywolac na nazwie klasy TYLKO standardowej (Objects/Arrays)
+        //Mozna wywolac na nazwie klasy TYLKO standardowej (Objects/Arrays)
         // inaczej wywoluje na obiekcie lub tablicy
 
-        //w przypadku obiektu klasy wlasnej wymagana jest deklaracja
+        //W przypadku obiektu klasy wlasnej wymagana jest deklaracja
         // metody boolean equals(Object o) oraz metody int hashCode()
 
 
