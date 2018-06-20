@@ -361,7 +361,7 @@ public class toRemember {
         Sortuj mojSort = new Sortuj();
         //Tworze obiekt klasy sortujacej
         Arrays.sort(t, mojSort);
-        //wywoluje metode klasy Arrays - sort() i umieszczam w niej tablice
+        //Wywoluje metode klasy Arrays - sort() i umieszczam w niej tablice
         // obiektow oraz obiekt sorujacy
         Arrays.sort(t, new Sortuj());
         //lub umieszczam nowy obiekt prosto w metodie
