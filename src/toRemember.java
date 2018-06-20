@@ -67,8 +67,8 @@ public class toRemember {
         string1.compareToIgnoreCase(string2);
         mojInteger.compareTo(mojInteger);
         obiektKlasy.compareTo(obiektKlasy);
-        //brak tablic!
-        //mozna wywolac TYLKO na obiekcie
+        //Brak tablic!
+        //Mozna wywolac TYLKO na obiekcie
 
         //Metode compareTo deklaruje w klasie obiekow aby miec mozliwosc sortowania
         // tablicy obiektow metoda sort klasy Arrays -
