@@ -180,7 +180,7 @@ public class toRemember {
 
         // STRING_JOINER
         /*
-        rozwiazuje problem wyrazen lambda oraz upraszcza laczenie Stringow
+        Rozwiazuje problem wyrazen lambda oraz upraszcza laczenie Stringow
          */
         System.out.println("StringJoiner");
         StringJoiner joiner = new StringJoiner("");
