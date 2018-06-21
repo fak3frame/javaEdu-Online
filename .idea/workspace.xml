@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,13 +20,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="209" column="11" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
+            <state relative-caret-position="-1139">
+              <caret line="91" column="75" lean-forward="true" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
               <folding>
-                <element signature="e#21922#21932#0" expanded="true" />
+                <element signature="e#21940#21950#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,6 +37,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -94,13 +104,13 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/FileMoj.java" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
         <option value="$PROJECT_DIR$/src/toRemember.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="111" />
-    <option name="y" value="21" />
-    <option name="width" value="1301" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="84" />
+    <option name="width" value="1688" />
     <option name="height" value="1447" />
   </component>
   <component name="ProjectView">
@@ -110,6 +120,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,11 +151,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="PrzydatneKlasy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,20 +293,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00252" summary="toRemember poprawki 8">
-      <created>1528967792945</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1528967792945</updated>
-    </task>
-    <task id="LOCAL-00253" summary="toRemember poprawki 9">
-      <created>1528968033667</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
-      <option name="project" value="LOCAL" />
-      <updated>1528968033667</updated>
     </task>
     <task id="LOCAL-00254" summary="toRemember poprawki 10">
       <created>1528969410970</created>
@@ -621,11 +623,25 @@
       <option name="project" value="LOCAL" />
       <updated>1529528574559</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="toRemember poprawki 58">
+      <created>1529613675196</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1529613675196</updated>
+    </task>
+    <task id="LOCAL-00302" summary="toRemember poprawki 59">
+      <created>1529614002879</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1529614002880</updated>
+    </task>
+    <option name="localTasksCounter" value="303" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="-8" width="3365" height="1456" extended-state="6" />
+    <frame x="84" y="0" width="1688" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -635,34 +651,32 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36763608" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36763608" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19498357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2667464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39950064" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39950064" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32946298" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3191648" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3191648" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 32" />
-    <MESSAGE value="toRemember poprawki 33" />
     <MESSAGE value="toRemember poprawki 34" />
     <MESSAGE value="toRemember poprawki 35" />
     <MESSAGE value="toRemember poprawki 36" />
@@ -686,7 +700,9 @@
     <MESSAGE value="toRemember poprawki 55" />
     <MESSAGE value="toRemember poprawki 56" />
     <MESSAGE value="toRemember poprawki 57" />
-    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 57" />
+    <MESSAGE value="toRemember poprawki 58" />
+    <MESSAGE value="toRemember poprawki 59" />
+    <option name="LAST_COMMIT_MESSAGE" value="toRemember poprawki 59" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -694,20 +710,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7072">
-          <caret line="416" column="9" selection-start-line="416" selection-start-column="9" selection-end-line="416" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3723">
-          <caret line="219" selection-start-line="219" selection-end-line="219" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4046">
@@ -1007,6 +1009,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1139">
+          <caret line="91" column="75" lean-forward="true" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
+          <folding>
+            <element signature="e#21940#21950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1014,13 +1033,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="209" column="11" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
-          <folding>
-            <element signature="e#21922#21932#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
