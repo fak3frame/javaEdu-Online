@@ -14,6 +14,12 @@ public class Wstep {
         Y-funkcjonalonsci
         Z-latki
 
+        JVM - maszyna witrualna javy np Oracle
+
+        JRE - maszyna wirtualna tylko dla uruchamiania programow
+
+        JDK - zestaw narzedzi zawierajacy takze kompilator javac
+
 
 
          */
