@@ -7,6 +7,15 @@ public class Wstep {
         Klasa - projekt/foremka
         Obiekt/instancja - produkt
 
+        Maszyna wirtualna pomaga zarzadzac pamiecia
+
+        wersja programy X.Y.Z
+        X-wersja
+        Y-funkcjonalonsci
+        Z-latki
+
+
+
          */
     }
 }
