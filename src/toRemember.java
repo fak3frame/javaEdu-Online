@@ -95,9 +95,15 @@ public class toRemember {
         //W przypadku obiektu klasy wlasnej wymagana jest deklaracja
         // metody boolean equals(Object o) oraz metody int hashCode()
 
-        //Warunki w metodzie equals:
+        //Warunki w metodzie public boolean equals(Object o):
         // if(this = o) return true
-        //if(o = null || this.getClass() != o.getClass()) return false
+        // if(o = null || this.getClass() != o.getClass()) return false
+        // if(this.zmienna == ((klasa)o).zmienna return true
+        // else return false
+
+        //Warunki w metodzie public int hashCode():
+        // return Objects.hash(zmienna1, getzmienna2());
+
 
 
         /*
