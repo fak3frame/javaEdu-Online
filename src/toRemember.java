@@ -458,7 +458,7 @@ public class toRemember {
         add(obj);
         remove(obj);
         remove(int);
-        size();
+        size(); // nie lenght! jak w tablicach
         get(int);
         contains(value);
         isEmpty();
