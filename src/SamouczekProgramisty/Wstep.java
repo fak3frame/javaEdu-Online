@@ -131,7 +131,34 @@ public class Wstep {
         float liczba6 = 123.34F;//musi byc "f" lub "F"
         double liczba7 = 213.45;
         short liczba8 = 234;
+        //W przypadku typow prostych jest wykonywany automatyczny autoboxing
 
+        int liczbaBox1 = new Integer(12);
+        //wykonuje operacje odwrotna czyli autounboxing
+
+        final int liczbaFinalna;
+        liczbaFinalna = 10;
+        //liczbaFinalna = 12; - blad - liczbe finalna mozemy przypisac 1 raz
+        // lecz mozna ja zadeklarowac bez nadawania wartosci
+
+
+
+        //INTERFACE
+        /*
+        API (ang. Application Programming Interface)
+        Jest to zestaw metod bez ich implementacji
+        Wszystkie metody interfacu sa publiczne
+        Moga wystepowac w nim metody domyslne,statyczne oraz stałe
+
+        Metoda domyslna to taka ktora posiada cialo i zaczyna sie od slowa
+         default, mozna je nadpisywac
+
+        default String getName(){
+            return "Napis";
+        }
+
+
+         */
 
 
 
