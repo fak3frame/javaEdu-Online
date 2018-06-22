@@ -1,6 +1,9 @@
 package SamouczekProgramisty;
 
+import SamouczekProgramisty.Silnik.SilnikMoj;
+
 public class Wstep {
+
     public static void main(String[] args) {
         /*
         Skroty klawiszowe:
@@ -9,6 +12,7 @@ public class Wstep {
         alt + ins - dodanie pliku
         shift + tab - usuniecie wciecia
         ctrl + spacja - podpowiedz
+        ctrl + j - podpowiedzi dla klasy
 
 
          */
@@ -73,20 +77,30 @@ public class Wstep {
          ->SamouczekProgrmisty->pl
 
 
-
-
          KLASY:
 
         Sluzy do grupowania atrybutow i metod
 
         Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego
 
-
+        public Silnik(){
+            silnikMoj = new SilnikMoj(20);
+        }
+        public Silnik(SilnikMoj silnikMoj){
+            this.silnikMoj = silnikMoj;
+        }
+        1 konstruktor tworzacy obiekt klasy SilnikMoj w atrybucie silnikMoj
+           klasy Silnik
+        2 konstruktor kopiujacy obiekt klasy SilnikMoj do atrybutu silnikMoj
+           klasy Silnik
          */
+
+
 
 
     }
     static boolean czyDuza(int liczba){
         return liczba>100;
     }
+    private SilnikMoj silnikMoj;
 }
