@@ -3,6 +3,15 @@ package SamouczekProgramisty;
 public class Wstep {
     public static void main(String[] args) {
         /*
+        Skroty klawiszowe:
+        alt + 1 - ukrycie okienka struktury projektu
+        alt + strzalka - przleczanie pomiedy zakladkami
+        alt + ins - dodanie pliku
+        shift + tab usuniecie wciecia
+
+         */
+
+        /*
         WSTEP:
         Klasa - projekt/foremka
         Obiekt/instancja - produkt
@@ -55,6 +64,13 @@ public class Wstep {
         package pl.SamouczekProgramisty.Folder1;
         plik klasy znajduje sie w folderze "Folder1" a on w folderze
          "SamouczekProgramisty" a on w "pl"
+
+
+         KLASY:
+
+        Sluzy do grupowania atrybutow i metod
+
+        Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego
 
 
          */
