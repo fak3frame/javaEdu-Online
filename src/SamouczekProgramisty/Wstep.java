@@ -26,6 +26,8 @@ public class Wstep {
 
         Metoda - worek do grupujacy zestaw instrukcji. tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
+        Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
+
          */
         System.out.println("METODY:");
         int jakisNumer = 123; //zakres +/- 2,147,483,647
