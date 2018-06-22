@@ -107,20 +107,29 @@ public class Wstep {
         }
         */
 
-        //STRING / TABLICE
+        //STRING / TABLICE / ZMIENNE
         //Tblica jest obiektem !
         String a = "213\nwqeqwe";//\n enter
         int aDlugosc = a.length();
 
         String[] dni = new String[7];
         dni[0] = "Poniedzialek";
+        System.out.println(dni.length); //bez () !!
+        //w string/kolekcjach jest z ()
+        //pokaze ilosc dlugosc tablicy a nie ile ma wypelnionych elem.
+
         String[] imiona = new String [] {"kamil", "tomek"};
 
-        int iloscImion = imiona.length; //bez () !!
+
+
         int liczba = 1234_123;//liczba z literalem - ulatwia czytelnosc
         //pokaze liczbe normalnie
-        int liczba2 = -0xFF00;
-        //pokaze ilosc dlugosc tablicy a nie ile ma wypelnionych elem.
+        int liczba2 = -0xFF00;//w systemie szesnastkowym
+        int liczba3 = 0777;//w systemie osemkowym (511)
+        long liczba4 = 123L;//da informacje ze bedzie to typ long
+        // mozliwe jest uzycie "l" lecz zalecane jest "L"
+
+
 
 
 
