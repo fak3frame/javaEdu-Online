@@ -22,6 +22,10 @@ public class Wstep {
 
         IDE (ang. Integrated Development Environment)
 
+        METODY:
+
+        Metoda - worek do grupujacy zestaw instrukcji
+
 
 
          */
