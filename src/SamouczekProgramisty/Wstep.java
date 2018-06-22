@@ -24,7 +24,10 @@ public class Wstep {
 
         METODY:
 
-        Metoda - worek do grupujacy zestaw instrukcji
+        Metoda - worek do grupujacy zestaw instrukcji. tworzymy je
+         aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
+
+
 
 
 
