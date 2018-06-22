@@ -20,7 +20,7 @@ public class Wstep {
 
         JDK - zestaw narzedzi zawierajacy takze kompilator javac
 
-
+        IDE (ang. Integrated Development Environment)
 
 
 
