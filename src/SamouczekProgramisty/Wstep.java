@@ -121,13 +121,16 @@ public class Wstep {
         String[] imiona = new String [] {"kamil", "tomek"};
 
 
-
         int liczba = 1234_123;//liczba z literalem - ulatwia czytelnosc
         //pokaze liczbe normalnie
         int liczba2 = -0xFF00;//w systemie szesnastkowym
         int liczba3 = 0777;//w systemie osemkowym (511)
+        long liczba5 = 1232455;//nie musze pisac z koncowka L
         long liczba4 = 123L;//da informacje ze bedzie to typ long
         // mozliwe jest uzycie "l" lecz zalecane jest "L"
+        float liczba6 = 123.34F;//musi byc "f" lub "F"
+        double liczba7 = 213.45;
+        short liczba8 = 234;
 
 
 
