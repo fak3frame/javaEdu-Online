@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
-    </list>
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -33,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="323">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#942#943#0" expanded="true" />
@@ -104,8 +100,8 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/FileMoj.java" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
         <option value="$PROJECT_DIR$/src/toRemember.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
       </list>
     </option>
   </component>
@@ -307,20 +303,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00275" summary="toRemember poprawki 31">
-      <created>1529166208443</created>
-      <option name="number" value="00275" />
-      <option name="presentableId" value="LOCAL-00275" />
-      <option name="project" value="LOCAL" />
-      <updated>1529166208443</updated>
-    </task>
-    <task id="LOCAL-00276" summary="toRemember poprawki 32">
-      <created>1529316145158</created>
-      <option name="number" value="00276" />
-      <option name="presentableId" value="LOCAL-00276" />
-      <option name="project" value="LOCAL" />
-      <updated>1529316145159</updated>
     </task>
     <task id="LOCAL-00277" summary="toRemember poprawki 33">
       <created>1529316214062</created>
@@ -651,7 +633,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529672129628</updated>
     </task>
-    <option name="localTasksCounter" value="324" />
+    <task id="LOCAL-00324" summary="SanouczekProgramisty Klasy 10">
+      <created>1529672361641</created>
+      <option name="number" value="00324" />
+      <option name="presentableId" value="LOCAL-00324" />
+      <option name="project" value="LOCAL" />
+      <updated>1529672361641</updated>
+    </task>
+    <task id="LOCAL-00325" summary="SanouczekProgramisty Klasy 11">
+      <created>1529672598142</created>
+      <option name="number" value="00325" />
+      <option name="presentableId" value="LOCAL-00325" />
+      <option name="project" value="LOCAL" />
+      <updated>1529672598142</updated>
+    </task>
+    <option name="localTasksCounter" value="326" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -691,8 +687,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 56" />
-    <MESSAGE value="toRemember poprawki 57" />
     <MESSAGE value="toRemember poprawki 58" />
     <MESSAGE value="toRemember poprawki 59" />
     <MESSAGE value="SanouczekProgramisty wstep 1" />
@@ -716,7 +710,9 @@
     <MESSAGE value="SanouczekProgramisty Klasy 7" />
     <MESSAGE value="SanouczekProgramisty Klasy 8" />
     <MESSAGE value="SanouczekProgramisty Klasy 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Klasy 9" />
+    <MESSAGE value="SanouczekProgramisty Klasy 10" />
+    <MESSAGE value="SanouczekProgramisty Klasy 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Klasy 11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1031,10 +1027,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="460" column="46" selection-start-line="460" selection-start-column="46" selection-end-line="460" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="323">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#942#943#0" expanded="true" />
@@ -1043,16 +1049,6 @@
             <element signature="e#1097#1098#0" expanded="true" />
             <element signature="e#3402#3403#0" expanded="true" />
             <element signature="e#3435#3436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="460" column="46" selection-start-line="460" selection-start-column="46" selection-end-line="460" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

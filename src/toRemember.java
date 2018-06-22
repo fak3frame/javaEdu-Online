@@ -256,6 +256,11 @@ public class toRemember {
                 System.out.println();//wykona tylko gdy zaden case
                  // nie zostanie uruchomiony
         }
+        //uproszczone wyjscie z break
+        while (true){
+            int sdfwef = 10;
+            break;
+        }
 
 
         // METODY
