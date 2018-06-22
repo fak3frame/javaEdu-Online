@@ -65,6 +65,12 @@ public class Wstep {
         plik klasy znajduje sie w folderze "Folder1" a on w folderze
          "SamouczekProgramisty" a on w "pl"
 
+        import pl.SamouczekProgramisty.Folder1.MojaKlasa;
+        importuje klase MojaKlasa z pakietu ->Folder1->
+         ->SamouczekProgrmisty->pl
+
+
+
 
          KLASY:
 
