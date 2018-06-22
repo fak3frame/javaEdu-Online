@@ -7,7 +7,9 @@ public class Wstep {
         alt + 1 - ukrycie okienka struktury projektu
         alt + strzalka - przleczanie pomiedy zakladkami
         alt + ins - dodanie pliku
-        shift + tab usuniecie wciecia
+        shift + tab - usuniecie wciecia
+        ctrl + spacja - podpowiedz
+
 
          */
 
@@ -51,6 +53,7 @@ public class Wstep {
         }
         boolean wynik = czyDuza(jakisNumer);
         System.out.println(wynik);
+
 
 
         /*
