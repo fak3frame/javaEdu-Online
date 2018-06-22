@@ -44,12 +44,13 @@ public class Wstep {
 
         /*
         PAKIETY:
-
-        Package - informuje gdzie znajduje sie klasa/interfejs/typ wyliczeniowy
+        Słuza do grupowania i informowania gdzie znajduje sie klasa/interfejs/typ wyliczeniowy
+         czy adnotacja
 
         package SamouczekProgramisty.folder1;
         plik klasy znajduje sie w folderze "folder1" a on w folderze
          SamouczekProgramisty
+
 
          */
 
