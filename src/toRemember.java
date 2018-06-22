@@ -265,7 +265,7 @@ public class toRemember {
         // break wyjdzie takze z for
 
         for (int i = 0; i < 10; i+=10) {
-
+            break;
         }
 
 

@@ -117,6 +117,9 @@ public class Wstep {
         String[] imiona = new String [] {"kamil", "tomek"};
 
         int iloscImion = imiona.length; //bez () !!
+        int liczba = 1234_123;//liczba z literalem - ulatwia czytelnosc
+        //pokaze liczbe normalnie
+        int liczba2 = -0xFF00;
         //pokaze ilosc dlugosc tablicy a nie ile ma wypelnionych elem.
 
 
