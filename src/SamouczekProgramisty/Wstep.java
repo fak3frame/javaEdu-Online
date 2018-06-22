@@ -77,11 +77,13 @@ public class Wstep {
          ->SamouczekProgrmisty->pl
 
 
-         KLASY:
+        KLASY:
 
         Sluzy do grupowania atrybutow i metod
 
         Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego
+        ----------------
+        private SilnikMoj silnikMoj;
 
         public Silnik(){
             silnikMoj = new SilnikMoj(20);
@@ -89,11 +91,25 @@ public class Wstep {
         public Silnik(SilnikMoj silnikMoj){
             this.silnikMoj = silnikMoj;
         }
+        ----------------
         1 konstruktor tworzacy obiekt klasy SilnikMoj w atrybucie silnikMoj
            klasy Silnik
         2 konstruktor kopiujacy obiekt klasy SilnikMoj do atrybutu silnikMoj
            klasy Silnik
-         */
+        ----------------
+        retrun SilnikMoj getSilnikMoj(){
+            return silnikMoj;
+        }
+        */
+
+        //STRING / TABLICE
+        String a = "213\nwqeqwe";//\n enter
+        int aDlugosc = a.length();
+
+        String[] dni = new String[7];
+        dni[0] = "Poniedzialek";
+
+
 
 
 
