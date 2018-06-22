@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Silnik/SilnikMoj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -42,8 +41,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+            <state relative-caret-position="289">
+              <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
               <folding>
                 <element signature="e#942#943#0" expanded="true" />
                 <element signature="e#991#992#0" expanded="true" />
@@ -321,20 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00269" summary="toRemember poprawki 25">
-      <created>1529165767418</created>
-      <option name="number" value="00269" />
-      <option name="presentableId" value="LOCAL-00269" />
-      <option name="project" value="LOCAL" />
-      <updated>1529165767418</updated>
-    </task>
-    <task id="LOCAL-00270" summary="toRemember poprawki 26">
-      <created>1529165860606</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
-      <option name="project" value="LOCAL" />
-      <updated>1529165860606</updated>
     </task>
     <task id="LOCAL-00271" summary="toRemember poprawki 27">
       <created>1529165930147</created>
@@ -665,7 +650,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529667818336</updated>
     </task>
-    <option name="localTasksCounter" value="318" />
+    <task id="LOCAL-00318" summary="SanouczekProgramisty Klasy 4">
+      <created>1529669398722</created>
+      <option name="number" value="00318" />
+      <option name="presentableId" value="LOCAL-00318" />
+      <option name="project" value="LOCAL" />
+      <updated>1529669398722</updated>
+    </task>
+    <task id="LOCAL-00319" summary="SanouczekProgramisty Klasy 5">
+      <created>1529670093005</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
+      <option name="project" value="LOCAL" />
+      <updated>1529670093005</updated>
+    </task>
+    <option name="localTasksCounter" value="320" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -681,11 +680,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.3670412" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.3670412" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19303338" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19303338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -705,8 +704,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 50" />
-    <MESSAGE value="toRemember poprawki 51" />
     <MESSAGE value="toRemember poprawki 52" />
     <MESSAGE value="toRemember poprawki 53" />
     <MESSAGE value="toRemember poprawki 54" />
@@ -730,7 +727,9 @@
     <MESSAGE value="SanouczekProgramisty Klasy 1" />
     <MESSAGE value="SanouczekProgramisty Klasy 2" />
     <MESSAGE value="SanouczekProgramisty Klasy 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Klasy 3" />
+    <MESSAGE value="SanouczekProgramisty Klasy 4" />
+    <MESSAGE value="SanouczekProgramisty Klasy 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Klasy 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1054,8 +1053,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+        <state relative-caret-position="289">
+          <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
           <folding>
             <element signature="e#942#943#0" expanded="true" />
             <element signature="e#991#992#0" expanded="true" />

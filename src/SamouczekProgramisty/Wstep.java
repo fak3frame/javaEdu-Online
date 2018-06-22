@@ -108,6 +108,9 @@ public class Wstep {
 
         String[] dni = new String[7];
         dni[0] = "Poniedzialek";
+        String[] imiona = new String [] {"kamil", "tomek"};
+        int iloscImion = imiona.length; //bez () !!
+
 
 
 
