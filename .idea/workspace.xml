@@ -40,8 +40,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="493">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -177,20 +177,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.toRemember">
+  <component name="RunManager" selected="Application.Wstep">
     <configuration name="FileMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.FileMoj" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PrzydatneKlasy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="RandomMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.RandomMoj" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -215,6 +204,17 @@
       <option name="MAIN_CLASS_NAME" value="Test1" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Wstep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Wstep" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -263,19 +263,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.RandomMoj" />
       <item itemvalue="Application.toRemember" />
       <item itemvalue="Application.String_Joiner" />
       <item itemvalue="Application.FileMoj" />
       <item itemvalue="Application.Test1" />
+      <item itemvalue="Application.Wstep" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.Test1" />
         <item itemvalue="Application.FileMoj" />
         <item itemvalue="Application.String_Joiner" />
-        <item itemvalue="Application.RandomMoj" />
       </list>
     </recent_temporary>
   </component>
@@ -289,20 +289,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00257" summary="toRemember poprawki 13">
-      <created>1528971270033</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1528971270033</updated>
-    </task>
-    <task id="LOCAL-00258" summary="toRemember poprawki 14">
-      <created>1528982292338</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1528982292338</updated>
     </task>
     <task id="LOCAL-00259" summary="toRemember poprawki 15">
       <created>1528983405061</created>
@@ -633,7 +619,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529652479590</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="SanouczekProgramisty wstep 4">
+      <created>1529652670527</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1529652670527</updated>
+    </task>
+    <task id="LOCAL-00307" summary="SanouczekProgramisty wstep 5">
+      <created>1529652734396</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1529652734396</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -673,8 +673,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toRemember poprawki 37" />
-    <MESSAGE value="toRemember poprawki 39" />
     <MESSAGE value="toRemember poprawki 40" />
     <MESSAGE value="toRemember poprawki 41" />
     <MESSAGE value="toRemember poprawki 42" />
@@ -698,7 +696,9 @@
     <MESSAGE value="SanouczekProgramisty wstep 1" />
     <MESSAGE value="SanouczekProgramisty wstep 2" />
     <MESSAGE value="SanouczekProgramisty wstep 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty wstep 3" />
+    <MESSAGE value="SanouczekProgramisty wstep 4" />
+    <MESSAGE value="SanouczekProgramisty wstep 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty wstep 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1022,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="493">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -26,11 +26,20 @@ public class Wstep {
 
         Metoda - worek do grupujacy zestaw instrukcji. tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
-
-
-
-
-
          */
+        System.out.println("METODY:");
+        int jakisNumer = 123;
+        boolean wynik = czyDuza(jakisNumer);
+        System.out.println(wynik);
+        class Wew1{
+            boolean czyDuza(int liczba){
+                return liczba>100;
+            }
+
+        }
     }
+    static boolean czyDuza(int liczba){
+        return liczba>100;
+    }
+
 }
