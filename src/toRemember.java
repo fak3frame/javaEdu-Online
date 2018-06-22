@@ -256,11 +256,16 @@ public class toRemember {
                 System.out.println();//wykona tylko gdy zaden case
                  // nie zostanie uruchomiony
         }
-        //uproszczone wyjscie z uzyciem brek
-        // break wyjdzie takze z for
+
         while (true){
             int sdfwef = 10;
             break;
+        }
+        //uproszczone wyjscie z uzyciem brek
+        // break wyjdzie takze z for
+
+        for (int i = 0; i < 10; i+=10) {
+
         }
 
 
