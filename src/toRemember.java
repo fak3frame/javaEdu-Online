@@ -253,7 +253,8 @@ public class toRemember {
             case 2:
                 break;
             default:
-                System.out.println();
+                System.out.println();//wykona tylko gdy zaden case
+                 // nie zostanie uruchomiony
         }
 
 

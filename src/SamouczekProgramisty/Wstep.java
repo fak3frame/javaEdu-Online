@@ -114,6 +114,15 @@ public class Wstep {
         int iloscImion = imiona.length; //bez () !!
         //pokaze ilosc dlugosc tablicy a nie ile ma wypelnionych elem.
 
+        switch (a){
+            case "213\nwqeqwe":
+                System.out.println("1");
+                break;
+            default:
+                System.out.println("2");
+                
+        }
+
 
 
 
