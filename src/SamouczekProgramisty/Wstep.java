@@ -22,6 +22,7 @@ public class Wstep {
 
         IDE (ang. Integrated Development Environment)
 
+
         METODY:
 
         Metoda - worek do grupujacy zestaw instrukcji. tworzymy je
@@ -42,14 +43,18 @@ public class Wstep {
         boolean wynik = czyDuza(jakisNumer);
         System.out.println(wynik);
 
+
         /*
         PAKIETY:
-        Słuza do grupowania i informowania gdzie znajduje sie klasa/interfejs/typ wyliczeniowy
-         czy adnotacja
 
-        package SamouczekProgramisty.folder1;
-        plik klasy znajduje sie w folderze "folder1" a on w folderze
-         SamouczekProgramisty
+        Słuza do grupowania i informowania gdzie znajduje sie klasa/interfejs
+        /typ wyliczeniowy/adnotacja
+
+        Przyjato ze uzywa sie odwrotnej nazwy domenowej
+
+        package pl.SamouczekProgramisty.Folder1;
+        plik klasy znajduje sie w folderze "Folder1" a on w folderze
+         "SamouczekProgramisty" a on w "pl"
 
 
          */
