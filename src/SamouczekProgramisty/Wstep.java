@@ -1,6 +1,7 @@
 package SamouczekProgramisty;
 
 import SamouczekProgramisty.Silnik.SilnikMoj;
+import jdk.nashorn.api.tree.ForInLoopTree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +17,7 @@ public class Wstep {
         shift + tab - usuniecie wciecia
         ctrl + spacja - podpowiedz
         ctrl + j - podpowiedzi dla klasy
+        fori + tab - petla for
 
 
          */
