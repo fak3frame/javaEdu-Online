@@ -28,15 +28,16 @@ public class Wstep {
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
          */
         System.out.println("METODY:");
-        int jakisNumer = 123;
-        boolean wynik = czyDuza(jakisNumer);
-        System.out.println(wynik);
+        int jakisNumer = 123; //zakres +/- 2,147,483,647
         class Wew1{
             boolean czyDuza(int liczba){
                 return liczba>100;
             }
-
         }
+        boolean wynik = czyDuza(jakisNumer);
+        System.out.println(wynik);
+
+
     }
     static boolean czyDuza(int liczba){
         return liczba>100;
