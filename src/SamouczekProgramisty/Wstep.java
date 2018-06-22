@@ -27,6 +27,8 @@ public class Wstep {
         Metoda - worek do grupujacy zestaw instrukcji. tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
         Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
+        Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
+
 
          */
         System.out.println("METODY:");
@@ -34,6 +36,9 @@ public class Wstep {
         class Wew1{
             boolean czyDuza(int liczba){
                 return liczba>100;
+            }
+            void powiedzCos(){
+                return;
             }
         }
         boolean wynik = czyDuza(jakisNumer);
