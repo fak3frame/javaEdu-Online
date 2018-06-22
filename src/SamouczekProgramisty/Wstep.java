@@ -148,7 +148,8 @@ public class Wstep {
         API (ang. Application Programming Interface)
         Jest to zestaw metod bez ich implementacji
         Wszystkie metody interfacu sa publiczne
-        Moga wystepowac w nim metody domyslne,statyczne oraz stałe
+        Interface moze zawierac metody domyslne,statyczne oraz zmienne stałe
+         finalne publiczne
 
         Metoda domyslna to taka ktora posiada cialo i zaczyna sie od slowa
          default, mozna je nadpisywac
@@ -156,6 +157,19 @@ public class Wstep {
         default String getName(){
             return "Napis";
         }
+
+        Klasa implementujaca interface musi implementowac wszystkie jego
+         metody za wyjatkiem klas abstrakcyjnych
+
+        Interfejs moze rozszerzac inne interfejsy i klasa implementujaca
+         taki interface musi metody z wszytskich tych interfejsow implementowac
+
+        Intefejs bez metod jesy interfejsem znacznikowym ktory sluzy do oznaczania
+         danej klasy dzieki czemu moge przekazac dodatkowe informacje. Moge np
+         powiedziec kompilatrowi ze dana klasa jest serializowana
+
+        Poprzez tworzenie obiektu typu interfacu moge ograniczyc widzialnosc metod
+
 
 
          */
