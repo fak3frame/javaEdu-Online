@@ -103,6 +103,7 @@ public class Wstep {
         */
 
         //STRING / TABLICE
+        //Tblica jest obiektem !
         String a = "213\nwqeqwe";//\n enter
         int aDlugosc = a.length();
 
