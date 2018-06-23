@@ -4,6 +4,7 @@ import SamouczekProgramisty.Silnik.SilnikMoj;
 import jdk.nashorn.api.tree.ForInLoopTree;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Wstep {
@@ -140,6 +141,9 @@ public class Wstep {
         liczbaFinalna = 10;
         //liczbaFinalna = 12; - blad - liczbe finalna mozemy przypisac 1 raz
         // lecz mozna ja zadeklarowac bez nadawania wartosci
+
+        Date data1 = new Date(); //data1 zawiera aktualana date
+        System.out.println(data1);
 
 
 
