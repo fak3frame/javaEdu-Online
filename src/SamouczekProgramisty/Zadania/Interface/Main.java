@@ -22,14 +22,10 @@ public class Main {
     }
 
     private boolean shouldMultiply() {
-        System.out.println("Would You like to add arguments? - press 1");
-        System.out.println("Or subtract? - press 2");
+        System.out.println("Would You like to add arguments? - press A");
+        System.out.println("Or subtract? - press anything else");
         Scanner sc = new Scanner(System.in);
-        int select = sc.nextInt();
-        if(select == 1)
-            return false;
-        else
-            return true;
+        return sc.nextLine().equals("A");
         // tutaj zapytaj użytkownika co chce zrobić (mnożenie czy dodawanie)
     }
 
