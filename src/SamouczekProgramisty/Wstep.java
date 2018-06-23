@@ -164,7 +164,7 @@ public class Wstep {
         Interfejs moze rozszerzac inne interfejsy i klasa implementujaca
          taki interface musi metody z wszytskich tych interfejsow implementowac
 
-        Intefejs bez metod jesy interfejsem znacznikowym ktory sluzy do oznaczania
+        Intefejs bez metod jest interfejsem znacznikowym ktory sluzy do oznaczania
          danej klasy dzieki czemu moge przekazac dodatkowe informacje. Moge np
          powiedziec kompilatrowi ze dana klasa jest serializowana
 
