@@ -3,9 +3,8 @@ package SamouczekProgramisty;
 import SamouczekProgramisty.Silnik.SilnikMoj;
 import jdk.nashorn.api.tree.ForInLoopTree;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.io.IOException;
+import java.util.*;
 
 public class Wstep {
 
@@ -276,6 +275,46 @@ public class Wstep {
             //hundle exception
         }
 
+        Drugim sposobem na obsluge wyjatkow jest klauzla thorws
+        */
+        class Test2{
+            Test2 t1 = new Test2();
+            void metodaZWyjatkiem()throws IOException{
+                throw new IOException()
+            }
+            void start(){
+                try{
+                    t1.metodaZWyjatkiem();
+                }
+                catch (IOException e){
+                    e.printStackTrace();
+                }
+                finally {
+                    //to zawsze bedzie wykonane
+                    //blok try/catch nie musi zawierac
+                    // catch jesli posiada finally
+                }
+            }
+            //przyklad 2: //wyliczenie pierwiastka
+            void start2(){
+                Scanner sc = new Scanner(System.in);
+                int liczba = 0;
+                while (true){
+                    try{
+                        liczba = sc.nextInt();
+                        break;
+                    }
+                    catch (InputMismatchException e){
+                        //zla liczba
+                        sc.next();
+                    }
+                }
+                if(liczba < 0)
+                    throw new IllegalArgumentException("liczba mniejsza od 0");
+            }
+        }
+
+        /*
         Rodzaje wyjątków: CHECKED oraz UNCHECKED
         Kazdy wyjatek dziedziczy po klasie Throwable
 
