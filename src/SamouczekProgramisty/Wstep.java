@@ -184,6 +184,10 @@ public class Wstep {
         brak modyfikatora - dostepny tylko w pakiecie
         private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
 
+        klasa moze byc poprzedzona modyfikatorem pbulic lub zadnym
+
+
+
 
 
 
