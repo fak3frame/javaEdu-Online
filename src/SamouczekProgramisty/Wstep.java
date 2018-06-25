@@ -52,14 +52,14 @@ public class Wstep {
          */
         System.out.println("METODY:");
         int jakisNumer = 123; //zakres +/- 2,147,483,647
-        class Wew1{
-            boolean czyDuza(int liczba){
-                return liczba>100;
-            }
-            void powiedzCos(){
-                return;
-            }
+    class Wew1{
+        boolean czyDuza(int liczba){
+            return liczba>100;
         }
+        void powiedzCos(){
+            return;
+        }
+    }
         boolean wynik = czyDuza(jakisNumer);
         System.out.println(wynik);
 
@@ -280,7 +280,7 @@ public class Wstep {
         class Test2{
             Test2 t1 = new Test2();
             void metodaZWyjatkiem()throws IOException{
-                throw new IOException()
+                throw new IOException();
             }
             void start(){
                 try{
