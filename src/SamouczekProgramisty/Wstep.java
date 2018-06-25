@@ -231,6 +231,28 @@ public class Wstep {
         Do metody toString() nie musze robic rzutowania
 
 
+        //WYJATKI
+
+        Wyjatek jest klasa.
+
+        void metoda1()
+            metoda2();
+        void metoda2()
+            metoda3();
+        void metoda 3()
+            throw new IllegalArgumentException("Liczba za mala");
+
+        Wywolujac metode 1 w wyniku (stacktrace) otrzymamy najpierw
+         otrzymamy wyjatek a nastpnie wywolanie metod od konca(metoda 3-2-1)
+         jest to STOS WYWOLAN
+
+        Exception in thread "main" java.lang.IllegalArgumentException: Liczba za mala
+        at folder.nazwaKlasy.metoda3(nazwaKlasy.java:18)
+        at folder.nazwaKlasy.metoda2(nazwaKlasy.java:14)
+        at folder.nazwaKlasy.metoda1(nazwaKlasy.java:10)
+
+
+
 
 
 
