@@ -175,6 +175,14 @@ public class Wstep {
         Poprzez tworzenie obiektu typu interfacu moge ograniczyc widzialnosc metod
 
 
+        //DZIEDZICZENIE
+        Szmochod - nadklasa/klasa bazowa/ SUV - podklasa/klasa pochodna
+
+        public - dostepny wszedzie
+        private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
+        protected - dostepne wewnatrz obiektu oraz klas pochodnych
+
+
 
          */
 
