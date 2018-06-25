@@ -149,10 +149,10 @@ public class Wstep {
 
         //INTERFACE
         /*
-        API (ang. Application Programming Interface)
+        API (ang. Application Programming _1_Interface)
         Jest to zestaw metod bez ich implementacji
         Wszystkie metody interfacu sa publiczne
-        Interface moze zawierac metody domyslne,statyczne oraz zmienne stałe
+        _1_Interface moze zawierac metody domyslne,statyczne oraz zmienne stałe
          finalne publiczne
 
         Metoda domyslna to taka ktora posiada cialo i zaczyna sie od slowa

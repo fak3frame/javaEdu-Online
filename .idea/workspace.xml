@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Konto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/KontoBanowe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Przelew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/Computation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/Computation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/MyAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/MyAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/MySubtract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/MySubtract.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +31,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4097">
-              <caret line="261" column="18" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
+            <state relative-caret-position="459">
+              <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,16 +40,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="140" column="22" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
+            <state relative-caret-position="430">
+              <caret line="188" selection-start-line="188" selection-end-line="188" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KontoBanowe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/KontoBanowe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <folding>
+                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Konto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Konto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Przelew.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Przelew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="123" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/123">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -97,12 +155,17 @@
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/String_Joiner.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/FileMoj.java" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
-        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/Computation.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/MyAdd.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/MySubtract.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/Main.java" />
+        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Konto.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Transfer.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Przelew.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/KontoBanowe.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Test.java" />
       </list>
     </option>
   </component>
@@ -167,7 +230,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="_1_Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_Modyfikatory_Dostepu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,25 +265,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="FileMoj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrzydatneKlasy.FileMoj" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._1_Interface.Main" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PrzydatneKlasy.*" />
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._1_Interface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania.Interface.Main" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._2_Modyfikatory_Dostepu.Test" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania.Interface.*" />
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._2_Modyfikatory_Dostepu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -281,18 +352,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.toRemember" />
-      <item itemvalue="Application.FileMoj" />
       <item itemvalue="Application.Test1" />
       <item itemvalue="Application.Wstep" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.Test1" />
-        <item itemvalue="Application.FileMoj" />
       </list>
     </recent_temporary>
   </component>
@@ -306,27 +377,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00293" summary="toRemember poprawki 50">
-      <created>1529528109192</created>
-      <option name="number" value="00293" />
-      <option name="presentableId" value="LOCAL-00293" />
-      <option name="project" value="LOCAL" />
-      <updated>1529528109194</updated>
-    </task>
-    <task id="LOCAL-00294" summary="toRemember poprawki 51">
-      <created>1529528187793</created>
-      <option name="number" value="00294" />
-      <option name="presentableId" value="LOCAL-00294" />
-      <option name="project" value="LOCAL" />
-      <updated>1529528187794</updated>
-    </task>
-    <task id="LOCAL-00295" summary="toRemember poprawki 52">
-      <created>1529528341652</created>
-      <option name="number" value="00295" />
-      <option name="presentableId" value="LOCAL-00295" />
-      <option name="project" value="LOCAL" />
-      <updated>1529528341653</updated>
     </task>
     <task id="LOCAL-00296" summary="toRemember poprawki 53">
       <created>1529528514718</created>
@@ -650,7 +700,28 @@
       <option name="project" value="LOCAL" />
       <updated>1529928043088</updated>
     </task>
-    <option name="localTasksCounter" value="342" />
+    <task id="LOCAL-00342" summary="SanouczekProgramisty Dziedziczenie 2">
+      <created>1529928624890</created>
+      <option name="number" value="00342" />
+      <option name="presentableId" value="LOCAL-00342" />
+      <option name="project" value="LOCAL" />
+      <updated>1529928624890</updated>
+    </task>
+    <task id="LOCAL-00343" summary="SanouczekProgramisty Dziedziczenie 3">
+      <created>1529928820628</created>
+      <option name="number" value="00343" />
+      <option name="presentableId" value="LOCAL-00343" />
+      <option name="project" value="LOCAL" />
+      <updated>1529928820628</updated>
+    </task>
+    <task id="LOCAL-00344" summary="SanouczekProgramisty Dziedziczenie 4">
+      <created>1529928887067</created>
+      <option name="number" value="00344" />
+      <option name="presentableId" value="LOCAL-00344" />
+      <option name="project" value="LOCAL" />
+      <updated>1529928887068</updated>
+    </task>
+    <option name="localTasksCounter" value="345" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -659,17 +730,19 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31835207" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.26966292" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.26966292" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19303338" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -682,17 +755,12 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31835207" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Klasy 3" />
-    <MESSAGE value="SanouczekProgramisty Klasy 4" />
-    <MESSAGE value="SanouczekProgramisty Klasy 5" />
     <MESSAGE value="SanouczekProgramisty Klasy 6" />
     <MESSAGE value="SanouczekProgramisty Klasy 7" />
     <MESSAGE value="SanouczekProgramisty Klasy 8" />
@@ -715,7 +783,10 @@
     <MESSAGE value="SanouczekProgramisty Zadanie interface 4" />
     <MESSAGE value="SanouczekProgramisty Zadanie interface 5" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Dziedziczenie 1" />
+    <MESSAGE value="SanouczekProgramisty Dziedziczenie 2" />
+    <MESSAGE value="SanouczekProgramisty Dziedziczenie 3" />
+    <MESSAGE value="SanouczekProgramisty Dziedziczenie 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Dziedziczenie 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -723,34 +794,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6426">
-          <caret line="378" column="23" selection-start-line="378" selection-start-column="23" selection-end-line="378" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3145">
@@ -982,20 +1025,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4097">
-          <caret line="261" column="18" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/123">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/MyAdd.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/MyAdd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
@@ -1013,14 +1043,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/MySubtract.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/MySubtract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
@@ -1031,20 +1061,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/Interface/Computation.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/Computation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="140" column="22" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
+        <state relative-caret-position="459">
+          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/123">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Przelew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Konto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/KontoBanowe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>

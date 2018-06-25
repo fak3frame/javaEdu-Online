@@ -1,4 +1,4 @@
-package SamouczekProgramisty.Zadania.Interface;
+package SamouczekProgramisty.Zadania._1_Interface;
 
 import java.util.Scanner;
 
