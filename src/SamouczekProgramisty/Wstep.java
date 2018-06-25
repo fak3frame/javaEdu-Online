@@ -48,7 +48,7 @@ public class Wstep {
         Metoda - worek do grupujacy zestaw instrukcji. tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
         Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
-        Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
+
          */
         System.out.println("METODY:");
         int jakisNumer = 123; //zakres +/- 2,147,483,647
@@ -58,6 +58,7 @@ public class Wstep {
         }
         void powiedzCos(){
             return;
+            //Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
         }
     }
         boolean wynik = czyDuza(jakisNumer);
