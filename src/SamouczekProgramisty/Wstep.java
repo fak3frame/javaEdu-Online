@@ -306,7 +306,7 @@ public class Wstep {
                     }
                     catch (InputMismatchException e){
                         //zla liczba
-                        sc.next();
+                        sc.next(); //!!!?
                     }
                 }
                 if(liczba < 0)
