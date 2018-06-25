@@ -129,7 +129,7 @@ public class Wstep {
         long liczba5 = 1232455;//nie musze pisac z koncowka L
         long liczba4 = 123L;//da informacje ze bedzie to typ long
         // mozliwe jest uzycie "l" lecz zalecane jest "L"
-        float liczba6 = 123.34F;//musi byc "f" lub "F"
+        float liczba6 = 123.34F;//musi byc "F" lub "f"
         double liczba7 = 213.45;
         short liczba8 = 234;
         //W przypadku typow prostych jest wykonywany automatyczny autoboxing
