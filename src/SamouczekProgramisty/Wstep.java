@@ -148,6 +148,7 @@ public class Wstep {
 
 
         //INTERFACE
+
         /*
         API (ang. Application Programming _1_Interface)
         Jest to zestaw metod bez ich implementacji
@@ -175,9 +176,9 @@ public class Wstep {
         Poprzez tworzenie obiektu typu interfacu moge ograniczyc widzialnosc metod
 
 
+
         //DZIEDZICZENIE
         Szmochod - nadklasa/klasa bazowa/ SUV - podklasa/klasa pochodna
-
 
         public - dostepny wszedzie
         protected - dostepne wewnatrz obiektu, pakietu oraz klas pochodnych
@@ -231,6 +232,7 @@ public class Wstep {
         Do metody toString() nie musze robic rzutowania
 
 
+
         //WYJATKI
 
         Wyjatek jest klasa.
@@ -273,6 +275,20 @@ public class Wstep {
         catch(RuntimeException | Exception ex){
             //hundle exception
         }
+
+        Rodzaje wyjątków: CHECKED oraz UNCHECKED
+        Kazdy wyjatek dziedziczy po klasie Throwable
+
+        Wyjatek checked musi byc obluzony np. IOException
+         natomiast unchecked np. IllegalArgumentException
+
+        Jesli wyjatek ma w swojej hierarchii TYLKO Exception/Throwable
+         musi byc obsluzony, jesli cos wiecej to juz nie
+
+        Hierarchia dziedziczenia wyjatkow:
+        Throwable <- Exception <- RuntimeException <- IllegalArgumentException
+
+
 
          */
 

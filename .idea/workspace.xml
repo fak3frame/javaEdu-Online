@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="654" column="78" lean-forward="true" selection-start-line="654" selection-start-column="8" selection-end-line="654" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="272" column="48" selection-start-line="272" selection-start-column="48" selection-end-line="272" selection-end-column="48" />
+            <state relative-caret-position="350">
+              <caret line="286" column="8" selection-start-line="286" selection-start-column="8" selection-end-line="286" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#8591#8592#0" expanded="true" />
@@ -361,13 +361,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00302" summary="toRemember poprawki 59">
-      <created>1529614002879</created>
-      <option name="number" value="00302" />
-      <option name="presentableId" value="LOCAL-00302" />
-      <option name="project" value="LOCAL" />
-      <updated>1529614002880</updated>
     </task>
     <task id="LOCAL-00303" summary="SanouczekProgramisty wstep 1">
       <created>1529616710429</created>
@@ -705,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529940234294</updated>
     </task>
-    <option name="localTasksCounter" value="351" />
+    <task id="LOCAL-00351" summary="SanouczekProgramisty Wyjatki 1">
+      <created>1529940965829</created>
+      <option name="number" value="00351" />
+      <option name="presentableId" value="LOCAL-00351" />
+      <option name="project" value="LOCAL" />
+      <updated>1529940965829</updated>
+    </task>
+    <option name="localTasksCounter" value="352" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -745,7 +745,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Klasy 12" />
     <MESSAGE value="SanouczekProgramisty Klasy 13" />
     <MESSAGE value="SanouczekProgramisty Klasy 14" />
     <MESSAGE value="SanouczekProgramisty Klasy 15" />
@@ -770,7 +769,8 @@
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 8" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 9" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Dziedziczenie 10" />
+    <MESSAGE value="SanouczekProgramisty Wyjatki 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Wyjatki 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1065,16 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_3_Dziedzieczenie/Mammal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1137,10 +1127,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="654" column="78" lean-forward="true" selection-start-line="654" selection-start-column="8" selection-end-line="654" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="272" column="48" selection-start-line="272" selection-start-column="48" selection-end-line="272" selection-end-column="48" />
+        <state relative-caret-position="350">
+          <caret line="286" column="8" selection-start-line="286" selection-start-column="8" selection-end-line="286" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8591#8592#0" expanded="true" />
