@@ -137,8 +137,8 @@ public class Wstep {
         int liczbaBox1 = new Integer(12);
         //wykonuje operacje odwrotna czyli autounboxing
 
-        final int liczbaFinalna;
-        liczbaFinalna = 10;
+        final int LICZBA_FINALNA;
+        LICZBA_FINALNA = 10;
         //liczbaFinalna = 12; - blad - liczbe finalna mozemy przypisac 1 raz
         // lecz mozna ja zadeklarowac bez nadawania wartosci
 
@@ -181,6 +181,7 @@ public class Wstep {
         public - dostepny wszedzie
         private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
         protected - dostepne wewnatrz obiektu oraz klas pochodnych
+
 
 
 
