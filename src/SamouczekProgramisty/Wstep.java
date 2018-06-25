@@ -152,7 +152,7 @@ public class Wstep {
         API (ang. Application Programming _1_Interface)
         Jest to zestaw metod bez ich implementacji
         Wszystkie metody interfacu sa publiczne
-        _1_Interface moze zawierac metody domyslne,statyczne oraz zmienne stałe
+        Interface moze zawierac metody domyslne,statyczne oraz zmienne stałe
          finalne publiczne
 
         Metoda domyslna to taka ktora posiada cialo i zaczyna sie od slowa
@@ -211,6 +211,24 @@ public class Wstep {
          wywolywany jest najpierw konstruktor bezparametrowyklasy
          bazowej a nastepnie konstruktor klasy pochodnej
 
+        Metody finalne nie moga byc rozszerzena a klasy finalne
+         rozszerzane
+
+        Kompozycja to stworzenie atrybutu (pola) klasy ktory jest
+         innym obiektem
+
+        Gdy tworze obiekt polimorficznie mam dostep do metod wszystkich
+         klas lecz wywolujac metody podklasy musze rzutowac
+        Animal a1 = new Human():
+        a1.beAnimal();
+        ((Human)a1).beHuman();
+
+        Gdy tworze obiekt bez polimorfizmu nie musze rzutowac
+        Human h1 = new Human();
+        h1.beHuman();
+        h1.beAnimal();
+
+        Do metody toString() nie musze robic rzutowania
 
 
 
