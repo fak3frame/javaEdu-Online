@@ -190,6 +190,15 @@ public class Wstep {
         public int mojaMetoda(int nazwa)
         jej sygantura: mojaMetoda(int)
 
+        Przesloniecie metody (override) wystepuje gdy klasa pochodna
+         nadpisuje metode klasy bazowej.
+
+        metoda super.metoda(); wywoluje metode klasy bazowej o nazwie metoda();
+
+        Przeciazenie metody (overload) jest gdy tworze metody o takiej samej
+         nazwie ale przyjmujacej inne argumenty
+
+
 
 
 
