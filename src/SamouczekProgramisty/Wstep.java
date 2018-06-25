@@ -50,7 +50,6 @@ public class Wstep {
         Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
 
          */
-        System.out.println("METODY:");
         int jakisNumer = 123; //zakres +/- 2,147,483,647
     class Wew1{
         boolean czyDuza(int liczba){
@@ -61,9 +60,6 @@ public class Wstep {
             //Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
         }
     }
-        boolean wynik = czyDuza(jakisNumer);
-        System.out.println(wynik);
-
 
 
         /*
@@ -81,6 +77,7 @@ public class Wstep {
         import pl.SamouczekProgramisty.Folder1.MojaKlasa;
         importuje klase MojaKlasa z pakietu ->Folder1->
          ->SamouczekProgrmisty->pl
+
 
 
         KLASY:
@@ -108,6 +105,8 @@ public class Wstep {
         }
         */
 
+
+
         //STRING / TABLICE / ZMIENNE
         //Tblica jest obiektem !
         String a = "213\nwqeqwe";//\n enter
@@ -115,12 +114,11 @@ public class Wstep {
 
         String[] dni = new String[7];
         dni[0] = "Poniedzialek";
-        System.out.println(dni.length); //bez () !!
+        System.out.println("Dlugosc tablicy: "+dni.length); //bez () !!
         //w string/kolekcjach jest z ()
         //pokaze ilosc dlugosc tablicy a nie ile ma wypelnionych elem.
 
         String[] imiona = new String [] {"kamil", "tomek"};
-
 
         int liczba = 1234_123;//liczba z literalem - ulatwia czytelnosc
         //pokaze liczbe normalnie
@@ -212,7 +210,7 @@ public class Wstep {
          wywolywany jest najpierw konstruktor bezparametrowyklasy
          bazowej a nastepnie konstruktor klasy pochodnej
 
-        Metody finalne nie moga byc rozszerzena a klasy finalne
+        Metody finalne nie moga byc nadpisywane a klasy finalne
          rozszerzane
 
         Kompozycja to stworzenie atrybutu (pola) klasy ktory jest
