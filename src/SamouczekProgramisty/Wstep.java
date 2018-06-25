@@ -178,9 +178,12 @@ public class Wstep {
         //DZIEDZICZENIE
         Szmochod - nadklasa/klasa bazowa/ SUV - podklasa/klasa pochodna
 
+
         public - dostepny wszedzie
+        protected - dostepne wewnatrz obiektu, pakietu oraz klas pochodnych
+        brak modyfikatora - dostepny tylko w pakiecie
         private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
-        protected - dostepne wewnatrz obiektu oraz klas pochodnych
+
 
 
 

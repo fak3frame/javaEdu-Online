@@ -108,8 +108,8 @@ public class toRemember {
 
         /*
         TEORIA:
-        Hermetyzajca - ustawianie pol klas jako prywatne/protected i dostep
-         do niech poprzez akcesory i mutatory
+        Hermetyzajca/Enkapsulacja - ustawianie pol klas jako prywatne/protected
+         i dostep do niech poprzez akcesory i mutatory
         Rekursja - odwolanie sie do innego konstruktora
         Klasy/meotdy final nie mozna rozszerzac
         Zmiennych final nie mozna zmieniac po 1 deklaracji
