@@ -276,42 +276,42 @@ public class Wstep {
 
         Drugim sposobem na obsluge wyjatkow jest klauzla thorws
         */
-        class Test2{
-            Test2 t1 = new Test2();
-            void metodaZWyjatkiem()throws IOException{
-                throw new IOException();
+    class Test2{
+        Test2 t1 = new Test2();
+        void metodaZWyjatkiem()throws IOException{
+            throw new IOException();
+        }
+        void start(){
+            try{
+                t1.metodaZWyjatkiem();
             }
-            void start(){
-                try{
-                    t1.metodaZWyjatkiem();
-                }
-                catch (IOException e){
-                    e.printStackTrace();
-                }
-                finally {
-                    //to zawsze bedzie wykonane
-                    //blok try/catch nie musi zawierac
-                    // catch jesli posiada finally
-                }
+            catch (IOException e){
+                e.printStackTrace();
             }
-            //przyklad 2: //wyliczenie pierwiastka
-            void start2(){
-                Scanner sc = new Scanner(System.in);
-                int liczba = 0;
-                while (true){
-                    try{
-                        liczba = sc.nextInt();
-                        break;
-                    }
-                    catch (InputMismatchException e){
-                        //zla liczba
-                        sc.next(); //!!!?
-                    }
-                }
-                if(liczba < 0)
-                    throw new IllegalArgumentException("liczba mniejsza od 0");
+            finally {
+                //to zawsze bedzie wykonane
+                //blok try/catch nie musi zawierac
+                // catch jesli posiada finally
             }
         }
+        //przyklad 2: //wyliczenie pierwiastka
+        void start2(){
+            Scanner sc = new Scanner(System.in);
+            int liczba = 0;
+            while (true){
+                try{
+                    liczba = sc.nextInt();
+                    break;
+                }
+                catch (InputMismatchException e){
+                    //zla liczba
+                    sc.next(); //!!!?
+                }
+            }
+            if(liczba < 0)
+                throw new IllegalArgumentException("liczba mniejsza od 0");
+        }
+    }
 
         /*
         Rodzaje wyjątków: CHECKED oraz UNCHECKED
@@ -325,6 +325,7 @@ public class Wstep {
 
         Hierarchia dziedziczenia wyjatkow:
         Throwable <- Exception <- RuntimeException <- IllegalArgumentException
+
 
 
          //STERTA / STOS
