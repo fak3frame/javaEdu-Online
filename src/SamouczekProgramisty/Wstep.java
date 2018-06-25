@@ -200,8 +200,8 @@ public class Wstep {
 
         public Konstruktor()
             return this(new Klasa);
-        //ten konstruktor wywola konstruktor przyjmujacy przyjmujacy
-        // jako argument obiekt klasy Klasa
+        ten konstruktor wywola konstruktor przyjmujacy przyjmujacy
+         jako argument obiekt klasy Klasa
 
         instrukcja super() w konstruktorze klasy pochodnej wywoluje
          konstruktor klasy bazowej. ilosc wyslanych parametrow np.
@@ -251,23 +251,30 @@ public class Wstep {
         at folder.nazwaKlasy.metoda2(nazwaKlasy.java:14)
         at folder.nazwaKlasy.metoda1(nazwaKlasy.java:10)
 
+         */
+        try {
+            throw new IllegalArgumentException();
+        }
+        catch (ArithmeticException exception) {
+            // 1
+        }
+        catch (RuntimeException exception) {
+            // 2
+        }
+        catch (Exception exception) {
+            // 3
+        }
+        /*
+        Blok 1 nie wykona sie bo w hierarhii IllegalArgumentException
+         nie ma ArithmeticException ale za to jest RuntimeException
+         wiec wykona sie blok 2, pozostale ponizej sa pomijane
 
-
-
-
-
-
-
-
-
+        Do obslugi kilku wyjatkow w jednym catch uzywam |
+        catch(RuntimeException | Exception ex){
+            //hundle exception
+        }
 
          */
-
-
-
-
-
-
 
 
 
