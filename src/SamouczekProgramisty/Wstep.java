@@ -198,6 +198,20 @@ public class Wstep {
         Przeciazenie metody (overload) jest gdy tworze metody o takiej samej
          nazwie ale przyjmujacej inne argumenty
 
+        public Konstruktor()
+            return this(new Klasa);
+        //ten konstruktor wywola konstruktor przyjmujacy przyjmujacy
+        // jako argument obiekt klasy Klasa
+
+        instrukcja super() w konstruktorze klasy pochodnej wywoluje
+         konstruktor klasy bazowej. ilosc wyslanych parametrow np.
+         super(10, 12) decyduje ktory konstruktor zostanie wywolany
+
+        Standardowo podczas tworzenia obiektu BEZPARAMETROWEGO
+         wywolywany jest najpierw konstruktor bezparametrowyklasy
+         bazowej a nastepnie konstruktor klasy pochodnej
+
+
 
 
 
