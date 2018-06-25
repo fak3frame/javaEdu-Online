@@ -184,7 +184,13 @@ public class Wstep {
         brak modyfikatora - dostepny tylko w pakiecie
         private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
 
-        klasa moze byc poprzedzona modyfikatorem pbulic lub zadnym
+        klasa moze byc poprzedzona modyfikatorem public lub zadnym
+
+        SYGNATURA METODY jest to nazwa metody oraz jaki typ przyjmuje
+        public int mojaMetoda(int nazwa)
+        jej sygantura: mojaMetoda(int)
+
+
 
 
 

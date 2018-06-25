@@ -1,30 +1,25 @@
 package SamouczekProgramisty.Zadania._2_Modyfikatory_Dostepu;
 
-public class KontoBanowe implements Konto,Przelew {
-    private int srodki;
-    private final int PROWIZJA = 1;
+public class KontoBanowe implements Konto {
+    private int srodki = 0;
+
+    public int pokazSrodki(){
+        return srodki;
+    }
 
     @Override
     public void dodajPieniadze(int wartosc) {
-        srodki+=wartosc;
+        if(wartosc<=0)
+            throw new IllegalArgumentException("wartosc musi byc wieksza od 0");
+        else
+            srodki+=wartosc;
     }
 
     @Override
     public void wyplac(int wartosc) {
-        srodki-=wartosc;
-    }
-
-    @Override
-    public void wykonajPrzelew(KontoBanowe zKad, KontoBanowe doKad, int wartosc) {
-        if(wartosc > (zKad.srodki+PROWIZJA))
-            throw new IllegalStateException("za malo pieniedzy");
-        else{
-            zKad.wyplac(wartosc+PROWIZJA);
-            doKad.dodajPieniadze(wartosc);
-        }
-
-    }
-    public int pokazSrodki(){
-        return this.srodki;
+        if(srodki<wartosc || wartosc<=0)
+            throw new IllegalArgumentException("za mala ilosc srodkow");
+        else
+            srodki-=wartosc;
     }
 }
