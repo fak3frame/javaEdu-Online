@@ -156,7 +156,6 @@ public class ArrayFactory {
         czas3 = czas3 - System.currentTimeMillis();
         System.out.println("CZAS:"+czas3);
 
-
         System.out.println(Arrays.toString(t));
         System.out.println(Arrays.toString(t2));
         System.out.println(Arrays.toString(t3));
