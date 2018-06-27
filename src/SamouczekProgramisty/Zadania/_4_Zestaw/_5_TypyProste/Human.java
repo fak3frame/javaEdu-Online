@@ -24,6 +24,10 @@ public class Human {
         return plec;
     }
 
+    public static void naBinarny(Integer x){
+
+    }
+
     public static void main(String[] args) {
 
     }
