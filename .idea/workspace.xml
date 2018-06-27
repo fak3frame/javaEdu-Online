@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +23,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="654" column="78" selection-start-line="654" selection-start-column="8" selection-end-line="654" selection-end-column="78" />
+            <state relative-caret-position="170">
+              <caret line="890" column="39" selection-start-line="890" selection-start-column="34" selection-end-line="890" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +61,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Petle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Petle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+              <folding>
+                <element signature="e#127#128#0" expanded="true" />
+                <element signature="e#149#150#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,12 +100,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>arrays</find>
-      <find>value</find>
       <find>itera</find>
       <find>key</find>
       <find>scanner</find>
       <find>Integer</find>
       <find>final</find>
+      <find>value</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_3_Tablice/Tablice.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java" />
       </list>
     </option>
   </component>
@@ -260,14 +278,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Petle">
-    <configuration name="Factory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._3_Dziedzieczenie.Factory" />
+  <component name="RunManager" selected="Application.ArrayFactory">
+    <configuration name="ArrayFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.ArrayFactory" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._3_Dziedzieczenie.*" />
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -359,18 +377,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Wstep" />
-      <item itemvalue="Application.Factory" />
       <item itemvalue="Application.Zadanie_1" />
       <item itemvalue="Application.Tablice" />
       <item itemvalue="Application.Petle" />
+      <item itemvalue="Application.ArrayFactory" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayFactory" />
         <item itemvalue="Application.Petle" />
         <item itemvalue="Application.Tablice" />
         <item itemvalue="Application.Zadanie_1" />
         <item itemvalue="Application.Wstep" />
-        <item itemvalue="Application.Factory" />
       </list>
     </recent_temporary>
   </component>
@@ -384,20 +402,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00320" summary="SanouczekProgramisty Klasy 6">
-      <created>1529670416712</created>
-      <option name="number" value="00320" />
-      <option name="presentableId" value="LOCAL-00320" />
-      <option name="project" value="LOCAL" />
-      <updated>1529670416712</updated>
-    </task>
-    <task id="LOCAL-00321" summary="SanouczekProgramisty Klasy 7">
-      <created>1529670643534</created>
-      <option name="number" value="00321" />
-      <option name="presentableId" value="LOCAL-00321" />
-      <option name="project" value="LOCAL" />
-      <updated>1529670643534</updated>
     </task>
     <task id="LOCAL-00322" summary="SanouczekProgramisty Klasy 8">
       <created>1529670684431</created>
@@ -728,7 +732,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530108487405</updated>
     </task>
-    <option name="localTasksCounter" value="369" />
+    <task id="LOCAL-00369" summary="SanouczekProgramisty Zadania podstawowe 4">
+      <created>1530108955784</created>
+      <option name="number" value="00369" />
+      <option name="presentableId" value="LOCAL-00369" />
+      <option name="project" value="LOCAL" />
+      <updated>1530108955784</updated>
+    </task>
+    <task id="LOCAL-00370" summary="SanouczekProgramisty Zadania podstawowe 4">
+      <created>1530111345694</created>
+      <option name="number" value="00370" />
+      <option name="presentableId" value="LOCAL-00370" />
+      <option name="project" value="LOCAL" />
+      <updated>1530111345694</updated>
+    </task>
+    <option name="localTasksCounter" value="371" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -768,7 +786,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Dziedziczenie 4" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 5" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 6" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 7" />
@@ -793,7 +810,8 @@
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 1" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 2" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 3" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -801,13 +819,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Polimorfizm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1133,12 +1144,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="654" column="78" selection-start-line="654" selection-start-column="8" selection-end-line="654" selection-end-column="78" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_3_Tablice/Tablice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1157,21 +1176,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_3_Tablice/Tablice.java">
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <caret line="890" column="39" selection-start-line="890" selection-start-column="34" selection-end-line="890" selection-end-column="39" />
           <folding>
-            <element signature="e#111#112#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="197">
+          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

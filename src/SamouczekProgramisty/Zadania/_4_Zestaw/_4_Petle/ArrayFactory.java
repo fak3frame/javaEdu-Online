@@ -45,6 +45,14 @@ public class ArrayFactory {
         }
         return sReturn;
     }
+    public static int liczbaBinarna(int x){
+        StringBuilder sb = new StringBuilder();
+        while (x>0){
+            sb.append(x%2);
+            x/=2;
+        }
+        return Integer.parseInt(sb.reverse().toString());
+    }
 
     public static void main(String[] args) {
         liczbaOdTylu(123);
@@ -54,5 +62,6 @@ public class ArrayFactory {
         System.out.println(odwrocNapis("kamil"));
         System.out.println(odwrocNapis2("kamil"));
         System.out.println(odwrocNapis3("kamil"));
+        System.out.println(liczbaBinarna(21));
     }
 }
