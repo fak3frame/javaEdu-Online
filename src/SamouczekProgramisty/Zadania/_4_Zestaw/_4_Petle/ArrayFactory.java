@@ -1,6 +1,9 @@
 package SamouczekProgramisty.Zadania._4_Zestaw._4_Petle;
 
+import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.util.Arrays;
+import java.util.Date;
 
 public class ArrayFactory {
     int x;
@@ -76,21 +79,50 @@ public class ArrayFactory {
     public static void sortujBabelkowo(int[]tab){
         int licznik = 0;
         while (licznik<tab.length){
-            System.out.println("licznik STARTOWY="+licznik);
+            //System.out.println("licznik STARTOWY="+licznik);
             for (int i = 0; i<tab.length-licznik-1; i++){
-                System.out.println("i="+i);
-                System.out.println("tab[i]="+tab[i]);
-                System.out.println("tab[i+1]="+tab[i+1]);
+                //System.out.println("i="+i);
+                //System.out.println("tab[i]="+tab[i]);
+                //System.out.println("tab[i+1]="+tab[i+1]);
                 if(tab[i]>tab[i+1]){
-                    System.out.println("znalazlem wiekszy element");
+                    //System.out.println("znalazlem wiekszy element");
                     int tmp = tab[i];
                     tab[i]=tab[i+1];
                     tab[i+1]=tmp;
-                    System.out.println("tab["+i+"]="+tab[i]+", tab["+(i+1)+"]="+tab[i+1]);
+                    //System.out.println("tab["+i+"]="+tab[i]+", tab["+(i+1)+"]="+tab[i+1]);
                 }
             }
             licznik++;
         }
+    }
+    public static void sortujBabelkowo2(int[] tab){
+        for (int i = 0; i < tab.length; i++) {
+            for (int j = 0; j < tab.length; j++) {
+                //System.out.println("tab i["+i+"]="+tab[i]+", tab j["+j+"]="+tab[j]);
+                if(tab[i]<tab[j]){
+                    //System.out.println("switch");
+                    int tmp = tab[j];
+                    tab[j]=tab[i];
+                    tab[i]=tmp;
+                    //System.out.println("after switch: tab i["+i+"]="+tab[i]+", tab j["+j+"]="+tab[j]);
+                }
+            }
+        }
+    }
+    public static void bubbleSort(int[] unsorted) {
+        boolean swapped = true;
+        while(swapped) {
+            swapped = false;
+            for(int i = 0; i < unsorted.length - 1; i++) {
+                if(unsorted[i] > unsorted[i + 1]) {
+                    int temp = unsorted[i];
+                    unsorted[i] = unsorted[i + 1];
+                    unsorted[i + 1] = temp;
+                    swapped = true;
+                }
+            }
+        }
+
     }
 
     public static void main(String[] args) {
@@ -104,9 +136,30 @@ public class ArrayFactory {
         System.out.println(liczbaBinarna(21));
         System.out.println(czyPalindrom("kauauak"));
         liczbyWTablicy(new int[]{3,4,5});
-        int[]t = new int[]{2,4,1,3};
+
+        int[]t = new int[]{2,4,1,3,7,1,23,8,4,2,89,3,46,1,5,8,56,34,23,98,5,33,63,90,25,32,76,34,89};
+        int[]t2 = new int[]{2,4,1,3,7,1,23,8,4,2,89,3,46,1,5,8,56,34,23,98,5,33,63,90,25,32,76,34,89};
+        int[]t3 = new int[]{2,4,1,3,7,1,23,8,4,2,89,3,46,1,5,8,56,34,23,98,5,33,63,90,25,32,76,34,89};
+
+        long czas1 = System.currentTimeMillis();
         sortujBabelkowo(t);
+        czas1 = czas1-System.currentTimeMillis();
+        System.out.println("CZAS:"+czas1);
+
+        long czas2 = System.currentTimeMillis();
+        sortujBabelkowo2(t2);
+        czas2 = czas2-System.currentTimeMillis();
+        System.out.println("CZAS:"+czas2);
+
+        long czas3 = System.currentTimeMillis();
+        bubbleSort(t3);
+        czas3 = czas3 - System.currentTimeMillis();
+        System.out.println("CZAS:"+czas3);
+
+
         System.out.println(Arrays.toString(t));
+        System.out.println(Arrays.toString(t2));
+        System.out.println(Arrays.toString(t3));
 
 
     }

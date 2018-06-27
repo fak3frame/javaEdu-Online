@@ -14,6 +14,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ArrayFactory.ic" NAME="ArrayFactory Coverage Results" MODIFIED="1530114993104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ProgramStartowy.ic" NAME="ProgramStartowy Coverage Results" MODIFIED="1527608625775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>_1_ProgramStartowy.*</FILTER>
     </SUITE>
@@ -23,8 +26,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="890" column="39" selection-start-line="890" selection-start-column="34" selection-end-line="890" selection-end-column="39" />
+            <state relative-caret-position="272">
+              <caret line="230" column="35" selection-start-line="230" selection-start-column="30" selection-end-line="230" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,9 +76,10 @@
       <file leaf-file-name="ArrayFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+            <state relative-caret-position="200">
+              <caret line="141" column="19616" selection-start-line="141" selection-start-column="19616" selection-end-line="141" selection-end-column="19616" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#127#128#0" expanded="true" />
                 <element signature="e#149#150#0" expanded="true" />
                 <element signature="e#185#186#0" expanded="true" />
@@ -106,6 +110,7 @@
       <find>Integer</find>
       <find>final</find>
       <find>value</find>
+      <find>parse</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -402,20 +407,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00322" summary="SanouczekProgramisty Klasy 8">
-      <created>1529670684431</created>
-      <option name="number" value="00322" />
-      <option name="presentableId" value="LOCAL-00322" />
-      <option name="project" value="LOCAL" />
-      <updated>1529670684431</updated>
-    </task>
-    <task id="LOCAL-00323" summary="SanouczekProgramisty Klasy 9">
-      <created>1529672129628</created>
-      <option name="number" value="00323" />
-      <option name="presentableId" value="LOCAL-00323" />
-      <option name="project" value="LOCAL" />
-      <updated>1529672129628</updated>
     </task>
     <task id="LOCAL-00324" summary="SanouczekProgramisty Klasy 10">
       <created>1529672361641</created>
@@ -746,7 +737,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530111345694</updated>
     </task>
-    <option name="localTasksCounter" value="371" />
+    <task id="LOCAL-00371" summary="SanouczekProgramisty Zadania podstawowe 5">
+      <created>1530112594525</created>
+      <option name="number" value="00371" />
+      <option name="presentableId" value="LOCAL-00371" />
+      <option name="project" value="LOCAL" />
+      <updated>1530112594525</updated>
+    </task>
+    <task id="LOCAL-00372" summary="SanouczekProgramisty Zadania podstawowe 6">
+      <created>1530116408701</created>
+      <option name="number" value="00372" />
+      <option name="presentableId" value="LOCAL-00372" />
+      <option name="project" value="LOCAL" />
+      <updated>1530116408701</updated>
+    </task>
+    <option name="localTasksCounter" value="373" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,14 +760,15 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31835207" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.31835207" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.26966292" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36579275" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3287373" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -774,7 +780,6 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39950064" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32946298" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -786,8 +791,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Dziedziczenie 5" />
-    <MESSAGE value="SanouczekProgramisty Dziedziczenie 6" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 7" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 8" />
     <MESSAGE value="SanouczekProgramisty Dziedziczenie 9" />
@@ -811,7 +814,9 @@
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 2" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 3" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 4" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 5" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1144,6 +1149,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#12331#12332#0" expanded="true" />
+            <element signature="e#12364#12365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="230" column="35" selection-start-line="230" selection-start-column="30" selection-end-line="230" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1162,35 +1191,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1850#1851#0" expanded="true" />
-            <element signature="e#1892#1893#0" expanded="true" />
-            <element signature="e#12331#12332#0" expanded="true" />
-            <element signature="e#12364#12365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="890" column="39" selection-start-line="890" selection-start-column="34" selection-end-line="890" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+        <state relative-caret-position="200">
+          <caret line="141" column="19616" selection-start-line="141" selection-start-column="19616" selection-end-line="141" selection-end-column="19616" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#127#128#0" expanded="true" />
             <element signature="e#149#150#0" expanded="true" />
             <element signature="e#185#186#0" expanded="true" />
