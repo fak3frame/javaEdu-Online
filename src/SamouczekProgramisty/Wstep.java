@@ -354,7 +354,8 @@ public class Wstep {
          int intValue = (int) 123.123F;
         Moge to zrobic takze przez przypisanie zmiennej float do int
          float x = 10.2F; int y = x;
-        double>float>long>int hierarchia
+        double>float>long>int hierarchia gdy wykonuje np operacje artmetyczne
+         i jeden z argumanetow bedzie innego typu
 
 
          */
