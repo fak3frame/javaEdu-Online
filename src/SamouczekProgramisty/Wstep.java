@@ -341,6 +341,9 @@ public class Wstep {
 
 
         //KONWERSJA I RZUTOWANIE
+        Rzutowanie (cast)
+        Możemy rzutować wyłącznie na typ, który znajduje się hierarchii
+         dziedziczenia danego obiektu
 
 
          */
