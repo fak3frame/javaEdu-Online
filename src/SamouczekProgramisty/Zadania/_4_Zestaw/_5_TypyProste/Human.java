@@ -27,15 +27,8 @@ public class Human {
     public static void naBinarny(Integer x){
         String out = "";
         while (x>0){
-            if(x%2!=0){
-                //System.out.println(x);
-                out+=1;
-                x/=2;
-            }
-            else {
-                out += 0;
-                x/=2;
-            }
+            out+=x%2;
+            x/=2;
         }
         System.out.println(new StringBuilder(out).reverse());
     }
