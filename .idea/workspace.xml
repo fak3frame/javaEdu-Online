@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3570">
-              <caret line="230" column="35" selection-start-line="230" selection-start-column="30" selection-end-line="230" selection-end-column="35" />
+              <caret line="230" column="35" selection-start-line="230" selection-start-column="35" selection-end-line="230" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,14 +65,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArrayFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
+            <state relative-caret-position="1046">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Human.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Human.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_2_ObiektyIPakiety/_1_/Human.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="24" column="1" lean-forward="true" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -110,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_2.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_3.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_2.java" />
@@ -161,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_3_Tablice/Tablice.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java" />
       </list>
     </option>
   </component>
@@ -174,8 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,13 +259,34 @@
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
               <item name="_4_Zestaw" type="462c0819:PsiDirectoryNode" />
-              <item name="_4_Petle" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_ObiektyIPakiety" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+              <item name="_4_Zestaw" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_ObiektyIPakiety" type="462c0819:PsiDirectoryNode" />
+              <item name="_1_" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+              <item name="_4_Zestaw" type="462c0819:PsiDirectoryNode" />
+              <item name="_5_TypyProste" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ArrayFactory">
+  <component name="RunManager" selected="Application.Human">
     <configuration name="ArrayFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.ArrayFactory" />
       <module name="javaStartMojSkrypt" />
@@ -276,6 +315,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Human" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._4_Zestaw._5_TypyProste.Human" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._4_Zestaw._5_TypyProste.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -298,17 +348,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="SamouczekProgramisty.Zadania._4_Zestaw._3_Tablice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Wstep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Wstep" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -366,19 +405,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Wstep" />
       <item itemvalue="Application.Zadanie_1" />
       <item itemvalue="Application.Tablice" />
       <item itemvalue="Application.Petle" />
       <item itemvalue="Application.ArrayFactory" />
+      <item itemvalue="Application.Human" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Human" />
         <item itemvalue="Application.ArrayFactory" />
         <item itemvalue="Application.Petle" />
         <item itemvalue="Application.Tablice" />
         <item itemvalue="Application.Zadanie_1" />
-        <item itemvalue="Application.Wstep" />
       </list>
     </recent_temporary>
   </component>
@@ -392,41 +431,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00325" summary="SanouczekProgramisty Klasy 11">
-      <created>1529672598142</created>
-      <option name="number" value="00325" />
-      <option name="presentableId" value="LOCAL-00325" />
-      <option name="project" value="LOCAL" />
-      <updated>1529672598142</updated>
-    </task>
-    <task id="LOCAL-00326" summary="SanouczekProgramisty Klasy 12">
-      <created>1529672753189</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
-      <option name="project" value="LOCAL" />
-      <updated>1529672753189</updated>
-    </task>
-    <task id="LOCAL-00327" summary="SanouczekProgramisty Klasy 13">
-      <created>1529672794322</created>
-      <option name="number" value="00327" />
-      <option name="presentableId" value="LOCAL-00327" />
-      <option name="project" value="LOCAL" />
-      <updated>1529672794323</updated>
-    </task>
-    <task id="LOCAL-00328" summary="SanouczekProgramisty Klasy 14">
-      <created>1529672936706</created>
-      <option name="number" value="00328" />
-      <option name="presentableId" value="LOCAL-00328" />
-      <option name="project" value="LOCAL" />
-      <updated>1529672936706</updated>
-    </task>
-    <task id="LOCAL-00329" summary="SanouczekProgramisty Klasy 15">
-      <created>1529675099383</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1529675099383</updated>
     </task>
     <task id="LOCAL-00330" summary="SanouczekProgramisty Klasy 16">
       <created>1529676280341</created>
@@ -736,11 +740,46 @@
       <option name="project" value="LOCAL" />
       <updated>1530119260856</updated>
     </task>
-    <option name="localTasksCounter" value="374" />
+    <task id="LOCAL-00374" summary="SanouczekProgramisty Zadania podstawowe 8">
+      <created>1530132356203</created>
+      <option name="number" value="00374" />
+      <option name="presentableId" value="LOCAL-00374" />
+      <option name="project" value="LOCAL" />
+      <updated>1530132356203</updated>
+    </task>
+    <task id="LOCAL-00375" summary="SanouczekProgramisty Zadania podstawowe 9">
+      <created>1530132440299</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
+      <option name="project" value="LOCAL" />
+      <updated>1530132440299</updated>
+    </task>
+    <task id="LOCAL-00376" summary="SanouczekProgramisty Zadania podstawowe 10">
+      <created>1530132488607</created>
+      <option name="number" value="00376" />
+      <option name="presentableId" value="LOCAL-00376" />
+      <option name="project" value="LOCAL" />
+      <updated>1530132488607</updated>
+    </task>
+    <task id="LOCAL-00377" summary="SanouczekProgramisty Zadania podstawowe 11">
+      <created>1530132560005</created>
+      <option name="number" value="00377" />
+      <option name="presentableId" value="LOCAL-00377" />
+      <option name="project" value="LOCAL" />
+      <updated>1530132560005</updated>
+    </task>
+    <task id="LOCAL-00378" summary="SanouczekProgramisty Zadania podstawowe 12">
+      <created>1530132625686</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1530132625686</updated>
+    </task>
+    <option name="localTasksCounter" value="379" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="111" y="0" width="1688" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -755,7 +794,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19303338" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20035885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -765,22 +804,17 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3287373" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31835207" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31835207" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Dziedziczenie 8" />
-    <MESSAGE value="SanouczekProgramisty Dziedziczenie 9" />
-    <MESSAGE value="SanouczekProgramisty Dziedziczenie 10" />
-    <MESSAGE value="SanouczekProgramisty Wyjatki 1" />
-    <MESSAGE value="SanouczekProgramisty Wyjatki 2" />
     <MESSAGE value="SanouczekProgramisty Wyjatki 3" />
     <MESSAGE value="SanouczekProgramisty Wyjatki 4" />
     <MESSAGE value="SanouczekProgramisty STOS 1" />
@@ -801,7 +835,12 @@
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 5" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 6" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 7" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 8" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 9" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 10" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 11" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -809,13 +848,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="243" column="94" selection-start-line="243" selection-start-column="94" selection-end-line="243" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/Random.java" />
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1040,13 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_2_ObiektyIPakiety/_1_.java" />
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_2_ObiektyIPakiety/_1_/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_2_ObiektyIPakiety/123">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1084,7 +1109,7 @@
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3570">
-          <caret line="230" column="35" selection-start-line="230" selection-start-column="30" selection-end-line="230" selection-end-column="35" />
+          <caret line="230" column="35" selection-start-line="230" selection-start-column="35" selection-end-line="230" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1107,10 +1132,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
+        <state relative-caret-position="1046">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_2_ObiektyIPakiety/_1_/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="1" lean-forward="true" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
           </folding>
         </state>
       </provider>
