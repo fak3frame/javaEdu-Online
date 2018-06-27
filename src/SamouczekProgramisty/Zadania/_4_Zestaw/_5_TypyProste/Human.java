@@ -25,7 +25,12 @@ public class Human {
     }
 
     public static void naBinarny(Integer x){
+        String out = "";
+        while (x>0){
+            if(x%2==0){
 
+            }
+        }
     }
 
     public static void main(String[] args) {
