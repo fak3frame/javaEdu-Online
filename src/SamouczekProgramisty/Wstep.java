@@ -328,8 +328,19 @@ public class Wstep {
 
 
 
-         //STERTA / REFERENCJA / GC
+        //STERTA / REFERENCJA / GC
+        Gdy tworze obiekty rezerowana jest pamiec (STERTA) - HEAP SPACE
+        JVM rezrwuje pamiec RAM
+        Zmienne trzymane sa na STOSIE - STACK
+        Zmienne, które wskazują na obiekty na stercie zawierają referencje
+        Gdy zajme caly stos zostanie wyrzucony wyjatek
+         java.lang.OutOfMemoryError
+        Null jest typem ktory nie moze posiadac nazwy przez co nie mozna
+         utworzyc zmiennej tego typu
 
+
+
+        //KONWERSJA I RZUTOWANIE
 
 
          */
