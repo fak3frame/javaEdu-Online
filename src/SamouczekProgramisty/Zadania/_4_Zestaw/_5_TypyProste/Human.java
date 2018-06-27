@@ -2,25 +2,25 @@ package SamouczekProgramisty.Zadania._4_Zestaw._5_TypyProste;
 
 public class Human {
 
-    private int wiek;
-    private int waga;
-    private int wzrost;
+    private Integer wiek;
+    private Integer waga;
+    private Integer wzrost;
     private String imie;
-    private char plec;
+    private Character plec;
 
-    public int getWiek(){
+    public Integer getWiek(){
         return wiek;
     }
-    public int getWaga(){
+    public Integer getWaga(){
         return waga;
     }
-    public int getWzrost(){
+    public Integer getWzrost(){
         return wzrost;
     }
     public String getImie(){
         return imie;
     }
-    public char getPlec(){
+    public Character getPlec(){
         return plec;
     }
 
