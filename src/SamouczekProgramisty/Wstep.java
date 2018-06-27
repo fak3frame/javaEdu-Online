@@ -60,6 +60,9 @@ public class Wstep {
             //Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
         }
     }
+        //Metoda moze takze wywolywac w wyniku inna metode i sprawdzac czy wynik
+        // jest taki sam. jesli bedzie taki sam da true
+        // return ! metoda();
 
 
         /*
