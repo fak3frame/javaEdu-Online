@@ -64,6 +64,13 @@ public class Wstep {
         // jest taki sam. jesli bedzie taki sam da true
         // return ! metoda();
 
+        //Metoda zwracajaca tablice:
+    class WeW3{
+        public String[] pokazTab(){
+            return new String[]{"costma","costam2"};
+        }
+    }
+
 
         /*
         PAKIETY:
