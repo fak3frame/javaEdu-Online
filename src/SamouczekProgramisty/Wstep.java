@@ -357,6 +357,13 @@ public class Wstep {
         double>float>long>int hierarchia gdy wykonuje np operacje artmetyczne
          i jeden z argumanetow bedzie innego typu
 
+        UNBOXING:
+        int zmienna = new Integer(123);
+        przypisanie do zmiennej prostej - zmiennej obiektowej
+        BOXING
+        Integer zmienna = 10;
+        przypisanie do zmeinnej obiektowej - zmiennej prostej
+
 
          */
 
