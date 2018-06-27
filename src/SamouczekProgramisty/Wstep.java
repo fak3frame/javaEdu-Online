@@ -343,7 +343,18 @@ public class Wstep {
         //KONWERSJA I RZUTOWANIE
         Rzutowanie (cast)
         Możemy rzutować wyłącznie na typ, który znajduje się hierarchii
-         dziedziczenia danego obiektu
+         dziedziczenia danego obiektu inaczej wyrzuci wyjatek
+         java.lang.ClassCastException
+        Rzutowanie jest to konwersja jawna
+        Konwersja niejawna zachodzi gdzy wysylam do metody przyjmujacej
+         typ zmiennej long - typ int. Nie dochodzi do utraty informacji
+        Gdy np. przekrocze typ int przy konwersji moze pokazac wartosc -1
+        Komnwersji moge uzyc gdy chce obiciac reszte z liczby zmiennoprzecinkowej
+         rzutujac np double na int
+         int intValue = (int) 123.123F;
+        Moge to zrobic takze przez przypisanie zmiennej float do int
+         float x = 10.2F; int y = x;
+        double>float>long>int hierarchia
 
 
          */

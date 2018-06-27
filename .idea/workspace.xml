@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="345" column="9" selection-start-line="345" selection-start-column="9" selection-end-line="345" selection-end-column="9" />
+            <state relative-caret-position="702">
+              <caret line="356" column="8" selection-start-line="356" selection-start-column="8" selection-end-line="356" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -359,13 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00313" summary="SanouczekProgramisty Pakiety 2">
-      <created>1529666100819</created>
-      <option name="number" value="00313" />
-      <option name="presentableId" value="LOCAL-00313" />
-      <option name="project" value="LOCAL" />
-      <updated>1529666100819</updated>
     </task>
     <task id="LOCAL-00314" summary="SanouczekProgramisty Pakiety 3">
       <created>1529666238338</created>
@@ -703,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530102240400</updated>
     </task>
-    <option name="localTasksCounter" value="362" />
+    <task id="LOCAL-00362" summary="SanouczekProgramisty KONWERSJA I RZUTOWANIE 2">
+      <created>1530102920100</created>
+      <option name="number" value="00362" />
+      <option name="presentableId" value="LOCAL-00362" />
+      <option name="project" value="LOCAL" />
+      <updated>1530102920100</updated>
+    </task>
+    <option name="localTasksCounter" value="363" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -743,7 +743,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Zadanie interface 2" />
     <MESSAGE value="SanouczekProgramisty Zadanie interface 3" />
     <MESSAGE value="SanouczekProgramisty Zadanie interface 4" />
     <MESSAGE value="SanouczekProgramisty Zadanie interface 5" />
@@ -768,7 +767,8 @@
     <MESSAGE value="SanouczekProgramisty STOS 5" />
     <MESSAGE value="SanouczekProgramisty STERTA 1" />
     <MESSAGE value="SanouczekProgramisty KONWERSJA I RZUTOWANIE 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KONWERSJA I RZUTOWANIE 1" />
+    <MESSAGE value="SanouczekProgramisty KONWERSJA I RZUTOWANIE 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KONWERSJA I RZUTOWANIE 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1085,8 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="345" column="9" selection-start-line="345" selection-start-column="9" selection-end-line="345" selection-end-column="9" />
+        <state relative-caret-position="702">
+          <caret line="356" column="8" selection-start-line="356" selection-start-column="8" selection-end-line="356" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
