@@ -328,7 +328,8 @@ public class Wstep {
 
 
 
-         //STERTA / STOS
+         //STERTA / REFERENCJA / GC
+
 
 
          */
