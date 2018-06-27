@@ -41,6 +41,6 @@ public class Human {
     }
 
     public static void main(String[] args) {
-        naBinarny(21);
+        naBinarny(28);
     }
 }
