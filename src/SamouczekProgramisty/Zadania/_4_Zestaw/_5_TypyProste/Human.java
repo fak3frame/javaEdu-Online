@@ -38,7 +38,7 @@ public class Human {
             if(x[licznik]>x[licznik+1]){
                 int tmp=x[licznik];
                 x[licznik]=x[licznik+1];
-                x[licznik+1]=
+                x[licznik+1]=tmp;
             }
         }
     }
