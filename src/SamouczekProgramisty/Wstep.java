@@ -156,7 +156,6 @@ public class Wstep {
 
 
         //INTERFACE
-
         /*
         API (ang. Application Programming _1_Interface)
         Jest to zestaw metod bez ich implementacji
