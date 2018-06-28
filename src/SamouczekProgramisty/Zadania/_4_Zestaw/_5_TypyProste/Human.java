@@ -32,6 +32,12 @@ public class Human {
         }
         System.out.println(new StringBuilder(out).reverse());
     }
+    public void sortujTablice(int[] x){
+        int licznik = x.length;
+        while (licznik>0){
+            if()
+        }
+    }
 
     public static void main(String[] args) {
         naBinarny(28);
