@@ -35,7 +35,11 @@ public class Human {
     public void sortujTablice(int[] x){
         int licznik = x.length;
         while (licznik>0){
-            if()
+            if(x[licznik]>x[licznik+1]){
+                int tmp=x[licznik];
+                x[licznik]=x[licznik+1];
+                x[licznik+1]=
+            }
         }
     }
 
