@@ -38,6 +38,7 @@ public class Human {
         int licznik = x.length-1;
         int i = 0;
         while (licznik>0){
+            System.out.println(x[i]+" "+x[i+1]);
             if(x[i]>x[i+1]){
                 int tmp=x[i];
                 x[i]=x[i+1];
