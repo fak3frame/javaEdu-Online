@@ -49,6 +49,7 @@ public class Human {
     }
 
     public static void main(String[] args) {
+
         naBinarny(28);
 
         int[] tab = new int[]{1,5,7,2,5,3,6,8};
