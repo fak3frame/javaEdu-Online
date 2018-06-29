@@ -38,8 +38,8 @@ public class Human {
         int licznik = x.length-1;
         int i = 0;
         while (licznik>0){
-            System.out.println(x[i]+" "+x[i+1]);
-            System.out.println(Arrays.toString(x));
+            //System.out.println(x[i]+" "+x[i+1]);
+            //System.out.println(Arrays.toString(x));
             if(x[i]>x[i+1]){
                 int tmp=x[i];
                 x[i]=x[i+1];
@@ -47,7 +47,7 @@ public class Human {
             }
             i++;
             licznik--;
-            System.out.println(Arrays.toString(x));
+            //System.out.println(Arrays.toString(x));
         }
     }
 
