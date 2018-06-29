@@ -35,8 +35,8 @@ public class Human {
         System.out.println(new StringBuilder(out).reverse());
     }
     public static void sortujTablice(int[] x){
-        int licznik = x.length;
-        while (licznik-1>0){
+        int licznik = x.length-1;
+        while (licznik>0){
             if(x[licznik]>x[licznik+1]){
                 int tmp=x[licznik];
                 x[licznik]=x[licznik+1];
