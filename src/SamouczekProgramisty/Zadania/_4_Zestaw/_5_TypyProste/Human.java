@@ -44,6 +44,7 @@ public class Human {
                     x[i]=tmp;
                 }
             }
+            licznik--;
         }
     }
 
