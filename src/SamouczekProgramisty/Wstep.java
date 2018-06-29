@@ -369,7 +369,7 @@ public class Wstep {
         UNBOXING:
         int zmienna = new Integer(123);
         przypisanie do zmiennej prostej - zmiennej obiektowej
-        BOXING
+        BOXING:
         Integer zmienna = 10;
         przypisanie do zmeinnej obiektowej - zmiennej prostej
 
