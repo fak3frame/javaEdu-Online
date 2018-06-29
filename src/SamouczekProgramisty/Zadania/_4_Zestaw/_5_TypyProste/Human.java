@@ -38,7 +38,11 @@ public class Human {
         int licznik = x.length-1;
         while (licznik>0){
             for (int i = 0; i < licznik; i++) {
-                if()
+                if(x[i]>x[i+1]){
+                    int tmp = x[i+1];
+                    x[i+1]=x[i];
+                    x[i]=tmp;
+                }
             }
         }
     }

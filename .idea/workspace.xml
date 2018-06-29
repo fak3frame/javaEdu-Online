@@ -76,8 +76,8 @@
       <file leaf-file-name="Human.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="474">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -501,27 +501,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00349" summary="SanouczekProgramisty Dziedziczenie 9">
-      <created>1529939368780</created>
-      <option name="number" value="00349" />
-      <option name="presentableId" value="LOCAL-00349" />
-      <option name="project" value="LOCAL" />
-      <updated>1529939368780</updated>
-    </task>
-    <task id="LOCAL-00350" summary="SanouczekProgramisty Dziedziczenie 10">
-      <created>1529940234294</created>
-      <option name="number" value="00350" />
-      <option name="presentableId" value="LOCAL-00350" />
-      <option name="project" value="LOCAL" />
-      <updated>1529940234294</updated>
-    </task>
-    <task id="LOCAL-00351" summary="SanouczekProgramisty Wyjatki 1">
-      <created>1529940965829</created>
-      <option name="number" value="00351" />
-      <option name="presentableId" value="LOCAL-00351" />
-      <option name="project" value="LOCAL" />
-      <updated>1529940965829</updated>
-    </task>
     <task id="LOCAL-00352" summary="SanouczekProgramisty Wyjatki 2">
       <created>1529942348684</created>
       <option name="number" value="00352" />
@@ -844,7 +823,28 @@
       <option name="project" value="LOCAL" />
       <updated>1530300366050</updated>
     </task>
-    <option name="localTasksCounter" value="398" />
+    <task id="LOCAL-00398" summary="SanouczekProgramisty Zadania podstawowe 32">
+      <created>1530300602572</created>
+      <option name="number" value="00398" />
+      <option name="presentableId" value="LOCAL-00398" />
+      <option name="project" value="LOCAL" />
+      <updated>1530300602572</updated>
+    </task>
+    <task id="LOCAL-00399" summary="SanouczekProgramisty Zadania podstawowe 33">
+      <created>1530300693397</created>
+      <option name="number" value="00399" />
+      <option name="presentableId" value="LOCAL-00399" />
+      <option name="project" value="LOCAL" />
+      <updated>1530300693397</updated>
+    </task>
+    <task id="LOCAL-00400" summary="SanouczekProgramisty Zadania podstawowe 34">
+      <created>1530300762149</created>
+      <option name="number" value="00400" />
+      <option name="presentableId" value="LOCAL-00400" />
+      <option name="project" value="LOCAL" />
+      <updated>1530300762149</updated>
+    </task>
+    <option name="localTasksCounter" value="401" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -884,9 +884,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 7" />
-    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 8" />
-    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 9" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 10" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 11" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 12" />
@@ -909,7 +906,10 @@
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 29" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 30" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 31" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 31" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 32" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 33" />
+    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 34" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Zadania podstawowe 34" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1215,8 +1215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="474">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
         </state>
       </provider>
     </entry>
