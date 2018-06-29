@@ -68,6 +68,7 @@ public class Human {
         int[] tab = new int[]{1,5,7,2,5,3,6,8};
         sortujTablice(tab);
         System.out.println(Arrays.toString(tab));
+
         System.out.println(Arrays.toString(pobierzDaneTablicy()));
     }
 }
