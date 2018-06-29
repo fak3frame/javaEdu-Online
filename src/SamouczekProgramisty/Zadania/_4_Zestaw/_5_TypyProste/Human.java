@@ -1,6 +1,7 @@
 package SamouczekProgramisty.Zadania._4_Zestaw._5_TypyProste;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Human {
 
@@ -46,6 +47,9 @@ public class Human {
             }
             licznik--;
         }
+    }
+    public static int[] pobierzDaneTablicy(){
+        Scanner sc = new Scanner(System.in);
     }
 
     public static void main(String[] args) {
