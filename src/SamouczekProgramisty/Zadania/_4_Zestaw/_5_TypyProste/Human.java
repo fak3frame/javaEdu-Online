@@ -36,12 +36,14 @@ public class Human {
     }
     public static void sortujTablice(int[] x){
         int licznik = x.length-1;
+        int i = 0;
         while (licznik>0){
-            if(x[licznik]>x[licznik+1]){
-                int tmp=x[licznik];
-                x[licznik]=x[licznik+1];
-                x[licznik+1]=tmp;
+            if(x[i]>x[i+1]){
+                int tmp=x[i];
+                x[i]=x[i+1];
+                x[i+1]=tmp;
             }
+            i++;
         }
     }
 
