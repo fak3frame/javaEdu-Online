@@ -50,6 +50,15 @@ public class Human {
     }
     public static int[] pobierzDaneTablicy(){
         Scanner sc = new Scanner(System.in);
+        System.out.println("Podaj rozmiar");
+        int rozmiar = sc.nextInt();
+        int[] t = new int[rozmiar];
+        System.out.println("Podaj elem:");
+        for (int i = 0; i < rozmiar; i++) {
+            t[i] = sc.nextInt();
+        }
+        sortujTablice(t);
+        return t;
     }
 
     public static void main(String[] args) {
@@ -59,5 +68,6 @@ public class Human {
         int[] tab = new int[]{1,5,7,2,5,3,6,8};
         sortujTablice(tab);
         System.out.println(Arrays.toString(tab));
+        System.out.println(Arrays.toString(pobierzDaneTablicy()));
     }
 }
