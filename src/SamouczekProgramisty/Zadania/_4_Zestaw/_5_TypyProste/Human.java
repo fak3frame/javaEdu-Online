@@ -1,5 +1,7 @@
 package SamouczekProgramisty.Zadania._4_Zestaw._5_TypyProste;
 
+import java.util.Arrays;
+
 public class Human {
 
     private Integer wiek;
@@ -32,9 +34,9 @@ public class Human {
         }
         System.out.println(new StringBuilder(out).reverse());
     }
-    public void sortujTablice(int[] x){
+    public static void sortujTablice(int[] x){
         int licznik = x.length;
-        while (licznik>0){
+        while (licznik-1>0){
             if(x[licznik]>x[licznik+1]){
                 int tmp=x[licznik];
                 x[licznik]=x[licznik+1];
@@ -45,5 +47,8 @@ public class Human {
 
     public static void main(String[] args) {
         naBinarny(28);
+        int[] tab = new int[]{1,5,7,2,5,3,6,8};
+        sortujTablice(tab);
+        System.out.println(Arrays.toString(tab));
     }
 }
