@@ -453,6 +453,10 @@ public class Wstep {
             return second;
         }
     }
+    Pair<BoxOnSteroids<Orange>, BoxOnSteroids<Apple>> para = new Pair<>(
+            new BoxOnSteroids<>(new Orange()),
+            new BoxOnSteroids<>(new Apple())
+    );
 
 
 
