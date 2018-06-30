@@ -389,6 +389,9 @@ public class Wstep {
         //TYPY GENERYCZNE
         /*
         Typ generyczny jest szablonem pozwalajacym uniknac rzutowania
+        Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
+         trzeba bedzie rzutowac
+
          */
 
 
