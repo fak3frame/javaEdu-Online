@@ -426,6 +426,11 @@ public class Wstep {
         // bez przypisywania mu typu
         Wew6 pusty = new Wew6<>(new Object());
         // ale musze w konstruktorze podac nowy obiekt klasy
+        Wew6<Object> wew1 = pusty;
+        Wew6<Arrays> wew2 = pusty;//poprawne ale blad przy wywolaniu
+        // metody z klasy Wew6 ktorej obiekt rzutowany jest do Object
+        wew1.getZmienna();
+        wew2.getZmienna();//tutaj bylby blad gdyby klasa byla specyficzna
 
 
 
