@@ -65,7 +65,7 @@ public class Human {
 
         naBinarny(28);
 
-        int[] tab = new int[]{1,5,7,2,5,3,6,8};
+        int[] tab = new int[]{6,1,5,7,2,5,3,6,8};
         sortujTablice(tab);
         System.out.println(Arrays.toString(tab));
 
