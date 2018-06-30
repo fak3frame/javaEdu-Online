@@ -405,8 +405,8 @@ public class Wstep {
         public K getZmienna2() {
             return zmienna2;
         }
-
     }
+        Wew5<>
 
 
 
