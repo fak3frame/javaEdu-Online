@@ -388,12 +388,12 @@ public class Wstep {
 
         //TYPY GENERYCZNE
         /*
-
+        Typ generyczny jest szablonem pozwalajacym uniknac rzutowania
          */
 
 
 
-         */
+
         String x = new Object() + "123";
         System.out.println(x);
 
