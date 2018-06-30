@@ -1,5 +1,6 @@
 package SamouczekProgramisty.Zadania._4_Zestaw._5_TypyProste;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -39,12 +40,16 @@ public class Human {
         int licznik = x.length-1;
         while (licznik>0){
             for (int i = 0; i < licznik; i++) {
+                //System.out.println("\n"+"teraz sortuje: i["+x[i]+"], i["+x[i+1]+"]");
                 if(x[i]>x[i+1]){
+                    //System.out.println("znalazlem element");
                     int tmp = x[i+1];
                     x[i+1]=x[i];
                     x[i]=tmp;
                 }
+                //System.out.println("Po zmianie: i["+x[i]+"], i["+x[i+1]+"]");
             }
+            //System.out.println("Po 1 for sortowania: "+Arrays.toString(x));
             licznik--;
         }
     }
