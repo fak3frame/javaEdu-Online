@@ -72,22 +72,6 @@ public class Wstep {
         public boolean isEven(){
             return a%2==0;
         }
-
-        //Metoda dzielaca liczbe na czesci i pokazujaca ja od tylu
-        public void printCharPerLine(int number) {
-            while (number > 0) {
-                int reminder = number % 10;
-                number /= 10;
-                System.out.println(reminder);
-            }
-        }
-        //lub
-        public void liczbaOdTylu(int x){
-            String s = x+"";
-            for (int i = s.length()-1; i>=0; i--) {
-                System.out.println(s.charAt(i));
-            }
-        }
     }
 
         //Metoda zwracajaca tablice:
@@ -408,6 +392,27 @@ public class Wstep {
 
 
     }
+
+
+    //ALGORYTMY:
+
+    //Metoda dzielaca liczbe na czesci i pokazujaca ja od tylu
+    public void printCharPerLine(int number) {
+        while (number > 0) {
+            int reminder = number % 10;
+            number /= 10;
+            System.out.println(reminder);
+        }
+    }
+    //lub
+    public void liczbaOdTylu(int x){
+        String s = x+"";
+        for (int i = s.length()-1; i>=0; i--) {
+            System.out.println(s.charAt(i));
+        }
+    }
+
+
 
 
 
