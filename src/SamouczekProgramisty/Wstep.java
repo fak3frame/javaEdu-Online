@@ -422,6 +422,11 @@ public class Wstep {
         );//obiek klasy pary paramtryzowany jest klasami
         // Wew6<Object> i Wew6<Object>
 
+        //Moge stworzyc instancje klasy z typem generycznym
+        // bez przypisywania mu typu
+        Wew6 pusty = new Wew6<>(new Object());
+        // ale musze w konstruktorze podac nowy obiekt klasy
+
 
 
 
