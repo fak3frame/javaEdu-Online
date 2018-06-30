@@ -453,10 +453,15 @@ public class Wstep {
             return second;
         }
     }
-    Pair<BoxOnSteroids<Orange>, BoxOnSteroids<Apple>> para = new Pair<>(
-            new BoxOnSteroids<>(new Orange()),
-            new BoxOnSteroids<>(new Apple())
-    );
+        Pair<BoxOnSteroids<Orange>, BoxOnSteroids<Apple>> para = new Pair<>(
+                new BoxOnSteroids<>(new Orange()),
+                new BoxOnSteroids<>(new Apple())
+        );
+        BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
+        BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
+        BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
+        Apple apple = boxWithApple.getFruit();
+        //Orange orange = boxWithOrange.getFruit(); // ClassCastException
 
 
 
