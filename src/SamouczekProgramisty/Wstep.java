@@ -391,8 +391,23 @@ public class Wstep {
         Typ generyczny jest szablonem pozwalajacym uniknac rzutowania
         Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
          trzeba bedzie rzutowac
-
          */
+    class Wew5 <T,K>{
+        public T zmienna;
+        public K zmienna2;
+        Wew5(T zmiena, K zmienna2){
+            this.zmienna = zmiena;
+            this.zmienna2 = zmienna2;
+        }
+        public T getZmienna() {
+            return zmienna;
+        }
+        public K getZmienna2() {
+            return zmienna2;
+        }
+
+    }
+
 
 
 
