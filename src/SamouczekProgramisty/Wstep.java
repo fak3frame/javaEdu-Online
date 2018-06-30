@@ -385,8 +385,15 @@ public class Wstep {
         przypisanie do zmeinnej obiektowej - zmiennej prostej
 
 
+
+        //TYPY GENERYCZNE
+        /*
+
          */
 
+
+
+         */
         String x = new Object() + "123";
         System.out.println(x);
 
