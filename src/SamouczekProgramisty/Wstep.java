@@ -411,19 +411,25 @@ public class Wstep {
         public OrangeBox(Orange orange) {
             this.orange = orange;
         }
-
         public Orange getOrange() {
             return orange;
         }
     }
     class FruitBox {
         private Object fruit;
-
         public FruitBox(Object fruit) {
             this.fruit = fruit;
         }
-
         public Object getFruit() {
+            return fruit;
+        }
+    }
+    class BoxOnSteroids<T> {
+        public T fruit;
+        public BoxOnSteroids(T fruit) {
+            this.fruit = fruit;
+        }
+        public T getFruit() {
             return fruit;
         }
     }
