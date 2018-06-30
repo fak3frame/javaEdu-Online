@@ -412,6 +412,102 @@ public class Wstep {
         }
     }
 
+    //Metoda odwracajaca napis:
+    public static String odwrocNapis(String s){
+        StringBuilder sb = new StringBuilder(s);
+        sb.reverse();
+        return sb.toString();
+    }
+    public static String odwrocNapis2(String s){
+        String sTemp = "";
+        for (int i = s.length()-1; i >=0 ; i--) {
+            sTemp= sTemp+s.charAt(i);
+        }
+        return sTemp;
+    }
+    public static String odwrocNapis3(String s){
+        char[] tab = s.toCharArray();
+        String sReturn = "";
+        for (int i = tab.length-1; i >= 0; i--) {
+            sReturn += tab[i];
+        }
+        return sReturn;
+    }
+
+    //Metoda zwracajaca liczbe binarna:
+    public static int liczbaBinarna(int x){
+        StringBuilder sb = new StringBuilder();
+        while (x>0){
+            sb.append(x%2);
+            x/=2;
+        }
+        return Integer.valueOf(sb.reverse().toString());
+    }
+    public static void naBinarny(Integer x){
+        String out = "";
+        while (x>0){
+            out+=x%2;
+            x/=2;
+        }
+        System.out.println(new StringBuilder(out).reverse());
+    }
+
+    //Metoda spawdzajaca czy napis jest palimdromem:
+    public static boolean czyPalindrom(String x){
+        int licznik = x.length()-1;
+        for (int i = 0; i < x.length()/2; i++) {
+            if(x.charAt(i)==x.charAt(licznik))
+                licznik--;
+            else{
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //Metoda sortujaca babelkowo:
+    public static void sortujBabelkowo(int[]tab) {
+        int licznik = 0;
+        while (licznik < tab.length) {
+            for (int i = 0; i < tab.length - licznik - 1; i++) {
+                if (tab[i] > tab[i + 1]) {
+                    int tmp = tab[i];
+                    tab[i] = tab[i + 1];
+                    tab[i + 1] = tmp;
+                }
+            }
+            licznik++;
+        }
+    }
+    public static void sortujBabelkowo3(int[] x){
+        int licznik = x.length-1;
+        while (licznik>0){
+            for (int i = 0; i < licznik; i++) {
+                if(x[i]>x[i+1]){
+                    int tmp = x[i+1];
+                    x[i+1]=x[i];
+                    x[i]=tmp;
+                }
+            }
+            licznik--;
+        }
+    }
+    public static void sortujBabelkowo2(int[] tab){
+        for (int i = 0; i < tab.length; i++) {
+            for (int j = 0; j < tab.length; j++) {
+                //System.out.println("tab i["+i+"]="+tab[i]+", tab j["+j+"]="+tab[j]);
+                if(tab[i]<tab[j]){
+                    //System.out.println("switch");
+                    int tmp = tab[j];
+                    tab[j]=tab[i];
+                    tab[i]=tmp;
+                    //System.out.println("after switch: tab i["+i+"]="+tab[i]+", tab j["+j+"]="+tab[j]);
+                }
+            }
+        }
+    }
+
+
 
 
 
