@@ -392,10 +392,19 @@ public class Wstep {
         Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
          trzeba bedzie rzutowac
          */
-    class Wew5 <T,K>{
+    class Wew6<T>{
+        public T zmienna;
+        Wew6(T zmienna){
+            this.zmienna = zmienna;
+        }
+        public T getZmienna() {
+            return zmienna;
+        }
+    }
+    class Para <T,K>{
         public T zmienna;
         public K zmienna2;
-        Wew5(T zmiena, K zmienna2){
+        Para(T zmiena, K zmienna2){
             this.zmienna = zmiena;
             this.zmienna2 = zmienna2;
         }
@@ -406,7 +415,14 @@ public class Wstep {
             return zmienna2;
         }
     }
-        Wew5<>
+        //paramtryzowanie innym typem generycznym
+        Para<Wew6<Object>, Wew6<Object>> para = new Para<>(
+                new Wew6<>(new Object()),
+                new Wew6<>(new Object())
+        );//obiek klasy pary paramtryzowany jest klasami
+        // Wew6<Object> i Wew6<Object>
+
+
 
 
 

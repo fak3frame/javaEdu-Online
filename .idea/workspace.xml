@@ -26,16 +26,20 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="397" column="31" lean-forward="true" selection-start-line="397" selection-start-column="31" selection-end-line="397" selection-end-column="31" />
+            <state relative-caret-position="682">
+              <caret line="422" column="21" selection-start-line="422" selection-start-column="21" selection-end-line="422" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#12732#12733#0" expanded="true" />
-                <element signature="e#12777#12778#0" expanded="true" />
+                <element signature="e#12778#12779#0" expanded="true" />
+                <element signature="e#12811#12812#0" expanded="true" />
+                <element signature="e#12849#12850#0" expanded="true" />
                 <element signature="e#12810#12811#0" expanded="true" />
                 <element signature="e#12848#12849#0" expanded="true" />
-                <element signature="e#12893#12894#0" expanded="true" />
-                <element signature="e#12939#12940#0" expanded="true" />
+                <element signature="e#12949#12950#0" expanded="true" />
+                <element signature="e#12987#12988#0" expanded="true" />
+                <element signature="e#16493#16494#0" expanded="true" />
+                <element signature="e#16526#16527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ArrayFactory">
+  <component name="RunManager" selected="Application.Wstep">
     <configuration name="ArrayFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.ArrayFactory" />
       <module name="javaStartMojSkrypt" />
@@ -258,17 +262,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Petle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.Petle" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="Tablice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._4_Zestaw._3_Tablice.Tablice" />
       <module name="javaStartMojSkrypt" />
@@ -276,6 +269,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="SamouczekProgramisty.Zadania._4_Zestaw._3_Tablice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Wstep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Wstep" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,18 +327,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Tablice" />
-      <item itemvalue="Application.Petle" />
       <item itemvalue="Application.ArrayFactory" />
       <item itemvalue="Application.Human" />
       <item itemvalue="Application.FigureFactory" />
+      <item itemvalue="Application.Wstep" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.ArrayFactory" />
         <item itemvalue="Application.Tablice" />
         <item itemvalue="Application.FigureFactory" />
         <item itemvalue="Application.Human" />
-        <item itemvalue="Application.Petle" />
       </list>
     </recent_temporary>
   </component>
@@ -348,20 +352,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00372" summary="SanouczekProgramisty Zadania podstawowe 6">
-      <created>1530116408701</created>
-      <option name="number" value="00372" />
-      <option name="presentableId" value="LOCAL-00372" />
-      <option name="project" value="LOCAL" />
-      <updated>1530116408701</updated>
-    </task>
-    <task id="LOCAL-00373" summary="SanouczekProgramisty Zadania podstawowe 7">
-      <created>1530119260856</created>
-      <option name="number" value="00373" />
-      <option name="presentableId" value="LOCAL-00373" />
-      <option name="project" value="LOCAL" />
-      <updated>1530119260856</updated>
     </task>
     <task id="LOCAL-00374" summary="SanouczekProgramisty Zadania podstawowe 8">
       <created>1530132356203</created>
@@ -692,7 +682,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530371810500</updated>
     </task>
-    <option name="localTasksCounter" value="421" />
+    <task id="LOCAL-00421" summary="SanouczekProgramisty Typy Generyczne 5">
+      <created>1530393655545</created>
+      <option name="number" value="00421" />
+      <option name="presentableId" value="LOCAL-00421" />
+      <option name="project" value="LOCAL" />
+      <updated>1530393655546</updated>
+    </task>
+    <task id="LOCAL-00422" summary="SanouczekProgramisty Typy Generyczne 6">
+      <created>1530393838528</created>
+      <option name="number" value="00422" />
+      <option name="presentableId" value="LOCAL-00422" />
+      <option name="project" value="LOCAL" />
+      <updated>1530393838528</updated>
+    </task>
+    <option name="localTasksCounter" value="423" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,8 +736,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 30" />
-    <MESSAGE value="SanouczekProgramisty Zadania podstawowe 31" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 32" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 33" />
     <MESSAGE value="SanouczekProgramisty Zadania podstawowe 34" />
@@ -757,7 +759,9 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 2" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 3" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 4" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 5" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,16 +1084,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="397" column="31" lean-forward="true" selection-start-line="397" selection-start-column="31" selection-end-line="397" selection-end-column="31" />
+        <state relative-caret-position="682">
+          <caret line="422" column="21" selection-start-line="422" selection-start-column="21" selection-end-line="422" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#12732#12733#0" expanded="true" />
-            <element signature="e#12777#12778#0" expanded="true" />
+            <element signature="e#12778#12779#0" expanded="true" />
+            <element signature="e#12811#12812#0" expanded="true" />
+            <element signature="e#12849#12850#0" expanded="true" />
             <element signature="e#12810#12811#0" expanded="true" />
             <element signature="e#12848#12849#0" expanded="true" />
-            <element signature="e#12893#12894#0" expanded="true" />
-            <element signature="e#12939#12940#0" expanded="true" />
+            <element signature="e#12949#12950#0" expanded="true" />
+            <element signature="e#12987#12988#0" expanded="true" />
+            <element signature="e#16493#16494#0" expanded="true" />
+            <element signature="e#16526#16527#0" expanded="true" />
           </folding>
         </state>
       </provider>
