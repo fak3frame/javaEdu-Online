@@ -415,6 +415,7 @@ public class Wstep {
             return orange;
         }
     }
+
     class FruitBox {
         private Object fruit;
         public FruitBox(Object fruit) {
@@ -424,6 +425,7 @@ public class Wstep {
             return fruit;
         }
     }
+
     class BoxOnSteroids<T> {
         public T fruit;
         public BoxOnSteroids(T fruit) {
@@ -431,6 +433,24 @@ public class Wstep {
         }
         public T getFruit() {
             return fruit;
+        }
+    }
+
+    class Pair<T, S> {
+        private T first;
+        private S second;
+
+        public Pair(T first, S second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        public T getFirst() {
+            return first;
+        }
+
+        public S getSecond() {
+            return second;
         }
     }
 
