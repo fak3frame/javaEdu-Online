@@ -392,6 +392,41 @@ public class Wstep {
         Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
          trzeba bedzie rzutowac
          */
+    class Apple{
+    }
+    class AppleBox {
+        private Apple apple;
+        public AppleBox(Apple apple) {
+            this.apple = apple;
+        }
+        public Apple getApple() {
+            return apple;
+        }
+    }
+    class Orange {
+    }
+    class OrangeBox {
+        private Orange orange;
+
+        public OrangeBox(Orange orange) {
+            this.orange = orange;
+        }
+
+        public Orange getOrange() {
+            return orange;
+        }
+    }
+    class FruitBox {
+        private Object fruit;
+
+        public FruitBox(Object fruit) {
+            this.fruit = fruit;
+        }
+
+        public Object getFruit() {
+            return fruit;
+        }
+    }
 
 
 
