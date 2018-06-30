@@ -60,9 +60,19 @@ public class Wstep {
             //Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
         }
     }
+
         //Metoda moze takze wywolywac w wyniku inna metode i sprawdzac czy wynik
         // jest taki sam. jesli bedzie taki sam da true
         // return ! metoda();
+    class WeW4{
+        int a;
+        public boolean isOdd() {
+            return ! isEven();
+        }
+        public boolean isEven(){
+            return a%2==0;
+        }
+    }
 
         //Metoda zwracajaca tablice:
     class WeW3{
@@ -70,6 +80,7 @@ public class Wstep {
             return new String[]{"costma","costam2"};
         }
     }
+
 
 
         /*
