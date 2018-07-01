@@ -446,6 +446,7 @@ public class Wstep {
         Orange fruit = orangeBox.getFruit();
 
         BoxOnSteroids<Orange> orangeBox2 = new BoxOnSteroids<Orange>(new Orange());
+        BoxOnSteroids<Orange> orangeBox3 = new BoxOnSteroids<>(new Orange());
 
     class Pair<T, S> {
         private T first;
