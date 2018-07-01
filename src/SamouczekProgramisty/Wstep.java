@@ -460,7 +460,7 @@ public class Wstep {
         BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
         BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
         Apple apple = boxWithApple.getFruit();
-        //Orange orange = boxWithOrange.getFruit(); // ClassCastException
+        //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
 
 
 
