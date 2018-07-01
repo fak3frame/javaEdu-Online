@@ -440,13 +440,14 @@ public class Wstep {
         }
     }
 
-        BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<>(new Apple());
+        BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
+        BoxOnSteroids<Apple> appleBox2 = new BoxOnSteroids<>(new Apple());
         BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<>(new Orange());
 
         Orange fruit = orangeBox.getFruit();
 
-        BoxOnSteroids<Orange> orangeBox2 = new BoxOnSteroids<Orange>(new Orange());
-        BoxOnSteroids<Orange> orangeBox3 = new BoxOnSteroids<>(new Orange());
+
+
 
     class Pair<T, S> {
         private T first;
