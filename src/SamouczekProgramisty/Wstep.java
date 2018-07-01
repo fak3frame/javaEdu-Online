@@ -407,7 +407,6 @@ public class Wstep {
     }
     class OrangeBox {
         private Orange orange;
-
         public OrangeBox(Orange orange) {
             this.orange = orange;
         }
