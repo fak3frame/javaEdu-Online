@@ -3,6 +3,7 @@ package SamouczekProgramisty;
 import SamouczekProgramisty.Silnik.SilnikMoj;
 import jdk.nashorn.api.tree.ForInLoopTree;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.util.*;
 
@@ -439,6 +440,7 @@ public class Wstep {
         }
     }
 
+        BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<>(new Apple());
 
     class Pair<T, S> {
         private T first;
