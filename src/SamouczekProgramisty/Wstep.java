@@ -443,7 +443,7 @@ public class Wstep {
         BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<>(new Apple());
         BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<>(new Orange());
 
-
+        Orange fruit = orangeBox.getFruit();
 
 
     class Pair<T, S> {
