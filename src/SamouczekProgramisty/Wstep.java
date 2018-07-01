@@ -445,7 +445,6 @@ public class Wstep {
 
         Orange fruit = orangeBox.getFruit();
 
-
     class Pair<T, S> {
         private T first;
         private S second;
