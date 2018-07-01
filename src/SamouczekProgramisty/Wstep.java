@@ -425,6 +425,7 @@ public class Wstep {
             return fruit;
         }
     }
+        FruitBox fr = new FruitBox(new Orange());
 
     class BoxOnSteroids<T> {
         public T fruit;
