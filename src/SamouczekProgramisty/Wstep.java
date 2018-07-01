@@ -441,6 +441,7 @@ public class Wstep {
     }
 
         BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<>(new Apple());
+        BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<>(new Orange());
 
 
     class Pair<T, S> {
