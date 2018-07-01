@@ -425,6 +425,7 @@ public class Wstep {
             return fruit;
         }
     }
+
         FruitBox fruitBox = new FruitBox(new Orange());
         Orange fruit1 = (Orange) fruitBox.getFruit();//musze rzutowac
 
@@ -437,6 +438,7 @@ public class Wstep {
             return fruit;
         }
     }
+
 
     class Pair<T, S> {
         private T first;
