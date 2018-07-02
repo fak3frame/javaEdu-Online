@@ -447,8 +447,9 @@ public class Wstep {
     }
 
         BoxOnSteroids<Apple> BoxOnSteroidsApple = new BoxOnSteroids<Apple>(new Apple());
-        //nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
+        //Nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
         // BoxOnSteroidsk
+        //Moge takze stworzyc obiekt tej klasy bez deklaracji typu generycznego
         BoxOnSteroids<Apple> BoxOnSteroidsApple2 = new BoxOnSteroids<>(new Apple());
         BoxOnSteroids<Orange> BoxOnSteroidsOrange = new BoxOnSteroids<>(new Orange());
 
