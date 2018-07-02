@@ -450,6 +450,7 @@ public class Wstep {
         //Nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
         // BoxOnSteroidsk
         //Moge takze stworzyc obiekt tej klasy bez deklaracji typu generycznego
+        //BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
         BoxOnSteroids<Apple> BoxOnSteroidsApple2 = new BoxOnSteroids<>(new Apple());
         BoxOnSteroids<Orange> BoxOnSteroidsOrange = new BoxOnSteroids<>(new Orange());
 
@@ -462,6 +463,9 @@ public class Wstep {
 
         BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
         BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
+        //Przypisuje obiekt Apple do typu generycznego Orange
+        // jest to mozliwe - ale przy korzystaniu z metod wyrzuci
+        // wyjatek
 
         Apple apple = boxWithApple.getFruit();
         //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
