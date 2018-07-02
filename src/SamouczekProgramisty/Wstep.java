@@ -464,12 +464,13 @@ public class Wstep {
 
         BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
         BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
-        //Przypisuje obiekt Apple do typu generycznego Orange
-        // jest to mozliwe - ale przy korzystaniu z metod wyrzuci
+        //Przypisuje obiekt Apple do typu generycznego Orange aby zmienic go
+        // z Object na Apple lub Orange
+        //Jest to mozliwe - ale przy korzystaniu z metod wyrzuci
         // wyjatek
 
         Apple apple = boxWithApple.getFruit();
-        Orange orange = boxWithoutType.getFruit(); // wyjatek ClassCastException
+        //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
 
 
         class Pair<T, S> {
