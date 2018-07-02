@@ -434,6 +434,7 @@ public class Wstep {
         FruitBox fruitBox = new FruitBox(new Orange());
         Orange fruit1 = (Orange) fruitBox.getFruit();//musze rzutowac
 
+
     class BoxOnSteroids<T> {
         public T fruit;
         public BoxOnSteroids(T fruit) {
