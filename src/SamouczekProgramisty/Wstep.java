@@ -447,6 +447,8 @@ public class Wstep {
     }
 
         BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
+        //nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
+        // BoxOnSteroidsk
         BoxOnSteroids<Apple> appleBox2 = new BoxOnSteroids<>(new Apple());
         BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<>(new Orange());
 
