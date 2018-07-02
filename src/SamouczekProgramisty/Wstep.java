@@ -418,7 +418,8 @@ public class Wstep {
     }
 
     class FruitBox {
-        private Object fruit; //wykorzustuje nadklase kazdej klasy (Object)
+        private Object fruit;
+        // wykorzustuje nadklase kazdej klasy (Object)
         // ale wszystkie metody na jego obiekcie bede musial rzuotwac
         public FruitBox(Object fruit) {
             this.fruit = fruit;
