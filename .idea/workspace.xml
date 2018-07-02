@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="621">
-              <caret line="474" selection-start-line="474" selection-end-line="474" />
+              <caret line="492" lean-forward="true" selection-start-line="492" selection-end-line="492" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1425#1426#0" expanded="true" />
@@ -372,13 +372,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00411" summary="SanouczekProgramisty Zadania podstawowe 46">
-      <created>1530362062930</created>
-      <option name="number" value="00411" />
-      <option name="presentableId" value="LOCAL-00411" />
-      <option name="project" value="LOCAL" />
-      <updated>1530362062930</updated>
-    </task>
     <task id="LOCAL-00412" summary="SanouczekProgramisty Zadania podstawowe 47">
       <created>1530362294777</created>
       <option name="number" value="00412" />
@@ -715,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530561567479</updated>
     </task>
-    <option name="localTasksCounter" value="460" />
+    <task id="LOCAL-00460" summary="SanouczekProgramisty Typy Generyczne 44">
+      <created>1530563323097</created>
+      <option name="number" value="00460" />
+      <option name="presentableId" value="LOCAL-00460" />
+      <option name="project" value="LOCAL" />
+      <updated>1530563323097</updated>
+    </task>
+    <option name="localTasksCounter" value="461" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,7 +755,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 19" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 20" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 21" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 22" />
@@ -780,7 +779,8 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 41" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 42" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 43" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 43" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 44" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 44" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1101,7 +1101,7 @@
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
-          <caret line="474" selection-start-line="474" selection-end-line="474" />
+          <caret line="492" lean-forward="true" selection-start-line="492" selection-end-line="492" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
