@@ -475,7 +475,10 @@ public class Wstep {
                 new BoxOnSteroids<>(new Apple())
         );
 
+
         BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
+        //Tworze obiekt bez deklaracji typu generycznego
+
         BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
         BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
         Apple apple = boxWithApple.getFruit();
