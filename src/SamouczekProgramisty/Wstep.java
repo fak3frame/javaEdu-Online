@@ -455,7 +455,18 @@ public class Wstep {
         Orange fruit = BoxOnSteroidsOrange.getFruit();
         //moge skorzystac z metody bez rzutowania!
 
-    class Pair<T, S> {
+
+        BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
+        //Tworze obiekt bez deklaracji typu generycznego
+
+        BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
+        BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
+
+        Apple apple = boxWithApple.getFruit();
+        //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
+
+
+        class Pair<T, S> {
         private T first;
         private S second;
         public Pair(T first, S second) {
@@ -476,13 +487,6 @@ public class Wstep {
         );
 
 
-        BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
-        //Tworze obiekt bez deklaracji typu generycznego
-
-        BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
-        BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
-        Apple apple = boxWithApple.getFruit();
-        //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
 
 
 
