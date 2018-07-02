@@ -446,13 +446,14 @@ public class Wstep {
         }
     }
 
-        BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
+        BoxOnSteroids<Apple> BoxOnSteroidsApple = new BoxOnSteroids<Apple>(new Apple());
         //nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
         // BoxOnSteroidsk
-        BoxOnSteroids<Apple> appleBox2 = new BoxOnSteroids<>(new Apple());
-        BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<>(new Orange());
+        BoxOnSteroids<Apple> BoxOnSteroidsApple2 = new BoxOnSteroids<>(new Apple());
+        BoxOnSteroids<Orange> BoxOnSteroidsOrange = new BoxOnSteroids<>(new Orange());
 
-        Orange fruit = orangeBox.getFruit();
+        Orange fruit = BoxOnSteroidsOrange.getFruit();
+        //moge skorzystac z metody bez rzutowania!
 
     class Pair<T, S> {
         private T first;
