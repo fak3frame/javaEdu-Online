@@ -470,6 +470,9 @@ public class Wstep {
         // wyjatek
 
         Apple apple = boxWithApple.getFruit();
+        //Przypisuje zmieniony boxWithoutType z obiektem Apple typu Object
+        // na boxWithApple z typem Apple
+
         //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
 
 
