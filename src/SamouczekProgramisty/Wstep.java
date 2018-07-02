@@ -433,6 +433,7 @@ public class Wstep {
 
         FruitBox fruitBox = new FruitBox(new Orange());
         Orange fruit1 = (Orange) fruitBox.getFruit();//musze rzutowac
+        // bo konstruktor klasy FruiBox przyjmuje typ Object
 
 
     class BoxOnSteroids<T> {
