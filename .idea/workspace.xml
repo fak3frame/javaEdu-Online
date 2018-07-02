@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +26,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="859">
-              <caret line="479" column="23" selection-start-line="479" selection-start-column="23" selection-end-line="479" selection-end-column="23" />
+            <state relative-caret-position="417">
+              <caret line="462" column="37" selection-start-line="462" selection-start-column="37" selection-end-line="462" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1425#1426#0" expanded="true" />
@@ -372,34 +373,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00404" summary="SanouczekProgramisty Zadania podstawowe 38">
-      <created>1530359153813</created>
-      <option name="number" value="00404" />
-      <option name="presentableId" value="LOCAL-00404" />
-      <option name="project" value="LOCAL" />
-      <updated>1530359153814</updated>
-    </task>
-    <task id="LOCAL-00405" summary="SanouczekProgramisty Zadania podstawowe 39">
-      <created>1530359984694</created>
-      <option name="number" value="00405" />
-      <option name="presentableId" value="LOCAL-00405" />
-      <option name="project" value="LOCAL" />
-      <updated>1530359984694</updated>
-    </task>
-    <task id="LOCAL-00406" summary="SanouczekProgramisty Zadania podstawowe 40">
-      <created>1530360506938</created>
-      <option name="number" value="00406" />
-      <option name="presentableId" value="LOCAL-00406" />
-      <option name="project" value="LOCAL" />
-      <updated>1530360506938</updated>
-    </task>
-    <task id="LOCAL-00407" summary="SanouczekProgramisty Zadania podstawowe 41">
-      <created>1530360831289</created>
-      <option name="number" value="00407" />
-      <option name="presentableId" value="LOCAL-00407" />
-      <option name="project" value="LOCAL" />
-      <updated>1530360831289</updated>
-    </task>
     <task id="LOCAL-00408" summary="SanouczekProgramisty Zadania podstawowe 42">
       <created>1530361400022</created>
       <option name="number" value="00408" />
@@ -715,7 +688,35 @@
       <option name="project" value="LOCAL" />
       <updated>1530556808367</updated>
     </task>
-    <option name="localTasksCounter" value="453" />
+    <task id="LOCAL-00453" summary="SanouczekProgramisty Typy Generyczne 37">
+      <created>1530558970420</created>
+      <option name="number" value="00453" />
+      <option name="presentableId" value="LOCAL-00453" />
+      <option name="project" value="LOCAL" />
+      <updated>1530558970420</updated>
+    </task>
+    <task id="LOCAL-00454" summary="SanouczekProgramisty Typy Generyczne 38">
+      <created>1530559019802</created>
+      <option name="number" value="00454" />
+      <option name="presentableId" value="LOCAL-00454" />
+      <option name="project" value="LOCAL" />
+      <updated>1530559019808</updated>
+    </task>
+    <task id="LOCAL-00455" summary="SanouczekProgramisty Typy Generyczne 39">
+      <created>1530559072380</created>
+      <option name="number" value="00455" />
+      <option name="presentableId" value="LOCAL-00455" />
+      <option name="project" value="LOCAL" />
+      <updated>1530559072381</updated>
+    </task>
+    <task id="LOCAL-00456" summary="SanouczekProgramisty Typy Generyczne 40">
+      <created>1530560528826</created>
+      <option name="number" value="00456" />
+      <option name="presentableId" value="LOCAL-00456" />
+      <option name="project" value="LOCAL" />
+      <updated>1530560528826</updated>
+    </task>
+    <option name="localTasksCounter" value="457" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,10 +756,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 12" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 13" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 14" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 15" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 16" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 17" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 18" />
@@ -780,7 +777,11 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 34" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 35" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 36" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 36" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 37" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 38" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 39" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 40" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 40" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="479" column="23" selection-start-line="479" selection-start-column="23" selection-end-line="479" selection-end-column="23" />
+        <state relative-caret-position="417">
+          <caret line="462" column="37" selection-start-line="462" selection-start-column="37" selection-end-line="462" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />

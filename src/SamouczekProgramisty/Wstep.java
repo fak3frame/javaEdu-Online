@@ -460,6 +460,7 @@ public class Wstep {
 
         BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
         //Tworze obiekt bez deklaracji typu generycznego
+        //Obiekt bedzie tyou OBJECT!!
 
         BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
         BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
@@ -468,7 +469,7 @@ public class Wstep {
         // wyjatek
 
         Apple apple = boxWithApple.getFruit();
-        //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
+        Orange orange = boxWithoutType.getFruit(); // wyjatek ClassCastException
 
 
         class Pair<T, S> {
