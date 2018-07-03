@@ -449,6 +449,9 @@ public class Wstep {
         BoxOnSteroids<Apple> BoxOnSteroidsApple = new BoxOnSteroids<Apple>(new Apple());
         //Parametryzuje typ generyczny T poprzez ustawienie go jako konkretnej
         // klasy np Apple
+        //Uzywam typu generycznego aby nie powtrzac kodu jak w klasach
+        // OrangeBox oraz AppleBox
+        //
         //Nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
         // BoxOnSteroidsk
         //Moge takze stworzyc obiekt tej klasy bez deklaracji typu generycznego
