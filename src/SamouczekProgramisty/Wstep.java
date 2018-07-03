@@ -251,15 +251,10 @@ public class Wstep {
          super(10, 12) decyduje ktory konstruktor zostanie wywolany
 
         Tworzac obiekt klasy pochodnej ZAWSZE wywola sie jakis konstruktor
-         klasy bazowej w pierwszej kolejnosci.
-
-        Jesli klasa bazowa ma swoj kosntruktor to klasu dziedzieczace tez beda
-         musialy posiadac odpowiadajace im konstruktory.
-         np. gdy klasa bazowa bedzie posiadala TYLKO konsturkor z jedym
-         paramterem to ten bezparamatrowy zostanie usunietey
-        Standardowo podczas tworzenia obiektu BEZPARAMETROWEGO
-         wywolywany jest najpierw konstruktor bezparametrowyklasy
-         bazowej a nastepnie konstruktor klasy pochodnej
+         klasy bazowej w pierwszej kolejnosci. Gdy dodamy w klasie bazowej
+         konstrukotr z 1 param. tez bezparametrowy zostanie usuniety przez
+         co bede musial sie do niego (badz innego) odwolac tworzac obiekt
+         podklasy
 
         Metody finalne nie moga byc nadpisywane a klasy finalne
          rozszerzane
