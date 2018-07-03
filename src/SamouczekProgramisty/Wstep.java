@@ -189,7 +189,8 @@ public class Wstep {
         /*
         API (ang. Application Programming _1_Interface)
         Jest to zestaw metod bez ich implementacji
-        Wszystkie metody interfacu sa publiczne
+        Wszystkie metody interfacu sa publiczne przez co implemetrujac je w
+         klasach musi byc modyfikator public!!
         Interface moze zawierac metody domyslne,statyczne oraz zmienne stałe
          finalne publiczne
 
