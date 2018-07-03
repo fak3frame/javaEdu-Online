@@ -183,7 +183,10 @@ public class Wstep {
         }
 
         Klasa implementujaca interface musi implementowac wszystkie jego
-         metody za wyjatkiem klas abstrakcyjnych
+         metody za wyjatkiem klas abstrakcyjnych, lecz jesli klasa abstrakcyjna
+         zaimplemetuje metode interfejsu ktory implemetuje to klasy dziedziczace
+         ta klase abstrakcyjna juz nie bede musialy implementowac metody
+         tego interfejsu
 
         Interfejs moze rozszerzac inne interfejsy i klasa implementujaca
          taki interface musi metody z wszytskich tych interfejsow implementowac
