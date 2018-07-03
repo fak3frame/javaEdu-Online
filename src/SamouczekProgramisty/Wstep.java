@@ -419,60 +419,60 @@ public class Wstep {
         Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
          trzeba bedzie rzutowac
          */
-    class Apple{
-    }
-    class AppleBox {
-        private Apple apple;
-        public AppleBox(Apple apple) {
-            this.apple = apple;
+        class Apple{
         }
-        public Apple getApple() {
-            return apple;
+        class AppleBox {
+            private Apple apple;
+            public AppleBox(Apple apple) {
+                this.apple = apple;
+            }
+            public Apple getApple() {
+                return apple;
+            }
         }
-    }
 
-    class Orange {
-    }
-    class OrangeBox {
-        private Orange orange;
-        public OrangeBox(Orange orange) {
-            this.orange = orange;
+        class Orange {
         }
-        public Orange getOrange() {
-            return orange;
+        class OrangeBox {
+            private Orange orange;
+            public OrangeBox(Orange orange) {
+                this.orange = orange;
+            }
+            public Orange getOrange() {
+                return orange;
+            }
         }
-    }
 
-    class FruitBox {
-        private Object fruit; //aby moc przyjac obiekt kazdej klasy
-        // (apple/Orange)
-        // wykorzustuje nadklase kazdej klasy (Object)
-        // ale wszystkie metody na jego obiekcie bede musial rzuotwac
-        // co jest niezalecane
-        public FruitBox(Object fruit) {
-            this.fruit = fruit;
+        class FruitBox {
+            private Object fruit; //aby moc przyjac obiekt kazdej klasy
+            // (apple/Orange)
+            // wykorzustuje nadklase kazdej klasy (Object)
+            // ale wszystkie metody na jego obiekcie bede musial rzuotwac
+            // co jest niezalecane
+            public FruitBox(Object fruit) {
+                this.fruit = fruit;
+            }
+            public Object getFruit() {
+                return fruit;
+            }
         }
-        public Object getFruit() {
-            return fruit;
-        }
-    }
 
-        FruitBox fruitBox = new FruitBox(new Orange());
-        //Uogolniam przyjmowany typ do Object aby mogl przyjac obiekt
-        // Apple oraz Orange lecz wywolujac metode getFrui() chcac
-        // dostac sie do pola musze rzutowac
-        Orange fruit1 = (Orange) fruitBox.getFruit();
+            FruitBox fruitBox = new FruitBox(new Orange());
+            //Uogolniam przyjmowany typ do Object aby mogl przyjac obiekt
+            // Apple oraz Orange lecz wywolujac metode getFrui() chcac
+            // dostac sie do pola musze rzutowac
+            Orange fruit1 = (Orange) fruitBox.getFruit();
 
 
-    class BoxOnSteroids<T> {
-        public T fruit;
-        public BoxOnSteroids(T fruit) {
-            this.fruit = fruit;
+        class BoxOnSteroids<T> {
+            public T fruit;
+            public BoxOnSteroids(T fruit) {
+                this.fruit = fruit;
+            }
+            public T getFruit() {
+                return fruit;
+            }
         }
-        public T getFruit() {
-            return fruit;
-        }
-    }
 
         BoxOnSteroids<Apple> BoxOnSteroidsApple = new BoxOnSteroids<Apple>(new Apple());
         //<T> jest parametrem - moze on przyjac tylko typ Obiejtowy
@@ -572,7 +572,7 @@ public class Wstep {
         class Prostokat implements Figura{
             @Override
             public String dajNazwe() {
-                return "kwadrat";
+                return "prostokat";
             }
         }
         class Kwadrat extends Prostokat{
@@ -583,7 +583,8 @@ public class Wstep {
         }
         Prostokat p1 = new Kwadrat();//moge bo rozszerza
         pudelkoFigur<Prostokat> p3 = new pudelkoFigur<Prostokat>(new Prostokat());
-        //pudelkoFigur<Prostokat> p2 = new pudelkoFigur<Kwadrat>(new Kwadrat());
+        pudelkoFigur<Prostokat> p2 = new pudelkoFigur<>(new Kwadrat());
+        System.out.println(p2.dajNazwe());
         //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
         // nawet jesli rozszerza typ!!
 

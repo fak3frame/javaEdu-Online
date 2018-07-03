@@ -20,6 +20,7 @@ public class X2 extends X1 implements Rideable {
 
 
     public static void main(String[] args) {
+        X1 testRef = new X2();
         new X2().go(8);
         new X2().metoda();
         for (int i = 0; i < 3; i++) {
