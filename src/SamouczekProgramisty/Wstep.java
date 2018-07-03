@@ -537,6 +537,10 @@ public class Wstep {
                 // parmatryzowac typ generyczny czyli np. Kolo!!
             }
         }
+        pudelkoFigur<Kolo> kola = new pudelkoFigur<>(new Kolo());
+        kola.dajNazwe();
+        //pudelkoFigur<Apple> jablka = new pudelkoFigur<Apple>(new Apple());
+        //Blad kompilacji - Apple nie rozszerza Figury
 
 
 
