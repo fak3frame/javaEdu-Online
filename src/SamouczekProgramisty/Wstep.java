@@ -519,7 +519,11 @@ public class Wstep {
             }
         }
         class pudelkoFigur <T extends Figura>{
-            //nie musze implemenetowac metod!!
+            //Nie musze implemenetowac metod z int Figura!!
+            //Klasa parametryzujaca T musi rozszerzac Figure
+            // wiec bede mogl na polu z paramtrem T wywolac
+            // metody z tego interfejsu ktore nadpisza
+            // parametryzujace klasy!
             private T figura;
             public pudelkoFigur(T figura){
                 this.figura = figura;
