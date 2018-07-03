@@ -542,6 +542,17 @@ public class Wstep {
         //pudelkoFigur<Apple> jablka = new pudelkoFigur<Apple>(new Apple());
         //Blad kompilacji - Apple nie rozszerza Figury
 
+        //Dziedziczenie klas generycznych
+        class Prostokat implements Figura{
+            @Override
+            public String dajNazwe() {
+                return "kwadrat";
+            }
+        }
+        class Kwadrat extends Prostokat{
+
+        }
+
 
 
 
@@ -679,4 +690,13 @@ public class Wstep {
 }
 interface Figura{
         String dajNazwe();
+}
+class X1 implements Figura{
+    @Override
+    public String dajNazwe() {
+        return null;
+    }
+}
+class X2 extends X1{
+
 }
