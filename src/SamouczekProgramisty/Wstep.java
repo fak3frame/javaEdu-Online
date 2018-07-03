@@ -449,7 +449,7 @@ public class Wstep {
     }
 
         BoxOnSteroids<Apple> BoxOnSteroidsApple = new BoxOnSteroids<Apple>(new Apple());
-        //<T> jest parametrem
+        //<T> jest parametrem - moze on przyjac tylko typ Obiejtowy
         //Parametryzuje typ generyczny T poprzez ustawienie go jako konkretnej
         // klasy np Apple
         //Uzywam typu generycznego aby nie powtrzac kodu jak w klasach
@@ -506,8 +506,33 @@ public class Wstep {
         );
 
 
-
-
+        //Extends
+        /*
+        interface Figura{
+            String dajNazwe();
+        }
+        */
+        class Kolo implements Figura{
+            @Override
+            public String dajNazwe() {
+                return "kolo";
+            }
+        }
+        class pudelkoFigur <T extends Figura>{
+            //nie musze implemenetowac metod!!
+            private T figura;
+            public pudelkoFigur(T figura){
+                this.figura = figura;
+            }
+            public T getFigura() {
+                return figura;
+            }
+            public String dajNazwe(){
+                return figura.dajNazwe();//!!
+                //Wywola metode dajNazwe z klasy ktorej bedzie
+                // parmatryzowac typ generyczny czyli np. Kolo!!
+            }
+        }
 
 
 
@@ -643,4 +668,7 @@ public class Wstep {
         return liczba>100;
     }
     private SilnikMoj silnikMoj;
+}
+interface Figura{
+        String dajNazwe();
 }
