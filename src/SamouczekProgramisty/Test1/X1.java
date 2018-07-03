@@ -1,6 +1,7 @@
 package SamouczekProgramisty.Test1;
 
-public abstract class X1 implements iX {
+public class X1 implements iX {
+    private int xx1;
 
     @Override
     public String dajNapis() {
