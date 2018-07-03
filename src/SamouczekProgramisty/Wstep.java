@@ -694,12 +694,3 @@ public class Wstep {
 interface Figura{
         String dajNazwe();
 }
-class X1 implements Figura{
-    @Override
-    public String dajNazwe() {
-        return null;
-    }
-}
-class X2 extends X1{
-
-}
