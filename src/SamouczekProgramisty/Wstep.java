@@ -553,8 +553,12 @@ public class Wstep {
             }
         }
         class Kwadrat extends Prostokat{
-
+            //Nie musze implementowac metod figury
+            public String dajNazwe(){
+                return "kwadrat";
+            }
         }
+        Prostokat p1 = new Kwadrat();//moge bo rozszerza
 
 
 
