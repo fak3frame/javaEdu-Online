@@ -432,6 +432,7 @@ public class Wstep {
     }
 
         FruitBox fruitBox = new FruitBox(new Orange());
+        //Uogolniam
         Orange fruit1 = (Orange) fruitBox.getFruit();//musze rzutowac
         // bo konstruktor klasy FruiBox przyjmuje typ Object
 
@@ -451,7 +452,8 @@ public class Wstep {
         // klasy np Apple
         //Uzywam typu generycznego aby nie powtrzac kodu jak w klasach
         // OrangeBox oraz AppleBox
-        //
+        //Dzieki temu wywolujac metode getFruif() mam gwarancje ze zwrocony
+        // zostanie poprawny obiekt
         //Nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
         // BoxOnSteroidsk
         //Moge takze stworzyc obiekt tej klasy bez deklaracji typu generycznego
