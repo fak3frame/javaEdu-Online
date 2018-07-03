@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="560" column="56" selection-start-line="560" selection-start-column="56" selection-end-line="560" selection-end-column="56" />
+            <state relative-caret-position="157">
+              <caret line="568" column="29" selection-start-line="568" selection-start-column="22" selection-end-line="568" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1425#1426#0" expanded="true" />
@@ -66,6 +66,13 @@
                 <element signature="e#17768#17769#0" expanded="true" />
                 <element signature="e#18165#18166#0" expanded="true" />
                 <element signature="e#18205#18206#0" expanded="true" />
+                <element signature="e#18335#18346#0" expanded="true" />
+                <element signature="e#18666#18667#0" expanded="true" />
+                <element signature="e#18718#18719#0" expanded="true" />
+                <element signature="e#18820#18821#0" expanded="true" />
+                <element signature="e#18866#18867#0" expanded="true" />
+                <element signature="e#18904#18905#0" expanded="true" />
+                <element signature="e#18965#18966#0" expanded="true" />
                 <element signature="e#19988#19989#0" expanded="true" />
                 <element signature="e#20021#20022#0" expanded="true" />
               </folding>
@@ -197,13 +204,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
               <item name="Test1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Wstep.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
@@ -362,20 +362,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00423" summary="SanouczekProgramisty Typy Generyczne 7">
-      <created>1530394236220</created>
-      <option name="number" value="00423" />
-      <option name="presentableId" value="LOCAL-00423" />
-      <option name="project" value="LOCAL" />
-      <updated>1530394236220</updated>
-    </task>
-    <task id="LOCAL-00424" summary="SanouczekProgramisty Typy Generyczne 8">
-      <created>1530394467827</created>
-      <option name="number" value="00424" />
-      <option name="presentableId" value="LOCAL-00424" />
-      <option name="project" value="LOCAL" />
-      <updated>1530394467828</updated>
     </task>
     <task id="LOCAL-00425" summary="SanouczekProgramisty Typy Generyczne 9">
       <created>1530394759944</created>
@@ -706,7 +692,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530621168506</updated>
     </task>
-    <option name="localTasksCounter" value="472" />
+    <task id="LOCAL-00472" summary="SanouczekProgramisty Typy Generyczne 55">
+      <created>1530624609104</created>
+      <option name="number" value="00472" />
+      <option name="presentableId" value="LOCAL-00472" />
+      <option name="project" value="LOCAL" />
+      <updated>1530624609104</updated>
+    </task>
+    <task id="LOCAL-00473" summary="SanouczekProgramisty Typy Generyczne 56">
+      <created>1530625120975</created>
+      <option name="number" value="00473" />
+      <option name="presentableId" value="LOCAL-00473" />
+      <option name="project" value="LOCAL" />
+      <updated>1530625120975</updated>
+    </task>
+    <option name="localTasksCounter" value="474" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -715,17 +715,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31585518" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.3641141" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36329588" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20899855" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20899855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -739,14 +740,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3168168" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 31" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 32" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 33" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 34" />
@@ -771,7 +770,8 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 53" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 54" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 55" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 55" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 56" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 56" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1095,8 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="560" column="56" selection-start-line="560" selection-start-column="56" selection-end-line="560" selection-end-column="56" />
+        <state relative-caret-position="157">
+          <caret line="568" column="29" selection-start-line="568" selection-start-column="22" selection-end-line="568" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
@@ -1126,6 +1126,13 @@
             <element signature="e#17768#17769#0" expanded="true" />
             <element signature="e#18165#18166#0" expanded="true" />
             <element signature="e#18205#18206#0" expanded="true" />
+            <element signature="e#18335#18346#0" expanded="true" />
+            <element signature="e#18666#18667#0" expanded="true" />
+            <element signature="e#18718#18719#0" expanded="true" />
+            <element signature="e#18820#18821#0" expanded="true" />
+            <element signature="e#18866#18867#0" expanded="true" />
+            <element signature="e#18904#18905#0" expanded="true" />
+            <element signature="e#18965#18966#0" expanded="true" />
             <element signature="e#19988#19989#0" expanded="true" />
             <element signature="e#20021#20022#0" expanded="true" />
           </folding>

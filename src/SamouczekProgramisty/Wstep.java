@@ -562,8 +562,28 @@ public class Wstep {
         pudelkoFigur<Prostokat> p3 = new pudelkoFigur<Prostokat>(new Prostokat());
         //pudelkoFigur<Prostokat> p2 = new pudelkoFigur<Kwadrat>(new Kwadrat());
         //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
-        // nawet jesli rozszerza typ
+        // nawet jesli rozszerza typ!!
 
+
+        class ZwyklePudelko<T>{
+            private T zmienna;
+            ZwyklePudelko(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public T getZmienna() {
+                return zmienna;
+            }
+        }
+        class InnePudelko<T> extends ZwyklePudelko<T>{
+            InnePudelko(T zmienna) {
+                super(zmienna);
+            }
+            public void powiedzCos(){
+                System.out.println("nasze "+getZmienna()+" jest super");
+            }
+        }
+        InnePudelko<String> ip = new InnePudelko<>("cos");
+        ip.powiedzCos();
 
 
 
