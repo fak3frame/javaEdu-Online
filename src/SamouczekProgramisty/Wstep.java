@@ -432,9 +432,10 @@ public class Wstep {
     }
 
         FruitBox fruitBox = new FruitBox(new Orange());
-        //Uogolniam
-        Orange fruit1 = (Orange) fruitBox.getFruit();//musze rzutowac
-        // bo konstruktor klasy FruiBox przyjmuje typ Object
+        //Uogolniam przyjmowany typ do Object aby mogl przyjac obiekt
+        // Apple oraz Orange lecz wywolujac metode getFrui() chcac
+        // dostac sie do pola musze rzutowac
+        Orange fruit1 = (Orange) fruitBox.getFruit();
 
 
     class BoxOnSteroids<T> {
