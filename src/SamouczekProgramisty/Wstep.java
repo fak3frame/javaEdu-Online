@@ -15,7 +15,25 @@ public class Wstep {
         alt + 1 - ukrycie okienka struktury projektu
         alt + strzalka - przleczanie pomiedy zakladkami
         alt + ins - dodanie pliku
+        alt + del - cofniecie usuniecia
+
+        //skok kursora
+        ctrl + lewo/prawo - skok o cale slowo
+        ctrl + gora/dow - skroll gora dol
+
+        shift + enter - enter i skok do nowej linii
+        ctrl + enter - enter ponizej zostajac w tej samej linii
+        ctrl + alt + enter - enter linie wyzej, ide do tej linii
+
         shift + tab - usuniecie wciecia
+        ctrl + del - usuniecie slowa lub wszytkich pustych znako
+         i skok do liini wyzej
+
+        //zaznaczaanie
+        shit + strzalka - zaznaczenie pojedynczego znaku
+        shift + ctrl + stralka - zaznaczenie wyrazu
+
+
         ctrl + spacja - podpowiedz
         ctrl + j - podpowiedzi dla klasy
         fori + tab - petla for
@@ -232,6 +250,13 @@ public class Wstep {
          konstruktor klasy bazowej. ilosc wyslanych parametrow np.
          super(10, 12) decyduje ktory konstruktor zostanie wywolany
 
+        Tworzac obiekt klasy pochodnej ZAWSZE wywola sie jakis konstruktor
+         klasy bazowej w pierwszej kolejnosci.
+
+        Jesli klasa bazowa ma swoj kosntruktor to klasu dziedzieczace tez beda
+         musialy posiadac odpowiadajace im konstruktory.
+         np. gdy klasa bazowa bedzie posiadala TYLKO konsturkor z jedym
+         paramterem to ten bezparamatrowy zostanie usunietey
         Standardowo podczas tworzenia obiektu BEZPARAMETROWEGO
          wywolywany jest najpierw konstruktor bezparametrowyklasy
          bazowej a nastepnie konstruktor klasy pochodnej

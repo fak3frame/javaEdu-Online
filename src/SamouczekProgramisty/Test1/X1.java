@@ -2,9 +2,12 @@ package SamouczekProgramisty.Test1;
 
 public class X1 implements iX {
     private int xx1;
+    public X1(int xx1, int xx11){
+        System.out.println("konstuktor z 1 param klasy nadrzednej");
+    }
 
     @Override
-    public String dajNapis() {
-        return null;
+    public void dajNapis() {
+
     }
 }
