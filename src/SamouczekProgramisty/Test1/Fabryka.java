@@ -2,7 +2,7 @@ package SamouczekProgramisty.Test1;
 
 public class Fabryka {
     public static void main(String[] args) {
-        X3<Object> o1 = new X3<>(new )
+        X3<Object> o1 = new X3<>(new Object());
         X1 testRef = new X2();
         new X2().go(8);
         new X2().metoda();

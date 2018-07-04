@@ -588,7 +588,8 @@ public class Wstep {
         //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
         // nawet jesli rozszerza typ!!
         pudelkoFigur<Prostokat> p2 = new pudelkoFigur<>(new Kwadrat());
-        System.out.println("p2 daj nazwe: "+p2.dajNazwe());
+        System.out.println("p2 daj nazwe: "+p2.dajNazwe());//da kwadrat
+        System.out.println(p2.getClass());
 
 
         class ZwyklePudelko<T>{
