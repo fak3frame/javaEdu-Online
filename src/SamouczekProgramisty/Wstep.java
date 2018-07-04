@@ -588,9 +588,11 @@ public class Wstep {
         //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
         // nawet jesli rozszerza typ!!
         pudelkoFigur<Prostokat> p2 = new pudelkoFigur<>(new Kwadrat());
+        //Ale po mimo tego ze parametryzuje go typem Prostokat to mege przypisac
+        // obiekt Kwadrat poniwaz dziedziczy
         System.out.println("p2 daj nazwe: "+p2.dajNazwe());//da kwadrat tylko
         // dlatego ze metoda Prostokata jest nadpisywana
-        System.out.println(p2.getClass());
+        System.out.println(p2.getClass()); //da pudelkoFigur
 
 
         class ZwyklePudelko<T>{
