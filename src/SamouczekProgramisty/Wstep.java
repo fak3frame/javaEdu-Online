@@ -699,12 +699,24 @@ public class Wstep {
             public void setZmienna(T zmienna) {
                 this.zmienna = zmienna;
             }
-            public void metoda1(InnePudelko3<? super Prostokat> obiekt){
+            public void metoda1(InnePudelko4<? super Prostokat> obiekt){
                 obiekt.setZmienna(new Prostokat());
                 obiekt.setZmienna(new Kwadrat());//??!!
                 //obiekt.setZmienna(new Kolo());
             }
         }
+        InnePudelko4<Prostokat> test2 = new InnePudelko4<>(new Prostokat());
+
+        InnePudelko4<Figura>x5 = new InnePudelko4<>(new Prostokat());
+        InnePudelko4<Prostokat>x6 = new InnePudelko4<>(new Prostokat());
+        InnePudelko4<Prostokat>x7 = new InnePudelko4<>(new Kwadrat());
+        InnePudelko4<Kwadrat>x8 = new InnePudelko4<>(new Kwadrat());
+
+        test2.metoda1(x5);
+        test2.metoda1(x6);
+        test2.metoda1(x7);
+        //test2.metoda1(x8); // BLAD ograniczenie w dol od Prostokatu
+        // a kwadrat jest wyzej
 
 
 
