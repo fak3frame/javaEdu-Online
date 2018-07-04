@@ -703,6 +703,8 @@ public class Wstep {
                 obiekt.setZmienna(new Prostokat());
                 obiekt.setZmienna(new Kwadrat());//??!!
                 //obiekt.setZmienna(new Kolo());
+                //obiekt.setZmienna(new Object());
+                obiekt.setZmienna(null);
             }
         }
         InnePudelko4<Prostokat> test2 = new InnePudelko4<>(new Prostokat());
@@ -717,6 +719,7 @@ public class Wstep {
         test2.metoda1(x7);
         //test2.metoda1(x8); // BLAD ograniczenie w dol od Prostokatu
         // a kwadrat jest wyzej
+
 
 
 
