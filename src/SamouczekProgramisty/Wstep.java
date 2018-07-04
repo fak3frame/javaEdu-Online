@@ -655,18 +655,28 @@ public class Wstep {
             public T getZmienna() {
                 return zmienna;
             }
-            public void metoda1(InnePudelko<? extends Figura> obiekt){
-                Figura f = obiekt.getZmienna();;
+            public void metoda1(InnePudelko3<? extends Figura> obiekt){
+                Figura f = obiekt.getZmienna();
             }
-            public void metoda2(InnePudelko<Figura> obiekt){
+            public void metoda2(InnePudelko3<Figura> obiekt){
                 Figura f = obiekt.getZmienna();
             }
         }
         InnePudelko3<Figura> test = new InnePudelko3<>(new Prostokat());
+
         InnePudelko3<Figura> x2 = new InnePudelko3<>(new Kwadrat());
         InnePudelko3<Prostokat> x3 = new InnePudelko3<>(new Kwadrat());
         InnePudelko3<Kwadrat> x4 = new InnePudelko3<>(new Kwadrat());
+
         test.metoda1(x2);
+        test.metoda1(x3);
+        test.metoda1(x4);
+
+        test.metoda2(x2);
+        //test.metoda2(x3); - blad moze byc tylko typ parametru figura
+
+
+
 
         String x = new Object() + "123";
         System.out.println(x);
