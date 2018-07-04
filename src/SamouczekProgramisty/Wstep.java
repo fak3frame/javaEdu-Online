@@ -662,7 +662,6 @@ public class Wstep {
                 Figura f = obiekt.getZmienna();
                 //obiekt.setZmienna(new Prostokat());
                 //blad przypisania wartosci ??!!
-
             }
             public void metoda2(InnePudelko3<Figura> obiekt){
                 Figura f = obiekt.getZmienna();
