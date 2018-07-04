@@ -615,6 +615,9 @@ public class Wstep {
         ip.powiedzCos();
 
 
+        //Metody z argumentami Generycznymi - wildcard
+
+
 
 
         String x = new Object() + "123";
