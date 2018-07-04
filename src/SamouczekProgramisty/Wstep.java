@@ -681,6 +681,20 @@ public class Wstep {
         //test.metoda2(x3); - blad moze byc tylko typ parametru figura
 
 
+        //f(klasa<? super Prostokat> obiekt) - “lower bound”
+        //Ta metoda moze przyjac tylko obiekty paramtryzowane w dol
+        // tan Prostokat,Figura,Object
+        class InnePudelko4<T>{
+            private T zmienna;
+            public InnePudelko4(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public T getZmienna() {
+                return zmienna;
+            }
+            public void setZmienna(T zmienna) {
+                this.zmienna = zmienna;
+            }
 
 
 
