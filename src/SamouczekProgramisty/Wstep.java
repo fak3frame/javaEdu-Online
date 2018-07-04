@@ -660,6 +660,8 @@ public class Wstep {
             }
             public void metoda1(InnePudelko3<? extends Figura> obiekt){
                 Figura f = obiekt.getZmienna();
+                //obiekt.setZmienna(new Prostokat());
+                //blad przypisania wartosci ??!!
 
             }
             public void metoda2(InnePudelko3<Figura> obiekt){
@@ -679,8 +681,6 @@ public class Wstep {
         test.metoda2(x2);
         //test.metoda2(x3); - blad moze byc tylko typ parametru figura
 
-
-        //f(klasa<? extends Figure> obiekt) - “upper bound”
 
 
 
