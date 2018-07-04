@@ -616,7 +616,21 @@ public class Wstep {
 
 
         //Metody z argumentami Generycznymi - wildcard
-
+        class InnePudelko2<T>{
+            private T zmienna;
+            InnePudelko2(T zmienna) {
+                this.zmienna=zmienna;
+            }
+            public void metoda1(InnePudelko2<?> pudelko2){
+                Object o = pudelko2.zmienna;
+                System.out.println(o);
+            }
+        }
+        InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
+        pudelko2.zmienna = null;
+        //pudelko2.zmienna = "costam";
+        //Klasa parametryzowana <?> - jej pola typu tego parametru moga
+        // przyjac tylko null!!
 
 
 
