@@ -642,6 +642,23 @@ public class Wstep {
         //f(klasa<? extends Figure> obiekt) - “upper bound”
         //W takim przypadku moze przyjac tylko obekt klasy figura badz
         // dziedziczaca ja
+        //f(klasa<Figura> obiekt) - w takim przypadku moge dac tylko parametryzowany
+        // obiekt klasy Figura
+        class InnePudelko3<T>{
+            private T zmienna;
+            public InnePudelko3(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public T getZmienna() {
+                return zmienna;
+            }
+            public void metoda1(InnePudelko<? extends Figura> obiekt){
+                Figura f = obiekt.getZmienna();;
+            }
+            public void metoda2(InnePudelko<Figura> obiekt){
+                Figura f = obiekt.getZmienna();
+            }
+        }
 
 
         String x = new Object() + "123";
