@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="496" column="56" selection-start-line="496" selection-start-column="56" selection-end-line="496" selection-end-column="56" />
+            <state relative-caret-position="299">
+              <caret line="641" column="8" lean-forward="true" selection-start-line="641" selection-start-column="8" selection-end-line="641" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#19204#19205#0" expanded="true" />
@@ -44,6 +44,8 @@
                 <element signature="e#19440#19451#0" expanded="true" />
                 <element signature="e#19975#19976#0" expanded="true" />
                 <element signature="e#20021#20022#0" expanded="true" />
+                <element signature="e#20973#20974#0" expanded="true" />
+                <element signature="e#21025#21026#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -380,27 +382,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00438" summary="SanouczekProgramisty Typy Generyczne 22">
-      <created>1530482003199</created>
-      <option name="number" value="00438" />
-      <option name="presentableId" value="LOCAL-00438" />
-      <option name="project" value="LOCAL" />
-      <updated>1530482003199</updated>
-    </task>
-    <task id="LOCAL-00439" summary="SanouczekProgramisty Typy Generyczne 23">
-      <created>1530482038794</created>
-      <option name="number" value="00439" />
-      <option name="presentableId" value="LOCAL-00439" />
-      <option name="project" value="LOCAL" />
-      <updated>1530482038796</updated>
-    </task>
-    <task id="LOCAL-00440" summary="SanouczekProgramisty Typy Generyczne 24">
-      <created>1530482053914</created>
-      <option name="number" value="00440" />
-      <option name="presentableId" value="LOCAL-00440" />
-      <option name="project" value="LOCAL" />
-      <updated>1530482053914</updated>
-    </task>
     <task id="LOCAL-00441" summary="SanouczekProgramisty Typy Generyczne 25">
       <created>1530482083882</created>
       <option name="number" value="00441" />
@@ -723,7 +704,28 @@
       <option name="project" value="LOCAL" />
       <updated>1530708862904</updated>
     </task>
-    <option name="localTasksCounter" value="487" />
+    <task id="LOCAL-00487" summary="SanouczekProgramisty Typy Generyczne 70">
+      <created>1530709629126</created>
+      <option name="number" value="00487" />
+      <option name="presentableId" value="LOCAL-00487" />
+      <option name="project" value="LOCAL" />
+      <updated>1530709629126</updated>
+    </task>
+    <task id="LOCAL-00488" summary="SanouczekProgramisty Typy Generyczne 71">
+      <created>1530709676195</created>
+      <option name="number" value="00488" />
+      <option name="presentableId" value="LOCAL-00488" />
+      <option name="project" value="LOCAL" />
+      <updated>1530709676195</updated>
+    </task>
+    <task id="LOCAL-00489" summary="SanouczekProgramisty Typy Generyczne 72">
+      <created>1530710431236</created>
+      <option name="number" value="00489" />
+      <option name="presentableId" value="LOCAL-00489" />
+      <option name="project" value="LOCAL" />
+      <updated>1530710431236</updated>
+    </task>
+    <option name="localTasksCounter" value="490" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -763,9 +765,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 45" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 46" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 47" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 48" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 49" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 50" />
@@ -788,7 +787,10 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 67" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 68" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 69" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 69" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 70" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 71" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 72" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 72" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1124,8 +1126,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="496" column="56" selection-start-line="496" selection-start-column="56" selection-end-line="496" selection-end-column="56" />
+        <state relative-caret-position="299">
+          <caret line="641" column="8" lean-forward="true" selection-start-line="641" selection-start-column="8" selection-end-line="641" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#19204#19205#0" expanded="true" />
@@ -1133,6 +1135,8 @@
             <element signature="e#19440#19451#0" expanded="true" />
             <element signature="e#19975#19976#0" expanded="true" />
             <element signature="e#20021#20022#0" expanded="true" />
+            <element signature="e#20973#20974#0" expanded="true" />
+            <element signature="e#21025#21026#0" expanded="true" />
           </folding>
         </state>
       </provider>

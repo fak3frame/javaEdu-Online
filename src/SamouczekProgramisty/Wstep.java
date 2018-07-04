@@ -625,13 +625,23 @@ public class Wstep {
                 Object o = pudelko2.zmienna;
                 System.out.println(o);
             }
+            public void uzyjeMetody1(){
+                metoda1(new InnePudelko2<>(new Apple()));
+                metoda1(new InnePudelko2<>(new Kwadrat()));
+                metoda1(new InnePudelko2<>(new Object()));
+            }
         }
+        InnePudelko2<?> pudelko3 = new InnePudelko2<>(new Apple());
         InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
         pudelko2.zmienna = null;
         //pudelko2.zmienna = "costam";
         //Klasa parametryzowana <?> - jej pola typu tego parametru moga
         // przyjac tylko null!!
 
+
+        //f(klasa<? extends Figure> obiekt) - “upper bound”
+        //W takim przypadku moze przyjac tylko obekt klasy figura badz
+        // dziedziczaca ja
 
 
         String x = new Object() + "123";
