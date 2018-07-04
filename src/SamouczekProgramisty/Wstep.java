@@ -655,8 +655,12 @@ public class Wstep {
             public T getZmienna() {
                 return zmienna;
             }
+            public void setZmienna(T zmienna) {
+                this.zmienna = zmienna;
+            }
             public void metoda1(InnePudelko3<? extends Figura> obiekt){
                 Figura f = obiekt.getZmienna();
+
             }
             public void metoda2(InnePudelko3<Figura> obiekt){
                 Figura f = obiekt.getZmienna();
@@ -674,6 +678,9 @@ public class Wstep {
 
         test.metoda2(x2);
         //test.metoda2(x3); - blad moze byc tylko typ parametru figura
+
+
+        //f(klasa<? extends Figure> obiekt) - “upper bound”
 
 
 
