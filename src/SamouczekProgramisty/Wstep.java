@@ -68,6 +68,9 @@ public class Wstep {
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
         Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
 
+        moge operwac na obiekcie tylko jesli przypisany jest do jej referencji cos
+        classOne X = new classOne();
+
          */
         int jakisNumer = 123; //zakres +/- 2,147,483,647
     class Wew1{
@@ -659,7 +662,11 @@ public class Wstep {
                 Figura f = obiekt.getZmienna();
             }
         }
-
+        InnePudelko3<Figura> test = new InnePudelko3<>(new Prostokat());
+        InnePudelko3<Figura> x2 = new InnePudelko3<>(new Kwadrat());
+        InnePudelko3<Prostokat> x3 = new InnePudelko3<>(new Kwadrat());
+        InnePudelko3<Kwadrat> x4 = new InnePudelko3<>(new Kwadrat());
+        test.metoda1(x2);
 
         String x = new Object() + "123";
         System.out.println(x);
