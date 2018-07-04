@@ -684,18 +684,21 @@ public class Wstep {
         //f(klasa<? super Prostokat> obiekt) - “lower bound”
         //Ta metoda moze przyjac tylko obiekty paramtryzowane w dol
         // tan Prostokat,Figura,Object
-        class InnePudelko4<T>{
+        class InnePudelko4<T> {
             private T zmienna;
-            public InnePudelko4(T zmienna){
-                this.zmienna=zmienna;
-            }
-            public T getZmienna() {
-                return zmienna;
-            }
-            public void setZmienna(T zmienna) {
+
+            public InnePudelko4(T zmienna) {
                 this.zmienna = zmienna;
             }
 
+            public T getZmienna() {
+                return zmienna;
+            }
+
+            public void setZmienna(T zmienna) {
+                this.zmienna = zmienna;
+            }
+        }
 
 
         String x = new Object() + "123";
