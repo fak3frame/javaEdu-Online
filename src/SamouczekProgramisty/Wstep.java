@@ -698,7 +698,13 @@ public class Wstep {
             public void setZmienna(T zmienna) {
                 this.zmienna = zmienna;
             }
+            public void metoda1(InnePudelko3<? super Prostokat> obiekt){
+                obiekt.setZmienna(new Prostokat());
+                obiekt.setZmienna(new Kwadrat());//??!!
+                //obiekt.setZmienna(new Kolo());
+            }
         }
+
 
 
         String x = new Object() + "123";
