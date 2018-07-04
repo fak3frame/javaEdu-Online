@@ -705,6 +705,8 @@ public class Wstep {
                 //obiekt.setZmienna(new Kolo());
                 //obiekt.setZmienna(new Object());
                 obiekt.setZmienna(null);
+                //moge przypisac do obiektu wszystko co dziedzieczy po
+                // prostokacie (czyli odwrotnie - w gore)
             }
         }
         InnePudelko4<Prostokat> test2 = new InnePudelko4<>(new Prostokat());
