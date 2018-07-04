@@ -495,7 +495,6 @@ public class Wstep {
 
         BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
         //Tworze obiekt bez deklaracji typu generycznego
-        //Obiekt bedzie tyou OBJECT!!
 
         BoxOnSteroids<Apple> boxWithApple = boxWithoutType;
         BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
@@ -592,7 +591,7 @@ public class Wstep {
         // obiekt Kwadrat poniwaz dziedziczy
         System.out.println("p2 daj nazwe: "+p2.dajNazwe());//da kwadrat tylko
         // dlatego ze metoda Prostokata jest nadpisywana
-        System.out.println(p2.getClass()); //da pudelkoFigur
+        System.out.println(p2.getClass()); //da pudelkoFigur tylko
 
 
         class ZwyklePudelko<T>{
