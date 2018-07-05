@@ -642,11 +642,15 @@ public class Wstep {
             }
         }
         InnePudelko2<?> pudelko3 = new InnePudelko2<>(new Apple());
+        //Parametryzujac ?
         InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
         pudelko2.zmienna = null;
         //pudelko2.zmienna = "costam";
+        //pudelko3.zmienna = new Apple();
         //Klasa parametryzowana <?> - jej pola typu tego parametru moga
-        // przyjac tylko null!!
+        // przyjac tylko null!! i moge je przypisac do pol typu Object
+        // poniewaz <?> jest typem nieokreslonym klasy a kazda klasa
+        // dziedziczy po Object
 
 
         //f(klasa<? extends Figure> obiekt) - “upper bound”
