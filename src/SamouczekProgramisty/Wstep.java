@@ -571,6 +571,7 @@ public class Wstep {
         //Blad kompilacji - Apple nie implementuje Figury ani nie rozszerza
         // klasy implementujacych go!!
 
+
         //Dziedziczenie klas generycznych
         class Prostokat implements Figura{
             @Override
