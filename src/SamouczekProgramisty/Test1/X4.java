@@ -18,6 +18,8 @@ public class X4<T extends iX> {
     public void metoda2(X4<? extends iX>o){
         iX x = o.o1;
         Object x2 = o.o1;
+    }
+    public void dajNapisObiektu(X4<? extends iX>o){
 
     }
 
