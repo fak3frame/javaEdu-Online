@@ -614,11 +614,11 @@ public class Wstep {
             }
         }
         class InnePudelko<T> extends ZwyklePudelko<T>{
-            InnePudelko(T zmienna) {
+            public InnePudelko(T zmienna){
                 super(zmienna);
             }
-            public void powiedzCos(){
-                System.out.println("nasze "+getZmienna()+" jest super");
+            void powiedzCos(){
+                System.out.println("moje "+getZmienna()+" jest super");
             }
         }
         InnePudelko<String> ip = new InnePudelko<>("cos");
