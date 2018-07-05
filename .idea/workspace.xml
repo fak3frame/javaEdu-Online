@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13515">
-              <caret line="827" column="48" selection-start-line="827" selection-start-column="48" selection-end-line="827" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,17 +55,17 @@
       <file leaf-file-name="X4.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
               <folding>
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
                 <element signature="e#211#212#0" expanded="true" />
                 <element signature="e#239#240#0" expanded="true" />
                 <element signature="e#213#214#0" expanded="true" />
                 <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,6 +85,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XimplementsiX.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/XimplementsiX.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#147#148#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/PrzydatneKlasy/ArraysMoja.java" />
         <option value="$PROJECT_DIR$/src/_1_ProgramStartowy/ProgramStartowy.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/RandomMoj.java" />
         <option value="$PROJECT_DIR$/src/PrzydatneKlasy/InterfaceMap.java" />
@@ -232,6 +235,7 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Fabryka.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X31.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/XimplementsiX.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X4.java" />
       </list>
     </option>
@@ -424,34 +428,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00470" summary="SanouczekProgramisty Typy Generyczne 54">
-      <created>1530621114952</created>
-      <option name="number" value="00470" />
-      <option name="presentableId" value="LOCAL-00470" />
-      <option name="project" value="LOCAL" />
-      <updated>1530621114952</updated>
-    </task>
-    <task id="LOCAL-00471" summary="SanouczekProgramisty Typy Generyczne 55">
-      <created>1530621168506</created>
-      <option name="number" value="00471" />
-      <option name="presentableId" value="LOCAL-00471" />
-      <option name="project" value="LOCAL" />
-      <updated>1530621168506</updated>
-    </task>
-    <task id="LOCAL-00472" summary="SanouczekProgramisty Typy Generyczne 55">
-      <created>1530624609104</created>
-      <option name="number" value="00472" />
-      <option name="presentableId" value="LOCAL-00472" />
-      <option name="project" value="LOCAL" />
-      <updated>1530624609104</updated>
-    </task>
-    <task id="LOCAL-00473" summary="SanouczekProgramisty Typy Generyczne 56">
-      <created>1530625120975</created>
-      <option name="number" value="00473" />
-      <option name="presentableId" value="LOCAL-00473" />
-      <option name="project" value="LOCAL" />
-      <updated>1530625120975</updated>
     </task>
     <task id="LOCAL-00474" summary="SanouczekProgramisty Typy Generyczne 57">
       <created>1530625692749</created>
@@ -768,7 +744,35 @@
       <option name="project" value="LOCAL" />
       <updated>1530808932960</updated>
     </task>
-    <option name="localTasksCounter" value="519" />
+    <task id="LOCAL-00519" summary="SanouczekProgramisty Typy Generyczne 103">
+      <created>1530809117883</created>
+      <option name="number" value="00519" />
+      <option name="presentableId" value="LOCAL-00519" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809117883</updated>
+    </task>
+    <task id="LOCAL-00520" summary="SanouczekProgramisty Typy Generyczne 104">
+      <created>1530809257603</created>
+      <option name="number" value="00520" />
+      <option name="presentableId" value="LOCAL-00520" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809257603</updated>
+    </task>
+    <task id="LOCAL-00521" summary="SanouczekProgramisty Typy Generyczne 105">
+      <created>1530809560820</created>
+      <option name="number" value="00521" />
+      <option name="presentableId" value="LOCAL-00521" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809560820</updated>
+    </task>
+    <task id="LOCAL-00522" summary="SanouczekProgramisty Typy Generyczne 106">
+      <created>1530809663620</created>
+      <option name="number" value="00522" />
+      <option name="presentableId" value="LOCAL-00522" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809663620</updated>
+    </task>
+    <option name="localTasksCounter" value="523" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -837,10 +841,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 78" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 79" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 80" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 81" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 82" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 83" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 84" />
@@ -862,7 +862,11 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 100" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 101" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 102" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 102" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 103" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 104" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 105" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 106" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 106" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,7 +874,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/err/dfdfb.java" />
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Silnik.java" />
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/MyAdd.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1142,13 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Fabryka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X31.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1178,13 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X1Rozszerzenie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1210,6 +1199,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/XimplementsiX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X1Rozszerzenie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Fabryka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/iX.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1219,17 +1233,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="476">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
           <folding>
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
             <element signature="e#211#212#0" expanded="true" />
             <element signature="e#239#240#0" expanded="true" />
             <element signature="e#213#214#0" expanded="true" />
             <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
           </folding>
         </state>
       </provider>
