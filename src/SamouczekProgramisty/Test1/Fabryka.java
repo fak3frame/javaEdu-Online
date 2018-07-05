@@ -5,6 +5,7 @@ public class Fabryka {
 
         X1<X1Rozszerzenie> xR = new X1<>(new X1Rozszerzenie());
         System.out.println(xR.dajNapis());
+        X1<X31> xR2 = new X1<>(new X31());
 
         X3<Object> o1 = new X3<>(new Object());
         //X1 testRef = new X2();

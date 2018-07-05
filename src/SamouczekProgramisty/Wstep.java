@@ -567,6 +567,10 @@ public class Wstep {
         }
         pudelkoFigur<Kolo> kola = new pudelkoFigur<>(new Kolo());
         kola.dajNazwe();
+        //Gdy parametr klasy ogranicza sie do klasy/interfejsu to moge
+        // na atrybucie klasy generycznej typu generycznego wywolac metode
+        // tej klasy/interfejsu ktorego ogranicza typ generyczny
+
         //pudelkoFigur<Apple> jablka = new pudelkoFigur<Apple>(new Apple());
         //Blad kompilacji - Apple nie implementuje Figury ani nie rozszerza
         // klasy implementujacych go!!
