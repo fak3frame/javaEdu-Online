@@ -2,6 +2,10 @@ package SamouczekProgramisty.Test1;
 
 public class Fabryka {
     public static void main(String[] args) {
+
+        X1<X1Rozszerzenie> xR = new X1<>(new X1Rozszerzenie());
+        X1<X2> x2 = new X1<>(new X2());
+
         X3<Object> o1 = new X3<>(new Object());
         X1 testRef = new X2();
         new X2().go(8);

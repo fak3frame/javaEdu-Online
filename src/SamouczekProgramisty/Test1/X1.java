@@ -1,7 +1,14 @@
 package SamouczekProgramisty.Test1;
 
-public class X1 implements iX {
+public class X1 <T extends iX>implements iX {
     private int xx1;
+    private T zmienna;
+    public X1(){
+
+    }
+    public X1(T zmienna){
+        this.zmienna=zmienna;
+    }
 //    public X1(int xx1){
 //        this.xx1=xx1;
 //    }
@@ -12,7 +19,7 @@ public class X1 implements iX {
 //    }
 
     @Override
-    public void dajNapis() {
-
+    public String dajNapis() {
+        return "X1";
     }
 }

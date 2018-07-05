@@ -1,6 +1,6 @@
 package SamouczekProgramisty.Test1;
 
-public class X2 extends X1 implements Rideable {
+public class X2 implements Rideable {
     int xx2;
 //    public X2(int xx2) {
 //        super(213,21);

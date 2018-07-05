@@ -568,7 +568,8 @@ public class Wstep {
         pudelkoFigur<Kolo> kola = new pudelkoFigur<>(new Kolo());
         kola.dajNazwe();
         //pudelkoFigur<Apple> jablka = new pudelkoFigur<Apple>(new Apple());
-        //Blad kompilacji - Apple nie rozszerza Figury
+        //Blad kompilacji - Apple nie implementuje Figury ani nie rozszerza
+        // klasy implementujacych go!!
 
         //Dziedziczenie klas generycznych
         class Prostokat implements Figura{
