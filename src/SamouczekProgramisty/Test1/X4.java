@@ -15,6 +15,11 @@ public class X4<T extends iX> {
     public void metoda1(X4<?>o){
         Object x = o.o1;
     }
+    public void metoda2(X4<? extends iX>o){
+        iX x = o.o1;
+        Object x2 = o.o1;
+
+    }
 
     public static void main(String[] args) {
 
