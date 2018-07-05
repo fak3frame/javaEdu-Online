@@ -548,7 +548,8 @@ public class Wstep {
         }
         class pudelkoFigur <T extends Figura>{
             //Nie musze implemenetowac metod z int Figura!!
-            //Klasa parametryzujaca T musi rozszerzac Figure
+            //Klasa parametryzujaca T musi rozszerzac Figure lub rozszerzac
+            // klase ktora go implementuje !!
             // wiec bede mogl na polu z paramtrem T wywolac
             // metody z tego interfejsu ktore nadpisza
             // parametryzujace klasy!
