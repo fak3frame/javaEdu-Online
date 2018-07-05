@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -419,13 +417,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00462" summary="SanouczekProgramisty Typy Generyczne 46">
-      <created>1530618036320</created>
-      <option name="number" value="00462" />
-      <option name="presentableId" value="LOCAL-00462" />
-      <option name="project" value="LOCAL" />
-      <updated>1530618036320</updated>
-    </task>
     <task id="LOCAL-00463" summary="SanouczekProgramisty Typy Generyczne 47">
       <created>1530618098582</created>
       <option name="number" value="00463" />
@@ -762,12 +753,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530795695678</updated>
     </task>
-    <option name="localTasksCounter" value="511" />
+    <task id="LOCAL-00511" summary="SanouczekProgramisty Typy Generyczne 94">
+      <created>1530796333762</created>
+      <option name="number" value="00511" />
+      <option name="presentableId" value="LOCAL-00511" />
+      <option name="project" value="LOCAL" />
+      <updated>1530796333762</updated>
+    </task>
+    <option name="localTasksCounter" value="512" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -831,7 +828,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 69" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 70" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 71" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 72" />
@@ -856,7 +852,8 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 91" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 92" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 93" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 93" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 94" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 94" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
