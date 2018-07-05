@@ -638,7 +638,8 @@ public class Wstep {
             }
             public void uzyjeMetody1(){
                 metoda1(new InnePudelko2<>(new Apple()));
-                //!!
+                //w main InnePudelko2<?> pudelko3 =
+                // new InnePudelko2<>(new Apple());
                 metoda1(new InnePudelko2<>(new Kwadrat()));
                 metoda1(new InnePudelko2<>(new Object()));
             }
