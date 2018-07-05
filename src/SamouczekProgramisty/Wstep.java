@@ -647,7 +647,7 @@ public class Wstep {
             }
         }
         InnePudelko2<?> pudelko3 = new InnePudelko2<>(new Apple());
-        //Parametryzujac ?
+        //Parametryzujac
         InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
         pudelko2.zmienna = null;
         //pudelko2.zmienna = "costam";
