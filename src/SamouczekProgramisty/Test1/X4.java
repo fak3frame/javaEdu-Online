@@ -25,8 +25,6 @@ public class X4<T extends iX> {
         // lecz przyjety obiekt moze byc teoretycznie tylko intefacu iX
         // badz nizej (tylko klasa Object) - kompilator nie wie czy
         // uzytkownik nie wysle typu wyzej niz bedzie przypisanie
-
-        //X4 x3 = o.o1; //blad - X4 nie implementuje iX
         System.out.println(x.dajNapis());
 
     }
