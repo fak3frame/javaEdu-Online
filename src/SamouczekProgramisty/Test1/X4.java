@@ -19,6 +19,8 @@ public class X4<T extends iX> {
     public void metoda2(X4<? extends iX>o){
         //Obiekt o posiada wszystkie pola swojego typu
         // (klasy ktoryej jest typem - X4)
+        //Metoda nie jest statyczna wiec mogie sie odwolac besposrenio
+        // do metody na po obiekcie o !!
         Object x2 = o.o1;
         iX x = o.o1;
         System.out.println(o1.dajNapis());
