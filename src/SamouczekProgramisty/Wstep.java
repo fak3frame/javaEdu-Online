@@ -694,15 +694,12 @@ public class Wstep {
         // tzn Prostokat,Figura,Object
         class InnePudelko4<T> {
             private T zmienna;
-
             public InnePudelko4(T zmienna) {
                 this.zmienna = zmienna;
             }
-
             public T getZmienna() {
                 return zmienna;
             }
-
             public void setZmienna(T zmienna) {
                 this.zmienna = zmienna;
             }
