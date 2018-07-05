@@ -633,10 +633,12 @@ public class Wstep {
             }
             public void metoda1(InnePudelko2<?> pudelko2){
                 Object o = pudelko2.zmienna;
+                //
                 System.out.println(o);
             }
             public void uzyjeMetody1(){
                 metoda1(new InnePudelko2<>(new Apple()));
+                //!!
                 metoda1(new InnePudelko2<>(new Kwadrat()));
                 metoda1(new InnePudelko2<>(new Object()));
             }
