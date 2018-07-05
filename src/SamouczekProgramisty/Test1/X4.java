@@ -20,8 +20,9 @@ public class X4<T extends iX> {
         //Obiekt o posiada wszystkie pola swojego typu
         // (klasy ktoryej jest typem - X4)
         System.out.println(o1.dajNapis());
-        //Metoda nie jest statyczna wiec mogie sie odwolac besposrenio
+        //Metoda nie jest statyczna wiec moge sie odwolac besposrenio
         // do metody na po obiekcie o !!
+
         Object x2 = o.o1;
         iX x = o.o1;
         System.out.println(x.dajNapis());
