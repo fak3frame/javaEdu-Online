@@ -691,7 +691,7 @@ public class Wstep {
 
         //f(klasa<? super Prostokat> obiekt) - “lower bound”
         //Ta metoda moze przyjac tylko obiekty paramtryzowane w dol
-        // tan Prostokat,Figura,Object
+        // tzn Prostokat,Figura,Object
         class InnePudelko4<T> {
             private T zmienna;
 
