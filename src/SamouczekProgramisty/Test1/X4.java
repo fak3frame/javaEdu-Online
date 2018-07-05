@@ -17,9 +17,11 @@ public class X4<T extends iX> {
         Object x = o.o1;
     }
     public void metoda2(X4<? extends iX>o){
-        iX x = o.o1;
-        System.out.println(x.dajNapis());
         Object x2 = o.o1;
+        iX x = o.o1;
+        //X4 x3 = o.o1; //blad - X4 nie implementuje iX
+        System.out.println(x.dajNapis());
+
     }
     public void dajNapisObiektu(X4<? extends iX>o){
 
