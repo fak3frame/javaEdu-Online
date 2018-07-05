@@ -633,7 +633,9 @@ public class Wstep {
             }
             public void metoda1(InnePudelko2<?> pudelko2){
                 Object o = pudelko2.zmienna;
-                //
+                //<?> parametryzujac moge tylko przypisac
+                // przyjety obiekt (pudelko2) tylko do typu
+                // Object
                 System.out.println(o);
             }
             public void uzyjeMetody1(){
