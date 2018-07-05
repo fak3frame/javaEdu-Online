@@ -17,8 +17,11 @@ public class X4<T extends iX> {
         Object x = o.o1;
     }
     public void metoda2(X4<? extends iX>o){
+        //Obiekt o posiada wszystkie pola swojego typu
+        // (klasy ktoryej jest typem - X4)
         Object x2 = o.o1;
         iX x = o.o1;
+        System.out.println(o1.dajNapis());
         //XimplementsiX x4 = o.o1;
         //XextendsXimplementsiX x5 = o.o1;
         //<? extends iX> moze przyjac wszystko co dziedziczy int. iX
@@ -35,5 +38,7 @@ public class X4<T extends iX> {
     public static void main(String[] args) {
         X4<?> test = new X4<>(new XimplementsiX());
         test.metoda2(test);
+        X4<XextendsXimplementsiX> test2 = new X4<>(new XextendsXimplementsiX());
+        test2.metoda2(test2);
     }
 }
