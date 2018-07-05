@@ -19,6 +19,13 @@ public class X4<T extends iX> {
     public void metoda2(X4<? extends iX>o){
         Object x2 = o.o1;
         iX x = o.o1;
+        //XimplementsiX x4 = o.o1;
+        //XextendsXimplementsiX x5 = o.o1;
+        //<? extends iX> moze przyjac wszystko co dziedziczy int. iX
+        // lecz przyjety obiekt moze byc teoretycznie tylko intefacu iX
+        // badz nizej (tylko klasa Object) - kompilator nie wie czy
+        // uzytkownik nie wysle typu wyzej niz bedzie przypisanie
+
         //X4 x3 = o.o1; //blad - X4 nie implementuje iX
         System.out.println(x.dajNapis());
 
