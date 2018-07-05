@@ -1,6 +1,6 @@
 package SamouczekProgramisty.Test1;
 
-public class X1 <T extends iX>implements iX {
+public class X1 <T extends iX> {
     private int xx1;
     private T zmienna;
     public X1(){
@@ -9,6 +9,7 @@ public class X1 <T extends iX>implements iX {
     public X1(T zmienna){
         this.zmienna=zmienna;
     }
+
 //    public X1(int xx1){
 //        this.xx1=xx1;
 //    }
@@ -18,8 +19,8 @@ public class X1 <T extends iX>implements iX {
 //        System.out.println("konstuktor z 1 param klasy nadrzednej");
 //    }
 
-    @Override
+
     public String dajNapis() {
-        return "X1";
+        return zmienna.dajNapis();
     }
 }

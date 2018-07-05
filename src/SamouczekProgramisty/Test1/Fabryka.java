@@ -4,10 +4,10 @@ public class Fabryka {
     public static void main(String[] args) {
 
         X1<X1Rozszerzenie> xR = new X1<>(new X1Rozszerzenie());
-        X1<X2> x2 = new X1<>(new X2());
+        System.out.println(xR.dajNapis());
 
         X3<Object> o1 = new X3<>(new Object());
-        X1 testRef = new X2();
+        //X1 testRef = new X2();
         new X2().go(8);
         new X2().metoda();
         for (int i = 0; i < 3; i++) {
