@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="693" column="13" selection-start-line="693" selection-start-column="13" selection-end-line="693" selection-end-column="13" />
+            <state relative-caret-position="-13">
+              <caret line="669" column="18" selection-start-line="669" selection-start-column="18" selection-end-line="669" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#20776#20777#0" expanded="true" />
@@ -47,6 +46,8 @@
                 <element signature="e#22223#22224#0" expanded="true" />
                 <element signature="e#22564#22565#0" expanded="true" />
                 <element signature="e#22626#22627#0" expanded="true" />
+                <element signature="e#23377#23378#0" expanded="true" />
+                <element signature="e#23431#23432#0" expanded="true" />
                 <element signature="e#23468#23469#0" expanded="true" />
                 <element signature="e#23514#23515#0" expanded="true" />
               </folding>
@@ -418,20 +419,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00460" summary="SanouczekProgramisty Typy Generyczne 44">
-      <created>1530563323097</created>
-      <option name="number" value="00460" />
-      <option name="presentableId" value="LOCAL-00460" />
-      <option name="project" value="LOCAL" />
-      <updated>1530563323097</updated>
-    </task>
-    <task id="LOCAL-00461" summary="SanouczekProgramisty Typy Generyczne 45">
-      <created>1530617808885</created>
-      <option name="number" value="00461" />
-      <option name="presentableId" value="LOCAL-00461" />
-      <option name="project" value="LOCAL" />
-      <updated>1530617808887</updated>
-    </task>
     <task id="LOCAL-00462" summary="SanouczekProgramisty Typy Generyczne 46">
       <created>1530618036320</created>
       <option name="number" value="00462" />
@@ -761,7 +748,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530794262989</updated>
     </task>
-    <option name="localTasksCounter" value="509" />
+    <task id="LOCAL-00509" summary="SanouczekProgramisty Typy Generyczne 92">
+      <created>1530795666544</created>
+      <option name="number" value="00509" />
+      <option name="presentableId" value="LOCAL-00509" />
+      <option name="project" value="LOCAL" />
+      <updated>1530795666544</updated>
+    </task>
+    <task id="LOCAL-00510" summary="SanouczekProgramisty Typy Generyczne 93">
+      <created>1530795695678</created>
+      <option name="number" value="00510" />
+      <option name="presentableId" value="LOCAL-00510" />
+      <option name="project" value="LOCAL" />
+      <updated>1530795695678</updated>
+    </task>
+    <option name="localTasksCounter" value="511" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -830,8 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 67" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 68" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 69" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 70" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 71" />
@@ -855,7 +854,9 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 89" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 90" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 91" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 91" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 92" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 93" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 93" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1205,8 +1206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="693" column="13" selection-start-line="693" selection-start-column="13" selection-end-line="693" selection-end-column="13" />
+        <state relative-caret-position="-13">
+          <caret line="669" column="18" selection-start-line="669" selection-start-column="18" selection-end-line="669" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#20776#20777#0" expanded="true" />
@@ -1217,6 +1218,8 @@
             <element signature="e#22223#22224#0" expanded="true" />
             <element signature="e#22564#22565#0" expanded="true" />
             <element signature="e#22626#22627#0" expanded="true" />
+            <element signature="e#23377#23378#0" expanded="true" />
+            <element signature="e#23431#23432#0" expanded="true" />
             <element signature="e#23468#23469#0" expanded="true" />
             <element signature="e#23514#23515#0" expanded="true" />
           </folding>
