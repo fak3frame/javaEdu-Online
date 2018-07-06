@@ -654,7 +654,6 @@ public class Wstep {
         //Parametryzujac
         InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
         pudelko2.zmienna = null;
-
         //pudelko2.zmienna = "costam";
         //pudelko3.zmienna = new Apple();
         //Klasa parametryzowana <?> - jej pola typu tego parametru moga
