@@ -666,7 +666,7 @@ public class Wstep {
         //f(klasa<? extends Figure> obiekt) - “upper bound”
         //W takim przypadku moze przyjac tylko obekt klasy figura badz
         // dziedziczaca ja
-        //f(klasa<Figura> obiekt) - w takim przypadku moge dac tylko parametryzowany
+        //f(klasa<Figura> obiekt) - W takim przypadku moge dac tylko parametryzowany
         // obiekt klasy Figura
         class InnePudelko3<T>{
             private T zmienna;
