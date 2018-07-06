@@ -679,6 +679,7 @@ public class Wstep {
                 this.zmienna = zmienna;
             }
             public void metoda1(InnePudelko3<? extends Figura> obiekt){
+                Object
                 Figura f = obiekt.getZmienna();
                 //obiekt.setZmienna(new Prostokat());
                 //blad przypisania wartosci ??!!
