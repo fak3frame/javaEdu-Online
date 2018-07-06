@@ -493,7 +493,7 @@ public class Wstep {
         BoxOnSteroids<Orange> BoxOnSteroidsOrange = new BoxOnSteroids<>(new Orange());
 
         Orange fruit = BoxOnSteroidsOrange.getFruit();
-        //moge skorzystac z metody bez rzutowania!
+        //Moge skorzystac z metody bez rzutowania!
 
 
         BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
