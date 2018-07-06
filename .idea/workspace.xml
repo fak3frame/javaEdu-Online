@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +25,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
+            <state relative-caret-position="509">
+              <caret line="689" column="19" selection-start-line="689" selection-start-column="19" selection-end-line="689" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#23553#23554#0" expanded="true" />
@@ -361,48 +361,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00495" summary="SanouczekProgramisty Typy Generyczne 78">
-      <created>1530713160940</created>
-      <option name="number" value="00495" />
-      <option name="presentableId" value="LOCAL-00495" />
-      <option name="project" value="LOCAL" />
-      <updated>1530713160940</updated>
-    </task>
-    <task id="LOCAL-00496" summary="SanouczekProgramisty Typy Generyczne 79">
-      <created>1530713219978</created>
-      <option name="number" value="00496" />
-      <option name="presentableId" value="LOCAL-00496" />
-      <option name="project" value="LOCAL" />
-      <updated>1530713219978</updated>
-    </task>
-    <task id="LOCAL-00497" summary="SanouczekProgramisty Typy Generyczne 80">
-      <created>1530713423578</created>
-      <option name="number" value="00497" />
-      <option name="presentableId" value="LOCAL-00497" />
-      <option name="project" value="LOCAL" />
-      <updated>1530713423578</updated>
-    </task>
-    <task id="LOCAL-00498" summary="SanouczekProgramisty Typy Generyczne 81">
-      <created>1530713438040</created>
-      <option name="number" value="00498" />
-      <option name="presentableId" value="LOCAL-00498" />
-      <option name="project" value="LOCAL" />
-      <updated>1530713438040</updated>
-    </task>
-    <task id="LOCAL-00499" summary="SanouczekProgramisty Typy Generyczne 82">
-      <created>1530713579829</created>
-      <option name="number" value="00499" />
-      <option name="presentableId" value="LOCAL-00499" />
-      <option name="project" value="LOCAL" />
-      <updated>1530713579829</updated>
-    </task>
-    <task id="LOCAL-00500" summary="SanouczekProgramisty Typy Generyczne 83">
-      <created>1530713616386</created>
-      <option name="number" value="00500" />
-      <option name="presentableId" value="LOCAL-00500" />
-      <option name="project" value="LOCAL" />
-      <updated>1530713616386</updated>
-    </task>
     <task id="LOCAL-00501" summary="SanouczekProgramisty Typy Generyczne 84">
       <created>1530791124359</created>
       <option name="number" value="00501" />
@@ -704,7 +662,49 @@
       <option name="project" value="LOCAL" />
       <updated>1530913750351</updated>
     </task>
-    <option name="localTasksCounter" value="544" />
+    <task id="LOCAL-00544" summary="SanouczekProgramisty Typy Generyczne 128">
+      <created>1530914008371</created>
+      <option name="number" value="00544" />
+      <option name="presentableId" value="LOCAL-00544" />
+      <option name="project" value="LOCAL" />
+      <updated>1530914008371</updated>
+    </task>
+    <task id="LOCAL-00545" summary="SanouczekProgramisty Typy Generyczne 129">
+      <created>1530914080404</created>
+      <option name="number" value="00545" />
+      <option name="presentableId" value="LOCAL-00545" />
+      <option name="project" value="LOCAL" />
+      <updated>1530914080404</updated>
+    </task>
+    <task id="LOCAL-00546" summary="SanouczekProgramisty Typy Generyczne 130">
+      <created>1530914123983</created>
+      <option name="number" value="00546" />
+      <option name="presentableId" value="LOCAL-00546" />
+      <option name="project" value="LOCAL" />
+      <updated>1530914123983</updated>
+    </task>
+    <task id="LOCAL-00547" summary="SanouczekProgramisty Typy Generyczne 131">
+      <created>1530914152168</created>
+      <option name="number" value="00547" />
+      <option name="presentableId" value="LOCAL-00547" />
+      <option name="project" value="LOCAL" />
+      <updated>1530914152168</updated>
+    </task>
+    <task id="LOCAL-00548" summary="SanouczekProgramisty Typy Generyczne 132">
+      <created>1530914176363</created>
+      <option name="number" value="00548" />
+      <option name="presentableId" value="LOCAL-00548" />
+      <option name="project" value="LOCAL" />
+      <updated>1530914176363</updated>
+    </task>
+    <task id="LOCAL-00549" summary="SanouczekProgramisty Typy Generyczne 133">
+      <created>1530914233951</created>
+      <option name="number" value="00549" />
+      <option name="presentableId" value="LOCAL-00549" />
+      <option name="project" value="LOCAL" />
+      <updated>1530914233951</updated>
+    </task>
+    <option name="localTasksCounter" value="550" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -773,12 +773,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 103" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 104" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 105" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 106" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 107" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 108" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 109" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 110" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 111" />
@@ -798,7 +792,13 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 125" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 126" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 127" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 127" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 128" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 129" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 130" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 131" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 132" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 133" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 133" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1150,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
+        <state relative-caret-position="509">
+          <caret line="689" column="19" selection-start-line="689" selection-start-column="19" selection-end-line="689" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#23553#23554#0" expanded="true" />
