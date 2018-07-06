@@ -688,7 +688,7 @@ public class Wstep {
                 //obiekt.setZmienna(new Prostokat());
                 //Blad przypisania wartosci
                 // moze przyjac tylko null
-                //zmienna lokalna "obiekt" teoretycznie moze byc tylko typu
+                //Zmienna lokalna "obiekt" teoretycznie moze byc tylko typu
                 // Figura a nie "wyzej" wiec nie moge przypisac do tej zmiennej
                 // Prostokatu lub kwadratu
             }
