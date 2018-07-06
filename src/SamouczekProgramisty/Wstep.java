@@ -679,14 +679,17 @@ public class Wstep {
                 this.zmienna = zmienna;
             }
             public void metoda1(InnePudelko3<? extends Figura> obiekt){
-                //zmienna lokalna "obiekt" teoretycznie moze byc tylko typu
-                // Figura a nie "wyzej" wiec nie moge przypisac do tej zmiennej
-                // Prostokatu lub kwadratu
+                //Zmienna tymczasowa obiekt moze byc teoretycznie najwyzej typu
+                // figura wiec moge przypisac go tylko do klasy Figura lub "nizej"
+                // czyli tylko Object
                 Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
                 //obiekt.setZmienna(new Prostokat());
-                //blad przypisania wartosci ??!!
+                //blad przypisania wartosci
                 //moze przyjac tylko null
+                //zmienna lokalna "obiekt" teoretycznie moze byc tylko typu
+                // Figura a nie "wyzej" wiec nie moge przypisac do tej zmiennej
+                // Prostokatu lub kwadratu
             }
             public void metoda2(InnePudelko3<Figura> obiekt){
                 Figura f = obiekt.getZmienna();
