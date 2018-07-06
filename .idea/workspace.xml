@@ -225,10 +225,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="616" />
-    <option name="width" value="1812" />
-    <option name="height" value="1447" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1394" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -295,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.X4">
+  <component name="RunManager" selected="Application.Wstep">
     <configuration name="ArrayFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.ArrayFactory" />
       <module name="javaStartMojSkrypt" />
@@ -401,9 +402,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.X4" />
         <item itemvalue="Application.Fabryka" />
-        <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.X2" />
         <item itemvalue="Application.ArrayFactory" />
       </list>
