@@ -875,7 +875,6 @@ public class Wstep {
 
 
 
-
     static boolean czyDuza(int liczba){
         return liczba>100;
     }
