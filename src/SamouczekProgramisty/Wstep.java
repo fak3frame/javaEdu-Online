@@ -656,6 +656,7 @@ public class Wstep {
         pudelko2.zmienna = null;
         //pudelko2.zmienna = "costam";
         //pudelko3.zmienna = new Apple();
+
         //Klasa parametryzowana <?> - jej pola typu tego parametru moga
         // przyjac tylko null!! i moge je przypisac do pol typu Object
         // poniewaz <?> jest typem nieokreslonym klasy a kazda klasa
