@@ -447,7 +447,7 @@ public class Wstep {
         }
 
         class FruitBox {
-            private Object fruit; //aby moc przyjac obiekt kazdej klasy
+            private Object fruit; //Aby moc przyjac obiekt kazdej klasy
             // (apple/Orange)
             // wykorzustuje nadklase kazdej klasy (Object)
             // ale wszystkie metody na jego obiekcie bede musial rzuotwac
