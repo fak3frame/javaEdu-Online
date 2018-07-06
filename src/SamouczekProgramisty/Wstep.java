@@ -646,10 +646,15 @@ public class Wstep {
                 metoda1(new InnePudelko2<>(new Object()));
             }
         }
+        InnePudelko2<Object> pudelko4 = new InnePudelko2<>(new Object());
+        InnePudelko2<Apple> pudelko5 = new InnePudelko2<>(new Apple());
+        pudelko5.zmienna = new Apple();
+
         InnePudelko2<?> pudelko3 = new InnePudelko2<>(new Apple());
         //Parametryzujac
         InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
         pudelko2.zmienna = null;
+
         //pudelko2.zmienna = "costam";
         //pudelko3.zmienna = new Apple();
         //Klasa parametryzowana <?> - jej pola typu tego parametru moga
