@@ -599,7 +599,7 @@ public class Wstep {
         pudelkoFigur<Prostokat> p2 = new pudelkoFigur<>(new Kwadrat());
         //Ale po mimo tego ze parametryzuje go typem Prostokat to mege przypisac
         // obiekt Kwadrat poniwaz dziedziczy
-        System.out.println("p2 daj nazwe: "+p2.dajNazwe());//da kwadrat tylko
+        System.out.println("p2 daj nazwe: "+p2.dajNazwe());//Da kwadrat tylko
         // dlatego ze metoda Prostokata jest nadpisywana
         System.out.println(p2.getClass()); //da pudelkoFigur tylko
 
