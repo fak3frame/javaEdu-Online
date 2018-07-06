@@ -686,8 +686,8 @@ public class Wstep {
                 Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
                 //obiekt.setZmienna(new Prostokat());
-                //blad przypisania wartosci
-                //moze przyjac tylko null
+                //Blad przypisania wartosci
+                // moze przyjac tylko null
                 //zmienna lokalna "obiekt" teoretycznie moze byc tylko typu
                 // Figura a nie "wyzej" wiec nie moge przypisac do tej zmiennej
                 // Prostokatu lub kwadratu
