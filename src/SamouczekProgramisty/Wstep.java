@@ -650,7 +650,7 @@ public class Wstep {
         InnePudelko2<Apple> pudelko5 = new InnePudelko2<>(new Apple());
         pudelko5.zmienna = new Apple();
 
-        //Parametryzujac
+        //Parametryzujac <?>
         InnePudelko2<?> pudelko3 = new InnePudelko2<>(new Apple());
         InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
         pudelko2.zmienna = null;
