@@ -25,6 +25,7 @@ public class X4<T extends iX> {
 
         Object x2 = o.o1;
         iX x = o.o1;
+
         System.out.println(x.dajNapis());
         //XimplementsiX x4 = o.o1;
         //XextendsXimplementsiX x5 = o.o1;
