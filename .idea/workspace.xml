@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +25,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="597" column="54" selection-start-line="597" selection-start-column="54" selection-end-line="597" selection-end-column="54" />
+            <state relative-caret-position="351">
+              <caret line="634" column="8" selection-start-line="634" selection-start-column="8" selection-end-line="634" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#17910#17911#0" expanded="true" />
@@ -35,6 +35,8 @@
                 <element signature="e#18472#18473#0" expanded="true" />
                 <element signature="e#18507#18508#0" expanded="true" />
                 <element signature="e#18552#18553#0" expanded="true" />
+                <element signature="e#20776#20777#0" expanded="true" />
+                <element signature="e#20822#20823#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,13 +208,6 @@
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
               <item name="Test1" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Wstep.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -364,27 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00507" summary="SanouczekProgramisty Typy Generyczne 90">
-      <created>1530794080472</created>
-      <option name="number" value="00507" />
-      <option name="presentableId" value="LOCAL-00507" />
-      <option name="project" value="LOCAL" />
-      <updated>1530794080472</updated>
-    </task>
-    <task id="LOCAL-00508" summary="SanouczekProgramisty Typy Generyczne 91">
-      <created>1530794262989</created>
-      <option name="number" value="00508" />
-      <option name="presentableId" value="LOCAL-00508" />
-      <option name="project" value="LOCAL" />
-      <updated>1530794262989</updated>
-    </task>
-    <task id="LOCAL-00509" summary="SanouczekProgramisty Typy Generyczne 92">
-      <created>1530795666544</created>
-      <option name="number" value="00509" />
-      <option name="presentableId" value="LOCAL-00509" />
-      <option name="project" value="LOCAL" />
-      <updated>1530795666544</updated>
     </task>
     <task id="LOCAL-00510" summary="SanouczekProgramisty Typy Generyczne 93">
       <created>1530795695678</created>
@@ -708,7 +682,28 @@
       <option name="project" value="LOCAL" />
       <updated>1530960397353</updated>
     </task>
-    <option name="localTasksCounter" value="556" />
+    <task id="LOCAL-00556" summary="SanouczekProgramisty Typy Generyczne 140">
+      <created>1530960576158</created>
+      <option name="number" value="00556" />
+      <option name="presentableId" value="LOCAL-00556" />
+      <option name="project" value="LOCAL" />
+      <updated>1530960576158</updated>
+    </task>
+    <task id="LOCAL-00557" summary="SanouczekProgramisty Typy Generyczne 141">
+      <created>1530960635977</created>
+      <option name="number" value="00557" />
+      <option name="presentableId" value="LOCAL-00557" />
+      <option name="project" value="LOCAL" />
+      <updated>1530960635978</updated>
+    </task>
+    <task id="LOCAL-00558" summary="SanouczekProgramisty Typy Generyczne 142">
+      <created>1530960806734</created>
+      <option name="number" value="00558" />
+      <option name="presentableId" value="LOCAL-00558" />
+      <option name="project" value="LOCAL" />
+      <updated>1530960806734</updated>
+    </task>
+    <option name="localTasksCounter" value="559" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -717,6 +712,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3133583" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -727,7 +723,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21770681" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21770681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -741,7 +737,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3133583" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -777,9 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 115" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 116" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 117" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 118" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 119" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 120" />
@@ -802,7 +794,10 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 137" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 138" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 139" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 139" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 140" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 141" />
+    <MESSAGE value="SanouczekProgramisty Typy Generyczne 142" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typy Generyczne 142" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1109,6 +1104,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,6 +1115,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,8 +1149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="597" column="54" selection-start-line="597" selection-start-column="54" selection-end-line="597" selection-end-column="54" />
+        <state relative-caret-position="351">
+          <caret line="634" column="8" selection-start-line="634" selection-start-column="8" selection-end-line="634" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#17910#17911#0" expanded="true" />
@@ -1156,6 +1159,8 @@
             <element signature="e#18472#18473#0" expanded="true" />
             <element signature="e#18507#18508#0" expanded="true" />
             <element signature="e#18552#18553#0" expanded="true" />
+            <element signature="e#20776#20777#0" expanded="true" />
+            <element signature="e#20822#20823#0" expanded="true" />
           </folding>
         </state>
       </provider>
