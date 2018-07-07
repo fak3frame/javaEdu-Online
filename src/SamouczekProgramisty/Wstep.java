@@ -710,6 +710,9 @@ public class Wstep {
                 Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
                 Kwadrat k = (Kwadrat) obiekt.getZmienna();
+                //Musze rzutowac poniewaz nie mam pewnosci czy nie przysle
+                // np Figury
+
                 //obiekt.setZmienna(new Prostokat());
                 //Blad przypisania wartosci
                 // moze przyjac tylko null
