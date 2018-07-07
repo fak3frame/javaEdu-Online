@@ -757,18 +757,19 @@ public class Wstep {
                 this.zmienna = zmienna;
             }
             public void metoda1(InnePudelko4<? super Prostokat> obiekt){
-                Object p =  obiekt.zmienna;//tylko dla klasy Object mam
+                Object o =  obiekt.zmienna;//tylko dla klasy Object mam
                 // pewnosc ze nie zostanie przyslane nic wyzej !!
+                Prostokat p = (Prostokat) obiekt.zmienna;
+                //Uzytkosnik moze wyslac typ Object !!
                 Kwadrat k = (Kwadrat) obiekt.zmienna;
-                //musze rzutowac bo kompilator nie wie co wysle z rodziny
-                // Prostokatu
+
                 obiekt.setZmienna(new Prostokat());
                 obiekt.setZmienna(new Kwadrat());
+                //Moge przypisac poniewaz przyslany typ na pewno bedzie
+                // wyzej niz klasy z rodziny Prostokatu
                 //obiekt.setZmienna(new Kolo()); //inny typ
                 //obiekt.setZmienna(new Object()); //klasa wyzej
                 obiekt.setZmienna(null);
-                //moge przypisac do obiektu wszystko co dziedzieczy po
-                // prostokacie (czyli odwrotnie - w gore)
             }
         }
         InnePudelko4<Prostokat> test2 = new InnePudelko4<>(new Prostokat());
