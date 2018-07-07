@@ -821,6 +821,8 @@ public class Wstep {
         String napis1 = "test";
         String napis2 = "test";
         String napis3 = new String("test");
+        //Tutaj rezerwuje specjalnie oddzielnie miejsce w pamieci
+
         System.out.println("Porownanie napis1 i napis2: "+(napis1==napis2));
         //Pamietam o nawiasie bo inaczej doda moj "" do napis1 a nastepnie
         // porowna z napis2
@@ -829,13 +831,57 @@ public class Wstep {
         //Porownujac zmienne obiektowe poprzez == porownuje ich adresy!!
 
 
-        //METODA EQUALS
+        //METODA EQUALS i HASHCODE
         /*
         Jest ona w klasie Object wiec mozemy ja wywolac na kazdym obiekcie ze
          wzgledu na dziedziczenie kazdej klasy z Object
         Domyslna implementacja metody equals zachowuje sie jak ==
-
          */
+        class Krzeslo{
+            String producent;
+            int dataProdukcji;
+            double waga;
+            Krzeslo(String producent, int dataProdukcji, double waga){
+                this.producent = producent;
+                this.dataProdukcji = dataProdukcji;
+                this.waga = waga;
+            }
+            @Override
+            public boolean equals(Object obj) {
+                if(obj == null)
+                    return false;
+                //Zamiast sprawdzania instance of moge sprawdzic czy metoda
+                // getClass() wywolana na obu obiektach zwroci ta sama
+                // wartosc
+                //if(obj.getClass() != this.getClass())
+                //    return false;
+                //Musze zrobic to porownanie aby miec pewnosc czy nie zostanie
+                // wyrzucony wyjatek ClassCastException
+                if(obj instanceof  Krzeslo){
+                    Krzeslo k = (Krzeslo)obj;
+                    return this.producent.equals(k.producent) &&
+                            this.dataProdukcji==k.dataProdukcji &&
+                            Double.compare(this.waga, k.waga)==0;
+                            //Metoda compare z klasy double zwraca
+                            // 0 gdy oba sa rowne
+                }
+                else return false;
+            }
+            @Override
+            public int hashCode() {
+                return Objects.hash(producent,dataProdukcji,waga);
+                //W nawiasie wpisuje zmienne do sprawdzenia
+                //Moge takze pomozyc wybrane pola przez liczbe pierwsza i
+                // dodac do siebie
+                //retrun 17*producent.hashCode()+7*dataProdukcji.hashCode();
+            }
+        }
+        Krzeslo k1 = new Krzeslo("BRW", 2010, 12.5);
+        Krzeslo k2 = new Krzeslo("BRW", 2010, 12.5);
+        Krzeslo k3 = new Krzeslo("BRW", 2010, 13);
+        System.out.println("Porownuje krzeslo k1 z k2: "+k1.equals(k2));
+        System.out.println("Porownuje krzeslo k2 z k3: "+k2.equals(k3));
+        System.out.println("Porownuje krzeslo k1 z k3: "+k1.equals(k3));
 
 
 
