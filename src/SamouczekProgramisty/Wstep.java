@@ -682,9 +682,9 @@ public class Wstep {
 
 
         //f(klasa<? extends Figure> obiekt) - “upper bound”
-        //W takim przypadku moze przyjac tylko obekt klasy figura badz
+        //W takim przypadku moze przyjac tylko obekt klasy Figura badz
         // dziedziczaca ja bezposrenio lub posrenio
-        // InnePudelko3<Prostokat>
+        // InnePudelko3<Prostokat>, InnePudelko3<Kwadrat> czyli w dol
 
         //f(klasa<Figura> obiekt) - W takim przypadku moge dac tylko parametryzowany
         // obiekt klasy Figura - InnePudelko3<Figura>
@@ -743,8 +743,8 @@ public class Wstep {
 
 
         //f(klasa<? super Prostokat> obiekt) - “lower bound”
-        //Ta metoda moze przyjac tylko obiekty paramtryzowane w dol
-        // tzn Prostokat -> Kwadrat
+        //Ta metoda moze operwac tylko na obiektach typu klasy WYZEJ Prostokatu
+        // tzn InnePudelko4<Object>,<Figura>,<Prostokat>
         class InnePudelko4<T> {
             private T zmienna;
             public InnePudelko4(T zmienna) {
@@ -757,7 +757,8 @@ public class Wstep {
                 this.zmienna = zmienna;
             }
             public void metoda1(InnePudelko4<? super Prostokat> obiekt){
-                Prostokat p = (Prostokat) obiekt.zmienna;//??!!
+                Object p =  obiekt.zmienna;//tylko dla klasy Object mam
+                // pewnosc ze nie zostanie przyslane nic wyzej !!
                 Kwadrat k = (Kwadrat) obiekt.zmienna;
                 //musze rzutowac bo kompilator nie wie co wysle z rodziny
                 // Prostokatu
@@ -773,16 +774,16 @@ public class Wstep {
         InnePudelko4<Prostokat> test2 = new InnePudelko4<>(new Prostokat());
 
         InnePudelko4<Object>x9 = new InnePudelko4<>(new Object());
-        InnePudelko4<Figura>x5 = new InnePudelko4<>(new Prostokat());
+        InnePudelko4<Figura>x10 = new InnePudelko4<>(new Prostokat());
         InnePudelko4<Prostokat>x6 = new InnePudelko4<>(new Prostokat());
         InnePudelko4<Prostokat>x7 = new InnePudelko4<>(new Kwadrat());
         InnePudelko4<Kwadrat>x8 = new InnePudelko4<>(new Kwadrat());
 
         test2.metoda1(x9);
-        test2.metoda1(x5);
+        test2.metoda1(x10);
         test2.metoda1(x6);
         test2.metoda1(x7);
-        //test2.metoda1(x8); // ??
+        //test2.metoda1(x8); // klasa WYZEJ
 
 
 
