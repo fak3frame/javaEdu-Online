@@ -669,7 +669,10 @@ public class Wstep {
         InnePudelko2<?> pudelko2 = new InnePudelko2<>("napis");
         pudelko2.zmienna = null;
         //pudelko2.zmienna = "costam";
-        //pudelko3.zmienna = new Apple();
+
+        pudelko3.zmienna = null;
+        //pudelko3.zmienna = new Apple(); //nawet jesli jest w nim
+        // Apple
 
         //Klasa parametryzowana <?> - jej pola typu tego parametru moga
         // przyjac tylko null!! i moge je przypisac do pol typu Object
