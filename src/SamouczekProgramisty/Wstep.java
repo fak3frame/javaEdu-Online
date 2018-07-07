@@ -718,11 +718,13 @@ public class Wstep {
                 // miec pewnosc przypisania dobrej referncji
             }
             public void metoda2(InnePudelko3<Figura> obiekt){
+                Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
             }
         }
         InnePudelko3<Figura> test = new InnePudelko3<>(new Prostokat());
 
+        //<? extends Figura> moze przyjac klasy dziedziczace Figure
         InnePudelko3<Figura> x2 = new InnePudelko3<>(new Kwadrat());
         InnePudelko3<Prostokat> x3 = new InnePudelko3<>(new Kwadrat());
         InnePudelko3<Kwadrat> x4 = new InnePudelko3<>(new Kwadrat());
@@ -733,6 +735,7 @@ public class Wstep {
 
         test.metoda2(x2);
         //test.metoda2(x3); - blad moze byc tylko typ parametru figura
+        // (InnePudelko3<Figura>)
 
 
         //f(klasa<? super Prostokat> obiekt) - “lower bound”
