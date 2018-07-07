@@ -648,7 +648,7 @@ public class Wstep {
                 //Nie moge dac typu wyzej np Apple poniewaz
                 // gdy uzytkownik poda Apple bedzie zgodne lecz
                 // gdy podam String juz wystapi blad !
-                System.out.println(o);
+                System.out.println("daj obiekt metody1: "+o);
             }
             public void uzyjeMetody1(){
                 metoda1(new InnePudelko2<>(new Apple()));
@@ -660,6 +660,8 @@ public class Wstep {
         }
         InnePudelko2<Object> pudelko4 = new InnePudelko2<>(new Object());
         InnePudelko2<Apple> pudelko5 = new InnePudelko2<>(new Apple());
+        pudelko4.zmienna = new Apple(); //poprawne dla referencji Object
+        // poniewaz jest ona wyzej
         pudelko5.zmienna = new Apple();
 
         //Parametryzujac <?>
