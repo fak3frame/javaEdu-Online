@@ -503,14 +503,16 @@ public class Wstep {
         BoxOnSteroids<Orange> boxWithOrange = boxWithoutType;
         //Przypisuje obiekt Apple do typu generycznego Orange aby zmienic go
         // z Object na Apple lub Orange
-        //Jest to mozliwe - ale przy korzystaniu z metod wyrzuci
-        // wyjatek
+        //Jest to mozliwe - lecz gdy bede chcial przypisac obiekt do
+        // referencji innej klasy niz jest jest obiekt wyrzuci
+        // wyjatek ClassCastException
 
         Apple apple = boxWithApple.getFruit();
         //Przypisuje zmieniony boxWithoutType z obiektem Apple typu Object
         // na boxWithApple z typem Apple
 
         //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
+        //Jest blad poniewaz boxWithOrange posiada obiekt typu Apple
 
 
         //Zagniezdzone klasy generyczne
