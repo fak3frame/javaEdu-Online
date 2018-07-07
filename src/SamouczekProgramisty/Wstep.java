@@ -727,10 +727,12 @@ public class Wstep {
         InnePudelko3<Figura> test = new InnePudelko3<>(new Prostokat());
 
         //<? extends Figura> moze przyjac klasy dziedziczace Figure
+        InnePudelko3<Object> x5 = new InnePudelko3<>(new Object());
         InnePudelko3<Figura> x2 = new InnePudelko3<>(new Kwadrat());
         InnePudelko3<Prostokat> x3 = new InnePudelko3<>(new Kwadrat());
         InnePudelko3<Kwadrat> x4 = new InnePudelko3<>(new Kwadrat());
 
+        //test.metoda2(x5); //blad - KLASA WYZEJ
         test.metoda1(x2);
         test.metoda1(x3);
         test.metoda1(x4);
@@ -770,11 +772,13 @@ public class Wstep {
         }
         InnePudelko4<Prostokat> test2 = new InnePudelko4<>(new Prostokat());
 
+        InnePudelko4<Object>x9 = new InnePudelko4<>(new Object());
         InnePudelko4<Figura>x5 = new InnePudelko4<>(new Prostokat());
         InnePudelko4<Prostokat>x6 = new InnePudelko4<>(new Prostokat());
         InnePudelko4<Prostokat>x7 = new InnePudelko4<>(new Kwadrat());
         InnePudelko4<Kwadrat>x8 = new InnePudelko4<>(new Kwadrat());
 
+        test2.metoda1(x9);
         test2.metoda1(x5);
         test2.metoda1(x6);
         test2.metoda1(x7);
