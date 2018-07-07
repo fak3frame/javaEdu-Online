@@ -709,13 +709,15 @@ public class Wstep {
                 // nie wie
                 Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
+                Kwadrat k = (Kwadrat) obiekt.getZmienna();
                 //obiekt.setZmienna(new Prostokat());
                 //Blad przypisania wartosci
                 // moze przyjac tylko null
                 //Zmienna lokalna "obiekt" TERETYCZNIE moze byc tylko typu
                 // Figura a nie "wyzej" wiec nie moge przypisac do tej zmiennej
                 // Prostokatu lub kwadratu a kompiltaor w metodzie musi
-                // miec pewnosc przypisania dobrej referncji
+                // miec pewnosc przypisania dobrej referncji CHYBA ze zrobie
+                // rzutowanie!
             }
             public void metoda2(InnePudelko3<Figura> obiekt){
                 Object o = obiekt.getZmienna();
@@ -753,6 +755,10 @@ public class Wstep {
                 this.zmienna = zmienna;
             }
             public void metoda1(InnePudelko4<? super Prostokat> obiekt){
+                Prostokat p = (Prostokat) obiekt.zmienna;//??!!
+                Kwadrat k = (Kwadrat) obiekt.zmienna;
+                //musze rzutowac bo kompilator nie wie co wysle z rodziny
+                // Prostokatu
                 obiekt.setZmienna(new Prostokat());
                 obiekt.setZmienna(new Kwadrat());
                 //obiekt.setZmienna(new Kolo()); //inny typ
