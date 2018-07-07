@@ -595,7 +595,7 @@ public class Wstep {
             }
         }
         Prostokat p1 = new Kwadrat();//moge bo rozszerza
-        pudelkoFigur<Prostokat> p3 = new pudelkoFigur<Prostokat>(new Prostokat());
+        pudelkoFigur<Prostokat> p3 = new pudelkoFigur<>(new Prostokat());
 
         //pudelkoFigur<Prostokat> p4 = new pudelkoFigur<Kwadrat>(new Kwadrat());
         //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
