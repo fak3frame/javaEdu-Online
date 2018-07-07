@@ -508,8 +508,9 @@ public class Wstep {
         // wyjatek ClassCastException
 
         Apple apple = boxWithApple.getFruit();
-        //Przypisuje zmieniony boxWithoutType z obiektem Apple typu Object
-        // na boxWithApple z typem Apple
+        //Przypisuje boxWithoutType z obiektem Apple typu Object
+        // na boxWithApple z typem Apple. Jest to poprawne poniwaz
+        // obiekt zawiera typ Apple
 
         //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
         //Jest blad poniewaz boxWithOrange posiada obiekt typu Apple
