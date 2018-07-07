@@ -600,6 +600,7 @@ public class Wstep {
         //pudelkoFigur<Prostokat> p4 = new pudelkoFigur<Kwadrat>(new Kwadrat());
         //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
         // nawet jesli rozszerza typ!!
+
         pudelkoFigur<Prostokat> p2 = new pudelkoFigur<>(new Kwadrat());
         //Ale po mimo tego ze parametryzuje go typem Prostokat to mege przypisac
         // obiekt Kwadrat poniwaz dziedziczy
