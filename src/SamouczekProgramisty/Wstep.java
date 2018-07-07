@@ -816,16 +816,26 @@ public class Wstep {
         //POROWNYWANIE OBIEKTOW
         /*
         String jest charakterystycznym obiektem poniewaz ta sama jego wartosc
-         jest alokowana w tym samym adresue
+         jest alokowana w tym samym adresue GDY PRZYPISUJE GO POPRZEZ =
          */
         String napis1 = "test";
         String napis2 = "test";
-        String napis3 = "testxxxxx";
+        String napis3 = new String("test");
         System.out.println("Porownanie napis1 i napis2: "+(napis1==napis2));
         //Pamietam o nawiasie bo inaczej doda moj "" do napis1 a nastepnie
-        // porowna
+        // porowna z napis2
+        System.out.println("Porownanie napis1 i napis3: "+(napis1==napis3));
 
-        System.out.println();
+        //Porownujac zmienne obiektowe poprzez == porownuje ich adresy!!
+
+
+        //METODA EQUALS
+        /*
+        Jest ona w klasie Object wiec mozemy ja wywolac na kazdym obiekcie ze
+         wzgledu na dziedziczenie kazdej klasy z Object
+        Domyslna implementacja metody equals zachowuje sie jak ==
+
+         */
 
 
 
