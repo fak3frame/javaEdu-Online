@@ -677,7 +677,8 @@ public class Wstep {
         //Klasa parametryzowana <?> - jej pola typu tego parametru moga
         // przyjac tylko null!! i moge je przypisac do pol typu Object
         // poniewaz <?> jest typem nieokreslonym klasy a kazda klasa
-        // dziedziczy po Object
+        // dziedziczy po Object a kompilator musi miec gwaracje w metodzie
+        // ze bede przypisywal referencje do wlasciwego typu
 
 
         //f(klasa<? extends Figure> obiekt) - “upper bound”
