@@ -628,7 +628,9 @@ public class Wstep {
         }
         InnePudelko<String> ip = new InnePudelko<>("cos");
         ip.powiedzCos();
-
+        InnePudelko<Apple> ip2 = new InnePudelko<>(new Apple());
+        ip2.powiedzCos();
+        //pokaza "moje SamouczekProgramisty.Wstep$1Apple@7921b0a2 jest super"
 
         //Metody z argumentami Generycznymi - wildcard
         class InnePudelko2<T>{
