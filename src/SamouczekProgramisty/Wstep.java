@@ -778,8 +778,7 @@ public class Wstep {
         test2.metoda1(x5);
         test2.metoda1(x6);
         test2.metoda1(x7);
-        //test2.metoda1(x8); // BLAD ograniczenie w dol od Prostokatu
-        // a kwadrat jest wyzej
+        //test2.metoda1(x8); // ??
 
 
 
