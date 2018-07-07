@@ -513,6 +513,7 @@ public class Wstep {
         //Orange orange = boxWithOrange.getFruit(); // wyjatek ClassCastException
 
 
+        //Zagniezdzone klasy generyczne
         class Pair<T, S> {
         private T first;
         private S second;
