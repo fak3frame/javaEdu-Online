@@ -539,7 +539,7 @@ public class Wstep {
 
 
         //Extends
-        /*
+        /* - implementacja na koncu
         interface Figura{
             String dajNazwe();
         }
