@@ -633,7 +633,7 @@ public class Wstep {
         //pokaza "moje SamouczekProgramisty.Wstep$1Apple@7921b0a2 jest super"
 
 
-        //Metody z argumentami Generycznymi - wildcard
+        //Metody z argumentami Generycznymi - WILDCARDS
         class InnePudelko2<T>{
             private T zmienna;
             InnePudelko2(T zmienna) {
@@ -643,7 +643,11 @@ public class Wstep {
                 Object o = pudelko2.zmienna;
                 //<?> parametryzujac moge tylko przypisac
                 // przyjety obiekt (pudelko2) tylko do typu
-                // Object
+                // Object poniewaz tylko on gwarantuje ze kazdy
+                // przyjety typ bedzie zgodny
+                //Nie moge dac typu wyzej np Apple poniewaz
+                // gdy uzytkownik poda Apple bedzie zgodne lecz
+                // gdy podam String juz wystapi blad !
                 System.out.println(o);
             }
             public void uzyjeMetody1(){
