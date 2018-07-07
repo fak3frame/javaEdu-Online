@@ -478,7 +478,7 @@ public class Wstep {
         }
 
         BoxOnSteroids<Apple> BoxOnSteroidsApple = new BoxOnSteroids<Apple>(new Apple());
-        //<T> jest parametrem - moze on przyjac tylko typ Obiejtowy
+        //<T> jest parametrem - moze on przyjac tylko typ Obiektowy
         //Parametryzuje typ generyczny T poprzez ustawienie go jako konkretnej
         // klasy np Apple
         //Uzywam typu generycznego aby nie powtrzac kodu jak w klasach
