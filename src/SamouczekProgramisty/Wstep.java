@@ -532,9 +532,9 @@ public class Wstep {
         }
     }
 
-        Pair<BoxOnSteroids<Orange>, BoxOnSteroids<Apple>> para = new Pair<>(
-                new BoxOnSteroids<>(new Orange()),
-                new BoxOnSteroids<>(new Apple())
+        Pair<BoxOnSteroids<Apple>,BoxOnSteroids<Orange>> para = new Pair<>(
+                new BoxOnSteroids<>(new Apple()),
+                new BoxOnSteroids<>(new Orange())
         );
 
 
