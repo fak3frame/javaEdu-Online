@@ -762,9 +762,12 @@ public class Wstep {
             public void metoda1(InnePudelko4<? super Prostokat> obiekt){
                 Object o =  obiekt.zmienna;//tylko dla klasy Object mam
                 // pewnosc ze nie zostanie przyslane nic wyzej !!
-                Prostokat p = (Prostokat) obiekt.zmienna;
-                //Uzytkosnik moze wyslac typ Object !!
-                Kwadrat k = (Kwadrat) obiekt.zmienna;
+
+                //Prostokat p = (Prostokat) obiekt.zmienna;
+                //Uzytkosnik moze wyslac typ Object wiec ew musialbym rzutowac!!
+                //WYRZUCI WYJATEK!!!
+                //Kwadrat k = (Kwadrat) obiekt.zmienna;
+                //Podownie tutaj
 
                 obiekt.setZmienna(new Prostokat());
                 obiekt.setZmienna(new Kwadrat());
@@ -789,6 +792,40 @@ public class Wstep {
         test2.metoda1(x7);
         //test2.metoda1(x8); // klasa WYZEJ
 
+
+
+        //POROWNYWANIE TYPOW PROSTYCH
+        /*
+        Sluzy do tego operato == lub !=
+
+        Operator +/-/* ma wiekszy priorytet niz ==
+        2+3==10 // najpierw doda a potem porowna
+
+        Nalezy nie laczyc operaci sumownia tekstu + i porownywania dlatego
+         ze pierwszenstwo mialoby dodawania a nie mozna tego zrobic z teksem
+         dletego ze porownywalibysmy String z int!!
+        "10 == 10: " + 10 == 10 // compilation error!
+        "10 == 10: " + (10 == 10)
+
+        Liczby zmienno przyecinkowe porownujemy poprzez odjecie
+         ich od siebie w wartosci bezwzglednej a nastepnie sprawdzenie czy
+         sa one wieksze od liczby 0.0..1 w zaleznosci od jakiej dokladnosci
+         chcemy
+        Math.abs(0.3 - (0.1 + 0.2)) < 0.000001)
+
+        //POROWNYWANIE OBIEKTOW
+        /*
+        String jest charakterystycznym obiektem poniewaz ta sama jego wartosc
+         jest alokowana w tym samym adresue
+         */
+        String napis1 = "test";
+        String napis2 = "test";
+        String napis3 = "testxxxxx";
+        System.out.println("Porownanie napis1 i napis2: "+(napis1==napis2));
+        //Pamietam o nawiasie bo inaczej doda moj "" do napis1 a nastepnie
+        // porowna
+
+        System.out.println();
 
 
 
