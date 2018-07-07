@@ -740,7 +740,7 @@ public class Wstep {
 
         //f(klasa<? super Prostokat> obiekt) - “lower bound”
         //Ta metoda moze przyjac tylko obiekty paramtryzowane w dol
-        // tzn Prostokat,Figura,Object
+        // tzn Prostokat -> Kwadrat
         class InnePudelko4<T> {
             private T zmienna;
             public InnePudelko4(T zmienna) {
@@ -754,9 +754,9 @@ public class Wstep {
             }
             public void metoda1(InnePudelko4<? super Prostokat> obiekt){
                 obiekt.setZmienna(new Prostokat());
-                obiekt.setZmienna(new Kwadrat());//??!!
-                //obiekt.setZmienna(new Kolo());
-                //obiekt.setZmienna(new Object());
+                obiekt.setZmienna(new Kwadrat());
+                //obiekt.setZmienna(new Kolo()); //inny typ
+                //obiekt.setZmienna(new Object()); //klasa wyzej
                 obiekt.setZmienna(null);
                 //moge przypisac do obiektu wszystko co dziedzieczy po
                 // prostokacie (czyli odwrotnie - w gore)
