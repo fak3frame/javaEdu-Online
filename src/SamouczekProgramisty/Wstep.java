@@ -712,9 +712,10 @@ public class Wstep {
                 //obiekt.setZmienna(new Prostokat());
                 //Blad przypisania wartosci
                 // moze przyjac tylko null
-                //Zmienna lokalna "obiekt" teoretycznie moze byc tylko typu
+                //Zmienna lokalna "obiekt" TERETYCZNIE moze byc tylko typu
                 // Figura a nie "wyzej" wiec nie moge przypisac do tej zmiennej
-                // Prostokatu lub kwadratu
+                // Prostokatu lub kwadratu a kompiltaor w metodzie musi
+                // miec pewnosc przypisania dobrej referncji
             }
             public void metoda2(InnePudelko3<Figura> obiekt){
                 Figura f = obiekt.getZmienna();
