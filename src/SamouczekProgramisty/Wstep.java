@@ -702,8 +702,11 @@ public class Wstep {
             }
             public void metoda1(InnePudelko3<? extends Figura> obiekt){
                 //Zmienna tymczasowa obiekt moze byc teoretycznie najwyzej typu
-                // figura wiec moge przypisac go tylko do klasy Figura lub "nizej"
-                // czyli tylko Object
+                // Figura wiec moge przypisac go tylko do klasy Figura lub "nizej"
+                // czyli tylko Object dlatego ze kompilator musi miec pewnosc
+                // ze przypisze w metodzie referencje do dobrego typu
+                // (moge wyslac Kwadrat ale i Figur) o czym kompilator
+                // nie wie
                 Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
                 //obiekt.setZmienna(new Prostokat());
