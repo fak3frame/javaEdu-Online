@@ -923,6 +923,11 @@ public class Wstep {
         int ostatnieWystapienie = lista1.lastIndexOf("kamil");
 
 
+        //Zbior
+        /*
+
+         */
+
 
 
 
