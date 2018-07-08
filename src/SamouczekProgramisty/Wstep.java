@@ -958,10 +958,13 @@ public class Wstep {
         //Metody:
         zbior1.add("kamil");
         zbior1.addAll(zbior2);
+        zbior1.remove("kamil");
         boolean czyZawiera2 = zbior1.contains("Kamil");
         boolean czyPusta2 = zbior1.isEmpty();
         int iloscElementow = zbior1.size();
 
+
+        //Mapy
 
 
 

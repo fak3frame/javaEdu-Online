@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="946" column="45" selection-start-line="946" selection-start-column="45" selection-end-line="946" selection-end-column="45" />
+            <state relative-caret-position="444">
+              <caret line="966" column="14" selection-start-line="966" selection-start-column="14" selection-end-line="966" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#26742#26743#0" expanded="true" />
@@ -366,34 +366,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00539" summary="SanouczekProgramisty Typy Generyczne 123">
-      <created>1530913348856</created>
-      <option name="number" value="00539" />
-      <option name="presentableId" value="LOCAL-00539" />
-      <option name="project" value="LOCAL" />
-      <updated>1530913348856</updated>
-    </task>
-    <task id="LOCAL-00540" summary="SanouczekProgramisty Typy Generyczne 124">
-      <created>1530913374721</created>
-      <option name="number" value="00540" />
-      <option name="presentableId" value="LOCAL-00540" />
-      <option name="project" value="LOCAL" />
-      <updated>1530913374721</updated>
-    </task>
-    <task id="LOCAL-00541" summary="SanouczekProgramisty Typy Generyczne 125">
-      <created>1530913522354</created>
-      <option name="number" value="00541" />
-      <option name="presentableId" value="LOCAL-00541" />
-      <option name="project" value="LOCAL" />
-      <updated>1530913522354</updated>
-    </task>
-    <task id="LOCAL-00542" summary="SanouczekProgramisty Typy Generyczne 126">
-      <created>1530913651909</created>
-      <option name="number" value="00542" />
-      <option name="presentableId" value="LOCAL-00542" />
-      <option name="project" value="LOCAL" />
-      <updated>1530913651910</updated>
-    </task>
     <task id="LOCAL-00543" summary="SanouczekProgramisty Typy Generyczne 127">
       <created>1530913750351</created>
       <option name="number" value="00543" />
@@ -709,7 +681,35 @@
       <option name="project" value="LOCAL" />
       <updated>1531055516733</updated>
     </task>
-    <option name="localTasksCounter" value="588" />
+    <task id="LOCAL-00588" summary="SanouczekProgramisty Kolekcje 12">
+      <created>1531056018940</created>
+      <option name="number" value="00588" />
+      <option name="presentableId" value="LOCAL-00588" />
+      <option name="project" value="LOCAL" />
+      <updated>1531056018940</updated>
+    </task>
+    <task id="LOCAL-00589" summary="SanouczekProgramisty Kolekcje 13">
+      <created>1531056040326</created>
+      <option name="number" value="00589" />
+      <option name="presentableId" value="LOCAL-00589" />
+      <option name="project" value="LOCAL" />
+      <updated>1531056040326</updated>
+    </task>
+    <task id="LOCAL-00590" summary="SanouczekProgramisty Kolekcje 14">
+      <created>1531056213450</created>
+      <option name="number" value="00590" />
+      <option name="presentableId" value="LOCAL-00590" />
+      <option name="project" value="LOCAL" />
+      <updated>1531056213450</updated>
+    </task>
+    <task id="LOCAL-00591" summary="SanouczekProgramisty Kolekcje 15">
+      <created>1531056438030</created>
+      <option name="number" value="00591" />
+      <option name="presentableId" value="LOCAL-00591" />
+      <option name="project" value="LOCAL" />
+      <updated>1531056438030</updated>
+    </task>
+    <option name="localTasksCounter" value="592" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -725,7 +725,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35955057" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35955057" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -778,10 +778,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 146" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 147" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 148" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 149" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 150" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 151" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 152" />
@@ -803,7 +799,11 @@
     <MESSAGE value="SanouczekProgramisty Kolekcje 9" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 10" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Kolekcje 11" />
+    <MESSAGE value="SanouczekProgramisty Kolekcje 12" />
+    <MESSAGE value="SanouczekProgramisty Kolekcje 13" />
+    <MESSAGE value="SanouczekProgramisty Kolekcje 14" />
+    <MESSAGE value="SanouczekProgramisty Kolekcje 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Kolekcje 15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -811,13 +811,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_1_Interface/MyAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrzydatneKlasy/ObjectMoj.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1145,10 +1138,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="946" column="45" selection-start-line="946" selection-start-column="45" selection-end-line="946" selection-end-column="45" />
+        <state relative-caret-position="444">
+          <caret line="966" column="14" selection-start-line="966" selection-start-column="14" selection-end-line="966" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#26742#26743#0" expanded="true" />
