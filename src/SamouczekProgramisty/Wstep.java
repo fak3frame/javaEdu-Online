@@ -117,6 +117,15 @@ public class Wstep {
                 imiona2.add(imie);
             }
         }while (!imie.equals("-"));
+
+        //lub samym while
+
+        while (true){
+            imie = wprowadz.nextLine();
+            if(imie.equals("-"))
+                break;
+            imiona2.add(imie)
+        }
     }    ////////////////////////
     }/////////////////////////////
 
