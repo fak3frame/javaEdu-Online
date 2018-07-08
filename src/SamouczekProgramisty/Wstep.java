@@ -901,12 +901,17 @@ public class Wstep {
          */
 
         //Metdoy:
-        List<String> lista1 = new LinkedList<>();
+        List<String> lista1 = new ArrayList<>(3);
 
-        lista1.add("kamil"); // dodanie elementu
-        lista1.addAll(lista1);// dodanie wszystkich elementow z jednej kolekcji
-        // do drugiej
-
+        //lista1.add("kamil"); // dodanie elementu
+        //lista1.addAll(lista1);// dodanie wszystkich elementow z jednej kolekcji
+        // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
+        // po drugiej
+        boolean czyZawiera = lista1.contains("kamil");// zwraca flage czt kolekcja
+        // zawiera dany element
+        boolean czyPusta = lista1.isEmpty();// zwraca flage czy lista jest pusta
+        int liczbaElementow = lista1.size();// zwraca liczbe elementow w liscie
+        // nie jaki jest rozmiar wstepny (w przypadku ArrayList)
 
 
 

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -24,11 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9145">
+              <caret line="1011" column="6" selection-start-line="1011" selection-start-column="6" selection-end-line="1011" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="858" column="55" selection-start-line="858" selection-start-column="55" selection-end-line="858" selection-end-column="55" />
+            <state relative-caret-position="405">
+              <caret line="913" column="42" selection-start-line="913" selection-start-column="42" selection-end-line="913" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#26742#26743#0" expanded="true" />
@@ -36,15 +44,6 @@
                 <element signature="e#26832#26833#0" expanded="true" />
                 <element signature="e#26878#26879#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="1011" column="6" selection-start-line="1011" selection-start-column="6" selection-end-line="1011" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -189,8 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,7 +217,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,20 +365,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00528" summary="SanouczekProgramisty Typy Generyczne 112">
-      <created>1530810935858</created>
-      <option name="number" value="00528" />
-      <option name="presentableId" value="LOCAL-00528" />
-      <option name="project" value="LOCAL" />
-      <updated>1530810935858</updated>
-    </task>
-    <task id="LOCAL-00529" summary="SanouczekProgramisty Typy Generyczne 113">
-      <created>1530811150427</created>
-      <option name="number" value="00529" />
-      <option name="presentableId" value="LOCAL-00529" />
-      <option name="project" value="LOCAL" />
-      <updated>1530811150474</updated>
     </task>
     <task id="LOCAL-00530" summary="SanouczekProgramisty Typy Generyczne 114">
       <created>1530811275773</created>
@@ -710,7 +695,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530972352687</updated>
     </task>
-    <option name="localTasksCounter" value="577" />
+    <task id="LOCAL-00577" summary="SanouczekProgramisty Kolekcje 1">
+      <created>1531053407242</created>
+      <option name="number" value="00577" />
+      <option name="presentableId" value="LOCAL-00577" />
+      <option name="project" value="LOCAL" />
+      <updated>1531053407243</updated>
+    </task>
+    <task id="LOCAL-00578" summary="SanouczekProgramisty Kolekcje 2">
+      <created>1531054083946</created>
+      <option name="number" value="00578" />
+      <option name="presentableId" value="LOCAL-00578" />
+      <option name="project" value="LOCAL" />
+      <updated>1531054083946</updated>
+    </task>
+    <option name="localTasksCounter" value="579" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -749,29 +748,29 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3287373" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36329588" />
       <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20863836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.36329588" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39950064" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.31585518" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3287373" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -779,8 +778,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 135" />
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 136" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 137" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 138" />
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 139" />
@@ -804,7 +801,9 @@
     <MESSAGE value="SanouczekProgramisty Typy Generyczne 157" />
     <MESSAGE value="SanouczekProgramisty Porownywanie 1" />
     <MESSAGE value="SanouczekProgramisty Porownywanie 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Porownywanie 2" />
+    <MESSAGE value="SanouczekProgramisty Kolekcje 1" />
+    <MESSAGE value="SanouczekProgramisty Kolekcje 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Kolekcje 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1141,15 +1140,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
+        <state relative-caret-position="9145">
           <caret line="1011" column="6" selection-start-line="1011" selection-start-column="6" selection-end-line="1011" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="858" column="55" selection-start-line="858" selection-start-column="55" selection-end-line="858" selection-end-column="55" />
+        <state relative-caret-position="405">
+          <caret line="913" column="42" selection-start-line="913" selection-start-column="42" selection-end-line="913" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#26742#26743#0" expanded="true" />
