@@ -884,6 +884,10 @@ public class Wstep {
         System.out.println("Porownuje krzeslo k1 z k3: "+k1.equals(k3));
 
 
+        //KOLEKCJE
+        /*
+
+         */
 
 
 
