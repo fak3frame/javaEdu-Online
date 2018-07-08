@@ -887,8 +887,8 @@ public class Wstep {
         //KOLEKCJE
         /*
         Kolekcja to sposob grupownia obiektow, jest ona struktura danych
-        Iterable -> Collection -> List,Set,Queue
-        Map
+        lang.Iterable -> util.Collection -> util.List, util.Set, util.Queue
+        util.Map
 
 
         //Lista
