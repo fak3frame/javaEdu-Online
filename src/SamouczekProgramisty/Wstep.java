@@ -4,10 +4,7 @@ import SamouczekProgramisty.Silnik.SilnikMoj;
 import jdk.nashorn.api.tree.ForInLoopTree;
 
 import javax.swing.*;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Wstep {
@@ -1081,7 +1078,12 @@ public class Wstep {
         int liczbowo = Integer.parseInt(napis);
         fileReader.close();
 
-
+        -DataOutputStream strumienWyjsciowy = new DataOutputStream(new FileOutputStream(lokalizacja2));
+        //FileOutputStream zapisuje dane bajt po bajcie
+        //DataOutputStream zapewnia bunarny zapis typow prymitywnych
+        strumienWyjsciowy.writeInt(12355);
+        //Ta metoda zapisze typy proste jak int w sposob binarny
+        strumienWyjsciowy.close();
 
         Klasa File zawiera postawowe operacje na plikach i przyjmowana jako
          parametr moze posluzyc do utworzenia unstancji innej klasy np:
@@ -1096,8 +1098,8 @@ public class Wstep {
         Klasy plikow maja wskaznik ktory po odczytaniu danych zostaje przesuniety
          na miejsce gdzie ostatnio czytalismy plik
          */
-    class Wew34{
-    void metoda() throws IOException {
+    class Wew34{///////////////////////////////////////////////
+    void metoda() throws IOException {/////////////////////////
         String lokalizacja = "/folder1/plik.txt";
         int liczba = 2134;
         FileWriter fileWriter = null;
@@ -1125,9 +1127,31 @@ public class Wstep {
                 fileReader.close();
             }
         }
+    }///////////////////////
+    }///////////////////////
 
-    }
-    }
+        //Obsluga plikow binarnych
+    class Wew52{////////////////////////////////////////////
+    void metoda() throws IOException {//////////////////////
+        String lokalizacja2 = "/folder1/plik.txt";
+        int liczba = 2134;
+        DataOutputStream strumienWyjsciowy = null;
+        try{
+            strumienWyjsciowy = new DataOutputStream(new FileOutputStream(lokalizacja2));
+            strumienWyjsciowy.writeInt(liczba);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            if(strumienWyjsciowy != null)
+                strumienWyjsciowy.close();
+        }
+
+    }/////////////////////////////////////////////////
+    }/////////////////////////////////////////////////
+
+
 
         String x = new Object() + "123";
         System.out.println(x);
