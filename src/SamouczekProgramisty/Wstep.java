@@ -904,13 +904,14 @@ public class Wstep {
         -ArrayList - gdy chce  czesto miec dostep do elementow
          */
 
-        //Metdoy:
+        //Deklaracja
         List<String> lista1 = new ArrayList<>(3);
         //Tylko w ArrayList moge podac wstepny rozmiar
         List<String> lista2 = new LinkedList<>(lista1);
         //W konstrukotrze LinkeList moge podac inna kolekcje
         // aby zostala ona przpisana do nowej LinkedLIsty
 
+        //Metdoy:
         lista1.add("kamil"); // dodanie elementu
         lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
         // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
