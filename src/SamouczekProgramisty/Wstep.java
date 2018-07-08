@@ -965,6 +965,23 @@ public class Wstep {
 
 
         //Mapy
+        /*
+        Mapa jest kolekcja pozwalajaca przechowywac odwzorowanie zbioru
+         kluczy na liste wartosci. Klucze sa unikalne. Kluczami pownny byc
+         obiekty ktorych nie mozna zmienic (Immutable) czyli np String
+         lub Integer.
+        Klasy kluczy powinny miec poprawna implementacje metod HashCode oraz
+         equals.
+        Dodanie istniejacego klucza do kolekcji z wartoscia nadpisze istniejaca
+         wartosc starego klucza na nowa.
+
+        Mapy dzielimy na:
+        -HashMap
+        -TreeMap
+        -LinkedHashMap
+         */
+
+        //Deklaracja
 
 
 
