@@ -1067,23 +1067,6 @@ public class Wstep {
           utowrzenie nowego jesli nie istnieje - domyslny tryb
         -w trybie dolaczania - dopisuje do istniejacego pliku nowa wartosc
 
-        Przydatne klasy:
-        -FileWriter - zapis do pliku tekstowego
-        FileWriter fileWriter = new FileWriter("/folder1/plik.txt");
-        fileWriter.write("napis");
-        fileWriter.close();
-
-        -BufferedReader fileReader = new BufferedReader(new FileReader("/folder1/plik.txt"));
-        String napis = fileReader.readLine();
-        int liczbowo = Integer.parseInt(napis);
-        fileReader.close();
-
-        -DataOutputStream strumienWyjsciowy = new DataOutputStream(new FileOutputStream(lokalizacja2));
-        //FileOutputStream zapisuje dane bajt po bajcie
-        //DataOutputStream zapewnia bunarny zapis typow prymitywnych
-        strumienWyjsciowy.writeInt(12355);
-        //Ta metoda zapisze typy proste jak int w sposob binarny
-        strumienWyjsciowy.close();
 
         Klasa File zawiera postawowe operacje na plikach i przyjmowana jako
          parametr moze posluzyc do utworzenia unstancji innej klasy np:
@@ -1097,6 +1080,41 @@ public class Wstep {
 
         Klasy plikow maja wskaznik ktory po odczytaniu danych zostaje przesuniety
          na miejsce gdzie ostatnio czytalismy plik
+
+
+        Przydatne klasy:
+        -FileWriter - zapis do pliku tekstowego
+        FileWriter fileWriter = new FileWriter("/folder1/plik.txt");
+        fileWriter.write("napis");
+        if (fileWriter != null) {
+            fileWriter.close();
+        }
+
+        -BufferedReader - odczyt pliku
+        BufferedReader fileReader = new BufferedReader(new FileReader("/folder1/plik.txt"));
+        String napis = fileReader.readLine();
+        int liczbowo = Integer.parseInt(napis);
+        if (fileReader != null) {
+            fileReader.close();
+        }
+
+        -DataOutputStrea - zapis binarny do pliku tekstowego
+        DataOutputStream strumienWyjsciowy = new DataOutputStream(new FileOutputStream(lokalizacja2));
+        //FileOutputStream zapisuje dane bajt po bajcie
+        //DataOutputStream zapewnia bunarny zapis typow prymitywnych
+        strumienWyjsciowy.writeInt(12355);
+        //Ta metoda zapisze typy proste jak int w sposob binarny
+        if (strumienWyjsciowy != null) {
+            strumienWyjsciowy.close();
+        }
+
+        -DataInputStream - odczyt binarnych danych
+        DataInputStream strumienWejsciowy = new DataInputStream(new FileInputStrem(lokalizacja));
+        int liczba = strumienWejsciowy.readInt();
+        if (strumienWejsciowy != null) {
+            strumienWejsciowy.close();
+        }
+
          */
     class Wew34{///////////////////////////////////////////////
     void metoda() throws IOException {/////////////////////////
@@ -1133,6 +1151,7 @@ public class Wstep {
         //Obsluga plikow binarnych
     class Wew52{////////////////////////////////////////////
     void metoda() throws IOException {//////////////////////
+        //ZAPIS:
         String lokalizacja2 = "/folder1/plik.txt";
         int liczba = 2134;
         DataOutputStream strumienWyjsciowy = null;
@@ -1147,7 +1166,16 @@ public class Wstep {
             if(strumienWyjsciowy != null)
                 strumienWyjsciowy.close();
         }
-
+        //ODCZYT
+        int liczba2;
+        DataInputStream strumienWejsciowy = null;
+        try{
+            strumienWejsciowy = new DataInputStream(new FileInputStream(lokalizacja2));
+            liczba2 = strumienWejsciowy.readInt();
+        }finally {
+            if(strumienWejsciowy != null)
+                strumienWejsciowy.close();
+        }
     }/////////////////////////////////////////////////
     }/////////////////////////////////////////////////
 

@@ -26,7 +26,7 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2997">
+            <state relative-caret-position="-6591">
               <caret line="609" column="13" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
             </state>
           </provider>
@@ -35,52 +35,17 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="1115" column="12" selection-start-line="1115" selection-start-column="12" selection-end-line="1115" selection-end-column="12" />
+            <state relative-caret-position="233">
+              <caret line="1074" column="22" selection-start-line="1074" selection-start-column="22" selection-end-line="1074" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#26742#26743#0" expanded="true" />
                 <element signature="e#26796#26797#0" expanded="true" />
                 <element signature="e#26832#26833#0" expanded="true" />
                 <element signature="e#26878#26879#0" expanded="true" />
-                <element signature="e#41127#41128#0" expanded="true" />
-                <element signature="e#41160#41161#0" expanded="true" />
+                <element signature="e#45887#45888#0" expanded="true" />
+                <element signature="e#45920#45921#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="X4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding>
-                <element signature="e#317#318#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="X3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-              <folding>
-                <element signature="e#110#111#0" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="X2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -103,7 +68,6 @@
       <find>Integer</find>
       <find>final</find>
       <find>value</find>
-      <find>parse</find>
       <find>kons</find>
       <find>dzied</find>
       <find>konstr</find>
@@ -111,6 +75,7 @@
       <find>inter</find>
       <find>cast</find>
       <find>scanner</find>
+      <find>parse</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -367,20 +332,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00555" summary="SanouczekProgramisty Typy Generyczne 139">
-      <created>1530960397353</created>
-      <option name="number" value="00555" />
-      <option name="presentableId" value="LOCAL-00555" />
-      <option name="project" value="LOCAL" />
-      <updated>1530960397353</updated>
-    </task>
-    <task id="LOCAL-00556" summary="SanouczekProgramisty Typy Generyczne 140">
-      <created>1530960576158</created>
-      <option name="number" value="00556" />
-      <option name="presentableId" value="LOCAL-00556" />
-      <option name="project" value="LOCAL" />
-      <updated>1530960576158</updated>
     </task>
     <task id="LOCAL-00557" summary="SanouczekProgramisty Typy Generyczne 141">
       <created>1530960635977</created>
@@ -711,7 +662,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531060720243</updated>
     </task>
-    <option name="localTasksCounter" value="604" />
+    <task id="LOCAL-00604" summary="SanouczekProgramisty Operacje na Plikach 5">
+      <created>1531062804338</created>
+      <option name="number" value="00604" />
+      <option name="presentableId" value="LOCAL-00604" />
+      <option name="project" value="LOCAL" />
+      <updated>1531062804338</updated>
+    </task>
+    <task id="LOCAL-00605" summary="SanouczekProgramisty Operacje na Plikach 6">
+      <created>1531063506265</created>
+      <option name="number" value="00605" />
+      <option name="presentableId" value="LOCAL-00605" />
+      <option name="project" value="LOCAL" />
+      <updated>1531063506265</updated>
+    </task>
+    <option name="localTasksCounter" value="606" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -780,8 +745,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Kolekcje 3" />
-    <MESSAGE value="SanouczekProgramisty Kolekcje 4" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 5" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 6" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 7" />
@@ -805,7 +768,9 @@
     <MESSAGE value="SanouczekProgramisty Operacje na Plikach 2" />
     <MESSAGE value="SanouczekProgramisty Operacje na Plikach 3" />
     <MESSAGE value="SanouczekProgramisty Operacje na Plikach 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Operacje na Plikach 4" />
+    <MESSAGE value="SanouczekProgramisty Operacje na Plikach 5" />
+    <MESSAGE value="SanouczekProgramisty Operacje na Plikach 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Operacje na Plikach 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1142,23 +1107,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2997">
+        <state relative-caret-position="-6591">
           <caret line="609" column="13" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="1115" column="12" selection-start-line="1115" selection-start-column="12" selection-end-line="1115" selection-end-column="12" />
+        <state relative-caret-position="233">
+          <caret line="1074" column="22" selection-start-line="1074" selection-start-column="22" selection-end-line="1074" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#26742#26743#0" expanded="true" />
             <element signature="e#26796#26797#0" expanded="true" />
             <element signature="e#26832#26833#0" expanded="true" />
             <element signature="e#26878#26879#0" expanded="true" />
-            <element signature="e#41127#41128#0" expanded="true" />
-            <element signature="e#41160#41161#0" expanded="true" />
+            <element signature="e#45887#45888#0" expanded="true" />
+            <element signature="e#45920#45921#0" expanded="true" />
           </folding>
         </state>
       </provider>
