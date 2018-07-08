@@ -124,7 +124,7 @@ public class Wstep {
             imie = wprowadz.nextLine();
             if(imie.equals("-"))
                 break;
-            imiona2.add(imie)
+            imiona2.add(imie);
         }
     }    ////////////////////////
     }/////////////////////////////
@@ -1046,11 +1046,12 @@ public class Wstep {
 
 
 
+        //OPERACJE NA PLIKACH:
+
+
 
         String x = new Object() + "123";
         System.out.println(x);
-
-
     }
 
 
