@@ -982,6 +982,12 @@ public class Wstep {
          */
 
         //Deklaracja
+        Map<Integer, String> mapa1 = new HashMap<>(2);
+        //Konstruktor zawiera wstepny rozmiar
+        Map<Integer, String> mapa2 = new TreeMap<>(mapa1);
+        //Konstruktor moze przkopiowac mape
+        Map<Integer, String> mapa3 = new LinkedHashMap<>(23);
+        //Konstruktor zawiera wstepny rozmiar
 
 
 
