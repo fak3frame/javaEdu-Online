@@ -950,6 +950,8 @@ public class Wstep {
         Set<String> zbior3 = new LinkedHashSet<>(10);
         //Konstruktor zawiera wstepny rozmiar
 
+        //Metody:
+
 
 
 
