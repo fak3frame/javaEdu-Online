@@ -989,6 +989,18 @@ public class Wstep {
         Map<Integer, String> mapa3 = new LinkedHashMap<>(23);
         //Konstruktor zawiera wstepny rozmiar
 
+        //Metody:
+        mapa1.put(0,"kamil");
+        mapa1.putAll(mapa2);
+        mapa1.get(0);// zwroci wartosc z klucza "0"
+        mapa1.remove(0);// usunie klucz "0" i jego wartosc
+        boolean czyKluczIstanieje = mapa1.containsKey(0);// czy mapa zawiera
+        // klucz "0"
+        boolean czyWartoscInsteniej = mapa1.containsValue("kamil");
+        boolean czyPusta3 = mapa1.isEmpty();
+        int iloscElementow2 = mapa1.size();
+
+
 
 
 
