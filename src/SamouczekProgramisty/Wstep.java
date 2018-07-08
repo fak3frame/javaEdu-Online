@@ -999,6 +999,8 @@ public class Wstep {
         boolean czyWartoscInsteniej = mapa1.containsValue("kamil");
         boolean czyPusta3 = mapa1.isEmpty();
         int iloscElementow2 = mapa1.size();
+        Set<Map.Entry<Integer,String>> zbiorKluczWartosc = mapa1.entrySet();
+        //Zwroci klucze i wartosci do zbioru przechowywyjacego go
 
         //Iterowanie
         mapa1.put(0,"kamil");
@@ -1009,6 +1011,11 @@ public class Wstep {
         for (String x :mapa1.values()){
             System.out.println(x);
         }
+        Set<Map.Entry<Integer,String>> zbiorKluczWartosc2 = mapa1.entrySet();
+        for(Map.Entry<Integer,String> x : zbiorKluczWartosc){
+            System.out.println(x.getKey()+": "+x.getValue());
+        }
+
 
 
 
