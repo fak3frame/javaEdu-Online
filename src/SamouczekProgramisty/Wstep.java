@@ -105,6 +105,22 @@ public class Wstep {
 
 
 
+        //WPROWADZANIE DANYCH:
+    class wew23{////////////////////////////
+    void metoda(){/////////////////////////
+        String imie;
+        List<String>imiona2 = new LinkedList<>();
+        Scanner wprowadz = new Scanner(System.in);
+        do{
+            imie = wprowadz.nextLine();
+            if(!imie.equals("-")){
+                imiona2.add(imie);
+            }
+        }while (!imie.equals("-"));
+    }    ////////////////////////
+    }/////////////////////////////
+
+
         /*
         PAKIETY:
 
@@ -966,6 +982,9 @@ public class Wstep {
 
         //Mapy
         /*
+        -Kolejnosc nie jest istotna
+        -Kazdy element jest unikatowy
+
         Mapa jest kolekcja pozwalajaca przechowywac odwzorowanie zbioru
          kluczy na liste wartosci. Klucze sa unikalne. Kluczami pownny byc
          obiekty ktorych nie mozna zmienic (Immutable) czyli np String
