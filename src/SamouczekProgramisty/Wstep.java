@@ -907,15 +907,19 @@ public class Wstep {
         //W konstrukotrze LinkeList moge podac inna kolekcje
         // aby zostala ona przpisana do nowej LinkedLIsty
 
-        //lista1.add("kamil"); // dodanie elementu
-        //lista1.addAll(lista1);// dodanie wszystkich elementow z jednej kolekcji
+        lista1.add("kamil"); // dodanie elementu
+        lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
         // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
         // po drugiej
+        String wezElement = lista1.get(0);// pobierze element z pozycji 0 listy
         boolean czyZawiera = lista1.contains("kamil");// zwraca flage czt kolekcja
         // zawiera dany element
         boolean czyPusta = lista1.isEmpty();// zwraca flage czy lista jest pusta
         int liczbaElementow = lista1.size();// zwraca liczbe elementow w liscie
         // nie jaki jest rozmiar wstepny (w przypadku ArrayList)
+        int pierwszeWystapienie = lista1.indexOf("kamil");
+        int ostatnieWystapienie = lista1.lastIndexOf("kamil");
+
 
 
 
