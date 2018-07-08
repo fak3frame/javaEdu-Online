@@ -4,6 +4,9 @@ import SamouczekProgramisty.Silnik.SilnikMoj;
 import jdk.nashorn.api.tree.ForInLoopTree;
 
 import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -1061,9 +1064,70 @@ public class Wstep {
         Relatywna jest ta z ktorego miejsca sie odnosimy
         folder_2_a\plik_2_a.txt
 
+        Tryby dosteou do plikow dzieliy na:
+        -do odczytu
+        -do zapisu - kasuje plik jesli istnieje i utworzenie nowego lub
+          utowrzenie nowego jesli nie istnieje - domyslny tryb
+        -w trybie dolaczania - dopisuje do istniejacego pliku nowa wartosc
 
+        Przydatne klasy:
+        -FileWriter - zapis do pliku tekstowego
+        FileWriter fileWriter = new FileWriter("/folder1/plik.txt");
+        fileWriter.write("napis");
+        fileWriter.close();
+
+        -BufferedReader fileReader = new BufferedReader(new FileReader("/folder1/plik.txt"));
+        String napis = fileReader.readLine();
+        int liczbowo = Integer.parseInt(napis);
+        fileReader.close();
+
+
+
+        Klasa File zawiera postawowe operacje na plikach i przyjmowana jako
+         parametr moze posluzyc do utworzenia unstancji innej klasy np:
+        -FileReader - odczyt pliku znak po znaku
+        -BufferReade - odczyt linijka po linijce
+        new BufferedReader(new FileReader(new File("/path/to/text/file.txt")));
+
+        Jest to dostanie sie do pliku "warstwa po warstwie"
+        Mozna wykorzystac do tego konstruktory nie tworzac instancji klasy File
+        new BufferedReader(new FileReader("/path/to/text/file.txt"));
+
+        Klasy plikow maja wskaznik ktory po odczytaniu danych zostaje przesuniety
+         na miejsce gdzie ostatnio czytalismy plik
          */
+    class Wew34{
+    void metoda() throws IOException {
+        String lokalizacja = "/folder1/plik.txt";
+        int liczba = 2134;
+        FileWriter fileWriter = null;
+        try{
+            fileWriter = new FileWriter(lokalizacja);
+            fileWriter.write(Integer.toString(liczba));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(fileWriter != null)
+                fileWriter.close();
+        }
 
+        String lokalizacja2 = "/folder1/plik.txt";
+        int liczba2;
+        BufferedReader fileReader = null;
+        try{
+            fileReader = new BufferedReader(new FileReader(lokalizacja2));
+            String napis = fileReader.readLine();
+            liczba2 = Integer.parseInt(napis);
+        }catch (IOException e){
+            e.printStackTrace();
+        }finally {
+            if(fileReader != null){
+                fileReader.close();
+            }
+        }
+
+    }
+    }
 
         String x = new Object() + "123";
         System.out.println(x);
