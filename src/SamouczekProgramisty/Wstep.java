@@ -928,7 +928,9 @@ public class Wstep {
 
         //Zbior
         /*
-        Sluzy do przyechowywania unikalnych elementow
+        Sluzy do przyechowywania unikalnych elementow, mozemy wykorzystac je
+         takze aby pozbyc sie duplikatow a Liscie dodajac wszystkie elementy
+         do nowego zbioru.
 
         -Kolejnosc nie jest istotna
         -Kazdy element jest unikatowy
@@ -951,6 +953,9 @@ public class Wstep {
         //Konstruktor zawiera wstepny rozmiar
 
         //Metody:
+        zbior1.add("kamil");
+        zbior1.addAll(zbior2);
+
 
 
 
