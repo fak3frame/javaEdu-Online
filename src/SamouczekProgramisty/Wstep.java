@@ -1055,6 +1055,13 @@ public class Wstep {
         Sciezka w Javie zapisana do string bedzie nastepujaca:
         "C:\\katalog\\plik.txt"
 
+        Sciezki mozemy podzielic na relatywne i absolutne
+        Absolutna jest pelna sciezka
+        C:\folder_2\folder_2_a\plik_2_a.txt
+        Relatywna jest ta z ktorego miejsca sie odnosimy
+        folder_2_a\plik_2_a.txt
+
+
          */
 
 
