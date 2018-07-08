@@ -1092,7 +1092,9 @@ public class Wstep {
 
         -BufferedReader - odczyt pliku
         BufferedReader fileReader = new BufferedReader(new FileReader("/folder1/plik.txt"));
-        String napis = fileReader.readLine();
+        String linia = fileReader.readLine();
+        //Metoda zapisze cala linie z pliku tekstowego, moge umiescic to w while(true)
+        // i sprawdzic kiedy bedzie linie pusta if(linia == null){break;}
         int liczbowo = Integer.parseInt(napis);
         if (fileReader != null) {
             fileReader.close();
