@@ -913,9 +913,12 @@ public class Wstep {
 
         //Metdoy:
         lista1.add("kamil"); // dodanie elementu
+        lista1.add(1,"kamil");
         lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
         // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
         // po drugiej
+        lista1.remove("Tomek");
+        lista1.remove(0);
         String wezElement = lista1.get(0);// pobierze element z pozycji 0 listy
         boolean czyZawiera = lista1.contains("kamil");// zwraca flage czt kolekcja
         // zawiera dany element
@@ -955,6 +958,9 @@ public class Wstep {
         //Metody:
         zbior1.add("kamil");
         zbior1.addAll(zbior2);
+        boolean czyZawiera2 = zbior1.contains("Kamil");
+        boolean czyPusta2 = zbior1.isEmpty();
+        int iloscElementow = zbior1.size();
 
 
 
