@@ -1000,7 +1000,15 @@ public class Wstep {
         boolean czyPusta3 = mapa1.isEmpty();
         int iloscElementow2 = mapa1.size();
 
-
+        //Iterowanie
+        mapa1.put(0,"kamil");
+        mapa1.put(1,"tomek");
+        for (Integer x : mapa1.keySet()){
+            System.out.println(x +": "+ mapa1.get(x));
+        }
+        for (String x :mapa1.values()){
+            System.out.println(x);
+        }
 
 
 
