@@ -26,8 +26,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7666">
-              <caret line="1011" column="6" selection-start-line="1011" selection-start-column="6" selection-end-line="1011" selection-end-column="6" />
+            <state relative-caret-position="-2997">
+              <caret line="609" column="13" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+            <state relative-caret-position="345">
+              <caret line="1049" column="8" selection-start-line="1049" selection-start-column="8" selection-end-line="1049" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#26742#26743#0" expanded="true" />
@@ -368,20 +368,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00550" summary="SanouczekProgramisty Typy Generyczne 134">
-      <created>1530959185351</created>
-      <option name="number" value="00550" />
-      <option name="presentableId" value="LOCAL-00550" />
-      <option name="project" value="LOCAL" />
-      <updated>1530959185352</updated>
-    </task>
-    <task id="LOCAL-00551" summary="SanouczekProgramisty Typy Generyczne 135">
-      <created>1530959366780</created>
-      <option name="number" value="00551" />
-      <option name="presentableId" value="LOCAL-00551" />
-      <option name="project" value="LOCAL" />
-      <updated>1530959366781</updated>
-    </task>
     <task id="LOCAL-00552" summary="SanouczekProgramisty Typy Generyczne 136">
       <created>1530959611787</created>
       <option name="number" value="00552" />
@@ -711,7 +697,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531058919280</updated>
     </task>
-    <option name="localTasksCounter" value="599" />
+    <task id="LOCAL-00599" summary="SanouczekProgramisty Kolekcje 23">
+      <created>1531059075206</created>
+      <option name="number" value="00599" />
+      <option name="presentableId" value="LOCAL-00599" />
+      <option name="project" value="LOCAL" />
+      <updated>1531059075206</updated>
+    </task>
+    <task id="LOCAL-00600" summary="SanouczekProgramisty Operacje na Plikach 1">
+      <created>1531059400048</created>
+      <option name="number" value="00600" />
+      <option name="presentableId" value="LOCAL-00600" />
+      <option name="project" value="LOCAL" />
+      <updated>1531059400048</updated>
+    </task>
+    <option name="localTasksCounter" value="601" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -780,8 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typy Generyczne 157" />
-    <MESSAGE value="SanouczekProgramisty Porownywanie 1" />
     <MESSAGE value="SanouczekProgramisty Porownywanie 2" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 1" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 2" />
@@ -805,7 +803,9 @@
     <MESSAGE value="SanouczekProgramisty Kolekcje 20" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 21" />
     <MESSAGE value="SanouczekProgramisty Kolekcje 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Kolekcje 22" />
+    <MESSAGE value="SanouczekProgramisty Kolekcje 23" />
+    <MESSAGE value="SanouczekProgramisty Operacje na Plikach 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Operacje na Plikach 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1142,15 +1142,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7666">
-          <caret line="1011" column="6" selection-start-line="1011" selection-start-column="6" selection-end-line="1011" selection-end-column="6" />
+        <state relative-caret-position="-2997">
+          <caret line="609" column="13" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        <state relative-caret-position="345">
+          <caret line="1049" column="8" selection-start-line="1049" selection-start-column="8" selection-end-line="1049" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#26742#26743#0" expanded="true" />

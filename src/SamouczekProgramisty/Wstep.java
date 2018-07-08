@@ -1047,7 +1047,12 @@ public class Wstep {
 
 
         //OPERACJE NA PLIKACH:
+        /*
+        lokalizacje plikow w systemach
+        Windows: C:\katalog\plik.txt
+        Linux: /katalog/plik.txt
 
+         */
 
 
         String x = new Object() + "123";
