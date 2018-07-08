@@ -1052,6 +1052,9 @@ public class Wstep {
         Windows: C:\katalog\plik.txt
         Linux: /katalog/plik.txt
 
+        Sciezka w Javie zapisana do string bedzie nastepujaca:
+        "C:\\katalog\\plik.txt"
+
          */
 
 
