@@ -903,7 +903,9 @@ public class Wstep {
         //Metdoy:
         List<String> lista1 = new ArrayList<>(3);
         //Tylko w ArrayList moge podac wstepny rozmiar
-        List<String> lista2 = new LinkedList<>();
+        List<String> lista2 = new LinkedList<>(lista1);
+        //W konstrukotrze LinkeList moge podac inna kolekcje
+        // aby zostala ona przpisana do nowej LinkedLIsty
 
         //lista1.add("kamil"); // dodanie elementu
         //lista1.addAll(lista1);// dodanie wszystkich elementow z jednej kolekcji
