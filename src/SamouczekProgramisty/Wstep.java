@@ -929,7 +929,26 @@ public class Wstep {
         //Zbior
         /*
         Sluzy do przyechowywania unikalnych elementow
+
+        -Kolejnosc nie jest istotna
+        -Kazdy element jest unikatowy
+
+        Aby miec pewnosc ze element jest juz w zbioerze nalezy zaimpelementowac
+         metode hashCode oraz Equals
+
+        Zbiory dzielimy na
+        -HashSet
+        -TreeSet
+        -LinkedHashSet
          */
+
+        //Deklaracja
+        Set<String> zbior1 = new HashSet<>(10);
+        //Konstruktor zawiera wstepny rozmiar
+        Set<String> zbior2 = new TreeSet<>(zbior1);
+        //Konstruktor moze przekopiowac kolekcje do nowej
+        Set<String> zbior3 = new LinkedHashSet<>(10);
+        //Konstruktor zawiera wstepny rozmiar
 
 
 
