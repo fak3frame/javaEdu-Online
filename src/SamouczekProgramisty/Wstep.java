@@ -886,8 +886,28 @@ public class Wstep {
 
         //KOLEKCJE
         /*
+        Kolekcja to sposob grupownia obiektow, jest ona struktura danych
 
+
+        //Lista
+        Charakteryzuje sie tym ze jej rozmiar moze sie zmieniac
+
+        -Moga przechowywac ten sam obiekt kilka raz
+        -Kolejnosc jest wazna
+
+        Dzielimy je na:
+        -LinkedList - gdy chce czesto dodawac/usuwac elementy
+        -ArrayList - gdy chce  czesto miec dostep do elementow
          */
+
+        //Metdoy:
+        List<String> lista1 = new LinkedList<>();
+
+        lista1.add("kamil"); // dodanie elementu
+        lista1.addAll(lista1);// dodanie wszystkich elementow z jednej kolekcji
+        // do drugiej
+
+
 
 
 
