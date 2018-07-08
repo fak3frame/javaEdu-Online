@@ -887,6 +887,8 @@ public class Wstep {
         //KOLEKCJE
         /*
         Kolekcja to sposob grupownia obiektow, jest ona struktura danych
+        Iterable -> Collection -> List,Set,Queue
+        Map
 
 
         //Lista
@@ -925,7 +927,7 @@ public class Wstep {
 
         //Zbior
         /*
-
+        Sluzy do przyechowywania unikalnych elementow
          */
 
 
