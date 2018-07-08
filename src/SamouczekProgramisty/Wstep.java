@@ -890,7 +890,9 @@ public class Wstep {
 
 
         //Lista
-        Charakteryzuje sie tym ze jej rozmiar moze sie zmieniac
+        Charakteryzuje sie tym ze jej rozmiar moze sie zmieniac, dobra praktyka
+         jest dlekarowanie ich jako typ List (ArrayList,LinkedList) aby
+         mozna byloby je potem bez problemu zmienic jedna na druga
 
         -Moga przechowywac ten sam obiekt kilka raz
         -Kolejnosc jest wazna
