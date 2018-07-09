@@ -1235,6 +1235,13 @@ public class Wstep {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //Calosc dziala poniewaz klasy BufferedReader i BufferedWriter implementuja
+        // interfejs java.lang.AutoCloseable
+        //Wszytskie klasy do obslugi strumieni implementuja ten interfejs, aby to
+        // dzialalo zmienne musza byc umieszczone w () w konstukcji try/catch
+
+        //Moge stworzyc takze wlasne dzilanie klasy AutoCloseable !
+
     }
     }
 
