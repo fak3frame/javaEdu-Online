@@ -1330,6 +1330,7 @@ public class Wstep {
     }////////////////////////
 
         //Serializacja drzewa obiektow
+        //Obiekt serializowany i zdeserializowany beda mialy inny adres referncji
         class Opona{
             int rozmiar;
             public Opona(int rozmiar){this.rozmiar=rozmiar;}
