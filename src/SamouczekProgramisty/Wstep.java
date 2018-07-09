@@ -1394,6 +1394,8 @@ public class Wstep {
         Fabryka f = new Fabryka();
         f.main();
 
+        //Serializowanie pol statycznych
+
         String x = new Object() + "123";
         System.out.println(x);
     }
