@@ -1241,7 +1241,29 @@ public class Wstep {
         // dzialalo zmienne musza byc umieszczone w () w konstukcji try/catch
 
         //Moge stworzyc takze wlasne dzilanie klasy AutoCloseable !
-
+        class MojContextManager implements AutoCloseable{
+            public MojContextManager(){
+                System.out.println("tworze");
+            }
+            public void doSomething(){
+                System.out.println("robie cos");
+            }
+            @Override
+            public void close() {
+                System.out.println("zamykam");
+            }
+        }
+        class MojContextManagerMain {
+            public void main(String[] args) {
+                try (MojContextManager manager = new MojContextManager()) {
+                    manager.doSomething();
+                    //wywola sie:
+                    //tworze
+                    //robie cos
+                    //zamykam
+                }
+            }
+        }
     }
     }
 
