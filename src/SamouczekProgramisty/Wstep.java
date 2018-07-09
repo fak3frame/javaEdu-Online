@@ -1245,7 +1245,7 @@ public class Wstep {
             public MojContextManager(){
                 System.out.println("tworze");
             }
-            public void doSomething(){
+            public void zrobCos(){
                 System.out.println("robie cos");
             }
             @Override
@@ -1256,7 +1256,7 @@ public class Wstep {
         class MojContextManagerMain {
             public void main(String[] args) {
                 try (MojContextManager manager = new MojContextManager()) {
-                    manager.doSomething();
+                    manager.zrobCos();
                     //wywola sie:
                     //tworze
                     //robie cos
