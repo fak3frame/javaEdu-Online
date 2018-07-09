@@ -8,5 +8,6 @@ public class Fabryka {
         ) {
             em.body("moj tekst");
         }
+
     }
 }

@@ -73,7 +73,7 @@ public class Wstep {
 
          */
         int jakisNumer = 123; //zakres +/- 2,147,483,647
-    class Wew1{
+    class Wew1{//////////////////////////
         boolean czyDuza(int liczba){
             return liczba>100;
         }
@@ -81,12 +81,12 @@ public class Wstep {
             return;
             //Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
         }
-    }
+    }/////////////////////////////////
 
         //Metoda moze takze wywolywac w wyniku inna metode i sprawdzac czy wynik
         // jest taki sam. jesli bedzie taki sam da true
         // return ! metoda();
-    class WeW4{
+    class WeW4{////////////////////////////////
         int a;
         public boolean isOdd() {
             return ! isEven();
@@ -94,14 +94,14 @@ public class Wstep {
         public boolean isEven(){
             return a%2==0;
         }
-    }
+    }//////////////////////////////////////
 
         //Metoda zwracajaca tablice:
-    class WeW3{
+    class WeW3{//////////////////////////////
         public String[] pokazTab(){
             return new String[]{"costma","costam2"};
         }
-    }
+    }///////////////////////////////////////////
 
 
 
@@ -151,6 +151,9 @@ public class Wstep {
         KLASY:
 
         Sluzy do grupowania atrybutow i metod
+
+        Zmienna statyczna dotyczy klasy a nie obiektu wiec nie mamy
+         do niej dostepu w przyspadku obiektu klasy
 
         Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego
         ----------------
@@ -1331,21 +1334,21 @@ public class Wstep {
 
         //Serializacja drzewa obiektow
         //Obiekt serializowany i zdeserializowany beda mialy inny adres referncji
-        class Opona{
+        class Opona implements Serializable{
             int rozmiar;
             public Opona(int rozmiar){this.rozmiar=rozmiar;}
             public int getRozmiar() {
                 return rozmiar;
             }
         }
-        class Silnik{
+        class Silnik implements Serializable{
             String nazwa;
             public Silnik(String nazwa){this.nazwa=nazwa;}
             public String getNazwa() {
                 return nazwa;
             }
         }
-        class Samochod{
+        class Samochod implements Serializable{
             Opona[] opony;
             Silnik silnik;
             public Samochod(Silnik silnik, Opona[] opony){
@@ -1361,7 +1364,7 @@ public class Wstep {
         }
         class Fabryka{
             void main(){
-                Opona[] opony = new Opona[]{new Opona(12),new Opona(15)}
+                Opona[] opony = new Opona[]{new Opona(12),new Opona(15)};
                 Silnik silnik = new Silnik("Diesel");
                 Samochod serializowanySamochod = new Samochod(silnik,opony);
                 try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("obiekty.bin"))){
@@ -1388,6 +1391,8 @@ public class Wstep {
                 }
             }
         }
+        Fabryka f = new Fabryka();
+        f.main();
 
         String x = new Object() + "123";
         System.out.println(x);

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/Fabryka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/Fabryka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/HtmlTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/HtmlTag.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +37,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="1379" column="76" selection-start-line="1379" selection-start-column="76" selection-end-line="1379" selection-end-column="76" />
+            <state relative-caret-position="197">
+              <caret line="155" column="51" selection-start-line="155" selection-start-column="51" selection-end-line="155" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#45577#45578#0" expanded="true" />
@@ -62,8 +65,8 @@
       <file leaf-file-name="Fabryka.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/Fabryka.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -71,9 +74,10 @@
       <file leaf-file-name="HtmlTag.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/HtmlTag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="85">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding>
+                <element signature="e#323#324#0" expanded="true" />
                 <element signature="e#369#370#0" expanded="true" />
               </folding>
             </state>
@@ -107,6 +111,8 @@
       <find>scanner</find>
       <find>parse</find>
       <find>datain</find>
+      <find>static</find>
+      <find>stat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -371,27 +377,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00576" summary="SanouczekProgramisty Porownywanie 2">
-      <created>1530972352687</created>
-      <option name="number" value="00576" />
-      <option name="presentableId" value="LOCAL-00576" />
-      <option name="project" value="LOCAL" />
-      <updated>1530972352687</updated>
-    </task>
-    <task id="LOCAL-00577" summary="SanouczekProgramisty Kolekcje 1">
-      <created>1531053407242</created>
-      <option name="number" value="00577" />
-      <option name="presentableId" value="LOCAL-00577" />
-      <option name="project" value="LOCAL" />
-      <updated>1531053407243</updated>
-    </task>
-    <task id="LOCAL-00578" summary="SanouczekProgramisty Kolekcje 2">
-      <created>1531054083946</created>
-      <option name="number" value="00578" />
-      <option name="presentableId" value="LOCAL-00578" />
-      <option name="project" value="LOCAL" />
-      <updated>1531054083946</updated>
     </task>
     <task id="LOCAL-00579" summary="SanouczekProgramisty Kolekcje 3">
       <created>1531054517706</created>
@@ -715,7 +700,28 @@
       <option name="project" value="LOCAL" />
       <updated>1531149219437</updated>
     </task>
-    <option name="localTasksCounter" value="625" />
+    <task id="LOCAL-00625" summary="SanouczekProgramisty Serializacja 10">
+      <created>1531149367954</created>
+      <option name="number" value="00625" />
+      <option name="presentableId" value="LOCAL-00625" />
+      <option name="project" value="LOCAL" />
+      <updated>1531149367954</updated>
+    </task>
+    <task id="LOCAL-00626" summary="SanouczekProgramisty Serializacja 11">
+      <created>1531149429664</created>
+      <option name="number" value="00626" />
+      <option name="presentableId" value="LOCAL-00626" />
+      <option name="project" value="LOCAL" />
+      <updated>1531149429664</updated>
+    </task>
+    <task id="LOCAL-00627" summary="SanouczekProgramisty Serializacja 12">
+      <created>1531151390879</created>
+      <option name="number" value="00627" />
+      <option name="presentableId" value="LOCAL-00627" />
+      <option name="project" value="LOCAL" />
+      <updated>1531151390880</updated>
+    </task>
+    <option name="localTasksCounter" value="628" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -731,11 +737,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35955057" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35955057" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21770681" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21770681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -784,9 +790,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Operacje na Plikach 1" />
-    <MESSAGE value="SanouczekProgramisty Operacje na Plikach 2" />
-    <MESSAGE value="SanouczekProgramisty Operacje na Plikach 3" />
     <MESSAGE value="SanouczekProgramisty Operacje na Plikach 4" />
     <MESSAGE value="SanouczekProgramisty Operacje na Plikach 5" />
     <MESSAGE value="SanouczekProgramisty Operacje na Plikach 6" />
@@ -809,7 +812,10 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 7" />
     <MESSAGE value="SanouczekProgramisty Serializacja 8" />
     <MESSAGE value="SanouczekProgramisty Serializacja 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 9" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 10" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 11" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1126,23 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/HtmlTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#369#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/Fabryka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1150,10 +1139,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/HtmlTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_6_TryWithRescources/Fabryka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="1379" column="76" selection-start-line="1379" selection-start-column="76" selection-end-line="1379" selection-end-column="76" />
+        <state relative-caret-position="197">
+          <caret line="155" column="51" selection-start-line="155" selection-start-column="51" selection-end-line="155" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#45577#45578#0" expanded="true" />
