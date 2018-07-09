@@ -152,8 +152,8 @@ public class Wstep {
 
         Sluzy do grupowania atrybutow i metod
 
-        Zmienna statyczna dotyczy klasy a nie obiektu wiec nie mamy
-         do niej dostepu w przyspadku obiektu klasy
+        Zmienna statyczna dotyczy klasy a nie obiektu lecz moezmy
+         na obiekcie sie do niej odwolac
 
         Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego
         ----------------

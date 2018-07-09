@@ -8,6 +8,10 @@ public class Fabryka {
         ) {
             em.body("moj tekst");
         }
-
+        HtmlTag h1 = new HtmlTag("123");
+        System.out.println(h1.zmiennaStatic);
+        h1.zmiennaStatic = 200;
+        System.out.println(h1.zmiennaStatic);
     }
+
 }
