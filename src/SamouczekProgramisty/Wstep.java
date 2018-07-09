@@ -1300,8 +1300,8 @@ public class Wstep {
          bledny uzywamy przez zmienna parametru transient
 
          */
-    class Wew25 {
-    void metoda(){
+    class Wew25 {//////////////////////////////////
+    void metoda(){///////////////////////////////////
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(1));
             //Zapisuje obiekt do stumienia
@@ -1326,10 +1326,40 @@ public class Wstep {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }///////////////////////////
+    }////////////////////////
 
-    }
-    }
+        //Serializacja drzewa obiektow
+        class Opona{
+            int rozmiar;
+            public Opona(int rozmiar){this.rozmiar=rozmiar;}
+        }
+        class Silnik{
+            String nazwa;
+            public Silnik(String nazwa){this.nazwa=nazwa;}
+        }
+        class Samochod{
+            Opona[] opony;
+            Silnik silnik;
+            public Samochod(Silnik silnik, Opona[] opony){
+                this.silnik = silnik;
+                this.opony = opony;
+            }
+        }
+        class Fabryka{
+            void main(){
+                Opona[] opony = new Opona[]{new Opona(12),new Opona(15)}
+                Silnik silnik = new Silnik("Diesel");
+                Samochod serializowanySamochod = new Samochod(silnik,opony);
+                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("obiekty.bin"))){
 
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
         String x = new Object() + "123";
         System.out.println(x);
