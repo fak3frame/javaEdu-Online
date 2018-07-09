@@ -1375,7 +1375,7 @@ public class Wstep {
                 try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("obiekty.bin"))){
                     Samochod zdeserializowanySamochod = (Samochod)strWej.readObject();
                     System.out.println(zdeserializowanySamochod.getSilnik().getNazwa());
-                    //Na obiekcie zdeser. wywoluje metode getSilinik bo jest typu silnik
+                    //Na obiekcie zdeser. wywoluje metode getSilinik bo jest typu Samochod
                     // a potem getNazwa z klasy Silnik
                     System.out.println(zdeserializowanySamochod.getOpony().length);
                     //Tutwaj mam tablice wiec moge wywolac tylko jej dlugosc
