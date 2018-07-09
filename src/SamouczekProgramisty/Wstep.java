@@ -1242,8 +1242,8 @@ public class Wstep {
 
         //Moge stworzyc takze wlasne dzilanie klasy AutoCloseable !
         class MojContextManager implements AutoCloseable{
-            public MojContextManager(){
-                System.out.println("tworze");
+            public MojContextManager(String s){
+                System.out.println("tworze "+s);
             }
             public void zrobCos(){
                 System.out.println("robie cos");
@@ -1255,10 +1255,10 @@ public class Wstep {
         }
         class MojContextManagerMain {
             public void main(String[] args) {
-                try (MojContextManager manager = new MojContextManager()) {
+                try (MojContextManager manager = new MojContextManager("cos")) {
                     manager.zrobCos();
                     //wywola sie:
-                    //tworze
+                    //tworze cos
                     //robie cos
                     //zamykam
                 }
