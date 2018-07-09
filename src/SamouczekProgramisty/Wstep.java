@@ -1286,6 +1286,14 @@ public class Wstep {
         Jesli zserializuje instanjce klasy bez tego int. zostanie wyrzucony wyjatek
          NotSerializableException.
 
+        WYMOGI:
+        Klasa ktora jest rozszerzana przez klase ktora bedzie serializowana MUSI
+         miec konstrukotr bezparametrowy!
+
+        public class Fruit {} //klasa musi miec konstr. bezparam.
+        public class Apple extends Fruit implements Serializable {}//nie musi miec
+        public class Tomato implements Serializable {}//nie musi miec bo dziecziczy
+         //po object ktora posiada konstr. bezparametrowy
 
          */
 
