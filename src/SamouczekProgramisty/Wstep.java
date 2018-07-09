@@ -1351,6 +1351,12 @@ public class Wstep {
                 this.silnik = silnik;
                 this.opony = opony;
             }
+            public Silnik getSilnik() {
+                return silnik;
+            }
+            public Opona[] getOpony() {
+                return opony;
+            }
         }
         class Fabryka{
             void main(){
@@ -1367,7 +1373,8 @@ public class Wstep {
                 }
                 try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("obiekty.bin"))){
                     Samochod zdeserializowanySamochod = (Samochod)strWej.readObject();
-                    zdeserializowanySamochod.
+                    zdeserializowanySamochod.getSilnik().getNazwa();
+                    zdeserializowanySamochod.getOpony().
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
