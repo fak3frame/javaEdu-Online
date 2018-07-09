@@ -1081,6 +1081,10 @@ public class Wstep {
         Klasy plikow maja wskaznik ktory po odczytaniu danych zostaje przesuniety
          na miejsce gdzie ostatnio czytalismy plik
 
+        Zmienna klasowa (FileWriter itp) tworze przed blokiem try/catch a w nim
+        przypisuje ich wartosc oraz wywoluje konkretna metode.
+        Oprocz tego w bloku finally musze zamknac strumien
+
 
         Przydatne klasy:
         -FileWriter - zapis do pliku tekstowego
@@ -1189,8 +1193,8 @@ public class Wstep {
         try-with-resources - cukier syntaktyczny - syntactic sugar
 
          */
-    class Wew71{
-    void metoda(){
+    class Wew71{/////////////////////////////
+    void metoda(){//////////////////////////
         BufferedReader fileReader = null;
         String inputPath = "plik.txt";
         try {
@@ -1264,8 +1268,15 @@ public class Wstep {
                 }
             }
         }
-    }
-    }
+    }/////////////////////////////////
+    }///////////////////////////////////
+
+
+
+        //SERIALIZACJA
+        /*
+
+         */
 
         String x = new Object() + "123";
         System.out.println(x);
