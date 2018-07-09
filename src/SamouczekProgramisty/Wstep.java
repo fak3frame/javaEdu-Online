@@ -1219,6 +1219,22 @@ public class Wstep {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //Oprocz tego moge stworzyc zagniezdzony blok try/catch aby takze
+        // nie uzywac metody close();
+        //Moge uzyc w nim deklaracji try w () kilku zmiennych np do odczyctu pliku i zapisu
+        // a nastepnie w ciele try skorzystac z nich
+        String outputPath = "plik.txt";
+        try(
+                BufferedReader fileReader3 = new BufferedReader(new FileReader(inputPath));
+                BufferedWriter fileWriter3 = new BufferedWriter(new FileWriter(outputPath))
+        ) {
+            String line = fileReader3.readLine();
+            fileWriter3.write(line);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     }
 
