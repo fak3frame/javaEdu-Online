@@ -96,8 +96,8 @@ public class Wstep {
         }
     }//////////////////////////////////////
 
-        //Metoda zwracajaca tablice:
     class WeW3{//////////////////////////////
+        //Metoda zwracajaca tablice:
         public String[] pokazTab(){
             return new String[]{"costma","costam2"};
         }
