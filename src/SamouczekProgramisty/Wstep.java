@@ -1333,10 +1333,16 @@ public class Wstep {
         class Opona{
             int rozmiar;
             public Opona(int rozmiar){this.rozmiar=rozmiar;}
+            public int getRozmiar() {
+                return rozmiar;
+            }
         }
         class Silnik{
             String nazwa;
             public Silnik(String nazwa){this.nazwa=nazwa;}
+            public String getNazwa() {
+                return nazwa;
+            }
         }
         class Samochod{
             Opona[] opony;
@@ -1352,10 +1358,21 @@ public class Wstep {
                 Silnik silnik = new Silnik("Diesel");
                 Samochod serializowanySamochod = new Samochod(silnik,opony);
                 try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("obiekty.bin"))){
-
+                    strWyj.writeObject(serializowanySamochod);
+                    //Zapisuje obiekt
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("obiekty.bin"))){
+                    Samochod zdeserializowanySamochod = (Samochod)strWej.readObject();
+                    zdeserializowanySamochod.
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
                     e.printStackTrace();
                 }
             }
