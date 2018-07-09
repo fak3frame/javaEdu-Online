@@ -1185,9 +1185,42 @@ public class Wstep {
 
         //TRY WTIH RESOURCES
         /*
+        boilerplate code - powtarzenie kodu
+        try-with-resources - cukier syntaktyczny - syntactic sugar
 
          */
-
+    class Wew71{
+    void metoda(){
+        BufferedReader fileReader = null;
+        String inputPath = "plik.txt";
+        try {
+            fileReader = new BufferedReader(new FileReader(inputPath));
+            fileReader.readLine();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileReader != null) {
+                try {
+                    fileReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        //Mozna zastapic to:
+        try(BufferedReader fileReader2 = new BufferedReader(new FileReader(inputPath))) {
+            //Deklaruje zmienna fileReade2 w bloku try ktora zostanie automatycznie
+            // zamknieta
+            fileReader2.readLine();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    }
 
         String x = new Object() + "123";
         System.out.println(x);
