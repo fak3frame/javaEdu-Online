@@ -1183,6 +1183,12 @@ public class Wstep {
 
 
 
+        //TRY WTIH RESOURCES
+        /*
+
+         */
+
+
         String x = new Object() + "123";
         System.out.println(x);
     }
