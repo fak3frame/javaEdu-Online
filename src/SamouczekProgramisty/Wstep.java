@@ -1228,10 +1228,9 @@ public class Wstep {
         //Moge uzyc w nim deklaracji try w () kilku zmiennych np do odczyctu pliku i zapisu
         // a nastepnie w ciele try skorzystac z nich
         String outputPath = "plik.txt";
-        try(
-                BufferedReader fileReader3 = new BufferedReader(new FileReader(inputPath));
-                BufferedWriter fileWriter3 = new BufferedWriter(new FileWriter(outputPath))
-        ) {
+        try(BufferedReader fileReader3 = new BufferedReader(new FileReader(inputPath));
+            BufferedWriter fileWriter3 = new BufferedWriter(new FileWriter(outputPath)))
+        {
             String line = fileReader3.readLine();
             fileWriter3.write(line);
         } catch (FileNotFoundException e) {
@@ -1301,10 +1300,11 @@ public class Wstep {
          bledny uzywamy przez zmienna parametru transient
 
          */
-    class Wew25{
+    class Wew25 implements Serializable{
     void metoda(){
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
-            strumienWyjsciowy.writeObject
+            strumienWyjsciowy.writeObject(Integer.valueOf(1));
+            strumienWyjsciowy.writeObject(Integer.valueOf(2));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
