@@ -1315,6 +1315,7 @@ public class Wstep {
             Integer numer = (Integer)strumienWejsciowy.readObject();
             //Odczytuje pierwszy obiekt i zapisuje go do zmiennej obiektowej
             // musze rzutowac!
+            //Obiekty zostaja zapisane w kolejnosci w jakiej byly dodane czyly 1,2
             System.out.println(numer);
             numer = (Integer)strumienWejsciowy.readObject();
             System.out.println(numer);
