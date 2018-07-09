@@ -1295,7 +1295,24 @@ public class Wstep {
         public class Tomato implements Serializable {}//nie musi miec bo dziecziczy
          //po object ktora posiada konstr. bezparametrowy
 
+        Transient
+        Gdy chcemy aby jakis pole klasy nie bylo serializowane np sekundy
+         od urodzenia osoby - wynik zdeserializowany na innej JVM bylby
+         bledny uzywamy przez zmienna parametru transient
+
          */
+    class Wew25{
+    void metoda(){
+        try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
+            strumienWyjsciowy.writeObject
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    }
+
 
         String x = new Object() + "123";
         System.out.println(x);
