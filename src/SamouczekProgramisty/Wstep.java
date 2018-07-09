@@ -1373,8 +1373,11 @@ public class Wstep {
                 }
                 try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("obiekty.bin"))){
                     Samochod zdeserializowanySamochod = (Samochod)strWej.readObject();
-                    zdeserializowanySamochod.getSilnik().getNazwa();
-                    zdeserializowanySamochod.getOpony().
+                    System.out.println(zdeserializowanySamochod.getSilnik().getNazwa());
+                    //Na obiekcie zdeser. wywoluje metode getSilinik bo jest typu silnik
+                    // a potem getNazwa z klasy Silnik
+                    System.out.println(zdeserializowanySamochod.getOpony().length);
+                    //Tutwaj mam tablice wiec moge wywolac tylko jej dlugosc
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
