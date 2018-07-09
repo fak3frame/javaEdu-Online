@@ -1300,16 +1300,32 @@ public class Wstep {
          bledny uzywamy przez zmienna parametru transient
 
          */
-    class Wew25 implements Serializable{
+    class Wew25 {
     void metoda(){
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(1));
+            //Zapisuje obiekt do stumienia
             strumienWyjsciowy.writeObject(Integer.valueOf(2));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try(ObjectInputStream strumienWejsciowy = new ObjectInputStream(new FileInputStream("plik.bin"))){
+            Integer numer = (Integer)strumienWejsciowy.readObject();
+            //Odczytuje pierwszy obiekt i zapisuje go do zmiennej obiektowej
+            // musze rzutowac!
+            System.out.println(numer);
+            numer = (Integer)strumienWejsciowy.readObject();
+            System.out.println(numer);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
     }
     }
 
