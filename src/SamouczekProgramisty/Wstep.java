@@ -1275,6 +1275,17 @@ public class Wstep {
 
         //SERIALIZACJA
         /*
+        Serializacja to binarny zapis drzewa obiektow
+        Zserializowane obiekty mozna przeslac i zdeserializowac na innej
+         maszynie wirtualnej tworzac nowe obiekty - obie maszyny musze miec
+         dostep do skompilowanych wersji klas
+
+        Aby klasa mogla byc seriaizowana musi implmemntowac intefejs znacznikowy
+         (nie posiadajacy zadnej metody) java.io.Serializable ktory ma za zadanie
+         informowac ze instancje tej klasy moga byc serializowane
+        Jesli zserializuje instanjce klasy bez tego int. zostanie wyrzucony wyjatek
+         NotSerializableException.
+
 
          */
 
