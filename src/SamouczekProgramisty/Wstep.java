@@ -1464,15 +1464,20 @@ public class Wstep {
         class SerializacjaUnikalna implements Serializable{
             private transient String stringTans;
             private String stringNormalny;
-            public SerializacjaUnikalna(String sT, String sN){
-                this.stringTans = sT;
-                this.stringNormalny = sN;
+            private int liczba;
+            public SerializacjaUnikalna(String stringTans, String stringNormalny, int liczba){
+                this.stringTans = stringTans;
+                this.stringNormalny = stringNormalny;
+                this.liczba = liczba;
             }
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
 
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
-                strWyj.writeUTF();
+                //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
+                strWyj.writeUTF(stringTans);
+                strWyj.writeUTF(stringNormalny);
+                strWyj.writeInt(liczba);
             }
         }
 
