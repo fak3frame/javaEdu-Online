@@ -1471,7 +1471,10 @@ public class Wstep {
                 this.liczba = liczba;
             }
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
-
+                //Musze przypisac wartosci
+                stringTans = strWej.readUTF();
+                stringNormalny = strWej.readUTF();
+                liczba = strWej.readInt();
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
                 //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
@@ -1479,6 +1482,9 @@ public class Wstep {
                 strWyj.writeUTF(stringNormalny);
                 strWyj.writeInt(liczba);
             }
+        }
+        class SerializacjaUnikalnaFabryka{
+
         }
 
 
