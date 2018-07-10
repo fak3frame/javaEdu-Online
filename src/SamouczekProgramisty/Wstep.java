@@ -1456,6 +1456,10 @@ public class Wstep {
 
 
         //Specjalna obsługa serializacji/deserializacji
+        /*
+        Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
+         ich dzialanie
+         */
 
 
 
