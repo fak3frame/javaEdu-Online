@@ -1446,7 +1446,9 @@ public class Wstep {
         CzlowiekFabryka faabryka = new CzlowiekFabryka();
         faabryka.main();
 
+
         //Serializowanie pol statycznych
+
 
 
         String x = new Object() + "123";
