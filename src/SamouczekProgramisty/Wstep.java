@@ -1394,6 +1394,7 @@ public class Wstep {
         Fabryka f = new Fabryka();
         f.main();
 
+
         //Zachowanie atrybytow transient po deserializacji
         class Czlowiek{
             private transient int wiek;
@@ -1401,6 +1402,12 @@ public class Wstep {
             public Czlowiek(int wiek, String imie){
                 this.wiek = wiek;
                 this.imie = imie;
+            }
+            public String getImie() {
+                return imie;
+            }
+            public int getWiek() {
+                return wiek;
             }
         }
 
