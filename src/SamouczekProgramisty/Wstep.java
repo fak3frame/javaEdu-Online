@@ -1458,7 +1458,7 @@ public class Wstep {
         //Specjalna obsługa serializacji/deserializacji
         /*
         Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
-         ich dzialanie
+         ich dzialanie,
 
          */
         class SerializacjaUnikalna implements Serializable{
@@ -1480,12 +1480,31 @@ public class Wstep {
                 //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
                 strWyj.writeUTF(stringTans);
                 strWyj.writeUTF(stringNormalny);
-                strWyj.writeInt(liczba);
+                strWyj.writeInt(liczba+10);
             }
         }
         class SerializacjaUnikalnaFabryka{
-
+            void main(){
+                SerializacjaUnikalna s = new SerializacjaUnikalna("napT", "napN", 10);
+                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("SU"))){
+                    strWyj.writeObject(s);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("SU"))){
+                    SerializacjaUnikalna s2 = (SerializacjaUnikalna) strWej.readObject();
+                    System.out.println(s2.stringTans);
+                    System.out.println(s2.stringNormalny);
+                    System.out.println(s2.liczba);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
         }
+        SerializacjaUnikalnaFabryka ts = new SerializacjaUnikalnaFabryka();
+        ts.main();
 
 
 
