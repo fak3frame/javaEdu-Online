@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-796">
-              <caret line="88" column="13" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="13" />
+            <state relative-caret-position="261">
+              <caret line="1415" column="16" selection-start-line="1415" selection-start-column="16" selection-end-line="1415" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#45577#45578#0" expanded="true" />
@@ -50,6 +53,10 @@
                 <element signature="e#49959#49960#0" expanded="true" />
                 <element signature="e#49999#50000#0" expanded="true" />
                 <element signature="e#50043#50044#0" expanded="true" />
+                <element signature="e#52468#52469#0" expanded="true" />
+                <element signature="e#52511#52512#0" expanded="true" />
+                <element signature="e#52546#52547#0" expanded="true" />
+                <element signature="e#52589#52590#0" expanded="true" />
                 <element signature="e#53993#53994#0" expanded="true" />
                 <element signature="e#54026#54027#0" expanded="true" />
               </folding>
@@ -374,27 +381,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00583" summary="SanouczekProgramisty Kolekcje 7">
-      <created>1531054991282</created>
-      <option name="number" value="00583" />
-      <option name="presentableId" value="LOCAL-00583" />
-      <option name="project" value="LOCAL" />
-      <updated>1531054991282</updated>
-    </task>
-    <task id="LOCAL-00584" summary="SanouczekProgramisty Kolekcje 8">
-      <created>1531055341206</created>
-      <option name="number" value="00584" />
-      <option name="presentableId" value="LOCAL-00584" />
-      <option name="project" value="LOCAL" />
-      <updated>1531055341208</updated>
-    </task>
-    <task id="LOCAL-00585" summary="SanouczekProgramisty Kolekcje 9">
-      <created>1531055442233</created>
-      <option name="number" value="00585" />
-      <option name="presentableId" value="LOCAL-00585" />
-      <option name="project" value="LOCAL" />
-      <updated>1531055442233</updated>
-    </task>
     <task id="LOCAL-00586" summary="SanouczekProgramisty Kolekcje 10">
       <created>1531055491728</created>
       <option name="number" value="00586" />
@@ -717,7 +703,28 @@
       <option name="project" value="LOCAL" />
       <updated>1531154610085</updated>
     </task>
-    <option name="localTasksCounter" value="632" />
+    <task id="LOCAL-00632" summary="SanouczekProgramisty Serializacja 19">
+      <created>1531154784075</created>
+      <option name="number" value="00632" />
+      <option name="presentableId" value="LOCAL-00632" />
+      <option name="project" value="LOCAL" />
+      <updated>1531154784075</updated>
+    </task>
+    <task id="LOCAL-00633" summary="SanouczekProgramisty Serializacja 20">
+      <created>1531241984245</created>
+      <option name="number" value="00633" />
+      <option name="presentableId" value="LOCAL-00633" />
+      <option name="project" value="LOCAL" />
+      <updated>1531241984246</updated>
+    </task>
+    <task id="LOCAL-00634" summary="SanouczekProgramisty Serializacja 21">
+      <created>1531242010707</created>
+      <option name="number" value="00634" />
+      <option name="presentableId" value="LOCAL-00634" />
+      <option name="project" value="LOCAL" />
+      <updated>1531242010707</updated>
+    </task>
+    <option name="localTasksCounter" value="635" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -786,9 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Operacje na Plikach 8" />
-    <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 1" />
-    <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 2" />
     <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 3" />
     <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 4" />
     <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 5" />
@@ -811,7 +815,10 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 14" />
     <MESSAGE value="SanouczekProgramisty Serializacja 15" />
     <MESSAGE value="SanouczekProgramisty Serializacja 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 16" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 19" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 20" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1155,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="13" />
+        <state relative-caret-position="261">
+          <caret line="1415" column="16" selection-start-line="1415" selection-start-column="16" selection-end-line="1415" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#45577#45578#0" expanded="true" />
@@ -1173,6 +1180,10 @@
             <element signature="e#49959#49960#0" expanded="true" />
             <element signature="e#49999#50000#0" expanded="true" />
             <element signature="e#50043#50044#0" expanded="true" />
+            <element signature="e#52468#52469#0" expanded="true" />
+            <element signature="e#52511#52512#0" expanded="true" />
+            <element signature="e#52546#52547#0" expanded="true" />
+            <element signature="e#52589#52590#0" expanded="true" />
             <element signature="e#53993#53994#0" expanded="true" />
             <element signature="e#54026#54027#0" expanded="true" />
           </folding>

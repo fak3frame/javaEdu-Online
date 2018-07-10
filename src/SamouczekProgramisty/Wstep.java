@@ -1396,7 +1396,7 @@ public class Wstep {
 
 
         //Zachowanie atrybytow transient po deserializacji
-        class Czlowiek{
+        class Czlowiek implements Serializable{
             private transient int wiek;
             private String imie;
             public Czlowiek(int wiek, String imie){
@@ -1408,6 +1408,12 @@ public class Wstep {
             }
             public int getWiek() {
                 return wiek;
+            }
+        }
+        class CzlowiekFabryka{
+            Czlowiek c1 = new Czlowiek(20,"kamil");
+            try(ObjectInputStream strWyj = new ObjectInputStream(new FileOutputStream("c1.bin"))){
+                strWyj.writeObject(c1);
             }
         }
 
