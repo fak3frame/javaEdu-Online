@@ -1458,7 +1458,8 @@ public class Wstep {
         //Specjalna obsługa serializacji/deserializacji
         /*
         Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
-         ich dzialanie,
+         ich dzialanie, nazwa zmiennych nie bedzie miala znaczenia
+         ObjectInputStream strWej lub ObjectOutputStream strWyj
 
          */
         class SerializacjaUnikalna implements Serializable{
