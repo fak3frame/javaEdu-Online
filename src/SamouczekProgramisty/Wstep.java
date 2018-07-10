@@ -1395,7 +1395,11 @@ public class Wstep {
         f.main();
 
 
-        //Zachowanie atrybytow transient po deserializacji
+        //Zachowanie atrybytow transient oraz static po deserializacji
+        /*
+        W przypadku serializowania pol statycznych beda one po serializacji mialy taka
+         sama wartosc jak w deklaracji pola klasy poniewaz
+         */
         class Czlowiek implements Serializable{
             private transient Integer identyfikator;
             private transient int wiek;
@@ -1449,11 +1453,6 @@ public class Wstep {
         faabryka.main();
 
 
-        //Serializowanie pol statycznych
-        /*
-        W przypadku serializowania pol statycznych beda one po serializacji mialy taka
-         sama wartosc jak w deklaracji pola klasy poniewaz
-         */
 
 
         String x = new Object() + "123";
