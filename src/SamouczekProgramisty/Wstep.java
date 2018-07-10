@@ -1411,11 +1411,30 @@ public class Wstep {
             }
         }
         class CzlowiekFabryka{
-            Czlowiek c1 = new Czlowiek(20,"kamil");
-            try(ObjectInputStream strWyj = new ObjectInputStream(new FileOutputStream("c1.bin"))){
-                strWyj.writeObject(c1);
+            void main(){
+                Czlowiek c1 = new Czlowiek(20,"kamil");
+                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("c1.bin"))){
+                    strWyj.writeObject(c1);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("c1.bin"))){
+                    Czlowiek c2 = (Czlowiek) strWej.readObject();
+                    System.out.println(c2.getImie());
+                    System.out.println(c2.wiek);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
             }
         }
+        CzlowiekFabryka faabryka = new CzlowiekFabryka();
+        faabryka.main();
 
         //Serializowanie pol statycznych
 

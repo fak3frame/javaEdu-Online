@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="1415" column="16" selection-start-line="1415" selection-start-column="16" selection-end-line="1415" selection-end-column="16" />
+            <state relative-caret-position="244">
+              <caret line="1423" column="52" selection-start-line="1423" selection-start-column="52" selection-end-line="1423" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#45577#45578#0" expanded="true" />
@@ -256,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Fabryka (1)">
+  <component name="RunManager" selected="Application.Wstep">
     <configuration name="Fabryka (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._6_TryWithRescources.Fabryka" />
       <module name="javaStartMojSkrypt" />
@@ -362,8 +362,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Fabryka (1)" />
         <item itemvalue="Application.Wstep" />
+        <item itemvalue="Application.Fabryka (1)" />
         <item itemvalue="Application.X4" />
         <item itemvalue="Application.Fabryka" />
         <item itemvalue="Application.X2" />
@@ -380,13 +380,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00586" summary="SanouczekProgramisty Kolekcje 10">
-      <created>1531055491728</created>
-      <option name="number" value="00586" />
-      <option name="presentableId" value="LOCAL-00586" />
-      <option name="project" value="LOCAL" />
-      <updated>1531055491728</updated>
     </task>
     <task id="LOCAL-00587" summary="SanouczekProgramisty Kolekcje 11">
       <created>1531055516732</created>
@@ -724,7 +717,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531242010707</updated>
     </task>
-    <option name="localTasksCounter" value="635" />
+    <task id="LOCAL-00635" summary="SanouczekProgramisty Serializacja 22">
+      <created>1531242246880</created>
+      <option name="number" value="00635" />
+      <option name="presentableId" value="LOCAL-00635" />
+      <option name="project" value="LOCAL" />
+      <updated>1531242246880</updated>
+    </task>
+    <option name="localTasksCounter" value="636" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -793,7 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 3" />
     <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 4" />
     <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 5" />
     <MESSAGE value="SanouczekProgramisty TRY WTIH RESOURCES 6" />
@@ -818,7 +817,8 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 19" />
     <MESSAGE value="SanouczekProgramisty Serializacja 20" />
     <MESSAGE value="SanouczekProgramisty Serializacja 21" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 21" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1162,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="1415" column="16" selection-start-line="1415" selection-start-column="16" selection-end-line="1415" selection-end-column="16" />
+        <state relative-caret-position="244">
+          <caret line="1423" column="52" selection-start-line="1423" selection-start-column="52" selection-end-line="1423" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#45577#45578#0" expanded="true" />
