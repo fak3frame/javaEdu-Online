@@ -1397,11 +1397,13 @@ public class Wstep {
 
         //Zachowanie atrybytow transient po deserializacji
         class Czlowiek implements Serializable{
+            private transient Integer identyfikator;
             private transient int wiek;
             private String imie;
-            public Czlowiek(int wiek, String imie){
+            public Czlowiek(int wiek, String imie, Integer identyfikator){
                 this.wiek = wiek;
                 this.imie = imie;
+                this.identyfikator = identyfikator;
             }
             public String getImie() {
                 return imie;
@@ -1409,10 +1411,15 @@ public class Wstep {
             public int getWiek() {
                 return wiek;
             }
+            public Integer getIdentyfikator() {
+                return identyfikator;
+            }
         }
         class CzlowiekFabryka{
             void main(){
-                Czlowiek c1 = new Czlowiek(20,"kamil");
+                Czlowiek c1 = new Czlowiek(20,"kamil", 2314);
+                //Nadaje wartosc takze polu transient int wiek;
+                // oraz transient Integer (zmienna obiektowa)
                 try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("c1.bin"))){
                     strWyj.writeObject(c1);
                 } catch (FileNotFoundException e) {
@@ -1424,6 +1431,8 @@ public class Wstep {
                     Czlowiek c2 = (Czlowiek) strWej.readObject();
                     System.out.println(c2.getImie());
                     System.out.println(c2.wiek);
+                    //Po deserializacji wartosci pola transient int wynosi 0
+                    System.out.println(c2.);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
