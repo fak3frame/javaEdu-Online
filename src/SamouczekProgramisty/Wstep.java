@@ -1394,7 +1394,18 @@ public class Wstep {
         Fabryka f = new Fabryka();
         f.main();
 
+        //Zachowanie atrybytow transient po deserializacji
+        class Czlowiek{
+            private transient int wiek;
+            private String imie;
+            public Czlowiek(int wiek, String imie){
+                this.wiek = wiek;
+                this.imie = imie;
+            }
+        }
+
         //Serializowanie pol statycznych
+
 
         String x = new Object() + "123";
         System.out.println(x);
