@@ -1480,6 +1480,7 @@ public class Wstep {
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
                 //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
                 strWyj.writeUTF(stringTans);
+                //pomimo ze pole ma parametr transient to zostanie przypisane
                 strWyj.writeUTF(stringNormalny);
                 strWyj.writeInt(liczba+10);
             }

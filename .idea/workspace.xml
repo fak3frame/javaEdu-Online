@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="1461" column="63" selection-start-line="1461" selection-start-column="63" selection-end-line="1461" selection-end-column="63" />
+            <state relative-caret-position="176">
+              <caret line="1482" column="77" selection-start-line="1482" selection-start-column="77" selection-end-line="1482" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#45577#45578#0" expanded="true" />
@@ -359,13 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00608" summary="SanouczekProgramisty TRY WTIH RESOURCES 1">
-      <created>1531138880028</created>
-      <option name="number" value="00608" />
-      <option name="presentableId" value="LOCAL-00608" />
-      <option name="project" value="LOCAL" />
-      <updated>1531138880030</updated>
     </task>
     <task id="LOCAL-00609" summary="SanouczekProgramisty TRY WTIH RESOURCES 2">
       <created>1531139194306</created>
@@ -703,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531247388147</updated>
     </task>
-    <option name="localTasksCounter" value="657" />
+    <task id="LOCAL-00657" summary="SanouczekProgramisty Serializacja 45">
+      <created>1531247421464</created>
+      <option name="number" value="00657" />
+      <option name="presentableId" value="LOCAL-00657" />
+      <option name="project" value="LOCAL" />
+      <updated>1531247421464</updated>
+    </task>
+    <option name="localTasksCounter" value="658" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -772,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Serializacja 20" />
     <MESSAGE value="SanouczekProgramisty Serializacja 21" />
     <MESSAGE value="SanouczekProgramisty Serializacja 22" />
     <MESSAGE value="SanouczekProgramisty Serializacja 23" />
@@ -797,7 +796,8 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 42" />
     <MESSAGE value="SanouczekProgramisty Serializacja 43" />
     <MESSAGE value="SanouczekProgramisty Serializacja 44" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 44" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 45" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 45" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1148,8 +1148,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="1461" column="63" selection-start-line="1461" selection-start-column="63" selection-end-line="1461" selection-end-column="63" />
+        <state relative-caret-position="176">
+          <caret line="1482" column="77" selection-start-line="1482" selection-start-column="77" selection-end-line="1482" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#45577#45578#0" expanded="true" />
