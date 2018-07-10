@@ -1398,7 +1398,9 @@ public class Wstep {
         //Zachowanie atrybytow transient oraz static po deserializacji
         /*
         W przypadku serializowania pol statycznych beda one po serializacji mialy taka
-         sama wartosc jak w deklaracji pola klasy poniewaz
+         sama wartosc jak w deklaracji pola klasy poniewaz dotycza one klasy a nie obiektu
+         UWAGA ! w jednym main jesli zrobimy serializacje i deserializacje pola statycznego
+         ze zmiana w obiekcie - pokaze po deserializacji takze zmieniona wartosc
          */
         class Czlowiek implements Serializable{
             private transient Integer identyfikator;
