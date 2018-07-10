@@ -1432,6 +1432,8 @@ public class Wstep {
                     System.out.println(c2.getImie());
                     System.out.println(c2.wiek);
                     //Po deserializacji wartosci pola transient int wynosi 0
+                    // nawej jesli podczas deklaracji pola w klasie nadamy jemu
+                    // wartosc a nie po utworzeniu obiektu
                     System.out.println(c2.getIdentyfikator());
                     //Natomiast zmiennej obiektowej Integer wynosi null
                 } catch (FileNotFoundException e) {
@@ -1448,7 +1450,10 @@ public class Wstep {
 
 
         //Serializowanie pol statycznych
-
+        /*
+        W przypadku serializowania pol statycznych beda one po serializacji mialy taka
+         sama wartosc jak w deklaracji pola klasy poniewaz
+         */
 
 
         String x = new Object() + "123";
