@@ -1455,6 +1455,10 @@ public class Wstep {
         faabryka.main();
 
 
+        //Specjalna obsługa serializacji/deserializacji
+
+
+
 
 
         String x = new Object() + "123";
