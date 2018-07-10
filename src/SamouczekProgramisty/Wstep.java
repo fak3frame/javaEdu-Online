@@ -1432,7 +1432,8 @@ public class Wstep {
                     System.out.println(c2.getImie());
                     System.out.println(c2.wiek);
                     //Po deserializacji wartosci pola transient int wynosi 0
-                    System.out.println(c2.);
+                    System.out.println(c2.getIdentyfikator());
+                    //Natomiast zmiennej obiektowej Integer wynosi null
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
