@@ -1459,8 +1459,22 @@ public class Wstep {
         /*
         Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
          ich dzialanie
-         */
 
+         */
+        class SerializacjaUnikalna implements Serializable{
+            private transient String stringTans;
+            private String stringNormalny;
+            public SerializacjaUnikalna(String sT, String sN){
+                this.stringTans = sT;
+                this.stringNormalny = sN;
+            }
+            private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
+
+            }
+            private void writeObject(ObjectOutputStream strWyj) throws IOException {
+                strWyj.writeUTF();
+            }
+        }
 
 
 
