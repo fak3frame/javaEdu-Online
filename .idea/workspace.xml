@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -32,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="1566" column="50" selection-start-line="1566" selection-start-column="50" selection-end-line="1566" selection-end-column="50" />
+            <state relative-caret-position="427">
+              <caret line="1587" column="66" selection-start-line="1587" selection-start-column="66" selection-end-line="1587" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#58032#58033#0" expanded="true" />
@@ -44,6 +45,15 @@
                 <element signature="e#58856#58857#0" expanded="true" />
                 <element signature="e#58904#58905#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Czlowiek.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -188,6 +198,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaStartMojSkrypt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaStartMojSkrypt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+              <item name="_7_Serializacja" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,13 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00619" summary="SanouczekProgramisty Serializacja 4">
-      <created>1531147207242</created>
-      <option name="number" value="00619" />
-      <option name="presentableId" value="LOCAL-00619" />
-      <option name="project" value="LOCAL" />
-      <updated>1531147207243</updated>
     </task>
     <task id="LOCAL-00620" summary="SanouczekProgramisty Serializacja 5">
       <created>1531147553028</created>
@@ -685,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531343827533</updated>
     </task>
-    <option name="localTasksCounter" value="668" />
+    <task id="LOCAL-00668" summary="SanouczekProgramisty Serializacja 56">
+      <created>1531344352142</created>
+      <option name="number" value="00668" />
+      <option name="presentableId" value="LOCAL-00668" />
+      <option name="project" value="LOCAL" />
+      <updated>1531344352142</updated>
+    </task>
+    <option name="localTasksCounter" value="669" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -701,11 +719,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35955057" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35955057" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21770681" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21770681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -754,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Serializacja 31" />
     <MESSAGE value="SanouczekProgramisty Serializacja 32" />
     <MESSAGE value="SanouczekProgramisty Serializacja 33" />
     <MESSAGE value="SanouczekProgramisty Serializacja 34" />
@@ -779,7 +796,8 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 53" />
     <MESSAGE value="SanouczekProgramisty Serializacja 54" />
     <MESSAGE value="SanouczekProgramisty Serializacja 55" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 55" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 56" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 56" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -787,13 +805,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/KontoBanowe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1119,8 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="1566" column="50" selection-start-line="1566" selection-start-column="50" selection-end-line="1566" selection-end-column="50" />
+        <state relative-caret-position="427">
+          <caret line="1587" column="66" selection-start-line="1587" selection-start-column="66" selection-end-line="1587" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#58032#58033#0" expanded="true" />
@@ -1128,6 +1139,13 @@
             <element signature="e#58856#58857#0" expanded="true" />
             <element signature="e#58904#58905#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
