@@ -1533,6 +1533,26 @@ public class Wstep {
         }
 
 
+        //Interface Externalizable
+        /*
+        Klasa implementujaca ten interface musi posiadac konstruktor bezparametrowy
+         */
+        class PelnaKontrola implements Externalizable{
+
+            private String napis;
+
+            @Override
+            public void writeExternal(ObjectOutput out) throws IOException {
+
+            }
+
+            @Override
+            public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+
+            }
+        }
+
+
         String x = new Object() + "123";
         System.out.println(x);
     }
