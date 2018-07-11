@@ -1473,6 +1473,7 @@ public class Wstep {
             }
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
                 //Przypisuje wybranym polom wartosci ze strumienia
+                //W zaleznosic od tego jaki typ pola taka metoda na strumieniu
                 stringTans = strWej.readUTF();
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
