@@ -16,6 +16,10 @@ public class Czlowiek2 implements Serializable {
         int wiekUrodzenia = Calendar.getInstance().get(Calendar.YEAR) - wiek;
         out.writeInt(wiekUrodzenia);
     }
+    private void readObject(ObjectInputStream in) throws IOException,ClassNotFoundException{
+        in.defaultReadObject();
+
+    }
 
 
     public static void main(String[] args) {
