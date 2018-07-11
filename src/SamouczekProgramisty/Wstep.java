@@ -1472,6 +1472,15 @@ public class Wstep {
                 this.liczba = liczba;
             }
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
+                //WAZNE!!
+                //Moge dodac takze defaultReadObjet do odczytania zwyklego gotowego
+                // obiektu a nastepnie pola (nawet dodatkowe ze strumienia) i wykorzytsanie
+                // ich do nadpisania pol obiektu
+                //strWej.defaultReadObject();
+                //int birthYear = stream.readInt();
+                //age = Calendar.getInstance().get(Calendar.YEAR) - birthYear;
+                //age to standardowe pole obiektu - mam do niego dostep
+
                 //Przypisuje wybranym polom wartosci ze strumienia
                 //W zaleznosic od tego jaki typ pola taka metoda na strumieniu
                 stringTans = strWej.readUTF();
