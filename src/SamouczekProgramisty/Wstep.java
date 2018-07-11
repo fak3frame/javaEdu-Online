@@ -1509,7 +1509,10 @@ public class Wstep {
         SerializacjaUnikalnaFabryka ts = new SerializacjaUnikalnaFabryka();
         ts.main();
 
+        //Dziedziczenie w serializacji
+        /*
 
+         */
 
 
         String x = new Object() + "123";
