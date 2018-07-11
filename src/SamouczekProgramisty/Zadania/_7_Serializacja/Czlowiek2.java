@@ -7,6 +7,7 @@ public class Czlowiek2 {
     int wiek;
 
 
+
     public static void main(String[] args) {
         System.out.println(Calendar.getInstance().get(Calendar.YEAR));
     }
