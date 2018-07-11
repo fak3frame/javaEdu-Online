@@ -1,9 +1,6 @@
 package SamouczekProgramisty.Zadania._7_Serializacja;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -22,6 +19,14 @@ public class Czlowiek {
                     imiona.add(imie);
                 }
             }while (!imie.equals("-"));
+            out.writeObject(imiona);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("imiona.bin"))){
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
