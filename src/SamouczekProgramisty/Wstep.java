@@ -1511,6 +1511,14 @@ public class Wstep {
 
         //Dziedziczenie w serializacji
         /*
+        Klasa ktora rozszerza klase implementujaca inteface Serializable
+         automatycznie takze go implementuje wiec takze jest serializowana
+
+        Jesli chce aby klasa nie byla serializowna moge nadpisac metody
+         private void readObject(ObjectInputStream strWej) lub/oraz
+         void writeObject(ObjectOutputStream strWyj)
+         i nic w nich nie wpisywac lub podac info w sout
+
 
          */
 
