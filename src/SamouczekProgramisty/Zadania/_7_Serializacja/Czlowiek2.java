@@ -6,7 +6,8 @@ public class Czlowiek2 {
     String imie;
     int wiek;
     Czlowiek2(String imie, int wiek){
-
+        this.imie = imie;
+        this.wiek = wiek;
     }
 
 
