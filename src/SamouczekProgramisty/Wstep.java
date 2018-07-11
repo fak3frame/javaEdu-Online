@@ -1517,10 +1517,14 @@ public class Wstep {
         Jesli chce aby klasa nie byla serializowna moge nadpisac metody
          private void readObject(ObjectInputStream strWej) lub/oraz
          void writeObject(ObjectOutputStream strWyj)
-         i nic w nich nie wpisywac lub podac info w sout
-
-
+         i wyrzucic w nich odpowienio podpisany wyjatek NotSerializableException
          */
+        class Chinczyk extends Czlowiek{
+
+            public Chinczyk(int wiek, String imie, Integer identyfikator) {
+                super(wiek, imie, identyfikator);
+            }
+        }
 
 
         String x = new Object() + "123";
