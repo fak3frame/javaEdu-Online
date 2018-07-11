@@ -1542,7 +1542,12 @@ public class Wstep {
         class PelnaKontrola implements Externalizable{
 
             private String napis;
+            public PelnaKontrola(){
 
+            }
+            public PelnaKontrola(String napis){
+                this.napis=napis;
+            }
             @Override
             public void writeExternal(ObjectOutput out) throws IOException {
                 out.writeUTF(napis);
@@ -1551,7 +1556,37 @@ public class Wstep {
             public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
                 napis = in.readUTF();
             }
+            void main(){
+                PelnaKontrola pK = new PelnaKontrola("testuje Pelna konrole");
+                try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("pelnaKontrola.bin"))){
+                    out.writeObject(pK);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("pelnaKontrola.bin"))){
+                    PelnaKontrola pKnew = (PelnaKontrola) in.readObject();
+                    System.out.println(pKnew.napis);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
         }
+        PelnaKontrola pK = new PelnaKontrola("213");
+        pK.main();
+
+
+        //Pole serialVersionUID
+        /*
+        Tworze je aby sprawdzic poprawnosc serializacji i deserializacji
+        private static long serialVersionUID;
+        Moge nadac jej wartosc sam lub kompilator zrobi to za mnie
+         */
 
 
         String x = new Object() + "123";
