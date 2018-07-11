@@ -10,17 +10,27 @@ import java.util.Scanner;
 
 public class Czlowiek {
     List imiona = new LinkedList();
+    String imie;
     Scanner wprowadz = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public void input(){
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("imiona.bin"))){
             System.out.println("Podaj imiona:");
-
+            do {
+                imie = wprowadz.nextLine();
+                if(!imie.equals("-")){
+                    imiona.add(imie);
+                }
+            }while (!imie.equals("-"));
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 }
