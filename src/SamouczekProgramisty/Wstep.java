@@ -1483,9 +1483,9 @@ public class Wstep {
                 //Moge dac takze defaultWriteObject do zapisania zwyklego gotowego
                 // obiektu a nastepnie kolejne pola (nawet dodatkowe) do zapisania
                 // ich takze do stuminia
-                //stream.defaultWriteObject();
+                //strWyj.defaultWriteObject();
                 //int birthYear = Calendar.getInstance().get(Calendar.YEAR) - age;
-                //stream.writeInt(birthYear);
+                //strWyj.writeInt(birthYear);
 
                 //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
                 strWyj.writeUTF(stringTans);
