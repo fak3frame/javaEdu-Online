@@ -23,6 +23,21 @@ public class Czlowiek {
 
 
     public static void main(String[] args) {
-
+        try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("imionaZadanie.bin"))){
+            out.writeObject(input());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("imionaZadanie.bin"))){
+            List<String> noweImiona = new ArrayList<>();
+            noweImiona = (List<String>) in.readObject();
+            System.out.println(noweImiona);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
