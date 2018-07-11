@@ -1472,7 +1472,7 @@ public class Wstep {
                 this.liczba = liczba;
             }
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
-                //Musze przypisac wartosci
+                //Przypisuje wybranym polom wartosci ze strumienia
                 stringTans = strWej.readUTF();
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
