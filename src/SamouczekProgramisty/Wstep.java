@@ -1524,6 +1524,12 @@ public class Wstep {
             public Chinczyk(int wiek, String imie, Integer identyfikator) {
                 super(wiek, imie, identyfikator);
             }
+            private void writeObject(ObjectOutputStream out) throws IOException {
+                throw new NotSerializableException("Nie serialzuje Chinczyka");
+            }
+            private void readObject(ObjectInputStream in) throws IOException {
+                throw new NotSerializableException("Nie serialzuje Chinczyka");
+            }
         }
 
 
