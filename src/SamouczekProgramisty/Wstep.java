@@ -1536,6 +1536,8 @@ public class Wstep {
         //Interface Externalizable
         /*
         Klasa implementujaca ten interface musi posiadac konstruktor bezparametrowy
+         oraz implementowac wlasne metody strumienia wyjscia i wejscia
+         writeExternal oraz readExternal
          */
         class PelnaKontrola implements Externalizable{
 
@@ -1543,12 +1545,11 @@ public class Wstep {
 
             @Override
             public void writeExternal(ObjectOutput out) throws IOException {
-
+                out.writeUTF(napis);
             }
-
             @Override
             public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-
+                napis = in.readUTF();
             }
         }
 
