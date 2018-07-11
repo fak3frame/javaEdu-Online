@@ -1479,6 +1479,14 @@ public class Wstep {
                 liczba = strWej.readInt();
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
+                //WAZNE!!
+                //Moge dac takze defaultWriteObject do zapisania zwyklego gotowego
+                // obiektu a nastepnie kolejne pola (nawet dodatkowe) do zapisania
+                // ich takze do stuminia
+                //stream.defaultWriteObject();
+                //int birthYear = Calendar.getInstance().get(Calendar.YEAR) - age;
+                //stream.writeInt(birthYear);
+
                 //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
                 strWyj.writeUTF(stringTans);
                 //pomimo ze pole ma parametr transient to zostanie przypisane
