@@ -1468,7 +1468,23 @@ public class Wstep {
         Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
          zostanie zserializowane
 
-        Moge takze zachowac
+        Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
+         strWyj.defaultReadObject();
+
+        Moge rowniez dodac swoje zmienne w tej metodzie lub zmienic wartosc tych dodawanych
+
+
+        Moge wykorzystac to na przykladzie gdy bede chcial zapisac do strumienia aktualny wiek
+         i po zdeserializowniu otrzymac aktualny wiek zgodny z aktualnym rokiem
+
+         w metodzie writeObject:
+         strWyj.defaultWriteObject(); - zapisuje standardowe dane obiektu
+         int wiekUrodzenia = Calendar.getInstance().get(Calendar.YEAR) - wiek
+          //odejmuje od aktualnego wieku serializacji - wiek zapisanego obiektu
+          // i wychodzi np 1991
+         strWyj.writeInt(wiekUrodzenia) - zapisuje dodatkowo do strumienia zmienna
+
+         w metodzie readObject:
 
          */
         class SerializacjaUnikalna implements Serializable{
@@ -1481,35 +1497,12 @@ public class Wstep {
                 this.liczba = liczba;
             }
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
-                //WAZNE!!
-                //Moge dodac takze defaultReadObjet do odczytania zwyklego gotowego
-                // obiektu a nastepnie pola (nawet dodatkowe ze strumienia) i wykorzytsanie
-                // ich do nadpisania pol obiektu
-                //strWej.defaultReadObject();
-                //int birthYear = stream.readInt();
-                //age = Calendar.getInstance().get(Calendar.YEAR) - birthYear;
-                //age to standardowe pole obiektu - mam do niego dostep
-
-
                 stringTans = strWej.readUTF();
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
-                //WAZNE!!
-                //Moge dac takze defaultWriteObject do zapisania zwyklego gotowego
-                // obiektu a nastepnie kolejne pola (nawet dodatkowe) do zapisania
-                // ich takze do stuminia
-                //strWyj.defaultWriteObject();
-                //strWyj.writeInt(dodatkowaZmiennaInt);
-
-                //Moge wykorzystac to na przykadzie gdy chce aby wiek zapisanego obiektu
-                // byl odczytany po serializacji zgodnie z aktualnym
-
-
-                //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
                 strWyj.writeUTF(stringTans);
-                //pomimo ze pole ma parametr transient to zostanie przypisane
                 strWyj.writeUTF(stringNormalny);
                 strWyj.writeInt(liczba+10);
             }
