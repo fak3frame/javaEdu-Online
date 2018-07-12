@@ -1471,7 +1471,7 @@ public class Wstep {
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
          strWyj.defaultReadObject();
 
-        Moge rowniez dodac swoje zmienne w tej metodzie lub zmienic wartosc tych dodawanych
+        Moge rowniez dodac swoje zmienne w tej metodzie lub zmienic ich wartosc
 
 
         Moge wykorzystac to na przykladzie gdy bede chcial zapisac do strumienia aktualny wiek

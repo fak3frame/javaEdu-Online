@@ -26,7 +26,7 @@ public class Czlowiek2 implements Serializable {
     private void readObject(ObjectInputStream in) throws IOException,ClassNotFoundException{
         System.out.println("ODCZYT");
         in.defaultReadObject();
-        int wiekUrodzenia = in.readInt();
+        int wiekUrodzenia = in.readInt();//odczytuje pierwsza zmienna int w strumieniu
         System.out.println("Odejmuje aktualny rok od zapisanej zmiennej : "+Calendar.getInstance().get(Calendar.YEAR)+
         " - "+wiekUrodzenia);
         wiek = Calendar.getInstance().get(Calendar.YEAR) - wiekUrodzenia;
