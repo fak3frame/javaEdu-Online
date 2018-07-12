@@ -15,17 +15,22 @@ public class Czlowiek2 implements Serializable {
     }
 
     private void writeObject(ObjectOutputStream out)throws IOException{
+        System.out.println("ZAPIS");
         out.defaultWriteObject();
         int wiekUrodzenia = Calendar.getInstance().get(Calendar.YEAR) - wiek;
         out.writeInt(wiekUrodzenia);
+        System.out.println("odejmuje aktualny rok : "+Calendar.getInstance().get(Calendar.YEAR) +
+        " od wieku urodzenia obiektu: "+wiek);
         System.out.println("zapisuje zmienna: "+wiekUrodzenia);
     }
     private void readObject(ObjectInputStream in) throws IOException,ClassNotFoundException{
+        System.out.println("ODCZYT");
         in.defaultReadObject();
         int wiekUrodzenia = in.readInt();
-        System.out.println("Odejmuje aktualny rok: "+Calendar.getInstance().get(Calendar.YEAR)+
+        System.out.println("Odejmuje aktualny rok od zapisanej zmiennej : "+Calendar.getInstance().get(Calendar.YEAR)+
         " - "+wiekUrodzenia);
         wiek = Calendar.getInstance().get(Calendar.YEAR) - wiekUrodzenia;
+        System.out.println("i wychodzi wiek : "+wiek);
     }
 
 
@@ -45,6 +50,7 @@ public class Czlowiek2 implements Serializable {
         try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("wiek.bin"))){
             List<Czlowiek2> nowaLista = new LinkedList<>();
             nowaLista = (List<Czlowiek2> ) in.readObject();
+            System.out.println("OTRZYMANE DANE:");
             for(Czlowiek2 x : nowaLista){
                 System.out.println(x.imie);
                 System.out.println(x.wiek);

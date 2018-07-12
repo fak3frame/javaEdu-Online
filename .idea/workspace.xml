@@ -35,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23732">
-              <caret line="1481" column="71" selection-start-line="1481" selection-start-column="71" selection-end-line="1481" selection-end-column="71" />
+            <state relative-caret-position="197">
+              <caret line="939" column="57" selection-start-line="939" selection-start-column="52" selection-end-line="939" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,8 +47,8 @@
       <file leaf-file-name="Czlowiek2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="306">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,6 +86,7 @@
       <find>static</find>
       <find>stat</find>
       <find>class wew</find>
+      <find>listy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -357,20 +358,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00642" summary="SanouczekProgramisty Serializacja 30">
-      <created>1531244643151</created>
-      <option name="number" value="00642" />
-      <option name="presentableId" value="LOCAL-00642" />
-      <option name="project" value="LOCAL" />
-      <updated>1531244643151</updated>
-    </task>
-    <task id="LOCAL-00643" summary="SanouczekProgramisty Serializacja 31">
-      <created>1531244854510</created>
-      <option name="number" value="00643" />
-      <option name="presentableId" value="LOCAL-00643" />
-      <option name="project" value="LOCAL" />
-      <updated>1531244854511</updated>
     </task>
     <task id="LOCAL-00644" summary="SanouczekProgramisty Serializacja 32">
       <created>1531244926783</created>
@@ -701,7 +688,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531348171049</updated>
     </task>
-    <option name="localTasksCounter" value="691" />
+    <task id="LOCAL-00691" summary="SanouczekProgramisty Serializacja 79">
+      <created>1531395520572</created>
+      <option name="number" value="00691" />
+      <option name="presentableId" value="LOCAL-00691" />
+      <option name="project" value="LOCAL" />
+      <updated>1531395520573</updated>
+    </task>
+    <task id="LOCAL-00692" summary="SanouczekProgramisty Serializacja 80">
+      <created>1531396011633</created>
+      <option name="number" value="00692" />
+      <option name="presentableId" value="LOCAL-00692" />
+      <option name="project" value="LOCAL" />
+      <updated>1531396011633</updated>
+    </task>
+    <option name="localTasksCounter" value="693" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -710,12 +711,13 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31210986" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35955057" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35955057" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
@@ -734,7 +736,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31210986" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -770,8 +771,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Serializacja 54" />
-    <MESSAGE value="SanouczekProgramisty Serializacja 55" />
     <MESSAGE value="SanouczekProgramisty Serializacja 56" />
     <MESSAGE value="SanouczekProgramisty Serializacja 57" />
     <MESSAGE value="SanouczekProgramisty Serializacja 58" />
@@ -795,7 +794,9 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 76" />
     <MESSAGE value="SanouczekProgramisty Serializacja 77" />
     <MESSAGE value="SanouczekProgramisty Serializacja 78" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 78" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 79" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 80" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 80" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1053,6 +1054,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,8 +1132,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23732">
-          <caret line="1481" column="71" selection-start-line="1481" selection-start-column="71" selection-end-line="1481" selection-end-column="71" />
+        <state relative-caret-position="197">
+          <caret line="939" column="57" selection-start-line="939" selection-start-column="52" selection-end-line="939" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1137,8 +1142,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="306">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
