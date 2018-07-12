@@ -1502,7 +1502,11 @@ public class Wstep {
                 liczba = strWej.readInt();
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
+                //Na poczatku moge dodac strWyj.defaultWriteObject() aby
+                // zostal zapisany obiekt w calosci (wszystkie jego pola automatycznie)
                 strWyj.writeUTF(stringTans);
+                //wybrany typ do rodzaju zmiennej
+                //moge nawet zapisac zmienna z parametrem Transient
                 strWyj.writeUTF(stringNormalny);
                 strWyj.writeInt(liczba+10);
             }
