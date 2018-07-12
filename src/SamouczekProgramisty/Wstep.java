@@ -1464,14 +1464,20 @@ public class Wstep {
         W zaleznosci od zmeinnych moge dodac do strumienia pojedyncze zmienne
          pol - w takim przypadku na strumieniu WYJSCIA wywoluje konkretna metode:
          strWyj.writeUTF(stringTans); / strWyj.writeInt(liczba+10); itp
-
         Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
          zostanie zserializowane
 
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
-         strWyj.defaultReadObject();
+         strWyj.defaultReadObject(); to automatycznie wszystkie pola obiektu zostana
+         dodane do stumienia
 
-        Moge rowniez dodac swoje zmienne w tej metodzie lub zmienic ich wartosc
+        Moge rowniez dodac swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
+         modyfikowac zmienne serializowanego obiektu. Dodatkowe zmiene oporocz
+         zwyklego obiektu zapisanego metoda strWyj.defaultReadObject() moge
+         takze zapisac wywolujac na stumieniu odpowiednie metody w zaleznosci od
+         typu zmeinnej np strWyj.writeInt(dodatkowaZmiennaInt);
+        W deserializacji moge sie do nich dostac wykorzystjac analogiczna metode
+         int otrzymanaZmianna = strWej.readInt();
 
 
         Moge wykorzystac to na przykladzie gdy bede chcial zapisac do strumienia aktualny wiek
