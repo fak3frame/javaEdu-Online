@@ -1466,6 +1466,8 @@ public class Wstep {
          strWyj.writeUTF(stringTans); / strWyj.writeInt(liczba+10); itp
         Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
          zostanie zserializowane
+        Analogicznie w metodzie deserializacji ObjectInputStream:
+         int zmienna = strWej.readInt();
 
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
          strWyj.defaultReadObject(); to automatycznie wszystkie pola obiektu zostana
@@ -1473,13 +1475,17 @@ public class Wstep {
         Analogicznie w metodzie deserializacji ObjectInputStream:
          strWej.defaultReadObject();
 
-        Moge rowniez dodac swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
-         modyfikowac zmienne serializowanego obiektu. Dodatkowe zmiene oporocz
-         zwyklego obiektu zapisanego metoda strWyj.defaultReadObject() moge
-         takze zapisac wywolujac na stumieniu odpowiednie metody w zaleznosci od
-         typu zmeinnej np strWyj.writeInt(dodatkowaZmiennaInt);
-        W deserializacji moge sie do nich dostac wykorzystjac analogiczna metode
-         int otrzymanaZmianna = strWej.readInt();
+        Moge rowniez dodac NOWE swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
+         modyfikowac zmienne serializowanego obiektu, nawet po mimo obecenosci metody
+         zapisu wszystkich zmeinnych metoda strWyj.defaultReadObject().
+        W takim przypadku jesli bede chcial sie odwolac do dodatkowego pola moge uzyc
+         metody np. dla int - int otrzymanaZmianna = strWej.readInt(); i zostanie
+         przyjeta pierwsza zmianna int zapisana w struminiu
+         POD WARUNKIEM ze na poczatku metody deserializacji takze jest metoda
+         odczytu wszystkich pol strWej.defaultReadObject();
+
+
+
 
 
         Moge wykorzystac to na przykladzie gdy bede chcial zapisac do strumienia aktualny wiek
