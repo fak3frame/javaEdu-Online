@@ -1461,6 +1461,15 @@ public class Wstep {
          ich dzialanie, nazwa zmiennych nie bedzie miala znaczenia
          ObjectInputStream strWej lub ObjectOutputStream strWyj
 
+        W zaleznosci od zmeinnych moge dodac do strumienia pojedyncze zmienne
+         pol - w takim przypadku na strumieniu WYJSCIA wywoluje konkretna metode:
+         strWyj.writeUTF(stringTans); / strWyj.writeInt(liczba+10); itp
+
+        Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
+         zostanie zserializowane
+
+        Moge takze zachowac
+
          */
         class SerializacjaUnikalna implements Serializable{
             private transient String stringTans;
@@ -1481,8 +1490,7 @@ public class Wstep {
                 //age = Calendar.getInstance().get(Calendar.YEAR) - birthYear;
                 //age to standardowe pole obiektu - mam do niego dostep
 
-                //Przypisuje wybranym polom wartosci ze strumienia
-                //W zaleznosic od tego jaki typ pola taka metoda na strumieniu
+
                 stringTans = strWej.readUTF();
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
@@ -1493,8 +1501,11 @@ public class Wstep {
                 // obiektu a nastepnie kolejne pola (nawet dodatkowe) do zapisania
                 // ich takze do stuminia
                 //strWyj.defaultWriteObject();
-                //int birthYear = Calendar.getInstance().get(Calendar.YEAR) - age;
-                //strWyj.writeInt(birthYear);
+                //strWyj.writeInt(dodatkowaZmiennaInt);
+
+                //Moge wykorzystac to na przykadzie gdy chce aby wiek zapisanego obiektu
+                // byl odczytany po serializacji zgodnie z aktualnym
+
 
                 //Uzyje specjalnych metod dla poszczegolnych rodzajow pol
                 strWyj.writeUTF(stringTans);
