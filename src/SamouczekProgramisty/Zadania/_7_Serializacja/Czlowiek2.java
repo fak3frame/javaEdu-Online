@@ -15,10 +15,13 @@ public class Czlowiek2 implements Serializable {
         out.defaultWriteObject();
         int wiekUrodzenia = Calendar.getInstance().get(Calendar.YEAR) - wiek;
         out.writeInt(wiekUrodzenia);
+        System.out.println("zapisuje zmienna: "+wiekUrodzenia);
     }
     private void readObject(ObjectInputStream in) throws IOException,ClassNotFoundException{
         in.defaultReadObject();
         int wiekUrodzenia = in.readInt();
+        System.out.println("Odejmuje aktualny rok: "+Calendar.getInstance().get(Calendar.YEAR)+
+        " - "+wiekUrodzenia);
         wiek = Calendar.getInstance().get(Calendar.YEAR) - wiekUrodzenia;
     }
 
