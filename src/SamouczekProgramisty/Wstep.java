@@ -1483,9 +1483,9 @@ public class Wstep {
          przyjeta pierwsza zmianna int zapisana w struminiu
          POD WARUNKIEM ze na poczatku metody deserializacji takze jest metoda
          odczytu wszystkich pol strWej.defaultReadObject();
-
-
-
+        W deserializacji w takim przypadku najpierw powieniennem wyciagnac ze struminia
+         obiekt u zapisac go do nowego obieku - Silnik = (Silnik)strWej.readObject();
+         a nastepnie dostac sie do zmiennej - int zmienna = (int)strWej.readInt();
 
 
         Moge wykorzystac to na przykladzie gdy bede chcial zapisac do strumienia aktualny wiek
