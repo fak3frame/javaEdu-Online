@@ -1469,7 +1469,9 @@ public class Wstep {
 
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
          strWyj.defaultReadObject(); to automatycznie wszystkie pola obiektu zostana
-         dodane do stumienia
+         dodane do stumienia.
+        Analogicznie w metodzie deserializacji ObjectInputStream:
+         strWej.defaultReadObject();
 
         Moge rowniez dodac swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
          modyfikowac zmienne serializowanego obiektu. Dodatkowe zmiene oporocz
