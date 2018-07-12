@@ -1,7 +1,10 @@
 package SamouczekProgramisty.Zadania._7_Serializacja;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Czlowiek2 implements Serializable {
     String imie;
@@ -30,10 +33,28 @@ public class Czlowiek2 implements Serializable {
         Czlowiek2 c1 = new Czlowiek2("kamil",27);
         Czlowiek2 c2 = new Czlowiek2("tomek",29);
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("wiek.bin"))){
+            List<Czlowiek2> czlowiek2Lista = new LinkedList<>();
+            czlowiek2Lista.add(c1);
+            czlowiek2Lista.add(c2);
+            out.writeObject(czlowiek2Lista);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("wiek.bin"))){
+            List<Czlowiek2> nowaLista = new LinkedList<>();
+            nowaLista = (List<Czlowiek2> ) in.readObject();
+            for(Czlowiek2 x : nowaLista){
+                System.out.println(x.imie);
+                System.out.println(x.wiek);
+            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
