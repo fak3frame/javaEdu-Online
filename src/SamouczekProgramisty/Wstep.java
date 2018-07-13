@@ -1294,6 +1294,7 @@ public class Wstep {
         Wymagana jest kolejnosc serializacji zgodna z deserializacja. Jesli dodaje
          do strumienia najpierw liste a potem zmienna int to w deserializacj najpierw
          bede musial odczytac liste a potem obiekt bo inaczej wyrzuci wyjatek
+         java.io.OptionalDataException
 
         public class Fruit {} //klasa musi miec konstr. bezparam.
         public class Apple extends Fruit implements Serializable {}//nie musi miec
