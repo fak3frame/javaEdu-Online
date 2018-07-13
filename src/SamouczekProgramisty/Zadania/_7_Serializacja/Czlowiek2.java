@@ -41,7 +41,7 @@ public class Czlowiek2 implements Serializable {
 
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("wiek.bin"))){
             int zmiennaTestowa = 10;
-
+            out.writeInt(zmiennaTestowa);
             List<Czlowiek2> czlowiek2Lista = new LinkedList<>();
             czlowiek2Lista.add(c1);
             czlowiek2Lista.add(c2);
@@ -54,6 +54,7 @@ public class Czlowiek2 implements Serializable {
 
         try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("wiek.bin"))){
             List<Czlowiek2> nowaLista = new LinkedList<>();
+            int zmiennaTestowa2 = in.readInt();
             nowaLista = (List<Czlowiek2> ) in.readObject();
             System.out.println("OTRZYMANE DANE:");
             for(Czlowiek2 x : nowaLista){
