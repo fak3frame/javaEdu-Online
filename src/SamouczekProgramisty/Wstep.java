@@ -1291,6 +1291,7 @@ public class Wstep {
         WYMOGI:
         Klasa ktora jest rozszerzana przez klase ktora bedzie serializowana MUSI
          miec konstrukotr bezparametrowy!
+        Wymagana jest kolejnosc serializacji zgodna z deserializacja.
 
         public class Fruit {} //klasa musi miec konstr. bezparam.
         public class Apple extends Fruit implements Serializable {}//nie musi miec
