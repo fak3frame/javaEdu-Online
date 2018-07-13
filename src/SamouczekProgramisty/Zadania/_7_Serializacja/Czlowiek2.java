@@ -34,7 +34,6 @@ public class Czlowiek2 implements Serializable {
         System.out.println("i wychodzi wiek : "+wiek);
     }
 
-
     public static void main(String[] args) {
         Czlowiek2 c1 = new Czlowiek2("kamil",27);
         Czlowiek2 c2 = new Czlowiek2("tomek",29);
