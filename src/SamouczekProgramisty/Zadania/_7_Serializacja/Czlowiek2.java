@@ -23,6 +23,7 @@ public class Czlowiek2 implements Serializable {
         " od wieku urodzenia obiektu: "+wiek);
         System.out.println("zapisuje zmienna: "+wiekUrodzenia);
     }
+
     private void readObject(ObjectInputStream in) throws IOException,ClassNotFoundException{
         System.out.println("ODCZYT");
         in.defaultReadObject();
