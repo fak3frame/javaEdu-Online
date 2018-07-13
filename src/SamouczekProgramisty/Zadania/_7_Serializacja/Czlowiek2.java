@@ -40,6 +40,8 @@ public class Czlowiek2 implements Serializable {
         Czlowiek2 c2 = new Czlowiek2("tomek",29);
 
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("wiek.bin"))){
+            int zmiennaTestowa = 10;
+
             List<Czlowiek2> czlowiek2Lista = new LinkedList<>();
             czlowiek2Lista.add(c1);
             czlowiek2Lista.add(c2);
