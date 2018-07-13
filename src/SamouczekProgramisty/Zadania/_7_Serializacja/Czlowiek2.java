@@ -47,6 +47,7 @@ public class Czlowiek2 implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("wiek.bin"))){
             List<Czlowiek2> nowaLista = new LinkedList<>();
             nowaLista = (List<Czlowiek2> ) in.readObject();
