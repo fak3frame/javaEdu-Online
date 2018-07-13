@@ -55,7 +55,6 @@ public class Czlowiek2 implements Serializable {
                 System.out.println(x.imie);
                 System.out.println(x.wiek);
             }
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
