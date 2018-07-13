@@ -37,6 +37,7 @@ public class Czlowiek2 implements Serializable {
     public static void main(String[] args) {
         Czlowiek2 c1 = new Czlowiek2("kamil",27);
         Czlowiek2 c2 = new Czlowiek2("tomek",29);
+
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("wiek.bin"))){
             List<Czlowiek2> czlowiek2Lista = new LinkedList<>();
             czlowiek2Lista.add(c1);
