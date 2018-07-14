@@ -1504,6 +1504,7 @@ public class Wstep {
 
          w metodzie readObject:
 
+
          */
         class SerializacjaUnikalna implements Serializable{
             private transient String stringTans;
