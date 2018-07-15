@@ -1504,9 +1504,9 @@ public class Wstep {
          strWyj.writeInt(wiekUrodzenia) - zapisuje dodatkowo do strumienia zmienna
 
          w metodzie readObject:
-        strWej.defaultReadObject();
+        strWej.defaultReadObject(); - wczytuje standardowe dane obiektu
         int wiek = Calendar.getInstance().get(Calendar.YEAR) - strWej.readInt();
-
+        //tworze zmienna lokalna i odejmuje w niej aktualny rok od
 
 
 
