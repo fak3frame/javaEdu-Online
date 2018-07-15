@@ -1505,6 +1505,7 @@ public class Wstep {
 
          w metodzie readObject:
         strWej.defaultReadObject();
+        int wiek = Calendar.getInstance().get(Calendar.YEAR) - strWej.readInt();
 
 
 
