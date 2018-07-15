@@ -1504,7 +1504,8 @@ public class Wstep {
          strWyj.writeInt(wiekUrodzenia) - zapisuje dodatkowo do strumienia zmienna
 
          w metodzie readObject:
-        strWej.default
+        strWej.defaultReadObject();
+
 
 
 
