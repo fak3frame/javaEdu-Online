@@ -1298,8 +1298,9 @@ public class Wstep {
 
         public class Fruit {} //klasa musi miec konstr. bezparam.
         public class Apple extends Fruit implements Serializable {}//nie musi miec
-        public class Tomato implements Serializable {}//nie musi miec bo dziecziczy
-         //po object ktora posiada konstr. bezparametrowy
+        // konstr. bezparam.
+        public class Tomato implements Serializable {}//nie musi miec konstr. bezparam.
+        // bo dziecziczy po object ktora posiada konstr. bezparametrowy
 
         Transient
         Gdy chcemy aby jakis pole klasy nie bylo serializowane np sekundy
