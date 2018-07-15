@@ -1512,7 +1512,6 @@ public class Wstep {
 
 
 
-
          */
         class SerializacjaUnikalna implements Serializable{
             private transient String stringTans;
