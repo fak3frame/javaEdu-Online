@@ -1506,10 +1506,11 @@ public class Wstep {
          w metodzie readObject:
         strWej.defaultReadObject(); - wczytuje standardowe dane obiektu
         int wiek = Calendar.getInstance().get(Calendar.YEAR) - strWej.readInt();
-        //tworze zmienna lokalna i odejmuje w niej aktualny rok od
-
-
-
+        //tworze zmienna lokalna i odejmuje w niej aktualny rok od roku urodzenia
+        // zapisanego do strumienia w metodzie writeObject. dostaje sie do niego
+        // metoda strWej.readInt() - nie musze podawac nazwy bo dane wyciagane
+        // sa w kolejnosci dodania - musze o niej pamietac oraz rodzaju zmiennej
+        // aby uzyc poprawnej metody na strumieniu wejsciowym
          */
         class SerializacjaUnikalna implements Serializable{
             private transient String stringTans;
