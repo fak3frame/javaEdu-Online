@@ -1477,7 +1477,7 @@ public class Wstep {
         Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
          zostanie zserializowane
         Analogicznie w metodzie deserializacji ObjectInputStream:
-         zmienna = strWej.readInt(); - nie musze jej deklarwoac poniweaz
+         zmienna = strWej.readInt(); - nie musze deklarwoac zmiennej poniweaz
          mam dostep do pol danej klasy
 
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
@@ -1533,7 +1533,7 @@ public class Wstep {
                 this.liczba = liczba;
             }
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
-                stringTans = strWej.readUTF();
+                stringTans = strWej.readUTF(); //mam dostep do pol klasy wiec nie musze ich deklarowac
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
             }
