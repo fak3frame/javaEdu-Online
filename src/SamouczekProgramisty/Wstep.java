@@ -1537,12 +1537,15 @@ public class Wstep {
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
                 //Dodajew szystkie przyspisania do pol klasy ale moge zrobic to jedna metoda
-                // strWej.defaultReadObject();
+                // strWej.defaultReadObject(); - jest to standardowa metoda dzialania metody
+                // readObject jesli jej nie zadeklaruje
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
                 //Na poczatku moge dodac strWyj.defaultWriteObject() aby
                 // zostal zapisany obiekt w calosci (wszystkie jego pola automatycznie)
-                // czyli to co ponizej:
+                // czyli to co ponizej
+                //Jest to standardowa metoda writeObject jesli nie stworze jej wlasnej
+                // deklaracji
                 strWyj.writeUTF(stringTans);
                 //wybrana metoda zapisu zalezna od rodzaju zmiennej
                 //moge nawet zapisac zmienna z parametrem Transient
