@@ -1579,7 +1579,7 @@ public class Wstep {
         //Dziedziczenie w serializacji
         /*
         Klasa ktora rozszerza klase implementujaca inteface Serializable
-         automatycznie takze go implementuje wiec takze jest serializowana
+         automatycznie takze go implementuje wiec takze jest serializowana!!
 
         Jesli chce aby klasa nie byla serializowna moge nadpisac metody
          private void readObject(ObjectInputStream strWej) lub/oraz
@@ -1604,7 +1604,7 @@ public class Wstep {
         /*
         Klasa implementujaca ten interface musi posiadac konstruktor bezparametrowy
          oraz implementowac wlasne metody strumienia wyjscia i wejscia
-         writeExternal oraz readExternal
+         writeExternal oraz readExternal deklarujace dzialanie strumieniow
          */
         class PelnaKontrola implements Externalizable{
 
