@@ -1388,7 +1388,8 @@ public class Wstep {
                     Samochod zdeserializowanySamochod = (Samochod)strWej.readObject();
                     System.out.println(zdeserializowanySamochod.getSilnik().getNazwa());
                     //Na obiekcie zdeser. wywoluje metode getSilinik bo jest typu Samochod
-                    // a potem getNazwa z klasy Silnik
+                    // i zwraca ona obiekt Silnik a potem moge na nim wywolac metode
+                    // getNazwa z klasy Silnik
                     System.out.println(zdeserializowanySamochod.getOpony().length);
                     //Tutwaj mam tablice wiec moge wywolac tylko jej dlugosc
                 } catch (FileNotFoundException e) {
