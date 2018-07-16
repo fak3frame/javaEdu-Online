@@ -1318,7 +1318,7 @@ public class Wstep {
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(4321));
             //Zapisuje obiekt do stumienia - obiekt zostanie zapisany do strumienia jako
-            // Integer ale przy odczycie bedzie Object
+            // Integer ale przy odczycie bedzie Object wiec wszytsko bede musial rzutowac
             strumienWyjsciowy.writeObject(Integer.parseInt("1234"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
