@@ -1285,7 +1285,7 @@ public class Wstep {
         Aby klasa mogla byc seriaizowana musi implmemntowac intefejs znacznikowy
          (nie posiadajacy zadnej metody) java.io.Serializable ktory ma za zadanie
          informowac ze instancje tej klasy moga byc serializowane
-        Jesli zserializuje instanjce klasy bez tego int. zostanie wyrzucony wyjatek
+        Jesli zserializuje instanjce klasy bez tego interfejsu zostanie wyrzucony wyjatek
          NotSerializableException.
 
         WYMOGI:
