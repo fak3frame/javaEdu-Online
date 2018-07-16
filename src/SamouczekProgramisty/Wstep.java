@@ -1477,7 +1477,8 @@ public class Wstep {
         Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
          zostanie zserializowane
         Analogicznie w metodzie deserializacji ObjectInputStream:
-         int zmienna = strWej.readInt();
+         zmienna = strWej.readInt(); - nie musze jej deklarwoac poniweaz
+         mam dostep do pol danej klasy
 
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
          strWyj.defaultReadObject(); to automatycznie wszystkie pola obiektu zostana
