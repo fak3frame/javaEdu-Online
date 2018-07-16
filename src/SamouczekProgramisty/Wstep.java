@@ -1312,7 +1312,8 @@ public class Wstep {
     void metoda(){///////////////////////////////////
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(1));
-            //Zapisuje obiekt do stumienia
+            //Zapisuje obiekt do stumienia - wykorzystje metode Integer.valueOf poniewaz
+            // typ musi byc Object
             strumienWyjsciowy.writeObject(Integer.valueOf(2));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -1322,7 +1323,7 @@ public class Wstep {
         try(ObjectInputStream strumienWejsciowy = new ObjectInputStream(new FileInputStream("plik.bin"))){
             Integer numer = (Integer)strumienWejsciowy.readObject();
             //Odczytuje pierwszy obiekt i zapisuje go do zmiennej obiektowej
-            // musze rzutowac!
+            // musze rzutowac poniewaz jest to typ Object!
             //Obiekty zostaja zapisane w kolejnosci w jakiej byly dodane czyly 1,2
             System.out.println(numer);
             numer = (Integer)strumienWejsciowy.readObject();
