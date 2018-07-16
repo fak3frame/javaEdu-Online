@@ -1499,6 +1499,8 @@ public class Wstep {
          wyciagnac ze struminia obiekt i zapisac go do nowego obieku -
          Silnik = (Silnik)strWej.readObject();
          a nastepnie dostac sie do zmiennej - int zmienna = (int)strWej.readInt();
+         czyli kolejnosc serializsacji = kolejnosc deserializacji - zgodznosc typow
+         takze musi byc zachowana!
 
 
         Moge wykorzystac to na przykladzie gdy bede chcial zapisac do strumienia aktualny wiek
