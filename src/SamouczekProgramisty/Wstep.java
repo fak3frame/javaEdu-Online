@@ -1311,7 +1311,7 @@ public class Wstep {
     class Wew25 {//////////////////////////////////
     void metoda(){///////////////////////////////////
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
-            strumienWyjsciowy.writeObject(Integer.valueOf(1));
+            strumienWyjsciowy.writeObject(Integer.valueOf(4321));
             //Zapisuje obiekt do stumienia - obiekt zostanie zapisany do strumienia jako
             // Integer ale przy odczycie bedzie Object
             strumienWyjsciowy.writeObject(Integer.parseInt("1234"));
@@ -1337,6 +1337,9 @@ public class Wstep {
         }
     }///////////////////////////
     }////////////////////////
+        Wew25 wew25 = new Wew25();
+        wew25.metoda();
+
 
         //Serializacja drzewa obiektow
         //Obiekt serializowany i zdeserializowany beda mialy inny adres referncji
