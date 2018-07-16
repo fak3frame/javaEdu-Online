@@ -85,6 +85,7 @@
       <find>stat</find>
       <find>class wew</find>
       <find>listy</find>
+      <find>integer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">

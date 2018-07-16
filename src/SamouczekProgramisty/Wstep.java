@@ -1314,7 +1314,7 @@ public class Wstep {
             strumienWyjsciowy.writeObject(Integer.valueOf(1));
             //Zapisuje obiekt do stumienia - obiekt zostanie zapisany do strumienia jako
             // Integer ale przy odczycie bedzie Object
-            strumienWyjsciowy.writeObject(Integer.valueOf(2));
+            strumienWyjsciowy.writeObject(Integer.parseInt("1234"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -1325,9 +1325,9 @@ public class Wstep {
             //Odczytuje pierwszy obiekt i zapisuje go do zmiennej obiektowej
             // musze rzutowac poniewaz jest to typ Object!
             //Obiekty zostaja zapisane w kolejnosci w jakiej byly dodane czyly 1,2
-            System.out.println(numer);
+            System.out.println("numer 1: "+numer);
             numer = (Integer)strumienWejsciowy.readObject();
-            System.out.println(numer);
+            System.out.println("numer 2: "+numer);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
