@@ -1605,6 +1605,8 @@ public class Wstep {
         Klasa implementujaca ten interface musi posiadac konstruktor bezparametrowy
          oraz implementowac wlasne metody strumienia wyjscia i wejscia
          writeExternal oraz readExternal deklarujace dzialanie strumieniow
+        W tych metodach nie ma metody defaultWrite/ReadObject !! wiec musze
+         sam zadklarwoac wszystko co chce odczytac i zapisac do strumienia
          */
         class PelnaKontrola implements Externalizable{
 
