@@ -285,9 +285,13 @@ public class Wstep {
         Tworzac obiekt klasy pochodnej ZAWSZE wywola sie jakis konstruktor
          klasy bazowej(tej ktora rozszerza) w pierwszej kolejnosci.
          Niewazne czy typ bedzie klasy pochodnej czy bazowej !!
-         Gdy dodamy w klasie bazowej konstrukotr z 1 param. tez bezparametrowy
+        Gdy dodamy w klasie bazowej konstrukotr z 1 param. ten bezparametrowy
          zostanie usuniety przez co bede musial sie do niego (badz innego)
-         odwolac tworzac obiekt podklasy
+         odwolac tworzac obiekt podklasy!! - poniewaz w pierwszej kolejnosci
+         musi wywoalc sie konstrukotr klasy po ktorej dziedziczy.
+        Moge utworzyc recznie konstuktor bezperam. w klasie bazowej lub
+         uzyc instukcji super(costam); w konstr. klasy pochodnej dostajac
+         sie do wybrnaego konstruktora klasy pochodnej.
 
         Metody finalne nie moga byc nadpisywane a klasy finalne
          rozszerzane
