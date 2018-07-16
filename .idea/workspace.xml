@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="1512" column="61" selection-start-line="1512" selection-start-column="61" selection-end-line="1512" selection-end-column="61" />
+            <state relative-caret-position="464">
+              <caret line="1501" column="45" lean-forward="true" selection-start-line="1501" selection-start-column="45" selection-end-line="1501" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -340,13 +339,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00688" summary="SanouczekProgramisty Serializacja 76">
-      <created>1531347647146</created>
-      <option name="number" value="00688" />
-      <option name="presentableId" value="LOCAL-00688" />
-      <option name="project" value="LOCAL" />
-      <updated>1531347647146</updated>
     </task>
     <task id="LOCAL-00689" summary="SanouczekProgramisty Serializacja 77">
       <created>1531347750456</created>
@@ -684,7 +676,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531650851880</updated>
     </task>
-    <option name="localTasksCounter" value="737" />
+    <task id="LOCAL-00737" summary="SanouczekProgramisty Serializacja 127">
+      <created>1531650963268</created>
+      <option name="number" value="00737" />
+      <option name="presentableId" value="LOCAL-00737" />
+      <option name="project" value="LOCAL" />
+      <updated>1531650963268</updated>
+    </task>
+    <option name="localTasksCounter" value="738" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -753,7 +752,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Serializacja 102" />
     <MESSAGE value="SanouczekProgramisty Serializacja 103" />
     <MESSAGE value="SanouczekProgramisty Serializacja 104" />
     <MESSAGE value="SanouczekProgramisty Serializacja 105" />
@@ -778,7 +776,8 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 124" />
     <MESSAGE value="SanouczekProgramisty Serializacja 125" />
     <MESSAGE value="SanouczekProgramisty Serializacja 126" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 126" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 127" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 127" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1106,8 +1105,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="1512" column="61" selection-start-line="1512" selection-start-column="61" selection-end-line="1512" selection-end-column="61" />
+        <state relative-caret-position="464">
+          <caret line="1501" column="45" lean-forward="true" selection-start-line="1501" selection-start-column="45" selection-end-line="1501" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
