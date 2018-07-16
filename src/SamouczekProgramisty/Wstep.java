@@ -1317,9 +1317,11 @@ public class Wstep {
     void metoda(){///////////////////////////////////
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(4321));
-            //Zapisuje obiekt do stumienia - obiekt zostanie zapisany do strumienia jako
-            // int ale przy odczycie bedzie Object wiec wszytsko bede musial rzutowac
+            //Zapisuje obiekt do stumienia metoda writeObject ktora zapisuje ta
+            // zmienna jako Object wiec w odzycie bede musial rzutowac
+            //Ta metoda moze przyjac wszystko
             strumienWyjsciowy.writeObject(Integer.parseInt("1234"));
+            //moge takze uzyc metody writeInt aby zamisac zmienne jako int
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
