@@ -225,6 +225,7 @@ public class toRemember {
         int mojInt1 = Integer.valueOf(444);
         int mojInt2 = Integer.valueOf("1234");
         //Metoda valueOf dziala dla int i string
+        //Metoda valueOf dziala dla int i string
         //Moze zapisac wartosci liczbowe go Integera i int
 
         Integer mojInteger3 = Integer.parseInt("123");

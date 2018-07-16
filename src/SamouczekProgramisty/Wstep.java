@@ -278,15 +278,16 @@ public class Wstep {
         ten konstruktor wywola konstruktor przyjmujacy przyjmujacy
          jako argument obiekt klasy Klasa
 
-        instrukcja super() w konstruktorze klasy pochodnej wywoluje
+        instrukcja super(); w konstruktorze klasy pochodnej wywoluje
          konstruktor klasy bazowej. ilosc wyslanych parametrow np.
          super(10, 12) decyduje ktory konstruktor zostanie wywolany
 
         Tworzac obiekt klasy pochodnej ZAWSZE wywola sie jakis konstruktor
-         klasy bazowej w pierwszej kolejnosci. Gdy dodamy w klasie bazowej
-         konstrukotr z 1 param. tez bezparametrowy zostanie usuniety przez
-         co bede musial sie do niego (badz innego) odwolac tworzac obiekt
-         podklasy
+         klasy bazowej(tej ktora rozszerza) w pierwszej kolejnosci.
+         Niewazne czy typ bedzie klasy pochodnej czy bazowej !!
+         Gdy dodamy w klasie bazowej konstrukotr z 1 param. tez bezparametrowy
+         zostanie usuniety przez co bede musial sie do niego (badz innego)
+         odwolac tworzac obiekt podklasy
 
         Metody finalne nie moga byc nadpisywane a klasy finalne
          rozszerzane
