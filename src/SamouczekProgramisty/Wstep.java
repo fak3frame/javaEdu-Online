@@ -1473,8 +1473,8 @@ public class Wstep {
         //Specjalna obsługa serializacji/deserializacji
         /*
         Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
-         ich dzialanie, nazwa zmiennych nie bedzie miala znaczenia
-         ObjectInputStream strWej lub ObjectOutputStream strWyj
+         jak ma byc serializowany OBIEKT metoda writeObject(obiekt) tzn
+         jakie jego pola maja byc serializowane!
 
         W zaleznosci od ilosci pol klasy moge dodac do strumienia pojedyncze jej
          pola - w takim przypadku na strumieniu WYJSCIA wywoluje konkretna metode:
@@ -1492,7 +1492,8 @@ public class Wstep {
          strWej.defaultReadObject();
 
         Moge rowniez dodac NOWE swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
-         modyfikowac zmienne serializowanego obiektu
+         modyfikowac zmienne serializowanego obiektu - wszystko dotyczylo bedzie
+         serializowanego OBIEKTU!!
         W takim przypadku jesli bede chcial sie dodac dodatkowa zmianna do strumienia
          w metodzie writeObject bede mogl uzyc
          metody np. dla int - int nowaZmienna =10; strWyj.writeInt(nowaZeminna); i zostanie
@@ -1504,14 +1505,16 @@ public class Wstep {
         Wiec jesli na poczatku mialem strWyj.defaultReadObject() a nastepnie dodalem
          zmienna int do stumienia strWyj.writeInt(nowaZeminna) to w metodzie odczytu
          readObject takze bede musial na poczatku dac strWej.defaultReadObject();
-         i opcjonalnie dostac sie do zmiennej int zapisanej do niej
+         i opcjonalnie dostac sie do dodatkowej zmiennej int zapisanej do niej
          system.out.println(strWej.readInt());
         Dodatkowe zmienne w metodach write/readObject dotycza zapisu zmiennych w obiekcie!!
 
 
         W serializacji bloku try dodaje obiekt do stumienia strWyj.readObject(silnik) oraz
          moge dodatkowo dodac do strumienia zmienna int - strWyj.writeInt(zmiennaInt) i bede
-         mogl w takim przypadku dostac sie do niej w bloku try w deserializacji
+         mogl w takim przypadku dostac sie do niej w bloku try w deserializacji. Dodanie
+         do strumienia zmiennej metoda writeInt nie ma nic wspolengo z moja metoda
+         writeObject():!!
          Zmienne dodane w metodzie writeObject sa dostepne tylko w metodzie readObject!!
 
         Natomiast w deserializacji (blok try w metodzie) w takim przypadku moge tylko
