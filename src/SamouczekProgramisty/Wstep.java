@@ -1479,7 +1479,7 @@ public class Wstep {
         W zaleznosci od ilosci pol klasy moge dodac do strumienia pojedyncze jej
          pola - w takim przypadku na strumieniu WYJSCIA wywoluje konkretna metode:
          strWyj.writeUTF(stringTans); / strWyj.writeInt(liczba+10); itp
-        Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
+        Jesli we wlasnej metodzie writeObject dodam do strumienia pole transient, ono takze
          zostanie zserializowane
         Analogicznie w metodzie deserializacji ObjectInputStream:
          zmienna = strWej.readInt(); - nie musze deklarwoac zmiennej poniweaz
@@ -1488,24 +1488,38 @@ public class Wstep {
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
          strWyj.defaultReadObject(); to automatycznie wszystkie pola obiektu zostana
          dodane do stumienia.
-        Analogicznie w metodzie deserializacji ObjectInputStream:
+        Analogicznie w metodzie deserializacji ObjectInputStream BEDE MUSIAL dodac:
          strWej.defaultReadObject();
 
         Moge rowniez dodac NOWE swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
-         modyfikowac zmienne serializowanego obiektu, nawet po mimo obecenosci metody
-         zapisu wszystkich zmeinnych metoda strWyj.defaultReadObject().
-        W takim przypadku jesli bede chcial sie odwolac do dodatkowego pola moge uzyc
-         metody np. dla int - int otrzymanaZmianna = strWej.readInt(); i zostanie
-         przyjeta kolejna zmienna zapisana w struminiu (kolejnosc zapisu musi byc
+         modyfikowac zmienne serializowanego obiektu
+        W takim przypadku jesli bede chcial sie dodac dodatkowa zmianna do strumienia
+         w metodzie writeObject bede mogl uzyc
+         metody np. dla int - int nowaZmienna =10; strWyj.writeInt(nowaZeminna); i zostanie
+         dodana kolejna zmienna zapisana w struminiu (kolejnosc zapisu musi byc
          taka sama jak kolejnosc odczytu!!)
-         POD WARUNKIEM ze na poczatku metody deserializacji takze jest metoda
-         odczytu wszystkich pol strWej.defaultReadObject();
-        W deserializacji (blok try w metodzie) w takim przypadku najpierw powieniennem
-         wyciagnac ze struminia obiekt i zapisac go do nowego obieku -
-         Silnik = (Silnik)strWej.readObject();
-         a nastepnie dostac sie do zmiennej - int zmienna = (int)strWej.readInt();
-         czyli kolejnosc serializsacji = kolejnosc deserializacji - zgodznosc typow
-         takze musi byc zachowana!
+         UWAGA!!
+         Do zmiennej dodanej do strumienia w metodzie writeObject bede mogl dostac sie tylko
+         w metodzie readObject a nie w dodatkowej metodzie strWej.readInt(); w bloku try!!
+        Wiec jesli na poczatku mialem strWyj.defaultReadObject() a nastepnie dodalem
+         zmienna int do stumienia strWyj.writeInt(nowaZeminna) to w metodzie odczytu
+         readObject takze bede musial na poczatku dac strWej.defaultReadObject();
+         i opcjonalnie dostac sie do zmiennej int zapisanej do niej
+         system.out.println(strWej.readInt());
+        Dodatkowe zmienne w metodach write/readObject dotycza zapisu zmiennych w obiekcie!!
+
+
+        W serializacji bloku try dodaje obiekt do stumienia strWyj.readObject(silnik) oraz
+         moge dodatkowo dodac do strumienia zmienna int - strWyj.writeInt(zmiennaInt) i bede
+         mogl w takim przypadku dostac sie do niej w bloku try w deserializacji
+         Zmienne dodane w metodzie writeObject sa dostepne tylko w metodzie readObject!!
+
+        Natomiast w deserializacji (blok try w metodzie) w takim przypadku moge tylko
+         wyciagnac ze struminia obiekt/zmienne dodane tylko w bloku try serializacj
+         a nie w metdozie writeOjecte! i zapisac go do nowego obieku -
+         Silnik = (Silnik)strWej.readObject(); chyba ze w bloku try dodalem dodatkowo do
+         strumienia zmienna np int - strWyj.writeInt(12354); to w deserializacji
+         bede mogl sie do niej odwolac - int nowaZM = strWej.readInt();
 
 
         Moge wykorzystac to na przykladzie gdy bede chcial zapisac do strumienia aktualny wiek
