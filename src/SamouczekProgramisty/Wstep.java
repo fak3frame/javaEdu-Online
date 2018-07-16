@@ -1291,16 +1291,16 @@ public class Wstep {
         WYMOGI:
         Klasa ktora jest rozszerzana przez klase ktora bedzie serializowana MUSI
          miec konstrukotr bezparametrowy!
-        Wymagana jest kolejnosc serializacji zgodna z deserializacja. Jesli dodaje
-         do strumienia najpierw liste a potem zmienna int to w deserializacj najpierw
-         bede musial odczytac liste a potem obiekt bo inaczej wyrzuci wyjatek
-         java.io.OptionalDataException
-
         public class Fruit {} //klasa musi miec konstr. bezparam.
         public class Apple extends Fruit implements Serializable {}//nie musi miec
         // konstr. bezparam.
         public class Tomato implements Serializable {}//nie musi miec konstr. bezparam.
         // bo dziecziczy po object ktora posiada konstr. bezparametrowy
+
+        Wymagana jest kolejnosc serializacji zgodna z deserializacja. Jesli dodaje
+         do strumienia najpierw liste a potem zmienna int to w deserializacj najpierw
+         bede musial odczytac liste a potem obiekt bo inaczej wyrzuci wyjatek
+         java.io.OptionalDataException
 
         Transient
         Gdy chcemy aby jakis pole klasy nie bylo serializowane np sekundy
