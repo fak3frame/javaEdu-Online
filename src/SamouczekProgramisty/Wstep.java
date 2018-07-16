@@ -1487,20 +1487,20 @@ public class Wstep {
          strWyj.writeUTF(stringTans); / strWyj.writeInt(liczba+10); itp
         Jesli we wlasnej metodzie writeObject dodam do strumienia pole transient, ono takze
          zostanie zserializowane
-        Analogicznie w metodzie deserializacji ObjectInputStream:
+        Analogicznie w metodzie deserializacji readObject:
          zmienna = strWej.readInt(); - nie musze deklarwoac zmiennej poniweaz
-         mam dostep do pol danej klasy
+         mam dostep do pol danej klasy i przypisuje im pola nadane w metodzie writeObject.
 
         Moge takze zachowac standardowe dodawanie obieku do strumienia dodajac metode
          strWyj.defaultReadObject(); to automatycznie wszystkie pola obiektu zostana
          dodane do stumienia.
-        Analogicznie w metodzie deserializacji ObjectInputStream BEDE MUSIAL dodac:
+        Analogicznie w metodzie deserializacji readObject BEDE MUSIAL dodac:
          strWej.defaultReadObject();
 
         Moge rowniez dodac NOWE swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
          modyfikowac zmienne serializowanego obiektu - wszystko dotyczylo bedzie
          serializowanego OBIEKTU!!
-        W takim przypadku jesli bede chcial sie dodac dodatkowa zmianna do strumienia
+        W takim przypadku jesli bede chcial dodac dodatkowa zmianna do strumienia
          w metodzie writeObject bede mogl uzyc
          metody np. dla int - int nowaZmienna =10; strWyj.writeInt(nowaZeminna); i zostanie
          dodana kolejna zmienna zapisana w struminiu (kolejnosc zapisu musi byc
@@ -1509,7 +1509,7 @@ public class Wstep {
          Do zmiennej dodatkowej dodanej do strumienia w metodzie writeObject bede mogl
          dostac sie tylkow metodzie readObject a nie w dodatkowej metodzie
          strWej.readInt(); w bloku try!!
-        Wiec jesli na poczatku mialem strWyj.defaultReadObject() a nastepnie dodalem
+        Wiec jesli na poczatku metody mialem strWyj.defaultReadObject() a nastepnie dodalem
          zmienna int do stumienia strWyj.writeInt(nowaZeminna) to w metodzie odczytu
          readObject takze bede musial na poczatku dac strWej.defaultReadObject();
          i opcjonalnie dostac sie do dodatkowej zmiennej int zapisanej do niej
@@ -1526,7 +1526,7 @@ public class Wstep {
 
         Natomiast w deserializacji (blok try w metodzie) w takim przypadku moge tylko
          wyciagnac ze struminia obiekt/zmienne dodane tylko w bloku try serializacj
-         a nie w metdozie writeOjecte! i zapisac go do nowego obieku -
+         a nie w metdozie writeOject! i zapisac go do nowego obieku -
          Silnik = (Silnik)strWej.readObject(); chyba ze w bloku try dodalem dodatkowo do
          strumienia zmienna np int - strWyj.writeInt(12354); to w deserializacji
          bede mogl sie do niej odwolac - int nowaZM = strWej.readInt();
@@ -1688,6 +1688,31 @@ public class Wstep {
          */
 
 
+
+        //Enum, typ wyliczeniowy
+
+        class Koszulka{
+            private KoszulkaRozmiar rozmiar; // deklaruje zmienna typu
+            // typu wylczniowego
+            private String producent;
+            public Koszulka(KoszulkaRozmiar rozmiar, String producent){
+                this.rozmiar = rozmiar;
+                this.producent = producent;
+            }
+            void main(){
+                Koszulka k1 = new Koszulka(KoszulkaRozmiar.L, "Adidas");
+                //zmienne typu typu wyliczniowego nadaje z nazwa enum oraz po kropce
+                // jego zmienna
+            }
+        }
+        /*
+        enum KoszulkaRozmiar{ //implementacja dodana na koncu kodu
+            S,M,L,XL // bez ; na koncu
+            //tylu deklaruje drukownymi literami
+        }
+         */
+
+
         String x = new Object() + "123";
         System.out.println(x);
     }
@@ -1816,4 +1841,8 @@ public class Wstep {
 }
 interface Figura{
         String dajNazwe();
+}
+enum KoszulkaRozmiar{
+    S,M,L,XL // bez ; na koncu
+    //tylu deklaruje drukownymi literami
 }
