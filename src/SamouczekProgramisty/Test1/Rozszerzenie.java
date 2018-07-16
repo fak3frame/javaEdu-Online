@@ -12,6 +12,7 @@ public class Rozszerzenie extends Podstawa implements Serializable {
     private void writeObject(ObjectOutputStream out) throws IOException{
         out.writeInt(x);
         out.writeInt(y);
+        out.writeInt(1234);
 
         //out.defaultWriteObject();
     }
@@ -19,6 +20,7 @@ public class Rozszerzenie extends Podstawa implements Serializable {
         //in.defaultReadObject();
         x = in.readInt();
         y = in.readInt();
+        int xx = in.readInt();
 
     }
 
@@ -26,6 +28,7 @@ public class Rozszerzenie extends Podstawa implements Serializable {
         Rozszerzenie X1 = new Rozszerzenie(10,15);
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("testX1.bin"))){
             out.writeObject(X1);
+
             out.writeInt(1234);
         } catch (IOException e) {
             e.printStackTrace();
@@ -34,6 +37,8 @@ public class Rozszerzenie extends Podstawa implements Serializable {
             Rozszerzenie X2 = (Rozszerzenie)in.readObject();
             System.out.println(X2.x);
             System.out.println(X2.y);
+
+
             Integer xx = in.readInt();
             System.out.println(xx);
         } catch (IOException e) {

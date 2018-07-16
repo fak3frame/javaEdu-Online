@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Rozszerzenie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Rozszerzenie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,8 +36,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="1598" column="98" lean-forward="true" selection-start-line="1598" selection-start-column="98" selection-end-line="1598" selection-end-column="98" />
+            <state relative-caret-position="-376">
+              <caret line="1638" column="84" selection-start-line="1638" selection-start-column="84" selection-end-line="1638" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#16501#16508#0" expanded="true" />
@@ -60,8 +61,8 @@
       <file leaf-file-name="Rozszerzenie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Rozszerzenie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="515">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -238,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Rozszerzenie">
+  <component name="RunManager" selected="Application.Wstep">
     <configuration name="Czlowiek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._7_Serializacja.Czlowiek" />
       <module name="javaStartMojSkrypt" />
@@ -344,8 +345,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Rozszerzenie" />
         <item itemvalue="Application.Wstep" />
+        <item itemvalue="Application.Rozszerzenie" />
         <item itemvalue="Application.Czlowiek2" />
         <item itemvalue="Application.Czlowiek" />
         <item itemvalue="Application.SerializacjaTest" />
@@ -362,20 +363,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00715" summary="SanouczekProgramisty Serializacja 104">
-      <created>1531604485632</created>
-      <option name="number" value="00715" />
-      <option name="presentableId" value="LOCAL-00715" />
-      <option name="project" value="LOCAL" />
-      <updated>1531604485632</updated>
-    </task>
-    <task id="LOCAL-00716" summary="SanouczekProgramisty Serializacja 105">
-      <created>1531604528050</created>
-      <option name="number" value="00716" />
-      <option name="presentableId" value="LOCAL-00716" />
-      <option name="project" value="LOCAL" />
-      <updated>1531604528050</updated>
     </task>
     <task id="LOCAL-00717" summary="SanouczekProgramisty Serializacja 106">
       <created>1531604556204</created>
@@ -706,7 +693,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531751152687</updated>
     </task>
-    <option name="localTasksCounter" value="764" />
+    <task id="LOCAL-00764" summary="SanouczekProgramisty Serializacja 154">
+      <created>1531751504531</created>
+      <option name="number" value="00764" />
+      <option name="presentableId" value="LOCAL-00764" />
+      <option name="project" value="LOCAL" />
+      <updated>1531751504531</updated>
+    </task>
+    <task id="LOCAL-00765" summary="SanouczekProgramisty Serializacja 155">
+      <created>1531752039569</created>
+      <option name="number" value="00765" />
+      <option name="presentableId" value="LOCAL-00765" />
+      <option name="project" value="LOCAL" />
+      <updated>1531752039569</updated>
+    </task>
+    <option name="localTasksCounter" value="766" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -722,7 +723,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35830212" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35830212" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -775,8 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Serializacja 129" />
-    <MESSAGE value="SanouczekProgramisty Serializacja 130" />
     <MESSAGE value="SanouczekProgramisty Serializacja 131" />
     <MESSAGE value="SanouczekProgramisty Serializacja 132" />
     <MESSAGE value="SanouczekProgramisty Serializacja 133" />
@@ -800,7 +799,9 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 151" />
     <MESSAGE value="SanouczekProgramisty Serializacja 152" />
     <MESSAGE value="SanouczekProgramisty Serializacja 153" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 153" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 154" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 155" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 155" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,8 +1115,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Rozszerzenie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        <state relative-caret-position="515">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -1131,8 +1132,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="1598" column="98" lean-forward="true" selection-start-line="1598" selection-start-column="98" selection-end-line="1598" selection-end-column="98" />
+        <state relative-caret-position="-376">
+          <caret line="1638" column="84" selection-start-line="1638" selection-start-column="84" selection-end-line="1638" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#16501#16508#0" expanded="true" />

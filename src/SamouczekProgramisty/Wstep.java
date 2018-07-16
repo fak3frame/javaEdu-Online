@@ -1318,10 +1318,11 @@ public class Wstep {
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(4321));
             //Zapisuje obiekt do stumienia metoda writeObject ktora zapisuje ta
-            // zmienna jako Object wiec w odzycie bede musial rzutowac
+            // zmienna jako Object wiec w odzycie bede musial RZUTOWAC!!
             //Ta metoda moze przyjac wszystko
             strumienWyjsciowy.writeObject(Integer.parseInt("1234"));
             //moge takze uzyc metody writeInt aby zamisac zmienne jako int
+            strumienWyjsciowy.writeInt(1234);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -1329,12 +1330,15 @@ public class Wstep {
         }
         try(ObjectInputStream strumienWejsciowy = new ObjectInputStream(new FileInputStream("plik.bin"))){
             Integer numer = (Integer)strumienWejsciowy.readObject();
-            //Odczytuje pierwszy obiekt i zapisuje go do zmiennej obiektowej
-            // musze rzutowac poniewaz jest to typ Object!
-            //Obiekty zostaja zapisane w kolejnosci w jakiej byly dodane czyly 1,2
+            //Odczytuje pierwszy OBIEKT i zapisuje go do zmiennej obiektowej
+            // musze rzutowac poniewaz jest to typ Object - metoda readObject();
+            //Obiekty/zmienne zostaja zapisane w kolejnosci w jakiej byly dodane czyly 1,2
             System.out.println("numer 1: "+numer);
             numer = (Integer)strumienWejsciowy.readObject();
             System.out.println("numer 2: "+numer);
+            int zmiennaInt = strumienWejsciowy.readInt();
+            //odczytuje zmienna metoda readInt wiec nie musze rzutowac
+            System.out.println("zmienna INT: "+zmiennaInt);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -1502,8 +1506,9 @@ public class Wstep {
          dodana kolejna zmienna zapisana w struminiu (kolejnosc zapisu musi byc
          taka sama jak kolejnosc odczytu!!)
          UWAGA!!
-         Do zmiennej dodanej do strumienia w metodzie writeObject bede mogl dostac sie tylko
-         w metodzie readObject a nie w dodatkowej metodzie strWej.readInt(); w bloku try!!
+         Do zmiennej dodatkowej dodanej do strumienia w metodzie writeObject bede mogl
+         dostac sie tylkow metodzie readObject a nie w dodatkowej metodzie
+         strWej.readInt(); w bloku try!!
         Wiec jesli na poczatku mialem strWyj.defaultReadObject() a nastepnie dodalem
          zmienna int do stumienia strWyj.writeInt(nowaZeminna) to w metodzie odczytu
          readObject takze bede musial na poczatku dac strWej.defaultReadObject();
@@ -1516,7 +1521,7 @@ public class Wstep {
          moge dodatkowo dodac do strumienia zmienna int - strWyj.writeInt(zmiennaInt) i bede
          mogl w takim przypadku dostac sie do niej w bloku try w deserializacji. Dodanie
          do strumienia zmiennej metoda writeInt nie ma nic wspolengo z moja metoda
-         writeObject():!!
+         writeObject()!!
          Zmienne dodane w metodzie writeObject sa dostepne tylko w metodzie readObject!!
 
         Natomiast w deserializacji (blok try w metodzie) w takim przypadku moge tylko
@@ -1562,7 +1567,8 @@ public class Wstep {
                 liczba = strWej.readInt();
                 //Dodajew szystkie przyspisania do pol klasy ale moge zrobic to jedna metoda
                 // strWej.defaultReadObject(); - jest to standardowa metoda dzialania metody
-                // readObject jesli jej nie zadeklaruje
+                // readObject jesli jej nie zadeklaruje czyli dodanie wszystkich pol obiektu
+                // klasy do strumienia OBIEKTU
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
                 //Na poczatku moge dodac strWyj.defaultWriteObject() aby
@@ -1630,7 +1636,7 @@ public class Wstep {
          oraz implementowac wlasne metody strumienia wyjscia i wejscia
          writeExternal oraz readExternal deklarujace dzialanie strumieniow
         W tych metodach nie ma metody defaultWrite/ReadObject !! wiec musze
-         sam zadklarwoac wszystko co chce odczytac i zapisac do strumienia
+         sam zadklarwoac wszystko co chce odczytac i zapisac do strumienia z Obiektu
          */
         class PelnaKontrola implements Externalizable{
 
