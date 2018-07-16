@@ -1536,6 +1536,8 @@ public class Wstep {
                 stringTans = strWej.readUTF(); //mam dostep do pol klasy wiec nie musze ich deklarowac
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
+                //Dodajew szystkie przyspisania do pol klasy ale moge zrobic to jedna metoda
+                // strWej.defaultReadObject();
             }
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
                 //Na poczatku moge dodac strWyj.defaultWriteObject() aby
