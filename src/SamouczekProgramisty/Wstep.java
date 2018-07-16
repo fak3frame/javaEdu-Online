@@ -1318,7 +1318,7 @@ public class Wstep {
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(4321));
             //Zapisuje obiekt do stumienia - obiekt zostanie zapisany do strumienia jako
-            // Integer ale przy odczycie bedzie Object wiec wszytsko bede musial rzutowac
+            // int ale przy odczycie bedzie Object wiec wszytsko bede musial rzutowac
             strumienWyjsciowy.writeObject(Integer.parseInt("1234"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -1476,8 +1476,8 @@ public class Wstep {
          ich dzialanie, nazwa zmiennych nie bedzie miala znaczenia
          ObjectInputStream strWej lub ObjectOutputStream strWyj
 
-        W zaleznosci od zmeinnych moge dodac do strumienia pojedyncze zmienne
-         pol - w takim przypadku na strumieniu WYJSCIA wywoluje konkretna metode:
+        W zaleznosci od ilosci pol klasy moge dodac do strumienia pojedyncze jej
+         pola - w takim przypadku na strumieniu WYJSCIA wywoluje konkretna metode:
          strWyj.writeUTF(stringTans); / strWyj.writeInt(liczba+10); itp
         Jesli we wlasnej metodzie dodam do strumienia pole transient, ono takze
          zostanie zserializowane
