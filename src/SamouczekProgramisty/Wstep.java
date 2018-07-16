@@ -1491,11 +1491,12 @@ public class Wstep {
          zapisu wszystkich zmeinnych metoda strWyj.defaultReadObject().
         W takim przypadku jesli bede chcial sie odwolac do dodatkowego pola moge uzyc
          metody np. dla int - int otrzymanaZmianna = strWej.readInt(); i zostanie
-         przyjeta pierwsza zmianna int zapisana w struminiu
+         przyjeta kolejna zmienna zapisana w struminiu (kolejnosc zapisu musi byc
+         taka sama jak kolejnosc odczytu!!)
          POD WARUNKIEM ze na poczatku metody deserializacji takze jest metoda
          odczytu wszystkich pol strWej.defaultReadObject();
         W deserializacji w takim przypadku najpierw powieniennem wyciagnac ze struminia
-         obiekt u zapisac go do nowego obieku - Silnik = (Silnik)strWej.readObject();
+         obiekt i zapisac go do nowego obieku - Silnik = (Silnik)strWej.readObject();
          a nastepnie dostac sie do zmiennej - int zmienna = (int)strWej.readInt();
 
 
