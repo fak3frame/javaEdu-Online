@@ -1690,11 +1690,18 @@ public class Wstep {
 
 
         //Enum, typ wyliczeniowy
+        /*
+        zmienne typu wyliczniowego maja atrybut public static final
+         */
 
         class Koszulka{
             private KoszulkaRozmiar rozmiar; // deklaruje zmienna typu
             // typu wylczniowego
+            //przykladowe nadanie wartosci:
+            private KoszulkaRozmiar rozmiar2 = KoszulkaRozmiar.L;
+            //nadaje tak poniewaz pola enum sa public static final
             private String producent;
+            public Koszulka(){}
             public Koszulka(KoszulkaRozmiar rozmiar, String producent){
                 this.rozmiar = rozmiar;
                 this.producent = producent;
@@ -1703,6 +1710,23 @@ public class Wstep {
                 Koszulka k1 = new Koszulka(KoszulkaRozmiar.L, "Adidas");
                 //zmienne typu typu wyliczniowego nadaje z nazwa enum oraz po kropce
                 // jego zmienna
+                System.out.println("rozmiar koszuliki: "+k1.rozmiar);
+                //wyswietli "L"
+
+                switch (k1.rozmiar){
+                    case S:
+                        System.out.println("wybrales rozmiar S");
+                        break;
+                    case M:
+                        System.out.println("wybrales rozmiar M");
+                        break;
+                    case L:
+                        System.out.println("wybrales rozmiar L");
+                        break;
+                    case XL:
+                        System.out.println("wybrales rozmiar XL");
+                        break;
+                }
             }
         }
         /*
@@ -1710,8 +1734,12 @@ public class Wstep {
             S,M,L,XL // bez ; na koncu
             //tylu deklaruje drukownymi literami
         }
+        enum KoszulkaRozmiarDokladnie{
+            S(4
+        }
          */
-
+        Koszulka run = new Koszulka();
+        run.main();
 
         String x = new Object() + "123";
         System.out.println(x);
@@ -1845,4 +1873,18 @@ interface Figura{
 enum KoszulkaRozmiar{
     S,M,L,XL // bez ; na koncu
     //tylu deklaruje drukownymi literami
+}
+enum KoszulkaRozmiarDokladnie{
+    S(48, 71, 36),
+    M(52, 74, 38),
+    L(56, 76, 41),
+    XL(61, 79, 41);
+
+    private int szerokoscKlatki;
+    private int wysokoscKoszulki;
+    private int dlugoscRekawa;
+
+    KoszulkaRozmiarDokladnie(int szerokoscKlatki, int wysokoscKoszulki, int dlugoscRekawa){
+        this.szerokoscKlatki = szerokoscKlatki;
+    }
 }
