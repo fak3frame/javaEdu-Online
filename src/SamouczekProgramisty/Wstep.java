@@ -1495,8 +1495,9 @@ public class Wstep {
          taka sama jak kolejnosc odczytu!!)
          POD WARUNKIEM ze na poczatku metody deserializacji takze jest metoda
          odczytu wszystkich pol strWej.defaultReadObject();
-        W deserializacji w takim przypadku najpierw powieniennem wyciagnac ze struminia
-         obiekt i zapisac go do nowego obieku - Silnik = (Silnik)strWej.readObject();
+        W deserializacji (blok try w metodzie) w takim przypadku najpierw powieniennem
+         wyciagnac ze struminia obiekt i zapisac go do nowego obieku -
+         Silnik = (Silnik)strWej.readObject();
          a nastepnie dostac sie do zmiennej - int zmienna = (int)strWej.readInt();
 
 
