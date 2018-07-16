@@ -26,8 +26,8 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9877">
-              <caret line="609" column="13" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
+            <state relative-caret-position="310">
+              <caret line="226" column="23" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="1315" column="29" selection-start-line="1315" selection-start-column="29" selection-end-line="1315" selection-end-column="29" />
+              <caret line="1315" column="54" selection-start-line="1315" selection-start-column="54" selection-end-line="1315" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#16501#16508#0" expanded="true" />
@@ -130,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/Interface/FigureFactory.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_3_Tablice/Tablice.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_5_TypyProste/Human.java" />
-        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Rideable.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X3.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/iX.java" />
@@ -149,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/SerializacjaTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek2.java" />
+        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
       </list>
     </option>
@@ -341,20 +341,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00692" summary="SanouczekProgramisty Serializacja 80">
-      <created>1531396011633</created>
-      <option name="number" value="00692" />
-      <option name="presentableId" value="LOCAL-00692" />
-      <option name="project" value="LOCAL" />
-      <updated>1531396011633</updated>
-    </task>
-    <task id="LOCAL-00693" summary="SanouczekProgramisty Serializacja 81">
-      <created>1531396295741</created>
-      <option name="number" value="00693" />
-      <option name="presentableId" value="LOCAL-00693" />
-      <option name="project" value="LOCAL" />
-      <updated>1531396295741</updated>
     </task>
     <task id="LOCAL-00694" summary="SanouczekProgramisty Serializacja 82">
       <created>1531396737913</created>
@@ -685,7 +671,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531738578472</updated>
     </task>
-    <option name="localTasksCounter" value="741" />
+    <task id="LOCAL-00741" summary="SanouczekProgramisty Serializacja 131">
+      <created>1531739155366</created>
+      <option name="number" value="00741" />
+      <option name="presentableId" value="LOCAL-00741" />
+      <option name="project" value="LOCAL" />
+      <updated>1531739155366</updated>
+    </task>
+    <task id="LOCAL-00742" summary="SanouczekProgramisty Serializacja 132">
+      <created>1531739234856</created>
+      <option name="number" value="00742" />
+      <option name="presentableId" value="LOCAL-00742" />
+      <option name="project" value="LOCAL" />
+      <updated>1531739234856</updated>
+    </task>
+    <option name="localTasksCounter" value="743" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -754,8 +754,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Serializacja 106" />
-    <MESSAGE value="SanouczekProgramisty Serializacja 107" />
     <MESSAGE value="SanouczekProgramisty Serializacja 108" />
     <MESSAGE value="SanouczekProgramisty Serializacja 109" />
     <MESSAGE value="SanouczekProgramisty Serializacja 110" />
@@ -779,7 +777,9 @@
     <MESSAGE value="SanouczekProgramisty Serializacja 128" />
     <MESSAGE value="SanouczekProgramisty Serializacja 129" />
     <MESSAGE value="SanouczekProgramisty Serializacja 130" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 130" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 131" />
+    <MESSAGE value="SanouczekProgramisty Serializacja 132" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Serializacja 132" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,13 +1045,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java" />
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9877">
-          <caret line="609" column="13" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/obiekty.bin">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1098,6 +1091,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="226" column="23" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1108,7 +1108,7 @@
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="1315" column="29" selection-start-line="1315" selection-start-column="29" selection-end-line="1315" selection-end-column="29" />
+          <caret line="1315" column="54" selection-start-line="1315" selection-start-column="54" selection-end-line="1315" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#16501#16508#0" expanded="true" />

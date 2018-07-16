@@ -1312,8 +1312,8 @@ public class Wstep {
     void metoda(){///////////////////////////////////
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(1));
-            //Zapisuje obiekt do stumienia - wykorzystje metode Integer.valueOf poniewaz
-            // typ musi byc Object
+            //Zapisuje obiekt do stumienia - obiekt zostanie zapisany do strumienia jako
+            // Integer ale przy odczycie bedzie Object
             strumienWyjsciowy.writeObject(Integer.valueOf(2));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
