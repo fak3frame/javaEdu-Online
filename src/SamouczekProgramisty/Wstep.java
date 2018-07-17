@@ -1887,6 +1887,5 @@ enum KoszulkaRozmiarDokladnie{
     KoszulkaRozmiarDokladnie(int szerokoscKlatki, int wysokoscKoszulki, int dlugoscRekawa){
         this.szerokoscKlatki = szerokoscKlatki;
 
-
     }
 }
