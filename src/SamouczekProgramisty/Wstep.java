@@ -1888,5 +1888,7 @@ enum KoszulkaRozmiarDokladnie{
         this.szerokoscKlatki = szerokoscKlatki;
 
 
+
+
     }
 }
