@@ -1822,6 +1822,25 @@ public class Wstep {
         Koszulka2 run2 = new Koszulka2();
         run2.main();
 
+        /*
+        enum EnumDoTekstu{
+            SPOKOJNY{
+                public String format(String wiadomosc){
+                    return "To twoja wiadomosc spokojna: " + wiadomosc;
+                }
+            },
+            NERWOWY {
+                public String format(String wiadomosc) {
+                    return "To twoja wiadomosc nerwowa: " + wiadomosc;
+                }
+            };
+            public abstract String format(String wiadomosc);
+        }*/
+        class TestEnumDoTekstu{
+
+        }
+
+
 
         String x = new Object() + "123";
         System.out.println(x);
