@@ -1754,8 +1754,9 @@ public class Wstep {
         }
         /*
         enum KoszulkaRozmiar{ //implementacja dodana na koncu kodu
-            S,M,L,XL // bez ; na koncu
-            //tylu deklaruje drukownymi literami
+            S,M,L,XL// bez ; na koncu
+            //wartosci deklaruje drukownymi literami
+            //srednik na koncu stawiem gdy chce dodac jeszcze pola i konstruktor
         }*/
         Koszulka run = new Koszulka();
         run.main();
@@ -1952,8 +1953,7 @@ interface Figura{
         String dajNazwe();
 }
 enum KoszulkaRozmiar{
-    S,M,L,XL // bez ; na koncu
-    //wartosci deklaruje drukownymi literami
+    S,M,L,XL
 }
 enum KoszulkaRozmiarDokladnie{
     S(48, 71, 36),
