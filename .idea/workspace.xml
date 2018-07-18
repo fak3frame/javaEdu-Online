@@ -38,8 +38,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="1706" column="73" selection-start-line="1706" selection-start-column="73" selection-end-line="1706" selection-end-column="73" />
+            <state relative-caret-position="396">
+              <caret line="1699" column="77" selection-start-line="1699" selection-start-column="77" selection-end-line="1699" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#75451#75452#0" expanded="true" />
@@ -363,20 +363,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00747" summary="SanouczekProgramisty Serializacja 137">
-      <created>1531741002250</created>
-      <option name="number" value="00747" />
-      <option name="presentableId" value="LOCAL-00747" />
-      <option name="project" value="LOCAL" />
-      <updated>1531741002250</updated>
-    </task>
-    <task id="LOCAL-00748" summary="SanouczekProgramisty Serializacja 138">
-      <created>1531741198854</created>
-      <option name="number" value="00748" />
-      <option name="presentableId" value="LOCAL-00748" />
-      <option name="project" value="LOCAL" />
-      <updated>1531741198854</updated>
     </task>
     <task id="LOCAL-00749" summary="SanouczekProgramisty Serializacja 139">
       <created>1531741295540</created>
@@ -707,7 +693,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531925196778</updated>
     </task>
-    <option name="localTasksCounter" value="796" />
+    <task id="LOCAL-00796" summary="SanouczekProgramisty Typ wyliczeniowy enum 30">
+      <created>1531925451832</created>
+      <option name="number" value="00796" />
+      <option name="presentableId" value="LOCAL-00796" />
+      <option name="project" value="LOCAL" />
+      <updated>1531925451832</updated>
+    </task>
+    <task id="LOCAL-00797" summary="SanouczekProgramisty Typ wyliczeniowy enum 31">
+      <created>1531926216351</created>
+      <option name="number" value="00797" />
+      <option name="presentableId" value="LOCAL-00797" />
+      <option name="project" value="LOCAL" />
+      <updated>1531926216352</updated>
+    </task>
+    <option name="localTasksCounter" value="798" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -747,8 +747,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 5" />
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 6" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 7" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 8" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 9" />
@@ -772,7 +770,9 @@
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 27" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 28" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 29" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 29" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 30" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 31" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 31" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1103,8 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="1706" column="73" selection-start-line="1706" selection-start-column="73" selection-end-line="1706" selection-end-column="73" />
+        <state relative-caret-position="396">
+          <caret line="1699" column="77" selection-start-line="1699" selection-start-column="77" selection-end-line="1699" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#75451#75452#0" expanded="true" />
