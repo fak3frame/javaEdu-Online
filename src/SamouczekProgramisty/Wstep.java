@@ -1691,7 +1691,9 @@ public class Wstep {
 
         //Enum, typ wyliczeniowy
         /*
-        zmienne typu wyliczniowego maja atrybut public static final
+        Zmienne typu wyliczniowego maja atrybut public static final
+        Enum nie mozna rozszerzac - jest jako final i nie moze dziedziczyc
+         poniewaz dziedzicy po java.lang.Enum
          */
 
         class Koszulka{
@@ -1733,13 +1735,28 @@ public class Wstep {
         enum KoszulkaRozmiar{ //implementacja dodana na koncu kodu
             S,M,L,XL // bez ; na koncu
             //tylu deklaruje drukownymi literami
-        }
-        enum KoszulkaRozmiarDokladnie{
-            S(4
-        }
-         */
+        }*/
         Koszulka run = new Koszulka();
         run.main();
+        /*
+        enum KoszulkaRozmiarDokladnie{
+            S(48, 71, 36),
+            M(52, 74, 38),
+            L(56, 76, 41),
+            XL(61, 79, 41);
+
+            private int szerokoscKlatki;
+            private int wysokoscKoszulki;
+            private int dlugoscRekawa;
+
+            KoszulkaRozmiarDokladnie(int szerokoscKlatki, int wysokoscKoszulki, int dlugoscRekawa){
+                this.szerokoscKlatki = szerokoscKlatki;
+                this.wysokoscKoszulki = wysokoscKoszulki;
+                this.dlugoscRekawa = dlugoscRekawa;
+            }
+        }*/
+
+
 
         String x = new Object() + "123";
         System.out.println(x);
