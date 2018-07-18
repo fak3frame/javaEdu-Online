@@ -16,6 +16,9 @@
     <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ArrayFactory.ic" NAME="ArrayFactory Coverage Results" MODIFIED="1530114993104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/javaEdu_Online$Wstep.ic" NAME="Wstep Coverage Results" MODIFIED="1531917123454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SamouczekProgramisty.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ProgramStartowy.ic" NAME="ProgramStartowy Coverage Results" MODIFIED="1527608625775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>_1_ProgramStartowy.*</FILTER>
     </SUITE>
