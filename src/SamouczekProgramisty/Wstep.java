@@ -1697,7 +1697,8 @@ public class Wstep {
         Wartosci enum mozna porownywac ==
 
         Metody:
-        MojEnum.vaues(); - zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
+        MojEnum.vaues(); - metpda statyczna - wywolywana na nazwie enum
+         zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
          uzyc do wypisania wartosci w petli foreach
          petla za x podstawia MojEnum.WARTOSC
         na kazdym wyliczeniu w for mozna wywolac metode enuma np get
