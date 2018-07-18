@@ -1691,6 +1691,7 @@ public class Wstep {
 
         //Enum, typ wyliczeniowy
         /*
+        Sluzy do grupownia znanych nam wartosci - latwo je rozbudowywac
         Zmienne typu wyliczniowego maja atrybut public static final
         Enum nie mozna rozszerzac - jest jako final i nie moze dziedziczyc
          poniewaz dziedzicy po java.lang.Enum
