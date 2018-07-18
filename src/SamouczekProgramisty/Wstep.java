@@ -1979,5 +1979,8 @@ enum KoszulkaRozmiarDokladnie{
     int dajdlugoscRekawa(){
         return dlugoscRekawa;
     }
+}
+
+enum EnumDoTekstu{
 
 }

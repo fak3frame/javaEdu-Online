@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="1706" column="48" selection-start-line="1706" selection-start-column="48" selection-end-line="1706" selection-end-column="48" />
+            <state relative-caret-position="236">
+              <caret line="1699" column="9" selection-start-line="1699" selection-start-column="9" selection-end-line="1699" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#75451#75452#0" expanded="true" />
@@ -363,20 +362,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00750" summary="SanouczekProgramisty Serializacja 140">
-      <created>1531741388262</created>
-      <option name="number" value="00750" />
-      <option name="presentableId" value="LOCAL-00750" />
-      <option name="project" value="LOCAL" />
-      <updated>1531741388262</updated>
-    </task>
-    <task id="LOCAL-00751" summary="SanouczekProgramisty Serializacja 141">
-      <created>1531741529588</created>
-      <option name="number" value="00751" />
-      <option name="presentableId" value="LOCAL-00751" />
-      <option name="project" value="LOCAL" />
-      <updated>1531741529588</updated>
     </task>
     <task id="LOCAL-00752" summary="SanouczekProgramisty Serializacja 142">
       <created>1531741672453</created>
@@ -707,7 +692,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531927582294</updated>
     </task>
-    <option name="localTasksCounter" value="799" />
+    <task id="LOCAL-00799" summary="SanouczekProgramisty Typ wyliczeniowy enum 33">
+      <created>1531929847518</created>
+      <option name="number" value="00799" />
+      <option name="presentableId" value="LOCAL-00799" />
+      <option name="project" value="LOCAL" />
+      <updated>1531929847518</updated>
+    </task>
+    <task id="LOCAL-00800" summary="SanouczekProgramisty Typ wyliczeniowy enum 34">
+      <created>1531930016536</created>
+      <option name="number" value="00800" />
+      <option name="presentableId" value="LOCAL-00800" />
+      <option name="project" value="LOCAL" />
+      <updated>1531930016536</updated>
+    </task>
+    <option name="localTasksCounter" value="801" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -747,8 +746,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 8" />
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 9" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 10" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 11" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 12" />
@@ -772,7 +769,9 @@
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 30" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 31" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 32" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 32" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 33" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 34" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 34" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1103,8 +1102,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="1706" column="48" selection-start-line="1706" selection-start-column="48" selection-end-line="1706" selection-end-column="48" />
+        <state relative-caret-position="236">
+          <caret line="1699" column="9" selection-start-line="1699" selection-start-column="9" selection-end-line="1699" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#75451#75452#0" expanded="true" />
