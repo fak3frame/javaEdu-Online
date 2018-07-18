@@ -1772,6 +1772,13 @@ public class Wstep {
             KoszulkaRozmiarDokladnie rozmiar;
             void main(){
                 System.out.println();
+                System.out.println("KoszulkaRozmiarDokladnie.values()");
+                System.out.println(KoszulkaRozmiarDokladnie.values());
+
+                System.out.println("KoszulkaRozmiar.values()");
+                System.out.println(KoszulkaRozmiar.values());
+
+                System.out.println("KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()");
                 for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
                     System.out.println("Rozmiar: " + x + " posiada: ");
                     System.out.println("dlugosc rekawa: "+x.dajdlugoscRekawa());
