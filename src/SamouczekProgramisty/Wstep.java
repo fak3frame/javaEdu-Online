@@ -1703,6 +1703,9 @@ public class Wstep {
          petla za x podstawia MojEnum.WARTOSC
         na kazdym wyliczeniu w for mozna wywolac metode enuma np get
 
+        MojEnum.valueOf("WARTOSC"); - przyjmuje ciag znakow i zwraca odpowiadajaca
+         jej wartosc typu enum czyli np. WARTOSC
+
         MojEnum.WARTOSC.ordinal(); - zwroci ktory numer ma podana wartosc (od 0)
 
         MojEnum.WARTOSC.name(); - zwroci nazwe typu enum w formie WARTOSC
@@ -1785,6 +1788,17 @@ public class Wstep {
         class Koszulka2{
             KoszulkaRozmiarDokladnie rozmiar;
             void main(){
+                System.out.println();
+                System.out.println("KoszulkaRozmiarDokladnie.valueOf(''S'')");
+                //zwroci S
+                System.out.println(KoszulkaRozmiarDokladnie.valueOf("S"));
+
+                System.out.println();
+                System.out.println("KoszulkaRozmiar.valueOf(''S'')");
+                //zwroci S
+                System.out.println(KoszulkaRozmiar.valueOf("S"));
+
+                System.out.println();
                 System.out.println("KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()");
                 for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
                     //za x podsawi KoszulkaRozmiarDokladnie.S itp
