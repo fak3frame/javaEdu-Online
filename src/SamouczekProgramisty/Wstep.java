@@ -1758,13 +1758,31 @@ public class Wstep {
                 this.wysokoscKoszulki = wysokoscKoszulki;
                 this.dlugoscRekawa = dlugoscRekawa;
             }
+            int dajSzerokoscKlatki(){
+                return szerokoscKlatki;
+            }
+            int dajwysokoscKoszulki(){
+                return wysokoscKoszulki;
+            }
+            int dajdlugoscRekawa(){
+                return dlugoscRekawa;
+            }
         }*/
         class Koszulka2{
             KoszulkaRozmiarDokladnie rozmiar;
             void main(){
+                System.out.println();
                 for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
-                    System.out.println(x + " ma wartosc: "+ x.ordinal());
+                    System.out.println("Rozmiar: " + x + " posiada: ");
+                    System.out.println("dlugosc rekawa: "+x.dajdlugoscRekawa());
+                    System.out.println("szerokosc klatki: "+x.dajSzerokoscKlatki());
+                    System.out.println("wysokosc koszuli: "+x.dajwysokoscKoszulki());
+                    System.out.println("i jest wartoscia numer: "+x.ordinal());
                 }
+                System.out.println();
+                rozmiar = KoszulkaRozmiarDokladnie.XL;
+                System.out.println("XL jest numerem enum :" + rozmiar.ordinal());
+                System.out.println("XL ma nazwe w enum: " + rozmiar.name());
             }
         }
         Koszulka2 run2 = new Koszulka2();
@@ -1919,4 +1937,14 @@ enum KoszulkaRozmiarDokladnie{
         this.wysokoscKoszulki = wysokoscKoszulki;
         this.dlugoscRekawa = dlugoscRekawa;
     }
+    int dajSzerokoscKlatki(){
+        return szerokoscKlatki;
+    }
+    int dajwysokoscKoszulki(){
+        return wysokoscKoszulki;
+    }
+    int dajdlugoscRekawa(){
+        return dlugoscRekawa;
+    }
+
 }
