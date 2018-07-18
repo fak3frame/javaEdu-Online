@@ -1953,7 +1953,7 @@ interface Figura{
 }
 enum KoszulkaRozmiar{
     S,M,L,XL // bez ; na koncu
-    //tylu deklaruje drukownymi literami
+    //wartosci deklaruje drukownymi literami
 }
 enum KoszulkaRozmiarDokladnie{
     S(48, 71, 36),
