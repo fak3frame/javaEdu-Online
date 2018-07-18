@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,10 +34,11 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="1892" selection-start-line="1892" selection-end-line="1892" />
+            <state relative-caret-position="634">
+              <caret line="1756" column="8" selection-start-line="1756" selection-start-column="8" selection-end-line="1756" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#16890#16897#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,6 +177,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,8 +208,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -351,13 +354,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00735" summary="SanouczekProgramisty Serializacja 125">
-      <created>1531650796779</created>
-      <option name="number" value="00735" />
-      <option name="presentableId" value="LOCAL-00735" />
-      <option name="project" value="LOCAL" />
-      <updated>1531650796779</updated>
     </task>
     <task id="LOCAL-00736" summary="SanouczekProgramisty Serializacja 126">
       <created>1531650851880</created>
@@ -695,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531864823388</updated>
     </task>
-    <option name="localTasksCounter" value="784" />
+    <task id="LOCAL-00784" summary="SanouczekProgramisty Typ wyliczeniowy enum 18">
+      <created>1531912045851</created>
+      <option name="number" value="00784" />
+      <option name="presentableId" value="LOCAL-00784" />
+      <option name="project" value="LOCAL" />
+      <updated>1531912045851</updated>
+    </task>
+    <option name="localTasksCounter" value="785" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -735,7 +738,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Serializacja 149" />
     <MESSAGE value="SanouczekProgramisty Serializacja 150" />
     <MESSAGE value="SanouczekProgramisty Serializacja 151" />
     <MESSAGE value="SanouczekProgramisty Serializacja 152" />
@@ -760,7 +762,8 @@
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 15" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 16" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 17" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1091,10 +1094,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="1892" selection-start-line="1892" selection-end-line="1892" />
+        <state relative-caret-position="634">
+          <caret line="1756" column="8" selection-start-line="1756" selection-start-column="8" selection-end-line="1756" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#16890#16897#0" expanded="true" />
           </folding>
         </state>
       </provider>
