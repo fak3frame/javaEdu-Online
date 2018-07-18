@@ -1759,7 +1759,12 @@ public class Wstep {
                 this.dlugoscRekawa = dlugoscRekawa;
             }
         }*/
+        class Koszulka2{
+            KoszulkaRozmiarDokladnie rozmiar;
+            void main(){
 
+            }
+        }
 
 
         String x = new Object() + "123";
