@@ -1694,6 +1694,8 @@ public class Wstep {
         Zmienne typu wyliczniowego maja atrybut public static final
         Enum nie mozna rozszerzac - jest jako final i nie moze dziedziczyc
          poniewaz dziedzicy po java.lang.Enum
+        Wartosci enum mozna porownywac ==
+
          */
 
         class Koszulka{
