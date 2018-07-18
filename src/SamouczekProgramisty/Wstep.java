@@ -1762,9 +1762,13 @@ public class Wstep {
         class Koszulka2{
             KoszulkaRozmiarDokladnie rozmiar;
             void main(){
-
+                for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
+                    System.out.println(x + " ma wartosc: "+ x.ordinal());
+                }
             }
         }
+        Koszulka2 run2 = new Koszulka2();
+        run2.main();
 
 
         String x = new Object() + "123";
