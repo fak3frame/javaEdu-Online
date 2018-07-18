@@ -1750,6 +1750,7 @@ public class Wstep {
             private int dlugoscRekawa;
 
             //jesli enum ma metody/konstruktor to wartoci musza znajdowac sie na poczaktu
+            //konstruktor ma domuslne private
             KoszulkaRozmiarDokladnie(int szerokoscKlatki, int wysokoscKoszulki, int dlugoscRekawa){
                 this.szerokoscKlatki = szerokoscKlatki;
                 this.wysokoscKoszulki = wysokoscKoszulki;
