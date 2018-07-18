@@ -1699,7 +1699,7 @@ public class Wstep {
         Metody:
         MojEnum.vaues(); - zwraca wartosci typu wyliczeniowego, mozna
          uzyc do wypisania wartosci w petli foreach
-
+        na kazdym wyliczeniu w for mozna wywolac metode enuma np get
 
 
          */
@@ -1748,12 +1748,14 @@ public class Wstep {
         run.main();
         /*
         enum KoszulkaRozmiarDokladnie{
-            S(48, 71, 36),
+            S(48, 71, 36),//jesli okresle wartosci w typie enum bede musial
+            // stowrzyc konstruktor z tyloma parametrami i moge stowrzyc zmienne
+            // w enum do korych przypisze wartosci tym konstruktorze
             M(52, 74, 38),
             L(56, 76, 41),
             XL(61, 79, 41);
 
-            private int szerokoscKlatki;
+            private int szerokoscKlatki; //tworze 3 wartosci bo tyle ma typ enum
             private int wysokoscKoszulki;
             private int dlugoscRekawa;
 
@@ -1779,6 +1781,7 @@ public class Wstep {
             void main(){
                 System.out.println("KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()");
                 for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
+                    //za x podsawi KoszulkaRozmiarDokladnie.S itp
                     System.out.println("Rozmiar: " + x + " posiada: ");
                     System.out.println("dlugosc rekawa: "+x.dajdlugoscRekawa());
                     System.out.println("szerokosc klatki: "+x.dajSzerokoscKlatki());
