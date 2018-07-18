@@ -1982,5 +1982,9 @@ enum KoszulkaRozmiarDokladnie{
 }
 
 enum EnumDoTekstu{
-
+    SPOKOJNY{
+        public String format(String wiadomosc){
+            return "To twoja wiadomosc: " + wiadomosc;
+        }
+    }
 }
