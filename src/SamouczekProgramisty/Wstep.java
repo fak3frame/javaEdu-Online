@@ -1696,6 +1696,12 @@ public class Wstep {
          poniewaz dziedzicy po java.lang.Enum
         Wartosci enum mozna porownywac ==
 
+        Metody:
+        MojEnum.vaues(); - zwraca wartosci typu wyliczeniowego, mozna
+         uzyc do wypisania wartosci w petli foreach
+
+
+
          */
 
         class Koszulka{
@@ -1771,13 +1777,6 @@ public class Wstep {
         class Koszulka2{
             KoszulkaRozmiarDokladnie rozmiar;
             void main(){
-                System.out.println();
-                System.out.println("KoszulkaRozmiarDokladnie.values()");
-                System.out.println(KoszulkaRozmiarDokladnie.values());
-
-                System.out.println("KoszulkaRozmiar.values()");
-                System.out.println(KoszulkaRozmiar.values());
-
                 System.out.println("KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()");
                 for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
                     System.out.println("Rozmiar: " + x + " posiada: ");
