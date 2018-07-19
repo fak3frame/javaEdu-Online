@@ -1702,6 +1702,17 @@ public class Wstep {
 
         Nie mozna tworzyc instancji enum
 
+
+        Enum moze byc prosty lub rozszerzony:
+
+        Prosty sklada sie z podanych wartosci bez specyfikacji
+        public Enum{
+        S,M,L,XL
+        }
+        Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
+         przecinka
+
+
         Metody:
         MojEnum.vaues(); - metpda statyczna - wywolywana na nazwie enum/klasy
          zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
