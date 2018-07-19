@@ -1723,7 +1723,23 @@ public class Wstep {
 
         Rozszerzony moze posiadac szegolwe wartosci kazdej zmiennej do
          ktorej przypisuje oddzielne pola i nadaje im wartosci w konstruktorze:
+        public enum rozszerzonyEnum{
+            S(10,20,30),
+            M(20,30,40),
+            L(30,40,50); //SREDNIK JESLI JEST COS PO WARTOSCIACH!
 
+            //tworze 3 zmienne poniewaz kazna zmienna ma 3 "podwartosci:
+            //i przypisuje im wartosci w konstruktorze:
+            private int chestWidth;
+            private int shirtLength;
+            private int sleeveLength;
+
+            rozszerzonyEnum(int chestWidth, int shirtLength, int sleeveLength)
+                this.chestWidth = chestWidth;
+                this.shirtLength = shirtLength;
+                this.sleeveLength = sleeveLength;
+            }
+        }
 
 
 
