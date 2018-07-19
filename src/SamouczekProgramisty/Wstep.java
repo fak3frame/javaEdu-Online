@@ -1716,7 +1716,7 @@ public class Wstep {
 
         Enum moze byc prosty lub rozszerzony:
 
-        Prosty sklada sie z podanych wartosci bez specyfikacji
+        Prosty sklada sie z podanych wartosci bez specyfikacji (podwartosci)
         public enum mojEnum{
         S,M,L,XL
         }
@@ -1734,9 +1734,9 @@ public class Wstep {
         Robie to poniweaz chcac sie dostac do podwartosci zmiennej moge to
          zrobic tylko za pomoca geterow nowych pol ktore maja przypisane
          podwartosci kazdej zmiennej
-        sout(rozszerzonyEnum.S)
+        sout(rozszerzonyEnum.S);
          pokaze : S
-        sout(rozszerzonyEnum.S.getChestWidth)
+        sout(rozszerzonyEnum.S.getChestWidth());
          pokaze podwartosci S - w tym przypadku pierwsza czyli 10
 
         public enum rozszerzonyEnum{
@@ -1757,7 +1757,10 @@ public class Wstep {
                 this.sleeveLength = sleeveLength;
             }
 
-            //oraz tworze getery do tych pol:
+            //oraz tworze getery do tych pol
+            // aby moc sie do nich odwolac na poszczegolnych wartosciach
+            // np: mojEnum.S.getPodZmeinna1(); - w sout pokaze wybrana podwartosc
+            // podZmiennej1 np: 30;
             public int getChestWidth() {
                 return chestWidth;
             }
@@ -1772,21 +1775,23 @@ public class Wstep {
 
         Metody:
         mojEnum.vaues(); - metoda statyczna - wywolywana na nazwie enum/klasy
-         zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
+         zwraca wartosci w fotmie tabeli typu wyliczeniowego:
+         mojEnum.S, mojEnum.M itp., mozna
          uzyc do wypisania wartosci w petli foreach
-         Petla za x podstawia mojEnum.WARTOSC1, mojEnum.WARTOSC2..
+         Petla za x mojEnum.S, mojEnum.M itp.
         na kazdym wyliczeniu w for mozna wywolac metode enuma np get
         for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
-            sout(x) //pokaze samo WARTOSC
-            sout(x.getZmienna)// pokaze poszczeglna podwartosc z getera danej zmiennej
+            sout(x) //pokaze samo S
+            sout(x.getZmienna)// pokaze jedna z podwartosci S ktore sa
+             //przypisane do poszczegolnych zmiennych
 
         mojEnum.valueOf("WARTOSC"); - przyjmuje ciag znakow i zwraca odpowiadajaca
          jej wartosc typu enum czyli np. WARTOSC
 
-        mojEnum.WARTOSC.ordinal(); - zwroci ktory numer ma podana wartosc (od 0)
+        mojEnum.S.ordinal(); - zwroci ktory numer ma podana wartosc S (liczy od 0)
 
-        mojEnum.WARTOSC.name(); - zwroci nazwe wartosci enum w formie samej nazwy
-         czyli WARTOSC
+        mojEnum.S.name(); - zwroci nazwe wartosci enum w formie samej nazwy
+         czyli S
 
 
         Enum moze posiadac metody abstrakcyjne ktore sluza do stworzenia definicji

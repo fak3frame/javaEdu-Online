@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Czlowiek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kalkulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/KalkulatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kolory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="1888" column="63" selection-start-line="1888" selection-start-column="63" selection-end-line="1888" selection-end-column="63" />
+            <state relative-caret-position="-2353">
+              <caret line="1792" column="38" selection-start-line="1792" selection-start-column="38" selection-end-line="1792" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#80274#80275#0" expanded="true" />
@@ -48,6 +53,56 @@
                 <element signature="e#80410#80411#0" expanded="true" />
                 <element signature="e#80446#80447#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Czlowiek.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Czlowiek.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kalkulator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kalkulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding>
+                <element signature="e#151#152#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KalkulatorTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/KalkulatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+              <folding>
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kolory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kolory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -79,6 +134,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -120,11 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Konto.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Transfer.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Przelew.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/PrzelewBankowy.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Bank.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/KontoBanowe.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_2_Modyfikatory_Dostepu/Test.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Silnik/Silnik.java" />
@@ -171,6 +222,11 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Podstawa.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Rozszerzenie.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Human.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kolory.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Czlowiek.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kalkulator.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/KalkulatorTest.java" />
       </list>
     </option>
   </component>
@@ -211,7 +267,15 @@
               <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Test1" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+              <item name="_8_Enum" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,14 +302,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Wstep">
-    <configuration name="Czlowiek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._7_Serializacja.Czlowiek" />
+  <component name="RunManager" selected="Application.KalkulatorTest">
+    <configuration name="Czlowiek (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._8_Enum.Czlowiek" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._7_Serializacja.*" />
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._8_Enum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -261,19 +325,19 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Rozszerzenie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Test1.Rozszerzenie" />
+    <configuration name="KalkulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._8_Enum.KalkulatorTest" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Test1.*" />
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._8_Enum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="SerializacjaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Test1.SerializacjaTest" />
+    <configuration name="Rozszerzenie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Test1.Rozszerzenie" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -337,18 +401,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Wstep" />
-      <item itemvalue="Application.SerializacjaTest" />
-      <item itemvalue="Application.Czlowiek" />
       <item itemvalue="Application.Czlowiek2" />
       <item itemvalue="Application.Rozszerzenie" />
+      <item itemvalue="Application.Czlowiek (1)" />
+      <item itemvalue="Application.KalkulatorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KalkulatorTest" />
+        <item itemvalue="Application.Czlowiek (1)" />
         <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.Rozszerzenie" />
         <item itemvalue="Application.Czlowiek2" />
-        <item itemvalue="Application.Czlowiek" />
-        <item itemvalue="Application.SerializacjaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -362,41 +426,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00779" summary="SanouczekProgramisty Typ wyliczeniowy enum 13">
-      <created>1531864733946</created>
-      <option name="number" value="00779" />
-      <option name="presentableId" value="LOCAL-00779" />
-      <option name="project" value="LOCAL" />
-      <updated>1531864733947</updated>
-    </task>
-    <task id="LOCAL-00780" summary="SanouczekProgramisty Typ wyliczeniowy enum 14">
-      <created>1531864754871</created>
-      <option name="number" value="00780" />
-      <option name="presentableId" value="LOCAL-00780" />
-      <option name="project" value="LOCAL" />
-      <updated>1531864754871</updated>
-    </task>
-    <task id="LOCAL-00781" summary="SanouczekProgramisty Typ wyliczeniowy enum 15">
-      <created>1531864776343</created>
-      <option name="number" value="00781" />
-      <option name="presentableId" value="LOCAL-00781" />
-      <option name="project" value="LOCAL" />
-      <updated>1531864776343</updated>
-    </task>
-    <task id="LOCAL-00782" summary="SanouczekProgramisty Typ wyliczeniowy enum 16">
-      <created>1531864799389</created>
-      <option name="number" value="00782" />
-      <option name="presentableId" value="LOCAL-00782" />
-      <option name="project" value="LOCAL" />
-      <updated>1531864799389</updated>
-    </task>
-    <task id="LOCAL-00783" summary="SanouczekProgramisty Typ wyliczeniowy enum 17">
-      <created>1531864823388</created>
-      <option name="number" value="00783" />
-      <option name="presentableId" value="LOCAL-00783" />
-      <option name="project" value="LOCAL" />
-      <updated>1531864823388</updated>
     </task>
     <task id="LOCAL-00784" summary="SanouczekProgramisty Typ wyliczeniowy enum 18">
       <created>1531912045851</created>
@@ -706,7 +735,42 @@
       <option name="project" value="LOCAL" />
       <updated>1532019246692</updated>
     </task>
-    <option name="localTasksCounter" value="828" />
+    <task id="LOCAL-00828" summary="SanouczekProgramisty Typ wyliczeniowy enum 62">
+      <created>1532019771795</created>
+      <option name="number" value="00828" />
+      <option name="presentableId" value="LOCAL-00828" />
+      <option name="project" value="LOCAL" />
+      <updated>1532019771795</updated>
+    </task>
+    <task id="LOCAL-00829" summary="SanouczekProgramisty Typ wyliczeniowy enum 63">
+      <created>1532019860245</created>
+      <option name="number" value="00829" />
+      <option name="presentableId" value="LOCAL-00829" />
+      <option name="project" value="LOCAL" />
+      <updated>1532019860245</updated>
+    </task>
+    <task id="LOCAL-00830" summary="SanouczekProgramisty Typ wyliczeniowy enum 64">
+      <created>1532020282969</created>
+      <option name="number" value="00830" />
+      <option name="presentableId" value="LOCAL-00830" />
+      <option name="project" value="LOCAL" />
+      <updated>1532020282969</updated>
+    </task>
+    <task id="LOCAL-00831" summary="SanouczekProgramisty Typ wyliczeniowy enum 65">
+      <created>1532020425812</created>
+      <option name="number" value="00831" />
+      <option name="presentableId" value="LOCAL-00831" />
+      <option name="project" value="LOCAL" />
+      <updated>1532020425812</updated>
+    </task>
+    <task id="LOCAL-00832" summary="SanouczekProgramisty Typ wyliczeniowy enum 66">
+      <created>1532020550954</created>
+      <option name="number" value="00832" />
+      <option name="presentableId" value="LOCAL-00832" />
+      <option name="project" value="LOCAL" />
+      <updated>1532020550954</updated>
+    </task>
+    <option name="localTasksCounter" value="833" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -721,12 +785,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35830212" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35830212" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22278665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22278665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -746,11 +810,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 37" />
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 38" />
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 39" />
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 40" />
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 41" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 42" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 43" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 44" />
@@ -771,7 +830,12 @@
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 59" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 60" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 61" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 61" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 62" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 63" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 64" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 65" />
+    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 66" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Typ wyliczeniowy enum 66" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,41 +843,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Silnik/Diesel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Silnik/SilnikMoj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_3_Dziedzieczenie/Mammal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_3_Dziedzieczenie/Goldfish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_3_Dziedzieczenie/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_3_Dziedzieczenie/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1100,10 +1129,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="1888" column="63" selection-start-line="1888" selection-start-column="63" selection-end-line="1888" selection-end-column="63" />
+        <state relative-caret-position="-2353">
+          <caret line="1792" column="38" selection-start-line="1792" selection-start-column="38" selection-end-line="1792" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#80274#80275#0" expanded="true" />
@@ -1112,6 +1148,48 @@
             <element signature="e#80382#80383#0" expanded="true" />
             <element signature="e#80410#80411#0" expanded="true" />
             <element signature="e#80446#80447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kolory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Czlowiek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Kalkulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/KalkulatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
           </folding>
         </state>
       </provider>
