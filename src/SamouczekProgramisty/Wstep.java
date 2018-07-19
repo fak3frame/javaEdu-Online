@@ -1689,7 +1689,7 @@ public class Wstep {
 
 
 
-        //Enum, typ wyliczeniowy
+        //ENUM TYP WYLICZENIOWY
         /*
         Sluzy do grupownia znanych nam wartosci - latwo je rozbudowywac
 
