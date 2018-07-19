@@ -1776,7 +1776,8 @@ public class Wstep {
          metody ktorych cialo deklaruje w wartociach po nazwie w {}
         Wywoluje je podajac nazwe enuma z wartoscia i na koncu metode dzieki czemu
          mam rozne implementacje dla moich metod
-        mojEnum.IMIE.format("kamil");
+        mojEnum.IMIE.format("kamil"); //zwroci string "Witaj kamil"
+        Moge to zapisac w zmiennej np. String napis;
 
         public enum mojEnum{
             IMIE{
