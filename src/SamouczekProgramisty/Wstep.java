@@ -1757,10 +1757,10 @@ public class Wstep {
 
 
         Metody:
-        mojEnum.vaues(); - metpda statyczna - wywolywana na nazwie enum/klasy
+        mojEnum.vaues(); - metoda statyczna - wywolywana na nazwie enum/klasy
          zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
          uzyc do wypisania wartosci w petli foreach
-         petla za x podstawia MojEnum.WARTOSC
+         Petla za x podstawia mojEnum.WARTOSC1, mojEnum.WARTOSC2..
         na kazdym wyliczeniu w for mozna wywolac metode enuma np get
 
         mojEnum.valueOf("WARTOSC"); - przyjmuje ciag znakow i zwraca odpowiadajaca
