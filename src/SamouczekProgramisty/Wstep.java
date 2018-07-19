@@ -1772,6 +1772,19 @@ public class Wstep {
          czyli WARTOSC
 
 
+        Enum moze posiadac metody abstrakcyjne ktore sluza do stworzenia definicji
+         metody ktorych cialo deklaruje w wartociach po nazwie w {}
+        public enum mojEnum{
+            IMIE{
+                public String dajDane(String napis)
+                    return "Witaj " + napis;
+            },
+            NAZWISKO{
+                public String dajDane(String napis)
+                    return "Masz na nazwisko: " + napis;
+            };
+            public abstract String dajDane(String napis);
+        }
          */
 
         class Koszulka{
