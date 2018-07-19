@@ -1693,7 +1693,7 @@ public class Wstep {
         /*
         Sluzy do grupownia znanych nam wartosci - latwo je rozbudowywac
 
-        Zmienne typu wyliczniowego maja atrybut ! public static final !
+        Wartosci typu wyliczniowego maja atrybut public static final !
          wiec odwolujac sie do nich podaje nazwe typu wyliczeniowego
          np zmienna w klasie:
          private mojEnum zmiennaEnum = mojEnum.XL;
@@ -1757,18 +1757,19 @@ public class Wstep {
 
 
         Metody:
-        MojEnum.vaues(); - metpda statyczna - wywolywana na nazwie enum/klasy
+        mojEnum.vaues(); - metpda statyczna - wywolywana na nazwie enum/klasy
          zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
          uzyc do wypisania wartosci w petli foreach
          petla za x podstawia MojEnum.WARTOSC
         na kazdym wyliczeniu w for mozna wywolac metode enuma np get
 
-        MojEnum.valueOf("WARTOSC"); - przyjmuje ciag znakow i zwraca odpowiadajaca
+        mojEnum.valueOf("WARTOSC"); - przyjmuje ciag znakow i zwraca odpowiadajaca
          jej wartosc typu enum czyli np. WARTOSC
 
-        MojEnum.WARTOSC.ordinal(); - zwroci ktory numer ma podana wartosc (od 0)
+        mojEnum.WARTOSC.ordinal(); - zwroci ktory numer ma podana wartosc (od 0)
 
-        MojEnum.WARTOSC.name(); - zwroci nazwe typu enum w formie WARTOSC
+        mojEnum.WARTOSC.name(); - zwroci nazwe wartosci enum w formie samej nazwy
+         czyli WARTOSC
 
 
          */
