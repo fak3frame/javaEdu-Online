@@ -1722,7 +1722,7 @@ public class Wstep {
         }
         Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
          srednika
-        Przypisuje im wartosci pelna nazwa;
+        Zmiennym typu enum przypisuje wartosci pelna nazwa enuma:
          mojEnum zmienna = mojEnum.S;
         a wyswietlajac je w sout otrzymam samo:
          S
@@ -1731,6 +1731,9 @@ public class Wstep {
          przypisuje do oddzielnych pol i nadaje im wartosci w konstruktorze
         Tyle ile podam podwartosci w kazdej zmiennej tylu parametrowy konstruktor
          musze stworzyc!
+        Robie to poniweaz chcac sie dostac do podwartosci zmiennej moge to
+         zrobic tylko za pomoca geterow nowych pol ktore maja przypisane
+         podwartosci kazdej zmiennej
 
         public enum rozszerzonyEnum{
             S(10,20,30), //3 wartosci wiec 3 param. konstr. musze stworzyc
