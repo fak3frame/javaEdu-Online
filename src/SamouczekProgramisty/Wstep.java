@@ -1729,7 +1729,7 @@ public class Wstep {
          musze stworzyc!
 
         public enum rozszerzonyEnum{
-            S(10,20,30),
+            S(10,20,30), //3 wartosci wiec 3 param. konstr. musze stworzyc
             M(20,30,40),
             L(30,40,50); //SREDNIK JESLI JEST COS PO WARTOSCIACH!
 
