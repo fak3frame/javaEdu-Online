@@ -1722,10 +1722,14 @@ public class Wstep {
         }
         Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
          srednika
+        Przypisuje im wartosci pelna nazwa;
+         mojEnum zmienna = mojEnum.S;
+        a wyswietlajac je w sout otrzymam samo:
+         S
 
-        Rozszerzony moze posiadac szegolwe wartosci kazdej zmiennej do
-         ktorej przypisuje oddzielne pola i nadaje im wartosci w konstruktorze
-        Tyle ile podam szegolow w kazdej zmiennej tylu parametrowy konstruktor
+        Rozszerzony moze posiadac podwartosci kazdej wartosci ktore
+         przypisuje do oddzielnych pol i nadaje im wartosci w konstruktorze
+        Tyle ile podam podwartosci w kazdej zmiennej tylu parametrowy konstruktor
          musze stworzyc!
 
         public enum rozszerzonyEnum{
@@ -1767,9 +1771,7 @@ public class Wstep {
         na kazdym wyliczeniu w for mozna wywolac metode enuma np get
         for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
             sout(x) //pokaze samo WARTOSC
-            sout(x.getZmienna)// pokaze poszczeglna podwartosc z getera danej zmeinnej
-            //  parametr zmiennej enuma jest przpisany do oddzielnych
-            // zmiennych (ilosc zalezy od ilosci szegolow)
+            sout(x.getZmienna)// pokaze poszczeglna podwartosc z getera danej zmiennej
 
         mojEnum.valueOf("WARTOSC"); - przyjmuje ciag znakow i zwraca odpowiadajaca
          jej wartosc typu enum czyli np. WARTOSC
