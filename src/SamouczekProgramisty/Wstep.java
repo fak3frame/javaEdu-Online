@@ -1724,7 +1724,10 @@ public class Wstep {
          srednika
 
         Rozszerzony moze posiadac szegolwe wartosci kazdej zmiennej do
-         ktorej przypisuje oddzielne pola i nadaje im wartosci w konstruktorze:
+         ktorej przypisuje oddzielne pola i nadaje im wartosci w konstruktorze
+        Tyle ile podam szegolow w kazdej zmiennej tylu parametrowy konstruktor
+         musze stworzyc!
+
         public enum rozszerzonyEnum{
             S(10,20,30),
             M(20,30,40),
