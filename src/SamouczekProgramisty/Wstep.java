@@ -1739,6 +1739,19 @@ public class Wstep {
                 this.shirtLength = shirtLength;
                 this.sleeveLength = sleeveLength;
             }
+
+            //oraz tworze getery do tych pol:
+            public int getChestWidth() {
+                return chestWidth;
+            }
+
+            public int getShirtLength() {
+                return shirtLength;
+            }
+
+            public int getSleeveLength() {
+                return sleeveLength;
+            }
         }
 
 
