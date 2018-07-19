@@ -1756,7 +1756,6 @@ public class Wstep {
         }
 
 
-
         Metody:
         MojEnum.vaues(); - metpda statyczna - wywolywana na nazwie enum/klasy
          zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
