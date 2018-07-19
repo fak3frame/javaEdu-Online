@@ -1721,6 +1721,10 @@ public class Wstep {
         Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
          przecinka
 
+        Rozszerzony moze posiadac szegolwe wartosci kazdej zmiennej do
+         ktorej przypisuje oddzielne pola i nadaje im wartosci w konstruktorze:
+
+
 
 
         Metody:
