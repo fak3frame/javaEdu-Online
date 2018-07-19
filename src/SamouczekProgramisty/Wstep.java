@@ -1694,6 +1694,10 @@ public class Wstep {
         Sluzy do grupownia znanych nam wartosci - latwo je rozbudowywac
 
         Zmienne typu wyliczniowego maja atrybut public static final
+         wiec odwolujac sie do nich podaje nazwe typu wyliczeniowego
+         np. mojEnum.L;
+
+        Wartosci pisze wielkimi literami
 
         Enum nie mozna rozszerzac - jest jako final i nie moze dziedziczyc
          poniewaz dziedzicy po java.lang.Enum
@@ -1706,11 +1710,12 @@ public class Wstep {
         Enum moze byc prosty lub rozszerzony:
 
         Prosty sklada sie z podanych wartosci bez specyfikacji
-        public Enum{
+        public enum mojEnum{
         S,M,L,XL
         }
         Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
          przecinka
+
 
 
         Metody:
