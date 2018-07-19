@@ -1693,9 +1693,10 @@ public class Wstep {
         /*
         Sluzy do grupownia znanych nam wartosci - latwo je rozbudowywac
 
-        Zmienne typu wyliczniowego maja atrybut public static final
+        Zmienne typu wyliczniowego maja atrybut ! public static final !
          wiec odwolujac sie do nich podaje nazwe typu wyliczeniowego
-         np. mojEnum.L;
+         np zmienna w klasie:
+         private mojEnum zmiennaEnum = mojEnum.XL;
 
         Wartosci pisze wielkimi literami
 
