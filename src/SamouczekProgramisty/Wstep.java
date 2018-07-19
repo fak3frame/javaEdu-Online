@@ -1765,6 +1765,11 @@ public class Wstep {
          uzyc do wypisania wartosci w petli foreach
          Petla za x podstawia mojEnum.WARTOSC1, mojEnum.WARTOSC2..
         na kazdym wyliczeniu w for mozna wywolac metode enuma np get
+        for(KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
+            sout(x) //pokaze samo WARTOSC
+            sout(x.getZmienna)// pokaze poszczeglna podwartosc z getera danej zmeinnej
+            //  parametr zmiennej enuma jest przpisany do oddzielnych
+            // zmiennych (ilosc zalezy od ilosci szegolow)
 
         mojEnum.valueOf("WARTOSC"); - przyjmuje ciag znakow i zwraca odpowiadajaca
          jej wartosc typu enum czyli np. WARTOSC
@@ -1880,6 +1885,14 @@ public class Wstep {
                 System.out.println("KoszulkaRozmiar.valueOf(''S'')");
                 //zwroci S
                 System.out.println(KoszulkaRozmiar.valueOf("S"));
+
+                System.out.println();
+                System.out.println("pokazuje w sout KoszulkaRozmiarDokladnie.XL");
+                System.out.println(KoszulkaRozmiarDokladnie.XL);
+
+                System.out.println();
+                System.out.println("pokazuje w sout KoszulkaRozmiarDokladnie.XL.dajdlugoscRekawa()");
+                System.out.println(KoszulkaRozmiarDokladnie.XL.dajdlugoscRekawa());
 
                 System.out.println();
                 System.out.println("KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()");
