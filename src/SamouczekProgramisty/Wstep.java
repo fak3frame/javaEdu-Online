@@ -1911,8 +1911,15 @@ public class Wstep {
             public abstract String format(String wiadomosc);
         }*/
         class TestEnumDoTekstu{
-
+            String zmienna;
+            void main(){
+                zmienna = EnumDoTekstu.NERWOWY.format("costam");
+                System.out.println();
+                System.out.println("Enum do tekstu: "+ zmienna);
+            }
         }
+        TestEnumDoTekstu testEnumDoTekstu = new TestEnumDoTekstu();
+        testEnumDoTekstu.main();
 
 
 
