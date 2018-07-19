@@ -1774,6 +1774,10 @@ public class Wstep {
 
         Enum moze posiadac metody abstrakcyjne ktore sluza do stworzenia definicji
          metody ktorych cialo deklaruje w wartociach po nazwie w {}
+        Wywoluje je podajac nazwe enuma z wartoscia i na koncu metode dzieki czemu
+         mam rozne implementacje dla moich metod
+        mojEnum.IMIE.format("kamil");
+
         public enum mojEnum{
             IMIE{
                 public String dajDane(String napis)
