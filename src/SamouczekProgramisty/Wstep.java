@@ -1707,6 +1707,10 @@ public class Wstep {
 
         Nie mozna tworzyc instancji enum
 
+        W instrukcji switch(zmiennaEnum){
+            case S: //uzywam samych wartosci enum
+                break;
+
 
         Enum moze byc prosty lub rozszerzony:
 
