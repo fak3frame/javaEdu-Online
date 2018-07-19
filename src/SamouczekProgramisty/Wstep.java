@@ -1711,6 +1711,8 @@ public class Wstep {
             case S: //uzywam samych wartosci enum
                 break;
 
+        Konstruktor jest zawsze private ! - nie musze tego pisac
+
 
         Enum moze byc prosty lub rozszerzony:
 
@@ -1734,6 +1736,7 @@ public class Wstep {
             private int shirtLength;
             private int sleeveLength;
 
+            //konstruktor jest zawsze private!
             rozszerzonyEnum(int chestWidth, int shirtLength, int sleeveLength)
                 this.chestWidth = chestWidth;
                 this.shirtLength = shirtLength;
