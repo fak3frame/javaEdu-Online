@@ -1700,7 +1700,7 @@ public class Wstep {
 
         Wartosci pisze wielkimi literami
 
-        Enum nie mozna rozszerzac - jest jako final i nie moze dziedziczyc
+        Enum nie mozna rozszerzac - jest jako final ! i nie moze dziedziczyc
          poniewaz dziedzicy po java.lang.Enum
 
         Wartosci enum mozna porownywac ==
@@ -1744,11 +1744,9 @@ public class Wstep {
             public int getChestWidth() {
                 return chestWidth;
             }
-
             public int getShirtLength() {
                 return shirtLength;
             }
-
             public int getSleeveLength() {
                 return sleeveLength;
             }
