@@ -1734,6 +1734,10 @@ public class Wstep {
         Robie to poniweaz chcac sie dostac do podwartosci zmiennej moge to
          zrobic tylko za pomoca geterow nowych pol ktore maja przypisane
          podwartosci kazdej zmiennej
+        sout(rozszerzonyEnum.S)
+         pokaze : S
+        sout(rozszerzonyEnum.S.getChestWidth)
+         pokaze podwartosci S - w tym przypadku pierwsza czyli 10
 
         public enum rozszerzonyEnum{
             S(10,20,30), //3 wartosci wiec 3 param. konstr. musze stworzyc
