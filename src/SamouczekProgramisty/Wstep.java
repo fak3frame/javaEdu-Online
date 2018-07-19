@@ -1700,6 +1700,8 @@ public class Wstep {
 
         Wartosci enum mozna porownywac ==
 
+        Nie mozna tworzyc instancji enum
+
         Metody:
         MojEnum.vaues(); - metpda statyczna - wywolywana na nazwie enum/klasy
          zwraca wartosci w fotmie tabeli typu wyliczeniowego, mozna
