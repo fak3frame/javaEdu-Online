@@ -1711,7 +1711,7 @@ public class Wstep {
             case S: //uzywam samych wartosci enum
                 break;
 
-        Konstruktor jest zawsze private ! - nie musze tego pisac
+        Konstruktor jest zawsze private ! - nie musze tego modyfikatora pisac
 
 
         Enum moze byc prosty lub rozszerzony:
@@ -1721,7 +1721,7 @@ public class Wstep {
         S,M,L,XL
         }
         Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
-         przecinka
+         srednika
 
         Rozszerzony moze posiadac szegolwe wartosci kazdej zmiennej do
          ktorej przypisuje oddzielne pola i nadaje im wartosci w konstruktorze:
@@ -1730,8 +1730,8 @@ public class Wstep {
             M(20,30,40),
             L(30,40,50); //SREDNIK JESLI JEST COS PO WARTOSCIACH!
 
-            //tworze 3 zmienne poniewaz kazna zmienna ma 3 "podwartosci:
-            //i przypisuje im wartosci w konstruktorze:
+            //tworze 3 zmienne poniewaz kazna zmienna ma 3 "podwartosci"
+            // i przypisuje im wartosci w konstruktorze:
             private int chestWidth;
             private int shirtLength;
             private int sleeveLength;
