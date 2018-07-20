@@ -1991,9 +1991,9 @@ public class Wstep {
         -adnotacji typu
 
 
-        Zastosowanie adnotacji:
+        //Zastosowanie adnotacji:
 
-        -Dodatkowa informacja dla kompilatora
+        //-Dodatkowa informacja dla kompilatora
         np @override iformuje kompilator ze metoda jest przeslonita
          w nadklasie lub interfejsu
         Moge to wykorzystac np dodajac przed jakas metoda i jesli
@@ -2006,6 +2006,7 @@ public class Wstep {
         //bedzie blad poniwaz brakuje "s" i metoda nie przeslania nic
         */
 
+
         //-Adnotacje przetwarzane w trakcie kompilacji
         List listOfUndefinedObjects = new ArrayList();
         List<Integer> listOfIntegers = (List<Integer>) listOfUndefinedObjects;
@@ -2016,14 +2017,25 @@ public class Wstep {
          "Warning:(10, 56) java: unchecked cast
          required: java.util.List<java.lang.Integer>
          found: java.util.List"
+
         Aby zapobiec takiemu ostrzeganiu dodaje przed rzutowaniem @SuppressWarnings
          i moge ja przypisac do typu, atrybutu, metody, parametru metody,
          konstruktora czy zmiennej lokalnej np listy
+
         List listOfUndefinedObjects = new ArrayList();
         @SuppressWarnings("unchecked")
         List<Integer> listOfIntegers = (List<Integer>) listOfUndefinedObjects;
 
+        Kompilator nie bedzie nas osrzegal przed zagrozeniami typu unchecked przy
+         konkretnej zmiennej
+
+
+        //-Adnotacje w trakcie uruchomienia programu
+        Sluzy do tego mechanizm refleksji
+
          */
+
+
 
 
         String x = new Object() + "123";
