@@ -2041,7 +2041,7 @@ public class Wstep {
         @Retention(RetentionPolicy.SOURCE)
         @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
         public @interface SampleFieldAnnotation {
-        String id();
+        String id(); - to jest element id (przyjmie argument z adnotacji)
         }
 
         Adnotacja powinna miec informacje: (przed definicja)
