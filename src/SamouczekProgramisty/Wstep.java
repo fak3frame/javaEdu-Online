@@ -2066,6 +2066,22 @@ public class Wstep {
 
 
         Adnotacja moze przyjac tzw argument podczas wywolania np @SuppressWarnings("unchecked");
+        to adnotacja SuppressWarnings przyjmie String
+
+        PRZYKLADOWA DEKLARACJA:
+        @Retention(RetentionPolicy.RUNTIME)
+        @Target({ElementType.METHOD, ElementType.FIELD})
+        public @interface MyAnnotation {
+            String A();
+            String B();
+        }
+        W METODZIE:
+        @MyAnnotation(A = "", B = "")//przypisuje wartosci zmiennym w adnotacji
+        void simpleMethod() {
+               sout("costam");
+        }
+
+
         public @interface Retention {
             RetentionPolicy value();
         }
@@ -2091,6 +2107,7 @@ public class Wstep {
         @Target({ElementType.FIELD, ElementType.CONSTRUCTOR, ElementType.METHOD})
         //Adnotację tę możemy stosować do atrybutów klasy, konstruktorów i metod.
         // wymieniam je po przecinku w {}
+
         public @interface AnnotationWithDefaultValues {
             String firstElement() default "someDefaultValue";
             int [] secondElement() default {1, 2, 3};
