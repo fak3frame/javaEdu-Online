@@ -2048,7 +2048,9 @@ public class Wstep {
         -do jakiche elementow moze byc stosowana np. @Target(ElementType.METHOD)
          jesli jej nie okresle to bede mogl jej uzywac wszedzie z wyjatkiem typow
         -jak dlugo dane o adnotacji powinny byc przechowywane - retencja - czy
-          w trakcie uruchomienia programu czy kompilacji
+          w trakcie uruchomienia programu czy kompilacji, jesli potrzebuje
+          wykorzystac ja tylko w trakcie kompilacji to wygeneruje to mniejszy
+          bajtkod
           np: @Retention(RetentionPolicy.SOURCE)
 
 
