@@ -2031,7 +2031,8 @@ public class Wstep {
 
 
         //-Adnotacje w trakcie uruchomienia programu
-        Sluzy do tego mechanizm refleksji
+        Sluzy do tego mechanizm refleksji, moge w trakcie dzialania
+         programu pobierac informacje o skompilowanym kodzie
 
          */
 
