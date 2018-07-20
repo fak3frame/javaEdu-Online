@@ -1953,10 +1953,7 @@ public class Wstep {
         testEnumDoTekstu.main();
 
 
-
-
-
-
+        
         //ADNOTACJE / DYREKTYWA JavaDoc
         /*
         JavaDoc to standardowy mechanizm generowania dokumentacji, jest
@@ -1970,16 +1967,16 @@ public class Wstep {
          * // ktory przyjmuje
          * @return parameter multipied by 2// to co zwraca i jak
          */
-        /*////////////////////////////////////////
-            public int timesTwo(int param) {
-                return param * 2;
-            }
-        /*///////////////////////////////
+
+        //    public int timesTwo(int param) {
+        //        return param * 2;
+        //    }
+
 
         /*
         Adnotacje przekazuja dodatkowe informacje na temat kodu
         Sa one specjalnym interfejsem
-        Umieszczamy je przed konkretnym elementem np. klasa
+        Umieszczamy je przed konkretnym elementem np. klasa/zmienna/metoda
 
         Mozemy je stosowac do:
         -metody
@@ -2032,13 +2029,14 @@ public class Wstep {
 
         //-Adnotacje w trakcie uruchomienia programu
         Sluzy do tego mechanizm refleksji, moge w trakcie dzialania
-         programu pobierac informacje o skompilowanym kodzie czyli np klasie
+         programu pobierac informacje o skompilowanym kodzie czyli np klasie/jej metodach
+         czy zmiennych
         np. @PostConstruct
 
 
         Definiowanie adnotacji
         np:
-        @Retention(RetentionPolicy.SOURCE)
+        @Retention(RetentionPolicy.SOURCE) - adnotacja bedzie tylko w kodzie zrodlowym
         @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
         public @interface SampleFieldAnnotation {
             String id(); - to jest element "id" (przyjmie argument podczas uzcia adnotacji
@@ -2054,7 +2052,7 @@ public class Wstep {
          np: @Retention(RetentionPolicy.SOURCE)
          typ wyliczniowy: RetentionPolicy
         Informacje o odnotacji moga byc:
-          * usuwane przez kompilator w trakcie kompilacji .SOURCE
+          * usuwane przez kompilator w trakcie kompilacji - tylko w kodzie zrodlowym .SOURCE
           * umieszczone w skompilowanej klasie ale nie dostepne w uruchomionym progr .CLASS
           * dostepne w trakcie uruchomionego programu .RUNTIME
          Jesli potrzebuje wykorzystac ja tylko w trakcie kompilacji to wygeneruje
