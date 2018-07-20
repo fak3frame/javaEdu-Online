@@ -2088,7 +2088,8 @@ public class Wstep {
         @Retention(RetentionPolicy.RUNTIME)
         //nformacja o tej adnotacji jest dostępna w trakcie wykonania programu.
         @Target({ElementType.FIELD, ElementType.CONSTRUCTOR, ElementType.METHOD})
-        //Adnotację tę możemy stosować do atrybutów klasy, konstruktorów i metod. 
+        //Adnotację tę możemy stosować do atrybutów klasy, konstruktorów i metod.
+        // wymieniam je po przecinku w {}
         public @interface AnnotationWithDefaultValues {
             String firstElement() default "someDefaultValue";
             int [] secondElement() default {1, 2, 3};
