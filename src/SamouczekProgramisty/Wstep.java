@@ -2033,6 +2033,17 @@ public class Wstep {
         //-Adnotacje w trakcie uruchomienia programu
         Sluzy do tego mechanizm refleksji, moge w trakcie dzialania
          programu pobierac informacje o skompilowanym kodzie
+        np. @PostConstruct
+
+
+        Definiowanie adnotacji
+        np:
+        public @interface Override{}
+
+        Adnotacja powinna miec informacje: (przed definicja)
+        -do jakiche elementow moze byc stosowana np. @Target(ElementType.METHOD)
+        -jak dlugo dane o adnotacji powinny byc przechowywane - retencja - czy
+          w trakcie uruchomienia programu czy kompilacji
 
          */
 
