@@ -1962,9 +1962,9 @@ public class Wstep {
         Sa w nim dyrektywy takie jak @param czy @retrun oraz opis
         Moga byc takrze @see, @author czy @version
         /**
-         * Multipies number by 2 // cel metody
-         * @param parameter number that should be multipied // zachowanie parametru
-         * // ktory przyjmuje
+         * Multipies number by 2 // co robi metoda
+         * @param parameter number that should be multipied // co sie stanie
+         * // z parametrem ktory przyjmie
          * @return parameter multipied by 2// to co zwraca i jak
          */
 
