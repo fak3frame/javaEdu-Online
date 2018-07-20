@@ -2074,12 +2074,13 @@ public class Wstep {
 
 
 
-    //ADNOTACJE
+    //ADNOTACJE / DYREKTYWA JavaDoc
     /*
-    Adnotacje przekazuja dodatkowe informacje na temat kodu
-    Sa one specjalnym interfejsem
-
-    JavaDoc to standardowy mechanizm generowania dokumentacji
+    JavaDoc to standardowy mechanizm generowania dokumentacji, jest
+     on w specjalnym komentarzu wieloliniowym zaczynajacym sie od /**
+     z * na poczatku kazdej linii
+    Sa w nim dyrektywy takie jak @param czy @retrun oraz opis
+    Moga byc takrze @see, @author czy @version
     /**
      * Multipies number by 2 // cel metody
      * @param parameter number that should be multipied // zachowanie parametru
@@ -2089,6 +2090,25 @@ public class Wstep {
         public int timesTwo(int parameter) {
             return parameter * 2;
     }
+
+
+    /*
+    Adnotacje przekazuja dodatkowe informacje na temat kodu
+    Sa one specjalnym interfejsem
+    Umieszczamy je przed konkretnym elementem np. klasa
+
+    Mozemy je stosowac do:
+    -metody
+    -klasy
+    -pola klasy
+    -parametru metody(to co przyjmuje)
+    -zmiennej lokalnej
+    -konstruktora
+    -adnotacji typu
+
+
+    */
+
 
 
 
