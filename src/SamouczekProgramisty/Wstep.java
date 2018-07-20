@@ -2107,6 +2107,13 @@ public class Wstep {
     -adnotacji typu
 
 
+    Zastosowanie adnotacji:
+
+    -Dodatkowa informacja dla kompilatora
+    np @override iformuje kompilator ze metoda jest przeslonita
+     w nadklasie lub interfejsu
+
+
     */
 
 
