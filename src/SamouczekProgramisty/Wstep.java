@@ -2038,6 +2038,7 @@ public class Wstep {
 
         Definiowanie adnotacji
         np:
+        @Retention(RetentionPolicy.SOURCE)
         @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
         public @interface SampleFieldAnnotation {
         String id();
