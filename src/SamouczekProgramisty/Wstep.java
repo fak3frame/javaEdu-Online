@@ -2032,7 +2032,7 @@ public class Wstep {
 
         //-Adnotacje w trakcie uruchomienia programu
         Sluzy do tego mechanizm refleksji, moge w trakcie dzialania
-         programu pobierac informacje o skompilowanym kodzie
+         programu pobierac informacje o skompilowanym kodzie czyli np klasie
         np. @PostConstruct
 
 
@@ -2049,13 +2049,14 @@ public class Wstep {
          jesli jej nie okresle to bede mogl jej uzywac wszedzie z wyjatkiem typow
          typ wyliczniowy : ElementType
 
-        -jak dlugo dane o adnotacji powinny byc przechowywane - retencja
+        -jak dlugo dane o adnotacji powinny byc przechowywane / gdzie beda wykrywane
+         adnotacje - jest to retencja
          np: @Retention(RetentionPolicy.SOURCE)
          typ wyliczniowy: RetentionPolicy
         Informacje o odnotacji moga byc:
-          * usuwane przez kompilator w trakcie kompilacji
-          * umieszczone w skompilowanej klasie ale nie dostepne w uruchomionym progr.
-          * dostepne w trakcie uruchomionego programu
+          * usuwane przez kompilator w trakcie kompilacji .SOURCE
+          * umieszczone w skompilowanej klasie ale nie dostepne w uruchomionym progr .CLASS
+          * dostepne w trakcie uruchomionego programu .RUNTIME
          Jesli potrzebuje wykorzystac ja tylko w trakcie kompilacji to wygeneruje
           to mniejszy bajtkod
 
