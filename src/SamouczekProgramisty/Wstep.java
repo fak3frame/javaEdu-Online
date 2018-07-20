@@ -2113,6 +2113,8 @@ public class Wstep {
             int [] secondElement() default {1, 2, 3};
             float thirdElement();
         }
+        //W takim przypadku podczas deklaracji adnaotacji w kodzie
+        // nie musze przypisywac wartosci z atrybutem default
 
 
 
