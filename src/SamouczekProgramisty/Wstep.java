@@ -2041,8 +2041,8 @@ public class Wstep {
         @Retention(RetentionPolicy.SOURCE)
         @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
         public @interface SampleFieldAnnotation {
-        String id(); - to jest element id (przyjmie argument z adnotacji)
-        }
+            String id(); - to jest element "id" (przyjmie argument podczas uzcia adnotacji
+        }                                        czyli jest "argumentem")
 
         Adnotacja powinna miec informacje: (przed definicja)
         -do jakiche elementow moze byc stosowana np. @Target(ElementType.METHOD)
@@ -2063,8 +2063,14 @@ public class Wstep {
           ona wartosc domyslna @Retention(RetentionPolicy.CLASS) czyli sa zapisane w pliku
           class ale nie sa dostpene w trakcie uruchomienia porgramu
 
-
-
+        Adnotacja moze przyjac tzw argument podczas wywolania np @SuppressWarnings("unchecked");
+        public @interface Retention {
+            RetentionPolicy value();
+        }
+        Deklaracja:
+        @Retention(RetentionPolicy.SOURCE)
+        @Retention(value=RetentionPolicy.SOURCE) - przypisuje wartosc lecz
+          zadziala jak linijka wyzej poniewaz retencje mam juz okreslona
 
 
 
