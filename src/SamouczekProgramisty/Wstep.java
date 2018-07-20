@@ -2038,12 +2038,19 @@ public class Wstep {
 
         Definiowanie adnotacji
         np:
-        public @interface Override{}
+        @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
+        public @interface SampleFieldAnnotation {
+        String id();
+        }
 
         Adnotacja powinna miec informacje: (przed definicja)
         -do jakiche elementow moze byc stosowana np. @Target(ElementType.METHOD)
+         jesli jej nie okresle to bede mogl jej uzywac wszedzie z wyjatkiem typow
         -jak dlugo dane o adnotacji powinny byc przechowywane - retencja - czy
           w trakcie uruchomienia programu czy kompilacji
+          np: @Retention(RetentionPolicy.SOURCE)
+
+
 
          */
 
