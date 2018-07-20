@@ -2059,6 +2059,12 @@ public class Wstep {
          Jesli potrzebuje wykorzystac ja tylko w trakcie kompilacji to wygeneruje
           to mniejszy bajtkod
 
+         Jesli nie okresle retencji wlasnej adnotacji (nie dodam @Retention) to przyjmie
+          ona wartosc domyslna @Retention(RetentionPolicy.CLASS) czyli sa zapisane w pliku
+          class ale nie sa dostpene w trakcie uruchomienia porgramu
+
+
+
 
 
 
