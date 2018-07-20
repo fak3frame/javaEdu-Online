@@ -2047,11 +2047,16 @@ public class Wstep {
         Adnotacja powinna miec informacje: (przed definicja)
         -do jakiche elementow moze byc stosowana np. @Target(ElementType.METHOD)
          jesli jej nie okresle to bede mogl jej uzywac wszedzie z wyjatkiem typow
-        -jak dlugo dane o adnotacji powinny byc przechowywane - retencja - czy
-          w trakcie uruchomienia programu czy kompilacji, jesli potrzebuje
-          wykorzystac ja tylko w trakcie kompilacji to wygeneruje to mniejszy
-          bajtkod
-          np: @Retention(RetentionPolicy.SOURCE)
+
+        -jak dlugo dane o adnotacji powinny byc przechowywane - retencja
+         np: @Retention(RetentionPolicy.SOURCE)
+        Informacje o odnotacji moga byc:
+          * usuwane przez kompilator w trakcie kompilacji
+          * umieszczone w skompilowanej klasie ale nie dostepne w uruchomionym progr.
+          * dostepne w trakcie uruchomionego programu
+         Jesli potrzebuje wykorzystac ja tylko w trakcie kompilacji to wygeneruje
+          to mniejszy bajtkod
+
 
 
 
