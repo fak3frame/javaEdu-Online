@@ -2079,7 +2079,17 @@ public class Wstep {
     Adnotacje przekazuja dodatkowe informacje na temat kodu
     Sa one specjalnym interfejsem
 
+    JavaDoc to standardowy mechanizm generowania dokumentacji
+    /**
+     * Multipies number by 2 // cel metody
+     * @param parameter number that should be multipied // zachowanie parametru
+     * // ktory przyjmuje
+     * @return parameter multipied by 2// to co zwraca i jak
      */
+        public int timesTwo(int parameter) {
+            return parameter * 2;
+    }
+
 
 
 
