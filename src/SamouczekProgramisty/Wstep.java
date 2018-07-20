@@ -2074,6 +2074,9 @@ public class Wstep {
 
 
 
+    //ADNOTACJE
+
+
 
     static boolean czyDuza(int liczba){
         return liczba>100;
