@@ -2063,6 +2063,7 @@ public class Wstep {
           ona wartosc domyslna @Retention(RetentionPolicy.CLASS) czyli sa zapisane w pliku
           class ale nie sa dostpene w trakcie uruchomienia porgramu
 
+
         Adnotacja moze przyjac tzw argument podczas wywolania np @SuppressWarnings("unchecked");
         public @interface Retention {
             RetentionPolicy value();
@@ -2072,12 +2073,32 @@ public class Wstep {
         @Retention(value=RetentionPolicy.SOURCE) - przypisuje wartosc lecz
           zadziala jak linijka wyzej poniewaz retencje mam juz okreslona
 
+        Moge takze przyjac tablice do jakich elementow ma byc stosowana
+        public @interface Target {
+            ElementType[] value();
+        }
+        Deklaracja (4 rozne sposoby tego samego dzialania):
+        @Target(ElementType.FIELD)
+        @Target(value=ElementType.FIELD)
+        @Target({ElementType.FIELD})
+        @Target(value={ElementType.FIELD})
 
 
-         */
+        Wartosci domyslne adnotacji:
+        @Retention(RetentionPolicy.RUNTIME)
+        //nformacja o tej adnotacji jest dostępna w trakcie wykonania programu.
+        @Target({ElementType.FIELD, ElementType.CONSTRUCTOR, ElementType.METHOD})
+        //Adnotację tę możemy stosować do atrybutów klasy, konstruktorów i metod. 
+        public @interface AnnotationWithDefaultValues {
+            String firstElement() default "someDefaultValue";
+            int [] secondElement() default {1, 2, 3};
+            float thirdElement();
+        }
 
 
 
+
+        */
 
         String x = new Object() + "123";
         System.out.println(x);
