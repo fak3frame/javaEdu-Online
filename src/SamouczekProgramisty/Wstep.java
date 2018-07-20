@@ -2075,6 +2075,11 @@ public class Wstep {
 
 
     //ADNOTACJE
+    /*
+    Adnotacje przekazuja dodatkowe informacje na temat kodu
+    Sa one specjalnym interfejsem
+
+     */
 
 
 
