@@ -1954,6 +1954,78 @@ public class Wstep {
 
 
 
+
+
+
+        //ADNOTACJE / DYREKTYWA JavaDoc
+        /*
+        JavaDoc to standardowy mechanizm generowania dokumentacji, jest
+         on w specjalnym komentarzu wieloliniowym zaczynajacym sie od /**
+         z * na poczatku kazdej linii
+        Sa w nim dyrektywy takie jak @param czy @retrun oraz opis
+        Moga byc takrze @see, @author czy @version
+        /**
+         * Multipies number by 2 // cel metody
+         * @param parameter number that should be multipied // zachowanie parametru
+         * // ktory przyjmuje
+         * @return parameter multipied by 2// to co zwraca i jak
+         */
+        /*////////////////////////////////////////
+            public int timesTwo(int param) {
+                return param * 2;
+            }
+        /*///////////////////////////////
+
+        /*
+        Adnotacje przekazuja dodatkowe informacje na temat kodu
+        Sa one specjalnym interfejsem
+        Umieszczamy je przed konkretnym elementem np. klasa
+
+        Mozemy je stosowac do:
+        -metody
+        -klasy
+        -pola klasy
+        -parametru metody(to co przyjmuje)
+        -zmiennej lokalnej
+        -konstruktora
+        -adnotacji typu
+
+
+        Zastosowanie adnotacji:
+
+        -Dodatkowa informacja dla kompilatora
+        np @override iformuje kompilator ze metoda jest przeslonita
+         w nadklasie lub interfejsu
+        Moge to wykorzystac np dodajac przed jakas metoda i jesli
+         nie jest ona przeslonieciem innej metody kompilator wyswietli
+         blad
+        np:
+        @Override
+        public boolean equal(Object obj)
+            return true;
+        //bedzie blad poniwaz brakuje "s" i metoda nie przeslania nic
+        */
+
+        //-Adnotacje przetwarzane w trakcie kompilacji
+        List listOfUndefinedObjects = new ArrayList();
+        List<Integer> listOfIntegers = (List<Integer>) listOfUndefinedObjects;
+        /*
+        kompilator moze nas ostrzec ze jesli dodamy do listy listOfUndefinedObjects
+         typ inny niz Integer to chca zrzutowac do Integer wyrzuc blad (np String)
+         ClassCastException
+         "Warning:(10, 56) java: unchecked cast
+         required: java.util.List<java.lang.Integer>
+         found: java.util.List"
+        Aby zapobiec takiemu ostrzeganiu dodaje przed rzutowaniem @SuppressWarnings
+         i moge ja przypisac do typu, atrybutu, metody, parametru metody,
+         konstruktora czy zmiennej lokalnej np listy
+        List listOfUndefinedObjects = new ArrayList();
+        @SuppressWarnings("unchecked")
+        List<Integer> listOfIntegers = (List<Integer>) listOfUndefinedObjects;
+
+         */
+
+
         String x = new Object() + "123";
         System.out.println(x);
     }
@@ -2071,58 +2143,6 @@ public class Wstep {
             }
         }
     }
-
-
-
-    //ADNOTACJE / DYREKTYWA JavaDoc
-    /*
-    JavaDoc to standardowy mechanizm generowania dokumentacji, jest
-     on w specjalnym komentarzu wieloliniowym zaczynajacym sie od /**
-     z * na poczatku kazdej linii
-    Sa w nim dyrektywy takie jak @param czy @retrun oraz opis
-    Moga byc takrze @see, @author czy @version
-    /**
-     * Multipies number by 2 // cel metody
-     * @param parameter number that should be multipied // zachowanie parametru
-     * // ktory przyjmuje
-     * @return parameter multipied by 2// to co zwraca i jak
-     */
-        public int timesTwo(int parameter) {
-            return parameter * 2;
-    }
-
-
-    /*
-    Adnotacje przekazuja dodatkowe informacje na temat kodu
-    Sa one specjalnym interfejsem
-    Umieszczamy je przed konkretnym elementem np. klasa
-
-    Mozemy je stosowac do:
-    -metody
-    -klasy
-    -pola klasy
-    -parametru metody(to co przyjmuje)
-    -zmiennej lokalnej
-    -konstruktora
-    -adnotacji typu
-
-
-    Zastosowanie adnotacji:
-
-    -Dodatkowa informacja dla kompilatora
-    np @override iformuje kompilator ze metoda jest przeslonita
-     w nadklasie lub interfejsu
-    Moge to wykorzystac np dodajac przed jakas metoda i jesli
-     nie jest ona przeslonieciem innej metody kompilator wyswietli
-     blad
-
-
-    */
-
-
-
-
-
     static boolean czyDuza(int liczba){
         return liczba>100;
     }

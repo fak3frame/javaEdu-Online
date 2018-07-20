@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3434">
+            <state relative-caret-position="17">
               <caret line="222" column="15" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="15" />
             </state>
           </provider>
@@ -37,12 +38,22 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="2110" column="41" selection-start-line="2110" selection-start-column="41" selection-end-line="2110" selection-end-column="41" />
+            <state relative-caret-position="245">
+              <caret line="2020" column="52" selection-start-line="2020" selection-start-column="52" selection-end-line="2020" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#81474#81475#0" expanded="true" />
-                <element signature="e#81510#81511#0" expanded="true" />
+                <element signature="e#83040#83041#0" expanded="true" />
+                <element signature="e#83073#83074#0" expanded="true" />
+                <element signature="e#83670#83671#0" expanded="true" />
+                <element signature="e#83708#83709#0" expanded="true" />
+                <element signature="e#83739#83740#0" expanded="true" />
+                <element signature="e#83778#83779#0" expanded="true" />
+                <element signature="e#83806#83807#0" expanded="true" />
+                <element signature="e#83842#83843#0" expanded="true" />
+                <element signature="e#83926#83927#0" expanded="true" />
+                <element signature="e#84000#84001#0" expanded="true" />
+                <element signature="e#84070#84071#0" expanded="true" />
+                <element signature="e#84143#84144#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KalkulatorTest">
+  <component name="RunManager" selected="Application.Wstep">
     <configuration name="Czlowiek (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._8_Enum.Czlowiek" />
       <module name="javaStartMojSkrypt" />
@@ -328,9 +339,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.KalkulatorTest" />
         <item itemvalue="Application.Czlowiek (1)" />
-        <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.Rozszerzenie" />
         <item itemvalue="Application.Czlowiek2" />
       </list>
@@ -346,20 +357,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00789" summary="SanouczekProgramisty Typ wyliczeniowy enum 23">
-      <created>1531917415418</created>
-      <option name="number" value="00789" />
-      <option name="presentableId" value="LOCAL-00789" />
-      <option name="project" value="LOCAL" />
-      <updated>1531917415418</updated>
-    </task>
-    <task id="LOCAL-00790" summary="SanouczekProgramisty Typ wyliczeniowy enum 24">
-      <created>1531919436754</created>
-      <option name="number" value="00790" />
-      <option name="presentableId" value="LOCAL-00790" />
-      <option name="project" value="LOCAL" />
-      <updated>1531919436755</updated>
     </task>
     <task id="LOCAL-00791" summary="SanouczekProgramisty Typ wyliczeniowy enum 25">
       <created>1531920958333</created>
@@ -690,7 +687,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532096386240</updated>
     </task>
-    <option name="localTasksCounter" value="838" />
+    <task id="LOCAL-00838" summary="SanouczekProgramisty Adnotacje 4">
+      <created>1532097618235</created>
+      <option name="number" value="00838" />
+      <option name="presentableId" value="LOCAL-00838" />
+      <option name="project" value="LOCAL" />
+      <updated>1532097618235</updated>
+    </task>
+    <task id="LOCAL-00839" summary="SanouczekProgramisty Adnotacje 5">
+      <created>1532097718389</created>
+      <option name="number" value="00839" />
+      <option name="presentableId" value="LOCAL-00839" />
+      <option name="project" value="LOCAL" />
+      <updated>1532097718389</updated>
+    </task>
+    <option name="localTasksCounter" value="840" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -699,13 +710,14 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.309613" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35830212" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35830212" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -723,15 +735,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.309613" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 47" />
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 48" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 49" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 50" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 51" />
@@ -755,7 +764,9 @@
     <MESSAGE value="SanouczekProgramisty Adnotacje 1" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 2" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Adnotacje 3" />
+    <MESSAGE value="SanouczekProgramisty Adnotacje 4" />
+    <MESSAGE value="SanouczekProgramisty Adnotacje 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Adnotacje 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1025,13 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3434">
-          <caret line="222" column="15" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Human.java" />
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/KalkulatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1088,14 +1092,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="222" column="15" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="2110" column="41" selection-start-line="2110" selection-start-column="41" selection-end-line="2110" selection-end-column="41" />
+        <state relative-caret-position="245">
+          <caret line="2020" column="52" selection-start-line="2020" selection-start-column="52" selection-end-line="2020" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#81474#81475#0" expanded="true" />
-            <element signature="e#81510#81511#0" expanded="true" />
+            <element signature="e#83040#83041#0" expanded="true" />
+            <element signature="e#83073#83074#0" expanded="true" />
+            <element signature="e#83670#83671#0" expanded="true" />
+            <element signature="e#83708#83709#0" expanded="true" />
+            <element signature="e#83739#83740#0" expanded="true" />
+            <element signature="e#83778#83779#0" expanded="true" />
+            <element signature="e#83806#83807#0" expanded="true" />
+            <element signature="e#83842#83843#0" expanded="true" />
+            <element signature="e#83926#83927#0" expanded="true" />
+            <element signature="e#84000#84001#0" expanded="true" />
+            <element signature="e#84070#84071#0" expanded="true" />
+            <element signature="e#84143#84144#0" expanded="true" />
           </folding>
         </state>
       </provider>
