@@ -1973,7 +1973,6 @@ public class Wstep {
         //        return param * 2;
         //    }
 
-
         /*
         Adnotacje przekazuja dodatkowe informacje na temat kodu
         Sa one specjalnym interfejsem
