@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -372,13 +371,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00809" summary="SanouczekProgramisty Typ wyliczeniowy enum 43">
-      <created>1532016572013</created>
-      <option name="number" value="00809" />
-      <option name="presentableId" value="LOCAL-00809" />
-      <option name="project" value="LOCAL" />
-      <updated>1532016572013</updated>
-    </task>
     <task id="LOCAL-00810" summary="SanouczekProgramisty Typ wyliczeniowy enum 44">
       <created>1532016683391</created>
       <option name="number" value="00810" />
@@ -715,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532106982035</updated>
     </task>
-    <option name="localTasksCounter" value="858" />
+    <task id="LOCAL-00858" summary="SanouczekProgramisty Adnotacje 24">
+      <created>1532123530718</created>
+      <option name="number" value="00858" />
+      <option name="presentableId" value="LOCAL-00858" />
+      <option name="project" value="LOCAL" />
+      <updated>1532123530765</updated>
+    </task>
+    <option name="localTasksCounter" value="859" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,7 +754,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 67" />
     <MESSAGE value="SanouczekProgramisty Typ wyliczeniowy enum 68" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 1" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 2" />
@@ -780,7 +778,8 @@
     <MESSAGE value="SanouczekProgramisty Adnotacje 21" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 22" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 23" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Adnotacje 23" />
+    <MESSAGE value="SanouczekProgramisty Adnotacje 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Adnotacje 24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
