@@ -1968,6 +1968,7 @@ public class Wstep {
          * @return parameter multipied by 2// to co zwraca i jak
          */
 
+
         //    public int timesTwo(int param) {
         //        return param * 2;
         //    }
