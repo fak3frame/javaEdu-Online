@@ -1991,7 +1991,7 @@ public class Wstep {
         //Zastosowanie adnotacji:
 
         //-Dodatkowa informacja dla kompilatora
-        np @override iformuje kompilator ze metoda jest przeslonita
+        np @override informuje kompilator ze metoda jest przeslonita
          w nadklasie lub interfejsu
         Moge to wykorzystac np dodajac przed jakas metoda i jesli
          nie jest ona przeslonieciem innej metody kompilator wyswietli
