@@ -1969,9 +1969,9 @@ public class Wstep {
          */
 
 
-        //    public int timesTwo(int param) {
-        //        return param * 2;
-        //    }
+        //public int timesTwo(int param) {
+        //    return param * 2;
+        //}
 
         /*
         Adnotacje przekazuja dodatkowe informacje na temat kodu
