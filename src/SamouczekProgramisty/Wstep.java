@@ -2188,7 +2188,18 @@ public class Wstep {
         Na poczatku tworze intefrfejs z metoda i tworze jego instancje w metodzie
          dodajac jej dzialanie w {pelna definicja}
 
+        //deklracja na koncu:
+        interface Powitanie{
+           void powiedzCzesc();
+        }
          */
+        Powitanie powitanie = new Powitanie() {
+            @Override
+            public void powiedzCzesc() {
+                System.out.println("witaj");
+            }
+        };//nie zapominam o sreniku
+
 
 
 
@@ -2361,4 +2372,8 @@ enum EnumDoTekstu{
         }
     };
     public abstract String format(String wiadomosc);
+}
+
+interface Powitanie{
+    void powiedzCzesc();
 }
