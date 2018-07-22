@@ -2001,7 +2001,8 @@ public class Wstep {
         @Override
         public boolean equal(Object obj)
             return true;
-        //bedzie blad poniwaz brakuje "s" i metoda nie przeslania nic
+        //bedzie blad poniwaz brakuje "s" i metoda nie przeslania metody
+           w podklasie
         */
 
 
