@@ -2019,12 +2019,12 @@ public class Wstep {
         Aby zapobiec takiemu ostrzeganiu dodaje przed rzutowaniem @SuppressWarnings
          i moge ja przypisac do typu, atrybutu, metody, parametru metody,
          konstruktora czy zmiennej lokalnej np listy
-
-        List listOfUndefinedObjects = new ArrayList();
+        */
+        List listOfUndefinedObjects2 = new ArrayList();
         @SuppressWarnings("unchecked")
-        List<Integer> listOfIntegers = (List<Integer>) listOfUndefinedObjects;
-
-        Kompilator nie bedzie nas osrzegal przed zagrozeniami typu unchecked przy
+        List<Integer> listOfIntegers2 = (List<Integer>) listOfUndefinedObjects;
+        /*
+        Kompilator nie bedzie nas ostrzegal przed zagrozeniami typu unchecked przy
          konkretnej zmiennej
 
 
