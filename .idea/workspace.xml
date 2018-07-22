@@ -4,7 +4,6 @@
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="239">
               <caret line="604" column="35" selection-start-line="604" selection-start-column="25" selection-end-line="604" selection-end-column="35" />
             </state>
           </provider>
@@ -39,8 +38,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="2316" column="44" selection-start-line="2316" selection-start-column="44" selection-end-line="2316" selection-end-column="44" />
+            <state relative-caret-position="532">
+              <caret line="2308" column="41" selection-start-line="2308" selection-start-column="41" selection-end-line="2308" selection-end-column="41" />
               <folding>
                 <element signature="e#80239#80269#1" expanded="true" />
                 <element signature="e#87015#87016#0" expanded="true" />
@@ -60,38 +59,6 @@
                 <element signature="e#94453#94454#0" expanded="true" />
                 <element signature="e#94526#94527#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnonymousClasses.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-              <folding>
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#1515#1516#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sortowanie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -126,7 +93,7 @@
       <find>datain</find>
       <find>static</find>
       <find>stat</find>
-      <find />
+      <find>class wew</find>
       <find>listy</find>
       <find>dziedziczenie</find>
       <find>integer</find>
@@ -134,8 +101,8 @@
       <find>final</find>
       <find>sca</find>
       <find>@over</find>
-      <find>sort</find>
       <find>scann</find>
+      <find>sort</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -399,13 +366,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00840" summary="SanouczekProgramisty Adnotacje 6">
-      <created>1532098394307</created>
-      <option name="number" value="00840" />
-      <option name="presentableId" value="LOCAL-00840" />
-      <option name="project" value="LOCAL" />
-      <updated>1532098394307</updated>
     </task>
     <task id="LOCAL-00841" summary="SanouczekProgramisty Adnotacje 7">
       <created>1532098516022</created>
@@ -743,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532293129368</updated>
     </task>
-    <option name="localTasksCounter" value="889" />
+    <task id="LOCAL-00889" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 16">
+      <created>1532295924063</created>
+      <option name="number" value="00889" />
+      <option name="presentableId" value="LOCAL-00889" />
+      <option name="project" value="LOCAL" />
+      <updated>1532295924064</updated>
+    </task>
+    <option name="localTasksCounter" value="890" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -783,7 +750,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Adnotacje 30" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 31" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 32" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 33" />
@@ -808,7 +774,8 @@
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 13" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 14" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 15" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1136,16 +1103,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="604" column="35" selection-start-line="604" selection-start-column="25" selection-end-line="604" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
+        <state relative-caret-position="170">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
@@ -1171,10 +1131,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="604" column="35" selection-start-line="604" selection-start-column="25" selection-end-line="604" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="2316" column="44" selection-start-line="2316" selection-start-column="44" selection-end-line="2316" selection-end-column="44" />
+        <state relative-caret-position="532">
+          <caret line="2308" column="41" selection-start-line="2308" selection-start-column="41" selection-end-line="2308" selection-end-column="41" />
           <folding>
             <element signature="e#80239#80269#1" expanded="true" />
             <element signature="e#87015#87016#0" expanded="true" />

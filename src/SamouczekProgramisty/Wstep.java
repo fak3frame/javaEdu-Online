@@ -2290,6 +2290,25 @@ public class Wstep {
 
         //Sortowanie z uzycem Collection.sort i interfacem Comparator
         // z klasa anonimowa
+        /*
+        Collection.sort przyjmuje sama tablice lub tablice z Comparatorem
+        Jesli przyjmie sama tablice to TYP zmiennych tablicy (jesli jest mojej
+         wlasnej klasy np List<MojaKlasa>) musi implementowac intefrace Comparable i
+         nadpisac metode int compareTo(Klasa o) ktora zwraca >=1 gdy zmienna z this.
+         np this.wiek jest wieksza od o.wiek, gdy odwrotnie to <0 i gdy rowne
+         to 0. Zmienne brane sa po kolei z Listy - this.wiek jest wiekiem
+         elementu 0 a o.wiek jest wiekiem elementu 1
+        Jesli metoda Collection.sort przyjmie takze komparator to moge zrobic to
+         samo z klasa obiektow lub jesli chce zrobi unikalne sortowanie to moge
+         wykorzystac klase anonimowa z interfejsem Comparator ktory posiada
+         metode int compare(Klasa o1, Klasa o2). Jesli lista posiada typ
+         String to metoda compare podstawi przyjmowane obiekty za String
+         int compare (String o1, String o2); i moge posortowac je wg dlugosci
+         if(o1.legth()>o2.length())retrun 1; itp. lub w skrocie
+         return o1.length()-o2.legth(); wtedy gdy 1 element bedzie dluzszy
+         to zwroci >=1 wiec tez poprawnie
+
+         */
         class Sortowanie{
             List<String> wyrazy = new LinkedList<>();
             public Sortowanie(){
