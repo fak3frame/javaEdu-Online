@@ -2193,12 +2193,20 @@ public class Wstep {
            void powiedzCzesc();
         }
          */
+        //Tworzenie klasy anonimowej implementujacej intefejs Powitanie oraz
+        // utworzenie jej jednej instancji za pomoca slowa new
         Powitanie powitanie = new Powitanie() {
             @Override
             public void powiedzCzesc() {
                 System.out.println("witaj");
+            }//ta metoda musi byc!!
+            int zmienna;
+            int metoda(){
+                return 123;
             }
-        };//nie zapominam o sreniku
+            //Moge takze w niej definiowac zmeinne i metody lecz glownie polega
+            // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
+        };//nie zapominam o sredniku
 
 
 
