@@ -2132,7 +2132,6 @@ public class Wstep {
 
         Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
 
-
         */
         class KlasaZew{
             class KlasaWew{
@@ -2154,12 +2153,17 @@ public class Wstep {
             }
         }
 
+
         /*
-        KLasa wewnetrzna statyczna rozni sie tylko modyfikatorem
+        //Klasa wewnetrzna statyczna rozni sie tylko modyfikatorem
 
         Wewnetrzene interfejsy i typy wyliczneniowe sa ZAWSZE statyczne!
 
 
+        //Klasa lokalna moze byc zdefiniowana wewnatrza bloku (metoda, blok if itp)
+         nie moze zawierac modyfikatora public/private/protected
+
+        Dostep do klas lokalnych ma jest tylko w bloku w ktorym zostaly zdefiniowane!
          */
 
 
