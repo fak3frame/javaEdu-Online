@@ -2288,6 +2288,55 @@ public class Wstep {
         }
         */
 
+        //Sortowanie z uzycem Collection.sort i interfacem Comparator
+        // z klasa anonimowa
+        class Sortowanie{
+            List<String> wyrazy = new LinkedList<>();
+            public Sortowanie(){
+                dodajWyrazy();
+                pokazWyrazy();
+                sortujWyrazy();
+                pokazWyrazy();
+            }
+            void dodajWyrazy(){
+//                Scanner sc = new Scanner(System.in);
+//                String wyraz;
+//                while (true){
+//                    wyraz = sc.nextLine();
+//                    if(!wyraz.equals("-"))
+//                        wyrazy.add(wyraz);
+//                    else
+//                        break;
+//                }
+                wyrazy.add("sdafasdadsasdgargg");
+                wyrazy.add("sdafga");
+                wyrazy.add("sdafgdasdasdasdasdasdargg");
+                wyrazy.add("dasasdasdasdd");
+            }
+            void pokazWyrazy(){
+                System.out.println("TO SA MOJE WYRAZY");
+                for (String x : wyrazy)
+                    System.out.println(x);
+            }
+            void sortujWyrazy(){
+                System.out.println("SORTUJE!");
+                Collections.sort(wyrazy, new Comparator<String>() {
+                    @Override
+                    public int compare(String o1, String o2) {
+                        //za o1 podstawia jeden element tablicy i sortuje
+                        // je wg dlugosci
+                        if(o1.length()>o2.length())
+                            return 1;
+                        else if(o1.length()<o2.length())
+                            return -1;
+                        else
+                            return 0;
+                    }
+                });
+            }
+        }
+        Sortowanie s = new Sortowanie();
+
 
 
 
