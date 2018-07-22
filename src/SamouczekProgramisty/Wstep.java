@@ -1,9 +1,7 @@
 package SamouczekProgramisty;
 
 import SamouczekProgramisty.Silnik.SilnikMoj;
-import jdk.nashorn.api.tree.ForInLoopTree;
 
-import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
@@ -155,6 +153,8 @@ public class Wstep {
         Zmienna statyczna dotyczy klasy a nie obiektu lecz moezmy
          na obiekcie sie do niej odwolac
 
+
+
         Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego
         ----------------
         private SilnikMoj silnikMoj;
@@ -209,7 +209,9 @@ public class Wstep {
         final int LICZBA_FINALNA;
         LICZBA_FINALNA = 10;
         //liczbaFinalna = 12; - blad - liczbe finalna mozemy przypisac 1 raz
-        // lecz mozna ja zadeklarowac bez nadawania wartosci
+        // lecz mozna ja zadeklarowac bez nadawania wartosci TYLKO LOKALNIE!!!
+        //Gdy jest to zmienna lokalna musze nadac jej wartosc lub utworzyc
+        // jej ndadanie wartosci w konstruktorze!!!
 
         Date data1 = new Date(); //data1 zawiera aktualana date
         System.out.println(data1);
