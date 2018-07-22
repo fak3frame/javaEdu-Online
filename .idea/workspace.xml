@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="2162" column="21" selection-start-line="2162" selection-start-column="21" selection-end-line="2162" selection-end-column="21" />
+            <state relative-caret-position="816">
+              <caret line="2177" column="76" selection-start-line="2177" selection-start-column="76" selection-end-line="2177" selection-end-column="76" />
               <folding>
                 <element signature="e#80203#80233#1" expanded="true" />
               </folding>
@@ -268,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AnnotationProcessor">
+  <component name="RunManager" selected="Application.Wstep">
     <configuration name="AnnotationProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._9_Adnotacje.AnnotationProcessor" />
       <module name="javaStartMojSkrypt" />
@@ -374,8 +373,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AnnotationProcessor" />
         <item itemvalue="Application.Wstep" />
+        <item itemvalue="Application.AnnotationProcessor" />
         <item itemvalue="Application.KalkulatorTest" />
         <item itemvalue="Application.Czlowiek (1)" />
         <item itemvalue="Application.Rozszerzenie" />
@@ -392,13 +391,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00829" summary="SanouczekProgramisty Typ wyliczeniowy enum 63">
-      <created>1532019860245</created>
-      <option name="number" value="00829" />
-      <option name="presentableId" value="LOCAL-00829" />
-      <option name="project" value="LOCAL" />
-      <updated>1532019860245</updated>
     </task>
     <task id="LOCAL-00830" summary="SanouczekProgramisty Typ wyliczeniowy enum 64">
       <created>1532020282969</created>
@@ -736,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532282359214</updated>
     </task>
-    <option name="localTasksCounter" value="878" />
+    <task id="LOCAL-00878" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 5">
+      <created>1532282633244</created>
+      <option name="number" value="00878" />
+      <option name="presentableId" value="LOCAL-00878" />
+      <option name="project" value="LOCAL" />
+      <updated>1532282633244</updated>
+    </task>
+    <option name="localTasksCounter" value="879" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -776,7 +775,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Adnotacje 19" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 20" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 21" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 22" />
@@ -801,7 +799,8 @@
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 2" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 3" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 4" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1148,8 +1147,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="2162" column="21" selection-start-line="2162" selection-start-column="21" selection-end-line="2162" selection-end-column="21" />
+        <state relative-caret-position="816">
+          <caret line="2177" column="76" selection-start-line="2177" selection-start-column="76" selection-end-line="2177" selection-end-column="76" />
           <folding>
             <element signature="e#80203#80233#1" expanded="true" />
           </folding>

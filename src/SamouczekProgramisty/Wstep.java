@@ -2166,6 +2166,24 @@ public class Wstep {
         Dostep do klas lokalnych ma jest tylko w bloku w ktorym zostaly zdefiniowane!
          */
 
+        System.out.println();
+        Map<String, Integer> dniWMiesiacy = new HashMap<>();
+        dniWMiesiacy.put("styczen", 31);
+        dniWMiesiacy.put("luty", 28);
+        dniWMiesiacy.put("marzec", 31);
+        //kazda instancja obiekty typu Map ma metode entrySet ktora
+        // zwraca typ Set<Map.Entry<K, V>>
+        //Entry to interface wewnetrz klasy Map
+        for(Map.Entry<String, Integer> x : dniWMiesiacy.entrySet() ){
+            System.out.println(x.getKey() + " ma " + x.getValue() + " dni");
+        }
+
+
+        //Klasy anonimowe:
+        /*
+
+         */
+
 
 
 
