@@ -1982,7 +1982,7 @@ public class Wstep {
         Mozemy je stosowac do:
         -metody
         -klasy
-        -pola klasy
+        -pola/atrybutu klasy
         -parametru metody(to co przyjmuje)
         -zmiennej lokalnej
         -konstruktora
@@ -2035,7 +2035,7 @@ public class Wstep {
         np. @PostConstruct
 
 
-        Definiowanie adnotacji
+        //Definiowanie adnotacji
         np:
         @Retention(RetentionPolicy.SOURCE) - adnotacja bedzie tylko w kodzie zrodlowym
         @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
