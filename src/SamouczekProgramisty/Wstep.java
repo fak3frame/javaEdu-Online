@@ -1975,6 +1975,7 @@ public class Wstep {
 
         /*
         Adnotacje przekazuja dodatkowe informacje na temat kodu
+        Przekazuja dane o danych - kodzie zrodlowym
         Sa one specjalnym interfejsem
         Umieszczamy je przed konkretnym elementem np. klasa/zmienna/metoda
 
