@@ -2181,7 +2181,9 @@ public class Wstep {
 
         //Klasy anonimowe:
         /*
-
+        Jest to klasa definiowana w kodzie ktora posiada doklasnie 1 instancje
+        Klasa anonimowa zawsze jest klasa ewentrzna i polaczona jest z tworzeniem
+         jej jednej instancji
          */
 
 
