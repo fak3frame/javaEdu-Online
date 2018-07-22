@@ -2140,6 +2140,17 @@ public class Wstep {
             }
             KlasaWew rozpocznij(){
                 return new KlasaWew();
+                //nie musze pisac return this.new KlasaWew();
+            }
+
+            //Tworznie instancji klasy wewnetrznej
+            public void main(){
+                KlasaZew klasaZew = new KlasaZew();
+                //1 tworze obiekt klasy ZEW
+                KlasaZew.KlasaWew instancja1 = klasaZew.new KlasaWew();
+                //2 tworze obekt typu KLASA_ZEW.KLASA_WEW i wywoluje na obiekcie klasy
+                // zewnetrznej konstruktor klasy wewnetrzej
+                KlasaZew.KlasaWew instancja2 = klasaZew.rozpocznij(); // za pomoca metody
             }
 
         }
