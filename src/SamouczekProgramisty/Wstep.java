@@ -2292,22 +2292,32 @@ public class Wstep {
         // z klasa anonimowa
         /*
         Collection.sort przyjmuje sama tablice lub tablice z Comparatorem
+
         Jesli przyjmie sama tablice to TYP zmiennych tablicy (jesli jest mojej
          wlasnej klasy np List<MojaKlasa>) musi implementowac intefrace Comparable i
          nadpisac metode int compareTo(Klasa o) ktora zwraca >=1 gdy zmienna z this.
          np this.wiek jest wieksza od o.wiek, gdy odwrotnie to <0 i gdy rowne
          to 0. Zmienne brane sa po kolei z Listy - this.wiek jest wiekiem
          elementu 0 a o.wiek jest wiekiem elementu 1
-        Jesli metoda Collection.sort przyjmie takze komparator to moge zrobic to
-         samo z klasa obiektow lub jesli chce zrobi unikalne sortowanie to moge
-         wykorzystac klase anonimowa z interfejsem Comparator ktory posiada
-         metode int compare(Klasa o1, Klasa o2). Jesli lista posiada typ
-         String to metoda compare podstawi przyjmowane obiekty za String
-         int compare (String o1, String o2); i moge posortowac je wg dlugosci
-         if(o1.legth()>o2.length())retrun 1; itp. lub w skrocie
-         return o1.length()-o2.legth(); wtedy gdy 1 element bedzie dluzszy
-         to zwroci >=1 wiec tez poprawnie
 
+        Jesli metoda Collection.sort przyjmie takze komparator to moge zrobic to
+         dodajac nowa Klase implementujaca int. Comparator<KlasaDoSortowania> i w niej
+         metode int compare(KlasaDoSortowania o1, KlasaDoSortowania o2)
+         to metoda sort bedzie wygladala:
+         Collection.sort(lista, KlazaZKomparatorem)
+        Lub jesli chce zrobic unikalne sortowanie to moge
+         wykorzystac klase anonimowa z interfejsem Comparator ktory posiada
+         metode int compare(Klasa o1, Klasa o2) to metoda sort bedzie wygladala:
+         Collection.sort(lista, new Comparator())...deklaracja compare
+
+        Jesli lista posiada typ String to w klasie anonimowej z Comparatorem metoda
+         compare podstawi przyjmowane obiekty za String
+         int compare (String o1, String o2); i moge posortowac
+         je wg dlugosci if(o1.legth()>o2.length())retrun 1; itp.
+         lub w skrocie return o1.length()-o2.legth(); wtedy gdy 1 element bedzie
+         dluzszy to zwroci >=1 wiec tez poprawnie
+        Moge takze zrobic sortowanie alfabetyczne elementow string to deklaracja
+         int compare (String o1, String o2) { return o1.compareTo(o2);}
          */
         class Sortowanie{
             List<String> wyrazy = new LinkedList<>();
@@ -2355,6 +2365,9 @@ public class Wstep {
             }
         }
         Sortowanie s = new Sortowanie();
+        String imie1 = "kamil";
+        String imie2 = "samil";
+        System.out.println();
 
 
 

@@ -610,6 +610,15 @@ public class toRemember {
         Collections.sort(listaLudzi, new CzlowiekKomparator());
         for (Czlowiek x : listaLudzi)
             System.out.println(x);
+        Collections.sort(listaLudzi, new Comparator<Czlowiek>() {
+            @Override
+            public int compare(Czlowiek o1, Czlowiek o2) {
+                return o1.getImie().compareToIgnoreCase(o2.getImie());
+            }
+        });
+        System.out.println("Po kolejnym sortowaniu wg imion");
+        for (Czlowiek x : listaLudzi)
+            System.out.println(x);
 
         class Czlowiek implements Comparable<Czlowiek>{
             private String imie,nazwisko;
@@ -617,6 +626,9 @@ public class toRemember {
 
             public char getPlec() {
                 return plec;
+            }
+            public String getImie(){
+                return imie;
             }
             public Czlowiek(String imie, String nazwisko, char plec){
                 this.imie=imie;
@@ -1013,7 +1025,9 @@ class Testequals extends toExtend{
 class Czlowiek implements Comparable<Czlowiek>{
     private String imie,nazwisko;
     private char plec;
-
+    public String getImie(){
+        return imie;
+    }
     public char getPlec() {
         return plec;
     }
