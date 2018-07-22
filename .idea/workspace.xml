@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java" afterDir="false" />
     </list>
@@ -36,17 +36,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="2244" column="13" lean-forward="true" selection-start-line="2244" selection-start-column="13" selection-end-line="2244" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="2161" column="69" selection-start-line="2161" selection-start-column="69" selection-end-line="2161" selection-end-column="69" />
               <folding>
                 <element signature="e#80239#80269#1" expanded="true" />
                 <element signature="e#87015#87016#0" expanded="true" />
                 <element signature="e#87067#87068#0" expanded="true" />
                 <element signature="e#87249#87250#0" expanded="true" />
                 <element signature="e#87291#87292#0" expanded="true" />
+                <element signature="e#93423#93424#0" expanded="true" />
+                <element signature="e#93456#93457#0" expanded="true" />
+                <element signature="e#94053#94054#0" expanded="true" />
+                <element signature="e#94091#94092#0" expanded="true" />
+                <element signature="e#94122#94123#0" expanded="true" />
+                <element signature="e#94161#94162#0" expanded="true" />
+                <element signature="e#94189#94190#0" expanded="true" />
+                <element signature="e#94225#94226#0" expanded="true" />
+                <element signature="e#94309#94310#0" expanded="true" />
+                <element signature="e#94383#94384#0" expanded="true" />
+                <element signature="e#94453#94454#0" expanded="true" />
+                <element signature="e#94526#94527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,18 +67,31 @@
       <file leaf-file-name="AnonymousClasses.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            <state relative-caret-position="450">
+              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
               <folding>
-                <element signature="e#227#228#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#1114#1115#0" expanded="true" />
+                <element signature="e#1448#1449#0" expanded="true" />
+                <element signature="e#1515#1516#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sortowanie.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -221,15 +246,6 @@
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
               <item name="_10_KlasyAnonimowe" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_10_KlasyAnonimowe" type="462c0819:PsiDirectoryNode" />
-              <item name="AnonymousClasses.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -279,13 +295,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Czlowiek (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._8_Enum.Czlowiek" />
+    <configuration name="HansRobot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._10_KlasyAnonimowe.HansRobot" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._8_Enum.*" />
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._10_KlasyAnonimowe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -355,18 +371,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Wstep" />
-      <item itemvalue="Application.Czlowiek (1)" />
       <item itemvalue="Application.KalkulatorTest" />
       <item itemvalue="Application.AnnotationProcessor" />
       <item itemvalue="Application.AnonymousClasses" />
+      <item itemvalue="Application.HansRobot" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AnonymousClasses" />
+        <item itemvalue="Application.HansRobot" />
         <item itemvalue="Application.Wstep" />
         <item itemvalue="Application.AnnotationProcessor" />
         <item itemvalue="Application.KalkulatorTest" />
-        <item itemvalue="Application.Czlowiek (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -380,13 +396,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00838" summary="SanouczekProgramisty Adnotacje 4">
-      <created>1532097618235</created>
-      <option name="number" value="00838" />
-      <option name="presentableId" value="LOCAL-00838" />
-      <option name="project" value="LOCAL" />
-      <updated>1532097618235</updated>
     </task>
     <task id="LOCAL-00839" summary="SanouczekProgramisty Adnotacje 5">
       <created>1532097718389</created>
@@ -724,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532285676057</updated>
     </task>
-    <option name="localTasksCounter" value="887" />
+    <task id="LOCAL-00887" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 14">
+      <created>1532290746065</created>
+      <option name="number" value="00887" />
+      <option name="presentableId" value="LOCAL-00887" />
+      <option name="project" value="LOCAL" />
+      <updated>1532290746065</updated>
+    </task>
+    <option name="localTasksCounter" value="888" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -740,7 +756,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.3581081" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.3581081" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -764,7 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Adnotacje 28" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 29" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 30" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 31" />
@@ -789,21 +804,15 @@
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 11" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 12" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 13" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/Interface/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/Interface/FigureFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1087,13 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="1005" column="11" selection-start-line="1005" selection-start-column="11" selection-end-line="1005" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1131,34 +1133,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="1005" column="11" selection-start-line="1005" selection-start-column="11" selection-end-line="1005" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="450">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="2244" column="13" lean-forward="true" selection-start-line="2244" selection-start-column="13" selection-end-line="2244" selection-end-column="13" />
+        <state relative-caret-position="340">
+          <caret line="2161" column="69" selection-start-line="2161" selection-start-column="69" selection-end-line="2161" selection-end-column="69" />
           <folding>
             <element signature="e#80239#80269#1" expanded="true" />
             <element signature="e#87015#87016#0" expanded="true" />
             <element signature="e#87067#87068#0" expanded="true" />
             <element signature="e#87249#87250#0" expanded="true" />
             <element signature="e#87291#87292#0" expanded="true" />
+            <element signature="e#93423#93424#0" expanded="true" />
+            <element signature="e#93456#93457#0" expanded="true" />
+            <element signature="e#94053#94054#0" expanded="true" />
+            <element signature="e#94091#94092#0" expanded="true" />
+            <element signature="e#94122#94123#0" expanded="true" />
+            <element signature="e#94161#94162#0" expanded="true" />
+            <element signature="e#94189#94190#0" expanded="true" />
+            <element signature="e#94225#94226#0" expanded="true" />
+            <element signature="e#94309#94310#0" expanded="true" />
+            <element signature="e#94383#94384#0" expanded="true" />
+            <element signature="e#94453#94454#0" expanded="true" />
+            <element signature="e#94526#94527#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -2141,9 +2141,9 @@ public class Wstep {
         */
         class KlasaZew{
             class KlasaWew{
-
             }
-            KlasaWew rozpocznij(){
+
+            public KlasaWew rozpocznij(){ //METODA
                 return new KlasaWew();
                 //nie musze pisac return this.new KlasaWew();
             }
@@ -2156,6 +2156,10 @@ public class Wstep {
                 //2 tworze obekt typu KLASA_ZEW.KLASA_WEW i wywoluje na obiekcie klasy
                 // zewnetrznej konstruktor klasy wewnetrzej
                 KlasaZew.KlasaWew instancja2 = klasaZew.rozpocznij(); // za pomoca metody
+
+                //INNA METODA:
+                //np w innej klasie
+                //KlasaZew.KlasaWew obiekt = new KlasaZew.KlasaWew();
 
 
                 final int liczba = 10;
@@ -2235,43 +2239,55 @@ public class Wstep {
         System.out.println(powitanie.getClass());
         //class SamouczekProgramisty.Wstep$1
 
-        //Przykladowe uzycie wewnetrznej klasy anonimowej
+
+        //Przykladowe uzycie wewnetrznej klasy anonimowej z interfejsem
         /*
         public class AnonymousClasses {
             public static class Robot {
                 private final GreetingModule greetingModule;
+                //Tworze zmienna final bez deklaracji i moge to zrobic tylko
+                // dlatego ze deklaracja jest w konstruktorze
 
                 public Robot(GreetingModule greetingModule) {
                     this.greetingModule = greetingModule;
+                    //Przypisuje zmiennej typu interfejsu wartosc
+                    // lecz nie uzywam slowa new wiec nie musze deklarwac
+                    // tresci metody int. tylko tam gdzie bede tworzyl obiekt
                 }
 
                 public void saySomething() {
                     greetingModule.sayHello();
+                    //Na polu klasy moge wywolac metode intefejsu poniewaz
+                    // tworza instancje klasy anonimowej jest ona odzielna
+                    // klasa implementujaca ten interfejs
                 }
             }
-        }
-        public interface GreetingModule {
-            void sayHello();
-        }
-        public static void main(String[] args) {
-            Robot jan = new Robot(new GreetingModule() {
-                @Override
-                public void sayHello() {
-                    System.out.println("dzien dobry");
-                }
-            });
-            Robot john = new Robot(new GreetingModule() {
-                @Override
-                public void sayHello() {
-                    System.out.println("good morning");
-                }
-            });
 
-            jan.saySomething();
-            john.saySomething();
+            public interface GreetingModule { //interfejs wewnetrzny
+                void sayHello();
+            }
+
+            public static void main(String[] args) {
+                Robot jan = new Robot(new GreetingModule() {
+                    @Override
+                    public void sayHello() {
+                        System.out.println("dzien dobry");
+                    }
+                });
+
+                Robot john = new Robot(new GreetingModule() {
+                    @Override
+                    public void sayHello() {
+                        System.out.println("good morning" );
+                    }
+                });
+
+                jan.saySomething();
+                john.saySomething();
+            }
         }
-    }
-    */
+        */
+
 
 
 
