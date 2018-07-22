@@ -2106,7 +2106,7 @@ public class Wstep {
         //nformacja o tej adnotacji jest dostępna w trakcie wykonania programu.
         @Target({ElementType.FIELD, ElementType.CONSTRUCTOR, ElementType.METHOD})
         //Adnotację tę możemy stosować do atrybutów klasy, konstruktorów i metod.
-        // wymieniam je po przecinku w {}
+        // wymieniam je po przecinku w {} - przyjmuje tablice typu enum ElementType
 
         public @interface AnnotationWithDefaultValues {
             String firstElement() default "someDefaultValue";
@@ -2114,7 +2114,7 @@ public class Wstep {
             float thirdElement();
         }
         //W takim przypadku podczas deklaracji adnaotacji w kodzie
-        // nie musze przypisywac wartosci z atrybutem default
+        // nie musze przypisywac wartosci z atrybutem default ale moge
 
 
 
