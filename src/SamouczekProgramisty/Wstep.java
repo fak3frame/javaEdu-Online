@@ -2115,17 +2115,38 @@ public class Wstep {
         }
         //W takim przypadku podczas deklaracji adnaotacji w kodzie
         // nie musze przypisywac wartosci z atrybutem default ale moge
+        */
 
 
 
         //KLASY WEWNETRZNE I ANONIMOWE
 
+        /*
+        Istnieje kilka typow klas wewnetrznych:
+        -standardowe
+        -statyczne
+        -lokalne
+        -anonimowe
 
+        Klasa wewnetrzna moze miec modyfikator public, protcected oraz private
 
-
+        Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
 
 
         */
+        class KlasaZew{
+            class KlasaWew{
+
+            }
+            KlasaWew rozpocznij(){
+                return new KlasaWew();
+            }
+
+        }
+
+
+
+
 
         String x = new Object() + "123";
         System.out.println(x);
