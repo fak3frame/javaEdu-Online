@@ -2204,8 +2204,10 @@ public class Wstep {
         Klasa anonimowa zawsze jest klasa ewentrzna i polaczona jest z tworzeniem
          jej jednej instancji
 
-        Na poczatku tworze intefrfejs z metoda i tworze jego instancje w metodzie
-         dodajac jej dzialanie w {pelna definicja}
+        Na poczatku tworze intefrfejs z metoda i "tworze jego instancje" w metodzie
+         dodajac jej dzialanie w {pelna definicja} - tak naprawde jest to klasa
+         z nazwa klasy zewnetrznej z dodaniem na koncu $ z liczba klasy anonimowej
+         w danej klasie
 
         //deklracja na koncu:
         interface Powitanie{
