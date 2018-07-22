@@ -2079,7 +2079,6 @@ public class Wstep {
         W kodzie programu (przed metoda lub polem - okresoly element target):
         @MyAnnotation(A = "", B = "")//przypisuje wartosci zmiennym w adnotacji
         void simpleMethod() {
-               sout("costam");
         }
 
 
@@ -2098,7 +2097,7 @@ public class Wstep {
         Deklaracja (4 rozne sposoby tego samego dzialania):
         @Target(ElementType.FIELD)
         @Target(value=ElementType.FIELD)
-        @Target({ElementType.FIELD})
+        @Target({ElementType.FIELD}) - tutaj wymieniam po , bo jest tablica
         @Target(value={ElementType.FIELD})
 
 
