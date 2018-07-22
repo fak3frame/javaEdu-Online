@@ -2095,10 +2095,10 @@ public class Wstep {
             ElementType[] value();
         }
         Deklaracja (4 rozne sposoby tego samego dzialania):
-        @Target(ElementType.FIELD)
-        @Target(value=ElementType.FIELD)
+        @Target(ElementType.FIELD) - 1 element tablicy
+        @Target(value=ElementType.FIELD) - -//-
         @Target({ElementType.FIELD}) - tutaj wymieniam po , bo jest tablica
-        @Target(value={ElementType.FIELD})
+        @Target(value={ElementType.FIELD}) - -//-
 
 
         Wartosci domyslne adnotacji:
