@@ -2152,8 +2152,15 @@ public class Wstep {
                 // zewnetrznej konstruktor klasy wewnetrzej
                 KlasaZew.KlasaWew instancja2 = klasaZew.rozpocznij(); // za pomoca metody
             }
-
         }
+
+        /*
+        KLasa wewnetrzna statyczna rozni sie tylko modyfikatorem
+
+        Wewnetrzene interfejsy i typy wyliczneniowe sa ZAWSZE statyczne!
+
+
+         */
 
 
 
