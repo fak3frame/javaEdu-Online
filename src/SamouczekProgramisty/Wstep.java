@@ -2132,6 +2132,10 @@ public class Wstep {
 
         Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
 
+        Klasa wewnetrzna moze korzystac ze ZMIENNYCH LOKALNYCH (gdy definiuja ja w metodzie)
+         TYLKO gdy sa one finalne lub nie zmieniam ich wartosci po jednym ustaleniu wartosci
+         w deklaracji! - opis dzialania ponizej
+
         */
         class KlasaZew{
             class KlasaWew{
@@ -2150,6 +2154,21 @@ public class Wstep {
                 //2 tworze obekt typu KLASA_ZEW.KLASA_WEW i wywoluje na obiekcie klasy
                 // zewnetrznej konstruktor klasy wewnetrzej
                 KlasaZew.KlasaWew instancja2 = klasaZew.rozpocznij(); // za pomoca metody
+
+
+                final int liczba = 10;
+                int liczbaNieFinalna = 10;
+                //Tworze klase wewnetrzna wewnatrz metody - ma dostep takze do zmiennych lokalnych
+                class KlasaWMetodzie{
+                    void powiedzCos(){
+                        System.out.println(liczba);
+                        System.out.println(liczbaNieFinalna);
+                    }
+                }
+                //liczbaNieFinalna = 20; - nie moge zmienic bo klasa wew korzysta
+                // ze zmiennej lokalnej!!
+
+
             }
         }
 
@@ -2207,6 +2226,10 @@ public class Wstep {
             //Moge takze w niej definiowac zmeinne i metody lecz glownie polega
             // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
         };//nie zapominam o sredniku
+        //Klasa anoniomowa ma nazwe klasy w ktorej jest umieszczona oraz po "$" numer klasy
+        // anonimowej ktora zostala stworzona w danej klasie np:
+        System.out.println(powitanie.getClass());
+        //class SamouczekProgramisty.Wstep$1
 
 
 
