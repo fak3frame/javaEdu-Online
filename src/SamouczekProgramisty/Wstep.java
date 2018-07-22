@@ -2037,6 +2037,7 @@ public class Wstep {
 
 
         //Definiowanie adnotacji
+
         np:
         @Retention(RetentionPolicy.SOURCE) - adnotacja bedzie tylko w kodzie zrodlowym
         @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
@@ -2075,7 +2076,7 @@ public class Wstep {
             String A();
             String B();
         }
-        W METODZIE:
+        W kodzie programu (przed metoda lub polem - okresoly element target):
         @MyAnnotation(A = "", B = "")//przypisuje wartosci zmiennym w adnotacji
         void simpleMethod() {
                sout("costam");
