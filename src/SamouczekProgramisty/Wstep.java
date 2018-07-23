@@ -2161,7 +2161,7 @@ public class Wstep {
                 //np w innej klasie
                 //KlasaZew.KlasaWew obiekt = new KlasaZew.KlasaWew();
 
-
+                //Klasa wewnetrzna lokalna
                 final int liczba = 10;
                 int liczbaNieFinalna = 10;
                 //Tworze klase wewnetrzna wewnatrz metody - ma dostep takze do zmiennych lokalnych
