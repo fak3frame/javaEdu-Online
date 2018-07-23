@@ -2207,7 +2207,7 @@ public class Wstep {
         //Klasy anonimowe:
         /*
         Jest to klasa definiowana w kodzie ktora posiada doklasnie 1 instancje
-        Klasa anonimowa zawsze jest klasa ewentrzna i polaczona jest z tworzeniem
+        Klasa anonimowa zawsze jest klasa wewnetrzna i polaczona jest z tworzeniem
          jej jednej instancji
 
         Na poczatku tworze intefrfejs z metoda i "tworze jego instancje" w metodzie
