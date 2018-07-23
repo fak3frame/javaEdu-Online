@@ -2130,7 +2130,7 @@ public class Wstep {
         -lokalne
         -anonimowe
 
-        Klasa wewnetrzna moze miec modyfikator public, protcected oraz private
+        Klasa wewnetrzna NIELOKALNA moze miec kazdy modyfikator
 
         Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
 
