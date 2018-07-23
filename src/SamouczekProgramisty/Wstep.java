@@ -2141,8 +2141,8 @@ public class Wstep {
          i nie moga byc lokalne to jest w metodzie/bloku if
 
 
-        Klasa lokalna moze byc zdefiniowana wewnatrza bloku (metoda, blok if itp)
-         nie moze zawierac modyfikatora public/private/protected
+        Klasa lokalna jest zdefiniowana wewnatrza bloku (metoda, blok if itp)
+         i nie moze zawierac zadnego modyfikatora (public/private/protected)
 
         Klasa wewnetrzna lokalna moze korzystac ze ZMIENNYCH LOKALNYCH (gdy definiuja ja w metodzie)
          TYLKO gdy sa one finalne lub nie zmieniam ich wartosci po jednym ustaleniu wartosci
