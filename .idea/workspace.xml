@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,15 +29,11 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6189">
+            <state relative-caret-position="9996">
               <caret line="618" column="59" selection-start-line="618" selection-start-column="59" selection-end-line="618" selection-end-column="59" />
               <folding>
                 <element signature="e#23454#23455#0" expanded="true" />
-                <element signature="e#23504#23505#0" expanded="true" />
-                <element signature="e#23744#23745#0" expanded="true" />
-                <element signature="e#23786#23787#0" expanded="true" />
-                <element signature="e#38711#38712#0" expanded="true" />
-                <element signature="e#38754#38755#0" expanded="true" />
+                <element signature="e#23539#23540#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,26 +42,11 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="2314" column="9" selection-start-line="2314" selection-start-column="9" selection-end-line="2314" selection-end-column="9" />
+            <state relative-caret-position="430">
+              <caret line="2302" column="81" selection-start-line="2302" selection-start-column="81" selection-end-line="2302" selection-end-column="81" />
               <folding>
-                <element signature="e#80239#80269#1" expanded="true" />
-                <element signature="e#87015#87016#0" expanded="true" />
-                <element signature="e#87067#87068#0" expanded="true" />
-                <element signature="e#87249#87250#0" expanded="true" />
-                <element signature="e#87291#87292#0" expanded="true" />
-                <element signature="e#93423#93424#0" expanded="true" />
-                <element signature="e#93456#93457#0" expanded="true" />
-                <element signature="e#94053#94054#0" expanded="true" />
-                <element signature="e#94091#94092#0" expanded="true" />
-                <element signature="e#94122#94123#0" expanded="true" />
-                <element signature="e#94161#94162#0" expanded="true" />
-                <element signature="e#94189#94190#0" expanded="true" />
-                <element signature="e#94225#94226#0" expanded="true" />
-                <element signature="e#94309#94310#0" expanded="true" />
-                <element signature="e#94383#94384#0" expanded="true" />
-                <element signature="e#94453#94454#0" expanded="true" />
-                <element signature="e#94526#94527#0" expanded="true" />
+                <element signature="e#16972#16979#0" expanded="true" />
+                <element signature="e#80321#80351#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,7 +162,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="94" />
-    <option name="y" value="7" />
     <option name="width" value="1438" />
     <option name="height" value="1447" />
   </component>
@@ -189,8 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,7 +208,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,13 +349,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00843" summary="SanouczekProgramisty Adnotacje 9">
-      <created>1532101577772</created>
-      <option name="number" value="00843" />
-      <option name="presentableId" value="LOCAL-00843" />
-      <option name="project" value="LOCAL" />
-      <updated>1532101577772</updated>
     </task>
     <task id="LOCAL-00844" summary="SanouczekProgramisty Adnotacje 10">
       <created>1532101728529</created>
@@ -712,15 +686,22 @@
       <option name="project" value="LOCAL" />
       <updated>1532298678295</updated>
     </task>
-    <option name="localTasksCounter" value="892" />
+    <task id="LOCAL-00892" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 19">
+      <created>1532368800593</created>
+      <option name="number" value="00892" />
+      <option name="presentableId" value="LOCAL-00892" />
+      <option name="project" value="LOCAL" />
+      <updated>1532368800594</updated>
+    </task>
+    <option name="localTasksCounter" value="893" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="313" y="0" width="1438" height="1447" extended-state="0" />
+    <frame x="94" y="0" width="1438" height="1447" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3093093" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -745,13 +726,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3093093" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Adnotacje 33" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 34" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 35" />
     <MESSAGE value="SanouczekProgramisty Adnotacje 36" />
@@ -776,7 +757,8 @@
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 16" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 17" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 18" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 18" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1078,9 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,9 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,9 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1115,60 +1088,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6189">
+        <state relative-caret-position="9996">
           <caret line="618" column="59" selection-start-line="618" selection-start-column="59" selection-end-line="618" selection-end-column="59" />
           <folding>
             <element signature="e#23454#23455#0" expanded="true" />
-            <element signature="e#23504#23505#0" expanded="true" />
-            <element signature="e#23744#23745#0" expanded="true" />
-            <element signature="e#23786#23787#0" expanded="true" />
-            <element signature="e#38711#38712#0" expanded="true" />
-            <element signature="e#38754#38755#0" expanded="true" />
+            <element signature="e#23539#23540#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="2314" column="9" selection-start-line="2314" selection-start-column="9" selection-end-line="2314" selection-end-column="9" />
+        <state relative-caret-position="430">
+          <caret line="2302" column="81" selection-start-line="2302" selection-start-column="81" selection-end-line="2302" selection-end-column="81" />
           <folding>
-            <element signature="e#80239#80269#1" expanded="true" />
-            <element signature="e#87015#87016#0" expanded="true" />
-            <element signature="e#87067#87068#0" expanded="true" />
-            <element signature="e#87249#87250#0" expanded="true" />
-            <element signature="e#87291#87292#0" expanded="true" />
-            <element signature="e#93423#93424#0" expanded="true" />
-            <element signature="e#93456#93457#0" expanded="true" />
-            <element signature="e#94053#94054#0" expanded="true" />
-            <element signature="e#94091#94092#0" expanded="true" />
-            <element signature="e#94122#94123#0" expanded="true" />
-            <element signature="e#94161#94162#0" expanded="true" />
-            <element signature="e#94189#94190#0" expanded="true" />
-            <element signature="e#94225#94226#0" expanded="true" />
-            <element signature="e#94309#94310#0" expanded="true" />
-            <element signature="e#94383#94384#0" expanded="true" />
-            <element signature="e#94453#94454#0" expanded="true" />
-            <element signature="e#94526#94527#0" expanded="true" />
+            <element signature="e#16972#16979#0" expanded="true" />
+            <element signature="e#80321#80351#1" expanded="true" />
           </folding>
         </state>
       </provider>

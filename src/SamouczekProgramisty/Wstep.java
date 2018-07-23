@@ -2298,7 +2298,9 @@ public class Wstep {
          nadpisac metode int compareTo(Klasa o) ktora zwraca >=1 gdy zmienna z this.
          np this.wiek jest wieksza od o.wiek, gdy odwrotnie to <0 i gdy rowne
          to 0. Zmienne brane sa po kolei z Listy - this.wiek jest wiekiem
-         elementu 0 a o.wiek jest wiekiem elementu 1
+         elementu 0 a o.wiek jest wiekiem elementu 1. Jesli lista ma typ
+         String to moge wywolywac na elementach metody np this.legth() lub porownywac
+         je metoda this.compareTo(o) -> wszytsko w metodzie int compare(String o)
 
         Jesli metoda Collection.sort przyjmie takze komparator to moge zrobic to
          dodajac nowa Klase implementujaca int. Comparator<KlasaDoSortowania> i w niej
