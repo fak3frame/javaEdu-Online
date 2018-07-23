@@ -43,13 +43,13 @@ public class AnonymousClasses {
 }
 class HansRobot{
     public static void main(String[] args) {
-        AnonymousClasses.Robot hans = new AnonymousClasses.Robot(new AnonymousClasses.GreetingModule() {
+        AnonymousClasses.Robot hanz = new AnonymousClasses.Robot(new AnonymousClasses.GreetingModule() {
             @Override
             public void sayHello() {
                 System.out.println("gluten morgen");
             }
         });
-        hans.seySomething();
+        hanz.seySomething();
     }
 }
 
