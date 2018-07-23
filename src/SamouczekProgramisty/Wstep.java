@@ -2196,7 +2196,7 @@ public class Wstep {
         dniWMiesiacy.put("styczen", 31);
         dniWMiesiacy.put("luty", 28);
         dniWMiesiacy.put("marzec", 31);
-        //kazda instancja obiekty typu Map ma metode entrySet ktora
+        //Kazda instancja obiekty typu Map ma metode entrySet ktora
         // zwraca typ Set<Map.Entry<K, V>>
         //Entry to interface wewnetrz klasy Map
         for(Map.Entry<String, Integer> x : dniWMiesiacy.entrySet() ){
