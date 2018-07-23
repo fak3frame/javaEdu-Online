@@ -2188,7 +2188,7 @@ public class Wstep {
         //Klasa lokalna moze byc zdefiniowana wewnatrza bloku (metoda, blok if itp)
          nie moze zawierac modyfikatora public/private/protected
 
-        Dostep do klas lokalnych ma jest tylko w bloku w ktorym zostaly zdefiniowane!
+        Dostep do klas lokalnych jest tylko w bloku w ktorym zostaly zdefiniowane!
          */
 
         System.out.println();
