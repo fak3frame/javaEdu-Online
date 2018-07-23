@@ -2134,7 +2134,7 @@ public class Wstep {
 
         Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
 
-        Klasa wewnetrzna moze korzystac ze ZMIENNYCH LOKALNYCH (gdy definiuja ja w metodzie)
+        Klasa wewnetrzna lokalna moze korzystac ze ZMIENNYCH LOKALNYCH (gdy definiuja ja w metodzie)
          TYLKO gdy sa one finalne lub nie zmieniam ich wartosci po jednym ustaleniu wartosci
          w deklaracji! - opis dzialania ponizej
 
