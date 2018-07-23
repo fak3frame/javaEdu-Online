@@ -2138,6 +2138,7 @@ public class Wstep {
 
 
         Wewnetrzene interfejsy i typy wyliczneniowe sa ZAWSZE statyczne!
+         i nie moga byc lokalne to jest w metodzie/bloku if
 
 
         Klasa lokalna moze byc zdefiniowana wewnatrza bloku (metoda, blok if itp)
