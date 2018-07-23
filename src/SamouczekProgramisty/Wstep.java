@@ -2134,9 +2134,20 @@ public class Wstep {
 
         Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
 
+        Klasa wewnetrzna statyczna rozni sie tylko modyfikatorem
+
+
+        Wewnetrzene interfejsy i typy wyliczneniowe sa ZAWSZE statyczne!
+
+
+        Klasa lokalna moze byc zdefiniowana wewnatrza bloku (metoda, blok if itp)
+         nie moze zawierac modyfikatora public/private/protected
+
         Klasa wewnetrzna lokalna moze korzystac ze ZMIENNYCH LOKALNYCH (gdy definiuja ja w metodzie)
          TYLKO gdy sa one finalne lub nie zmieniam ich wartosci po jednym ustaleniu wartosci
          w deklaracji! - opis dzialania ponizej
+
+        Dostep do klas lokalnych jest tylko w bloku w ktorym zostaly zdefiniowane!
 
         */
         class KlasaZew{
@@ -2178,18 +2189,6 @@ public class Wstep {
             }
         }
 
-
-        /*
-        //Klasa wewnetrzna statyczna rozni sie tylko modyfikatorem
-
-        Wewnetrzene interfejsy i typy wyliczneniowe sa ZAWSZE statyczne!
-
-
-        //Klasa lokalna moze byc zdefiniowana wewnatrza bloku (metoda, blok if itp)
-         nie moze zawierac modyfikatora public/private/protected
-
-        Dostep do klas lokalnych jest tylko w bloku w ktorym zostaly zdefiniowane!
-         */
 
         System.out.println();
         Map<String, Integer> dniWMiesiacy = new HashMap<>();

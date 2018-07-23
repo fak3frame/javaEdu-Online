@@ -42,8 +42,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="2163" column="42" selection-start-line="2163" selection-start-column="42" selection-end-line="2163" selection-end-column="42" />
+            <state relative-caret-position="-1360">
+              <caret line="2141" lean-forward="true" selection-start-line="2141" selection-end-line="2141" />
             </state>
           </provider>
         </entry>
@@ -345,34 +345,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00846" summary="SanouczekProgramisty Adnotacje 12">
-      <created>1532101909689</created>
-      <option name="number" value="00846" />
-      <option name="presentableId" value="LOCAL-00846" />
-      <option name="project" value="LOCAL" />
-      <updated>1532101909689</updated>
-    </task>
-    <task id="LOCAL-00847" summary="SanouczekProgramisty Adnotacje 13">
-      <created>1532102122716</created>
-      <option name="number" value="00847" />
-      <option name="presentableId" value="LOCAL-00847" />
-      <option name="project" value="LOCAL" />
-      <updated>1532102122716</updated>
-    </task>
-    <task id="LOCAL-00848" summary="SanouczekProgramisty Adnotacje 14">
-      <created>1532102192259</created>
-      <option name="number" value="00848" />
-      <option name="presentableId" value="LOCAL-00848" />
-      <option name="project" value="LOCAL" />
-      <updated>1532102192259</updated>
-    </task>
-    <task id="LOCAL-00849" summary="SanouczekProgramisty Adnotacje 15">
-      <created>1532102332816</created>
-      <option name="number" value="00849" />
-      <option name="presentableId" value="LOCAL-00849" />
-      <option name="project" value="LOCAL" />
-      <updated>1532102332816</updated>
     </task>
     <task id="LOCAL-00850" summary="SanouczekProgramisty Adnotacje 16">
       <created>1532103059139</created>
@@ -689,7 +661,35 @@
       <option name="project" value="LOCAL" />
       <updated>1532379369824</updated>
     </task>
-    <option name="localTasksCounter" value="895" />
+    <task id="LOCAL-00895" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 22">
+      <created>1532379498987</created>
+      <option name="number" value="00895" />
+      <option name="presentableId" value="LOCAL-00895" />
+      <option name="project" value="LOCAL" />
+      <updated>1532379498987</updated>
+    </task>
+    <task id="LOCAL-00896" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 23">
+      <created>1532379673949</created>
+      <option name="number" value="00896" />
+      <option name="presentableId" value="LOCAL-00896" />
+      <option name="project" value="LOCAL" />
+      <updated>1532379673949</updated>
+    </task>
+    <task id="LOCAL-00897" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 24">
+      <created>1532379884705</created>
+      <option name="number" value="00897" />
+      <option name="presentableId" value="LOCAL-00897" />
+      <option name="project" value="LOCAL" />
+      <updated>1532379884705</updated>
+    </task>
+    <task id="LOCAL-00898" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 25">
+      <created>1532380115330</created>
+      <option name="number" value="00898" />
+      <option name="presentableId" value="LOCAL-00898" />
+      <option name="project" value="LOCAL" />
+      <updated>1532380115330</updated>
+    </task>
+    <option name="localTasksCounter" value="899" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -729,10 +729,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Adnotacje 36" />
-    <MESSAGE value="SanouczekProgramisty Adnotacje 37" />
-    <MESSAGE value="SanouczekProgramisty Adnotacje 38" />
-    <MESSAGE value="SanouczekProgramisty Adnotacje 39" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 1" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 2" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 3" />
@@ -754,7 +750,11 @@
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 19" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 20" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 21" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 21" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 22" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 23" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 24" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 25" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="2163" column="42" selection-start-line="2163" selection-start-column="42" selection-end-line="2163" selection-end-column="42" />
+        <state relative-caret-position="-1360">
+          <caret line="2141" lean-forward="true" selection-start-line="2141" selection-end-line="2141" />
         </state>
       </provider>
     </entry>
