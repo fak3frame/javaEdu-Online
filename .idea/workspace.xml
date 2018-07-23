@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +38,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1360">
-              <caret line="2141" lean-forward="true" selection-start-line="2141" selection-end-line="2141" />
+            <state relative-caret-position="-187">
+              <caret line="2135" lean-forward="true" selection-start-line="2135" selection-end-line="2135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnonymousClasses.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="685">
+              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+              <folding>
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#1114#1115#0" expanded="true" />
+                <element signature="e#1448#1449#0" expanded="true" />
+                <element signature="e#1515#1516#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sortowanie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -149,10 +176,10 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/KalkulatorTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_9_Adnotacje/AnnotationProcessor.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_9_Adnotacje/MyDocumentation.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java" />
         <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java" />
       </list>
     </option>
   </component>
@@ -201,6 +228,15 @@
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
               <item name="_10_KlasyAnonimowe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+              <item name="_10_KlasyAnonimowe" type="462c0819:PsiDirectoryNode" />
+              <item name="AnonymousClasses.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -345,41 +381,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00850" summary="SanouczekProgramisty Adnotacje 16">
-      <created>1532103059139</created>
-      <option name="number" value="00850" />
-      <option name="presentableId" value="LOCAL-00850" />
-      <option name="project" value="LOCAL" />
-      <updated>1532103059139</updated>
-    </task>
-    <task id="LOCAL-00851" summary="SanouczekProgramisty Adnotacje 17">
-      <created>1532103633232</created>
-      <option name="number" value="00851" />
-      <option name="presentableId" value="LOCAL-00851" />
-      <option name="project" value="LOCAL" />
-      <updated>1532103633232</updated>
-    </task>
-    <task id="LOCAL-00852" summary="SanouczekProgramisty Adnotacje 18">
-      <created>1532103910663</created>
-      <option name="number" value="00852" />
-      <option name="presentableId" value="LOCAL-00852" />
-      <option name="project" value="LOCAL" />
-      <updated>1532103910663</updated>
-    </task>
-    <task id="LOCAL-00853" summary="SanouczekProgramisty Adnotacje 19">
-      <created>1532104265855</created>
-      <option name="number" value="00853" />
-      <option name="presentableId" value="LOCAL-00853" />
-      <option name="project" value="LOCAL" />
-      <updated>1532104265855</updated>
-    </task>
-    <task id="LOCAL-00854" summary="SanouczekProgramisty Adnotacje 20">
-      <created>1532105022092</created>
-      <option name="number" value="00854" />
-      <option name="presentableId" value="LOCAL-00854" />
-      <option name="project" value="LOCAL" />
-      <updated>1532105022092</updated>
     </task>
     <task id="LOCAL-00855" summary="SanouczekProgramisty Adnotacje 21">
       <created>1532105263490</created>
@@ -689,7 +690,42 @@
       <option name="project" value="LOCAL" />
       <updated>1532380115330</updated>
     </task>
-    <option name="localTasksCounter" value="899" />
+    <task id="LOCAL-00899" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 26">
+      <created>1532380396287</created>
+      <option name="number" value="00899" />
+      <option name="presentableId" value="LOCAL-00899" />
+      <option name="project" value="LOCAL" />
+      <updated>1532380396287</updated>
+    </task>
+    <task id="LOCAL-00900" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 27">
+      <created>1532380456561</created>
+      <option name="number" value="00900" />
+      <option name="presentableId" value="LOCAL-00900" />
+      <option name="project" value="LOCAL" />
+      <updated>1532380456561</updated>
+    </task>
+    <task id="LOCAL-00901" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 28">
+      <created>1532380514566</created>
+      <option name="number" value="00901" />
+      <option name="presentableId" value="LOCAL-00901" />
+      <option name="project" value="LOCAL" />
+      <updated>1532380514566</updated>
+    </task>
+    <task id="LOCAL-00902" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 29">
+      <created>1532380578331</created>
+      <option name="number" value="00902" />
+      <option name="presentableId" value="LOCAL-00902" />
+      <option name="project" value="LOCAL" />
+      <updated>1532380578331</updated>
+    </task>
+    <task id="LOCAL-00903" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 30">
+      <created>1532380663498</created>
+      <option name="number" value="00903" />
+      <option name="presentableId" value="LOCAL-00903" />
+      <option name="project" value="LOCAL" />
+      <updated>1532380663498</updated>
+    </task>
+    <option name="localTasksCounter" value="904" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -708,7 +744,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21552975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21552975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -729,11 +765,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 1" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 2" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 3" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 4" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 5" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 6" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 7" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 8" />
@@ -754,7 +785,12 @@
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 23" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 24" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 25" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 25" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 26" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 27" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 28" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 29" />
+    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 30" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 30" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1049,20 +1085,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/SuppressWarnings.java" />
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10132">
@@ -1074,10 +1096,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1360">
-          <caret line="2141" lean-forward="true" selection-start-line="2141" selection-end-line="2141" />
+        <state relative-caret-position="-187">
+          <caret line="2135" lean-forward="true" selection-start-line="2135" selection-end-line="2135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding>
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
