@@ -2134,8 +2134,6 @@ public class Wstep {
 
         Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
 
-        Klasa wewnetrzna statyczna rozni sie tylko modyfikatorem
-
 
         Wewnetrzene interfejsy i typy wyliczneniowe sa ZAWSZE statyczne!
          i nie moga byc lokalne to jest w metodzie/bloku if
