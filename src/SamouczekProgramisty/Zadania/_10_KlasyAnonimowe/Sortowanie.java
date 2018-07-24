@@ -50,3 +50,5 @@ public class Sortowanie {
         Sortowanie s = new Sortowanie();
     }
 }
+
+
