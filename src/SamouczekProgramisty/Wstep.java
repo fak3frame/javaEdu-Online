@@ -2331,7 +2331,7 @@ public class Wstep {
 
         Jesli przyjmie sama tablice to TYP zmiennych tablicy (jesli jest mojej
          wlasnej klasy np List<MojaKlasa>) musi implementowac intefrace Comparable i
-         nadpisac metode int compareTo(Klasa o) ktora zwraca >=1 gdy zmienna z this.
+         nadpisac metode int compareTo(MojaKlasa o) ktora zwraca >=1 gdy zmienna z this.
          np this.wiek jest wieksza od o.wiek, gdy odwrotnie to <0 i gdy rowne
          to 0. Zmienne brane sa po kolei z Listy - this.wiek jest wiekiem
          elementu 0 a o.wiek jest wiekiem elementu 1. Jesli lista ma typ
@@ -2350,6 +2350,7 @@ public class Wstep {
 
         Jesli lista posiada typ String to w klasie anonimowej z Comparatorem metoda
          compare podstawi przyjmowane obiekty za String
+         Collections.sort(wyrazy, new Comparator<String>() {
          int compare (String o1, String o2); i moge posortowac
          je wg dlugosci if(o1.legth()>o2.length())retrun 1; itp.
          lub w skrocie return o1.length()-o2.legth(); wtedy gdy 1 element bedzie
@@ -2403,8 +2404,6 @@ public class Wstep {
             }
         }
         Sortowanie s = new Sortowanie();
-        String imie1 = "kamil";
-        String imie2 = "samil";
         System.out.println();
 
 
