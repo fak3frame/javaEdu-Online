@@ -2413,7 +2413,13 @@ public class Wstep {
 
 
         //Test Driven Development TDD
-
+        /*
+        TDD sklada sie z 3 faz:
+        -Red : napisanie testow funckjinalnosci przed napsianiem kodu
+        Kod moze sie nawet nie kompilowac jesli napislem test dla metody
+         ktora jeszcze nie istanieje
+        -Greeen : napisanie funkcjonalnosci
+         */
 
 
 
