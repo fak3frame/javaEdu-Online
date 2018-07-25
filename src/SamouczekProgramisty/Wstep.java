@@ -2179,7 +2179,9 @@ public class Wstep {
 
                 //Klasa wewnetrzna lokalna
                 final int liczba = 10;
-                int liczbaNieFinalna = 10;
+                int liczbaNieFinalna = 10; // nie zadeklarowalem final
+                // lecz gdy ja potem zmienie to wystapi blad (jesli jej uzyje
+                // w klasie lokalnej)
                 //Tworze klase wewnetrzna wewnatrz metody - ma dostep takze do zmiennych lokalnych
                 class KlasaWMetodzie{
                     void powiedzCos(){
@@ -2316,7 +2318,6 @@ public class Wstep {
                     }
                 });
                 ob3.saySomething();
-
             }
         }
         */
