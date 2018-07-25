@@ -2294,7 +2294,7 @@ public class Wstep {
                 //   wewnetrznej (musi byc ona statyczna)
                 AnonymousClasses.RobotStatyczny ob1 = new AnonymousClasses.RobotStatyczny(
                     new AnonymousClasses.GreetingModule(){
-                    //obiekt klasy anonimowej takze tworze z uzyciem klasy zew
+                    //w konstruktorze przekazuje klase anonimowa z uczyciem klasy ZEW!
                     @Override
                     public void przywitanie() {
                         System.out.println("czesc statycznie");
@@ -2305,6 +2305,7 @@ public class Wstep {
                 //2 W main TYLKO TEJ SAMEJ KLASY tworze BESPOSREENIO obiekt klasy
                 //   wewnetrznej BEZ POMOCY klasy zewnetrznej
                 RobotStatyczny ob2 = new RobotStatyczny(new GreetingModule() {
+                    //w konstruktorze przekazuje klase anonimowa bez uzycia klasy ZEW!
                     @Override
                     public void sayHello() {
                         System.out.println("dzien dobry");
