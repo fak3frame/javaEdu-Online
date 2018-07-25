@@ -2422,6 +2422,9 @@ public class Wstep {
          ktora jeszcze nie istanieje
         -Greeen : napisanie funkcjonalnosci "na szybko" ktora sprawi ze testy
         zostana zaliczone
+        Musze napisac kod ktory zaliczy wszystkie testy
+        -Refactor : Zmieniam kod aby byl "czysty" np dodanie metody ktora
+        bedzie spelniac funkcjonalnosci aby nie powtrzac kodu
          */
 
 
