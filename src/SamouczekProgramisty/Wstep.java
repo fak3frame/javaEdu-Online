@@ -2415,10 +2415,13 @@ public class Wstep {
         //Test Driven Development TDD
         /*
         TDD sklada sie z 3 faz:
-        -Red : napisanie testow funckjinalnosci przed napsianiem kodu
+        -Red : napisanie testow funckjinalnosci przed napsianiem kodu.
+        Napisany test nie moze sie powiesc bo nie napisalem jeszcze funkcjonalnosci
+        Testy jednostkowe podkreslone sa w IDE na czerwono jesli nie przechodza
         Kod moze sie nawet nie kompilowac jesli napislem test dla metody
          ktora jeszcze nie istanieje
-        -Greeen : napisanie funkcjonalnosci
+        -Greeen : napisanie funkcjonalnosci "na szybko" ktora sprawi ze testy
+        zostana zaliczone
          */
 
 

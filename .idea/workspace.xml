@@ -399,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00879" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 6">
-      <created>1532283204671</created>
-      <option name="number" value="00879" />
-      <option name="presentableId" value="LOCAL-00879" />
-      <option name="project" value="LOCAL" />
-      <updated>1532283204671</updated>
-    </task>
     <task id="LOCAL-00880" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 7">
       <created>1532283310104</created>
       <option name="number" value="00880" />
@@ -742,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532524663994</updated>
     </task>
-    <option name="localTasksCounter" value="928" />
+    <task id="LOCAL-00928" summary="SanouczekProgramisty Test Driven Development 1">
+      <created>1532525840889</created>
+      <option name="number" value="00928" />
+      <option name="presentableId" value="LOCAL-00928" />
+      <option name="project" value="LOCAL" />
+      <updated>1532525840895</updated>
+    </task>
+    <option name="localTasksCounter" value="929" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -782,7 +782,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 30" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 31" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 32" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 33" />
@@ -807,7 +806,8 @@
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 52" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 53" />
     <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 54" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 54" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
