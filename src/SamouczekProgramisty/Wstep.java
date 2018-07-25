@@ -2172,6 +2172,11 @@ public class Wstep {
                 //np w innej klasie
                 //KlasaZew.KlasaWew obiekt = new KlasaZew.KlasaWew();
 
+                //INNA METODA2:(gdy klasa wewnetrza jest STATYCZNA i TYLKO W KLASIE
+                // W MAIN TEJ SAMEJ KLASY!! moge tworzyc bezposrenio obiekt klasy wew
+                KlasaWew obWew2 = new KlasaWew();
+
+
                 //Klasa wewnetrzna lokalna
                 final int liczba = 10;
                 int liczbaNieFinalna = 10;
@@ -2242,7 +2247,7 @@ public class Wstep {
         //Przykladowe uzycie wewnetrznej klasy anonimowej z interfejsem
         /*
         public class AnonymousClasses {
-            public static class Robot {
+            public static class RobotStatyczny {
             //KLASA WEW JEST STATYCZNA!! wiec deklaruje jej obiek bezposrenio
             // tj KlasaZew.KlasaWew ob = new KlasaZew.KlasaWew(new AnonymousClasses.GreetingModule() {
             // deklaracja metody int});
@@ -2263,6 +2268,10 @@ public class Wstep {
                     // tworza instancje klasy anonimowej jest ona odzielna
                     // klasa implementujaca ten interfejs
                 }
+            }
+            public class RobotNieStatyczny{ //klasa NIESTATYCZNA
+                private final GreetingModule greetingModule;
+
             }
 
             public interface GreetingModule { //interfejs wewnetrzny

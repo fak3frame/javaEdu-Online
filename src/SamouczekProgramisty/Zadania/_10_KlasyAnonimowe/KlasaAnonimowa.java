@@ -24,6 +24,7 @@ public class KlasaAnonimowa {
     }
 
     public static void main(String[] args) {
+        //1
         KlasaAnonimowa ka = new KlasaAnonimowa();
         KlasaAnonimowa.Robot2 kaw = ka.new Robot2(new Powitanie() {
             @Override
@@ -32,6 +33,8 @@ public class KlasaAnonimowa {
             }
         });
         kaw.przywitajSie();
+
+        //2
         KlasaAnonimowa.RobotStatic ob = new KlasaAnonimowa.RobotStatic(new KlasaAnonimowa.Powitanie(){
             @Override
             public void przywitanie() {
@@ -40,9 +43,19 @@ public class KlasaAnonimowa {
         });
         ob.przywitajSieStatic();
 
+        //3
+        RobotStatic r2 = new RobotStatic(new Powitanie() {
+            @Override
+            public void przywitanie() {
+                System.out.println("powitanie robot");
+            }
+        });
+
     }
 }
 class inna{
+    public static void main(String[] args) {
 
+    }
 }
 
