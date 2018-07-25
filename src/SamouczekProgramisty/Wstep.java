@@ -2216,8 +2216,8 @@ public class Wstep {
         Klasa anonimowa zawsze jest klasa wewnetrzna i polaczona jest z tworzeniem
          jej jednej instancji
 
-        Na poczatku tworze intefrfejs z metoda i "tworze jego instancje" w metodzie
-         dodajac jej dzialanie w {pelna definicja} - tak naprawde jest to klasa
+        Na poczatku tworze intefrfejs z metoda i "tworze jego instancje", w metodzie
+         interfacu dodajac jej dzialanie w {pelna definicja} - tak naprawde jest to klasa
          z nazwa klasy zewnetrznej z dodaniem na koncu $ z liczba klasy anonimowej
          w danej klasie
 
@@ -2233,12 +2233,12 @@ public class Wstep {
             public void powiedzCzesc() {
                 System.out.println("witaj");
             }//ta metoda musi byc!!
+            //Moge takze w niej definiowac zmeinne i metody lecz glownie polega
+            // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
             int zmienna = 123;
             int metoda(){
                 return zmienna;
             }
-            //Moge takze w niej definiowac zmeinne i metody lecz glownie polega
-            // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
         };//nie zapominam o sredniku
         //Klasa anoniomowa ma nazwe klasy w ktorej jest umieszczona oraz po "$" numer klasy
         // anonimowej ktora zostala stworzona w danej klasie np:
