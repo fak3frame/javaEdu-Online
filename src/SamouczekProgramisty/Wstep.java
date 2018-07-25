@@ -2293,7 +2293,7 @@ public class Wstep {
                         System.out.println("czesc statycznie");
                     }
                 });
-                ob2.saySomething();
+                ob1.saySomething();
 
                 //2 W main TYLKO TEJ SAMEJ KLASY tworze BESPOSREENIO obiekt klasy
                 //   wewnetrznej BEZ POMOCY klasy zewnetrznej
@@ -2307,6 +2307,15 @@ public class Wstep {
 
                 //3 W main (dowolnej klasy) tworze posrenio obiekt klasy
                 //   wewnetrznej (nie moze byc ons statyczna)
+                AnonymousClasses obZew = new AnonymousClasses():
+                AnonymousClasses.RobotNieStatyczny ob3 = obZew.new RobotNieStatyczny(
+                    new AnonymousClasses.GreetingModule(){
+                    @Override
+                    public void przywitanie() {
+                        System.out.println("czesc statycznie");
+                    }
+                });
+                ob3.saySomething();
 
             }
         }
