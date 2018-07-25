@@ -1,7 +1,5 @@
 package SamouczekProgramisty.Zadania._10_KlasyAnonimowe;
 
-import SamouczekProgramisty.Zadania._9_Adnotacje.AnnotationProcessor;
-
 public class AnonymousClasses {
     public static class Robot{
         private final GreetingModule greetingModule;
@@ -52,4 +50,3 @@ class HansRobot{
         hanz.seySomething();
     }
 }
-
