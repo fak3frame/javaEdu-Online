@@ -2424,8 +2424,13 @@ public class Wstep {
         zostana zaliczone
         Musze napisac kod ktory zaliczy wszystkie testy
         -Refactor : Zmieniam kod aby byl "czysty" np dodanie metody ktora
-        bedzie spelniac funkcjonalnosci aby nie powtrzac kodu
+        bedzie spelniac funkcjonalnosci aby nie powtrzac kodu czy stworzenie innej
+        klasy.
+
+        Dobra praktyka jest jednego dnia napisania testow zeby kolejnego
+         rozpoczac pisanie samej funkcjonalnosci
          */
+        //Testy jednostkowe z JUnit
 
 
 
