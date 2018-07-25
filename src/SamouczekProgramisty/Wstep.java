@@ -2233,9 +2233,9 @@ public class Wstep {
             public void powiedzCzesc() {
                 System.out.println("witaj");
             }//ta metoda musi byc!!
-            int zmienna;
+            int zmienna = 123;
             int metoda(){
-                return 123;
+                return zmienna;
             }
             //Moge takze w niej definiowac zmeinne i metody lecz glownie polega
             // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
@@ -2252,7 +2252,9 @@ public class Wstep {
             public static class RobotStatyczny {
             //KLASA WEW JEST STATYCZNA!! wiec deklaruje jej obiek bezposrenio
             // tj KlasaZew.KlasaWew ob = new KlasaZew.KlasaWew(new AnonymousClasses.GreetingModule() {
-            // deklaracja metody int});
+            // deklaracja metody interfacu});
+            // lub bezposrenio bez pomocy klasy zew KlasaWew ob = new KlasaWew(new GreetingModule(){
+            // deklaracja metody interfacu}); -tak moge tylko w metodzie TEJ SAMEJ KLASY
                 private final GreetingModule greetingModule;
                 //Tworze zmienna final bez deklaracji i moge to zrobic tylko
                 // dlatego ze deklaracja jest w konstruktorze
