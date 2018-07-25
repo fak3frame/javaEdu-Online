@@ -1,12 +1,21 @@
 package SamouczekProgramisty.Zadania._10_KlasyAnonimowe;
 
 public class KlasaAnonimowa {
-    static class Robot{
+    class Robot2{
         private final Powitanie powitanie;
-        public Robot(Powitanie powitanie){
+        public Robot2(Powitanie powitanie){
             this.powitanie = powitanie;
         }
         void przywitajSie(){
+            powitanie.przywitanie();
+        }
+    }
+    static class RobotStatic{
+        private final Powitanie powitanie;
+        public RobotStatic(Powitanie powitanie){
+            this.powitanie = powitanie;
+        }
+        void przywitajSieStatic(){
             powitanie.przywitanie();
         }
     }
@@ -15,12 +24,20 @@ public class KlasaAnonimowa {
     }
 
     public static void main(String[] args) {
-        KlasaAnonimowa.Robot o = new KlasaAnonimowa.Robot(new KlasaAnonimowa.Powitanie(){
+        KlasaAnonimowa ka = new KlasaAnonimowa();
+        KlasaAnonimowa.Robot2 kaw = ka.new Robot2(new Powitanie() {
             @Override
             public void przywitanie() {
 
             }
         });
+
+
+    }
+}
+class inna{
+    public static void main(String[] args) {
+
     }
 }
 

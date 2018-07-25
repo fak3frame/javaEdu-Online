@@ -2160,6 +2160,7 @@ public class Wstep {
 
             //Tworznie instancji klasy wewnetrznej
             public void main(){
+                //GDY KLASA WEWNETRZNA NIE JEST STAYCZNA!
                 KlasaZew klasaZew = new KlasaZew();
                 //1 tworze obiekt klasy ZEW
                 KlasaZew.KlasaWew instancja1 = klasaZew.new KlasaWew();
@@ -2167,7 +2168,7 @@ public class Wstep {
                 // zewnetrznej konstruktor klasy wewnetrzej
                 KlasaZew.KlasaWew instancja2 = klasaZew.rozpocznij(); // za pomoca metody
 
-                //INNA METODA: (klasa wew MUSI byc statyczna)
+                //INNA METODA: (gdy klasa wewnetrzna JEST STATYCZNA!)
                 //np w innej klasie
                 //KlasaZew.KlasaWew obiekt = new KlasaZew.KlasaWew();
 
@@ -2242,6 +2243,9 @@ public class Wstep {
         /*
         public class AnonymousClasses {
             public static class Robot {
+            //KLASA WEW JEST STATYCZNA!! wiec deklaruje jej obiek bezposrenio
+            // tj KlasaZew.KlasaWew ob = new KlasaZew.KlasaWew(new AnonymousClasses.GreetingModule() {
+            // deklaracja metody int});
                 private final GreetingModule greetingModule;
                 //Tworze zmienna final bez deklaracji i moge to zrobic tylko
                 // dlatego ze deklaracja jest w konstruktorze
