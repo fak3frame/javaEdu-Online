@@ -2251,10 +2251,11 @@ public class Wstep {
         public class AnonymousClasses {
             public static class RobotStatyczny {
             //KLASA WEW JEST STATYCZNA!! wiec deklaruje jej obiek bezposrenio
-            // tj KlasaZew.KlasaWew ob = new KlasaZew.KlasaWew(new AnonymousClasses.GreetingModule() {
+            // tj. KlasaZew.KlasaWew ob = new KlasaZew.KlasaWew(new AnonymousClasses.GreetingModule() {
             // deklaracja metody interfacu});
-            // lub bezposrenio bez pomocy klasy zew KlasaWew ob = new KlasaWew(new GreetingModule(){
+            // lub bezposrenio bez pomocy klasy zew: KlasaWew ob = new KlasaWew(new GreetingModule(){
             // deklaracja metody interfacu}); -tak moge tylko w metodzie TEJ SAMEJ KLASY
+            // oraz w konstruktorze podaje takze TYLKO new z samym interfacem new GreetingModule()
                 private final GreetingModule greetingModule;
                 //Tworze zmienna final bez deklaracji i moge to zrobic tylko
                 // dlatego ze deklaracja jest w konstruktorze
