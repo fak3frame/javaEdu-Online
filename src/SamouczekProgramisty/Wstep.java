@@ -2160,7 +2160,7 @@ public class Wstep {
 
             //Tworznie instancji klasy wewnetrznej
             public void main(){
-                //GDY KLASA WEWNETRZNA NIE JEST STAYCZNA!
+                //TWORZENIE OBIEKTU gdy klasa wewnetrzna jest NIESTATYCZNA!
                 KlasaZew klasaZew = new KlasaZew();
                 //1 tworze obiekt klasy ZEW
                 KlasaZew.KlasaWew instancja1 = klasaZew.new KlasaWew();
@@ -2191,8 +2191,6 @@ public class Wstep {
                 }
                 //liczbaNieFinalna = 20; - nie moge zmienic bo klasa wew korzysta
                 // ze zmiennej lokalnej!!
-
-
             }
         }
 

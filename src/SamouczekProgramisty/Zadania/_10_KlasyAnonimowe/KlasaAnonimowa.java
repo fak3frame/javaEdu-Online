@@ -22,6 +22,33 @@ public class KlasaAnonimowa {
     public interface Powitanie{
         void przywitanie();
     }
+    public void metodaNieStatyczna(){
+        //1
+        KlasaAnonimowa ka2 = new KlasaAnonimowa();
+        KlasaAnonimowa.Robot2 kaw2 = ka2.new Robot2(new Powitanie() {
+            @Override
+            public void przywitanie() {
+                System.out.println("czesc normalnie");
+            }
+        });
+        kaw2.przywitajSie();
+        //2
+        KlasaAnonimowa.RobotStatic ob2 = new KlasaAnonimowa.RobotStatic(new KlasaAnonimowa.Powitanie(){
+            @Override
+            public void przywitanie() {
+                System.out.println("czesc statycznie");
+            }
+        });
+        ob2.przywitajSieStatic();
+        //3
+        RobotStatic r23 = new RobotStatic(new Powitanie() {
+            @Override
+            public void przywitanie() {
+                System.out.println("powitanie robot");
+            }
+        });
+
+    }
 
     public static void main(String[] args) {
         //1
@@ -50,6 +77,8 @@ public class KlasaAnonimowa {
                 System.out.println("powitanie robot");
             }
         });
+        KlasaAnonimowa k = new KlasaAnonimowa();
+        k.metodaNieStatyczna();
 
     }
 }
