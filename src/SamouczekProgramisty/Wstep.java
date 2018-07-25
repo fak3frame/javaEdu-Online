@@ -2271,30 +2271,43 @@ public class Wstep {
             }
             public class RobotNieStatyczny{ //klasa NIESTATYCZNA
                 private final GreetingModule greetingModule;
-
+                public Robot(GreetingModule greetingModule) {
+                    this.greetingModule = greetingModule;
+                }
+                 public void saySomething() {
+                    greetingModule.sayHello();
+                }
             }
 
-            public interface GreetingModule { //interfejs wewnetrzny
+            public interface GreetingModule { //INTERFEJS WEWNETRZNY
                 void sayHello();
             }
 
             public static void main(String[] args) {
-                Robot jan = new Robot(new GreetingModule() {
+                //1 W main (dowolnej klasy) tworze BESPOSRENIO obiekt klasy
+                //   wewnetrznej (musi byc ona statyczna)
+                AnonymousClasses.RobotStatyczny ob1 = new AnonymousClasses.RobotStatyczny(
+                    new AnonymousClasses.GreetingModule(){
+                    @Override
+                    public void przywitanie() {
+                        System.out.println("czesc statycznie");
+                    }
+                });
+                ob2.saySomething();
+
+                //2 W main TYLKO TEJ SAMEJ KLASY tworze BESPOSREENIO obiekt klasy
+                //   wewnetrznej BEZ POMOCY klasy zewnetrznej
+                RobotStatyczny ob2 = new RobotStatyczny(new GreetingModule() {
                     @Override
                     public void sayHello() {
                         System.out.println("dzien dobry");
                     }
                 });
+                ob2.saySomething();
 
-                Robot john = new Robot(new GreetingModule() {
-                    @Override
-                    public void sayHello() {
-                        System.out.println("good morning" );
-                    }
-                });
+                //3 W main (dowolnej klasy) tworze posrenio obiekt klasy
+                //   wewnetrznej (nie moze byc ons statyczna)
 
-                jan.saySomething();
-                john.saySomething();
             }
         }
         */
