@@ -2294,6 +2294,7 @@ public class Wstep {
                 //   wewnetrznej (musi byc ona statyczna)
                 AnonymousClasses.RobotStatyczny ob1 = new AnonymousClasses.RobotStatyczny(
                     new AnonymousClasses.GreetingModule(){
+                    //obiekt klasy anonimowej takze tworze z uzyciem klasy zew
                     @Override
                     public void przywitanie() {
                         System.out.println("czesc statycznie");
