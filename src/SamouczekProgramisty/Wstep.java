@@ -2275,6 +2275,7 @@ public class Wstep {
                 }
             }
             public class RobotNieStatyczny{ //klasa NIESTATYCZNA
+            // do tworzenia isntancji klasy wew posrwnio
                 private final GreetingModule greetingModule;
                 public Robot(GreetingModule greetingModule) {
                     this.greetingModule = greetingModule;
