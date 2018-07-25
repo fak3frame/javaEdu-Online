@@ -2167,7 +2167,7 @@ public class Wstep {
                 // zewnetrznej konstruktor klasy wewnetrzej
                 KlasaZew.KlasaWew instancja2 = klasaZew.rozpocznij(); // za pomoca metody
 
-                //INNA METODA:
+                //INNA METODA: (klasa wew MUSI byc statyczna)
                 //np w innej klasie
                 //KlasaZew.KlasaWew obiekt = new KlasaZew.KlasaWew();
 
