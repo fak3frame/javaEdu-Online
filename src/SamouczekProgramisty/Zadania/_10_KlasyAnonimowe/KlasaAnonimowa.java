@@ -28,16 +28,21 @@ public class KlasaAnonimowa {
         KlasaAnonimowa.Robot2 kaw = ka.new Robot2(new Powitanie() {
             @Override
             public void przywitanie() {
-
+                System.out.println("czesc normalnie");
             }
         });
-
+        kaw.przywitajSie();
+        KlasaAnonimowa.RobotStatic ob = new KlasaAnonimowa.RobotStatic(new KlasaAnonimowa.Powitanie(){
+            @Override
+            public void przywitanie() {
+                System.out.println("czesc statycznie");
+            }
+        });
+        ob.przywitajSieStatic();
 
     }
 }
 class inna{
-    public static void main(String[] args) {
 
-    }
 }
 
