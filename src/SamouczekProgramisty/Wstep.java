@@ -2436,9 +2436,6 @@ public class Wstep {
 
 
 
-
-
-
         String x = new Object() + "123";
         System.out.println(x);
     }
