@@ -2498,6 +2498,7 @@ public class Wstep {
             }
         }
 
+
         Przed testami moge dodac zmienna Obiektu klasy np
         One one;
         i stworzyc jej obiekt na potzeby testow dodajac metode z adnotacja
@@ -2506,6 +2507,7 @@ public class Wstep {
             one = new One(10,20);
         }
         i korzystac w kazdym tescie zmiennej one z podanymi parametrami
+
 
 
          */
