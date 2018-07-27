@@ -14,6 +14,8 @@ public class Wstep {
         alt + strzalka - przleczanie pomiedy zakladkami
         alt + ins - dodanie pliku
         alt + del - cofniecie usuniecia
+        ctrl + y - usuniecie lini
+
 
         //skok kursora
         ctrl + lewo/prawo - skok o cale slowo
