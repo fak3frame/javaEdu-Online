@@ -2417,7 +2417,9 @@ public class Wstep {
         //Test Driven Development TDD
         /*
         Test jednostkowy jest sposoboem testowania programy ktory polega na wydzieleniu
-         czesci funkcjonalnosci programu i testowaniu go w odosobnieniu
+         czesci funkcjonalnosci programu i testowaniu go w odosobnieniu.
+        Test jednostkowy to metoda testujaca metode/jednostke w innej klasie z dodana
+         adnotacja @Test
 
         Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
 
@@ -2443,6 +2445,14 @@ public class Wstep {
         //Testy jednostkowe z JUnit
         /*
         CTR+F5 uruchomi ostatni test/testy
+
+        Asercje to metody JUnit ktore przyjmuja rozne wartosci i koncza test
+         wynikiem pozytywnym lub negatywnym
+
+        Sa to metody statyczne z klasy Assert. Moge miec do nich dostep poprzez
+         import statyczny tej klasy
+         import static org.junit.Assert.*; i pisze po prostu assertTrue(costam());
+         lub pisania ich po nazwie klasy np. Assert.assertTrue(costam());
          */
 
 
