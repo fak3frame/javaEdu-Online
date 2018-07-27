@@ -2423,6 +2423,8 @@ public class Wstep {
 
         Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
 
+        Klasa testujaca inna klase nazwya sie tak samo jak ta klasa z dopisanym Test
+
         TDD sklada sie z 3 faz:
         -Red : napisanie testow funckjinalnosci przed napsianiem kodu.
         Napisany test nie moze sie powiesc bo nie napisalem jeszcze funkcjonalnosci
