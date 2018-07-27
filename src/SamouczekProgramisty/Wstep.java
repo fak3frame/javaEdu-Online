@@ -2414,6 +2414,9 @@ public class Wstep {
 
         //Test Driven Development TDD
         /*
+        Test jednostkowy jest sposoboem testowania programy ktory polega na wydzieleniu
+         czesci funkcjonalnosci programu i testowaniu go w odosobnieniu
+
         Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
 
         TDD sklada sie z 3 faz:
