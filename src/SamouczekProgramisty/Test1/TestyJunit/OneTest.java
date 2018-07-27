@@ -12,6 +12,17 @@ public class OneTest {
     }
 
     @Test
+    public void czyWyrzicWyjatekZlychParametrow2(){
+        try{
+            new One(20,102);
+            fail("Wyjatek nie zostal rzucony");
+        }
+        catch (IllegalArgumentException ex){
+            assertEquals("dolny przedzial jest wiekszy niz gorny!",ex.getMessage());
+        }
+    }
+
+    @Test
     public void czyLiczba12JestWPrzedziale(){
         One o = new One(10,15);
         assertTrue(o.czyJestWPrzedziale(12));

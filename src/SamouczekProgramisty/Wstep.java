@@ -2482,6 +2482,22 @@ public class Wstep {
             new One(20,10); //wyjatek jest w konstruktorze klasy One
         }
 
+        //Sposob 2
+        @Test
+        public void czyWyrzicWyjatekZlychParametrow2(){
+            try{
+                new One(20,10);
+                fail("Wyjatek nie zostal rzucony");
+                //wywola wyrzucenie wyjatku AssertionError z napisem
+                //test nie przejdzie
+            }
+            catch (IllegalArgumentException ex){
+                assertEquals("dolny przedzial jest wiekszy niz gorny!",ex.getMessage());
+                //jesli metoda wyrzuci DOKŁADNIE TAKI wyjatek to test przejdzie
+                //jesli nie to test nie przejdzie
+            }
+        }
+
 
          */
 
