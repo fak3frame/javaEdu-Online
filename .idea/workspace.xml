@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +44,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="2454" column="45" selection-start-line="2454" selection-start-column="45" selection-end-line="2454" selection-end-column="45" />
+            <state relative-caret-position="685">
+              <caret line="2484" column="8" selection-start-line="2484" selection-start-column="8" selection-end-line="2484" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -50,8 +53,8 @@
       <file leaf-file-name="One.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -59,8 +62,13 @@
       <file leaf-file-name="OneTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +114,7 @@
       <find>@over</find>
       <find>scann</find>
       <find>sort</find>
+      <find>import</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/KlasaAnonimowa.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
       </list>
     </option>
@@ -293,17 +302,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Sortowanie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._10_KlasyAnonimowe.Sortowanie" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._10_KlasyAnonimowe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="Wstep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Wstep" />
       <module name="javaStartMojSkrypt" />
@@ -337,6 +335,29 @@
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Test1.TestyJunit.OneTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="OneTest.czyWyrzicWyjatekZlychParametrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaStartMojSkrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.Test1.TestyJunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Test1.TestyJunit" />
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Test1.TestyJunit.OneTest" />
+      <option name="METHOD_NAME" value="czyWyrzicWyjatekZlychParametrow" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -386,18 +407,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Wstep" />
-      <item itemvalue="Application.Sortowanie" />
       <item itemvalue="Application.toRemember" />
       <item itemvalue="Application.KlasaAnonimowa" />
       <item itemvalue="JUnit.OneTest" />
+      <item itemvalue="JUnit.OneTest.czyWyrzicWyjatekZlychParametrow" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.OneTest" />
+        <item itemvalue="JUnit.OneTest.czyWyrzicWyjatekZlychParametrow" />
         <item itemvalue="Application.KlasaAnonimowa" />
         <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.Wstep" />
-        <item itemvalue="Application.Sortowanie" />
       </list>
     </recent_temporary>
   </component>
@@ -411,27 +432,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00913" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 40">
-      <created>1532515336801</created>
-      <option name="number" value="00913" />
-      <option name="presentableId" value="LOCAL-00913" />
-      <option name="project" value="LOCAL" />
-      <updated>1532515336801</updated>
-    </task>
-    <task id="LOCAL-00914" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 41">
-      <created>1532515477811</created>
-      <option name="number" value="00914" />
-      <option name="presentableId" value="LOCAL-00914" />
-      <option name="project" value="LOCAL" />
-      <updated>1532515477811</updated>
-    </task>
-    <task id="LOCAL-00915" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 42">
-      <created>1532519333169</created>
-      <option name="number" value="00915" />
-      <option name="presentableId" value="LOCAL-00915" />
-      <option name="project" value="LOCAL" />
-      <updated>1532519333169</updated>
     </task>
     <task id="LOCAL-00916" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 43">
       <created>1532519775313</created>
@@ -755,7 +755,28 @@
       <option name="project" value="LOCAL" />
       <updated>1532698777914</updated>
     </task>
-    <option name="localTasksCounter" value="962" />
+    <task id="LOCAL-00962" summary="SanouczekProgramisty Test Driven Development 35">
+      <created>1532699146685</created>
+      <option name="number" value="00962" />
+      <option name="presentableId" value="LOCAL-00962" />
+      <option name="project" value="LOCAL" />
+      <updated>1532699146685</updated>
+    </task>
+    <task id="LOCAL-00963" summary="SanouczekProgramisty Test Driven Development 36">
+      <created>1532699252010</created>
+      <option name="number" value="00963" />
+      <option name="presentableId" value="LOCAL-00963" />
+      <option name="project" value="LOCAL" />
+      <updated>1532699252010</updated>
+    </task>
+    <task id="LOCAL-00964" summary="SanouczekProgramisty Test Driven Development 37">
+      <created>1532699503049</created>
+      <option name="number" value="00964" />
+      <option name="presentableId" value="LOCAL-00964" />
+      <option name="project" value="LOCAL" />
+      <updated>1532699503049</updated>
+    </task>
+    <option name="localTasksCounter" value="965" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -766,6 +787,15 @@
       <configuration name="OneTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="OneTest - 2018.07.27 at 15h 39m 29s.xml">
+      <configuration name="OneTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTest - 2018.07.27 at 15h 56m 18s.xml">
+      <configuration name="OneTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTest_czyWyrzicWyjatekZlychParametrow - 2018.07.27 at 15h 56m 57s.xml">
+      <configuration name="OneTest.czyWyrzicWyjatekZlychParametrow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTest - 2018.07.27 at 15h 57m 10s.xml">
       <configuration name="OneTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -806,9 +836,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 10" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 11" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 12" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 13" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 14" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 15" />
@@ -831,7 +858,10 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 32" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 33" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 34" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 34" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 35" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 36" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 37" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 37" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1123,22 +1153,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="119">
+          <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="2454" column="45" selection-start-line="2454" selection-start-column="45" selection-end-line="2454" selection-end-column="45" />
+        <state relative-caret-position="685">
+          <caret line="2484" column="8" selection-start-line="2484" selection-start-column="8" selection-end-line="2484" selection-end-column="8" />
         </state>
       </provider>
     </entry>

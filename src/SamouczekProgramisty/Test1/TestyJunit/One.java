@@ -4,6 +4,8 @@ public class One {
     private int a,b;
 
     public One(int a, int b) {
+        if(a>b)
+            throw new IllegalArgumentException("dolny przedzial jest wiekszy niz gorny!");
         this.a = a;
         this.b = b;
     }

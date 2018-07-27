@@ -2466,6 +2466,23 @@ public class Wstep {
         assertNotEquals()
 
 
+        PRZYKŁADOWE TESTY:
+
+        //Tworze obiekt i sprawdzam czy metoda klasy zwroci true
+        @Test
+        public void czyLiczba12JestWPrzedziale(){
+            One o = new One(10,15);
+            assertTrue(o.czyJestWPrzedziale(12));
+        }
+
+        //Sprawdzam czy metoda zwroci wyjatek IllegalArgumentException
+        @Test(expected = IllegalArgumentException.class) //test przejdzie
+        // jesli zostanie wyrzucony podany wyjatek
+        public void czyWyrzicWyjatekZlychParametrow(){
+            new One(20,10); //wyjatek jest w konstruktorze klasy One
+        }
+
+
          */
 
 
