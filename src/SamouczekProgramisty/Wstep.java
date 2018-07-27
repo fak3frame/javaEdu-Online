@@ -145,6 +145,7 @@ public class Wstep {
         import pl.SamouczekProgramisty.Folder1.MojaKlasa;
         importuje klase MojaKlasa z pakietu ->Folder1->
          ->SamouczekProgrmisty->pl
+         Mam dostep dzieki temu takze do wszystkich jej statycznych metod
 
 
 
@@ -2455,6 +2456,16 @@ public class Wstep {
          import statyczny tej klasy
          import static org.junit.Assert.*; i pisze po prostu assertTrue(costam());
          lub pisania ich po nazwie klasy np. Assert.assertTrue(costam());
+
+        Najczestsze metody:
+        assertTrue()
+        assertFalse()
+        assertNull()
+        assertNotNull()
+        assertEquals()
+        assertNotEquals()
+
+
          */
 
 
