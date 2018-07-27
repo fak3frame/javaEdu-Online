@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,16 +38,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="2507" column="71" selection-start-line="2507" selection-start-column="71" selection-end-line="2507" selection-end-column="71" />
+            <state relative-caret-position="527">
+              <caret line="2500" selection-start-line="2500" selection-end-line="2500" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="One.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="One.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -60,13 +59,13 @@
       <file leaf-file-name="OneTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="51">
+              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
               <folding>
                 <element signature="e#203#204#0" expanded="true" />
                 <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +102,7 @@
       <find>datain</find>
       <find>static</find>
       <find>stat</find>
-      <find />
+      <find>class wew</find>
       <find>listy</find>
       <find>dziedziczenie</find>
       <find>integer</find>
@@ -177,8 +176,8 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/KlasaAnonimowa.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" />
       </list>
     </option>
   </component>
@@ -443,20 +442,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00918" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 45">
-      <created>1532520146434</created>
-      <option name="number" value="00918" />
-      <option name="presentableId" value="LOCAL-00918" />
-      <option name="project" value="LOCAL" />
-      <updated>1532520146434</updated>
-    </task>
-    <task id="LOCAL-00919" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 46">
-      <created>1532520747929</created>
-      <option name="number" value="00919" />
-      <option name="presentableId" value="LOCAL-00919" />
-      <option name="project" value="LOCAL" />
-      <updated>1532520747929</updated>
     </task>
     <task id="LOCAL-00920" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 47">
       <created>1532521652502</created>
@@ -787,22 +772,24 @@
       <option name="project" value="LOCAL" />
       <updated>1532702699117</updated>
     </task>
-    <option name="localTasksCounter" value="967" />
+    <task id="LOCAL-00967" summary="SanouczekProgramisty Test Driven Development 40">
+      <created>1532702938236</created>
+      <option name="number" value="00967" />
+      <option name="presentableId" value="LOCAL-00967" />
+      <option name="project" value="LOCAL" />
+      <updated>1532702938236</updated>
+    </task>
+    <task id="LOCAL-00968" summary="SanouczekProgramisty Test Driven Development 41">
+      <created>1532703125351</created>
+      <option name="number" value="00968" />
+      <option name="presentableId" value="LOCAL-00968" />
+      <option name="project" value="LOCAL" />
+      <updated>1532703125351</updated>
+    </task>
+    <option name="localTasksCounter" value="969" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OneTest - 2018.07.27 at 15h 39m 06s.xml">
-      <configuration name="OneTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OneTest - 2018.07.27 at 15h 39m 29s.xml">
-      <configuration name="OneTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OneTest - 2018.07.27 at 15h 56m 18s.xml">
-      <configuration name="OneTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OneTest_czyWyrzicWyjatekZlychParametrow - 2018.07.27 at 15h 56m 57s.xml">
-      <configuration name="OneTest.czyWyrzicWyjatekZlychParametrow" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OneTest - 2018.07.27 at 15h 57m 10s.xml">
       <configuration name="OneTest" configurationId="JUnit" />
     </history-entry>
@@ -819,6 +806,18 @@
       <configuration name="OneTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="OneTest - 2018.07.27 at 16h 46m 43s.xml">
+      <configuration name="OneTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTest_czyWyrzicWyjatekZlychParametrow2 - 2018.07.27 at 16h 51m 25s.xml">
+      <configuration name="OneTest.czyWyrzicWyjatekZlychParametrow2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTest - 2018.07.27 at 16h 51m 30s.xml">
+      <configuration name="OneTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTest_czyWyrzicWyjatekZlychParametrow2 - 2018.07.27 at 16h 51m 52s.xml">
+      <configuration name="OneTest.czyWyrzicWyjatekZlychParametrow2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTest - 2018.07.27 at 16h 51m 55s.xml">
       <configuration name="OneTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -859,8 +858,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 15" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 16" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 17" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 18" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 19" />
@@ -884,7 +881,9 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 37" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 38" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 39" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 39" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 40" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 41" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 41" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1174,15 +1173,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="2500" selection-start-line="2500" selection-end-line="2500" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
             <element signature="e#203#204#0" expanded="true" />
             <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1191,13 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="2507" column="71" selection-start-line="2507" selection-start-column="71" selection-end-line="2507" selection-end-column="71" />
         </state>
       </provider>
     </entry>
