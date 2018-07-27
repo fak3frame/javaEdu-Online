@@ -2416,7 +2416,6 @@ public class Wstep {
         /*
         Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
 
-
         TDD sklada sie z 3 faz:
         -Red : napisanie testow funckjinalnosci przed napsianiem kodu.
         Napisany test nie moze sie powiesc bo nie napisalem jeszcze funkcjonalnosci
@@ -2430,11 +2429,16 @@ public class Wstep {
         bedzie spelniac funkcjonalnosci aby nie powtrzac kodu czy stworzenie innej
         klasy.
 
+        Założeniem TDD jest pisanie testow do jak najkrotszej ilosci kodu
+
         Dobra praktyka jest jednego dnia napisania testow zeby kolejnego
          rozpoczac pisanie samej funkcjonalnosci
          */
-        //Testy jednostkowe z JUnit
 
+        //Testy jednostkowe z JUnit
+        /*
+        CTR+F5 uruchomi ostatni test/testy
+         */
 
 
 
