@@ -2414,6 +2414,9 @@ public class Wstep {
 
         //Test Driven Development TDD
         /*
+        Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
+
+
         TDD sklada sie z 3 faz:
         -Red : napisanie testow funckjinalnosci przed napsianiem kodu.
         Napisany test nie moze sie powiesc bo nie napisalem jeszcze funkcjonalnosci

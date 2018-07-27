@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +41,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="2439" column="8" selection-start-line="2439" selection-start-column="8" selection-end-line="2439" selection-end-column="8" />
+            <state relative-caret-position="875">
+              <caret line="2435" selection-start-line="2435" selection-end-line="2435" />
               <folding>
                 <element signature="e#16972#16979#0" expanded="true" />
                 <element signature="e#80321#80351#1" expanded="true" />
@@ -377,111 +377,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00894" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 21">
-      <created>1532379369808</created>
-      <option name="number" value="00894" />
-      <option name="presentableId" value="LOCAL-00894" />
-      <option name="project" value="LOCAL" />
-      <updated>1532379369824</updated>
-    </task>
-    <task id="LOCAL-00895" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 22">
-      <created>1532379498987</created>
-      <option name="number" value="00895" />
-      <option name="presentableId" value="LOCAL-00895" />
-      <option name="project" value="LOCAL" />
-      <updated>1532379498987</updated>
-    </task>
-    <task id="LOCAL-00896" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 23">
-      <created>1532379673949</created>
-      <option name="number" value="00896" />
-      <option name="presentableId" value="LOCAL-00896" />
-      <option name="project" value="LOCAL" />
-      <updated>1532379673949</updated>
-    </task>
-    <task id="LOCAL-00897" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 24">
-      <created>1532379884705</created>
-      <option name="number" value="00897" />
-      <option name="presentableId" value="LOCAL-00897" />
-      <option name="project" value="LOCAL" />
-      <updated>1532379884705</updated>
-    </task>
-    <task id="LOCAL-00898" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 25">
-      <created>1532380115330</created>
-      <option name="number" value="00898" />
-      <option name="presentableId" value="LOCAL-00898" />
-      <option name="project" value="LOCAL" />
-      <updated>1532380115330</updated>
-    </task>
-    <task id="LOCAL-00899" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 26">
-      <created>1532380396287</created>
-      <option name="number" value="00899" />
-      <option name="presentableId" value="LOCAL-00899" />
-      <option name="project" value="LOCAL" />
-      <updated>1532380396287</updated>
-    </task>
-    <task id="LOCAL-00900" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 27">
-      <created>1532380456561</created>
-      <option name="number" value="00900" />
-      <option name="presentableId" value="LOCAL-00900" />
-      <option name="project" value="LOCAL" />
-      <updated>1532380456561</updated>
-    </task>
-    <task id="LOCAL-00901" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 28">
-      <created>1532380514566</created>
-      <option name="number" value="00901" />
-      <option name="presentableId" value="LOCAL-00901" />
-      <option name="project" value="LOCAL" />
-      <updated>1532380514566</updated>
-    </task>
-    <task id="LOCAL-00902" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 29">
-      <created>1532380578331</created>
-      <option name="number" value="00902" />
-      <option name="presentableId" value="LOCAL-00902" />
-      <option name="project" value="LOCAL" />
-      <updated>1532380578331</updated>
-    </task>
-    <task id="LOCAL-00903" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 30">
-      <created>1532380663498</created>
-      <option name="number" value="00903" />
-      <option name="presentableId" value="LOCAL-00903" />
-      <option name="project" value="LOCAL" />
-      <updated>1532380663498</updated>
-    </task>
-    <task id="LOCAL-00904" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 31">
-      <created>1532468640391</created>
-      <option name="number" value="00904" />
-      <option name="presentableId" value="LOCAL-00904" />
-      <option name="project" value="LOCAL" />
-      <updated>1532468640391</updated>
-    </task>
-    <task id="LOCAL-00905" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 32">
-      <created>1532468652599</created>
-      <option name="number" value="00905" />
-      <option name="presentableId" value="LOCAL-00905" />
-      <option name="project" value="LOCAL" />
-      <updated>1532468652599</updated>
-    </task>
-    <task id="LOCAL-00906" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 33">
-      <created>1532468739655</created>
-      <option name="number" value="00906" />
-      <option name="presentableId" value="LOCAL-00906" />
-      <option name="project" value="LOCAL" />
-      <updated>1532468739655</updated>
-    </task>
-    <task id="LOCAL-00907" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 34">
-      <created>1532468759877</created>
-      <option name="number" value="00907" />
-      <option name="presentableId" value="LOCAL-00907" />
-      <option name="project" value="LOCAL" />
-      <updated>1532468759877</updated>
-    </task>
-    <task id="LOCAL-00908" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 35">
-      <created>1532468797823</created>
-      <option name="number" value="00908" />
-      <option name="presentableId" value="LOCAL-00908" />
-      <option name="project" value="LOCAL" />
-      <updated>1532468797823</updated>
-    </task>
     <task id="LOCAL-00909" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 36">
       <created>1532468819240</created>
       <option name="number" value="00909" />
@@ -720,12 +615,116 @@
       <option name="project" value="LOCAL" />
       <updated>1532642248479</updated>
     </task>
-    <option name="localTasksCounter" value="943" />
+    <task id="LOCAL-00943" summary="SanouczekProgramisty Test Driven Development 16">
+      <created>1532642259785</created>
+      <option name="number" value="00943" />
+      <option name="presentableId" value="LOCAL-00943" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642259785</updated>
+    </task>
+    <task id="LOCAL-00944" summary="SanouczekProgramisty Test Driven Development 17">
+      <created>1532642271456</created>
+      <option name="number" value="00944" />
+      <option name="presentableId" value="LOCAL-00944" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642271456</updated>
+    </task>
+    <task id="LOCAL-00945" summary="SanouczekProgramisty Test Driven Development 18">
+      <created>1532642282240</created>
+      <option name="number" value="00945" />
+      <option name="presentableId" value="LOCAL-00945" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642282241</updated>
+    </task>
+    <task id="LOCAL-00946" summary="SanouczekProgramisty Test Driven Development 19">
+      <created>1532642292452</created>
+      <option name="number" value="00946" />
+      <option name="presentableId" value="LOCAL-00946" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642292452</updated>
+    </task>
+    <task id="LOCAL-00947" summary="SanouczekProgramisty Test Driven Development 20">
+      <created>1532642303612</created>
+      <option name="number" value="00947" />
+      <option name="presentableId" value="LOCAL-00947" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642303612</updated>
+    </task>
+    <task id="LOCAL-00948" summary="SanouczekProgramisty Test Driven Development 21">
+      <created>1532642314133</created>
+      <option name="number" value="00948" />
+      <option name="presentableId" value="LOCAL-00948" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642314133</updated>
+    </task>
+    <task id="LOCAL-00949" summary="SanouczekProgramisty Test Driven Development 22">
+      <created>1532642324366</created>
+      <option name="number" value="00949" />
+      <option name="presentableId" value="LOCAL-00949" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642324366</updated>
+    </task>
+    <task id="LOCAL-00950" summary="SanouczekProgramisty Test Driven Development 23">
+      <created>1532642335531</created>
+      <option name="number" value="00950" />
+      <option name="presentableId" value="LOCAL-00950" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642335531</updated>
+    </task>
+    <task id="LOCAL-00951" summary="SanouczekProgramisty Test Driven Development 24">
+      <created>1532642346685</created>
+      <option name="number" value="00951" />
+      <option name="presentableId" value="LOCAL-00951" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642346685</updated>
+    </task>
+    <task id="LOCAL-00952" summary="SanouczekProgramisty Test Driven Development 25">
+      <created>1532642357379</created>
+      <option name="number" value="00952" />
+      <option name="presentableId" value="LOCAL-00952" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642357379</updated>
+    </task>
+    <task id="LOCAL-00953" summary="SanouczekProgramisty Test Driven Development 26">
+      <created>1532642368360</created>
+      <option name="number" value="00953" />
+      <option name="presentableId" value="LOCAL-00953" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642368360</updated>
+    </task>
+    <task id="LOCAL-00954" summary="SanouczekProgramisty Test Driven Development 27">
+      <created>1532642379366</created>
+      <option name="number" value="00954" />
+      <option name="presentableId" value="LOCAL-00954" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642379366</updated>
+    </task>
+    <task id="LOCAL-00955" summary="SanouczekProgramisty Test Driven Development 28">
+      <created>1532642388911</created>
+      <option name="number" value="00955" />
+      <option name="presentableId" value="LOCAL-00955" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642388912</updated>
+    </task>
+    <task id="LOCAL-00956" summary="SanouczekProgramisty Test Driven Development 29">
+      <created>1532642399292</created>
+      <option name="number" value="00956" />
+      <option name="presentableId" value="LOCAL-00956" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642399292</updated>
+    </task>
+    <task id="LOCAL-00957" summary="SanouczekProgramisty Test Driven Development 30">
+      <created>1532642428897</created>
+      <option name="number" value="00957" />
+      <option name="presentableId" value="LOCAL-00957" />
+      <option name="project" value="LOCAL" />
+      <updated>1532642428897</updated>
+    </task>
+    <option name="localTasksCounter" value="958" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="148" y="3" width="1438" height="1447" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -760,21 +759,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 45" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 46" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 47" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 48" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 49" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 50" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 51" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 52" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 53" />
-    <MESSAGE value="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 54" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 1" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 2" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 3" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 4" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 5" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 6" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 7" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 8" />
@@ -785,7 +769,22 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 13" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 14" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 15" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 16" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 17" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 18" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 19" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 20" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 21" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 22" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 23" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 24" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 25" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 26" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 27" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 28" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 29" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 30" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 30" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1091,8 +1090,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="2439" column="8" selection-start-line="2439" selection-start-column="8" selection-end-line="2439" selection-end-column="8" />
+        <state relative-caret-position="875">
+          <caret line="2435" selection-start-line="2435" selection-end-line="2435" />
           <folding>
             <element signature="e#16972#16979#0" expanded="true" />
             <element signature="e#80321#80351#1" expanded="true" />
