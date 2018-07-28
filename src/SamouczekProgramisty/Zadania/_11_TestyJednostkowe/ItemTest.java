@@ -13,7 +13,7 @@ public class ItemTest {
         item = new Item(100, "cell Phone");
     }
     @Test
-    private void isPriceBggerThanZero(){
+    private void isPriceBiggerThanZero(){
         try{
             new Item(0, "x");
             fail();
@@ -38,6 +38,10 @@ public class ItemTest {
         catch (IllegalArgumentException ex){
             assertEquals("Name of prodct need a name", ex.getMessage());
         }
+    }
+    @Test
+    private void doesTheSameProductsAreEquals(){
+        assertEquals(new Item(10, "x"), new Item(10, "x"));
     }
 
 
