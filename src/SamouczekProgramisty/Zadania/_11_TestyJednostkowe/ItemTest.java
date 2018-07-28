@@ -8,12 +8,9 @@ import static org.junit.Assert.*;
 
 public class ItemTest {
     Item item;
-    @BeforeClass
-    private void setUp(){
-        item = new Item(100, "cell Phone");
-    }
+
     @Test
-    private void priceShouldBeBiggerThanZero(){
+    public void priceShouldBeBiggerThanZero(){
         try{
             new Item(0, "x");
             fail();
@@ -26,11 +23,11 @@ public class ItemTest {
             fail();
         }
         catch (IllegalArgumentException ex){
-            assertEquals("Price cant be less than 1", ex.getMessage();
+            assertEquals("Price cant be less than 1", ex.getMessage());
         }
     }
     @Test
-    private void productHasToHaveAName(){
+    public void productHasToHaveAName(){
         try{
             new Item(10,"");
             fail();
@@ -40,17 +37,18 @@ public class ItemTest {
         }
     }
     @Test
-    private void sameProductsHaveToBeEquals(){
+    public void sameProductsHaveToBeEquals(){
         assertEquals(new Item(10, "x"), new Item(10, "x"));
     }
-    @Test void productWithSamePriceAndDiffrentNameCantBeEquals(){
+    @Test
+    public void productWithSamePriceAndDiffrentNameCantBeEquals(){
         assertNotEquals(new Item(10, "xx"), new Item(10, "x"));
     }
     @Test
-    private void productsWithSamePriceAndNameHaveToHaveSameHashCode(){
+    public void productsWithSamePriceAndNameHaveToHaveSameHashCode(){
         assertEquals(new Item(20,"x").hashCode(), new Item(20, "x").hashCode());
     }
-    private void productsWithDiffrentPriceOrNameCantHaveSameHashCode(){
+    public void productsWithDiffrentPriceOrNameCantHaveSameHashCode(){
         assertNotEquals(new Item(20, "x").hashCode(), new Item(20, "y").hashCode());
         assertNotEquals(new Item(20, "x").hashCode(), new Item(10, "x").hashCode());
     }
