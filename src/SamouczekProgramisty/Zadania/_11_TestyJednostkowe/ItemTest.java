@@ -15,14 +15,14 @@ public class ItemTest {
     @Test
     private void isPriceBggerThanZero(){
         try{
-            item = new Item(0, "x");
+            new Item(0, "x");
             fail();
         }
         catch (IllegalArgumentException ex){
             assertEquals("Price cant be less than 1", ex.getMessage());
         }
         try {
-            item = new Item(-1, "x");
+            new Item(-1, "x");
             fail();
         }
         catch (IllegalArgumentException ex){
@@ -32,7 +32,7 @@ public class ItemTest {
     @Test
     private void doesTheProductHaveAName(){
         try{
-            item = new Item(10,"");
+            new Item(10,"");
             fail();
         }
         catch (IllegalArgumentException ex){
