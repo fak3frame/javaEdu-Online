@@ -2510,7 +2510,9 @@ public class Wstep {
         }
         i korzystac w kazdym tescie zmiennej one z podanymi parametrami
 
-
+        Istnieja takze metody
+        @After - uruchamina po kazdym tescie
+        @BeforeClass - uruchamiana przed wszystkimi testame
 
          */
 
