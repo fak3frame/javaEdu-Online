@@ -14,7 +14,7 @@ public class Item {
         this.price = price;
         this.name = name;
     }
-
+   
     @Override
     public int hashCode() {
         return Objects.hash(price, name);
@@ -31,4 +31,5 @@ public class Item {
         } else
             return false;
     }
+
 }
