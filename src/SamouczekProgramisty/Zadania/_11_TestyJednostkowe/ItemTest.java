@@ -13,7 +13,7 @@ public class ItemTest {
         item = new Item(100, "cell Phone");
     }
     @Test
-    private void isPriceIsBggerThanZero(){
+    private void isPriceBggerThanZero(){
         try{
             item = new Item(0, "x");
             fail();
@@ -29,5 +29,17 @@ public class ItemTest {
             assertEquals("Price cant be less than 1", ex.getMessage();
         }
     }
+    @Test
+    private void doesTheProductHaveAName(){
+        try{
+            item = new Item(10,"");
+            fail();
+        }
+        catch (IllegalArgumentException ex){
+            assertEquals("Name of prodct need a name", ex.getMessage());
+        }
+    }
+
+
 
 }

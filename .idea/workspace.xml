@@ -83,8 +83,8 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            <state relative-caret-position="544">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#196#197#0" expanded="true" />
@@ -468,13 +468,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00931" summary="SanouczekProgramisty Test Driven Development 4">
-      <created>1532642084536</created>
-      <option name="number" value="00931" />
-      <option name="presentableId" value="LOCAL-00931" />
-      <option name="project" value="LOCAL" />
-      <updated>1532642084537</updated>
-    </task>
     <task id="LOCAL-00932" summary="SanouczekProgramisty Test Driven Development 5">
       <created>1532642103936</created>
       <option name="number" value="00932" />
@@ -811,7 +804,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532810293505</updated>
     </task>
-    <option name="localTasksCounter" value="980" />
+    <task id="LOCAL-00980" summary="SanouczekProgramisty Test Driven Development 53">
+      <created>1532810429017</created>
+      <option name="number" value="00980" />
+      <option name="presentableId" value="LOCAL-00980" />
+      <option name="project" value="LOCAL" />
+      <updated>1532810429019</updated>
+    </task>
+    <option name="localTasksCounter" value="981" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -883,7 +883,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 28" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 29" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 30" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 31" />
@@ -908,7 +907,8 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 50" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 51" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 52" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 52" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 53" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 53" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1226,8 +1226,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="544">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#196#197#0" expanded="true" />
