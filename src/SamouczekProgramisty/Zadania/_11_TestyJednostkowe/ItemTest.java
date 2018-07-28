@@ -13,7 +13,7 @@ public class ItemTest {
         item = new Item(100, "cell Phone");
     }
     @Test
-    private void isPriceBiggerThanZero(){
+    private void priceShouldBeBiggerThanZero(){
         try{
             new Item(0, "x");
             fail();
@@ -30,7 +30,7 @@ public class ItemTest {
         }
     }
     @Test
-    private void doesTheProductHaveAName(){
+    private void productHasToHaveAName(){
         try{
             new Item(10,"");
             fail();
@@ -40,12 +40,13 @@ public class ItemTest {
         }
     }
     @Test
-    private void doesTheSameProductsAreEquals(){
+    private void sameProductsHaveToBeEquals(){
         assertEquals(new Item(10, "x"), new Item(10, "x"));
     }
-    @Test void doesTheSamePriceAndDiffrentNameArentEquals(){
+    @Test void productWithSamePriceAndDiffrentNameCantBeEquals(){
         assertNotEquals(new Item(10, "xx"), new Item(10, "x"));
     }
+
 
 
 
