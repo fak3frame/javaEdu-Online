@@ -43,6 +43,10 @@ public class ItemTest {
     private void doesTheSameProductsAreEquals(){
         assertEquals(new Item(10, "x"), new Item(10, "x"));
     }
+    @Test void doesTheSamePriceAndDiffrentNameArentEquals(){
+        assertNotEquals(new Item(10, "xx"), new Item(10, "x"));
+    }
+
 
 
 
