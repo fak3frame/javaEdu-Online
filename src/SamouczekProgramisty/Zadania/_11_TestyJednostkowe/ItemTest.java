@@ -52,8 +52,4 @@ public class ItemTest {
         assertNotEquals(new Item(20, "x").hashCode(), new Item(20, "y").hashCode());
         assertNotEquals(new Item(20, "x").hashCode(), new Item(10, "x").hashCode());
     }
-
-
-
-
 }
