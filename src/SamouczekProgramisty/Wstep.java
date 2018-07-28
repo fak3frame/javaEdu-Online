@@ -2422,12 +2422,6 @@ public class Wstep {
         Test jednostkowy to metoda testujaca metode/jednostke w innej klasie z dodana
          adnotacja @Test
 
-        Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
-
-        Klasa testujaca inna klase nazwya sie tak samo jak ta klasa z dopisanym Test i
-         powinna byc w innym folderze niz klasa np wszystkie klasy testowe moge byc w folderze
-         Test
-
         TDD sklada sie z 3 faz:
         -Red : napisanie testow funckjinalnosci przed napsianiem kodu.
         Napisany test nie moze sie powiesc bo nie napisalem jeszcze funkcjonalnosci
@@ -2440,6 +2434,14 @@ public class Wstep {
         -Refactor : Zmieniam kod aby byl "czysty" np dodanie metody ktora
         bedzie spelniac funkcjonalnosci aby nie powtrzac kodu czy stworzenie innej
         klasy.
+
+        Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
+
+        Klasa testujaca inna klase nazwya sie tak samo jak ta klasa z dopisanym Test i
+         powinna byc w innym folderze niz klasa np wszystkie klasy testowe moge byc w folderze
+         Test
+
+        Metody testujace powinny nazywac sie tak aby zrozumiec co testuja
 
         Założeniem TDD jest pisanie testow do jak najkrotszej ilosci kodu
 
