@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -43,8 +42,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="2504" column="57" selection-start-line="2504" selection-start-column="57" selection-end-line="2504" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="2428" column="13" selection-start-line="2428" selection-start-column="13" selection-end-line="2428" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -446,20 +445,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00921" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 48">
-      <created>1532521881491</created>
-      <option name="number" value="00921" />
-      <option name="presentableId" value="LOCAL-00921" />
-      <option name="project" value="LOCAL" />
-      <updated>1532521881491</updated>
-    </task>
-    <task id="LOCAL-00922" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 49">
-      <created>1532523657884</created>
-      <option name="number" value="00922" />
-      <option name="presentableId" value="LOCAL-00922" />
-      <option name="project" value="LOCAL" />
-      <updated>1532523657884</updated>
-    </task>
     <task id="LOCAL-00923" summary="SanouczekProgramisty KLASY WEWNETRZNE I ANONIMOWE 50">
       <created>1532524082534</created>
       <option name="number" value="00923" />
@@ -789,7 +774,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532703812058</updated>
     </task>
-    <option name="localTasksCounter" value="970" />
+    <task id="LOCAL-00970" summary="SanouczekProgramisty Test Driven Development 43">
+      <created>1532807861557</created>
+      <option name="number" value="00970" />
+      <option name="presentableId" value="LOCAL-00970" />
+      <option name="project" value="LOCAL" />
+      <updated>1532807861559</updated>
+    </task>
+    <task id="LOCAL-00971" summary="SanouczekProgramisty Test Driven Development 44">
+      <created>1532808489693</created>
+      <option name="number" value="00971" />
+      <option name="presentableId" value="LOCAL-00971" />
+      <option name="project" value="LOCAL" />
+      <updated>1532808489694</updated>
+    </task>
+    <option name="localTasksCounter" value="972" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -861,8 +860,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 18" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 19" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 20" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 21" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 22" />
@@ -886,7 +883,9 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 40" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 41" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 42" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 42" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 43" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 44" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 44" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1199,8 +1198,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="2504" column="57" selection-start-line="2504" selection-start-column="57" selection-end-line="2504" selection-end-column="57" />
+        <state relative-caret-position="272">
+          <caret line="2428" column="13" selection-start-line="2428" selection-start-column="13" selection-end-line="2428" selection-end-column="13" />
         </state>
       </provider>
     </entry>

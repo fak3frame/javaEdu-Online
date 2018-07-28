@@ -2424,7 +2424,9 @@ public class Wstep {
 
         Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
 
-        Klasa testujaca inna klase nazwya sie tak samo jak ta klasa z dopisanym Test
+        Klasa testujaca inna klase nazwya sie tak samo jak ta klasa z dopisanym Test i
+         powinna byc w innym folderze niz klasa np wszystkie klasy testowe moge byc w folderze
+         Test
 
         TDD sklada sie z 3 faz:
         -Red : napisanie testow funckjinalnosci przed napsianiem kodu.
@@ -2513,6 +2515,8 @@ public class Wstep {
         Istnieja takze metody
         @After - uruchamina po kazdym tescie
         @BeforeClass - uruchamiana przed wszystkimi testame
+        @AfterClass - uruchamiana po wszytkich testach
+
 
          */
 
