@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +42,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="2443" column="73" selection-start-line="2443" selection-start-column="73" selection-end-line="2443" selection-end-column="73" />
+            <state relative-caret-position="-217">
+              <caret line="871" column="34" selection-start-line="871" selection-start-column="26" selection-end-line="871" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -82,14 +83,14 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+            <state relative-caret-position="566">
+              <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#196#197#0" expanded="true" />
                 <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -469,27 +470,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00934" summary="SanouczekProgramisty Test Driven Development 7">
-      <created>1532642140678</created>
-      <option name="number" value="00934" />
-      <option name="presentableId" value="LOCAL-00934" />
-      <option name="project" value="LOCAL" />
-      <updated>1532642140678</updated>
-    </task>
-    <task id="LOCAL-00935" summary="SanouczekProgramisty Test Driven Development 8">
-      <created>1532642169864</created>
-      <option name="number" value="00935" />
-      <option name="presentableId" value="LOCAL-00935" />
-      <option name="project" value="LOCAL" />
-      <updated>1532642169864</updated>
-    </task>
-    <task id="LOCAL-00936" summary="SanouczekProgramisty Test Driven Development 9">
-      <created>1532642180993</created>
-      <option name="number" value="00936" />
-      <option name="presentableId" value="LOCAL-00936" />
-      <option name="project" value="LOCAL" />
-      <updated>1532642180993</updated>
-    </task>
     <task id="LOCAL-00937" summary="SanouczekProgramisty Test Driven Development 10">
       <created>1532642191955</created>
       <option name="number" value="00937" />
@@ -812,7 +792,28 @@
       <option name="project" value="LOCAL" />
       <updated>1532810898321</updated>
     </task>
-    <option name="localTasksCounter" value="983" />
+    <task id="LOCAL-00983" summary="SanouczekProgramisty Test Driven Development 56">
+      <created>1532811228432</created>
+      <option name="number" value="00983" />
+      <option name="presentableId" value="LOCAL-00983" />
+      <option name="project" value="LOCAL" />
+      <updated>1532811228432</updated>
+    </task>
+    <task id="LOCAL-00984" summary="SanouczekProgramisty Test Driven Development 57">
+      <created>1532811370585</created>
+      <option name="number" value="00984" />
+      <option name="presentableId" value="LOCAL-00984" />
+      <option name="project" value="LOCAL" />
+      <updated>1532811370585</updated>
+    </task>
+    <task id="LOCAL-00985" summary="SanouczekProgramisty Test Driven Development 58">
+      <created>1532811711186</created>
+      <option name="number" value="00985" />
+      <option name="presentableId" value="LOCAL-00985" />
+      <option name="project" value="LOCAL" />
+      <updated>1532811711186</updated>
+    </task>
+    <option name="localTasksCounter" value="986" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -884,9 +885,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 31" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 32" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 33" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 34" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 35" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 36" />
@@ -909,7 +907,10 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 53" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 54" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 55" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 55" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 56" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 57" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 58" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 58" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1178,13 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="2443" column="73" selection-start-line="2443" selection-start-column="73" selection-end-line="2443" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1203,6 +1197,13 @@
             <element signature="e#344#345#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-217">
+          <caret line="871" column="34" selection-start-line="871" selection-start-column="26" selection-end-line="871" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1227,14 +1228,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+        <state relative-caret-position="566">
+          <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#196#197#0" expanded="true" />
             <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
           </folding>
         </state>
       </provider>

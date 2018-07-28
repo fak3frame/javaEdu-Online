@@ -46,7 +46,14 @@ public class ItemTest {
     @Test void productWithSamePriceAndDiffrentNameCantBeEquals(){
         assertNotEquals(new Item(10, "xx"), new Item(10, "x"));
     }
-
+    @Test
+    private void productsWithSamePriceAndNameHaveToHaveSameHashCode(){
+        assertEquals(new Item(20,"x").hashCode(), new Item(20, "x").hashCode());
+    }
+    private void productsWithDiffrentPriceOrNameCantHaveSameHashCode(){
+        assertNotEquals(new Item(20, "x").hashCode(), new Item(20, "y").hashCode());
+        assertNotEquals(new Item(20, "x").hashCode(), new Item(10, "x").hashCode());
+    }
 
 
 
