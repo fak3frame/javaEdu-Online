@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -82,12 +83,12 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="493">
+              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -467,20 +468,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-00929" summary="SanouczekProgramisty Test Driven Development 2">
-      <created>1532526530160</created>
-      <option name="number" value="00929" />
-      <option name="presentableId" value="LOCAL-00929" />
-      <option name="project" value="LOCAL" />
-      <updated>1532526530160</updated>
-    </task>
-    <task id="LOCAL-00930" summary="SanouczekProgramisty Test Driven Development 3">
-      <created>1532526678307</created>
-      <option name="number" value="00930" />
-      <option name="presentableId" value="LOCAL-00930" />
-      <option name="project" value="LOCAL" />
-      <updated>1532526678307</updated>
-    </task>
     <task id="LOCAL-00931" summary="SanouczekProgramisty Test Driven Development 4">
       <created>1532642084536</created>
       <option name="number" value="00931" />
@@ -810,7 +797,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532809965352</updated>
     </task>
-    <option name="localTasksCounter" value="978" />
+    <task id="LOCAL-00978" summary="SanouczekProgramisty Test Driven Development 51">
+      <created>1532810086689</created>
+      <option name="number" value="00978" />
+      <option name="presentableId" value="LOCAL-00978" />
+      <option name="project" value="LOCAL" />
+      <updated>1532810086689</updated>
+    </task>
+    <task id="LOCAL-00979" summary="SanouczekProgramisty Test Driven Development 52">
+      <created>1532810293505</created>
+      <option name="number" value="00979" />
+      <option name="presentableId" value="LOCAL-00979" />
+      <option name="project" value="LOCAL" />
+      <updated>1532810293505</updated>
+    </task>
+    <option name="localTasksCounter" value="980" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -882,8 +883,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 26" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 27" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 28" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 29" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 30" />
@@ -907,7 +906,9 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 48" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 49" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 50" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 50" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 51" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 52" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 52" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1169,20 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1201,6 +1188,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,12 +1226,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="493">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
           </folding>
         </state>
       </provider>
