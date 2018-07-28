@@ -35,5 +35,4 @@ public class OneTest {
         assertTrue(one.czyJestWPrzedziale(12));
     }
 
-
 }
