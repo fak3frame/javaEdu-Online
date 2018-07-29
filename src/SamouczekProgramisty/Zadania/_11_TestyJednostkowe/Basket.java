@@ -30,8 +30,9 @@ public class Basket {
 
     public double getOrderPrice(){
         double ammount = 0;
+        System.out.println();
         for(Map.Entry<Item, Integer> x : orderedItems.entrySet()){
-            ammount+=x.getValue();
+            ammount+=x.getKey().getPrice()*x.getValue();
         }
         return ammount;
     }
@@ -39,14 +40,18 @@ public class Basket {
     public static void main(String[] args) {
         Basket b = new Basket();
         List<Item> items = Arrays.asList(
-                new Item("Chair", 20.99),
-                new Item("Cell Phone", 200.99),
-                new Item("Shoes", 50.99),
-                new Item("TV", 999.99)
+                new Item("Chair", 100),
+                new Item("Cell Phone", 300),
+                new Item("Shoes", 50),
+                new Item("TV", 2000)
                 );
+                //2450
         for(int i = 0; i<4; i++){
-            b.addItem();
+            b.addItem(items.get(i),1);
         }
+        Item book = new Item ("Book", 30);
+        b.addItem(book,7);//210 = 2660
+        b.removeItem(book, 1);//-30 = 2630
 
         System.out.println(b.getOrderPrice());
     }
