@@ -28,4 +28,16 @@ public class Basket {
         else
             orderedItems.replace(item, ammountToReplace);
     }
+
+    public double getOrderPrice(){
+        double ammount = 0;
+        for(Map.Entry<Item, Integer> x : orderedItems.entrySet()){
+            ammount+=x.getValue();
+        }
+        return ammount;
+    }
+
+    public static void main(String[] args) {
+
+    }
 }
