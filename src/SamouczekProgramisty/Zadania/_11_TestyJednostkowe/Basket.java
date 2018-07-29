@@ -5,6 +5,9 @@ import java.util.*;
 public class Basket {
     Map <Item, Integer> orderedItems = new HashMap<>();
 
+    public void addItem(Item item){
+        orderedItems.put(item, 1);
+    }
     public void addItem(Item item, int ammount){
         if(ammount<=0)
             throw new IllegalArgumentException("Ammount of prduct must be more than 0");
@@ -14,6 +17,14 @@ public class Basket {
         }
         else
             orderedItems.put(item, ammount);
+    }
+    public void removeItem(Item item){
+        if(!orderedItems.containsKey(item))
+            throw new IllegalArgumentException("There is no more that product in basket");
+        if(orderedItems.get(item)==1)
+            orderedItems.remove(item);
+        else
+            orderedItems.replace(item, orderedItems.get(item)-1);
     }
     public void removeItem(Item item, int ammount){
         if(!orderedItems.containsKey(item))

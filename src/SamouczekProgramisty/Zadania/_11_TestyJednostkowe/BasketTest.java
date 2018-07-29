@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 import static org.junit.Assert.*;
 
@@ -19,16 +18,22 @@ public class BasketTest {
         basket = new Basket();
     }
     @Test
-    public void canAddItemToBasket(){
+    public void canAddOneItemToBasket(){
+        basket.addItem(item);
+        Map<Item,Integer> map = createOrder(item, 1);
+        assertEquals(basket.getOrder(), map);
+    }
+    @Test
+    public void canAddItemsToBasket(){
         basket.addItem(item, 10);
         Map<Item,Integer> map = createOrder(item, 10);
         assertEquals(basket.getOrder(), map);
     }
     @Test
     public void canAddSameItemstoBasket(){
+        basket.addItem(item);
         basket.addItem(item, 10);
-        basket.addItem(item, 10);
-        Map<Item,Integer> map = createOrder(item, 20);
+        Map<Item,Integer> map = createOrder(item, 11);
         assertEquals(basket.getOrder(), map);
     }
     @Test
@@ -50,13 +55,21 @@ public class BasketTest {
     }
     @Test
     public void userCantRemoveAmmountOfProductBiggerThanAmmountInBasket(){
-        basket.addItem(item, 10);
+        basket.addItem(item, 1);
         try{
-            basket.removeItem(item, 11);
+            basket.removeItem(item, 2);
             fail();
         }
         catch (IllegalArgumentException ex){
             assertEquals("You cant remove ammount of product bigger than in basket", ex.getMessage());
+        }
+        try{
+            basket.removeItem(item);
+            basket.removeItem(item);
+            fail();
+        }
+        catch (IllegalArgumentException ex){
+            assertEquals("There is no more that product in basket", ex.getMessage());
         }
     }
     @Test
@@ -80,14 +93,21 @@ public class BasketTest {
     @Test
     public void userCantRemoveProductFromBasketIfItIsNotThere(){
         try{
-            basket.removeItem(item, 10);
-            basket.removeItem(item, 10);
+            basket.removeItem(item, 1);
             fail();
         }
         catch(IllegalArgumentException ex){
             assertEquals("There is no more that product in basket", ex.getMessage());
         }
+        try{
+            basket.removeItem(item);
+            fail();
+        }
+        catch(IllegalArgumentException ex) {
+            assertEquals("There is no more that product in basket", ex.getMessage());
+        }
     }
+
 
     private static Map<Item, Integer> createOrder(Object ... items){
         Map<Item, Integer> map = new HashMap<>();
