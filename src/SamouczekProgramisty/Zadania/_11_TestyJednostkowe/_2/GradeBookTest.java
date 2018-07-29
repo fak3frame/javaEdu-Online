@@ -4,6 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.beans.Transient;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -32,7 +34,8 @@ public class GradeBookTest {
     @Test
     public void cantAddExistingSubjectToGradeBook(){
         try{
-            gradeBookWithSubject.addSubject(SUBJECT);
+            Subject s = new Subject(Subject)
+            gradeBookWithSubject.addSubject(s);
             fail();
         }
         catch (IllegalArgumentException ex){
@@ -41,7 +44,14 @@ public class GradeBookTest {
     }
     @Test
     public void canGetSubjectFromGradeBook(){
+        Subject s = gradeBookWithSubject.getSubject(SUBJECT);
+        assertEquals(SUBJECT, s.getName());
+    }
+    @Test
+    public void canAddNoteToSubject(){
+        gradeBookWithSubject.addNote(SUBJECT, 2);
 
     }
+    public void canGet
 
 }

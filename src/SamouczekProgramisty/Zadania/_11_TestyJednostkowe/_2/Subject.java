@@ -19,4 +19,10 @@ public class Subject {
         }
         return summary/grades.size();
     }
+    public String getName() {
+        return name;
+    }
+    public List<Integer> getGrades() {
+        return grades;
+    }
 }
