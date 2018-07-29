@@ -37,6 +37,17 @@ public class Basket {
         return ammount;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder toShow = new StringBuilder();
+        for(Map.Entry<Item,Integer> x : orderedItems.entrySet()){
+            toShow.append("item: "+x.getKey().getName()+
+                    " price: "+x.getKey().getPrice()+
+                    " ammount: "+x.getValue()+"\n");
+        }
+        return toShow.toString();
+    }
+
     public static void main(String[] args) {
         Basket b = new Basket();
         List<Item> items = Arrays.asList(
@@ -53,9 +64,10 @@ public class Basket {
         b.addItem(book,7);//210 = 2660
         b.removeItem(book, 1);//-30 = 2630
 
+        System.out.println();
+        System.out.println(b);
+
         System.out.println("Summary price");
         System.out.println(b.getOrderPrice());
-
-        System.out.println();
     }
 }
