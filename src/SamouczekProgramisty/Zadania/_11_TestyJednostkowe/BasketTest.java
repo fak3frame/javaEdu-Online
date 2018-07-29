@@ -3,6 +3,9 @@ package SamouczekProgramisty.Zadania._11_TestyJednostkowe;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 import static org.junit.Assert.*;
 
 public class BasketTest {
@@ -14,6 +17,10 @@ public class BasketTest {
         item = new Item("Toy", 12.99);
         basket = new Basket();
         basket.addItem(item, 10);
+    }
+    @Test
+    public void canAddItemToBasket(){
+
     }
     @Test
     public void userHaveToAddMinimOneProductAsAmmountToBasket(){
@@ -69,5 +76,15 @@ public class BasketTest {
         catch(IllegalArgumentException ex){
             assertEquals("There is no more that product in basket", ex.getMessage());
         }
+    }
+
+    private static Map<Item, Integer> createOrder(Object ... items){
+        Map<Item, Integer> map = new TreeMap<>();
+        for(int i = 0; i<items.length; i+=2){
+            Item item = (Item)items[i];
+            Integer integer = (Integer)item[i+1];
+            map.put(item,integer);
+        }
+        return map;
     }
 }
