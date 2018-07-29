@@ -12,14 +12,14 @@ public class ItemTest {
     @Test
     public void priceShouldBeBiggerThanZero(){
         try{
-            new Item(0, "x");
+            new Item("x", 0);
             fail();
         }
         catch (IllegalArgumentException ex){
             assertEquals("Price cant be less than 1", ex.getMessage());
         }
         try {
-            new Item(-1, "x");
+            new Item("x", -1);
             fail();
         }
         catch (IllegalArgumentException ex){
@@ -29,7 +29,7 @@ public class ItemTest {
     @Test
     public void productHasToHaveAName(){
         try{
-            new Item(10,"");
+            new Item("",10);
             fail();
         }
         catch (IllegalArgumentException ex){
@@ -38,18 +38,18 @@ public class ItemTest {
     }
     @Test
     public void sameProductsHaveToBeEquals(){
-        assertEquals(new Item(10, "x"), new Item(10, "x"));
+        assertEquals(new Item("x", 10), new Item("x", 10));
     }
     @Test
     public void productWithSamePriceAndDiffrentNameCantBeEquals(){
-        assertNotEquals(new Item(10, "xx"), new Item(10, "x"));
+        assertNotEquals(new Item("xx", 10), new Item("x", 10));
     }
     @Test
     public void productsWithSamePriceAndNameHaveToHaveSameHashCode(){
-        assertEquals(new Item(20,"x").hashCode(), new Item(20, "x").hashCode());
+        assertEquals(new Item("x",20).hashCode(), new Item("x", 20).hashCode());
     }
     public void productsWithDiffrentPriceOrNameCantHaveSameHashCode(){
-        assertNotEquals(new Item(20, "x").hashCode(), new Item(20, "y").hashCode());
-        assertNotEquals(new Item(20, "x").hashCode(), new Item(10, "x").hashCode());
+        assertNotEquals(new Item("x", 20).hashCode(), new Item("y", 20).hashCode());
+        assertNotEquals(new Item("x", 20).hashCode(), new Item("x", 10).hashCode());
     }
 }

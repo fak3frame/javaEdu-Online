@@ -3,10 +3,10 @@ package SamouczekProgramisty.Zadania._11_TestyJednostkowe;
 import java.util.Objects;
 
 public class Item {
-    private double price;
     private String name;
+    private double price;
 
-    public Item(double price, String name) {
+    public Item(String name, double price) {
         if (price <= 0)
             throw new IllegalArgumentException("Price cant be less than 1");
         else if(name.length()<=0)

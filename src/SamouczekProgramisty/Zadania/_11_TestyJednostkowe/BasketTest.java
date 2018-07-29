@@ -11,8 +11,9 @@ public class BasketTest {
 
     @Before
     public void setUp(){
-        item = new Item(12.33, "Toy");
+        item = new Item("Toy", 12.99);
         basket = new Basket();
+        basket.addItem(item, 10);
     }
     @Test
     public void userHaveToAddMinimOneProductAsAmmountToBasket(){
@@ -34,7 +35,28 @@ public class BasketTest {
     @Test
     public void userCantRemoveAmmountOfProductBiggerThanAmmountInBasket(){
         try{
-            if()
+            basket.removeItem(item, 11);
+            fail();
+        }
+        catch (IllegalArgumentException ex){
+            assertEquals("You cant remove ammount of product bigger than in basket", ex.getMessage());
+        }
+    }
+    @Test
+    public void userCanOnlyRemoveMoreThanZeroOfProductFromBasket(){
+        try{
+            basket.removeItem(item, 0);
+            fail();
+        }
+        catch (IllegalArgumentException ex){
+            assertEquals("You cant remove less than 0 of product", ex.getMessage());
+        }
+        try{
+            basket.removeItem(item, -0);
+            fail();
+        }
+        catch (IllegalArgumentException ex){
+            assertEquals("You cant remove less than 0 of product", ex.getMessage());
         }
     }
 }
