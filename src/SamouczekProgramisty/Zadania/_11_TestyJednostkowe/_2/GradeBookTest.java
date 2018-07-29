@@ -75,7 +75,9 @@ public class GradeBookTest {
     }
     @Test void canGetAverageNodesFromGradeBook(){
         gradeBookWithSubject.addNote(SUBJECT, 4);
+        gradeBookWithSubject.addSubject(SUBJECT2);
         gradeBookWithSubject.addNote(SUBJECT2, 6);
+
 
     }
 
