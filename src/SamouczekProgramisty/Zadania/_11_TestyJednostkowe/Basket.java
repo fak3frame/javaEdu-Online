@@ -47,6 +47,9 @@ public class Basket {
         }
         return toShow.toString();
     }
+    public Map<Item, Integer> getOrder() {
+        return Collections.unmodifiableMap(orderedItems);
+    }
 
     public static void main(String[] args) {
         Basket b = new Basket();
@@ -63,6 +66,8 @@ public class Basket {
         Item book = new Item ("Book", 30);
         b.addItem(book,7);//210 = 2660
         b.removeItem(book, 1);//-30 = 2630
+
+        b.addItem(book,1);
 
         System.out.println();
         System.out.println(b);

@@ -3,6 +3,7 @@ package SamouczekProgramisty.Zadania._11_TestyJednostkowe;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,11 +17,19 @@ public class BasketTest {
     public void setUp(){
         item = new Item("Toy", 12.99);
         basket = new Basket();
-        basket.addItem(item, 10);
     }
     @Test
     public void canAddItemToBasket(){
-
+        basket.addItem(item, 10);
+        Map<Item,Integer> map = createOrder(item, 10);
+        assertEquals(basket.getOrder(), map);
+    }
+    @Test
+    public void canAddSameItemstoBasket(){
+        basket.addItem(item, 10);
+        basket.addItem(item, 10);
+        Map<Item,Integer> map = createOrder(item, 20);
+        assertEquals(basket.getOrder(), map);
     }
     @Test
     public void userHaveToAddMinimOneProductAsAmmountToBasket(){
@@ -41,6 +50,7 @@ public class BasketTest {
     }
     @Test
     public void userCantRemoveAmmountOfProductBiggerThanAmmountInBasket(){
+        basket.addItem(item, 10);
         try{
             basket.removeItem(item, 11);
             fail();
@@ -51,6 +61,7 @@ public class BasketTest {
     }
     @Test
     public void userCanOnlyRemoveMoreThanZeroOfProductFromBasket(){
+        basket.addItem(item, 10);
         try{
             basket.removeItem(item, 0);
             fail();
@@ -79,10 +90,10 @@ public class BasketTest {
     }
 
     private static Map<Item, Integer> createOrder(Object ... items){
-        Map<Item, Integer> map = new TreeMap<>();
+        Map<Item, Integer> map = new HashMap<>();
         for(int i = 0; i<items.length; i+=2){
             Item item = (Item)items[i];
-            Integer integer = (Integer)item[i+1];
+            Integer integer = (Integer)items[i+1];
             map.put(item,integer);
         }
         return map;
