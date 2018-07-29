@@ -3,6 +3,7 @@ package SamouczekProgramisty.Zadania._11_TestyJednostkowe;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,6 +53,27 @@ public class BasketTest {
         catch (IllegalArgumentException ex){
             assertEquals("Ammount of prduct must be more than 0", ex.getMessage());
         }
+    }
+    @Test
+    public void canRemoveItemFromBasket(){
+        basket.addItem(item, 2);
+        basket.removeItem(item);
+        Map<Item,Integer> map = createOrder(item, 1);
+        assertEquals(basket.getOrder(), map);
+    }
+    @Test
+    public void canRemoveItemsFromBakset(){
+        basket.addItem(item, 10);
+        basket.removeItem(item, 5);
+        Map<Item,Integer> map = createOrder(item, 5);
+        assertEquals(basket.getOrder(), map);
+    }
+    @Test
+    public void canRemoveAllItemsFromBasket(){
+        basket.addItem(item, 1);
+        basket.removeItem(item);
+        Map<Item,Integer> map = Collections.emptyMap();
+        assertEquals(basket.getOrder(), map);
     }
     @Test
     public void userCantRemoveAmmountOfProductBiggerThanAmmountInBasket(){
@@ -107,6 +129,21 @@ public class BasketTest {
             assertEquals("There is no more that product in basket", ex.getMessage());
         }
     }
+    @Test
+    public void canComputePriceOfOrderWithOneItem(){
+        basket.addItem(item ,3);
+        double ammount = item.getPrice() * 3;
+        assertEquals(basket.getOrderPrice(), ammount, 0.001);
+    }
+    @Test
+    public void canComputePriceOfOrderWithManyItems(){
+        Item pc = new Item("PC", 1000);
+        basket.addItem(item ,3);
+        basket.addItem(pc, 2);
+        double ammount = item.getPrice() * 3 + pc.getPrice()*2;
+        assertEquals(basket.getOrderPrice(), ammount, 0.001);
+    }
+
 
 
     private static Map<Item, Integer> createOrder(Object ... items){
