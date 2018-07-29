@@ -8,7 +8,12 @@ public class Basket {
     public void addItem(Item item, int ammount){
         if(ammount<=0)
             throw new IllegalArgumentException("Ammount of prduct must be more than 0");
-        orderedItems.put(item, ammount);
+        if(orderedItems.containsKey(item)){
+            int newAmmount = orderedItems.get(item);
+            orderedItems.replace(item,newAmmount+ammount);
+        }
+        else
+            orderedItems.put(item, ammount);
     }
     public void removeItem(Item item, int ammount){
         if(!orderedItems.containsKey(item))
@@ -67,7 +72,7 @@ public class Basket {
         b.addItem(book,7);//210 = 2660
         b.removeItem(book, 1);//-30 = 2630
 
-        b.addItem(book,1);
+        b.addItem(book,1);//+30 = 2660
 
         System.out.println();
         System.out.println(b);
