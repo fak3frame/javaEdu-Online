@@ -59,4 +59,15 @@ public class BasketTest {
             assertEquals("You cant remove less than 0 of product", ex.getMessage());
         }
     }
+    @Test
+    public void userCantRemoveProductFromBasketIfItIsNotThere(){
+        try{
+            basket.removeItem(item, 10);
+            basket.removeItem(item, 10);
+            fail();
+        }
+        catch(IllegalArgumentException ex){
+            assertEquals("There is no more that product in basket", ex.getMessage());
+        }
+    }
 }
