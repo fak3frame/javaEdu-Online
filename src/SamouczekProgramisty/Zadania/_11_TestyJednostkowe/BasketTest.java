@@ -143,6 +143,23 @@ public class BasketTest {
         double ammount = item.getPrice() * 3 + pc.getPrice()*2;
         assertEquals(basket.getOrderPrice(), ammount, 0.001);
     }
+    @Test
+    public void canPrintOrder(){
+        basket.addItem(item);
+        Item pc = new Item("PC", 2000);
+        basket.addItem(pc, 3);
+        StringBuilder out = new StringBuilder();
+
+        out.append("item: "+item.getName()+
+                    " price: "+item.getPrice()+
+                    " ammount: "+"1"+"\n");
+        out.append("item: "+pc.getName()+
+                " price: "+pc.getPrice()+
+                " ammount: "+"3"+"\n");
+        //System.out.println(out.toString());
+        //System.out.println(basket);
+        //assertEquals(out.toString(), basket);
+    }
 
     private static Map<Item, Integer> createOrder(Object ... items){
         Map<Item, Integer> map = new HashMap<>();
