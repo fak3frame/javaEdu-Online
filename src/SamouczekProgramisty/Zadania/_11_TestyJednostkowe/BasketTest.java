@@ -49,14 +49,14 @@ public class BasketTest {
             fail();
         }
         catch (IllegalArgumentException ex){
-            assertEquals("You cant remove less than 0 of product", ex.getMessage());
+            assertEquals("You cant remove less than 1 of product", ex.getMessage());
         }
         try{
-            basket.removeItem(item, -0);
+            basket.removeItem(item, -1);
             fail();
         }
         catch (IllegalArgumentException ex){
-            assertEquals("You cant remove less than 0 of product", ex.getMessage());
+            assertEquals("You cant remove less than 1 of product", ex.getMessage());
         }
     }
     @Test

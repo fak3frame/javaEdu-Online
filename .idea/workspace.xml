@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +52,11 @@
       <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="408">
+              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,8 +64,8 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="413">
+              <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -198,10 +200,10 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java" />
       </list>
     </option>
   </component>
@@ -289,7 +291,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Item">
+  <component name="RunManager" selected="JUnit.BasketTest">
+    <configuration name="Basket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.Basket" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Item" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.Item" />
       <module name="javaStartMojSkrypt" />
@@ -303,6 +316,52 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="BasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaStartMojSkrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.BasketTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BasketTest.userCanOnlyRemoveMoreThanZeroOfProductFromBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaStartMojSkrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.BasketTest" />
+      <option name="METHOD_NAME" value="userCanOnlyRemoveMoreThanZeroOfProductFromBasket" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaStartMojSkrypt" />
@@ -318,75 +377,6 @@
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.ItemTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ItemTest.priceShouldBeBiggerThanZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaStartMojSkrypt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.ItemTest" />
-      <option name="METHOD_NAME" value="priceShouldBeBiggerThanZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ItemTest.productHasToHaveAName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaStartMojSkrypt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.ItemTest" />
-      <option name="METHOD_NAME" value="productHasToHaveAName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ItemTest.productWithSamePriceAndDiffrentNameCantBeEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaStartMojSkrypt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.ItemTest" />
-      <option name="METHOD_NAME" value="productWithSamePriceAndDiffrentNameCantBeEquals" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -435,19 +425,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ItemTest.priceShouldBeBiggerThanZero" />
       <item itemvalue="JUnit.ItemTest" />
-      <item itemvalue="JUnit.ItemTest.productWithSamePriceAndDiffrentNameCantBeEquals" />
-      <item itemvalue="JUnit.ItemTest.productHasToHaveAName" />
       <item itemvalue="Application.Item" />
+      <item itemvalue="JUnit.BasketTest" />
+      <item itemvalue="JUnit.BasketTest.userCanOnlyRemoveMoreThanZeroOfProductFromBasket" />
+      <item itemvalue="Application.Basket" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasketTest" />
+        <item itemvalue="JUnit.BasketTest.userCanOnlyRemoveMoreThanZeroOfProductFromBasket" />
+        <item itemvalue="Application.Basket" />
         <item itemvalue="Application.Item" />
         <item itemvalue="JUnit.ItemTest" />
-        <item itemvalue="JUnit.ItemTest.productHasToHaveAName" />
-        <item itemvalue="JUnit.ItemTest.productWithSamePriceAndDiffrentNameCantBeEquals" />
-        <item itemvalue="JUnit.ItemTest.priceShouldBeBiggerThanZero" />
       </list>
     </recent_temporary>
   </component>
@@ -461,20 +451,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00945" summary="SanouczekProgramisty Test Driven Development 18">
-      <created>1532642282240</created>
-      <option name="number" value="00945" />
-      <option name="presentableId" value="LOCAL-00945" />
-      <option name="project" value="LOCAL" />
-      <updated>1532642282241</updated>
-    </task>
-    <task id="LOCAL-00946" summary="SanouczekProgramisty Test Driven Development 19">
-      <created>1532642292452</created>
-      <option name="number" value="00946" />
-      <option name="presentableId" value="LOCAL-00946" />
-      <option name="project" value="LOCAL" />
-      <updated>1532642292452</updated>
     </task>
     <task id="LOCAL-00947" summary="SanouczekProgramisty Test Driven Development 20">
       <created>1532642303612</created>
@@ -805,19 +781,24 @@
       <option name="project" value="LOCAL" />
       <updated>1532865562872</updated>
     </task>
-    <option name="localTasksCounter" value="994" />
+    <task id="LOCAL-00994" summary="SanouczekProgramisty Test Driven Development 67">
+      <created>1532866862445</created>
+      <option name="number" value="00994" />
+      <option name="presentableId" value="LOCAL-00994" />
+      <option name="project" value="LOCAL" />
+      <updated>1532866862445</updated>
+    </task>
+    <task id="LOCAL-00995" summary="SanouczekProgramisty Test Driven Development 68">
+      <created>1532867350014</created>
+      <option name="number" value="00995" />
+      <option name="presentableId" value="LOCAL-00995" />
+      <option name="project" value="LOCAL" />
+      <updated>1532867350014</updated>
+    </task>
+    <option name="localTasksCounter" value="996" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OneTest_czyWyrzicWyjatekZlychParametrow2 - 2018.07.27 at 16h 51m 52s.xml">
-      <configuration name="OneTest.czyWyrzicWyjatekZlychParametrow2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OneTest - 2018.07.27 at 16h 51m 55s.xml">
-      <configuration name="OneTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemTest_priceShouldBeBiggerThanZero - 2018.07.28 at 23h 17m 11s.xml">
-      <configuration name="ItemTest.priceShouldBeBiggerThanZero" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ItemTest - 2018.07.28 at 23h 17m 26s.xml">
       <configuration name="ItemTest" configurationId="JUnit" />
     </history-entry>
@@ -839,6 +820,15 @@
     <history-entry file="ItemTest - 2018.07.28 at 23h 20m 40s.xml">
       <configuration name="ItemTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BasketTest_userCanOnlyRemoveMoreThanZeroOfProductFromBasket - 2018.07.29 at 14h 35m 36s.xml">
+      <configuration name="BasketTest.userCanOnlyRemoveMoreThanZeroOfProductFromBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_userCanOnlyRemoveMoreThanZeroOfProductFromBasket - 2018.07.29 at 14h 49m 06s.xml">
+      <configuration name="BasketTest.userCanOnlyRemoveMoreThanZeroOfProductFromBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest - 2018.07.29 at 14h 49m 12s.xml">
+      <configuration name="BasketTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
@@ -846,6 +836,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.30586767" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -870,15 +861,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.30586767" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 42" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 43" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 44" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 45" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 46" />
@@ -902,7 +890,9 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 64" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 65" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 66" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 66" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 67" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 68" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 68" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1192,13 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -1218,10 +1201,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="413">
+          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
