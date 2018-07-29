@@ -66,8 +66,8 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+            <state relative-caret-position="305">
+              <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -301,18 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest.canComputePriceOfOrder">
-    <configuration name="Basket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.Basket" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BasketTest.canComputePriceOfOrderWithManyItems">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -375,6 +364,29 @@
       <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.BasketTest" />
       <option name="METHOD_NAME" value="canComputePriceOfOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BasketTest.canComputePriceOfOrderWithManyItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaStartMojSkrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.BasketTest" />
+      <option name="METHOD_NAME" value="canComputePriceOfOrderWithManyItems" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -448,18 +460,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BasketTest" />
-      <item itemvalue="Application.Basket" />
       <item itemvalue="JUnit.BasketTest.userCantRemoveAmmountOfProductBiggerThanAmmountInBasket" />
       <item itemvalue="JUnit.BasketTest.canAddSameItemstoBasket" />
       <item itemvalue="JUnit.BasketTest.canComputePriceOfOrder" />
+      <item itemvalue="JUnit.BasketTest.canComputePriceOfOrderWithManyItems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasketTest.canComputePriceOfOrderWithManyItems" />
         <item itemvalue="JUnit.BasketTest.canComputePriceOfOrder" />
         <item itemvalue="JUnit.BasketTest" />
         <item itemvalue="JUnit.BasketTest.canAddSameItemstoBasket" />
         <item itemvalue="JUnit.BasketTest.userCantRemoveAmmountOfProductBiggerThanAmmountInBasket" />
-        <item itemvalue="Application.Basket" />
       </list>
     </recent_temporary>
   </component>
@@ -473,13 +485,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00957" summary="SanouczekProgramisty Test Driven Development 30">
-      <created>1532642428897</created>
-      <option name="number" value="00957" />
-      <option name="presentableId" value="LOCAL-00957" />
-      <option name="project" value="LOCAL" />
-      <updated>1532642428897</updated>
     </task>
     <task id="LOCAL-00958" summary="SanouczekProgramisty Test Driven Development 31">
       <created>1532696711596</created>
@@ -817,19 +822,17 @@
       <option name="project" value="LOCAL" />
       <updated>1532875621450</updated>
     </task>
-    <option name="localTasksCounter" value="1006" />
+    <task id="LOCAL-01006" summary="SanouczekProgramisty Test Driven Development 79">
+      <created>1532876422817</created>
+      <option name="number" value="01006" />
+      <option name="presentableId" value="LOCAL-01006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532876422817</updated>
+    </task>
+    <option name="localTasksCounter" value="1007" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasketTest_userCantRemoveAmmountOfProductBiggerThanAmmountInBasket - 2018.07.29 at 16h 38m 47s.xml">
-      <configuration name="BasketTest.userCantRemoveAmmountOfProductBiggerThanAmmountInBasket" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest - 2018.07.29 at 16h 38m 52s.xml">
-      <configuration name="BasketTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest - 2018.07.29 at 16h 43m 35s.xml">
-      <configuration name="BasketTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BasketTest - 2018.07.29 at 16h 44m 33s.xml">
       <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
@@ -850,6 +853,15 @@
     </history-entry>
     <history-entry file="BasketTest - 2018.07.29 at 16h 52m 58s.xml">
       <configuration name="BasketTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest - 2018.07.29 at 16h 57m 59s.xml">
+      <configuration name="BasketTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canComputePriceOfOrder - 2018.07.29 at 16h 58m 30s.xml">
+      <configuration name="BasketTest.canComputePriceOfOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canComputePriceOfOrderWithManyItems - 2018.07.29 at 17h 00m 29s.xml">
+      <configuration name="BasketTest.canComputePriceOfOrderWithManyItems" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -889,7 +901,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 54" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 55" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 56" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 57" />
@@ -914,7 +925,8 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 76" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 77" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 78" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 78" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 79" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 79" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1244,8 +1256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+        <state relative-caret-position="305">
+          <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

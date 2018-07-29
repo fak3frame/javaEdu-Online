@@ -144,8 +144,6 @@ public class BasketTest {
         assertEquals(basket.getOrderPrice(), ammount, 0.001);
     }
 
-
-
     private static Map<Item, Integer> createOrder(Object ... items){
         Map<Item, Integer> map = new HashMap<>();
         for(int i = 0; i<items.length; i+=2){
