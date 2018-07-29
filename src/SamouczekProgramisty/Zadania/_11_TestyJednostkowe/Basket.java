@@ -1,7 +1,6 @@
 package SamouczekProgramisty.Zadania._11_TestyJednostkowe;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Basket {
     Map <Item, Integer> orderedItems = new HashMap<>();
@@ -38,6 +37,17 @@ public class Basket {
     }
 
     public static void main(String[] args) {
+        Basket b = new Basket();
+        List<Item> items = Arrays.asList(
+                new Item("Chair", 20.99),
+                new Item("Cell Phone", 200.99),
+                new Item("Shoes", 50.99),
+                new Item("TV", 999.99)
+                );
+        for(int i = 0; i<4; i++){
+            b.addItem();
+        }
 
+        System.out.println(b.getOrderPrice());
     }
 }
