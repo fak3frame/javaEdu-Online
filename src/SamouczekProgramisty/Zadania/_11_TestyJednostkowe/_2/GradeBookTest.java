@@ -4,7 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.beans.Transient;
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -34,7 +36,7 @@ public class GradeBookTest {
     @Test
     public void cantAddExistingSubjectToGradeBook(){
         try{
-            Subject s = new Subject(Subject)
+            Subject s = new Subject(SUBJECT)
             gradeBookWithSubject.addSubject(s);
             fail();
         }
@@ -50,8 +52,31 @@ public class GradeBookTest {
     @Test
     public void canAddNoteToSubject(){
         gradeBookWithSubject.addNote(SUBJECT, 2);
+        Subject s = gradeBookWithSubject.getSubject(SUBJECT);
+        assertEquals(new Integer(2), s.getGrades().get(0));
+    }
+    @Test
+    public void canGetNotesFromGradeBook(){
+        gradeBookWithSubject.addNote(SUBJECT, 2);
+        gradeBookWithSubject.addNote(SUBJECT, 3);
+        List<Integer> l1 = Arrays.asList(2,3);
+        List<Integer> l2 = gradeBookWithSubject.getNotes(SUBJECT);
+        for(int i=0; i<2; i++){
+            assertEquals(l1.get(i),l2.get(i));
+        }
+    }
+    @Test
+    public void canGetAverageNodesFromSubject(){
+        gradeBookWithSubject.addNote(SUBJECT, 2);
+        gradeBookWithSubject.addNote(SUBJECT, 4);
+        Subject s = gradeBookWithSubject.getSubject(SUBJECT);
+        double average = s.getAverage();
+        assertEquals(3.0, average, 0.001);
+    }
+    @Test void canGetAverageNodesFromGradeBook(){
+        gradeBookWithSubject.addNote(SUBJECT, 4);
+        gradeBookWithSubject.addNote(SUBJECT2, 6);
 
     }
-    public void canGet
 
 }
