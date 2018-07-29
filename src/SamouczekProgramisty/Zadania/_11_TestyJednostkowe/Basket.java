@@ -53,6 +53,9 @@ public class Basket {
         b.addItem(book,7);//210 = 2660
         b.removeItem(book, 1);//-30 = 2630
 
+        System.out.println("Summary price");
         System.out.println(b.getOrderPrice());
+
+        System.out.println();
     }
 }
