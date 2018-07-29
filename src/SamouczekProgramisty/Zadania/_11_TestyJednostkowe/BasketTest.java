@@ -34,7 +34,7 @@ public class BasketTest {
     @Test
     public void userCantRemoveAmmountOfProductBiggerThanAmmountInBasket(){
         try{
-            new Basket(item, 10);
+            if()
         }
     }
 }
