@@ -77,7 +77,5 @@ public class GradeBookTest {
         gradeBookWithSubject.addNote(SUBJECT, 4);
         gradeBookWithSubject.addSubject(SUBJECT2);
         gradeBookWithSubject.addNote(SUBJECT2, 6);
-
     }
-
 }
