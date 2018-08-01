@@ -2569,8 +2569,8 @@ public class Wstep {
 
         //POWTORZENIA:
         //znak ? - element przed ? (1 litera ciagu) moze wystapic 0 lub 1 raz,
-        //          pozostala czesc przed nim musi byc niezmieniona
-        //         np. kr?at
+        //          pozostala czesc przed nim musi byc niezmieniona np. kr?at
+        //(0 - 1 wystapien)
         //Poprawnie : krat, kat
         //Blednie : rkat, at, wkrat
         Pattern wzorKrat = Pattern.compile("kr?at");
@@ -2594,6 +2594,7 @@ public class Wstep {
 
         //znak * - to co jest przed nim moze zostac pomienita
         //          lub wystapic dowlona ilosc razy np uwa*ga
+        //(0 - nieskonczon. wystapien)
         //Poprawnie : uwga, uwaga, uwaaaaga
         //Blednie : auwaga
 
@@ -2614,6 +2615,7 @@ public class Wstep {
 
         //znak + - dziala jak * tylko ze wystapienie musi byc CO NAJMNIEJ jedno
         //          np de+bil
+        //(1 - nieskonczonosci wystapien)
         //Poprawnie : debil, deeeebil
         //Blednie : dbil, edebil,
 
@@ -2638,6 +2640,8 @@ public class Wstep {
         {x,y} - oznacza, że element poprzedzający musi wystąpić od x do y razy,
         {x,} - oznacza, że element poprzedzający musi wystąpić co najmniej x razy,
         {,y} - oznacza, że element poprzedzający musi wystąpić co najwyżej y razy.
+        Moge zastapic proste na te z {}:
+        a*la ->
          */
 
 
