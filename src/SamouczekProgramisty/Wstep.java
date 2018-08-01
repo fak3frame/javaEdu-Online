@@ -2660,7 +2660,7 @@ public class Wstep {
         //Poprawne wyrazenia: kata, kaTAPULta, kaRta, kaSIA MA KOta, kkkka#$*&JHDFTATAta
         //Bledne : ata (brak k na poczatku), kta (brak a po pierwszym k)
 
-        //Kombinacja .+@.+\.pl.
+        //Kombinacja .+@.+\.pl. (wyrazenie regularne maila)
         /*
         .+ - dowolny symbol użyty co najmniej raz,
         @ - małpka,
