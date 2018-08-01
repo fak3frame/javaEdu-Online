@@ -2657,8 +2657,8 @@ public class Wstep {
         //.* (musze cos wstawic poza koncem lini lecz jest po nim * co łaczy sie
         // przez co moge tam wstawic dowolny znak powtorzony dowolna ilosc
         // razy lub nie wstawiac nic!)
-        //Poprawne wyrazenia: kata, katapulta, karta, kasia ma kota, kkkka#$*&JHDFStatata
-        //Bledne : ata, kta
+        //Poprawne wyrazenia: kata, kaTAPULta, kaRta, kaSIA MA KOta, kkkka#$*&JHDFTATAta
+        //Bledne : ata (brak k na poczatku), kta (brak a po pierwszym k)
 
         //Kombinacja .+@.+\.pl.
         /*
