@@ -2525,7 +2525,16 @@ public class Wstep {
 
         //WYRAŻENIA REGULARNE
         /*
+        Wyrażenie regularne (ang. regular expression) to „wzorzec”, który opisuje grupę
+         łańcuchów znaków
 
+        Wyrażenie regularne to tak zwany wzorzec, który następne jest kompilowany przez
+         silnik wyrażeń regularnych do wewnętrznej postaci.
+
+        W praktyce jednym z głównych zastosowań jest weryfikacja czy dany łańcuch znaków
+         pasuje do wzorca. Wzorcem tym jest wyrażenie regularne.
+
+        W Javie wyrazenia rgularne wykorzystuje klasy Pattern i Matcher
          */
 
 
