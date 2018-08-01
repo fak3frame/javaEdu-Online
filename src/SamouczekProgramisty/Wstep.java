@@ -2568,9 +2568,11 @@ public class Wstep {
         */
 
         //POWTORZENIA:
-        //znak ? - element przed ? moze wystapic 0 lub 1 raz, pozostala
-        //          czesc przed nim musi byc niezmieniona
+        //znak ? - element przed ? (1 litera ciagu) moze wystapic 0 lub 1 raz,
+        //          pozostala czesc przed nim musi byc niezmieniona
         //         np. kr?at
+        //Poprawnie : krat, kat
+        //Blednie : rkat, at, wkrat
         Pattern wzorKrat = Pattern.compile("kr?at");
 
         System.out.println("\n"+"krat:");//jest r - true
@@ -2582,7 +2584,7 @@ public class Wstep {
         System.out.println("rkat:");//brak r ale przed k jest litera - false
         Matcher dopasowanie5 = wzorKrat.matcher("rkat");
         System.out.println(dopasowanie5.matches());
-        System.out.println("at:");//brak r i brak k - false
+        System.out.println("at:");//brak r ale i brak k - false
         Matcher dopasowanie3 = wzorKrat.matcher("at");
         System.out.println(dopasowanie3.matches());
         System.out.println("wkrat:");//jest k i r ale przed jest jeszcze w - false
@@ -2590,8 +2592,10 @@ public class Wstep {
         System.out.println(dopasowanie4.matches());
 
 
-        //znak * - to co jest przed nim (1 litera ciagu) moze zostac pomienita
+        //znak * - to co jest przed nim moze zostac pomienita
         //          lub wystapic dowlona ilosc razy np uwa*ga
+        //Poprawnie : uwga, uwaga, uwaaaaga
+        //Blednie : auwaga
 
         Pattern wzorUwaga = Pattern.compile("uwa*ga");
 
