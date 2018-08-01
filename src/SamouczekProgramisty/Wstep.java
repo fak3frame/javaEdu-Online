@@ -2614,6 +2614,8 @@ public class Wstep {
 
         //znak + - dziala jak * tylko ze wystapienie musi byc CO NAJMNIEJ jedno
         //          np de+bil
+        //Poprawnie : debil, deeeebil
+        //Blednie : dbil, edebil,
 
         Pattern wzorDebil = Pattern.compile("de+bil");
 
@@ -2629,9 +2631,6 @@ public class Wstep {
         System.out.println("edebil");//e na poczatku - false
         Matcher dopasowanie13 = wzorDebil.matcher("edebil");
         System.out.println(dopasowanie13.matches());
-        System.out.println("dedebil");//e na poczatku - false
-        Matcher dopasowanie14 = wzorDebil.matcher("dedebil");
-        System.out.println(dopasowanie14.matches());
 
         /*
         Dokladniejsze powtorzenia:
