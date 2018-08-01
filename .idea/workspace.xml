@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/ItemTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="510">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding>
                 <element signature="e#187#188#0" expanded="true" />
                 <element signature="e#214#215#0" expanded="true" />
@@ -85,6 +86,32 @@
                 <element signature="e#636#637#0" expanded="true" />
                 <element signature="e#684#685#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/ItemTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -162,8 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_2_ObiektyIPakiety/_3_/MyNumber.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/Petle.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/_4_Petle/ArrayFactory.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/Interface/Figure.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_4_Zestaw/Interface/Circle.java" />
@@ -213,6 +238,8 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Subject.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBookTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/Item.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/ItemTest.java" />
       </list>
     </option>
   </component>
@@ -262,6 +289,15 @@
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
               <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
+              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
+              <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
+              <item name="Gotowe" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -301,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SubjectTest">
+  <component name="RunManager" selected="JUnit.ItemTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -319,29 +355,6 @@
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.BasketTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BasketTest.canComputePriceOfOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaStartMojSkrypt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe" />
-      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.BasketTest" />
-      <option name="METHOD_NAME" value="canComputePriceOfOrder" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -388,6 +401,29 @@
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.BasketTest" />
       <option name="METHOD_NAME" value="canPrintOrder" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaStartMojSkrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.Gotowe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.Gotowe" />
+      <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Zadania._11_TestyJednostkowe.Gotowe.ItemTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -460,18 +496,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BasketTest" />
-      <item itemvalue="JUnit.BasketTest.canComputePriceOfOrder" />
       <item itemvalue="JUnit.BasketTest.canComputePriceOfOrderWithManyItems" />
       <item itemvalue="JUnit.BasketTest.canPrintOrder" />
       <item itemvalue="JUnit.SubjectTest" />
+      <item itemvalue="JUnit.ItemTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemTest" />
         <item itemvalue="JUnit.SubjectTest" />
         <item itemvalue="JUnit.BasketTest" />
         <item itemvalue="JUnit.BasketTest.canPrintOrder" />
         <item itemvalue="JUnit.BasketTest.canComputePriceOfOrderWithManyItems" />
-        <item itemvalue="JUnit.BasketTest.canComputePriceOfOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -485,13 +521,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00974" summary="SanouczekProgramisty Test Driven Development 47">
-      <created>1532809117209</created>
-      <option name="number" value="00974" />
-      <option name="presentableId" value="LOCAL-00974" />
-      <option name="project" value="LOCAL" />
-      <updated>1532809117209</updated>
     </task>
     <task id="LOCAL-00975" summary="SanouczekProgramisty Test Driven Development 48">
       <created>1532809260687</created>
@@ -829,7 +858,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533155302115</updated>
     </task>
-    <option name="localTasksCounter" value="1023" />
+    <task id="LOCAL-01023" summary="SanouczekProgramisty Test Driven Development 96">
+      <created>1533155419033</created>
+      <option name="number" value="01023" />
+      <option name="presentableId" value="LOCAL-01023" />
+      <option name="project" value="LOCAL" />
+      <updated>1533155419033</updated>
+    </task>
+    <option name="localTasksCounter" value="1024" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -901,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 71" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 72" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 73" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 74" />
@@ -926,7 +961,8 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 93" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 94" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 95" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 95" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 96" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 96" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -934,20 +970,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Rideable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/iX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/X3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1244,8 +1266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        <state relative-caret-position="510">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
             <element signature="e#187#188#0" expanded="true" />
             <element signature="e#214#215#0" expanded="true" />
@@ -1254,6 +1276,28 @@
             <element signature="e#636#637#0" expanded="true" />
             <element signature="e#684#685#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/ItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>

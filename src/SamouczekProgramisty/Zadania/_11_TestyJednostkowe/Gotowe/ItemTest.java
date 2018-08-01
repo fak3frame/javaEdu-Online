@@ -1,0 +1,38 @@
+package SamouczekProgramisty.Zadania._11_TestyJednostkowe.Gotowe;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class ItemTest {
+    @Test
+    public void twoItemsWIthTheSamePriceAndNameShouldBeEqual() {
+        assertEquals(new Item("item", 123.12), new Item("item", 123.12));
+    }
+
+    @Test
+    public void itemsWithDifferentNamesArentEaual() {
+        assertNotEquals(new Item("item1", 123.12), new Item("item2", 123.12));
+    }
+
+    @Test
+    public void itemsWithDifferentPriceArentEaual() throws Exception {
+        assertNotEquals(new Item("item", 123.21), new Item("item", 123.12));
+    }
+
+    @Test
+    public void itemsWithTheSameNameShouldHaveTheSameHashCode() {
+        assertEquals(new Item("item", 123).hashCode(), new Item("item", 321).hashCode());
+    }
+
+    @Test
+    public void itemsWithDifferentNameShouldHaveDifferentHashCode() {
+        assertNotEquals(new Item("item1", 123).hashCode(), new Item("item2", 321).hashCode());
+    }
+
+    @Test
+    public void itemsWithDifferentPriceAndTheSameNameShouldBeOrdered() {
+        assertEquals(-1, new Item("item1", 0.1).compareTo(new Item("item1", 0.2)));
+    }
+
+}

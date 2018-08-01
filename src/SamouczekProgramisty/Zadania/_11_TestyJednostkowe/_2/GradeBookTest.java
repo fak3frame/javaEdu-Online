@@ -1,4 +1,4 @@
-package SamouczekProgramisty.Zadania._11_TestyJednostkowe._2;
+/*package SamouczekProgramisty.Zadania._11_TestyJednostkowe._2;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -36,7 +36,7 @@ public class GradeBookTest {
     @Test
     public void cantAddExistingSubjectToGradeBook(){
         try{
-            Subject s = new Subject(SUBJECT)
+            Subject s = new Subject(SUBJECT);
             gradeBookWithSubject.addSubject(s);
             fail();
         }
@@ -79,4 +79,4 @@ public class GradeBookTest {
         gradeBookWithSubject.addNote(SUBJECT2, 6);
     }
 }
-/////////////////
+*/////////////////
