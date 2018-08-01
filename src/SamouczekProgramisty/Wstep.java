@@ -2641,7 +2641,9 @@ public class Wstep {
         {x,} - oznacza, że element poprzedzający musi wystąpić co najmniej x razy,
         {,y} - oznacza, że element poprzedzający musi wystąpić co najwyżej y razy.
         Moge zastapic proste na te z {}:
-        a*la ->
+        a*la -> a{0,}la
+        a+la -> a{1,}la
+        a?la -> a{0,1}la
          */
 
 
