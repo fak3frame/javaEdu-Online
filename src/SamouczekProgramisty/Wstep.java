@@ -2553,6 +2553,89 @@ public class Wstep {
         //Sprawdzam czy ciag dopasania jest taki sam jak wzrorzec
         //Zwroci false
 
+        /*
+        Gdy chce aby w ciagu znakow 2 + 3 = 5 nie bylo brane "+" jako
+         dodoawanie musze dodac \przed+ : 2 \+ 3 = 5
+         jednak w javie wyrazenia regularne sa jako Strng wiec
+         pojedynczy \ jest interpretowany specjalnie jak np \t - tabulator
+         czy \n nowa linia dlatego nalezy dodac podwojny \\
+         2 \\+3 = 5
+
+        W przypadku gdy chce pominac dzialanie "\" w liczbie z tym
+         znakiem np 123\4 musze dodac pojedynczy \ przed \ czyli
+         123\\4 a nastepnie przed kazdym \ dodac ponownie kolejny
+         czyli 123\\\\4
+        */
+
+        //POWTORZENIA:
+        //znak ? - element przed ? moze wystapic 0 lub 1 raz, pozostala
+        //          czesc przed nim musi byc niezmieniona
+        //         np. kr?at
+        Pattern wzorKrat = Pattern.compile("kr?at");
+
+        System.out.println("\n"+"krat:");//jest r - true
+        Matcher dopasowanie = wzorKrat.matcher("krat");
+        System.out.println(dopasowanie.matches());
+        System.out.println("kat:");//brak r jest k - true
+        Matcher dopasowanie2 = wzorKrat.matcher("kat");
+        System.out.println(dopasowanie2.matches());
+        System.out.println("rkat:");//brak r ale przed k jest litera - false
+        Matcher dopasowanie5 = wzorKrat.matcher("rkat");
+        System.out.println(dopasowanie5.matches());
+        System.out.println("at:");//brak r i brak k - false
+        Matcher dopasowanie3 = wzorKrat.matcher("at");
+        System.out.println(dopasowanie3.matches());
+        System.out.println("wkrat:");//jest k i r ale przed jest jeszcze w - false
+        Matcher dopasowanie4 = wzorKrat.matcher("wkrat");
+        System.out.println(dopasowanie4.matches());
+
+
+        //znak * - to co jest przed nim (1 litera ciagu) moze zostac pomienita
+        //          lub wystapic dowlona ilosc razy np uwa*ga
+
+        Pattern wzorUwaga = Pattern.compile("uwa*ga");
+
+        System.out.println("\n"+"uwga");//brak a - true
+        Matcher dopasowanie6 = wzorUwaga.matcher("uwga");
+        System.out.println(dopasowanie6.matches());
+        System.out.println("uwaga");//to samo - true
+        Matcher dopasowanie7 = wzorUwaga.matcher("uwaga");
+        System.out.println(dopasowanie7.matches());
+        System.out.println("uwaaaaga");//kilka a - true
+        Matcher dopasowanie8 = wzorUwaga.matcher("uwaaaaga");
+        System.out.println(dopasowanie8.matches());
+        System.out.println("auwaga");//a na poczatku - false
+        Matcher dopasowanie9 = wzorUwaga.matcher("auwaga");
+        System.out.println(dopasowanie9.matches());
+
+        //znak + - dziala jak * tylko ze wystapienie musi byc CO NAJMNIEJ jedno
+        //          np de+bil
+
+        Pattern wzorDebil = Pattern.compile("de+bil");
+
+        System.out.println("\n"+"debil");//to samo - true
+        Matcher dopasowanie10 = wzorDebil.matcher("debil");
+        System.out.println(dopasowanie10.matches());
+        System.out.println("deeeebil");//kilka e - true
+        Matcher dopasowanie11 = wzorDebil.matcher("deeeebil");
+        System.out.println(dopasowanie11.matches());
+        System.out.println("dbil");//brak e - false
+        Matcher dopasowanie12 = wzorDebil.matcher("dbil");
+        System.out.println(dopasowanie12.matches());
+        System.out.println("edebil");//e na poczatku - false
+        Matcher dopasowanie13 = wzorDebil.matcher("edebil");
+        System.out.println(dopasowanie13.matches());
+        System.out.println("dedebil");//e na poczatku - false
+        Matcher dopasowanie14 = wzorDebil.matcher("dedebil");
+        System.out.println(dopasowanie14.matches());
+
+        /*
+        Dokladniejsze powtorzenia:
+        {x} - oznacza że element poprzedzający musi wystąpić dokładnie x razy,
+        {x,y} - oznacza, że element poprzedzający musi wystąpić od x do y razy,
+        {x,} - oznacza, że element poprzedzający musi wystąpić co najmniej x razy,
+        {,y} - oznacza, że element poprzedzający musi wystąpić co najwyżej y razy.
+         */
 
 
 
