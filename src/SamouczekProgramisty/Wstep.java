@@ -2519,8 +2519,12 @@ public class Wstep {
         @BeforeClass - uruchamiana przed wszystkimi testame
         @AfterClass - uruchamiana po wszytkich testach
 
+         */
 
 
+
+        //WYRAŻENIA REGULARNE
+        /*
 
          */
 
