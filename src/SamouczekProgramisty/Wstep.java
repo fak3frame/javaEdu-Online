@@ -2646,6 +2646,18 @@ public class Wstep {
         a?la -> a{0,1}la
          */
 
+        //znak . - na miejscu . MUSI wystapic dowolny znak poza znakiem konca lini
+        //          np: ko.ek
+        //Poprawnie : kotek, korek
+        //Blednie : koek, ktek
+
+
+        //Kompbinacja k+a.*ta:
+        //k+ (k musi wystapic conajmniej 1 raz, przed nim nic)
+        //.* (musze cos wstawic poza koncem lini lecz jest po nim * co łaczy sie
+        // przez co moge tam wstawic dowolny znak powtorzony dowolna ilosc
+        // razy lub nie wstawiac nic!)
+
 
 
 
