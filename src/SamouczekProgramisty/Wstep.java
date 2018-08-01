@@ -4,6 +4,8 @@ import SamouczekProgramisty.Silnik.SilnikMoj;
 
 import java.io.*;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Wstep {
 
@@ -2536,6 +2538,20 @@ public class Wstep {
 
         W Javie wyrazenia rgularne wykorzystuje klasy Pattern i Matcher
          */
+
+        Pattern compiledPattern = Pattern.compile("Marcin");
+        //Tworze wzorzec ktorym jest slowo "Marcin"
+        Matcher matcher = compiledPattern.matcher("Nazywam sie Marcin Pietraszek");
+        //Tworze dopasowanie ktore bedzie sprawdzne do wzroca
+
+        System.out.println("\n"+"matcher.find()");
+        System.out.println(matcher.find());
+        //Sprawdzam czy w ciagu znakow z dopasowania jest ciag ze wzorca
+        //Zwroci true poniewaz jest
+        System.out.println("matcher.matches()");
+        System.out.println(matcher.matches());
+        //Sprawdzam czy ciag dopasania jest taki sam jak wzrorzec
+        //Zwroci false
 
 
 
