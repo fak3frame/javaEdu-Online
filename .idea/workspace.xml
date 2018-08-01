@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBookTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="2346">
               <caret line="158" column="40" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="40" />
               <folding>
                 <element signature="e#23454#23455#0" expanded="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="870" lean-forward="true" selection-start-line="870" selection-end-line="870" />
+            <state relative-caret-position="13719">
+              <caret line="870" selection-start-line="870" selection-end-line="870" />
             </state>
           </provider>
         </entry>
@@ -51,13 +50,11 @@
       <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="61" column="52" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="61" selection-end-column="52" />
+            <state relative-caret-position="124">
+              <caret line="61" column="52" selection-start-line="59" selection-start-column="12" selection-end-line="61" selection-end-column="52" />
               <folding>
                 <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#1849#1850#0" expanded="true" />
-                <element signature="e#1913#1914#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,26 +63,8 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GradeBook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="61" lean-forward="true" selection-start-column="61" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GradeBookTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBookTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="889">
-              <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,43 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Subject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#142#143#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/SubjectTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
+              <caret column="47" selection-start-column="47" selection-end-column="47" />
               <folding>
                 <element signature="e#187#188#0" expanded="true" />
                 <element signature="e#214#215#0" expanded="true" />
@@ -143,7 +90,7 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
+            <state relative-caret-position="714">
               <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -278,7 +225,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -313,20 +259,12 @@
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
               <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
-              <item name="_2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,69 +483,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-00964" summary="SanouczekProgramisty Test Driven Development 37">
-      <created>1532699503049</created>
-      <option name="number" value="00964" />
-      <option name="presentableId" value="LOCAL-00964" />
-      <option name="project" value="LOCAL" />
-      <updated>1532699503049</updated>
-    </task>
-    <task id="LOCAL-00965" summary="SanouczekProgramisty Test Driven Development 38">
-      <created>1532700180081</created>
-      <option name="number" value="00965" />
-      <option name="presentableId" value="LOCAL-00965" />
-      <option name="project" value="LOCAL" />
-      <updated>1532700180081</updated>
-    </task>
-    <task id="LOCAL-00966" summary="SanouczekProgramisty Test Driven Development 39">
-      <created>1532702699117</created>
-      <option name="number" value="00966" />
-      <option name="presentableId" value="LOCAL-00966" />
-      <option name="project" value="LOCAL" />
-      <updated>1532702699117</updated>
-    </task>
-    <task id="LOCAL-00967" summary="SanouczekProgramisty Test Driven Development 40">
-      <created>1532702938236</created>
-      <option name="number" value="00967" />
-      <option name="presentableId" value="LOCAL-00967" />
-      <option name="project" value="LOCAL" />
-      <updated>1532702938236</updated>
-    </task>
-    <task id="LOCAL-00968" summary="SanouczekProgramisty Test Driven Development 41">
-      <created>1532703125351</created>
-      <option name="number" value="00968" />
-      <option name="presentableId" value="LOCAL-00968" />
-      <option name="project" value="LOCAL" />
-      <updated>1532703125351</updated>
-    </task>
-    <task id="LOCAL-00969" summary="SanouczekProgramisty Test Driven Development 42">
-      <created>1532703812058</created>
-      <option name="number" value="00969" />
-      <option name="presentableId" value="LOCAL-00969" />
-      <option name="project" value="LOCAL" />
-      <updated>1532703812058</updated>
-    </task>
-    <task id="LOCAL-00970" summary="SanouczekProgramisty Test Driven Development 43">
-      <created>1532807861557</created>
-      <option name="number" value="00970" />
-      <option name="presentableId" value="LOCAL-00970" />
-      <option name="project" value="LOCAL" />
-      <updated>1532807861559</updated>
-    </task>
-    <task id="LOCAL-00971" summary="SanouczekProgramisty Test Driven Development 44">
-      <created>1532808489693</created>
-      <option name="number" value="00971" />
-      <option name="presentableId" value="LOCAL-00971" />
-      <option name="project" value="LOCAL" />
-      <updated>1532808489694</updated>
-    </task>
-    <task id="LOCAL-00972" summary="SanouczekProgramisty Test Driven Development 45">
-      <created>1532808733980</created>
-      <option name="number" value="00972" />
-      <option name="presentableId" value="LOCAL-00972" />
-      <option name="project" value="LOCAL" />
-      <updated>1532808733980</updated>
     </task>
     <task id="LOCAL-00973" summary="SanouczekProgramisty Test Driven Development 46">
       <created>1532808983165</created>
@@ -889,7 +764,70 @@
       <option name="project" value="LOCAL" />
       <updated>1532883500083</updated>
     </task>
-    <option name="localTasksCounter" value="1013" />
+    <task id="LOCAL-01013" summary="SanouczekProgramisty Test Driven Development 86">
+      <created>1533074264781</created>
+      <option name="number" value="01013" />
+      <option name="presentableId" value="LOCAL-01013" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074264782</updated>
+    </task>
+    <task id="LOCAL-01014" summary="SanouczekProgramisty Test Driven Development 87">
+      <created>1533074291894</created>
+      <option name="number" value="01014" />
+      <option name="presentableId" value="LOCAL-01014" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074291897</updated>
+    </task>
+    <task id="LOCAL-01015" summary="SanouczekProgramisty Test Driven Development 88">
+      <created>1533074306173</created>
+      <option name="number" value="01015" />
+      <option name="presentableId" value="LOCAL-01015" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074306173</updated>
+    </task>
+    <task id="LOCAL-01016" summary="SanouczekProgramisty Test Driven Development 89">
+      <created>1533074320641</created>
+      <option name="number" value="01016" />
+      <option name="presentableId" value="LOCAL-01016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074320641</updated>
+    </task>
+    <task id="LOCAL-01017" summary="SanouczekProgramisty Test Driven Development 90">
+      <created>1533074338689</created>
+      <option name="number" value="01017" />
+      <option name="presentableId" value="LOCAL-01017" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074338689</updated>
+    </task>
+    <task id="LOCAL-01018" summary="SanouczekProgramisty Test Driven Development 91">
+      <created>1533074358984</created>
+      <option name="number" value="01018" />
+      <option name="presentableId" value="LOCAL-01018" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074358984</updated>
+    </task>
+    <task id="LOCAL-01019" summary="SanouczekProgramisty Test Driven Development 92">
+      <created>1533074373473</created>
+      <option name="number" value="01019" />
+      <option name="presentableId" value="LOCAL-01019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074373476</updated>
+    </task>
+    <task id="LOCAL-01020" summary="SanouczekProgramisty Test Driven Development 93">
+      <created>1533074385540</created>
+      <option name="number" value="01020" />
+      <option name="presentableId" value="LOCAL-01020" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074385540</updated>
+    </task>
+    <task id="LOCAL-01021" summary="SanouczekProgramisty Test Driven Development 94">
+      <created>1533074398374</created>
+      <option name="number" value="01021" />
+      <option name="presentableId" value="LOCAL-01021" />
+      <option name="project" value="LOCAL" />
+      <updated>1533074398374</updated>
+    </task>
+    <option name="localTasksCounter" value="1022" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -930,7 +868,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.30586767" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -941,7 +878,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20174165" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20174165" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -951,6 +888,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24963716" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3280116" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.30586767" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -961,15 +899,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 61" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 62" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 63" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 64" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 65" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 66" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 67" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 68" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 69" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 70" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 71" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 72" />
@@ -986,7 +915,16 @@
     <MESSAGE value="SanouczekProgramisty Test Driven Development 83" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 84" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 85" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 85" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 86" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 87" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 88" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 89" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 90" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 91" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 92" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 93" />
+    <MESSAGE value="SanouczekProgramisty Test Driven Development 94" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty Test Driven Development 94" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1213,13 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,9 +1161,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="158" column="40" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="40" />
+          <folding>
+            <element signature="e#23454#23455#0" expanded="true" />
+            <element signature="e#23539#23540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13719">
+          <caret line="870" selection-start-line="870" selection-end-line="870" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/SubjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" selection-start-column="61" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
+        <state relative-caret-position="714">
           <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1242,13 +1232,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="158" column="40" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="40" />
+        <state relative-caret-position="124">
+          <caret line="61" column="52" selection-start-line="59" selection-start-column="12" selection-end-line="61" selection-end-column="52" />
           <folding>
-            <element signature="e#23454#23455#0" expanded="true" />
-            <element signature="e#23539#23540#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1256,84 +1256,12 @@
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
           <folding>
             <element signature="e#187#188#0" expanded="true" />
             <element signature="e#214#215#0" expanded="true" />
             <element signature="e#246#247#0" expanded="true" />
             <element signature="e#274#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="870" lean-forward="true" selection-start-line="870" selection-end-line="870" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Basket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="61" column="52" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="61" selection-end-column="52" />
-          <folding>
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/SubjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/BasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="61" lean-forward="true" selection-start-column="61" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBookTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
-          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

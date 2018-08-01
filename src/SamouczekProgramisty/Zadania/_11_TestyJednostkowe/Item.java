@@ -22,7 +22,7 @@ public class Item {
         this.price = price;
         this.name = name;
     }
-   
+
     @Override
     public int hashCode() {
         return Objects.hash(price, name);
@@ -30,6 +30,8 @@ public class Item {
 
     @Override
     public boolean equals(Object obj) {
+        if(this == obj)
+            return true
         if (obj == null)
             return false;
         if (obj instanceof Item) {
