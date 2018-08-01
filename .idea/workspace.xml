@@ -38,8 +38,22 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="2643" column="23" selection-start-line="2643" selection-start-column="23" selection-end-line="2643" selection-end-column="23" />
+            <state relative-caret-position="315">
+              <caret line="2669" column="10" selection-start-line="2669" selection-start-column="10" selection-end-line="2669" selection-end-column="10" />
+              <folding>
+                <element signature="e#111267#111268#0" expanded="true" />
+                <element signature="e#111300#111301#0" expanded="true" />
+                <element signature="e#111897#111898#0" expanded="true" />
+                <element signature="e#111935#111936#0" expanded="true" />
+                <element signature="e#111966#111967#0" expanded="true" />
+                <element signature="e#112005#112006#0" expanded="true" />
+                <element signature="e#112033#112034#0" expanded="true" />
+                <element signature="e#112069#112070#0" expanded="true" />
+                <element signature="e#112153#112154#0" expanded="true" />
+                <element signature="e#112227#112228#0" expanded="true" />
+                <element signature="e#112297#112298#0" expanded="true" />
+                <element signature="e#112370#112371#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -455,20 +469,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01001" summary="SanouczekProgramisty Test Driven Development 74">
-      <created>1532872006626</created>
-      <option name="number" value="01001" />
-      <option name="presentableId" value="LOCAL-01001" />
-      <option name="project" value="LOCAL" />
-      <updated>1532872006626</updated>
-    </task>
-    <task id="LOCAL-01002" summary="SanouczekProgramisty Test Driven Development 75">
-      <created>1532872786852</created>
-      <option name="number" value="01002" />
-      <option name="presentableId" value="LOCAL-01002" />
-      <option name="project" value="LOCAL" />
-      <updated>1532872786852</updated>
-    </task>
     <task id="LOCAL-01003" summary="SanouczekProgramisty Test Driven Development 76">
       <created>1532873609197</created>
       <option name="number" value="01003" />
@@ -798,7 +798,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533162706371</updated>
     </task>
-    <option name="localTasksCounter" value="1050" />
+    <task id="LOCAL-01050" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 8">
+      <created>1533162822496</created>
+      <option name="number" value="01050" />
+      <option name="presentableId" value="LOCAL-01050" />
+      <option name="project" value="LOCAL" />
+      <updated>1533162822496</updated>
+    </task>
+    <task id="LOCAL-01051" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 9">
+      <created>1533163219926</created>
+      <option name="number" value="01051" />
+      <option name="presentableId" value="LOCAL-01051" />
+      <option name="project" value="LOCAL" />
+      <updated>1533163219926</updated>
+    </task>
+    <option name="localTasksCounter" value="1052" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -870,8 +884,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 98" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 99" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 100" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 101" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 102" />
@@ -895,7 +907,9 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 5" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 6" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 7" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 8" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1282,8 +1296,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="2643" column="23" selection-start-line="2643" selection-start-column="23" selection-end-line="2643" selection-end-column="23" />
+        <state relative-caret-position="315">
+          <caret line="2669" column="10" selection-start-line="2669" selection-start-column="10" selection-end-line="2669" selection-end-column="10" />
+          <folding>
+            <element signature="e#111267#111268#0" expanded="true" />
+            <element signature="e#111300#111301#0" expanded="true" />
+            <element signature="e#111897#111898#0" expanded="true" />
+            <element signature="e#111935#111936#0" expanded="true" />
+            <element signature="e#111966#111967#0" expanded="true" />
+            <element signature="e#112005#112006#0" expanded="true" />
+            <element signature="e#112033#112034#0" expanded="true" />
+            <element signature="e#112069#112070#0" expanded="true" />
+            <element signature="e#112153#112154#0" expanded="true" />
+            <element signature="e#112227#112228#0" expanded="true" />
+            <element signature="e#112297#112298#0" expanded="true" />
+            <element signature="e#112370#112371#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
