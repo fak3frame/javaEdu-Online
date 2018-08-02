@@ -2676,6 +2676,17 @@ public class Wstep {
         Poprawnie : raca, taca, maca
         Błednie : praca -> 2 litery wkorzystane, pacanow -> czesc po sie nie zgadza
 
+        Mozna wykorzystac takze zakres alfabetyczny lub liczbowy
+         np [a-d]uma
+        Poprawnie : auma, buma, cuma
+        Blednie : fuma, abuma->2 litery
+         lub [0-7]xyz
+        Poprawnie : 0xyz, 1xyz
+        Blednie : 8xyz, 07xyz->2 cyfry
+
+        Mozna takze laczyc np [a-cA-C0-3]bum
+        Poprawnie :
+        Blednie :
 
          */
 

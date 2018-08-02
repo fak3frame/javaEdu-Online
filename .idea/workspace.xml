@@ -39,7 +39,11 @@
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="604">
-              <caret line="2671" column="8" selection-start-line="2671" selection-start-column="8" selection-end-line="2671" selection-end-column="8" />
+              <caret line="2680" column="20" selection-start-line="2680" selection-start-column="20" selection-end-line="2680" selection-end-column="20" />
+              <folding>
+                <element signature="e#17145#17152#0" expanded="true" />
+                <element signature="e#80494#80524#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -455,13 +459,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01006" summary="SanouczekProgramisty Test Driven Development 79">
-      <created>1532876422817</created>
-      <option name="number" value="01006" />
-      <option name="presentableId" value="LOCAL-01006" />
-      <option name="project" value="LOCAL" />
-      <updated>1532876422817</updated>
-    </task>
     <task id="LOCAL-01007" summary="SanouczekProgramisty Test Driven Development 80">
       <created>1532876541624</created>
       <option name="number" value="01007" />
@@ -798,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533163588606</updated>
     </task>
-    <option name="localTasksCounter" value="1055" />
+    <task id="LOCAL-01055" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 13">
+      <created>1533212805661</created>
+      <option name="number" value="01055" />
+      <option name="presentableId" value="LOCAL-01055" />
+      <option name="project" value="LOCAL" />
+      <updated>1533212805663</updated>
+    </task>
+    <option name="localTasksCounter" value="1056" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -870,7 +874,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 103" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 104" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 105" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 106" />
@@ -895,7 +898,8 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 10" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 11" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 12" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1173,6 +1177,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
           <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1190,6 +1197,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1241">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,7 +1227,11 @@
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
-          <caret line="2671" column="8" selection-start-line="2671" selection-start-column="8" selection-end-line="2671" selection-end-column="8" />
+          <caret line="2680" column="20" selection-start-line="2680" selection-start-column="20" selection-end-line="2680" selection-end-column="20" />
+          <folding>
+            <element signature="e#17145#17152#0" expanded="true" />
+            <element signature="e#80494#80524#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
