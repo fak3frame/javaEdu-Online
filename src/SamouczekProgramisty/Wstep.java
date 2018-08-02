@@ -2669,6 +2669,15 @@ public class Wstep {
         pl - następujące po sobie litery p i l.
         */
 
+        /*
+        Klasy w wyrazeniach regularnych oznaczaja grupy symboli w []
+         np [rtmp]aca oznacza ze musimy wykorzystac 1 z sumboli w [] nie
+         wiecej
+        Poprawnie : raca, taca, maca
+        Błednie : praca -> 2 litery wkorzystane, pacanow -> czesc po sie nie zgadza
+
+
+         */
 
 
         String x = new Object() + "123";
