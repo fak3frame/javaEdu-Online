@@ -2676,17 +2676,34 @@ public class Wstep {
         Poprawnie : raca, taca, maca
         Błednie : praca -> 2 litery wkorzystane, pacanow -> czesc po sie nie zgadza
 
-        Mozna wykorzystac takze zakres alfabetyczny lub liczbowy
+        Mozna wykorzystac takze zakres alfabetyczny lub liczbowy, musze umieciec -
+         w innym miejscu niz na koncu
          np [a-d]uma
         Poprawnie : auma, buma, cuma
         Blednie : fuma, abuma->2 litery
          lub [0-7]xyz
         Poprawnie : 0xyz, 1xyz
         Blednie : 8xyz, 07xyz->2 cyfry
+         lub [a-z]+ -> musi byc dowolna mala litera conajmniej raz
 
-        Mozna takze laczyc np [a-cA-C0-3]bum
-        Poprawnie :
-        Blednie :
+
+        Aby - byl iterpretowany doslownie musze go umieciec na koncu klasy np [abc-]xyz
+
+        Mozna takze laczyc przedzialy z - i moge wykorzystac jeden z nich np [a-cA-C0-3]bum
+        Poprawnie : abum, Bbum, 0bum
+        Blednie : dbum, aA0bum -> 2 z przedzialow
+
+
+        Negacje: (dopasowanie wszystko oprocz przedzialu klasy, przedzial ze znakiem ^ na poczatku)
+        np [^xyz]awa
+        Poprawnie : kawa, pawa, Wawa
+        Blednie : zawa, yawa, yzawa
+
+        Aby ^ byl itrerpretowany musze umiescic go w innym miejscu niz na poczatku np [x^yz]awa
+
+
+
+
 
          */
 
