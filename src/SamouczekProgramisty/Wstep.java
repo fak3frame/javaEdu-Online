@@ -2725,6 +2725,13 @@ public class Wstep {
         \s znaki biale np tabulacja [ \t\n\r\f\x0B]
         \S neegacja \s [^ \t\n\r\f\x0B]
 
+        Przyklada predefiniowanych w kombinacji np \d\w\d
+        Pattern pattern = Pattern.compile("\\d\\w\\d");
+        assertTrue(pattern.matcher("0_0").matches()); +
+        assertTrue(pattern.matcher("0X1").matches()); +
+        assertFalse(pattern.matcher("a0b").matches()); -
+        assertFalse(pattern.matcher("0 0").matches()); -
+
 
 
          */
