@@ -2732,6 +2732,13 @@ public class Wstep {
         assertFalse(pattern.matcher("a0b").matches()); -
         assertFalse(pattern.matcher("0 0").matches()); -
 
+        Lub \d{2}-\d{3}
+        \d{4} - cztery cyfry oznaczające rok,
+        - - minus oddzielający rok od miesiąca,
+        \d{2} - dwie cyfry oznaczające miesiąc,
+        - - minus oddzielający miesiąc od dnia,
+        \d{2} - dwie cyfry oznaczające dzień.
+
 
 
          */
