@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
-    </list>
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +35,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="2680" column="20" selection-start-line="2680" selection-start-column="20" selection-end-line="2680" selection-end-column="20" />
+            <state relative-caret-position="396">
+              <caret line="2686" column="66" selection-start-line="2686" selection-start-column="66" selection-end-line="2686" selection-end-column="66" />
               <folding>
                 <element signature="e#17145#17152#0" expanded="true" />
                 <element signature="e#80494#80524#1" expanded="true" />
@@ -459,20 +456,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01007" summary="SanouczekProgramisty Test Driven Development 80">
-      <created>1532876541624</created>
-      <option name="number" value="01007" />
-      <option name="presentableId" value="LOCAL-01007" />
-      <option name="project" value="LOCAL" />
-      <updated>1532876541624</updated>
-    </task>
-    <task id="LOCAL-01008" summary="SanouczekProgramisty Test Driven Development 81">
-      <created>1532877826898</created>
-      <option name="number" value="01008" />
-      <option name="presentableId" value="LOCAL-01008" />
-      <option name="project" value="LOCAL" />
-      <updated>1532877826898</updated>
-    </task>
     <task id="LOCAL-01009" summary="SanouczekProgramisty Test Driven Development 82">
       <created>1532879306178</created>
       <option name="number" value="01009" />
@@ -802,7 +785,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533212805663</updated>
     </task>
-    <option name="localTasksCounter" value="1056" />
+    <task id="LOCAL-01056" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 14">
+      <created>1533218074166</created>
+      <option name="number" value="01056" />
+      <option name="presentableId" value="LOCAL-01056" />
+      <option name="project" value="LOCAL" />
+      <updated>1533218074166</updated>
+    </task>
+    <task id="LOCAL-01057" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 15">
+      <created>1533218623900</created>
+      <option name="number" value="01057" />
+      <option name="presentableId" value="LOCAL-01057" />
+      <option name="project" value="LOCAL" />
+      <updated>1533218623900</updated>
+    </task>
+    <option name="localTasksCounter" value="1058" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -874,8 +871,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 104" />
-    <MESSAGE value="SanouczekProgramisty Test Driven Development 105" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 106" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 107" />
     <MESSAGE value="SanouczekProgramisty Test Driven Development 108" />
@@ -899,7 +894,9 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 11" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 12" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 13" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 14" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1226,8 +1223,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="2680" column="20" selection-start-line="2680" selection-start-column="20" selection-end-line="2680" selection-end-column="20" />
+        <state relative-caret-position="396">
+          <caret line="2686" column="66" selection-start-line="2686" selection-start-column="66" selection-end-line="2686" selection-end-column="66" />
           <folding>
             <element signature="e#17145#17152#0" expanded="true" />
             <element signature="e#80494#80524#1" expanded="true" />
