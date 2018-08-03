@@ -2722,7 +2722,8 @@ public class Wstep {
         \W znak NIE używany w słowach [^a-zA-Z0-9_]
         Poprawnie : .,?,-
         Blednie : d,D,3,_
-
+        \s znaki biale np tabulacja [ \t\n\r\f\x0B]
+        \S neegacja \s [^ \t\n\r\f\x0B]
 
 
 
