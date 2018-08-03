@@ -2537,6 +2537,13 @@ public class Wstep {
          pasuje do wzorca. Wzorcem tym jest wyrażenie regularne.
 
         W Javie wyrazenia rgularne wykorzystuje klasy Pattern i Matcher
+
+        Znaki biale:
+        \n - nowa linia
+        \r - usuniecie wszystkiego do poczatku linii
+        \t - tabulacja
+        \f - strzalka w gore (napisana doslowanie jako obrazek)
+        \x0B - wertykalny tabulator
          */
 
         Pattern compiledPattern = Pattern.compile("Marcin");
@@ -2704,15 +2711,25 @@ public class Wstep {
 
         Klasy predefiniowane (w skrocie) np \d (w string musze dac podwojne \)-> \\d
         \d - jakakolwiek cyfra [0-9] np \\d
+        Poprawnie : 1,2,6
+        Blednie : d,_,.,D
+        \D - jakikolwiek znak, który nie jest cyfrą [^0-9] np \\D
         Poprawnie : _,d,D
         Blednie : 2,4
+        \w znak używany w słowach [a-zA-Z0-9_] (_ na koncu jest brany doslownie)
+        Poprawnie : d,S,3,_
+        Blednie : .,?,-
+        \W znak NIE używany w słowach [^a-zA-Z0-9_]
+        Poprawnie : .,?,-
+        Blednie : d,D,3,_
+
 
 
 
          */
 
 
-        String x = new Object() + "123";
+        String x = new Object() + " 123";
         System.out.println(x);
     }
 
