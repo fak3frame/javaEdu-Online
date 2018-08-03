@@ -2702,7 +2702,10 @@ public class Wstep {
         Aby ^ byl itrerpretowany musze umiescic go w innym miejscu niz na poczatku np [x^yz]awa
 
 
-
+        Klasy predefiniowane (w skrocie) np \d (w string musze dac podwojne \)-> \\d
+        \d - jakakolwiek cyfra [0-9] np \\d
+        Poprawnie : _,d,D
+        Blednie : 2,4
 
 
 
