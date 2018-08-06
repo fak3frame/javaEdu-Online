@@ -2664,7 +2664,7 @@ public class Wstep {
 
         /*
         Klasy w wyrazeniach regularnych oznaczaja grupy symboli w []
-         np [rtmp]aca oznacza ze musimy wykorzystac 1 z sumboli w [] nie
+         np [rtmp]aca oznacza ze musimy wykorzystac JEDEN z sumboli w [] nie
          wiecej
         Poprawnie : raca, taca, maca
         Błednie : praca -> 2 litery wkorzystane, pacanow -> czesc po sie nie zgadza
