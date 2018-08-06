@@ -2626,17 +2626,23 @@ public class Wstep {
         a?la -> a{0,1}la
          */
 
-        //znak . - na miejscu . MUSI wystapic dowolny znak poza znakiem konca lini
-        //          np: ko.ek
-        //Poprawnie : kotek, korek
+        //znak . - na miejscu . MUSI wystapic dowolny 1 ZNAK poza znakiem konca lini
+        //          np: ko.ek chyba ze jest przed nim np * czyli .* to moze wystapic
+        //          dowolny ciag lub jego brak!
+        //          Przykad ko.ek :
+        //Poprawnie : kotek, koDek
         //Blednie : koek, ktek
-
+        Pattern mp2 = Pattern.compile("ko.*ek");
+        Matcher mm2 = mp2.matcher("koDDDddek");
+        System.out.println("matcher . : " + mm2.matches());
+        //          Przyklad ko.*ek :
+        //Poprawnie : kotek, koDDddek, koek
+        //Blednie : kotekk
 
         //Kompbinacja k+a.*ta:
         //k+ (k musi wystapic conajmniej 1 raz, przed nim nic)
-        //.* (musze cos wstawic poza koncem lini lecz jest po nim * co łaczy sie
-        // przez co moge tam wstawic dowolny znak lub ciag znakow
-        // powtorzony dowolna ilosc razy lub nie wstawiac nic!)
+        //.* (musze wstawic 1 znak poza koncem lini lecz jest po nim * co łaczy sie
+        // przez co moge tam wstawic dowolny znak lub ciag znakow lub nic
         //Poprawne wyrazenia: kata, kkax&dta, kaRta, kaSIA MA KOta, kkkka#$*&JHDFTATAta
         //Bledne : ata (brak k na poczatku), kta (brak a po pierwszym k)
         Pattern mp1 = Pattern.compile("k+a.*ta");
@@ -2644,7 +2650,7 @@ public class Wstep {
         System.out.println("XXXXXXX : "+mm1.matches());
 
 
-        //Kombinacja .+@.+\.pl. (wyrazenie regularne maila)
+        //Kombinacja .+@.+\.pl (wyrazenie regularne maila)
         /*
         .+ - dowolny symbol użyty co najmniej raz,
         @ - małpka,
@@ -2652,6 +2658,9 @@ public class Wstep {
         \. - kropka rozumiana dosłownie (nie jako specjalny znak wyrażenia regularnego),
         pl - następujące po sobie litery p i l.
         */
+        Pattern mailPattern = Pattern.compile(".+@.+\\.pl");
+        Matcher mm3 = mailPattern.matcher("kamil7745@gmail.pl");
+        System.out.println("mail pattern: : "+mm3.matches());
 
         /*
         Klasy w wyrazeniach regularnych oznaczaja grupy symboli w []
