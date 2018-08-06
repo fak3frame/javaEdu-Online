@@ -2605,20 +2605,6 @@ public class Wstep {
         //Poprawnie : uwga, uwaga, uwaaaaga
         //Blednie : auwaga
 
-        Pattern wzorUwaga = Pattern.compile("uwa*ga");
-
-        System.out.println("\n"+"uwga");//brak a - true
-        Matcher dopasowanie6 = wzorUwaga.matcher("uwga");
-        System.out.println(dopasowanie6.matches());
-        System.out.println("uwaga");//to samo - true
-        Matcher dopasowanie7 = wzorUwaga.matcher("uwaga");
-        System.out.println(dopasowanie7.matches());
-        System.out.println("uwaaaaga");//kilka a - true
-        Matcher dopasowanie8 = wzorUwaga.matcher("uwaaaaga");
-        System.out.println(dopasowanie8.matches());
-        System.out.println("auwaga");//a na poczatku - false
-        Matcher dopasowanie9 = wzorUwaga.matcher("auwaga");
-        System.out.println(dopasowanie9.matches());
 
         //znak + - dziala jak * tylko ze wystapienie musi byc CO NAJMNIEJ jedno
         //          np de+bil
@@ -2626,20 +2612,6 @@ public class Wstep {
         //Poprawnie : debil, deeeebil
         //Blednie : dbil, edebil,
 
-        Pattern wzorDebil = Pattern.compile("de+bil");
-
-        System.out.println("\n"+"debil");//to samo - true
-        Matcher dopasowanie10 = wzorDebil.matcher("debil");
-        System.out.println(dopasowanie10.matches());
-        System.out.println("deeeebil");//kilka e - true
-        Matcher dopasowanie11 = wzorDebil.matcher("deeeebil");
-        System.out.println(dopasowanie11.matches());
-        System.out.println("dbil");//brak e - false
-        Matcher dopasowanie12 = wzorDebil.matcher("dbil");
-        System.out.println(dopasowanie12.matches());
-        System.out.println("edebil");//e na poczatku - false
-        Matcher dopasowanie13 = wzorDebil.matcher("edebil");
-        System.out.println(dopasowanie13.matches());
 
         /*
         Dokladniejsze powtorzenia:
