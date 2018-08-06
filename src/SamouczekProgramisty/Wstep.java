@@ -2637,10 +2637,10 @@ public class Wstep {
         //.* (musze cos wstawic poza koncem lini lecz jest po nim * co łaczy sie
         // przez co moge tam wstawic dowolny znak lub ciag znakow
         // powtorzony dowolna ilosc razy lub nie wstawiac nic!)
-        //Poprawne wyrazenia: kata, kkaxdta, kaRta, kaSIA MA KOta, kkkka#$*&JHDFTATAta
+        //Poprawne wyrazenia: kata, kkax&dta, kaRta, kaSIA MA KOta, kkkka#$*&JHDFTATAta
         //Bledne : ata (brak k na poczatku), kta (brak a po pierwszym k)
         Pattern mp1 = Pattern.compile("k+a.*ta");
-        Matcher mm1 = mp1.matcher("kadebillta");
+        Matcher mm1 = mp1.matcher("kkax&dta");
         System.out.println("XXXXXXX : "+mm1.matches());
 
 
