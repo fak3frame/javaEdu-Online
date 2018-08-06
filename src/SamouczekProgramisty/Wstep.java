@@ -2643,6 +2643,7 @@ public class Wstep {
         Matcher mm1 = mp1.matcher("kadebillta");
         System.out.println("XXXXXXX : "+mm1.matches());
 
+
         //Kombinacja .+@.+\.pl. (wyrazenie regularne maila)
         /*
         .+ - dowolny symbol użyty co najmniej raz,
