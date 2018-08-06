@@ -3,6 +3,7 @@ package SamouczekProgramisty;
 import SamouczekProgramisty.Silnik.SilnikMoj;
 
 import java.io.*;
+import java.lang.reflect.Parameter;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -2634,10 +2635,13 @@ public class Wstep {
         //Kompbinacja k+a.*ta:
         //k+ (k musi wystapic conajmniej 1 raz, przed nim nic)
         //.* (musze cos wstawic poza koncem lini lecz jest po nim * co łaczy sie
-        // przez co moge tam wstawic dowolny znak powtorzony dowolna ilosc
-        // razy lub nie wstawiac nic!)
+        // przez co moge tam wstawic dowolny znak lub ciag znakow
+        // powtorzony dowolna ilosc razy lub nie wstawiac nic!)
         //Poprawne wyrazenia: kata, kaTAPULta, kaRta, kaSIA MA KOta, kkkka#$*&JHDFTATAta
         //Bledne : ata (brak k na poczatku), kta (brak a po pierwszym k)
+        Pattern mp1 = Pattern.compile("k+a.*ta");
+        Matcher mm1 = mp1.matcher("kadebillta");
+        System.out.println("XXXXXXX : "+mm1.matches());
 
         //Kombinacja .+@.+\.pl. (wyrazenie regularne maila)
         /*
