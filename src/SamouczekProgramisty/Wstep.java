@@ -2656,7 +2656,7 @@ public class Wstep {
         /*
         .+ - dowolny symbol lub ciag użyty co najmniej raz,
         @ - małpa,
-        .+ - ponownie dowolny symbol użyty co najmniej raz,
+        .+ - ponownie dowolny symbol lub ciag użyty co najmniej raz,
         \. - kropka rozumiana dosłownie (nie jako specjalny znak wyrażenia regularnego),
         pl - następujące po sobie litery p i l.
         */
