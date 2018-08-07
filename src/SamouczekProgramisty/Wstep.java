@@ -2727,7 +2727,7 @@ public class Wstep {
         - - minus oddzielający miesiąc od dnia,
         \d{2} - dwie cyfry oznaczające dzień.
 
-k
+
 
 
 
