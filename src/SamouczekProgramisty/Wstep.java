@@ -2684,7 +2684,7 @@ public class Wstep {
 
         Aby - byl iterpretowany doslownie musze go umieciec na koncu klasy np [abc-]xyz
 
-        Mozna takze laczyc przedzialy z - i moge wykorzystac jeden z nich np [a-cA-C0-3]bum
+        Mozna takze laczyc przedzialy z - i moge wykorzystac JEDEN z nich np [a-cA-C0-3]bum
         Poprawnie : abum, Bbum, 0bum
         Blednie : dbum, aA0bum -> 2 z przedzialow
 
@@ -2694,7 +2694,7 @@ public class Wstep {
         Poprawnie : kawa, pawa, Wawa
         Blednie : zawa, yawa, yzawa
 
-        Aby ^ byl itrerpretowany musze umiescic go w innym miejscu niz na poczatku np [x^yz]awa
+        Aby ^ byl itrerpretowany doslownie musze umiescic go w innym miejscu niz na poczatku np [x^yz]awa
 
 
         Klasy predefiniowane (w skrocie) np \d (w string musze dac podwojne \)-> \\d
@@ -2720,7 +2720,7 @@ public class Wstep {
         assertFalse(pattern.matcher("a0b").matches()); -
         assertFalse(pattern.matcher("0 0").matches()); -
 
-        Lub \d{2}-\d{3}
+        Przykład daty :  \d{2}-\d{3}
         \d{4} - cztery cyfry oznaczające rok,
         - - minus oddzielający rok od miesiąca,
         \d{2} - dwie cyfry oznaczające miesiąc,
