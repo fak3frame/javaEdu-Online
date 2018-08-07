@@ -2529,9 +2529,7 @@ public class Wstep {
         //WYRAŻENIA REGULARNE
         /*
         Wyrażenie regularne (ang. regular expression) to „wzorzec”, który opisuje grupę
-         łańcuchów znaków
-
-        Wyrażenie regularne to tak zwany wzorzec, który następne jest kompilowany przez
+         łańcuchów znaków i jest nastepnie kompilowany przez
          silnik wyrażeń regularnych do wewnętrznej postaci.
 
         W praktyce jednym z głównych zastosowań jest weryfikacja czy dany łańcuch znaków
@@ -2628,16 +2626,20 @@ public class Wstep {
 
         //znak . - na miejscu . MUSI wystapic dowolny 1 ZNAK poza znakiem konca lini
         //          np: ko.ek chyba ze jest przed nim np * czyli .* to moze wystapic
-        //          dowolny ciag lub jego brak!
+        //          dowolny ciag lub jego brak! lub + czyli .+ to musi byc dowolny znak
+        //          lub ciag
         //          Przykad ko.ek :
         //Poprawnie : kotek, koDek
         //Blednie : koek, ktek
-        Pattern mp2 = Pattern.compile("ko.*ek");
-        Matcher mm2 = mp2.matcher("koDDDddek");
+        Pattern mp2 = Pattern.compile("ko.+ek");
+        Matcher mm2 = mp2.matcher("koDDsddek");
         System.out.println("matcher . : " + mm2.matches());
         //          Przyklad ko.*ek :
         //Poprawnie : kotek, koDDddek, koek
         //Blednie : kotekk
+        //          Przyklad ko.+ek :
+        //Poprawnie : kotek, koDDsddek
+        //Blednie : kotekk, koek
 
         //Kompbinacja k+a.*ta:
         //k+ (k musi wystapic conajmniej 1 raz, przed nim nic)
@@ -2652,8 +2654,8 @@ public class Wstep {
 
         //Kombinacja .+@.+\.pl (wyrazenie regularne maila)
         /*
-        .+ - dowolny symbol użyty co najmniej raz,
-        @ - małpka,
+        .+ - dowolny symbol lub ciag użyty co najmniej raz,
+        @ - małpa,
         .+ - ponownie dowolny symbol użyty co najmniej raz,
         \. - kropka rozumiana dosłownie (nie jako specjalny znak wyrażenia regularnego),
         pl - następujące po sobie litery p i l.

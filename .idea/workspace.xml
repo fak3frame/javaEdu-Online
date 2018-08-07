@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16371">
+            <state relative-caret-position="16388">
               <caret line="1024" column="6" selection-start-line="1024" selection-start-column="6" selection-end-line="1024" selection-end-column="6" />
             </state>
           </provider>
@@ -37,10 +38,11 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <caret line="2680" lean-forward="true" selection-start-line="2680" selection-end-line="2680" />
+            <state relative-caret-position="207">
+              <caret line="2632" column="42" lean-forward="true" selection-start-line="2632" selection-start-column="42" selection-end-line="2632" selection-end-column="42" />
               <folding>
-                <element signature="e#17145#17152#0" expanded="true" />
+                <element signature="e#17181#17188#0" expanded="true" />
+                <element signature="e#80530#80560#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,6 +172,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,59 +200,10 @@
               <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
               <item name="Zadania" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
-              <item name="_2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
-              <item name="_2" type="462c0819:PsiDirectoryNode" />
-              <item name="Gotowe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
-              <item name="Gotowe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_11_TestyJednostkowe" type="462c0819:PsiDirectoryNode" />
-              <item name="Gotowe" type="462c0819:PsiDirectoryNode" />
-              <item name="GotoweMojeNauka" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,13 +412,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01026" summary="SanouczekProgramisty Test Driven Development 99">
-      <created>1533155934937</created>
-      <option name="number" value="01026" />
-      <option name="presentableId" value="LOCAL-01026" />
-      <option name="project" value="LOCAL" />
-      <updated>1533155934938</updated>
     </task>
     <task id="LOCAL-01027" summary="SanouczekProgramisty Test Driven Development 100">
       <created>1533156700000</created>
@@ -800,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533570686240</updated>
     </task>
-    <option name="localTasksCounter" value="1075" />
+    <task id="LOCAL-01075" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 34">
+      <created>1533574261795</created>
+      <option name="number" value="01075" />
+      <option name="presentableId" value="LOCAL-01075" />
+      <option name="project" value="LOCAL" />
+      <updated>1533574261796</updated>
+    </task>
+    <option name="localTasksCounter" value="1076" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -836,7 +792,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="7" />
+    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -872,7 +828,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 9" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 10" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 11" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 12" />
@@ -897,7 +852,8 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 31" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 32" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 33" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 33" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 34" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 34" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1152,7 +1108,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16371">
+        <state relative-caret-position="16388">
           <caret line="1024" column="6" selection-start-line="1024" selection-start-column="6" selection-end-line="1024" selection-end-column="6" />
         </state>
       </provider>
@@ -1215,10 +1171,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="2680" lean-forward="true" selection-start-line="2680" selection-end-line="2680" />
+        <state relative-caret-position="207">
+          <caret line="2632" column="42" lean-forward="true" selection-start-line="2632" selection-start-column="42" selection-end-line="2632" selection-end-column="42" />
           <folding>
-            <element signature="e#17145#17152#0" expanded="true" />
+            <element signature="e#17181#17188#0" expanded="true" />
+            <element signature="e#80530#80560#1" expanded="true" />
           </folding>
         </state>
       </provider>
