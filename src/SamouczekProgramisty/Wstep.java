@@ -2720,7 +2720,7 @@ public class Wstep {
         assertFalse(pattern.matcher("a0b").matches()); -
         assertFalse(pattern.matcher("0 0").matches()); -
 
-        Przykład daty :  \d{2}-\d{3}
+        Przykład daty :  \d{2}-\d{2}-\d{2}
         \d{4} - cztery cyfry oznaczające rok,
         - - minus oddzielający rok od miesiąca,
         \d{2} - dwie cyfry oznaczające miesiąc,
