@@ -2749,10 +2749,14 @@ public class Wstep {
          na zmiennej dopasowania .matches(); aby moc sprawdzic
          co znajduje sie w danej grupie
 
+        Jesli nie bedzie nic w grupie a bede chcial sie do niej dostac wyrzuci
+         wyjatek IllegalStateException
+
         Np: "mam kota o imieniu --Lucky--. kot jest czarny"
          */
-        Pattern kotPattern = Pattern.compile("[^-]*--(\\w+)--.*");
-        Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. kot jest czarny");
+        Pattern kotPattern = Pattern.compile("[^-{2}]*--(\\w+)--.*");
+        //[^-]* dowolne znaki za wyjatkiem - (musi to byc aby moc oddzielic pierwsze wystapienie -
+        Matcher kotMatcher = kotPattern.matcher("mam kota -o imieniu --Lucky--. kot jest czarny");
         kotMatcher.matches();
         String lucky = "Lucky";
         System.out.println("Czy patern kota pasuje? : "+lucky.equals(kotMatcher.group(1)));
