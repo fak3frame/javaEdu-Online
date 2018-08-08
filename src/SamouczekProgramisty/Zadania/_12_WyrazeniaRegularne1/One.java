@@ -18,7 +18,7 @@ public class One {
          Poprawnym numerem jest 123\2A, 24B\3 czy 12\5, ale
          już numer abc\cba nie,
          */
-        Pattern wzorzecZad2 = Pattern.compile("");
+        Pattern wzorzecZad2 = Pattern.compile("\\d+[a-zA-Z]?\\\\\\d+[a-zA-Z]?");
 
         /* ZAD 3
         Sprawdza czy użytkownik wprowadził poprawną nazwę miasta.
@@ -26,5 +26,6 @@ public class One {
          jednak Ptysiow123 już nie. Dla uproszczenia załóżmy, że
          żadna nazwa miejscowości nie zwiera polskich znaków.\
         */
+        Pattern wzorzecZad3 = Pattern.compile("[A-Z][a-z]+([ -][A-Z][a-z]+)?");
     }
 }
