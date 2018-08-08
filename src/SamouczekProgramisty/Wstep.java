@@ -2728,12 +2728,36 @@ public class Wstep {
         \d{2} - dwie cyfry oznaczające dzień.
 
 
+        //Grupy
+        Sluza do wyluskania z lancucha znakow wybranej czesci
 
+        Grupy rozpoczynaja sie w ()
 
+        Numerowane sa od 1
 
+        Jezeli dany lancuch pasuje do wyrazenia regularnego to
+         znajduje sie w grupie z numerem 0
 
+        Na grupach operuje klasa Matcher
 
+        metody:
+        groupCount() - zwraca liczbe grup w wyrazeniu regularnym
+         (pomija ta z indeksem 0)
+        group(int numerGrupy) - zwraca grupe z konkretnym numerem
+
+        Po przypisaniu wzorca i dopasowania musze wywolac metode
+         na zmiennej dopasowania .matches(); aby moc sprawdzic
+         co znajduje sie w danej grupie
+
+        Np: "mam kota o imieniu --Lucky--. kot jest czarny"
          */
+        Pattern kotPattern = Pattern.compile("[^-]*--(\\w+)--.*");
+        Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. kot jest czarny");
+        kotMatcher.matches();
+        String lucky = "Lucky";
+        System.out.println("Czy patern kota pasuje? : "+lucky.equals(kotMatcher.group(1)));
+
+
 
 
         String x = new Object() + " 123";
