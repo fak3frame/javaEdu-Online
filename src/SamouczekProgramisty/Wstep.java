@@ -2791,7 +2791,7 @@ public class Wstep {
         // (\w+) : gdupa w ktorej cyfry, litery lub podkreslnikj sa uzyte conajmniej raz
         // \) : doslwnie )
         //  : odstep
-        // \w+
+        // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
 
 
         String x = new Object() + " 123";
