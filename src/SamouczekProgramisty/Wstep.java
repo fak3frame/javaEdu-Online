@@ -2555,6 +2555,10 @@ public class Wstep {
         \x0B - wertykalny tabulator
          */
 
+        //POMOC W IDE
+        //moge na deklaracji wzorca uzyc <alt + enter> i dac Check RegExp aby na szybko
+        // sprawdzic czy podany wpisany w okno wzorzec pasuje
+
         Pattern compiledPattern = Pattern.compile("Marcin");
         //Tworze wzorzec ktorym jest slowo "Marcin"
         Matcher matcher = compiledPattern.matcher("Nazywam sie Marcin Pietraszek");
