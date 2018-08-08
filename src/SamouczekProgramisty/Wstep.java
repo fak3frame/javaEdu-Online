@@ -2788,12 +2788,15 @@ public class Wstep {
         // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
         //  : JEDEN odstep
         // \( : ( uzyty doslownie
-        // (\w+) : gdupa w ktorej cyfry, litery lub podkreslnikj sa uzyte conajmniej raz
+        // (\w+\\) : gdupa w ktorej cyfry, litery lub podkreslnikj sa uzyte conajmniej raz
+        // oraz \\ ktory oznacz doslowne wystapienie \
         // \) : doslwnie )
         //  : odstep
         // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
-        Pattern wzorNazwyKsiazki = Pattern.compile("\\w+ \\((\\w+)\\) \\w+");
-        Matcher dopasowanieNazwyKsiazki = wzorNazwyKsiazki.matcher("jacek (debil) pawlak");
+        //WSZEDZIE WE WZORCU MUSZE DAC 2x\ !!!
+        Pattern wzorNazwyKsiazki = Pattern.compile("\\w+ \\((\\w+\\\\)\\) \\w+");
+        Matcher dopasowanieNazwyKsiazki = wzorNazwyKsiazki.matcher("jacek (debil\\) pawlak");
+        //musze uzyc 2x \ aby bylo interpretowane doslownie w lancuchu
         dopasowanieNazwyKsiazki.matches();
         System.out.println(dopasowanieNazwyKsiazki.group(1));
 
