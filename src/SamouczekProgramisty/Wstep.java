@@ -2649,8 +2649,8 @@ public class Wstep {
         Matcher mm3 = mp3.matcher("koek");
         System.out.println("matcher {} : " + mm3.matches());
 
-        Pattern mp4 = Pattern.compile("[a-fx-]ek");
-        Matcher mm5 = mp4.matcher("aek");
+        Pattern mp4 = Pattern.compile("[a-dx-]ek");
+        Matcher mm5 = mp4.matcher("-ek");
         System.out.println("matcher [] : " + mm5.matches());
         //          Przyklad ko.*ek :
         //Poprawnie : kotek, koDDddek, koek
@@ -2772,13 +2772,19 @@ public class Wstep {
 
         Np: "mam kota o imieniu --Lucky--. kot jest czarny"
          */
-        Pattern kotPattern = Pattern.compile("[^-{2}]*--(\\w+)--.*");
-        //[^-]* dowolne znaki za wyjatkiem - (musi to byc aby moc oddzielic pierwsze wystapienie -
-        Matcher kotMatcher = kotPattern.matcher("mam kota -o imieniu --Lucky--. kot jest czarny");
+        Pattern kotPattern = Pattern.compile("[^-]*--(\\w+)--.*");
+        //[^-]* dowolne znaki za wyjatkiem - (musi to byc aby moc oddzielic pierwsze wystapienie -)
+        // nie zadziala gdy bede mial tylko jeden - przed -- poniewaz po pierwszym - bedzie szukalo
+        // dwoch --
+        //(\\w+) grupa w ktorej bedzie szukalo conajmniej 1 znaku
+        //-- doslownie
+        //.* dowolne znaki badz ich brak do konca
+        Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. kot jest czarny");
         kotMatcher.matches();
         String lucky = "Lucky";
         System.out.println("Czy patern kota pasuje? : "+lucky.equals(kotMatcher.group(1)));
 
+        //inny przyklad \w+ \((\w+)\) \w+
 
 
 
