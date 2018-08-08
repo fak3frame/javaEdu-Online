@@ -2537,6 +2537,16 @@ public class Wstep {
 
         W Javie wyrazenia rgularne wykorzystuje klasy Pattern i Matcher
 
+        Na poczatku deklaruje wzorzec
+         Pattern wzorzec = Pattern.compile("costam")
+        Nastepnie z pomoca obiektu wzorca deklaruje wybrane dopaseowanie
+         Matcher dopasowanie = wzorzec.matcher("pisze costam")
+        Aby sprawdzic dopasowanie dokladne uzywam metody matches(); na obiekcie
+         Matcher tj. dopasowanie.matches(); - zwroci false poniewaz sie nie zgadza
+        Aby spawdzic czy jakakolwiek czesc ciegu dopsowania pasuje do wzorca uzywam
+         metody find(); tj. dopasownie.find(); - zwroci true poniwaz "costam"
+         znajduje sie w dopasowaniu ciagu "pisze costam"
+
         Znaki biale:
         \n - nowa linia
         \r - usuniecie wszystkiego do poczatku linii
