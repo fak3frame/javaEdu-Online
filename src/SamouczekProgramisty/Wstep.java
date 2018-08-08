@@ -2785,7 +2785,13 @@ public class Wstep {
         System.out.println("Czy patern kota pasuje? : "+lucky.equals(kotMatcher.group(1)));
 
         //inny przyklad \w+ \((\w+)\) \w+
-
+        // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
+        //  : odstep
+        // \( : ( uzyty doslownie
+        // (\w+) : gdupa w ktorej cyfry, litery lub podkreslnikj sa uzyte conajmniej raz
+        // \) : doslwnie )
+        //  : odstep
+        // \w+
 
 
         String x = new Object() + " 123";
