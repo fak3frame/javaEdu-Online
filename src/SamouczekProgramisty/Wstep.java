@@ -2644,6 +2644,14 @@ public class Wstep {
         Pattern mp2 = Pattern.compile("ko.+ek");
         Matcher mm2 = mp2.matcher("koDDsddek");
         System.out.println("matcher . : " + mm2.matches());
+
+        Pattern mp3 = Pattern.compile("ko{1}ek");
+        Matcher mm3 = mp3.matcher("koek");
+        System.out.println("matcher {} : " + mm3.matches());
+
+        Pattern mp4 = Pattern.compile("[a-fx-]ek");
+        Matcher mm5 = mp4.matcher("aek");
+        System.out.println("matcher [] : " + mm5.matches());
         //          Przyklad ko.*ek :
         //Poprawnie : kotek, koDDddek, koek
         //Blednie : kotekk
@@ -2671,8 +2679,8 @@ public class Wstep {
         pl - następujące po sobie litery p i l.
         */
         Pattern mailPattern = Pattern.compile(".+@.+\\.pl");
-        Matcher mm3 = mailPattern.matcher("kamil7745@gmail.pl");
-        System.out.println("mail pattern: : "+mm3.matches());
+        Matcher mm4 = mailPattern.matcher("kamil7745@gmail.pl");
+        System.out.println("mail pattern: : "+mm4.matches());
 
         /*
         Klasy w wyrazeniach regularnych oznaczaja grupy symboli w []
