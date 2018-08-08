@@ -2786,12 +2786,16 @@ public class Wstep {
 
         //inny przyklad \w+ \((\w+)\) \w+
         // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
-        //  : odstep
+        //  : JEDEN odstep
         // \( : ( uzyty doslownie
         // (\w+) : gdupa w ktorej cyfry, litery lub podkreslnikj sa uzyte conajmniej raz
         // \) : doslwnie )
         //  : odstep
         // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
+        Pattern wzorNazwyKsiazki = Pattern.compile("\\w+ \\((\\w+)\\) \\w+");
+        Matcher dopasowanieNazwyKsiazki = wzorNazwyKsiazki.matcher("jacek (debil) pawlak");
+        dopasowanieNazwyKsiazki.matches();
+        System.out.println(dopasowanieNazwyKsiazki.group(1));
 
 
         String x = new Object() + " 123";
