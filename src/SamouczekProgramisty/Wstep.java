@@ -2856,9 +2856,16 @@ public class Wstep {
 
         //Alternatywa
         Pattern wzorzecAlternatywy = Pattern.compile("skrec w (lewo|prawo)");
+        //ograniczam wybor w ()
         Matcher dopasowanieWA = wzorzecAlternatywy.matcher("skrec w prawo");
-        matcher.find();
+        dopasowanieWA.find(); // moze byc tez matches();
         System.out.println("Wzorzec alternatywny : "+dopasowanieWA.group(1));
+
+        Pattern wzorzecAlternatywy2 = Pattern.compile("piec|lew|kot");
+        //moge uzyc wiecej
+        Matcher dopasowanieWA2 = wzorzecAlternatywy2.matcher("lew");
+        dopasowanieWA2.find();
+        System.out.println("Wzorzec alternatywny 2 : "+dopasowanieWA2.group(1));
 
 
 
