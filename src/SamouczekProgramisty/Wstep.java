@@ -2918,6 +2918,13 @@ public class Wstep {
             true : qwd, qasd
             false : asfdf
         */
+        Pattern wzorzecLiczb = Pattern.compile("\\d+?");//musza byc same liczby
+        Matcher dopasowanieLiczb = wzorzecLiczb.matcher("abc123def");
+        System.out.println("find : "+dopasowanieLiczb.find()); // true
+        System.out.println("pierwsza liczba : "+dopasowanieLiczb.group());
+        //DO GRUPY BEDE MOGL SIE DOSTAC JESLI OSTATNIA METODA NA DOPASOWANIU
+        // BEDZIE TRUE (find lub matches) INACZEJ BEDZIE BLAD !
+        System.out.println("matches : "+dopasowanieLiczb.matches()); // false
 
 
 
