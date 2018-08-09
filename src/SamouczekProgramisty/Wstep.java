@@ -2861,11 +2861,11 @@ public class Wstep {
         dopasowanieWA.find(); // moze byc tez matches();
         System.out.println("Wzorzec alternatywny : "+dopasowanieWA.group(1));
 
-        Pattern wzorzecAlternatywy2 = Pattern.compile("piec|lew|kot");
+        Pattern wzorzecAlternatywy2 = Pattern.compile("pies|lew|kot");
         //moge uzyc wiecej
         Matcher dopasowanieWA2 = wzorzecAlternatywy2.matcher("lew");
-        dopasowanieWA2.find();
-        System.out.println("Wzorzec alternatywny 2 : "+dopasowanieWA2.group(1));
+        dopasowanieWA2.matches();
+        System.out.println("Wzorzec alternatywny 2 : "+dopasowanieWA2.group()); // UZYWAM PUSEJ GR??!
 
 
 
