@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 60">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 61">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,15 +36,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5665" />
+          <entry key="java" value="6155" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="27" />
+          <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5665" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="JAVA" value="6155" />
+          <entry key="PLAIN_TEXT" value="28" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -73,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="2923" column="35" selection-start-line="2923" selection-start-column="35" selection-end-line="2923" selection-end-column="35" />
+            <state relative-caret-position="629">
+              <caret line="2933" column="67" selection-start-line="2933" selection-start-column="67" selection-end-line="2933" selection-end-column="67" />
               <folding>
                 <element signature="e#122410#122411#0" expanded="true" />
                 <element signature="e#122443#122444#0" expanded="true" />
@@ -410,13 +411,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01053" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 11">
-      <created>1533163506783</created>
-      <option name="number" value="01053" />
-      <option name="presentableId" value="LOCAL-01053" />
-      <option name="project" value="LOCAL" />
-      <updated>1533163506783</updated>
     </task>
     <task id="LOCAL-01054" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 12">
       <created>1533163588606</created>
@@ -754,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533833113888</updated>
     </task>
-    <option name="localTasksCounter" value="1102" />
+    <task id="LOCAL-01102" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 61">
+      <created>1533833888909</created>
+      <option name="number" value="01102" />
+      <option name="presentableId" value="LOCAL-01102" />
+      <option name="project" value="LOCAL" />
+      <updated>1533833888909</updated>
+    </task>
+    <option name="localTasksCounter" value="1103" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -826,7 +827,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 36" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 37" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 38" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 39" />
@@ -851,7 +851,8 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 58" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 59" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 60" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 60" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 61" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 61" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/SerializacjaFabryka.java">
@@ -1167,8 +1168,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="2923" column="35" selection-start-line="2923" selection-start-column="35" selection-end-line="2923" selection-end-column="35" />
+        <state relative-caret-position="629">
+          <caret line="2933" column="67" selection-start-line="2933" selection-start-column="67" selection-end-line="2933" selection-end-column="67" />
           <folding>
             <element signature="e#122410#122411#0" expanded="true" />
             <element signature="e#122443#122444#0" expanded="true" />
