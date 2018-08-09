@@ -2847,6 +2847,23 @@ public class Wstep {
         Matcher dopasowanieWZ2 = wzorzecZachlanny2.matcher("<em>jakis podkreslony tekst</em>gdfgdfg");
         dopasowanieWZ2.find();
         System.out.println("znacznik podkreslenia 3 : "+dopasowanieWZ2.group(1));
+        //jednak {} nie jest zachlanny i w find {3,5} znajdzie wszystko od 3 do 5 znakow a z ? tylko to co ma 3
+        Pattern wzorzecNieZachlanny = Pattern.compile("(.{3,5}?)");
+        Matcher dopazsowanieWNZ = wzorzecNieZachlanny.matcher("123123");
+        dopazsowanieWNZ.find();
+        System.out.println("Dopasownie niezachlanne {} : "+dopazsowanieWNZ.group(1));
+
+
+        //Alternatywa
+        Pattern wzorzecAlternatywy = Pattern.compile("skrec w (lewo|prawo)");
+        Matcher dopasowanieWA = wzorzecAlternatywy.matcher("skrec w prawo");
+        matcher.find();
+        System.out.println("Wzorzec alternatywny : "+dopasowanieWA.group(1));
+
+
+
+
+
 
         String x = new Object() + " 123";
         System.out.println(x);

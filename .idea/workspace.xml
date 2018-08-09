@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 51">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 52">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -36,14 +36,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3640" />
-          <entry key="txt" value="16" />
+          <entry key="java" value="4108" />
+          <entry key="regexp" value="2" />
+          <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3640" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="JAVA" value="4108" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="2845" column="117" selection-start-line="2845" selection-start-column="117" selection-end-line="2845" selection-end-column="117" />
+            <state relative-caret-position="538">
+              <caret line="2860" column="74" selection-start-line="2860" selection-start-column="74" selection-end-line="2860" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -241,7 +243,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last.edited.regexp" value="&lt;&gt;" />
+    <property name="last.edited.regexp" value="123456" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -395,13 +397,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01044" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 2">
-      <created>1533158505059</created>
-      <option name="number" value="01044" />
-      <option name="presentableId" value="LOCAL-01044" />
-      <option name="project" value="LOCAL" />
-      <updated>1533158505059</updated>
     </task>
     <task id="LOCAL-01045" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 3">
       <created>1533158891717</created>
@@ -739,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533753709835</updated>
     </task>
-    <option name="localTasksCounter" value="1093" />
+    <task id="LOCAL-01093" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 52">
+      <created>1533826960952</created>
+      <option name="number" value="01093" />
+      <option name="presentableId" value="LOCAL-01093" />
+      <option name="project" value="LOCAL" />
+      <updated>1533826960956</updated>
+    </task>
+    <option name="localTasksCounter" value="1094" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -811,7 +813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 27" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 28" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 29" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 30" />
@@ -836,7 +837,8 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 49" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 50" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 51" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 51" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 52" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 52" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/SerializacjaFabryka.java">
@@ -1152,8 +1154,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="2845" column="117" selection-start-line="2845" selection-start-column="117" selection-end-line="2845" selection-end-column="117" />
+        <state relative-caret-position="538">
+          <caret line="2860" column="74" selection-start-line="2860" selection-start-column="74" selection-end-line="2860" selection-end-column="74" />
         </state>
       </provider>
     </entry>
