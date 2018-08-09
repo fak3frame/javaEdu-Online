@@ -2886,8 +2886,14 @@ public class Wstep {
         System.out.println("grupa 3 : "+dopasowanieWNG.group("rok"));
 
 
-
-
+        //Ponowne uzycie grup
+        //"<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>"
+        //chce do pierwszej grupy dac znacznik p
+        //do 2 to co jest pomiedzy <p></p>
+        Pattern wzorzecUzyciaGrup = Pattern.compile("");
+        Matcher dopasowanieWUG = wzorzecUzyciaGrup.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
+        dopasowanieWUG.matches();
+        System.out.println("");
 
 
 
