@@ -2829,8 +2829,24 @@ public class Wstep {
         Pattern wzorzecZad3 = Pattern.compile("[A-Z][a-z]+([ -][A-Z][a-z]+)?");
 
 
-
-
+        //Przyklad z bledem - chce wylapac to co jest w <>
+        Pattern wzorzecZachlanny = Pattern.compile("<(.+)>");
+        //wylapie najwiecej ile to mozliwe w dopasoaniu
+        Matcher dopasowanieWZ = wzorzecZachlanny.matcher("<em>jakis podkreslony tekst</em>gdfgdfg");
+        dopasowanieWZ.find();
+        System.out.println("znacznik podkreslenia 1 : "+dopasowanieWZ.group(1));
+        //Poprawnie:
+        Pattern wzorzecZachlannyPoprawny = Pattern.compile("<([^>]+)>");
+        Matcher dopasowanieWZP = wzorzecZachlannyPoprawny.matcher("<em>jakis podkreslony tekst</em>");
+        dopasowanieWZP.find();
+        System.out.println("znacznik podkreslenia 2 : "+dopasowanieWZP.group(1));
+        //Symbole powtórzeń {}, ?, * czy + dopasowują zawsze najwięcej jak tylko się da
+        //Istenieje przelacznik ktory zmienia zachowanie powtorzenia i jest to znak ? czyli
+        // wylapuje najmniej jak to mozliwe
+        Pattern wzorzecZachlanny2 = Pattern.compile("<(.*?)>"); //moze tez byc "<(.*?)>" tylko moze zostawic puste <>
+        Matcher dopasowanieWZ2 = wzorzecZachlanny2.matcher("<em>jakis podkreslony tekst</em>gdfgdfg");
+        dopasowanieWZ2.find();
+        System.out.println("znacznik podkreslenia 3 : "+dopasowanieWZ2.group(1));
 
         String x = new Object() + " 123";
         System.out.println(x);
