@@ -2868,6 +2868,27 @@ public class Wstep {
         System.out.println("Wzorzec alternatywny 2 : "+dopasowanieWA2.group()); // UZYWAM PUSEJ GR??!
 
 
+        //Pomijanie grup
+        Pattern wzorzecPomijaniaGrupy = Pattern.compile("(?:Tomek|Kamil) ma (kota|psa)");
+        Matcher dopasowanieWPG = wzorzecPomijaniaGrupy.matcher("Kamil ma kota");
+        dopasowanieWPG.matches();
+        System.out.println("Gupa ktora nie zostala pominieta : "+dopasowanieWPG.group(1));
+
+
+        //Nazywanie grup
+        Pattern wzorzecNazywaneGupy = Pattern.compile("(?<dzien>\\d{2})\\.(?<miesiac>\\d{2})\\.(?<rok>\\d{4})");
+        //nazwa grypu jest na poczatku nawiasu w klauzuli ?<nazwaGrupy>
+        Matcher dopasowanieWNG = wzorzecNazywaneGupy.matcher("04.01.2017");
+        dopasowanieWNG.matches();
+        System.out.println("grupa 1 : "+dopasowanieWNG.group(1));
+        System.out.println("grupa 1 : "+dopasowanieWNG.group("dzien"));
+        System.out.println("grupa 3 : "+dopasowanieWNG.group(3));
+        System.out.println("grupa 3 : "+dopasowanieWNG.group("rok"));
+
+
+
+
+
 
 
 
