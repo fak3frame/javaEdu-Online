@@ -2776,7 +2776,7 @@ public class Wstep {
 
         Np: "mam kota o imieniu --Lucky--. kot jest czarny"
          */
-        Pattern kotPattern = Pattern.compile("[^-]*--(\\w+)--.*");
+        Pattern kotPattern = Pattern.compile("[^-]+--(\\w+)--.*");
         //[^-]* dowolne znaki za wyjatkiem - (musi to byc aby moc oddzielic pierwsze wystapienie -)
         // nie zadziala gdy bede mial tylko jeden - przed -- poniewaz po pierwszym - bedzie szukalo
         // dwoch --
@@ -2785,8 +2785,7 @@ public class Wstep {
         //.* dowolne znaki badz ich brak do konca
         Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. kot jest czarny");
         kotMatcher.matches();
-        String lucky = "Lucky";
-        System.out.println("Czy patern kota pasuje? : "+lucky.equals(kotMatcher.group(1)));
+        System.out.println("Imie kota : "+kotMatcher.group(1));
 
         //inny przyklad \w+ \((\w+)\) \w+
         // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
@@ -2893,13 +2892,23 @@ public class Wstep {
         //"<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>"
         //chce do pierwszej grupy dac znacznik p
         //do 2 to co jest pomiedzy <p></p>
-        Pattern wzorzecUzyciaGrup = Pattern.compile("<([^>]+)>(.+?)</p");
+        Pattern wzorzecUzyciaGrup = Pattern.compile("<(.+?)>(.+?)</p");
         Matcher dopasowanieWUG = wzorzecUzyciaGrup.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
         dopasowanieWUG.find();
         System.out.println("wzorzecUzyciaGrup grupa 1 : " + dopasowanieWUG.group(1));
         System.out.println("wzorzecUzyciaGrup grupa 2 : " + dopasowanieWUG.group(2));
 
-        //moge uzyc zawartosci innej grupy juz we wzorcu w klauzuli \\
+        //moge uzyc zawartosci innej grupy juz we wzorcu w klauzuli \\NR_GRUPY
+        Pattern wzorzecUzyciaGrup2 = Pattern.compile("<(.+?)>(.+?)</\\1");
+        // \\1 to p wiec bedzie uniwersalne dla znacznika
+        Matcher dopasowanieWUG2 = wzorzecUzyciaGrup2.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
+        dopasowanieWUG2.find();
+        System.out.println("wzorzecUzyciaGrup grupa 1 : " + dopasowanieWUG2.group(1));
+        System.out.println("wzorzecUzyciaGrup grupa 2 : " + dopasowanieWUG2.group(2));
+
+
+        //Kotwice
+
 
 
 
