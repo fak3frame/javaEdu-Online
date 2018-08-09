@@ -2908,7 +2908,16 @@ public class Wstep {
 
 
         //Kotwice
-
+        /*
+        ^ oznacza początek łańcucha znaków,
+            np c^
+            true : csd, csdg
+            false : dsdfc
+        $ oznacza koniec łańcucha znaków.
+            np d$
+            true : qwd, qasd
+            false : asfdf
+        */
 
 
 
