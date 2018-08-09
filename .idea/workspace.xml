@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 55">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 57">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -36,15 +36,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4808" />
+          <entry key="java" value="5210" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="20" />
+          <entry key="txt" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4808" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="JAVA" value="5210" />
+          <entry key="PLAIN_TEXT" value="23" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -74,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="2885" column="65" selection-start-line="2885" selection-start-column="65" selection-end-line="2885" selection-end-column="65" />
+            <state relative-caret-position="459">
+              <caret line="2864" lean-forward="true" selection-start-line="2864" selection-end-line="2864" />
             </state>
           </provider>
         </entry>
@@ -243,7 +243,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last.edited.regexp" value="123456" />
+    <property name="last.edited.regexp" value="&lt;p&gt;asdc&lt;/p" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -397,20 +397,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01048" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 6">
-      <created>1533162469702</created>
-      <option name="number" value="01048" />
-      <option name="presentableId" value="LOCAL-01048" />
-      <option name="project" value="LOCAL" />
-      <updated>1533162469702</updated>
-    </task>
-    <task id="LOCAL-01049" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 7">
-      <created>1533162706371</created>
-      <option name="number" value="01049" />
-      <option name="presentableId" value="LOCAL-01049" />
-      <option name="project" value="LOCAL" />
-      <updated>1533162706371</updated>
     </task>
     <task id="LOCAL-01050" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 8">
       <created>1533162822496</created>
@@ -741,7 +727,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533828657817</updated>
     </task>
-    <option name="localTasksCounter" value="1097" />
+    <task id="LOCAL-01097" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 56">
+      <created>1533829337239</created>
+      <option name="number" value="01097" />
+      <option name="presentableId" value="LOCAL-01097" />
+      <option name="project" value="LOCAL" />
+      <updated>1533829337239</updated>
+    </task>
+    <task id="LOCAL-01098" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 57">
+      <created>1533830306392</created>
+      <option name="number" value="01098" />
+      <option name="presentableId" value="LOCAL-01098" />
+      <option name="project" value="LOCAL" />
+      <updated>1533830306392</updated>
+    </task>
+    <option name="localTasksCounter" value="1099" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -813,8 +813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 31" />
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 32" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 33" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 34" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 35" />
@@ -838,7 +836,9 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 53" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 54" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 55" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 55" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 56" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 57" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 57" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/SerializacjaFabryka.java">
@@ -1154,8 +1154,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="2885" column="65" selection-start-line="2885" selection-start-column="65" selection-end-line="2885" selection-end-column="65" />
+        <state relative-caret-position="459">
+          <caret line="2864" lean-forward="true" selection-start-line="2864" selection-end-line="2864" />
         </state>
       </provider>
     </entry>

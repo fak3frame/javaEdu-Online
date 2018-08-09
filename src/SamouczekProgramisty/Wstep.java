@@ -2829,6 +2829,8 @@ public class Wstep {
         Pattern wzorzecZad3 = Pattern.compile("[A-Z][a-z]+([ -][A-Z][a-z]+)?");
 
 
+        //Zachłanność wyrażeń regularnych
+
         //Przyklad z bledem - chce wylapac to co jest w <>
         Pattern wzorzecZachlanny = Pattern.compile("<(.+)>");
         //wylapie najwiecej ile to mozliwe w dopasoaniu
@@ -2843,7 +2845,7 @@ public class Wstep {
         //Symbole powtórzeń {}, ?, * czy + dopasowują zawsze najwięcej jak tylko się da
         //Istenieje przelacznik ktory zmienia zachowanie powtorzenia i jest to znak ? czyli
         // wylapuje najmniej jak to mozliwe
-        Pattern wzorzecZachlanny2 = Pattern.compile("<(.*?)>"); //moze tez byc "<(.*?)>" tylko moze zostawic puste <>
+        Pattern wzorzecZachlanny2 = Pattern.compile("<(.+?)>"); //moze tez byc "<(.*?)>" tylko moze zostawic puste <>
         Matcher dopasowanieWZ2 = wzorzecZachlanny2.matcher("<em>jakis podkreslony tekst</em>gdfgdfg");
         dopasowanieWZ2.find();
         System.out.println("znacznik podkreslenia 3 : "+dopasowanieWZ2.group(1));
@@ -2865,7 +2867,8 @@ public class Wstep {
         //moge uzyc wiecej
         Matcher dopasowanieWA2 = wzorzecAlternatywy2.matcher("lew");
         dopasowanieWA2.matches();
-        System.out.println("Wzorzec alternatywny 2 : "+dopasowanieWA2.group()); // UZYWAM PUSEJ GR??!
+        System.out.println("Wzorzec alternatywny 2 : "+dopasowanieWA2.group());
+        //UZYWAM BEZ NUMERU GRUPY PONIEWAZ NIE MA ZADNEJ GRUPY WE WZORCU !
 
 
         //Pomijanie grup
@@ -2890,10 +2893,13 @@ public class Wstep {
         //"<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>"
         //chce do pierwszej grupy dac znacznik p
         //do 2 to co jest pomiedzy <p></p>
-        Pattern wzorzecUzyciaGrup = Pattern.compile("");
+        Pattern wzorzecUzyciaGrup = Pattern.compile("<([^>]+)>(.+?)</p");
         Matcher dopasowanieWUG = wzorzecUzyciaGrup.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
-        dopasowanieWUG.matches();
-        System.out.println("");
+        dopasowanieWUG.find();
+        System.out.println("wzorzecUzyciaGrup grupa 1 : " + dopasowanieWUG.group(1));
+        System.out.println("wzorzecUzyciaGrup grupa 2 : " + dopasowanieWUG.group(2));
+
+        //moge uzyc zawartosci innej grupy juz we wzorcu w klauzuli \\
 
 
 
