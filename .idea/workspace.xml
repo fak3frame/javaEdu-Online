@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 62">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="SanouczekProgramisty WYRAŻENIA REGULARNE 63">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,24 +26,24 @@
     <session id="2070858659">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="6239" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="29" />
+          <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="6239" />
-          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="PLAIN_TEXT" value="30" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -73,22 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="2900" column="78" lean-forward="true" selection-start-line="2900" selection-start-column="78" selection-end-line="2900" selection-end-column="78" />
-              <folding>
-                <element signature="e#122410#122411#0" expanded="true" />
-                <element signature="e#122443#122444#0" expanded="true" />
-                <element signature="e#123040#123041#0" expanded="true" />
-                <element signature="e#123078#123079#0" expanded="true" />
-                <element signature="e#123109#123110#0" expanded="true" />
-                <element signature="e#123148#123149#0" expanded="true" />
-                <element signature="e#123176#123177#0" expanded="true" />
-                <element signature="e#123212#123213#0" expanded="true" />
-                <element signature="e#123296#123297#0" expanded="true" />
-                <element signature="e#123370#123371#0" expanded="true" />
-                <element signature="e#123440#123441#0" expanded="true" />
-                <element signature="e#123513#123514#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="2924" column="74" lean-forward="true" selection-start-line="2924" selection-start-column="74" selection-end-line="2924" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -216,8 +202,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,7 +233,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,13 +396,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01055" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 13">
-      <created>1533212805661</created>
-      <option name="number" value="01055" />
-      <option name="presentableId" value="LOCAL-01055" />
-      <option name="project" value="LOCAL" />
-      <updated>1533212805663</updated>
     </task>
     <task id="LOCAL-01056" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 14">
       <created>1533218074166</created>
@@ -754,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533834132984</updated>
     </task>
-    <option name="localTasksCounter" value="1104" />
+    <task id="LOCAL-01104" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 63">
+      <created>1533845971519</created>
+      <option name="number" value="01104" />
+      <option name="presentableId" value="LOCAL-01104" />
+      <option name="project" value="LOCAL" />
+      <updated>1533845971519</updated>
+    </task>
+    <option name="localTasksCounter" value="1105" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -793,7 +779,7 @@
     <frame x="86" y="0" width="1687" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16349109" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16533497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -802,7 +788,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35567403" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35567403" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -826,7 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 38" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 39" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 40" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 41" />
@@ -851,7 +836,8 @@
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 60" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 61" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 62" />
-    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 62" />
+    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 63" />
+    <option name="LAST_COMMIT_MESSAGE" value="SanouczekProgramisty WYRAŻENIA REGULARNE 63" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/SerializacjaFabryka.java">
@@ -1148,13 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16388">
-          <caret line="1024" column="6" selection-start-line="1024" selection-start-column="6" selection-end-line="1024" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_12_WyrazeniaRegularne1/One.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1165,24 +1144,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16388">
+          <caret line="1024" column="6" selection-start-line="1024" selection-start-column="6" selection-end-line="1024" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2900" column="78" lean-forward="true" selection-start-line="2900" selection-start-column="78" selection-end-line="2900" selection-end-column="78" />
-          <folding>
-            <element signature="e#122410#122411#0" expanded="true" />
-            <element signature="e#122443#122444#0" expanded="true" />
-            <element signature="e#123040#123041#0" expanded="true" />
-            <element signature="e#123078#123079#0" expanded="true" />
-            <element signature="e#123109#123110#0" expanded="true" />
-            <element signature="e#123148#123149#0" expanded="true" />
-            <element signature="e#123176#123177#0" expanded="true" />
-            <element signature="e#123212#123213#0" expanded="true" />
-            <element signature="e#123296#123297#0" expanded="true" />
-            <element signature="e#123370#123371#0" expanded="true" />
-            <element signature="e#123440#123441#0" expanded="true" />
-            <element signature="e#123513#123514#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="2924" column="74" lean-forward="true" selection-start-line="2924" selection-start-column="74" selection-end-line="2924" selection-end-column="74" />
         </state>
       </provider>
     </entry>
