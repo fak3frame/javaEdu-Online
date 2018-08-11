@@ -2967,7 +2967,27 @@ public class Wstep {
         Uruchomienie bedzie wiec wygladalo:
          java pl.samouczekprogramisty.commandline.DisplayName
 
+
         classpath jest sciezka gdzie java szuka klas potrzebnych do skompilowania!
+        sluzy do tego komenda -cp i uzywam jej w po komendzie java
+        gdy uruchamiam skompilowana klase uzwyam przed nazwa pliku jar .;
+         gdzie . oznacza wyszukiwanie w aktualnej lokalizacji bibilotek a ;
+         oddziela lokalalizacje gdzie ma wyszukiwac czyli szuka w aktualnej
+         lokalizacji oraz w pliku jar sciagnietej biblioteki zewnetrznej
+
+        classpath uzywam gdy chce zaimporotowac dodatkowe biblioteki np Scanner
+         dodajac na poczatku kodu import java.util.Scanner; lecz jest
+         to biblioteka wbudowana w jave wiec nie musze dodawac classpatch podczas
+         komendy kompilacji
+
+        W przypadku gdy dodam zewnetrzna biblioteke StringUtils musze oprocz importu
+         w kodzie : import org.apache.commons.lang3.StringUtils; uzyc komendy -cp
+         plikTejBiblioteki.jar i po tym lokalizacja pliku java
+         czyli przy kompilacji:
+         javac -cp commons-lang3-3.5.jar pl.naukajavy\liniapolecen\WyswietlImie.java
+         oraz w przypadku uruchomienia skompilowanej klasy musze dodac .;
+         czyli:
+         java -cp .;commons-lang3-3.5.jar pl.naukajavy.liniapolecen.WyswietlImie
 
 
 
