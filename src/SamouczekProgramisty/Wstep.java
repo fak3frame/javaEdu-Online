@@ -3055,9 +3055,14 @@ public class Wstep {
 
         Jednymi z najpopularniejszych serwerow aplikacji i kontenerow serwletow sa:
         Tomcat, Jetty, Glassfish, WildFly, Weblogic
-
           */
 
+
+
+        //String cache i StringBuilder
+        /*
+
+         */
 
 
 
