@@ -3119,6 +3119,13 @@ public class Wstep {
         //append moze przyjac dowolny typ
 
 
+        //StringBuffer
+        /*
+        Mozna uzywac go bezpiecznie nawet w aplikacjach wielowoatkowych
+        Jej instancje nie powinny byc wspoldzielone pomiedzy watkami
+        Klasa StringBuffer ma synchronicje przez co jest wolniejsza!
+         */
+
 
 
 
