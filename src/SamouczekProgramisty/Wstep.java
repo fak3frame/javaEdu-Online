@@ -3091,10 +3091,21 @@ public class Wstep {
         // np klasa StringUtils zawierajaca wiele metod dla lancuchow znakow
 
 
+        //Konkatenacja (laczenie stringow)
+        /*
+        Uzywany jest znak + lecz laczy on lewostronnie np
+        1 + 2 + "test" // 3test
+        "test" + 1 + 2 // test12
+        Wyswietlajac jakas instancje klasy uzywana jest metoda tej klasy toString
+         */
 
 
-        String x = new Object() + " 123";
-        System.out.println(x);
+
+
+
+
+        String xyz = new Object() + " 123";
+        System.out.println(xyz);
     }
 
 
