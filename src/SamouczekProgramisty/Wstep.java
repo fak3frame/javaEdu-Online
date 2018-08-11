@@ -2472,6 +2472,8 @@ public class Wstep {
         assertNotNull()
         assertEquals()
         assertNotEquals()
+        assertSame() - sprawdza adresy obiektow
+        assertNotSame()
 
 
         PRZYKŁADOWE TESTY:
@@ -3065,8 +3067,15 @@ public class Wstep {
         Intancja klasy String nie musi byc tworzeona ze slowem new
         Jesli stringi zawieraja taki sam literal to sa przechowywane w tym
          samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis);
+
+        Jest takze metoda .intern();
+        Jesli wywolam ja na Stringu z konstruktorem new String("wartosc");
+         i wystapi String z takim samym literalem to zostanie on "podpiety"
+         pod tem sam adres (miejsce w cache) pomimo uzycia alokacji
+         pamieci z uzyem slowa new np:
          */
         String mojLiteral = "jakis napis";
+        String mojLiteralKopia = new String("jakis napis").intern();
         /*
         String przetrzymuje znaki w tablicy znakow char[]
         Instancje klasy String sa niemutowalne czyli kazda zmiana
