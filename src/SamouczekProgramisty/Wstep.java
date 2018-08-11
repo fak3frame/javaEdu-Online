@@ -3143,6 +3143,10 @@ public class Wstep {
 
 
 
+        //Formatter - formatowanie łańcuchów znaków
+
+
+
         String xyz = new Object() + " 123";
         System.out.println(xyz);
     }
