@@ -2,6 +2,7 @@ package SamouczekProgramisty;
 
 import SamouczekProgramisty.Silnik.SilnikMoj;
 
+import javax.sound.midi.SysexMessage;
 import java.io.*;
 import java.lang.reflect.Parameter;
 import java.util.*;
@@ -3146,16 +3147,30 @@ public class Wstep {
         //Formatter - formatowanie łańcuchów znaków
         /*
         Do formatowania moge uzyc:
-        PrintWriter.format - metoda ktora wywoluje na obiekcie Formatter
+        -PrintWriter.format - metoda ktora wywoluje na obiekcie Formatter
          a nastepnie moge na tym obiekcie wywolac toString
-        System.out.format - statyczna metoda w klasie String dziala jak ta
+
+        -System.out.format - statyczna metoda w klasie String dziala jak ta
          na obiekcie Formatter lecz wyswietla bezposrednio na ekran
          */
+
+        //Przyklady:
+        Formatter mojFormatter = new Formatter();
+        mojFormatter.format("Urodzilem sie w %d i mam na imie %s", 1991, "Kamil");
+        String formatterString = mojFormatter.toString();
+        System.out.println(formatterString);
+        //lub z uzyciem system.out.format
+        System.out.format("Urodzilem sie w %d i mam na imie %s", 1991, "Kamil");
+
+
+
+
+
 
 
 
         String xyz = new Object() + " 123";
-        System.out.println(xyz);
+        System.out.println("\n"+xyz);
     }
 
 
