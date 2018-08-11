@@ -2967,6 +2967,10 @@ public class Wstep {
         Uruchomienie bedzie wiec wygladalo:
          java pl.samouczekprogramisty.commandline.DisplayName
 
+        classpath jest sciezka gdzie java szuka klas potrzebnych do skompilowania!
+
+
+
 
 
 
