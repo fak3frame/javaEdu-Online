@@ -3106,6 +3106,18 @@ public class Wstep {
          */
 
 
+        //StringBuilder
+        /*
+        Ta klasa takze zawiera ciag w tablicy znakow char[] lecz mozna
+         ja zmieniac i konwertowac do String uzywajac toString
+         */
+        StringBuilder mojSB = new StringBuilder("123");
+        //Konstruktor moze przyjac wartosc ciagu lub jesli podam liczbe to jego
+        // pojemnosc (capacity)
+        StringBuilder mojSB2 = new StringBuilder();
+        mojSB2.append(2).append("123").append(mojLiteral).append(12.3);
+        //append moze przyjac dowolny typ
+
 
 
 
