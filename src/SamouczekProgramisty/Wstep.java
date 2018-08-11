@@ -3007,7 +3007,9 @@ public class Wstep {
          jar tf plikJar.jar
          Utworzenie :
          jar cf <nazwa pliku wyjściowego> <lista katalogów, klas do umieszczenia w pliku JAR>
-         np: jar cf PierwszyPlikJar.jar . (kropka oznacza zeby spakowalo wszystko
+         np: jar cf PierwszyPlikJar.jar . (kropka oznacza zeby spakowalo wszystko)
+
+         moge takze dodac domyslna klase do uruchomienia pliku jar komenda java -jar plikJar.jar
 
 
 
