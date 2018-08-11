@@ -3039,6 +3039,15 @@ public class Wstep {
          miedzy innymi sa to serwlety. Moga znajdowac sie w nim takze pliki JAR
          zawierajace niezbedne zaleznosci potrzebne do dzialania aplikacji webowej!
 
+        Plik war instaluje sie na konterze serwletow (deploy) ktory posredniczy
+         w obludze zapytan.
+
+        1. wysłanie żądania z przeglądarki do serwera (maszyny)
+        2. przekazanie żądania do kontenera serwletów/serwera aplikacji
+        3. przetworzenie żądania przez serwlet/aplikację webową
+        4. przekazanie odpowiedzi z kontenera serwletów do serwera
+        5. wysłanie odpowiedzi do klienta (przeglądarki internetowej)
+
           */
 
 
