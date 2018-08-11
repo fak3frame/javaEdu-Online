@@ -2970,6 +2970,7 @@ public class Wstep {
 
         classpath jest sciezka gdzie java szuka klas potrzebnych do skompilowania!
         sluzy do tego komenda -cp i uzywam jej w po komendzie java
+        jesli chce uzyc zewnetrznej biblioteki musze siagna plik jar z nia!
         gdy uruchamiam skompilowana klase uzwyam przed nazwa pliku jar .;
          gdzie . oznacza wyszukiwanie w aktualnej lokalizacji bibilotek a ;
          oddziela lokalalizacje gdzie ma wyszukiwac czyli szuka w aktualnej
