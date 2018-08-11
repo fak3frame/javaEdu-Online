@@ -3002,6 +3002,9 @@ public class Wstep {
          jest to archiwum ze skompilowanymi klasami. klasy wewnatrz archiwum
           znajduja sie w odpowiednich katalogach
 
+         Uruchamianie pliku jar:
+         java -jar aplka.jar
+
          Program jar moze tworzyc jak i wyswietlac zawartosc archiwum
          Wyswietlenie :
          jar tf plikJar.jar
@@ -3009,7 +3012,8 @@ public class Wstep {
          jar cf <nazwa pliku wyjściowego> <lista katalogów, klas do umieszczenia w pliku JAR>
          np: jar cf PierwszyPlikJar.jar . (kropka oznacza zeby spakowalo wszystko)
 
-         moge takze dodac domyslna klase do uruchomienia pliku jar komenda java -jar plikJar.jar
+         moge takze dodac domyslna klase do uruchomienia pliku jar komenda:
+         jar -cfe plik.jar jakasNazwa Klasa.class
 
 
 
