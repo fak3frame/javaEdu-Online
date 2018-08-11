@@ -3036,7 +3036,8 @@ public class Wstep {
         Serwlet to klasa ktora obsluguje zapytanie wyslane do serwera i moze na nie
          odpowiedziec
         Odpowienikiem jar - skompilowanych klas webowych jest plik WAR (web archive)
-         miedzy innymi sa to serwlety
+         miedzy innymi sa to serwlety. Moga znajdowac sie w nim takze pliki JAR
+         zawierajace niezbedne zaleznosci potrzebne do dzialania aplikacji webowej!
 
           */
 
