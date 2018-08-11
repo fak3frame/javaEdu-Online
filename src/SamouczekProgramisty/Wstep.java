@@ -3144,6 +3144,13 @@ public class Wstep {
 
 
         //Formatter - formatowanie łańcuchów znaków
+        /*
+        Do formatowania moge uzyc:
+        PrintWriter.format - metoda ktora wywoluje na obiekcie Formatter
+         a nastepnie moge na tym obiekcie wywolac toString
+        System.out.format - statyczna metoda w klasie String dziala jak ta
+         na obiekcie Formatter lecz wyswietla bezposrednio na ekran
+         */
 
 
 
