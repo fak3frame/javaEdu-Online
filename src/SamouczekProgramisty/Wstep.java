@@ -8,6 +8,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 public class Wstep {
 
     public static void main(String[] args) {
@@ -2969,13 +2970,15 @@ public class Wstep {
 
 
         CLASSPATH jest sciezka gdzie java szuka klas potrzebnych do skompilowania!
-         sluzy do tego komenda -cp i uzywam jej w po komendzie java
+         sluzy do tego komenda -cp i uzywam jej w po komendzie java / javac
         Jesli chce uzyc zewnetrznej biblioteki musze siagna plik jar z nia!
         Gdy uruchamiam skompilowana klase uzwyam przed nazwa pliku jar .;
          gdzie . oznacza wyszukiwanie w aktualnej lokalizacji - jest to potzebne
          aby znalezc plik klasy ktora SKOMPILOWALEM a ;
          oddziela lokalalizacje gdzie ma wyszukiwac.
          Po ; jest plik jar z klasa zewnetrzna i tam ma szukac dodadkowej biblioteki
+         w ktorej jest potrzebna klasa
+         W przypadku kompilacji pisze tylko -cp i nazwe pliku jar
 
         biblioteki wbudowane w jave nie musze dawac w classpath, wystarczy sam
          import w kodzie
@@ -2995,10 +2998,6 @@ public class Wstep {
 
 
          */
-
-
-
-
 
 
 
