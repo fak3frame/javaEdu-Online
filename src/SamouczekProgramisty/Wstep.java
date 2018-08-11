@@ -3018,7 +3018,20 @@ public class Wstep {
 
 
          //Aplikacje webowe - INFO
-         /*
+         Aplikacje webowe DLA KIENTA nie potrzebuja plikow do dzialania co daje
+          im przewage nad aplikacjami desktopowymi. Sa instalowane na serwerze
+          i dostep do nich jest za posrednictwem internetu przez przegladarke int.
+
+         Serwerm jest maszana badz aplikacja na komputerze np Apache HTTP Server
+          czy nginx, sa to serwery HTTP. Jesli klient wpisze adres w przegladarce
+          wysle zapytanie do serwera (aplikacja na serwerze) odpowie odczytujac swoje
+          pliki z dysku serwera - serwowanie plikow statycznych.
+         Aplikacje webowe pokazuja zawartosc ktora jest zmienna czyli np z komentarzami
+          ktore dodaj klient
+
+         Aplikacja webowa iterpretuje zapytanie wyslane przez przegladarke klienta i
+          odpowiada dynamicznie plikiem ktory jest zrozumialy dla przegladarki klienta
+
 
           */
 
