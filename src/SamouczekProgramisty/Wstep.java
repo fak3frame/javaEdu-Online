@@ -3061,8 +3061,11 @@ public class Wstep {
 
         //String cache i StringBuilder
         /*
-
+        Literal znakowy jest to ciag znakow w "" np instancja klasy String.
+        Intancja klasy String nie musi byc tworzeona ze slowem new
          */
+        String mojLiteral = "jakis napis";
+
 
 
 
