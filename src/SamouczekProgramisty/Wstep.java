@@ -3065,11 +3065,27 @@ public class Wstep {
         Intancja klasy String nie musi byc tworzeona ze slowem new
          */
         String mojLiteral = "jakis napis";
-
-
-
-
-
+        /*
+        String przetrzymuje znaki w tablicy znakow char[]
+        Instancje klasy String sa niemutowalne czyli kazda zmiana
+         powoduje stworzenie nowego obiektu klasy String
+         */
+        //Przyklady metod:
+        //-replace("cel","zamiana");
+        //zwraca literal z zamienionymi ciagami
+        mojLiteral = mojLiteral.replace("napis", "CIAG");
+        //-substring(start, koniec); -substrin(start);
+        //zwraca wybrana czesc lansucha
+        mojLiteral = mojLiteral.substring(2,10);
+        mojLiteral = mojLiteral.substring(1);
+        //-toLowerCase();
+        //zamienia wielkie litery na male
+        mojLiteral = mojLiteral.toLowerCase();
+        //-toUpperCase();
+        //zamienia wszystkie litery na wielkie
+        mojLiteral = mojLiteral.toUpperCase();
+        //-trim();
+        //obcina biale znaki na poczatku i koncu
 
 
 

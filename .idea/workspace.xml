@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Aplikacje webowe - INFO 6">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="String cache i StringBuilder 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,15 +36,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="13009" />
+          <entry key="java" value="14078" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="81" />
+          <entry key="txt" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13009" />
-          <entry key="PLAIN_TEXT" value="81" />
+          <entry key="JAVA" value="14078" />
+          <entry key="PLAIN_TEXT" value="84" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="3027" column="21" selection-start-line="3027" selection-start-column="21" selection-end-line="3027" selection-end-column="21" />
+            <state relative-caret-position="696">
+              <caret line="3087" column="48" selection-start-line="3087" selection-start-column="48" selection-end-line="3087" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -251,7 +252,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534027827629" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534028600253" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -409,20 +410,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01080" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 39">
-      <created>1533746193114</created>
-      <option name="number" value="01080" />
-      <option name="presentableId" value="LOCAL-01080" />
-      <option name="project" value="LOCAL" />
-      <updated>1533746193114</updated>
-    </task>
-    <task id="LOCAL-01081" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 40">
-      <created>1533746510201</created>
-      <option name="number" value="01081" />
-      <option name="presentableId" value="LOCAL-01081" />
-      <option name="project" value="LOCAL" />
-      <updated>1533746510201</updated>
     </task>
     <task id="LOCAL-01082" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 41">
       <created>1533747724109</created>
@@ -753,7 +740,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534027708248</updated>
     </task>
-    <option name="localTasksCounter" value="1129" />
+    <task id="LOCAL-01129" summary="String cache i StringBuilder 1">
+      <created>1534027792573</created>
+      <option name="number" value="01129" />
+      <option name="presentableId" value="LOCAL-01129" />
+      <option name="project" value="LOCAL" />
+      <updated>1534027792573</updated>
+    </task>
+    <task id="LOCAL-01130" summary="String cache i StringBuilder 2">
+      <created>1534027915701</created>
+      <option name="number" value="01130" />
+      <option name="presentableId" value="LOCAL-01130" />
+      <option name="project" value="LOCAL" />
+      <updated>1534027915702</updated>
+    </task>
+    <option name="localTasksCounter" value="1131" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -792,7 +793,7 @@
     <frame x="86" y="0" width="1667" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1717486" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1717486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -801,7 +802,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35567403" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35567403" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -825,8 +826,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 63" />
-    <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 64" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 65" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 66" />
     <MESSAGE value="SanouczekProgramisty WYRAŻENIA REGULARNE 67" />
@@ -850,7 +849,9 @@
     <MESSAGE value="Aplikacje webowe - INFO 4" />
     <MESSAGE value="Aplikacje webowe - INFO 5" />
     <MESSAGE value="Aplikacje webowe - INFO 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aplikacje webowe - INFO 6" />
+    <MESSAGE value="String cache i StringBuilder 1" />
+    <MESSAGE value="String cache i StringBuilder 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="String cache i StringBuilder 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_7_Serializacja/Czlowiek.java">
@@ -1162,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="3027" column="21" selection-start-line="3027" selection-start-column="21" selection-end-line="3027" selection-end-column="21" />
+        <state relative-caret-position="696">
+          <caret line="3087" column="48" selection-start-line="3087" selection-start-column="48" selection-end-line="3087" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
