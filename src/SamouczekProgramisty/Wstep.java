@@ -2958,6 +2958,14 @@ public class Wstep {
           Wpisuje komende java i nazwe pliku .class BEZ ROZSZERZENIA! np:
           java plik
 
+        Jesli chce uruchomic i skompilowac plase w jakims podfolderze wpisauje
+         javac pl\samouczekprogramisty\commandline\DisplayName.java
+        Jesli chce uruchomic skompilowana klase, wpisuje java z classpath
+         czyli zamiast \ wpisuje . oraz w pliku klasu musi byc lokalizacja
+         package miejsca w ktorym bede uruchamial kompilacje!! np:
+         package pl.naukajavy.liniapolecen;
+        Uruchomienie bedzie wiec wygladalo:
+         java pl.samouczekprogramisty.commandline.DisplayName
 
 
 
