@@ -3033,6 +3033,11 @@ public class Wstep {
           odpowiada dynamicznie plikiem ktory jest zrozumialy dla przegladarki klienta
 
 
+        Serwlet to klasa ktora obsluguje zapytanie wyslane do serwera i moze na nie
+         odpowiedziec
+        Odpowienikiem jar - skompilowanych klas webowych jest plik WAR (web archive)
+         miedzy innymi sa to serwlety
+
           */
 
 
