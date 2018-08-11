@@ -2936,6 +2936,14 @@ public class Wstep {
 
 
 
+        //Java z linii polecen
+        /*
+        Instalujac jave mam narzedzia JRE - z komenda javac
+        oraz JDK z plikami jar
+         */
+
+
+
 
 
 
