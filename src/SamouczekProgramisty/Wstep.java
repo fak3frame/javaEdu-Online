@@ -3021,6 +3021,11 @@ public class Wstep {
          Aplikacje webowe DLA KIENTA nie potrzebuja plikow do dzialania co daje
           im przewage nad aplikacjami desktopowymi. Sa instalowane na serwerze
           i dostep do nich jest za posrednictwem internetu przez przegladarke int.
+          z poziomu komoutera/telefonu/tabletu.
+         Zaleta jest takze poprawianie bledu, w przypadku aplikacji desktopowych
+          uzytkownik musi instalowac aktualizacje a aplikacje webowe sa aktualizowane
+          na serwerze co zwalnia uzytkownika z jakichkolwiek dzialan i sa one
+          niewidoczne
 
          Serwerm jest maszana badz aplikacja na komputerze np Apache HTTP Server
           czy nginx, sa to serwery HTTP. Jesli klient wpisze adres w przegladarce
@@ -3047,6 +3052,9 @@ public class Wstep {
         3. przetworzenie żądania przez serwlet/aplikację webową
         4. przekazanie odpowiedzi z kontenera serwletów do serwera
         5. wysłanie odpowiedzi do klienta (przeglądarki internetowej)
+
+        Jednymi z najpopularniejszych serwerow aplikacji i kontenerow serwletow sa:
+        Tomcat, Jetty, Glassfish, WildFly, Weblogic
 
           */
 
