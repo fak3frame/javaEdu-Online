@@ -3070,7 +3070,8 @@ public class Wstep {
         Instancje klasy String sa niemutowalne czyli kazda zmiana
          powoduje stworzenie nowego obiektu klasy String
          */
-        //Przyklady metod:
+
+        //Przyklady metod wywolywanych na obiektach String:
         //-replace("cel","zamiana");
         //zwraca literal z zamienionymi ciagami
         mojLiteral = mojLiteral.replace("napis", "CIAG");
@@ -3086,6 +3087,11 @@ public class Wstep {
         mojLiteral = mojLiteral.toUpperCase();
         //-trim();
         //obcina biale znaki na poczatku i koncu
+        //-concat("ciag");
+        //laczenie jak +
+        String mojLiteral2 = "-nowy napis-";
+        mojLiteral2 = mojLiteral.concat(mojLiteral2).concat(" dodatek-prosty ").concat(" 123 ");
+        System.out.println(mojLiteral2);
 
         //Biblioteka zawierajaca wiele metod dla Stringa jest bo commons-lang a w niej
         // np klasa StringUtils zawierajaca wiele metod dla lancuchow znakow
