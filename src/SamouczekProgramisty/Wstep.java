@@ -2938,8 +2938,30 @@ public class Wstep {
 
         //Java z linii polecen
         /*
-        Instalujac jave mam narzedzia JRE - z komenda javac
-        oraz JDK z plikami jar
+        Instalujac JRE mam komende java ktoa uruchamia maszyne wirtualna wywolujac
+         metode main w odpowieniej klasie a instalujac JDK mam dostep do javac ktora
+         ktora jest kompilatorem ktory tworzy plik class z pliku java a jar jest to
+         narzedzie ktore tworzy pliki jar
+
+        Instrukcja dodawania zmiennej srodowiskowej JDK w windows 10
+         PS -> System -> Zaawansowane ustaiwnia systemu -> Zmienne środowiskowe
+         W dziale Zmienne systemowe dodaje nowa zmienna lub edytuje o nazwie Path
+         Nastepnie dodaje wybieram Nowy i wklejam lokalizjacje folderu bin JDK np"
+         C:\Program Files\Java\jdk-10.0.2\bin
+
+        -Kompilacja:
+          Ide do lokalizacji pliku .java i wpisuje komende javac plik.java
+          ! plik.java musi nazywac sie tak jak nazwa klasy z metoda main !
+          Ta komenda tworzy w tym folderze plik plik.class np
+          javac plik.java
+        -Uruchomienie:
+          Wpisuje komende java i nazwe pliku .class BEZ ROZSZERZENIA! np:
+          java plik
+
+
+
+
+
          */
 
 
