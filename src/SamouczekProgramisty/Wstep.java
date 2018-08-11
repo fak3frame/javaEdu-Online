@@ -3063,6 +3063,8 @@ public class Wstep {
         /*
         Literal znakowy jest to ciag znakow w "" np instancja klasy String.
         Intancja klasy String nie musi byc tworzeona ze slowem new
+        Jesli stringi zawieraja taki sam literal to sa przechowywane w tym
+         samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis);
          */
         String mojLiteral = "jakis napis";
         /*
@@ -3126,6 +3128,9 @@ public class Wstep {
         Klasa StringBuffer ma synchronicje przez co jest wolniejsza!
          */
 
+
+        //StringJouner
+        //Wykorzystuje do laczenia strumieni
 
 
 
