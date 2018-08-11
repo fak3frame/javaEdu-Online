@@ -2998,6 +2998,18 @@ public class Wstep {
          java -cp .;commons-lang3-3.5.jar pl.naukajavy.liniapolecen.WyswietlImie
 
 
+         PLIKI JAR
+         jest to archiwum ze skompilowanymi klasami. klasy wewnatrz archiwum
+          znajduja sie w odpowiednich katalogach
+
+         Program jar moze tworzyc jak i wyswietlac zawartosc archiwum
+         Wyswietlenie :
+         jar tf plikJar.jar
+         Utworzenie :
+         jar cf <nazwa pliku wyjściowego> <lista katalogów, klas do umieszczenia w pliku JAR>
+         np: jar cf PierwszyPlikJar.jar . (kropka oznacza zeby spakowalo wszystko
+
+
 
 
 
