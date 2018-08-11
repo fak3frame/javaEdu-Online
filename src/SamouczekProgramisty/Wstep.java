@@ -3087,6 +3087,10 @@ public class Wstep {
         //-trim();
         //obcina biale znaki na poczatku i koncu
 
+        //Biblioteka zawierajaca wiele metod dla Stringa jest bo commons-lang a w niej
+        // np klasa StringUtils zawierajaca wiele metod dla lancuchow znakow
+
+
 
 
         String x = new Object() + " 123";
