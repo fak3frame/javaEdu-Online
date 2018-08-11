@@ -2969,27 +2969,32 @@ public class Wstep {
          java pl.samouczekprogramisty.commandline.DisplayName
 
 
-        CLASSPATH jest sciezka gdzie java szuka klas potrzebnych do skompilowania!
-         sluzy do tego komenda -cp i uzywam jej w po komendzie java / javac
-        Jesli chce uzyc zewnetrznej biblioteki musze siagna plik jar z nia!
-        Gdy uruchamiam skompilowana klase uzwyam przed nazwa pliku jar .;
-         gdzie . oznacza wyszukiwanie w aktualnej lokalizacji - jest to potzebne
-         aby znalezc plik klasy ktora SKOMPILOWALEM a ;
-         oddziela lokalalizacje gdzie ma wyszukiwac.
-         Po ; jest plik jar z klasa zewnetrzna i tam ma szukac dodadkowej biblioteki
-         w ktorej jest potrzebna klasa
-         W przypadku kompilacji pisze tylko -cp i nazwe pliku jar
+        CLASSPATH jest sciezka gdzie java szuka klas potrzebnych do skompilowania
+         jak i uruchomienia i sluzy do tego komenda -cp
 
-        biblioteki wbudowane w jave nie musze dawac w classpath, wystarczy sam
-         import w kodzie
+        Jesli uzywam zewnetrznej biblioteki to musze sciagnac jej plik jar i
+         umiescic go w folderze glownym (tam gdzie uruchamiam kompilacjie)
+         oraz dodac import w kodzie
 
-        W przypadku gdy dodam ZEWNETRZNA biblioteke np StringUtils musze oprocz importu
-         w kodzie : import org.apache.commons.lang3.StringUtils; uzyc komendy -cp
-         plikTejBiblioteki.jar i po tym lokalizacja pliku java
-         czyli przy kompilacji:
+        W przypadku bibliotek wbudowanych w jave nie musze uzywac -cp i wstarczyc
+         sam import w kodzie np import java.util.Scanner;
+
+        W przypadku kompilacji z biblioteka zew. komenda wyglada nastepujaco:
+         javac NazwaPlikuJar.jar folder1\folder2\Klasa.java
+
+        W przypadku uruchomienia po -cp musze wpisac lokalizacje z .
+         np:
+         java .;PlikBibliotekiZew.jar folder1.folder2.Klasa
+         gdzie . oznacza ze skompilowanej klasy ma wyszkiwac w aktualnym katalogu
+          badz nizej
+         ; oddziela lokalizacje
+         po ; jest plik jar i w nim ma szukac biblioteki zewnetrznej a w niej
+          dodatkowych klas
+
+        Przyklad:
+         kompilacja:
          javac -cp commons-lang3-3.5.jar pl.naukajavy\liniapolecen\WyswietlImie.java
-         oraz w przypadku uruchomienia skompilowanej klasy musze dodac .;
-         czyli:
+         uruchomienie:
          java -cp .;commons-lang3-3.5.jar pl.naukajavy.liniapolecen.WyswietlImie
 
 
