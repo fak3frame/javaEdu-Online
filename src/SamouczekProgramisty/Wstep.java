@@ -3257,8 +3257,26 @@ public class Wstep {
          uzywam nawiasow {}
 
 
-         */
+        Zamiana klasy anonimowej na lambde:
 
+        interface CzyParzysta<T>{
+            boolean sprawdz(T obiekt);
+        }//deklaracja na koncu  */
+
+        CzyParzysta<Integer> czyParzystaAnonim = new CzyParzysta<Integer>() {
+            @Override
+            public boolean sprawdz(Integer obiekt) {
+                return obiekt % 2 == 0;
+            }
+        };
+        System.out.println();
+        System.out.println("Czy liczba 15 jest parzysta: "+czyParzystaAnonim.sprawdz(15));
+        System.out.println("Czy liczba 20 jest parzysta: "+czyParzystaAnonim.sprawdz(20));
+
+        //to samo w labda:
+        CzyParzysta<Integer> czyParzystaLambda = obiekt -> obiekt % 2 == 0;
+        System.out.println("Czy liczba 15 jest parzysta: "+czyParzystaAnonim.sprawdz(15));
+        System.out.println("Czy liczba 20 jest parzysta: "+czyParzystaAnonim.sprawdz(20));
 
 
 
@@ -3434,4 +3452,8 @@ enum EnumDoTekstu{
 
 interface Powitanie{
     void powiedzCzesc();
+}
+
+interface CzyParzysta<T>{
+    boolean sprawdz(T obiekt);
 }
