@@ -3236,6 +3236,28 @@ public class Wstep {
 
 
         //Wyrażenia lambda
+        /*
+        ogolna składnia:
+        <lista parametrów> -> <ciało wyrażenia>
+
+
+        (x) -> x * x
+        wyrazenie lambda podnoszace liczbe do dwadratu
+        x -> x * x
+        Nawiasy takze sa opcjonalne jesli przyjmowany parametr jest tylko 1
+
+        () -> "napis"
+        wyrazenie nie przyjmuje parametrow ale zwraca instancje klasy String
+
+        Nie musze podawac typow paramatrow ale jest to mozliwe
+        (Integer x, Long y) -> System.out.println(x * y)
+        (x, y) -> System.out.println(x * y)
+
+        Zazwyczaj wyrazenie lambda to 1 linia kodu lecz jesli jest wiecej to
+         uzywam nawiasow {}
+
+
+         */
 
 
 
