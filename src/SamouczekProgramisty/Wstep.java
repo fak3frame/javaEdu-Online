@@ -3210,10 +3210,27 @@ public class Wstep {
         + liczba zawsze będzie zawierała znak (nawet jeśli jest dodatnia) : "%+d",3 -> +3
         0 liczba będzie uzupełniona 0 do żądanej szerokości : "%010d",3 -> 0000000003
         ( liczby ujemne nie będą prezentowane ze znakiem : "%(d",-323 -> (323)
+        // tylko liczby ujemna da w nawias
         , użyj separatora do grupowania liczb : "%,d",1000000 -> 1 000 000
 
+        Lokalizacja
+        double someNumber = 12345.12;
+        System.out.format(Locale.US, "%,.2f%n", someNumber);
+        12,345.12
+        System.out.format(Locale.GERMAN, "%,.2f%n", someNumber);
+        12.345,12
+        System.out.format(Locale.forLanguageTag("PL"), "%,.2f%n", someNumber);
+        12 345,12
 
 
+        Kombinacja %3$(,08.3f
+        %3$ - 3 argument
+        ( - otocznie ujemnych liczb nawiasami
+        , - seperacja liczb
+        0 - uzupelnienie zerami do konca szerokosci
+        8 - szerokosc
+        .3 - 3 miejsca po przcinku
+        f - liczba zmiennoprzecinkowa
          */
 
 
