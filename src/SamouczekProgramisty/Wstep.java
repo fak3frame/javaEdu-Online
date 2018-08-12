@@ -3184,7 +3184,17 @@ public class Wstep {
         System.out.format("[%2$s] [%1$s] [%1$s]", "pierwszy argument", "drugi argument");
         %2$ - oznacza ze uzyje 2 argumentu
         s - flaga oznaczajaca ze to ciag znakow
+        wynik:
         [drugi argument] [pierwszy argument] [pierwszy argument]
+
+        Szerokosc (minimalna)
+        np:
+        System.out.format("[%10s] [%3s]", "test", "test");
+        %10 - szerokosc 10 znakow (uzupelni pustymi znakami od lewej
+        s - flaga ze to ciag znakow
+        [%3s] - ciag jest dluzszczy od szerokosci minimalnej wiec nie doda nic
+        wynik:
+        [      test] [test]
          */
 
 
