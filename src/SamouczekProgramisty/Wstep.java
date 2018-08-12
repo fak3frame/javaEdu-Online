@@ -1079,7 +1079,7 @@ public class Wstep {
         Relatywna jest ta z ktorego miejsca sie odnosimy
         folder_2_a\plik_2_a.txt
 
-        Tryby dosteou do plikow dzieliy na:
+        Tryby dostepu do plikow dzieliy na:
         -do odczytu
         -do zapisu - kasuje plik jesli istnieje i utworzenie nowego lub
           utowrzenie nowego jesli nie istnieje - domyslny tryb
@@ -3235,9 +3235,7 @@ public class Wstep {
 
 
 
-
-
-        //%2$08.3f %3$(,08.3f %s
+        //Wyrażenia lambda
 
 
 
