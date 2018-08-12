@@ -3204,7 +3204,19 @@ public class Wstep {
         f - jest to liczba zmiennoprzecinkowa
         wynik:
         [1.1234567890] [1.123] [1.123457]
+
+        Flagi (dodatkowe zachowanie znacnzikow konwersji)
+        - szerokosc bedzie powiekszana z prawej strony : "|%-10d|",3 -> |3         |
+        + liczba zawsze będzie zawierała znak (nawet jeśli jest dodatnia) : "%+d",3 -> +3
+        0 liczba będzie uzupełniona 0 do żądanej szerokości : "%010d",3 -> 0000000003
+        ( liczby ujemne nie będą prezentowane ze znakiem : "%(d",-323 -> (323)
+        , użyj separatora do grupowania liczb : "%,d",1000000 -> 1 000 000
+
+
+
          */
+
+
 
 
 
