@@ -3168,7 +3168,7 @@ public class Wstep {
 
         W pierwszym przykladzie uzylem %d i %s i sa to same flagi d i s;
 
-        Znaczniki (flagi):
+        Znaczniki:
         %b - wartosc logiczna
         %s - lancuch znakow
         %d - liczba calkowita
@@ -3183,7 +3183,7 @@ public class Wstep {
         np:
         System.out.format("[%2$s] [%1$s] [%1$s]", "pierwszy argument", "drugi argument");
         %2$ - oznacza ze uzyje 2 argumentu
-        s - flaga oznaczajaca ze to ciag znakow
+        s - oznaczajaca ze to ciag znakow
         wynik:
         [drugi argument] [pierwszy argument] [pierwszy argument]
 
@@ -3191,10 +3191,19 @@ public class Wstep {
         np:
         System.out.format("[%10s] [%3s]", "test", "test");
         %10 - szerokosc 10 znakow (uzupelni pustymi znakami od lewej
-        s - flaga ze to ciag znakow
+        s - ze to ciag znakow
         [%3s] - ciag jest dluzszczy od szerokosci minimalnej wiec nie doda nic
         wynik:
         [      test] [test]
+
+        Precyzja (dokladnosc dla liczb zmiennoprzecinkowych)
+        np:
+        double x = 1.1234567890123;
+        System.out.format("[%.10f] [%.3f] [%f]", x, x, x);
+        %.10 - wyswietli 10 miejsc po przecinku
+        f - jest to liczba zmiennoprzecinkowa
+        wynik:
+        [1.1234567890] [1.123] [1.123457]
          */
 
 
