@@ -6,6 +6,7 @@ import javax.sound.midi.SysexMessage;
 import java.io.*;
 import java.lang.reflect.Parameter;
 import java.util.*;
+import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -3279,6 +3280,75 @@ public class Wstep {
         System.out.println("Czy liczba 20 jest parzysta: "+czyParzystaAnonim.sprawdz(20));
 
 
+        //Interface funkcyjny
+        /*
+        To taki interface ktory posiada jedna metode abstrakcyjna i adnotacje @FunctionalInterface
+
+        Przykladem moze byc interface spradzajacy czy liczba jest parzysta:
+
+        @FunctionalInterface
+        interface CzyParzysta<T>{
+            boolean sprawdz(T obiekt);
+        }
+        */
+
+        //Java posiada zestaw gotowych interfejsow w pakiecie java.util.function, najwazniejsze
+        // z nich to:
+//
+//        -Function<T, R> zawiera metodę apply, która przyjmuje instancję klasy T
+//          zwracając instancję klasy R
+        Function<String, Integer> zmianaSI = new Function<String, Integer>() {
+            @Override
+            public Integer apply(String s) {
+                return null;
+            }
+        };
+        Function<String, Integer> zmianaSILambda = zmiennaString -> Integer.parseInt(zmiennaString);
+        int L1 = zmianaSILambda.apply("12");
+
+//        -Consumer<T> zawiera metodę accept, która przyjmuje instancję klasy T
+        Consumer<Integer> pokazI = new Consumer<Integer>() {
+            @Override
+            public void accept(Integer integer) {
+                integer+=integer;
+            }
+        };
+        Consumer<Integer> pokazILambda = jakasLiczba -> System.out.println("liczba metody accept: "+jakasLiczba);
+        pokazILambda.accept(123);
+
+//        -Predicate<T> zawiera metodę test, która przyjmuje instancję klasy T i
+//          zwraca flagę. Interfejs ten może posłużyć do zastąpienia interfejsu Checker
+        Predicate<Integer> czyParzysta = new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer integer) {
+                return false;
+            }
+        };
+        Predicate<Integer> czyParzystaLambda2 = liczbaDoSprawdzenia -> liczbaDoSprawdzenia % 2 == 0;
+        System.out.println("Czy liczba 15 jest parzysta : "+czyParzystaLambda2.test(15));
+
+//        -Supplier<T> zawiera metodę get, która nie przyjmuje żadnych parametrów i
+//          zwraca instancję klasy T,
+        Supplier<Integer> pokazInteger10 = new Supplier<Integer>() {
+            @Override
+            public Integer get() {
+                return null;
+            }
+        };
+        Supplier<Integer> pokazInteger10Lambda = () -> 10;
+        System.out.println("pokaz 10 z lambdy : "+pokazInteger10Lambda.get());
+
+//        -UnaryOperator<T> jest specyficznym przypadkiem interfejsu Function.
+//          W tym przypadku typ argumentu i typ zwracany są te same.
+        UnaryOperator<Integer> pomnozPrzezDwa = new UnaryOperator<Integer>() {
+            @Override
+            public Integer apply(Integer integer) {
+                return null;
+            }
+        };
+        UnaryOperator<Integer> pomnozPrzezDwaLambda = liczbaDoMnozeniaPrzezDwa -> liczbaDoMnozeniaPrzezDwa*2;
+        System.out.println("liczba 14 pomnozona przez 2  w lambdzie: "+pomnozPrzezDwaLambda.apply(14));
+
 
 
 
@@ -3457,3 +3527,17 @@ interface Powitanie{
 interface CzyParzysta<T>{
     boolean sprawdz(T obiekt);
 }
+/*
+@FunctionalInterface
+interface Function<T, R>{
+    public R apply(T ob);
+}
+
+@FunctionalInterface
+interface Predicate<T>{
+    public boolean test(T ob);
+}
+
+@FunctionalInterface
+interface Suppliet<T>
+*/
