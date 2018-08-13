@@ -164,7 +164,7 @@ public class Wstep {
 
 
 
-        Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego
+        Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego (tego bez parametrow)
         ----------------
         private SilnikMoj silnikMoj;
 
@@ -189,6 +189,7 @@ public class Wstep {
 
         //STRING / TABLICE / ZMIENNE
         //Tblica jest obiektem !
+        //Tablica musi miec zadeklarowana wielkosc w new typ [] lub po tym w () wartosci!
         String a = "213\nwqeqwe";//\n enter
         int aDlugosc = a.length();
 
@@ -3369,7 +3370,7 @@ public class Wstep {
         IntSupplier zmiennaIntInerfaceAnonim = new IntSupplier() {
             @Override
             public int getAsInt() {
-                obiekt.hashCode();
+                return obiekt.hashCode();
             }
         };
         //lub w lambdzie:
@@ -3377,7 +3378,7 @@ public class Wstep {
 
         System.out.println("test hashcode :: : "+zmiennaIntInterace.getAsInt());
         System.out.println(obiekt.hashCode());
-        System.out.println(zmiennaIntInterfaceKomplet.getAsInt());
+        System.out.println(zmiennaIntInterfaceLambda.getAsInt());
 
 
 
