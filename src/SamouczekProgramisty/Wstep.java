@@ -3336,11 +3336,18 @@ public class Wstep {
             }
         };
         Supplier<Integer> pokazInteger10Lambda = () -> 10;
-        System.out.println("pokaz 10 z lambdy : "+pokazInteger10Lambda.get());
+        System.out.println("pokaz 10 Integer z lambdy : "+pokazInteger10Lambda.get());
 
 //        -IntSuplier zwraca metode int getAsInt() ktora nie przyjmuje zadnych parametrow i
 //          zwraca liczbe int
-//
+        IntSupplier pokaz10 = new IntSupplier() {
+            @Override
+            public int getAsInt() {
+                return 0;
+            }
+        };
+        IntSupplier pokaz10lambda = () -> 10;
+        System.out.println("pokazuje 10 int z lambdy : "+pokaz10lambda.getAsInt());
 
 //        -UnaryOperator<T> jest specyficznym przypadkiem interfejsu Function.
 //          zwraca metode T apply (T ob)
@@ -3354,7 +3361,12 @@ public class Wstep {
         UnaryOperator<Integer> pomnozPrzezDwaLambda = liczbaDoMnozenia -> liczbaDoMnozenia*2;
         System.out.println("liczba 14 pomnozona przez 2  w lambdzie: "+pomnozPrzezDwaLambda.apply(14));
 
-        }
+
+        //Odwolywanie sie do metod ::
+        Object obiekt = new Object();
+        IntSupplier zmiennaIntInterace = obiekt::hashCode;
+        System.out.println("test hashcode :: : "+zmiennaIntInterace.getAsInt());
+
 
 
 
