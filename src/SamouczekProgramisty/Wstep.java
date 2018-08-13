@@ -3365,7 +3365,19 @@ public class Wstep {
         //Odwolywanie sie do metod ::
         Object obiekt = new Object();
         IntSupplier zmiennaIntInterace = obiekt::hashCode;
+        //to tak naprawde:
+        IntSupplier zmiennaIntInerfaceAnonim = new IntSupplier() {
+            @Override
+            public int getAsInt() {
+                obiekt.hashCode();
+            }
+        };
+        //lub w lambdzie:
+        IntSupplier zmiennaIntInterfaceLambda = () -> obiekt.hashCode();
+
         System.out.println("test hashcode :: : "+zmiennaIntInterace.getAsInt());
+        System.out.println(obiekt.hashCode());
+        System.out.println(zmiennaIntInterfaceKomplet.getAsInt());
 
 
 
