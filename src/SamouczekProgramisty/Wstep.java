@@ -3365,7 +3365,11 @@ public class Wstep {
 
         //Odwolywanie sie do metod ::
         Object obiekt = new Object();
+        //Tworze obiekt klasy np Object w ktorej jest metoda hashcode() zwracajaca int
         IntSupplier zmiennaIntInterace = obiekt::hashCode;
+        //Tworze zmienna klasy anonimowej ktora w swojej metodzie nie przyjmuje nic ale
+        // zwraca int. Wykorzystuje to z obiektem klasy Object ktory ma w swojej klasie
+        // metode hashcode zwracajaca int
         //to tak naprawde:
         IntSupplier zmiennaIntInerfaceAnonim = new IntSupplier() {
             @Override
@@ -3380,7 +3384,12 @@ public class Wstep {
         System.out.println(obiekt.hashCode());
         System.out.println(zmiennaIntInterfaceLambda.getAsInt());
 
-        ToIntFunction<Object> =
+
+        //Odwolywanie sie do metod bez podania instancji:
+        ToIntFunction<Object> bezInstancji = Object::hashCode;
+        Object instncjaObiektu = new Object();
+        System.out.println("Odwolanie do metody ze podania instancji : " + bezInstancji.applyAsInt(instncjaObiektu));
+
 
 
 
@@ -3560,6 +3569,15 @@ interface Powitanie{
 
 interface CzyParzysta<T>{
     boolean sprawdz(T obiekt);
+}
+class Wiek{
+    int wiek;
+    Wiek(int wiek){
+        this.wiek=wiek;
+    }
+    public int getWiek() {
+        return wiek;
+    }
 }
 /*
 @FunctionalInterface

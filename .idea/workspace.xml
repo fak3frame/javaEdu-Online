@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 9">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -36,15 +36,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="21536" />
+          <entry key="java" value="22104" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="120" />
+          <entry key="txt" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="21536" />
-          <entry key="PLAIN_TEXT" value="120" />
+          <entry key="JAVA" value="22104" />
+          <entry key="PLAIN_TEXT" value="122" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1251">
-              <caret line="3382" column="13" lean-forward="true" selection-start-line="3382" selection-start-column="13" selection-end-line="3382" selection-end-column="13" />
+            <state relative-caret-position="962">
+              <caret line="3576" column="5" selection-start-line="3576" selection-start-column="5" selection-end-line="3576" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#89211#89212#0" expanded="true" />
@@ -112,6 +112,10 @@
                 <element signature="e#137644#137645#0" expanded="true" />
                 <element signature="e#137714#137715#0" expanded="true" />
                 <element signature="e#137787#137788#0" expanded="true" />
+                <element signature="e#143474#143475#0" expanded="true" />
+                <element signature="e#143493#143494#0" expanded="true" />
+                <element signature="e#143532#143533#0" expanded="true" />
+                <element signature="e#143559#143560#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -293,7 +297,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534185150485" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534257911489" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -451,13 +455,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01106" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 65">
-      <created>1533927854724</created>
-      <option name="number" value="01106" />
-      <option name="presentableId" value="LOCAL-01106" />
-      <option name="project" value="LOCAL" />
-      <updated>1533927854724</updated>
     </task>
     <task id="LOCAL-01107" summary="SanouczekProgramisty WYRAŻENIA REGULARNE 66">
       <created>1533932494846</created>
@@ -795,7 +792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534174481334</updated>
     </task>
-    <option name="localTasksCounter" value="1155" />
+    <task id="LOCAL-01155" summary="Wyrażenia lambda 10">
+      <created>1534210446006</created>
+      <option name="number" value="01155" />
+      <option name="presentableId" value="LOCAL-01155" />
+      <option name="project" value="LOCAL" />
+      <updated>1534210446007</updated>
+    </task>
+    <option name="localTasksCounter" value="1156" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -867,7 +871,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="String cache i StringBuilder 2" />
     <MESSAGE value="String cache i StringBuilder 3" />
     <MESSAGE value="String cache i StringBuilder 4" />
     <MESSAGE value="String cache i StringBuilder 5" />
@@ -892,7 +895,8 @@
     <MESSAGE value="Wyrażenia lambda 7" />
     <MESSAGE value="Wyrażenia lambda 8" />
     <MESSAGE value="Wyrażenia lambda 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 9" />
+    <MESSAGE value="Wyrażenia lambda 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 10" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Human.java" />
@@ -1204,8 +1208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1251">
-          <caret line="3382" column="13" lean-forward="true" selection-start-line="3382" selection-start-column="13" selection-end-line="3382" selection-end-column="13" />
+        <state relative-caret-position="962">
+          <caret line="3576" column="5" selection-start-line="3576" selection-start-column="5" selection-end-line="3576" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#89211#89212#0" expanded="true" />
@@ -1240,6 +1244,10 @@
             <element signature="e#137644#137645#0" expanded="true" />
             <element signature="e#137714#137715#0" expanded="true" />
             <element signature="e#137787#137788#0" expanded="true" />
+            <element signature="e#143474#143475#0" expanded="true" />
+            <element signature="e#143493#143494#0" expanded="true" />
+            <element signature="e#143532#143533#0" expanded="true" />
+            <element signature="e#143559#143560#0" expanded="true" />
           </folding>
         </state>
       </provider>
