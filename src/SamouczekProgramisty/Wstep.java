@@ -3380,6 +3380,8 @@ public class Wstep {
         System.out.println(obiekt.hashCode());
         System.out.println(zmiennaIntInterfaceLambda.getAsInt());
 
+        ToIntFunction<Object> =
+
 
 
 
