@@ -3408,6 +3408,28 @@ public class Wstep {
         // i dzieki deklaracji Object::hashCode wiem ze metoda ma zwrocic to co metoda hashCode
         // klasy Object
 
+        //inny przykład
+        ToIntFunction<Wiek> wiekToIntFunction = Wiek::getWiek;
+        Wiek obiektWiek2 = new Wiek(20);
+        System.out.println("Wiek toIntFunction : "+wiekToIntFunction.applyAsInt(obiektWiek2));
+
+
+        //Odwolanie sie do konstruktora
+        Supplier<Object> objectSupplier = Object::new;
+        //Metoda tego interfacu T get() zwraca generyk taki jaki jest jego typ
+        System.out.println(objectSupplier.get());
+        //pokazuje refernecje nowego obiektu czyli:
+        System.out.println(new Object());
+
+
+        //Przyklady zastosowan:
+        //Wypisanie liczb z kolekcji
+        List<Integer> listaLiczb = Arrays.asList(2,4,6,8,7);
+        Consumer<Integer> listaLiczbConsumer = (liczbaZListy) -> System.out.print(liczbaZListy+" ");
+        listaLiczb.forEach(listaLiczbConsumer);
+        System.out.println();
+        listaLiczbConsumer.accept(listaLiczb.get(0));
+
 
 
 
