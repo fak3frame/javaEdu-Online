@@ -3368,8 +3368,9 @@ public class Wstep {
         //Tworze obiekt klasy np Object w ktorej jest metoda hashcode() zwracajaca int
         IntSupplier zmiennaIntInterace = obiekt::hashCode;
         //Tworze zmienna klasy anonimowej ktora w swojej metodzie nie przyjmuje nic ale
-        // zwraca int. Wykorzystuje to z obiektem klasy Object ktory ma w swojej klasie
-        // metode hashcode zwracajaca int
+        // zwraca int.
+        //Wykorzystuje to z obiektem klasy Object ktory ma w swojej klasie
+        // metode hashcode zwracajaca int laczac to z metoda klasy
         //to tak naprawde:
         IntSupplier zmiennaIntInerfaceAnonim = new IntSupplier() {
             @Override
@@ -3384,10 +3385,24 @@ public class Wstep {
         System.out.println(obiekt.hashCode());
         System.out.println(zmiennaIntInterfaceLambda.getAsInt());
 
+        //inny przyklad
+        Wiek obiektWiek = new Wiek(10);
+        IntSupplier wiekSupplier = obiektWiek::getWiek;
+        System.out.println("podany obiekt wiek ma wiek : "+wiekSupplier.getAsInt());
+        //zwroci 10
+
 
         //Odwolywanie sie do metod bez podania instancji:
         ToIntFunction<Object> bezInstancji = Object::hashCode;
+        //Ten interface funkcyjny przyjmuje typ generyczny i zwrac int w metodzie
+        // ktora przyjmuje ten typ generyczny i zwraca jakis jego int
+        // int applyAsInt(T obiekt)
+        //Tworze obiekt klasy anonimowej przyjmujacej typ Object
+        // a nastepnie metoda tego interfacu zwracajaca int i przyjmujaca
+        // Object bedzie zwracac int rowny intowi zwracanemu przez
+        // metode klasy Object - hashcode
         Object instncjaObiektu = new Object();
+        //Tworze instancje tej klasy
         System.out.println("Odwolanie do metody ze podania instancji : " + bezInstancji.applyAsInt(instncjaObiektu));
 
 
