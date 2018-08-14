@@ -3404,6 +3404,9 @@ public class Wstep {
         Object instncjaObiektu = new Object();
         //Tworze instancje tej klasy
         System.out.println("Odwolanie do metody ze podania instancji : " + bezInstancji.applyAsInt(instncjaObiektu));
+        //Na obiekcie klasy anonimowej wywoluje jego metode ktora przyjmuje instancje obiektu
+        // i dzieki deklaracji Object::hashCode wiem ze metoda ma zwrocic to co metoda hashCode
+        // klasy Object
 
 
 
