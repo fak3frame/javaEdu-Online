@@ -3426,9 +3426,23 @@ public class Wstep {
         //Wypisanie liczb z kolekcji
         List<Integer> listaLiczb = Arrays.asList(2,4,6,8,7);
         Consumer<Integer> listaLiczbConsumer = (liczbaZListy) -> System.out.print(liczbaZListy+" ");
+        //Interface ma void accept(T t)
+        //zmienna przyjeta przez metode typu generycznego T nazwalem lizbaZListy (t) w deklaracji
         listaLiczb.forEach(listaLiczbConsumer);
+        //petla forEach dziala tyle obrotow ile lista posiada elementow
+        //wysyla przy kazdym obrocie swoj elelement czyli w tym przyoadku
+        // element typu integer
         System.out.println();
         listaLiczbConsumer.accept(listaLiczb.get(0));
+
+        //lub w skrocie z mechanizmem odwolania sie do metod
+        System.out.println();
+        listaLiczb.forEach(System.out::print);
+        //wysylam kaxdy element do Klasy System.out z odwolasniem sie do jego
+        // metody print
+
+
+
 
 
 
