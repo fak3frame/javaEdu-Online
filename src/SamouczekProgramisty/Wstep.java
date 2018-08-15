@@ -3387,8 +3387,10 @@ public class Wstep {
         //Tworze zmienna klasy anonimowej ktora w swojej metodzie nie przyjmuje nic ale
         // zwraca int.
         //Wykorzystuje to z obiektem klasy Object ktory ma w swojej klasie
-        // metode hashcode zwracajaca int laczac to z metoda klasy
-        //to tak naprawde:
+        // metode hashcode zwracajaca int laczac to z metoda interacu tez zwracajac int
+        //Od tej pory metoda obiektu klasy anonimowej getAsInt bezie zwracac
+        // hashCode() obiektu "obiekt)
+        //calosc to tak naprawde:
         IntSupplier zmiennaIntInerfaceAnonim = new IntSupplier() {
             @Override
             public int getAsInt() {
@@ -3409,11 +3411,11 @@ public class Wstep {
         //zwroci 10
 
 
-        //Odwolywanie sie do metod bez podania instancji:
+        //Odwolywanie sie do metod bez podania instancji klasy a po prostu Klasy:
         ToIntFunction<Object> bezInstancji = Object::hashCode;
-        //Ten interface funkcyjny przyjmuje typ generyczny i zwrac int w metodzie
-        // ktora przyjmuje ten typ generyczny i zwraca jakis jego int
-        // int applyAsInt(T obiekt)
+        //Ten interface funkcyjny posiada metode zwracajaca int i
+        // przyjmuje typ generyczny np Object
+        // int applyAsInt(T t)
         //Tworze obiekt klasy anonimowej przyjmujacej typ Object
         // a nastepnie metoda tego interfacu zwracajaca int i przyjmujaca
         // Object bedzie zwracac int rowny intowi zwracanemu przez
