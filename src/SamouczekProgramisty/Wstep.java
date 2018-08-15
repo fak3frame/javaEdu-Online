@@ -3380,7 +3380,7 @@ public class Wstep {
         System.out.println("liczba 14 pomnozona przez 2  w lambdzie: "+pomnozPrzezDwaLambda.apply(14));
 
 
-        //Odwolywanie sie do metod ::
+        //Odwolywanie sie do metod :: na obiektach
         Object obiekt = new Object();
         //Tworze obiekt klasy np Object w ktorej jest metoda hashcode() zwracajaca int
         IntSupplier zmiennaIntInterace = obiekt::hashCode;
@@ -3390,6 +3390,10 @@ public class Wstep {
         // metode hashcode zwracajaca int laczac to z metoda interacu tez zwracajac int
         //Od tej pory metoda obiektu klasy anonimowej getAsInt bezie zwracac
         // hashCode() obiektu "obiekt)
+        //Jesli odwoluje sie poprzez obiekt moge to zrobic tylko na interfejsie funkcyjnym
+        // ktorego metoda zgadza sie z metoda jaka wywoluje po :: oraz interface funkcyjny nie moze
+        // przyjmowac typu generycznego
+
         //calosc to tak naprawde:
         IntSupplier zmiennaIntInerfaceAnonim = new IntSupplier() {
             @Override
@@ -3416,10 +3420,17 @@ public class Wstep {
         //Ten interface funkcyjny posiada metode zwracajaca int i
         // przyjmuje typ generyczny np Object
         // int applyAsInt(T t)
-        //Tworze obiekt klasy anonimowej przyjmujacej typ Object
-        // a nastepnie metoda tego interfacu zwracajaca int i przyjmujaca
+        //Tworze obiekt klasy anonimowej przyjmujacej typ gneryczny Klasy Object
+        // a nastepnie metoda tego interfacu zwracajaca int i przyjmujaca typ generyczny
         // Object bedzie zwracac int rowny intowi zwracanemu przez
-        // metode klasy Object - hashcode
+        // metode klasy Object - hashcode - zwracany typ (int) musi byc taki sam
+        // w metodzie klasy generycznej jak i metody tego interfacu!!
+        //Od tej pory wywyolujac metode applyAsInt na obiekcie "bezInstancji" klasy anonimowej
+        // ToIntFunction bede mogl wyslac dowolny obiekt klasy typu generycznego
+        // czyli w tym przypadku Object bezInstancji.applyAsInt(instncjaObiektu)
+        //Jesli odwoluje sie poprzez Klase moge to zrobic tylko na interfejscie funkcyjnym
+        // ktorego metoda zgadza sie z metoda jaka wywoluje po :: oraz interface funkcyjny musi
+        // przyjmowac typ generyczny
         Object instncjaObiektu = new Object();
         //Tworze instancje tej klasy
         System.out.println("Odwolanie do metody ze podania instancji : " + bezInstancji.applyAsInt(instncjaObiektu));
