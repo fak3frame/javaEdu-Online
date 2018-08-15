@@ -3297,12 +3297,15 @@ public class Wstep {
         // w pakiecie java.util.function, najwazniejsze z nich to:
         /*
 
-        BiFunction<T, U, R> - R apply(T t, U u) //tworznie konstruktora z 2 zmiennymi ::new
-        // + przypisanie w wywolaniu na obiekcie bifunction metody apply zmiennym klasy wartosci
+        BiFunction<T, U, R> - R apply(T t, U u) //moge odwolac sie konstruktora klasy z 2 zmiennymi ::new
+        // + przypisanie wartosci tej klasy w wywolaniu na obiekcie bifunction metody apply i
+        // wyslaniu do niej wartosci jako parametry - to przypisuje do nowego obiektu tej klasy
+        //BiFunction<Integer, String, KlasaMoja> obiektInterfejsu = KlasaMoja::new;
+        // KlasaMoja obKlasaMoja = obiektInterfejsu("wartosc", 123)
         Function<T, R> - R apply (T t)
         UnaryOperator<T> - T apply (T t)
         Consumer<T> - void accept (T t)
-        Supplier<T> - T get()
+        Supplier<T> - T get() //moge odwolac sie konstruktora klasy ::new
 
         ToIntFunction<T> - int applyAsInt(T t) //moge wywolac hashCode na klasie i potem
         // do metody obiektu ToIntFunction wyslac obiekt wybranej klasy generycznej
