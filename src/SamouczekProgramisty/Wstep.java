@@ -3293,9 +3293,22 @@ public class Wstep {
         }
         */
 
-        //Java posiada zestaw gotowych interfejsow w pakiecie java.util.function, najwazniejsze
-        // z nich to:
-//
+        //Java posiada zestaw gotowych interfejsow funkcjonalnych
+        // w pakiecie java.util.function, najwazniejsze z nich to:
+        /*
+
+        Function<T, R> - R apply (T t)
+        Consumer<T> - void accept (T t)
+        Predicate<T> - boolean test (T t)
+        Supplier<T> - T get()
+        UnaryOperator<T> - T apply (T t)
+        BiPredicate<T, R> - boolean test (T t, R r)
+
+        IntSuplier - int getAsInt()
+        */
+
+//      Przykłady uzycia:
+
 //        -Function<T, R> zawiera metodę R apply(T ob), która przyjmuje instancję klasy T
 //          zwracając instancję klasy R
         Function<String, Integer> zmianaSI = new Function<String, Integer>() {
@@ -3440,6 +3453,7 @@ public class Wstep {
         listaLiczb.forEach(System.out::print);
         //wysylam kaxdy element do Klasy System.out z odwolasniem sie do jego
         // metody print
+
 
 
 
