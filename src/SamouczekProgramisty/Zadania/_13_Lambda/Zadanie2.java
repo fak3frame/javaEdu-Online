@@ -19,7 +19,7 @@ public class Zadanie2 {
 
         ToIntFunction<Tmp> intSupplier = Tmp::metodaTmp;
         Tmp tmp = new Tmp();
-        ToIntFunction<Tmp> intFunction = tmp::metodaTmp;
+        //ToIntFunction<Tmp> intFunction = tmp::metodaTmp;
 
         Tmp z2 = new Tmp();
         IntSupplier intSupplier1 = z2::metodaTmp;
