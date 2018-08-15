@@ -1,15 +1,14 @@
 package SamouczekProgramisty.Zadania._13_Lambda;
 
-import java.util.function.IntSupplier;
-import java.util.function.Supplier;
-import java.util.function.ToIntFunction;
+import java.util.Objects;
+import java.util.function.*;
 
 public class Zadanie2 {
     public static int metoda(){
         return 10;
     }
     public static void main(String[] args) {
-        Supplier<String> supplier = new Supplier<String>() {
+        /*Supplier<String> supplier = new Supplier<String>() {
             @Override
             public String get() {
                 return null;
@@ -24,9 +23,17 @@ public class Zadanie2 {
         Tmp z2 = new Tmp();
         IntSupplier intSupplier1 = z2::metodaTmp;
         IntSupplier intSupplier2 = Tmp::metodaTmpStatic;
+        */
+        Object object = new Object();
+        Predicate<Object> predicate = object::equals;
+        //boolean test (T t)
+        BiPredicate<Object, Object> biPredicate = Object::equals;
+        //boolean test (T t, R r)
+
+
     }
 }
-
+/*
 class Tmp{
     int x;
     public  Tmp(){}
@@ -38,3 +45,4 @@ class Tmp{
         return 11;
     }
 }
+*/
