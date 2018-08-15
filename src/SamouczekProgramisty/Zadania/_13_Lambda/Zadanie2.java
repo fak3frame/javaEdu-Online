@@ -18,14 +18,20 @@ public class Zadanie2 {
         Supplier<Object> supplier1 = Object::new;
 
         ToIntFunction<Tmp> intSupplier = Tmp::metodaTmp;
-        IntSupplier intSupplier1 = Zadanie2::metoda;
+        Tmp tmp = new Tmp();
+        ToIntFunction<Tmp> intFunction = tmp::metodaTmp;
+
+        Zadanie2 z2 = new Zadanie2();
+        IntSupplier intSupplier1 = z2::metoda;
+        IntSupplier intSupplier2 = Zadanie2::metoda;
     }
 }
 
 class Tmp{
     int x;
+    public  Tmp(){}
     public Tmp(int x){this.x = x;}
-    public boolean metodaTmp(){
-        return true;
+    public int metodaTmp(){
+        return 10;
     }
 }

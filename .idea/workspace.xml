@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 21">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,15 +38,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="26035" />
+          <entry key="java" value="26417" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="135" />
+          <entry key="txt" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26035" />
-          <entry key="PLAIN_TEXT" value="135" />
+          <entry key="JAVA" value="26417" />
+          <entry key="PLAIN_TEXT" value="136" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -77,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="3392" column="77" selection-start-line="3392" selection-start-column="77" selection-end-line="3392" selection-end-column="77" />
+            <state relative-caret-position="342">
+              <caret line="3397" column="95" selection-start-line="3397" selection-start-column="95" selection-end-line="3397" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -119,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="357">
+              <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#146#147#0" expanded="true" />
@@ -301,7 +302,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534356414766" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534357017803" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -455,13 +456,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01118" summary="SanouczekProgramisty Java z linii polecen 8">
-      <created>1534011697208</created>
-      <option name="number" value="01118" />
-      <option name="presentableId" value="LOCAL-01118" />
-      <option name="project" value="LOCAL" />
-      <updated>1534011697208</updated>
     </task>
     <task id="LOCAL-01119" summary="SanouczekProgramisty Java z linii polecen 9">
       <created>1534012238380</created>
@@ -799,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534353367827</updated>
     </task>
-    <option name="localTasksCounter" value="1167" />
+    <task id="LOCAL-01167" summary="Wyrażenia lambda 22">
+      <created>1534357023656</created>
+      <option name="number" value="01167" />
+      <option name="presentableId" value="LOCAL-01167" />
+      <option name="project" value="LOCAL" />
+      <updated>1534357023656</updated>
+    </task>
+    <option name="localTasksCounter" value="1168" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -871,7 +872,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Formatter 5" />
     <MESSAGE value="Formatter 6" />
     <MESSAGE value="Formatter 7" />
     <MESSAGE value="Formatter 8" />
@@ -896,7 +896,8 @@
     <MESSAGE value="Wyrażenia lambda 20" />
     <MESSAGE value="1" />
     <MESSAGE value="Wyrażenia lambda 21" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 21" />
+    <MESSAGE value="Wyrażenia lambda 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 22" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Czlowiek.java">
@@ -1214,8 +1215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="357">
+          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#146#147#0" expanded="true" />
@@ -1230,8 +1231,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="3392" column="77" selection-start-line="3392" selection-start-column="77" selection-end-line="3392" selection-end-column="77" />
+        <state relative-caret-position="342">
+          <caret line="3397" column="95" selection-start-line="3397" selection-start-column="95" selection-end-line="3397" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />
