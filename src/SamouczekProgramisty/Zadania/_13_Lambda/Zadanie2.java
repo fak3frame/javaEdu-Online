@@ -21,9 +21,9 @@ public class Zadanie2 {
         Tmp tmp = new Tmp();
         ToIntFunction<Tmp> intFunction = tmp::metodaTmp;
 
-        Zadanie2 z2 = new Zadanie2();
-        IntSupplier intSupplier1 = z2::metoda;
-        IntSupplier intSupplier2 = Zadanie2::metoda;
+        Tmp z2 = new Tmp();
+        IntSupplier intSupplier1 = z2::metodaTmp;
+        IntSupplier intSupplier2 = Tmp::metodaTmpStatic;
     }
 }
 
@@ -33,5 +33,8 @@ class Tmp{
     public Tmp(int x){this.x = x;}
     public int metodaTmp(){
         return 10;
+    }
+    public static int metodaTmpStatic(){
+        return 11;
     }
 }

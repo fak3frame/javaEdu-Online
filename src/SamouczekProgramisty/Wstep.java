@@ -3393,7 +3393,7 @@ public class Wstep {
         //Jesli odwoluje sie poprzez obiekt moge to zrobic tylko na interfejsie funkcyjnym
         // ktorego metoda zgadza sie z metoda jaka wywoluje po :: oraz interface funkcyjny nie moze
         // przyjmowac typu generycznego
-        //Chyba ze metoda jest statyczna to moge na takim interfejsie funkcjyjnym (bez typy
+        //Chyba ze metoda jest statyczna to moge na takim interfejsie funkcjyjnym (bez typu
         // generycznego) odwolac sie do metody poprzez Klasa a nie obiekt tj:
         // IntSupplier zmiennaIntInterace = Object::hashCode; - blad - hashCode nie jest static
 

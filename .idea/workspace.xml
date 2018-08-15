@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 22">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java" afterDir="false" />
@@ -38,15 +38,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="26417" />
+          <entry key="java" value="26482" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="136" />
+          <entry key="txt" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26417" />
-          <entry key="PLAIN_TEXT" value="136" />
+          <entry key="JAVA" value="26482" />
+          <entry key="PLAIN_TEXT" value="137" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="3397" column="95" selection-start-line="3397" selection-start-column="95" selection-end-line="3397" selection-end-column="95" />
+            <state relative-caret-position="682">
+              <caret line="3396" column="77" lean-forward="true" selection-start-line="3396" selection-start-column="77" selection-end-line="3396" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -121,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#146#147#0" expanded="true" />
@@ -130,6 +130,8 @@
                 <element signature="e#314#315#0" expanded="true" />
                 <element signature="e#726#727#0" expanded="true" />
                 <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -302,7 +304,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534357017803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534357400581" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -456,13 +458,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01119" summary="SanouczekProgramisty Java z linii polecen 9">
-      <created>1534012238380</created>
-      <option name="number" value="01119" />
-      <option name="presentableId" value="LOCAL-01119" />
-      <option name="project" value="LOCAL" />
-      <updated>1534012238380</updated>
     </task>
     <task id="LOCAL-01120" summary="SanouczekProgramisty Java z linii polecen 10">
       <created>1534012771216</created>
@@ -800,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534357023656</updated>
     </task>
-    <option name="localTasksCounter" value="1168" />
+    <task id="LOCAL-01168" summary="Wyrażenia lambda 23">
+      <created>1534357405835</created>
+      <option name="number" value="01168" />
+      <option name="presentableId" value="LOCAL-01168" />
+      <option name="project" value="LOCAL" />
+      <updated>1534357405835</updated>
+    </task>
+    <option name="localTasksCounter" value="1169" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -872,7 +874,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Formatter 6" />
     <MESSAGE value="Formatter 7" />
     <MESSAGE value="Formatter 8" />
     <MESSAGE value="Wyrażenia lambda 1" />
@@ -897,7 +898,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="Wyrażenia lambda 21" />
     <MESSAGE value="Wyrażenia lambda 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 22" />
+    <MESSAGE value="Wyrażenia lambda 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 23" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_8_Enum/Czlowiek.java">
@@ -1216,7 +1218,7 @@
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#146#147#0" expanded="true" />
@@ -1225,14 +1227,16 @@
             <element signature="e#314#315#0" expanded="true" />
             <element signature="e#726#727#0" expanded="true" />
             <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="3397" column="95" selection-start-line="3397" selection-start-column="95" selection-end-line="3397" selection-end-column="95" />
+        <state relative-caret-position="682">
+          <caret line="3396" column="77" lean-forward="true" selection-start-line="3396" selection-start-column="77" selection-end-line="3396" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />
