@@ -3298,13 +3298,17 @@ public class Wstep {
         /*
 
         Function<T, R> - R apply (T t)
-        Consumer<T> - void accept (T t)
-        Predicate<T> - boolean test (T t)
-        Supplier<T> - T get()
         UnaryOperator<T> - T apply (T t)
+        Consumer<T> - void accept (T t)
+        Supplier<T> - T get()
+
+        ToIntFunction<T> - int applyAsInt(T t)
+
         BiPredicate<T, R> - boolean test (T t, R r)
+        Predicate<T> - boolean test (T t)
 
         IntSuplier - int getAsInt()
+
         */
 
 //      Przykłady uzycia:
