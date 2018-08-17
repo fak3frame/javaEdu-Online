@@ -3486,6 +3486,11 @@ public class Wstep {
         /*
         Public / Protected / Private / Brak
 
+        Public - dostepny wszedzie (klasa/pola/metody/typ wewnetrzny)
+
+
+
+
          */
 
 
