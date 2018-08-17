@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 27">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Wyrażenia lambda 28">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -37,15 +37,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="27432" />
+          <entry key="java" value="27682" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="141" />
+          <entry key="txt" value="142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="27432" />
-          <entry key="PLAIN_TEXT" value="141" />
+          <entry key="JAVA" value="27682" />
+          <entry key="PLAIN_TEXT" value="142" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="3301" column="51" selection-start-line="3301" selection-start-column="51" selection-end-line="3301" selection-end-column="51" />
+            <state relative-caret-position="597">
+              <caret line="3484" column="30" selection-start-line="3484" selection-start-column="30" selection-end-line="3484" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -116,7 +116,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -299,7 +299,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534370089929" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534447756073" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -453,13 +453,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01124" summary="Aplikacje webowe - INFO 2">
-      <created>1534026867063</created>
-      <option name="number" value="01124" />
-      <option name="presentableId" value="LOCAL-01124" />
-      <option name="project" value="LOCAL" />
-      <updated>1534026867063</updated>
     </task>
     <task id="LOCAL-01125" summary="Aplikacje webowe - INFO 3">
       <created>1534027249587</created>
@@ -797,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534369520874</updated>
     </task>
-    <option name="localTasksCounter" value="1173" />
+    <task id="LOCAL-01173" summary="Wyrażenia lambda 28">
+      <created>1534370203120</created>
+      <option name="number" value="01173" />
+      <option name="presentableId" value="LOCAL-01173" />
+      <option name="project" value="LOCAL" />
+      <updated>1534370203120</updated>
+    </task>
+    <option name="localTasksCounter" value="1174" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -869,7 +869,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wyrażenia lambda 3" />
     <MESSAGE value="Wyrażenia lambda 4" />
     <MESSAGE value="Wyrażenia lambda 5" />
     <MESSAGE value="Wyrażenia lambda 7" />
@@ -894,7 +893,8 @@
     <MESSAGE value="Wyrażenia lambda 25" />
     <MESSAGE value="Wyrażenia lambda 26" />
     <MESSAGE value="Wyrażenia lambda 27" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 27" />
+    <MESSAGE value="Wyrażenia lambda 28" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyrażenia lambda 28" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Override.java" />
@@ -1227,10 +1227,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="3301" column="51" selection-start-line="3301" selection-start-column="51" selection-end-line="3301" selection-end-column="51" />
+        <state relative-caret-position="597">
+          <caret line="3484" column="30" selection-start-line="3484" selection-start-column="30" selection-end-line="3484" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />
@@ -1263,16 +1273,6 @@
             <element signature="e#146248#146249#0" expanded="true" />
             <element signature="e#146275#146276#0" expanded="true" />
             <element signature="e#146302#146303#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3482,6 +3482,14 @@ public class Wstep {
 
 
 
+        //Modyfikatory dostepu
+        /*
+
+         */
+
+
+
+
 
 
 
