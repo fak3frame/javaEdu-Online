@@ -3488,10 +3488,12 @@ public class Wstep {
 
         Public - dostepny wszedzie (klasa/pola/metody/typ wewnetrzny)
 
+        Protecetd - dostepny dla metod/pol/typow wewnetrznych
 
 
 
          */
+
 
 
 
