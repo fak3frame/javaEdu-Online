@@ -3488,7 +3488,8 @@ public class Wstep {
 
         Public - dostepny wszedzie (klasa/pola/metody/typ wewnetrzny)
 
-        Protecetd - dostepny dla metod/pol/typow wewnetrznych
+        Protecetd - dostepny dla metod/pol/typow wewnetrznych (NIE MOZNA DO KLAS)
+         pozwala na dostep w klasach nizej i nawet w innych pakietach
 
 
 
