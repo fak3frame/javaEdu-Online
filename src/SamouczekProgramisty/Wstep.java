@@ -3484,6 +3484,7 @@ public class Wstep {
 
         //Modyfikatory dostepu
         /*
+        Public / Protected / Private / Brak
 
          */
 
