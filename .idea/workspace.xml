@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Modyfikatory dostepu 10">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Modyfikatory dostepu 11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,15 +39,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="29160" />
+          <entry key="java" value="29428" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="178" />
+          <entry key="txt" value="179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="29160" />
-          <entry key="PLAIN_TEXT" value="178" />
+          <entry key="JAVA" value="29428" />
+          <entry key="PLAIN_TEXT" value="179" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -77,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="3521" column="78" selection-start-line="3521" selection-start-column="78" selection-end-line="3521" selection-end-column="78" />
+            <state relative-caret-position="563">
+              <caret line="3523" column="71" selection-start-line="3523" selection-start-column="71" selection-end-line="3523" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -143,8 +145,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="153">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -272,8 +278,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-98" />
-    <option name="y" value="7" />
+    <option name="x" value="87" />
+    <option name="y" value="6" />
     <option name="width" value="1667" />
     <option name="height" value="1447" />
   </component>
@@ -337,7 +343,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534591687248" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534592814909" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -490,13 +496,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01135" summary="String cache i StringBuilder 7">
-      <created>1534029629165</created>
-      <option name="number" value="01135" />
-      <option name="presentableId" value="LOCAL-01135" />
-      <option name="project" value="LOCAL" />
-      <updated>1534029629166</updated>
     </task>
     <task id="LOCAL-01136" summary="String cache i StringBuilder 8">
       <created>1534029775894</created>
@@ -834,7 +833,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534590957619</updated>
     </task>
-    <option name="localTasksCounter" value="1184" />
+    <task id="LOCAL-01184" summary="Modyfikatory dostepu 11">
+      <created>1534591978318</created>
+      <option name="number" value="01184" />
+      <option name="presentableId" value="LOCAL-01184" />
+      <option name="project" value="LOCAL" />
+      <updated>1534591978318</updated>
+    </task>
+    <option name="localTasksCounter" value="1185" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -870,7 +876,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-98" y="7" width="1667" height="1447" extended-state="0" />
+    <frame x="87" y="6" width="1667" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17361543" />
@@ -906,7 +912,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wyrażenia lambda 15" />
     <MESSAGE value="Wyrażenia lambda 16" />
     <MESSAGE value="Wyrażenia lambda 17" />
     <MESSAGE value="Wyrażenia lambda 18" />
@@ -931,7 +936,8 @@
     <MESSAGE value="Modyfikatory dostepu 8" />
     <MESSAGE value="Modyfikatory dostepu 9" />
     <MESSAGE value="Modyfikatory dostepu 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modyfikatory dostepu 10" />
+    <MESSAGE value="Modyfikatory dostepu 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modyfikatory dostepu 11" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_9_Adnotacje/AnnotationProcessor.java">
@@ -1246,13 +1252,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1266,24 +1269,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="3521" column="78" selection-start-line="3521" selection-start-column="78" selection-end-line="3521" selection-end-column="78" />
+        <state relative-caret-position="563">
+          <caret line="3523" column="71" selection-start-line="3523" selection-start-column="71" selection-end-line="3523" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />

@@ -3521,7 +3521,19 @@ public class Wstep {
          jest mozliwosc nadpisania metody z nadklasy to w podklasie bede mogl
          ustawic dowolny modyfikator i nawet wywolac ja metoda super.metoda();
 
+        Aby uniknac mozliwosci nadpisania metody lub rozszerzenia klasy uzywam
+         modyfikatora protected
+        */
+
+
+        //Mechanizm refleksji
+        /*
+        Nie jest zazwyczaj stosowany w kodzie produkcyjnym. Sluzy on do tego
+         aby miec dostep do dowolnego elementu klasy pomijajac modyfikatory
+         dostepu
          */
+
+
 
 
 
