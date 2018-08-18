@@ -4,6 +4,7 @@ import SamouczekProgramisty.Silnik.SilnikMoj;
 
 import javax.sound.midi.SysexMessage;
 import java.io.*;
+import java.lang.reflect.Field;
 import java.lang.reflect.Parameter;
 import java.util.*;
 import java.util.function.*;
@@ -3532,14 +3533,36 @@ public class Wstep {
          aby miec dostep do dowolnego elementu klasy pomijajac modyfikatory
          dostepu
          */
+        class BankAccount {
 
+            private int balance = 100;
 
+            public int getBalance() {
+                return balance;
+            }
+        }
+        // w klasie zlodzieja
+        BankAccount account = new BankAccount();
+        System.out.println("\n"+"Stan konta: "+ account.getBalance());
 
+        try{
+            Field balance = BankAccount.class.getDeclaredField("balance");
+            //Definiuje obiekt klasy refleksji
+            //Wywoluje na niej NazweKlasy potem class i na koncu metode
+            // np getDeclaredField("nazwaPola") w nawiasie podaje nazwe
+            // pola
+            balance.setAccessible(true);
+            //na zmiennej klasy refleksji zmianiam modyfikator wybranej
+            // wczesniej zmiennej
+            balance.set(account, -5000);
+            //Za pomoca metody na obiekcie klasy reflekcji set
+            // moge ustawic nowa wartosc wybranego pola
 
+        }catch (NoSuchFieldException | IllegalAccessException x) {
+            System.out.println(x.getMessage());
+        }
 
-
-
-
+        System.out.println("Stan konta po zmianie: "+ account.getBalance());
 
 
 

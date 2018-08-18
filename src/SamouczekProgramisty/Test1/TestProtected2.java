@@ -2,9 +2,7 @@ package SamouczekProgramisty.Test1;
 
 public class TestProtected2 extends  TestProtected{
 
-    public final void metodaProt(){
 
-    }
 
     public static void main(String[] args) {
         TestProtected o = new TestProtected();
