@@ -3507,7 +3507,19 @@ public class Wstep {
 
         Enkapsulajca / hermetyzacja - jest to spsob urycia elementow klasy
         Zalecane sa jak najbardziej restrykcyjne modyfikatory dostepu cyzli
-         private do wszystkich pol i metod ktore beda uzywane wewnatrz klasy
+         private do wszystkich pol i metod ktore beda uzywane wewnatrz klasy,
+         w pozostalych przypadkach public. Protgected uzywam w zlozonych
+         relacjach lub brak modyfikatora.
+
+
+        Interface oraz jego metody jesli nie maja modyfikatora sa PUBLICZNE
+
+        Typ wyliczeniowy oraz jego pola jesli nie maja modyfikatora sa PUBLICZNE
+
+
+        W przypadku dziedzicznia mozliwe jest nadpisywanie metod tzn jesli
+         jest mozliwosc nadpisania metody z nadklasy to w podklasie bede mogl
+         ustawic dowolny modyfikator i nawet wywolac ja metoda super.metoda();
 
          */
 
