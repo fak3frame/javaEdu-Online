@@ -3496,7 +3496,12 @@ public class Wstep {
 
         Private - dostepny dla klass wewnetrznych NIELOKALNYCH / metod / pol
 
-
+        OGOLNA TABELA MODYFIKATOROW
+        Modyfikator	        Klasa	Pakiet	Podklasa	Inni	Poprawny dla klas
+        public	            tak	    tak	    tak	        tak	    tak
+        protected	        tak	    tak	    tak	        nie	    nie
+        brak modyfikatora	tak	    tak	    nie	        nie	    tak
+        private	            tak	    nie	    nie	        nie	    nie
 
          */
 
