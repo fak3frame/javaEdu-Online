@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Modyfikatory dostepu 7">
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java" afterDir="false" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Modyfikatory dostepu 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,15 +37,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="28293" />
+          <entry key="java" value="28715" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="174" />
+          <entry key="txt" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="28293" />
-          <entry key="PLAIN_TEXT" value="174" />
+          <entry key="JAVA" value="28715" />
+          <entry key="PLAIN_TEXT" value="176" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -75,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="3495" column="76" lean-forward="true" selection-start-line="3495" selection-start-column="76" selection-end-line="3495" selection-end-column="76" />
+            <state relative-caret-position="639">
+              <caret line="3509" column="76" selection-start-line="3509" selection-start-column="76" selection-end-line="3509" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -150,11 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -266,9 +265,9 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie1.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
       </list>
     </option>
   </component>
@@ -337,7 +336,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534590667695" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534590786121" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -490,20 +489,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01132" summary="String cache i StringBuilder 4">
-      <created>1534028811679</created>
-      <option name="number" value="01132" />
-      <option name="presentableId" value="LOCAL-01132" />
-      <option name="project" value="LOCAL" />
-      <updated>1534028811679</updated>
-    </task>
-    <task id="LOCAL-01133" summary="String cache i StringBuilder 5">
-      <created>1534029048881</created>
-      <option name="number" value="01133" />
-      <option name="presentableId" value="LOCAL-01133" />
-      <option name="project" value="LOCAL" />
-      <updated>1534029048881</updated>
     </task>
     <task id="LOCAL-01134" summary="String cache i StringBuilder 6">
       <created>1534029303593</created>
@@ -834,7 +819,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534590457451</updated>
     </task>
-    <option name="localTasksCounter" value="1181" />
+    <task id="LOCAL-01181" summary="Modyfikatory dostepu 8">
+      <created>1534590656226</created>
+      <option name="number" value="01181" />
+      <option name="presentableId" value="LOCAL-01181" />
+      <option name="project" value="LOCAL" />
+      <updated>1534590656226</updated>
+    </task>
+    <task id="LOCAL-01182" summary="Modyfikatory dostepu 9">
+      <created>1534590758107</created>
+      <option name="number" value="01182" />
+      <option name="presentableId" value="LOCAL-01182" />
+      <option name="project" value="LOCAL" />
+      <updated>1534590758107</updated>
+    </task>
+    <option name="localTasksCounter" value="1183" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -873,7 +872,7 @@
     <frame x="125" y="0" width="1667" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17361543" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17361543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -882,7 +881,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35567403" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35567403" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -906,8 +905,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wyrażenia lambda 12" />
-    <MESSAGE value="Wyrażenia lambda 13" />
     <MESSAGE value="Wyrażenia lambda 14" />
     <MESSAGE value="Wyrażenia lambda 15" />
     <MESSAGE value="Wyrażenia lambda 16" />
@@ -931,7 +928,9 @@
     <MESSAGE value="Modyfikatory dostepu 5" />
     <MESSAGE value="Modyfikatory dostepu 6" />
     <MESSAGE value="Modyfikatory dostepu 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modyfikatory dostepu 7" />
+    <MESSAGE value="Modyfikatory dostepu 8" />
+    <MESSAGE value="Modyfikatory dostepu 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modyfikatory dostepu 9" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_9_Adnotacje/AnnotationProcessor.java">
@@ -1256,10 +1255,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="3495" column="76" lean-forward="true" selection-start-line="3495" selection-start-column="76" selection-end-line="3495" selection-end-column="76" />
+        <state relative-caret-position="639">
+          <caret line="3509" column="76" selection-start-line="3509" selection-start-column="76" selection-end-line="3509" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />
@@ -1293,30 +1316,6 @@
             <element signature="e#146275#146276#0" expanded="true" />
             <element signature="e#146302#146303#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>

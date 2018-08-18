@@ -3496,12 +3496,18 @@ public class Wstep {
 
         Private - dostepny dla klass wewnetrznych NIELOKALNYCH / metod / pol
 
+
         OGOLNA TABELA MODYFIKATOROW
         Modyfikator	        Klasa	Pakiet	Podklasa	Inni	Poprawny dla klas
         public	            tak	    tak	    tak	        tak	    tak
         protected	        tak	    tak	    tak	        nie	    nie
         brak modyfikatora	tak	    tak	    nie	        nie	    tak
         private	            tak	    nie	    nie	        nie	    nie
+
+
+        Enkapsulajca / hermetyzacja - jest to spsob urycia elementow klasy
+        Zalecane sa jak najbardziej restrykcyjne modyfikatory dostepu cyzli
+         private do wszystkich pol i metod ktore beda uzywane wewnatrz klasy
 
          */
 
