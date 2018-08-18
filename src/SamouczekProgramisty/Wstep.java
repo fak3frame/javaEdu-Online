@@ -3490,6 +3490,7 @@ public class Wstep {
 
         Protecetd - dostepny dla metod / pol / typow wewnetrznych (NIE MOZNA DO KLAS)
          pozwala na dostep w klasach nizej i nawet w innych pakietach
+         Dane z tym modyfikatorem dostepne sa takze w tym samym pakiecie!!
 
         Brak modyfikatora - dostepny dla szystkiego, dostep tylko w tym samym pakiecie
 
