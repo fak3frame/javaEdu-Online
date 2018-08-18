@@ -3486,12 +3486,14 @@ public class Wstep {
         /*
         Public / Protected / Private / Brak
 
-        Public - dostepny wszedzie (klasa/pola/metody/typ wewnetrzny)
+        Public - dostepny wszedzie (klasa / pola / metody / typ wewnetrzny)
 
-        Protecetd - dostepny dla metod/pol/typow wewnetrznych (NIE MOZNA DO KLAS)
+        Protecetd - dostepny dla metod / pol / typow wewnetrznych (NIE MOZNA DO KLAS)
          pozwala na dostep w klasach nizej i nawet w innych pakietach
 
         Brak modyfikatora - dostepny dla szystkiego, dostep tylko w tym samym pakiecie
+
+        Private - dostepny dla klass wewnetrznych NIELOKALNYCH / metod / pol
 
 
 
@@ -3511,6 +3513,8 @@ public class Wstep {
         String xyz = new Object() + " 123";
         System.out.println("\n"+xyz);
     }
+
+
 
 
     //ALGORYTMY:
