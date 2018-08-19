@@ -6,6 +6,7 @@ import javax.sound.midi.SysexMessage;
 import java.io.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Parameter;
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.*;
 import java.util.regex.Matcher;
@@ -3572,11 +3573,58 @@ public class Wstep {
 
         Moga zrownoleglic prace na danych dzieki czemu mozliwe jest szybkie
          przetwarzanie duzych zbiorow danych
-
-
          */
+        class BoardGame {
+            public  String name;
+            public  double rating;
+            public  BigDecimal price;
+            public  int minPlayers;
+            public  int maxPlayers;
 
+            public BoardGame() {
+            }
 
+            public BoardGame(String name, double rating, BigDecimal price, int minPlayers, int maxPlayers) {
+                this.name = name;
+                this.rating = rating;
+                this.price = price;
+                this.minPlayers = minPlayers;
+                this.maxPlayers = maxPlayers;
+            }
+            void main(){
+                List<BoardGame> games = Arrays.asList(
+                        new BoardGame("Terraforming Mars", 8.38, new BigDecimal("123.49"), 1, 5),
+                        new BoardGame("Codenames", 7.82, new BigDecimal("64.95"), 2, 8),
+                        new BoardGame("Puerto Rico", 8.07, new BigDecimal("149.99"), 2, 5),
+                        new BoardGame("Terra Mystica", 8.26, new BigDecimal("252.99"), 2, 5),
+                        new BoardGame("Scythe", 8.3, new BigDecimal("314.95"), 1, 5),
+                        new BoardGame("Power Grid", 7.92, new BigDecimal("145"), 2, 6),
+                        new BoardGame("7 Wonders Duel", 8.15, new BigDecimal("109.95"), 2, 2),
+                        new BoardGame("Dominion: Intrigue", 7.77, new BigDecimal("159.95"), 2, 4),
+                        new BoardGame("Patchwork", 7.77, new BigDecimal("75"), 2, 2),
+                        new BoardGame("The Castles of Burgundy", 8.12, new BigDecimal("129.95"), 2, 4)
+                );
+                //chce teraz kupic gre z wybranymi parametrami
+                //maxPlayers = 8
+                //rating 8<
+                //price <150
+                //robie wec to w petli
+                for (BoardGame x : games) {
+                    if (x.maxPlayers > 4) {
+                        if (x.rating > 8) {
+                            if (new BigDecimal(150).compareTo(x.price)>0) {
+                                //nie moge porownac int 150 z bigDecimal wiec musze stworzyc
+                                // lokalna zmienna
+                                System.out.println(x.name.toUpperCase());
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        BoardGame BG = new BoardGame();
+        System.out.println();
+        BG.main();
 
 
 
