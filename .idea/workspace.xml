@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 4">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,27 +36,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="31352" />
+          <entry key="java" value="31379" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="199" />
+          <entry key="txt" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="31352" />
-          <entry key="PLAIN_TEXT" value="199" />
+          <entry key="JAVA" value="31379" />
+          <entry key="PLAIN_TEXT" value="200" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bin" value="1" />
-          <entry key="java" value="35" />
+          <entry key="java" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="36" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -74,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="3625" column="26" selection-start-line="3625" selection-start-column="26" selection-end-line="3625" selection-end-column="26" />
+            <state relative-caret-position="918">
+              <caret line="3631" column="54" lean-forward="true" selection-start-line="3631" selection-start-column="54" selection-end-line="3631" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -127,15 +126,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
+            <state relative-caret-position="823">
               <caret line="657" column="22" selection-start-line="657" selection-start-column="22" selection-end-line="657" selection-end-column="22" />
               <folding>
                 <element signature="e#32100#32101#0" expanded="true" />
                 <element signature="e#32165#32166#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/stream/Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -304,7 +312,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534715821151" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534716028476" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -456,13 +464,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01145" summary="Formatter 7">
-      <created>1534035022200</created>
-      <option name="number" value="01145" />
-      <option name="presentableId" value="LOCAL-01145" />
-      <option name="project" value="LOCAL" />
-      <updated>1534035022200</updated>
     </task>
     <task id="LOCAL-01146" summary="Formatter 8">
       <created>1534036093569</created>
@@ -800,7 +801,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534715042129</updated>
     </task>
-    <option name="localTasksCounter" value="1194" />
+    <task id="LOCAL-01194" summary="Strumienie 5">
+      <created>1534715971496</created>
+      <option name="number" value="01194" />
+      <option name="presentableId" value="LOCAL-01194" />
+      <option name="project" value="LOCAL" />
+      <updated>1534715971496</updated>
+    </task>
+    <option name="localTasksCounter" value="1195" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -872,7 +880,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wyrażenia lambda 24" />
     <MESSAGE value="Wyrażenia lambda 25" />
     <MESSAGE value="Wyrażenia lambda 26" />
     <MESSAGE value="Wyrażenia lambda 27" />
@@ -897,7 +904,8 @@
     <MESSAGE value="Strumienie 2" />
     <MESSAGE value="Strumienie 3" />
     <MESSAGE value="Strumienie 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 4" />
+    <MESSAGE value="Strumienie 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
@@ -1244,13 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="181" column="14" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1265,10 +1266,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="657" column="22" selection-start-line="657" selection-start-column="22" selection-end-line="657" selection-end-column="22" />
+          <folding>
+            <element signature="e#32100#32101#0" expanded="true" />
+            <element signature="e#32165#32166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="3625" column="26" selection-start-line="3625" selection-start-column="26" selection-end-line="3625" selection-end-column="26" />
+        <state relative-caret-position="918">
+          <caret line="3631" column="54" lean-forward="true" selection-start-line="3631" selection-start-column="54" selection-end-line="3631" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />
@@ -1303,17 +1322,6 @@
             <element signature="e#150109#150110#0" expanded="true" />
             <element signature="e#150136#150137#0" expanded="true" />
             <element signature="e#150163#150164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="657" column="22" selection-start-line="657" selection-start-column="22" selection-end-line="657" selection-end-column="22" />
-          <folding>
-            <element signature="e#32100#32101#0" expanded="true" />
-            <element signature="e#32165#32166#0" expanded="true" />
           </folding>
         </state>
       </provider>
