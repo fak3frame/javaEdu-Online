@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Modyfikatory dostepu 15">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,15 +37,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="30568" />
+          <entry key="java" value="30802" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="183" />
+          <entry key="txt" value="197" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="30568" />
-          <entry key="PLAIN_TEXT" value="183" />
+          <entry key="JAVA" value="30802" />
+          <entry key="PLAIN_TEXT" value="197" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="3545" column="62" lean-forward="true" selection-start-line="3545" selection-start-column="62" selection-end-line="3545" selection-end-column="62" />
+            <state relative-caret-position="631">
+              <caret line="3575" column="8" lean-forward="true" selection-start-line="3575" selection-start-column="8" selection-end-line="3575" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -113,37 +113,6 @@
                 <element signature="e#150109#150110#0" expanded="true" />
                 <element signature="e#150136#150137#0" expanded="true" />
                 <element signature="e#150163#150164#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankTransfer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding>
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -254,11 +223,11 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/Account.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankTransfer.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
       </list>
     </option>
   </component>
@@ -300,14 +269,6 @@
             </path>
             <path>
               <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_14_Modyfikatory_dostepu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -320,7 +281,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534714345110" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534714412823" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -472,27 +433,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01140" summary="Formatter 2">
-      <created>1534031411900</created>
-      <option name="number" value="01140" />
-      <option name="presentableId" value="LOCAL-01140" />
-      <option name="project" value="LOCAL" />
-      <updated>1534031411900</updated>
-    </task>
-    <task id="LOCAL-01141" summary="Formatter 3">
-      <created>1534031700149</created>
-      <option name="number" value="01141" />
-      <option name="presentableId" value="LOCAL-01141" />
-      <option name="project" value="LOCAL" />
-      <updated>1534031700149</updated>
-    </task>
-    <task id="LOCAL-01142" summary="Formatter 4">
-      <created>1534033812229</created>
-      <option name="number" value="01142" />
-      <option name="presentableId" value="LOCAL-01142" />
-      <option name="project" value="LOCAL" />
-      <updated>1534033812230</updated>
     </task>
     <task id="LOCAL-01143" summary="Formatter 5">
       <created>1534033998369</created>
@@ -816,7 +756,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534713835632</updated>
     </task>
-    <option name="localTasksCounter" value="1189" />
+    <task id="LOCAL-01189" summary="Modyfikatory dostepu 16">
+      <created>1534714290472</created>
+      <option name="number" value="01189" />
+      <option name="presentableId" value="LOCAL-01189" />
+      <option name="project" value="LOCAL" />
+      <updated>1534714290472</updated>
+    </task>
+    <task id="LOCAL-01190" summary="Strumienie 1">
+      <created>1534714354643</created>
+      <option name="number" value="01190" />
+      <option name="presentableId" value="LOCAL-01190" />
+      <option name="project" value="LOCAL" />
+      <updated>1534714354643</updated>
+    </task>
+    <task id="LOCAL-01191" summary="Strumienie 2">
+      <created>1534714418497</created>
+      <option name="number" value="01191" />
+      <option name="presentableId" value="LOCAL-01191" />
+      <option name="project" value="LOCAL" />
+      <updated>1534714418497</updated>
+    </task>
+    <option name="localTasksCounter" value="1192" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -888,9 +849,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wyrażenia lambda 20" />
-    <MESSAGE value="1" />
-    <MESSAGE value="Wyrażenia lambda 21" />
     <MESSAGE value="Wyrażenia lambda 22" />
     <MESSAGE value="Wyrażenia lambda 23" />
     <MESSAGE value="Wyrażenia lambda 24" />
@@ -913,7 +871,10 @@
     <MESSAGE value="Modyfikatory dostepu 13" />
     <MESSAGE value="Modyfikatory dostepu 14" />
     <MESSAGE value="Modyfikatory dostepu 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modyfikatory dostepu 15" />
+    <MESSAGE value="Modyfikatory dostepu 16" />
+    <MESSAGE value="Strumienie 1" />
+    <MESSAGE value="Strumienie 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
@@ -1257,10 +1218,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankTransfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="3545" column="62" lean-forward="true" selection-start-line="3545" selection-start-column="62" selection-end-line="3545" selection-end-column="62" />
+        <state relative-caret-position="631">
+          <caret line="3575" column="8" lean-forward="true" selection-start-line="3575" selection-start-column="8" selection-end-line="3575" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />
@@ -1295,31 +1281,6 @@
             <element signature="e#150109#150110#0" expanded="true" />
             <element signature="e#150136#150137#0" expanded="true" />
             <element signature="e#150163#150164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankTransfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
           </folding>
         </state>
       </provider>

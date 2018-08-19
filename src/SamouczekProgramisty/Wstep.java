@@ -3570,6 +3570,10 @@ public class Wstep {
         /*
         Strumienie sluza do przetwarzania danych np z kolekcji czy wyrazen regulrnych
 
+        Moga zrownoleglic prace na danych dzieki czemu mozliwe jest szybkie
+         przetwarzanie duzych zbiorow danych
+
+
          */
 
 
