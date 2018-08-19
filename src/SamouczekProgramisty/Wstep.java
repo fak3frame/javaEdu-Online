@@ -3568,6 +3568,7 @@ public class Wstep {
 
         //Strumienie
         /*
+        Strumienie sluza do przetwarzania danych np z kolekcji czy wyrazen regulrnych
 
          */
 
