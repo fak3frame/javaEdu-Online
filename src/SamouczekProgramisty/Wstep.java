@@ -11,6 +11,7 @@ import java.util.*;
 import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 
 public class Wstep {
@@ -3614,12 +3615,22 @@ public class Wstep {
                         if (x.rating > 8) {
                             if (new BigDecimal(150).compareTo(x.price)>0) {
                                 //nie moge porownac int 150 z bigDecimal wiec musze stworzyc
-                                // lokalna zmienna
+                                // lokalna zmienna BigDecimal z wartoscia 150 oraz wywolac
+                                // metode compareTo
                                 System.out.println(x.name.toUpperCase());
                             }
                         }
                     }
                 }
+                //lub za pomoca strumienia
+                System.out.println();
+                games.stream()
+                        .filter(x -> x.maxPlayers > 4)
+                        .filter(x -> x.rating > 8)
+                        .filter(x -> new BigDecimal(150).compareTo(x.price) > 0)
+                        .map(x -> x.name.toUpperCase())
+                        .forEach(System.out::println);
+                Stream<BoardGame> gameStream = games.stream();
             }
         }
         BoardGame BG = new BoardGame();
