@@ -3751,9 +3751,12 @@ public class Wstep {
 
                 System.out.println("\n"+"ostarni strumien:");
                 nazwyZeStrumienia.forEach(System.out::println);
-                System.out.println("ilosc elem w strumieniu : "+nazwyZeStrumienia.count());
                 //na koncu korzystam ze strumienia nazw (typ String) i odwoluje sie do metody
                 // println
+
+                //System.out.println("ilosc elem w strumieniu : "+nazwyZeStrumienia.count());
+                //Wyswietlenie ilosci elementu w strumienie ale wystapi blad poniewaz strumien zostal
+                // juz zamkniety forEach wczesniej!
             }
         }
         BoardGame BG = new BoardGame();
