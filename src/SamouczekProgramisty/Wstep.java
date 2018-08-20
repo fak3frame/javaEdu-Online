@@ -3630,7 +3630,20 @@ public class Wstep {
                         .filter(x -> new BigDecimal(150).compareTo(x.price) > 0)
                         .map(x -> x.name.toUpperCase())
                         .forEach(System.out::println);
-                Stream<BoardGame> gameStream = games.stream();
+
+                //Rozpisanie stream
+                Stream<BoardGame> strumienGier = games.stream();
+                //Stream jest interfejsem generycznym Stream<T>
+                //tworze instancje interfejsu z typem generycznym BoardGame
+                //z pomoca listy games przechowujacej elementy klasy BoardGame
+                // wywoluje metode stream();
+
+                //Teraz tworze instancje interf. Strem z operacjami na tym strumieniu
+                Stream<BoardGame> filtrowanyStrumien = games.stream()
+                        .filter(x -> x.maxPlayers > 4)
+                        //wywolujac metode filter, tworze nowa instancje klasy Strem
+                        .filter(x -> x.rating > 8)
+                        .filter(x -> new BigDecimal(150).compareTo(x.price) > 0);
             }
         }
         BoardGame BG = new BoardGame();
