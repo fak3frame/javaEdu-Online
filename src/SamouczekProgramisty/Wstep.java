@@ -3644,6 +3644,16 @@ public class Wstep {
         Operacje konczaace nie moga zwracac typu Strem oraz nie musza zwracac nic np:
 
         - forEach - wykonuje zadaną operację dla każdego elementu,
+                    Stream<BoardGame> filtrowanyStrumien = games.stream()
+                        .filter(x -> x.maxPlayers > 4)
+                        //strumien typu BoardGame filtruje
+                    Stream<String> nazwyZeStrumienia = filtrowanyStrumien
+                        .map(x -> x.name.toUpperCase());
+                        //map zmieniam strumien BoardGame na String to znaczy
+                        // elementy zapisuje do strumienia tylko elementy typu string
+                        // czyli w tym przypadku name + modyfikacja toUpperCase()
+                    nazwyZeStrumienia.forEach(System.out::println);
+                        //posiadajac styp String w stumieniu moge wywolac sout
         - count - zwraca liczbę elementów w strumieniu
         - allMatch - zwraca flagę informującą czy wszystkie elementy spełniają warunek.
                       Przestaje sprawdzać na pierwszym elemencie, który tego warunku nie spełnia
@@ -3741,6 +3751,7 @@ public class Wstep {
 
                 System.out.println("\n"+"ostarni strumien:");
                 nazwyZeStrumienia.forEach(System.out::println);
+                System.out.println("ilosc elem w strumieniu : "+nazwyZeStrumienia.count());
                 //na koncu korzystam ze strumienia nazw (typ String) i odwoluje sie do metody
                 // println
             }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 19">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -37,15 +37,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="34920" />
+          <entry key="java" value="35442" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="216" />
+          <entry key="txt" value="219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="34920" />
-          <entry key="PLAIN_TEXT" value="216" />
+          <entry key="JAVA" value="35442" />
+          <entry key="PLAIN_TEXT" value="219" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -77,24 +77,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="3639" column="74" selection-start-line="3639" selection-start-column="74" selection-end-line="3639" selection-end-column="74" />
+            <state relative-caret-position="567">
+              <caret line="3753" column="62" selection-start-line="3753" selection-start-column="62" selection-end-line="3753" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#135105#135106#0" expanded="true" />
-                <element signature="e#135148#135149#0" expanded="true" />
-                <element signature="e#135530#135531#0" expanded="true" />
-                <element signature="e#135578#135579#0" expanded="true" />
-                <element signature="e#136062#136063#0" expanded="true" />
-                <element signature="e#136106#136107#0" expanded="true" />
-                <element signature="e#136561#136562#0" expanded="true" />
-                <element signature="e#136604#136605#0" expanded="true" />
-                <element signature="e#136992#136993#0" expanded="true" />
-                <element signature="e#137032#137033#0" expanded="true" />
-                <element signature="e#137516#137517#0" expanded="true" />
-                <element signature="e#137559#137560#0" expanded="true" />
-                <element signature="e#138397#138398#0" expanded="true" />
-                <element signature="e#138453#138454#0" expanded="true" />
+                <element signature="e#133622#133623#0" expanded="true" />
+                <element signature="e#133676#133677#0" expanded="true" />
+                <element signature="e#136040#136041#0" expanded="true" />
+                <element signature="e#136083#136084#0" expanded="true" />
+                <element signature="e#136465#136466#0" expanded="true" />
+                <element signature="e#136513#136514#0" expanded="true" />
+                <element signature="e#136997#136998#0" expanded="true" />
+                <element signature="e#137041#137042#0" expanded="true" />
+                <element signature="e#137496#137497#0" expanded="true" />
+                <element signature="e#137539#137540#0" expanded="true" />
+                <element signature="e#137927#137928#0" expanded="true" />
+                <element signature="e#137967#137968#0" expanded="true" />
+                <element signature="e#138451#138452#0" expanded="true" />
+                <element signature="e#138494#138495#0" expanded="true" />
+                <element signature="e#139987#139988#0" expanded="true" />
+                <element signature="e#140043#140044#0" expanded="true" />
                 <element signature="e#145613#145614#0" expanded="true" />
                 <element signature="e#145659#145660#0" expanded="true" />
                 <element signature="e#150131#150132#0" expanded="true" />
@@ -337,7 +339,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534776251828" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534776448363" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -489,20 +491,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01160" summary="Wyrażenia lambda 15">
-      <created>1534283841560</created>
-      <option name="number" value="01160" />
-      <option name="presentableId" value="LOCAL-01160" />
-      <option name="project" value="LOCAL" />
-      <updated>1534283841560</updated>
-    </task>
-    <task id="LOCAL-01161" summary="Wyrażenia lambda 16">
-      <created>1534335932101</created>
-      <option name="number" value="01161" />
-      <option name="presentableId" value="LOCAL-01161" />
-      <option name="project" value="LOCAL" />
-      <updated>1534335932102</updated>
     </task>
     <task id="LOCAL-01162" summary="Wyrażenia lambda 17">
       <created>1534336853287</created>
@@ -833,7 +821,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534775746114</updated>
     </task>
-    <option name="localTasksCounter" value="1209" />
+    <task id="LOCAL-01209" summary="Strumienie 20">
+      <created>1534776146838</created>
+      <option name="number" value="01209" />
+      <option name="presentableId" value="LOCAL-01209" />
+      <option name="project" value="LOCAL" />
+      <updated>1534776146839</updated>
+    </task>
+    <task id="LOCAL-01210" summary="Strumienie 21">
+      <created>1534776323005</created>
+      <option name="number" value="01210" />
+      <option name="presentableId" value="LOCAL-01210" />
+      <option name="project" value="LOCAL" />
+      <updated>1534776323005</updated>
+    </task>
+    <option name="localTasksCounter" value="1211" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -905,8 +907,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modyfikatory dostepu 11" />
-    <MESSAGE value="Modyfikatory dostepu 12" />
     <MESSAGE value="Modyfikatory dostepu 13" />
     <MESSAGE value="Modyfikatory dostepu 14" />
     <MESSAGE value="Modyfikatory dostepu 15" />
@@ -930,7 +930,9 @@
     <MESSAGE value="Strumienie 17" />
     <MESSAGE value="Strumienie 18" />
     <MESSAGE value="Strumienie 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 19" />
+    <MESSAGE value="Strumienie 20" />
+    <MESSAGE value="Strumienie 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 21" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/One.java">
@@ -1316,24 +1318,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="3639" column="74" selection-start-line="3639" selection-start-column="74" selection-end-line="3639" selection-end-column="74" />
+        <state relative-caret-position="567">
+          <caret line="3753" column="62" selection-start-line="3753" selection-start-column="62" selection-end-line="3753" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#135105#135106#0" expanded="true" />
-            <element signature="e#135148#135149#0" expanded="true" />
-            <element signature="e#135530#135531#0" expanded="true" />
-            <element signature="e#135578#135579#0" expanded="true" />
-            <element signature="e#136062#136063#0" expanded="true" />
-            <element signature="e#136106#136107#0" expanded="true" />
-            <element signature="e#136561#136562#0" expanded="true" />
-            <element signature="e#136604#136605#0" expanded="true" />
-            <element signature="e#136992#136993#0" expanded="true" />
-            <element signature="e#137032#137033#0" expanded="true" />
-            <element signature="e#137516#137517#0" expanded="true" />
-            <element signature="e#137559#137560#0" expanded="true" />
-            <element signature="e#138397#138398#0" expanded="true" />
-            <element signature="e#138453#138454#0" expanded="true" />
+            <element signature="e#133622#133623#0" expanded="true" />
+            <element signature="e#133676#133677#0" expanded="true" />
+            <element signature="e#136040#136041#0" expanded="true" />
+            <element signature="e#136083#136084#0" expanded="true" />
+            <element signature="e#136465#136466#0" expanded="true" />
+            <element signature="e#136513#136514#0" expanded="true" />
+            <element signature="e#136997#136998#0" expanded="true" />
+            <element signature="e#137041#137042#0" expanded="true" />
+            <element signature="e#137496#137497#0" expanded="true" />
+            <element signature="e#137539#137540#0" expanded="true" />
+            <element signature="e#137927#137928#0" expanded="true" />
+            <element signature="e#137967#137968#0" expanded="true" />
+            <element signature="e#138451#138452#0" expanded="true" />
+            <element signature="e#138494#138495#0" expanded="true" />
+            <element signature="e#139987#139988#0" expanded="true" />
+            <element signature="e#140043#140044#0" expanded="true" />
             <element signature="e#145613#145614#0" expanded="true" />
             <element signature="e#145659#145660#0" expanded="true" />
             <element signature="e#150131#150132#0" expanded="true" />
