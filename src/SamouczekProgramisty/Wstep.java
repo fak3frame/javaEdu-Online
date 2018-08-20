@@ -3662,6 +3662,7 @@ public class Wstep {
                         // zwrtaca przefiltrowane wczesniej 2 elementy tablicy z parametru name na typ
                         // String oraz z zamiana na duze litery.
 
+                System.out.println("\n"+"ostarni strumien:");
                 nazwyZeStrumienia.forEach(System.out::println);
                 //na koncu korzystam ze strumienia nazw (typ String) i odwoluje sie do metody
                 // println
@@ -3670,6 +3671,14 @@ public class Wstep {
         BoardGame BG = new BoardGame();
         System.out.println();
         BG.main();
+
+
+        /*
+        Operacje na stumieniu:
+        - Tworzenie stumienia
+        - Przetwarznie danych wewnatrz stumienia
+        - Zakonczenie strumienia
+         */
 
 
 
