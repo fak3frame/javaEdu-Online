@@ -3596,19 +3596,9 @@ public class Wstep {
                         .filter(x -> x.maxPlayers > 4);
         Stream<BoardGame> filtrowanyStrumien = strumienGier
                         .filter(x -> x.maxPlayers > 4);
+        games.stream().map(x -> x.name.toUpperCase());
 
         - Zakonczenie strumienia
-
-        //Opis operacji:
-        -filter - zwraca strumien zawierajacy tylko te elemnty dla ktorych
-                  filtr zwrocil wartosc true
-        -map - kazdy z elementow moze zostac zmieniony do innego typu, nowy obiekt zwarty
-               jest w nowym strumieniu
-        -peak - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
-                stumien z tymi samymi elemntami
-        -limi - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
-                ignorowane
-
 
         //Tworzenie strumienia
 
@@ -3635,6 +3625,22 @@ public class Wstep {
         }
 
 
+        //Opis operacji:
+        -filter - zwraca strumien zawierajacy tylko te elemnty dla ktorych
+                  filtr zwrocil wartosc true
+                  Predicate<T> | boolean test(T t)
+        -map - kazdy z elementow moze zostac zmieniony do innego typu, nowy obiekt zwarty
+               jest w nowym strumieniu
+               Function <T, R> | R apply(T t)
+        -peak - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
+                stumien z tymi samymi elemntami
+                Consumer<T> | void accept(T t)
+        -limi - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
+                ignorowane
+                Stream<BoardGame> strumienGier = games.stream().limit(10);
+
+
+        //Konczenie strumienia
 
 
 
