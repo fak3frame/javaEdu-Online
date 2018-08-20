@@ -3653,6 +3653,14 @@ public class Wstep {
                         // z usyskanych filtrow i moge na nim wywolac teraz kolejne filtry
                         // lub inne metory
 
+                Stream<String> nazwyZeStrumienia = filtrowanyStrumien
+                        //teraz tworze strumien z typem String i przypisuje do niego
+                        // poprzednio filtrowany strumien
+                        .map(x -> x.name.toUpperCase());
+                        //z pomoca metody map korzystam z interfacu Function <T, R> z metoda R apply(T t)
+                        //Interface Function za T podstawia BoardGame i R String oraz w swojej metodzie
+                        // zwrtaca przefiltrowane wczesniej 2 elementy tablicy z parametru name na typ
+                        // String oraz z zamiana na duze litery.
             }
         }
         BoardGame BG = new BoardGame();
