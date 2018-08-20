@@ -3575,6 +3575,17 @@ public class Wstep {
 
         Moga zrownoleglic prace na danych dzieki czemu mozliwe jest szybkie
          przetwarzanie duzych zbiorow danych
+
+        Strumien nie moze modyfikowac danych!
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+
+        numbers.stream()
+            .map(v -> numbers.add(v) ? 1 : 0)
+            //chce dodac do listy elementy - BLAD ConcurrentModificationException
+            .forEach(System.out::println);
+
          */
         class BoardGame {
             public  String name;
