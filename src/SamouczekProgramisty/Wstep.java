@@ -3641,8 +3641,15 @@ public class Wstep {
 
 
         //Konczenie strumienia
+        Operacje konczaace nie moga zwracac typu Strem oraz nie musza zwracac nic np:
 
-
+        - forEach - wykonuje zadaną operację dla każdego elementu,
+        - count - zwraca liczbę elementów w strumieniu
+        - allMatch - zwraca flagę informującą czy wszystkie elementy spełniają warunek.
+                      Przestaje sprawdzać na pierwszym elemencie, który tego warunku nie spełnia
+        -collect - pozwala na utworzenie nowego typu na podstawie elementów strumienia.
+                    Przy pomocy tej metody można na przykład utworzyć listę. Klasa Collectors
+                    zawiera sporo gotowych implementacji.
 
          */
         class BoardGame {
