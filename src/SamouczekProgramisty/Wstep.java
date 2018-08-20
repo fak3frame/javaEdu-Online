@@ -3587,7 +3587,7 @@ public class Wstep {
             .forEach(System.out::println);
 
 
-        Operacje na stumieniu:
+        //Operacje na stumieniu:
         - Tworzenie stumienia
          Stream<BoardGame> strumienGier = games.stream();
 
@@ -3598,6 +3598,16 @@ public class Wstep {
                         .filter(x -> x.maxPlayers > 4);
 
         - Zakonczenie strumienia
+
+        //Opis operacji:
+        -filter - zwraca strumien zawierajacy tylko te elemnty dla ktorych
+                  filtr zwrocil wartosc true
+        -map - kazdy z elementow moze zostac zmieniony do innego typu, nowy obiekt zwarty
+               jest w nowym strumieniu
+        -peak - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
+                stumien z tymi samymi elemntami
+        -limi - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
+                ignorowane
 
 
         //Tworzenie strumienia
@@ -3623,6 +3633,8 @@ public class Wstep {
         try(Stream<String> lines = new BufferedReader(new FileReader("file.txt")).lines()){
             //zrob cos
         }
+
+
 
 
 
