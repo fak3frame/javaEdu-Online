@@ -3642,8 +3642,17 @@ public class Wstep {
                 Stream<BoardGame> filtrowanyStrumien = games.stream()
                         .filter(x -> x.maxPlayers > 4)
                         //wywolujac metode filter, tworze nowa instancje klasy Strem
+                        //ta metda przechodzi jesli otrzyma wynik true
+                        // z interfacu  Predicate<T> z metoda  boolean test(T t) ktroy tworzy.
+                        //Za typ generyczny przyjmuje BoardGame i jako x podstawiane
+                        // sa elementty listy (kazdy). Metoda zworci true jesli wartosc
+                        // x(element listy) z wybranym parametrem maxPlayers jest wiekszy od 4
                         .filter(x -> x.rating > 8)
                         .filter(x -> new BigDecimal(150).compareTo(x.price) > 0);
+                        //teraz filtrowanyStrumien to strumien zawierajacy wynik
+                        // z usyskanych filtrow i moge na nim wywolac teraz kolejne filtry
+                        // lub inne metory
+
             }
         }
         BoardGame BG = new BoardGame();
