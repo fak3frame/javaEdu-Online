@@ -12,6 +12,7 @@ import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
@@ -3676,7 +3677,38 @@ public class Wstep {
                      Stream<String> strumienNaString = games.stream().map(x -> x.name);
                      List<String> listaZeStrimienia = strumienNaString.collect(Collectors.toList());
 
+
+        //Wlasciewosci strumieni
+
+        //Metoda konczonca dopiero rozpoczyna przetwazranie elementow
          */
+        System.out.println();
+        IntStream strumienLiczb = IntStream.range(0, 8);
+        System.out.println("Przed");
+        strumienLiczb = strumienLiczb.filter(x -> x % 2 == 0);
+        //filtruje i zapisuje tylko liczby parzyste do strumienia
+        System.out.println("W trakcie 1");
+        strumienLiczb = strumienLiczb.map(x -> {
+            System.out.println("> " + x );
+            return x;
+        });
+        System.out.println("W trakcie 2");
+        strumienLiczb = strumienLiczb.limit(2);
+        System.out.println("W trakcie 3");
+        strumienLiczb.forEach(System.out::println);
+        //metoda konczaca
+        System.out.println("PO");
+
+
+        /*
+        Strumienie przetwarzane sa sekwencyjnie w metodzie stream()
+         lub rownolegle (uruchamiany w kilku watkach) metoda parallelStrem
+
+        Strumien sekwencyjny mozna przlaczyc na rownolegly uzywjac na nim
+         metody parallel lub odwrotnie sequential
+         */
+
+
         class BoardGame {
             public  String name;
             public  double rating;
