@@ -3616,6 +3616,13 @@ public class Wstep {
         IntStream randomInts = new Random().ints();
         LongStream randomLongs = new Random().longs();
 
+        - Strumien pusty
+        Stream.empty();
+
+        - Stgrumien danych z pliku
+        try(Stream<String> lines = new BufferedReader(new FileReader("file.txt")).lines()){
+            //zrob cos
+        }
 
 
 
