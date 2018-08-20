@@ -11,6 +11,7 @@ import java.util.*;
 import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
@@ -3641,7 +3642,10 @@ public class Wstep {
 
 
         //Konczenie strumienia
-        Operacje konczaace nie moga zwracac typu Strem oraz nie musza zwracac nic np:
+        Operacje konczaace nie moga zwracac typu Strem oraz nie musza zwracac nic.
+        Jesli odwolam sie do zamknietego strumienia wyrzuci blad:
+        IllegalStateException: stream has already been operated upon or closed
+        Przyklady zamkniec strumieni:
 
         - forEach - wykonuje zadaną operację dla każdego elementu,
                     Stream<BoardGame> filtrowanyStrumien = games.stream()
@@ -3653,13 +3657,24 @@ public class Wstep {
                         // elementy zapisuje do strumienia tylko elementy typu string
                         // czyli w tym przypadku name + modyfikacja toUpperCase()
                     nazwyZeStrumienia.forEach(System.out::println);
-                        //posiadajac styp String w stumieniu moge wywolac sout
+                        //posiadajac typ String w stumieniu moge wywolac sout
+                        Consumer<T> | void accept(T t)
+
         - count - zwraca liczbę elementów w strumieniu
+                   System.out.println("ilosc elem w strumieniu : "+nazwyZeStrumienia.count());
+
         - allMatch - zwraca flagę informującą czy wszystkie elementy spełniają warunek.
                       Przestaje sprawdzać na pierwszym elemencie, który tego warunku nie spełnia
+                       Stream<String> testStream = games.stream().map(x -> x.name);
+                       //zmieniam BoardGame na string przez map
+                       // Function <T, R> | R apply(T t)
+                       testStream.allMatch(x -> x.length()>99);
+                       //Predicate<T> | boolean test(T t)
         -collect - pozwala na utworzenie nowego typu na podstawie elementów strumienia.
                     Przy pomocy tej metody można na przykład utworzyć listę. Klasa Collectors
                     zawiera sporo gotowych implementacji.
+                     Stream<String> strumienNaString = games.stream().map(x -> x.name);
+                     List<String> listaZeStrimienia = strumienNaString.collect(Collectors.toList());
 
          */
         class BoardGame {
@@ -3757,6 +3772,18 @@ public class Wstep {
                 //System.out.println("ilosc elem w strumieniu : "+nazwyZeStrumienia.count());
                 //Wyswietlenie ilosci elementu w strumienie ale wystapi blad poniewaz strumien zostal
                 // juz zamkniety forEach wczesniej!
+
+                Stream<String> testStream = games.stream().map(x -> x.name);
+                testStream.allMatch(x -> x.length()>99);
+
+                System.out.println("\n"+"a teraz tutuly wszystklich gier z zamiany na liste: ");
+                Stream<String> strumienNaString = games.stream().map(x -> x.name);
+                List<String> listaZeStrimienia = strumienNaString.collect(Collectors.toList());
+                listaZeStrimienia.forEach(System.out::println);
+
+
+
+
             }
         }
         BoardGame BG = new BoardGame();
