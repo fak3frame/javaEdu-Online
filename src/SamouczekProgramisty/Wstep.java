@@ -3575,6 +3575,9 @@ public class Wstep {
         /*
         Strumienie sluza do przetwarzania danych np z kolekcji czy wyrazen regulrnych
 
+        Nie sa struktrami danych! truktury służą do przechowywania danych a strumienie
+         służą do opisywania algorytmów, operacji na danych.
+
         Moga zrownoleglic prace na danych dzieki czemu mozliwe jest szybkie
          przetwarzanie duzych zbiorow danych
 
@@ -3709,6 +3712,55 @@ public class Wstep {
          */
 
 
+        //Dobre praktyki:
+
+        /*
+        - Filtrowanie na poczatku
+
+        public static int timeConsumingTransformation(int number) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return number;
+        }
+
+        int slowNumber = IntStream.range(1950, 2150)
+            .map(StreamsGoodPractices::timeConsumingTransformation)
+            .filter(n -> n == 2000)
+            .sum();
+        //metoda zostanie wykonana dla kazdej z liczb
+
+        int fastNumber = IntStream.range(1950, 2150)
+            .filter(n -> n == 2000)
+            .map(StreamsGoodPractices::timeConsumingTransformation)
+            .sum();
+        //w tym przypadku metoda zostanie wykonana na przefiltrowanych
+        // elementach
+
+        - Unikanie skomplikowanych wyrazen lambda
+        Lepiej jest stworzyc oddzielna metode do tego
+
+        IntStream.range(1950, 2150)
+            .filter(y -> (y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
+            .forEach(System.out::println);
+
+        //lepiej zmienic kod na bardziej czytelny:
+        IntStream.range(1950, 2150)
+            .filter(StreamsGoodPractices::isLeapYear)
+            .forEach(System.out::println);
+
+        public static boolean isLeapYear(int year) {
+            boolean every4Years = year % 4 == 0;
+            boolean notEvery100Years = year % 100 != 0;
+            boolean every400Years = year % 400 == 0;
+
+            return (every4Years && notEvery100Years) || every400Years;
+        }
+        */
+
+
         class BoardGame {
             public  String name;
             public  double rating;
@@ -3821,9 +3873,6 @@ public class Wstep {
         BoardGame BG = new BoardGame();
         System.out.println();
         BG.main();
-
-
-
 
 
 

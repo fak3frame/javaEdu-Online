@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 24">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 25">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -37,15 +37,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="36862" />
+          <entry key="java" value="37681" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="222" />
+          <entry key="txt" value="223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="36862" />
-          <entry key="PLAIN_TEXT" value="222" />
+          <entry key="JAVA" value="37681" />
+          <entry key="PLAIN_TEXT" value="223" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -77,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="3682" column="69" selection-start-line="3682" selection-start-column="69" selection-end-line="3682" selection-end-column="69" />
+            <state relative-caret-position="444">
+              <caret line="3577" column="34" selection-start-line="3577" selection-start-column="34" selection-end-line="3577" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#133622#133623#0" expanded="true" />
@@ -99,22 +99,22 @@
                 <element signature="e#140043#140044#0" expanded="true" />
                 <element signature="e#145613#145614#0" expanded="true" />
                 <element signature="e#145659#145660#0" expanded="true" />
-                <element signature="e#150131#150132#0" expanded="true" />
-                <element signature="e#150164#150165#0" expanded="true" />
-                <element signature="e#149389#149390#0" expanded="true" />
-                <element signature="e#149427#149428#0" expanded="true" />
-                <element signature="e#149458#149459#0" expanded="true" />
-                <element signature="e#149497#149498#0" expanded="true" />
-                <element signature="e#149525#149526#0" expanded="true" />
-                <element signature="e#149561#149562#0" expanded="true" />
-                <element signature="e#149645#149646#0" expanded="true" />
-                <element signature="e#149719#149720#0" expanded="true" />
-                <element signature="e#149789#149790#0" expanded="true" />
-                <element signature="e#149862#149863#0" expanded="true" />
-                <element signature="e#150079#150080#0" expanded="true" />
-                <element signature="e#150109#150110#0" expanded="true" />
-                <element signature="e#150136#150137#0" expanded="true" />
-                <element signature="e#150163#150164#0" expanded="true" />
+                <element signature="e#162349#162350#0" expanded="true" />
+                <element signature="e#162382#162383#0" expanded="true" />
+                <element signature="e#162979#162980#0" expanded="true" />
+                <element signature="e#163017#163018#0" expanded="true" />
+                <element signature="e#163048#163049#0" expanded="true" />
+                <element signature="e#163087#163088#0" expanded="true" />
+                <element signature="e#163115#163116#0" expanded="true" />
+                <element signature="e#163151#163152#0" expanded="true" />
+                <element signature="e#163235#163236#0" expanded="true" />
+                <element signature="e#163309#163310#0" expanded="true" />
+                <element signature="e#163379#163380#0" expanded="true" />
+                <element signature="e#163452#163453#0" expanded="true" />
+                <element signature="e#163669#163670#0" expanded="true" />
+                <element signature="e#163699#163700#0" expanded="true" />
+                <element signature="e#163726#163727#0" expanded="true" />
+                <element signature="e#163753#163754#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -366,7 +366,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534783788017" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534785290085" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -518,13 +518,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01165" summary="Wyrażenia lambda 20">
-      <created>1534340503829</created>
-      <option name="number" value="01165" />
-      <option name="presentableId" value="LOCAL-01165" />
-      <option name="project" value="LOCAL" />
-      <updated>1534340503829</updated>
     </task>
     <task id="LOCAL-01166" summary="Wyrażenia lambda 21">
       <created>1534353367827</created>
@@ -862,7 +855,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534778322461</updated>
     </task>
-    <option name="localTasksCounter" value="1214" />
+    <task id="LOCAL-01214" summary="Strumienie 25">
+      <created>1534783992651</created>
+      <option name="number" value="01214" />
+      <option name="presentableId" value="LOCAL-01214" />
+      <option name="project" value="LOCAL" />
+      <updated>1534783992651</updated>
+    </task>
+    <option name="localTasksCounter" value="1215" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -934,7 +934,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modyfikatory dostepu 16" />
     <MESSAGE value="Strumienie 1" />
     <MESSAGE value="Strumienie 2" />
     <MESSAGE value="Strumienie 3" />
@@ -959,7 +958,8 @@
     <MESSAGE value="Strumienie 22" />
     <MESSAGE value="Strumienie 23" />
     <MESSAGE value="Strumienie 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 24" />
+    <MESSAGE value="Strumienie 25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 25" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/GradeBook.java">
@@ -1345,8 +1345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="3682" column="69" selection-start-line="3682" selection-start-column="69" selection-end-line="3682" selection-end-column="69" />
+        <state relative-caret-position="444">
+          <caret line="3577" column="34" selection-start-line="3577" selection-start-column="34" selection-end-line="3577" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133622#133623#0" expanded="true" />
@@ -1367,22 +1367,22 @@
             <element signature="e#140043#140044#0" expanded="true" />
             <element signature="e#145613#145614#0" expanded="true" />
             <element signature="e#145659#145660#0" expanded="true" />
-            <element signature="e#150131#150132#0" expanded="true" />
-            <element signature="e#150164#150165#0" expanded="true" />
-            <element signature="e#149389#149390#0" expanded="true" />
-            <element signature="e#149427#149428#0" expanded="true" />
-            <element signature="e#149458#149459#0" expanded="true" />
-            <element signature="e#149497#149498#0" expanded="true" />
-            <element signature="e#149525#149526#0" expanded="true" />
-            <element signature="e#149561#149562#0" expanded="true" />
-            <element signature="e#149645#149646#0" expanded="true" />
-            <element signature="e#149719#149720#0" expanded="true" />
-            <element signature="e#149789#149790#0" expanded="true" />
-            <element signature="e#149862#149863#0" expanded="true" />
-            <element signature="e#150079#150080#0" expanded="true" />
-            <element signature="e#150109#150110#0" expanded="true" />
-            <element signature="e#150136#150137#0" expanded="true" />
-            <element signature="e#150163#150164#0" expanded="true" />
+            <element signature="e#162349#162350#0" expanded="true" />
+            <element signature="e#162382#162383#0" expanded="true" />
+            <element signature="e#162979#162980#0" expanded="true" />
+            <element signature="e#163017#163018#0" expanded="true" />
+            <element signature="e#163048#163049#0" expanded="true" />
+            <element signature="e#163087#163088#0" expanded="true" />
+            <element signature="e#163115#163116#0" expanded="true" />
+            <element signature="e#163151#163152#0" expanded="true" />
+            <element signature="e#163235#163236#0" expanded="true" />
+            <element signature="e#163309#163310#0" expanded="true" />
+            <element signature="e#163379#163380#0" expanded="true" />
+            <element signature="e#163452#163453#0" expanded="true" />
+            <element signature="e#163669#163670#0" expanded="true" />
+            <element signature="e#163699#163700#0" expanded="true" />
+            <element signature="e#163726#163727#0" expanded="true" />
+            <element signature="e#163753#163754#0" expanded="true" />
           </folding>
         </state>
       </provider>
