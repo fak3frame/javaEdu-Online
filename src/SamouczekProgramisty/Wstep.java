@@ -3586,6 +3586,24 @@ public class Wstep {
             //chce dodac do listy elementy - BLAD ConcurrentModificationException
             .forEach(System.out::println);
 
+
+        Operacje na stumieniu:
+        - Tworzenie stumienia
+         Stream<BoardGame> strumienGier = games.stream();
+
+        - Przetwarznie danych wewnatrz stumienia
+        Stream<BoardGame> filtrowanyStrumien = games.stream()
+                        .filter(x -> x.maxPlayers > 4);
+        Stream<BoardGame> filtrowanyStrumien = strumienGier
+                        .filter(x -> x.maxPlayers > 4);
+
+        - Zakonczenie strumienia
+
+
+        //Tworzenie strumienia
+
+
+
          */
         class BoardGame {
             public  String name;
@@ -3685,19 +3703,8 @@ public class Wstep {
         BG.main();
 
 
-        /*
-        Operacje na stumieniu:
-        - Tworzenie stumienia
-         Stream<BoardGame> strumienGier = games.stream();
 
-        - Przetwarznie danych wewnatrz stumienia
-        Stream<BoardGame> filtrowanyStrumien = games.stream()
-                        .filter(x -> x.maxPlayers > 4);
-        Stream<BoardGame> filtrowanyStrumien = strumienGier
-                        .filter(x -> x.maxPlayers > 4);
 
-        - Zakonczenie strumienia
-         */
 
 
 
