@@ -3661,6 +3661,10 @@ public class Wstep {
                         //Interface Function za T podstawia BoardGame i R String oraz w swojej metodzie
                         // zwrtaca przefiltrowane wczesniej 2 elementy tablicy z parametru name na typ
                         // String oraz z zamiana na duze litery.
+
+                nazwyZeStrumienia.forEach(System.out::println);
+                //na koncu korzystam ze strumienia nazw (typ String) i odwoluje sie do metody
+                // println
             }
         }
         BoardGame BG = new BoardGame();
