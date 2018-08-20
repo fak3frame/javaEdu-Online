@@ -221,9 +221,10 @@ public class Wstep {
 
         final int LICZBA_FINALNA;
         LICZBA_FINALNA = 10;
-        //liczbaFinalna = 12; - blad - liczbe finalna mozemy przypisac 1 raz
+        //LICZBA_FINALNA = 12;// - blad - liczbe finalna mozemy przypisac 1 raz
         // lecz mozna ja zadeklarowac bez nadawania wartosci TYLKO LOKALNIE!!!
-        //Gdy jest to zmienna lokalna musze nadac jej wartosc lub utworzyc
+
+        //Gdy jest to zmienna globalna musze nadac jej wartosc lub utworzyc
         // jej ndadanie wartosci w konstruktorze!!!
 
         Date data1 = new Date(); //data1 zawiera aktualana date
