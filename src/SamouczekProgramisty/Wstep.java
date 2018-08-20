@@ -3602,6 +3602,21 @@ public class Wstep {
 
         //Tworzenie strumienia
 
+        - Na podsatwie kolekcji
+        Stream<Integer> stream1 = new LinkedList<Integer>().stream();
+
+        - Na podstawie tablicy
+        Stream<Integer> stream2 = Arrays.stream(new Integer[]{});
+
+        - Na podsweit lancucha znakow rozdzielanego przez wyrazenie regularne
+        Stream<String> stream3 = Pattern.compile(".").splitAsStream("some longer sentence");
+
+        - Strumien typow prstych
+        DoubleStream randomDoubles = new Random().doubles();
+        IntStream randomInts = new Random().ints();
+        LongStream randomLongs = new Random().longs();
+
+
 
 
          */
