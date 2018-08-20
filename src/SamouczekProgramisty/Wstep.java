@@ -225,7 +225,7 @@ public class Wstep {
         // lecz mozna ja zadeklarowac bez nadawania wartosci TYLKO LOKALNIE!!!
 
         //Gdy jest to zmienna globalna musze nadac jej wartosc lub utworzyc
-        // jej ndadanie wartosci w konstruktorze!!!
+        // jej ndadanie wartosci w konstruktorze!!! (TYLKO W PRZYPADKU ZMIENNYCH PROSTYCH!!)
 
         Date data1 = new Date(); //data1 zawiera aktualana date
         System.out.println(data1);
@@ -3876,17 +3876,15 @@ class Wiek{
         return wiek;
     }
 }
+
+//WAZNE INFO OGOLNE DO ZAPAMIETANIA!!
 /*
-@FunctionalInterface
-interface Function<T, R>{
-    public R apply(T ob);
-}
+zmienna final OBIEKTOWA nie musi posiadac nadanwej wartosci
+ nawet w kosntruktorze
+zmeinna final prosta JESLI jest zadeklarwoana GLOBALNIE
+ musi miec nadana wartosc CHYBA ZE nadadnie wartosci jest
+ w konstruktorze tej klasy
+zmienna final zadeklarowana LOKALNIE nie musi miec nadanej
+ wartosci
 
-@FunctionalInterface
-interface Predicate<T>{
-    public boolean test(T ob);
-}
-
-@FunctionalInterface
-interface Suppliet<T>
-*/
+ */
