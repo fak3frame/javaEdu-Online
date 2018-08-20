@@ -3676,7 +3676,14 @@ public class Wstep {
         /*
         Operacje na stumieniu:
         - Tworzenie stumienia
+         Stream<BoardGame> strumienGier = games.stream();
+
         - Przetwarznie danych wewnatrz stumienia
+        Stream<BoardGame> filtrowanyStrumien = games.stream()
+                        .filter(x -> x.maxPlayers > 4);
+        Stream<BoardGame> filtrowanyStrumien = strumienGier
+                        .filter(x -> x.maxPlayers > 4);
+
         - Zakonczenie strumienia
          */
 

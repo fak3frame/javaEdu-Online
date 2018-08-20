@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 8">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
@@ -37,15 +37,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="32954" />
+          <entry key="java" value="33283" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="203" />
+          <entry key="txt" value="207" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="32954" />
-          <entry key="PLAIN_TEXT" value="203" />
+          <entry key="JAVA" value="33283" />
+          <entry key="PLAIN_TEXT" value="207" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -77,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="3662" column="64" selection-start-line="3662" selection-start-column="64" selection-end-line="3662" selection-end-column="64" />
+            <state relative-caret-position="206">
+              <caret line="3642" column="54" lean-forward="true" selection-start-line="3641" selection-start-column="16" selection-end-line="3642" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#135105#135106#0" expanded="true" />
@@ -282,7 +282,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="93" />
-    <option name="y" value="9" />
     <option name="width" value="1667" />
     <option name="height" value="1447" />
   </component>
@@ -331,7 +330,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534773564405" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534773989608" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -483,27 +482,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01149" summary="Wyrażenia lambda 3">
-      <created>1534041700429</created>
-      <option name="number" value="01149" />
-      <option name="presentableId" value="LOCAL-01149" />
-      <option name="project" value="LOCAL" />
-      <updated>1534041700429</updated>
-    </task>
-    <task id="LOCAL-01150" summary="Wyrażenia lambda 4">
-      <created>1534093350384</created>
-      <option name="number" value="01150" />
-      <option name="presentableId" value="LOCAL-01150" />
-      <option name="project" value="LOCAL" />
-      <updated>1534093350385</updated>
-    </task>
-    <task id="LOCAL-01151" summary="Wyrażenia lambda 5">
-      <created>1534168547381</created>
-      <option name="number" value="01151" />
-      <option name="presentableId" value="LOCAL-01151" />
-      <option name="project" value="LOCAL" />
-      <updated>1534168547381</updated>
     </task>
     <task id="LOCAL-01152" summary="Wyrażenia lambda 7">
       <created>1534171821931</created>
@@ -827,7 +805,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534773047300</updated>
     </task>
-    <option name="localTasksCounter" value="1198" />
+    <task id="LOCAL-01198" summary="Strumienie 9">
+      <created>1534773430534</created>
+      <option name="number" value="01198" />
+      <option name="presentableId" value="LOCAL-01198" />
+      <option name="project" value="LOCAL" />
+      <updated>1534773430534</updated>
+    </task>
+    <task id="LOCAL-01199" summary="Strumienie 10">
+      <created>1534773538406</created>
+      <option name="number" value="01199" />
+      <option name="presentableId" value="LOCAL-01199" />
+      <option name="project" value="LOCAL" />
+      <updated>1534773538406</updated>
+    </task>
+    <task id="LOCAL-01200" summary="Strumienie 11">
+      <created>1534773648746</created>
+      <option name="number" value="01200" />
+      <option name="presentableId" value="LOCAL-01200" />
+      <option name="project" value="LOCAL" />
+      <updated>1534773648746</updated>
+    </task>
+    <option name="localTasksCounter" value="1201" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -863,7 +862,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="93" y="9" width="1667" height="1447" extended-state="0" />
+    <frame x="93" y="0" width="1667" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17361543" />
@@ -899,9 +898,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wyrażenia lambda 28" />
-    <MESSAGE value="Modyfikatory dostepu 1" />
-    <MESSAGE value="Modyfikatory dostepu 2" />
     <MESSAGE value="Modyfikatory dostepu 3" />
     <MESSAGE value="Modyfikatory dostepu 4" />
     <MESSAGE value="Modyfikatory dostepu 5" />
@@ -924,7 +920,10 @@
     <MESSAGE value="Strumienie 6" />
     <MESSAGE value="Strumienie 7" />
     <MESSAGE value="Strumienie 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 8" />
+    <MESSAGE value="Strumienie 9" />
+    <MESSAGE value="Strumienie 10" />
+    <MESSAGE value="Strumienie 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 11" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestyJunit/OneTest.java">
@@ -1305,8 +1304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="3662" column="64" selection-start-line="3662" selection-start-column="64" selection-end-line="3662" selection-end-column="64" />
+        <state relative-caret-position="206">
+          <caret line="3642" column="54" lean-forward="true" selection-start-line="3641" selection-start-column="16" selection-end-line="3642" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#135105#135106#0" expanded="true" />
