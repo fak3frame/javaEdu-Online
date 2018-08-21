@@ -18,8 +18,8 @@ public class Java8Collections {
         List<Transaction> transactions = bankAccount.getTransactions();
 
         List<Transaction> collect = transactions.stream()
-                //.sorted(Comparator.comparingDouble(Transaction::getAmount).reversed())
-                //.filter(s -> s.getAmount() > 50)
+                .sorted(Comparator.comparingDouble(Transaction::getAmount).reversed())
+                .filter(s -> s.getAmount() > 50)
                 .collect(toList());
         collect.forEach(s -> System.out.println(s));
     }
