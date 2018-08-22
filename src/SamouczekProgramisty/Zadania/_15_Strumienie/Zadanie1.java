@@ -8,6 +8,12 @@ import java.util.stream.Stream;
 
 public class Zadanie1 {
 
+    private int zmienna;
+
+    public Zadanie1(int zmienna) {
+        this.zmienna = zmienna;
+    }
+
     public static void main(String[] args) {
 
         double highestRanking = 0;
@@ -23,18 +29,27 @@ public class Zadanie1 {
         System.out.println(bestGame.name);
 
         //
+
+
         BoardGame najlepszaGra =  BoardGame.GAMES.stream()
                 .filter(x -> x.name.contains("a"))
                 .max(Comparator.comparingDouble(x -> x.rating)).get();
         System.out.println("najlepsza gra: "+ najlepszaGra.name);
 
-        int liczba = 40;
-        int liczba2 = 50;
-        int liczba3 = 30;
-        List<Integer> testList = Arrays.asList(liczba,liczba2,liczba3);
 
-        Stream<Integer> numbersStream = testList.stream()
-                .max(Comparator.comparingInt(x -> x+1)).get();
+        List<Zadanie1> testList = Arrays.asList(new Zadanie1(70), new Zadanie1(20), new Zadanie1(90));
+
+        Zadanie1 numbersStream = testList.stream()
+                .max(Comparator.comparingInt(x -> x.zmienna)).get();
+
+        //to działa
+        //max przyjmuje Comparator na ktorym wywoluje metode statyczna comparingInt
+        // ktora przyjmuje interface funkcyjny ToIntFunction<T> z meotda
+        // int applyAsInt(T value)
+
+        //Stream<Zadanie1> numbersStream2 = testList.stream()
+        //        .max(Comparator.comparingInt(x -> x.zmienna)).get();
+        //to nie dziala
 
 
         System.out.println("Porownanie: ");
