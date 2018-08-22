@@ -28,6 +28,15 @@ public class Zadanie1 {
                 .max(Comparator.comparingDouble(x -> x.rating)).get();
         System.out.println("najlepsza gra: "+ najlepszaGra.name);
 
+        int liczba = 40;
+        int liczba2 = 50;
+        int liczba3 = 30;
+        List<Integer> testList = Arrays.asList(liczba,liczba2,liczba3);
+
+        Stream<Integer> numbersStream = testList.stream()
+                .max(Comparator.comparingInt(x -> x+1)).get();
+
+
         System.out.println("Porownanie: ");
         Comparator<Integer> porownanie = (x,y) -> x-y;
         System.out.println(porownanie.compare(20,8));

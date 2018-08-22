@@ -3605,6 +3605,7 @@ public class Wstep {
 
         - Zakonczenie strumienia
 
+
         //Tworzenie strumienia
 
         - Na podsatwie kolekcji
