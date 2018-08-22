@@ -43,9 +43,15 @@ public class Zadanie1 {
                 .max(Comparator.comparingInt(x -> x.zmienna)).get();
 
         //to działa
-        //max przyjmuje Comparator na ktorym wywoluje metode statyczna comparingInt
-        // ktora przyjmuje interface funkcyjny ToIntFunction<T> z meotda
-        // int applyAsInt(T value)
+        //metoda .max na strumieniu przyjmuje Comparator na ktorym wywoluje metode
+        // statyczna comparingInt ktora przyjmuje interface funkcyjny ToIntFunction<T>
+        // z meotda int applyAsInt(T value)
+
+        testList.stream()
+                .max(Comparator.comparingInt(x ->x.zmienna)).get();
+
+
+
 
         //Stream<Zadanie1> numbersStream2 = testList.stream()
         //        .max(Comparator.comparingInt(x -> x.zmienna)).get();
