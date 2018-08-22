@@ -46,6 +46,9 @@ public class Zadanie1 {
         //metoda .max na strumieniu przyjmuje Comparator na ktorym wywoluje metode
         // statyczna comparingInt ktora przyjmuje interface funkcyjny ToIntFunction<T>
         // z meotda int applyAsInt(T value)
+        //zmienna numbersStream zawiera teraz tylko jeden element listy i jest nim najwieksza
+        // wartosc pola int zmienna
+        System.out.println("numbersStream : "+ numbersStream.zmienna);
 
         testList.stream()
                 .max(Comparator.comparingInt(x ->x.zmienna)).get();
