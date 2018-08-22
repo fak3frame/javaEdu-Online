@@ -1,5 +1,7 @@
 package SamouczekProgramisty.Zadania._15_Strumienie;
 
+import SamouczekProgramisty.Zadania._13_Lambda.Zadanie2;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -86,6 +88,10 @@ public class Zadanie1 {
         IntSupplier dajLiczbeObiektu = ob::getX;
         System.out.println("to liczba z obiektu : "+dajLiczbeObiektu.getAsInt());
 
+
+        List<Zadanie1> listaLiczb = Arrays.asList(new Zadanie1(2), new Zadanie1(1), new Zadanie1(3));
+        Stream<Integer> stream = listaLiczb.stream()
+                .peek(x -> x.zmienna+=1);
 
 
 

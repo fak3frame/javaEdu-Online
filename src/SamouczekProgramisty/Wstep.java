@@ -3470,7 +3470,7 @@ public class Wstep {
         //Przyklady zastosowan:
         //Wypisanie liczb z kolekcji
         List<Integer> listaLiczb = Arrays.asList(2,4,6,8,7);
-        Consumer<Integer> listaLiczbConsumer = (liczbaZListy) -> System.out.print(liczbaZListy+" ");
+        Consumer<Integer> listaLiczbConsumer = x -> System.out.print(x+" ");
         //Interface ma void accept(T t)
         //zmienna przyjeta przez metode typu generycznego T nazwalem lizbaZListy (t) w deklaracji
         listaLiczb.forEach(listaLiczbConsumer);
