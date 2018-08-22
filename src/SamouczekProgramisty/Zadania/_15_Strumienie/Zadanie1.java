@@ -4,11 +4,21 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.BiPredicate;
+import java.util.function.IntSupplier;
+import java.util.function.ToIntFunction;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
 
 public class Zadanie1 {
 
-    private int zmienna;
+    public int getZmienna() {
+        return zmienna;
+    }
+
+    public int zmienna;
 
     public Zadanie1(int zmienna) {
         this.zmienna = zmienna;
@@ -41,7 +51,6 @@ public class Zadanie1 {
 
         Zadanie1 numbersStream = testList.stream()
                 .max(Comparator.comparingInt(x -> x.zmienna)).get();
-
         //to działa
         //metoda .max na strumieniu przyjmuje Comparator na ktorym wywoluje metode
         // statyczna comparingInt ktora przyjmuje interface funkcyjny ToIntFunction<T>
@@ -53,19 +62,30 @@ public class Zadanie1 {
         testList.stream()
                 .max(Comparator.comparingInt(x ->x.zmienna)).get();
 
+        System.out.println("SORT:");
+        List<Zadanie1> strumienSort = testList.stream()
+                .sorted(Comparator.comparingInt(Zadanie1::getZmienna))
+                .collect(toList());
+        strumienSort.stream()
+                .map(x -> x.zmienna)
+                .forEach(System.out::println);
+
+        System.out.println("Sort2:");
+        //testList.stream().map(x -> x.zmienna).forEach(System.out::println);
 
 
-
-        //Stream<Zadanie1> numbersStream2 = testList.stream()
-        //        .max(Comparator.comparingInt(x -> x.zmienna)).get();
+//        Stream<Zadanie1> numbersStream2 = testList.stream()
+//                .filter(x -> x.zmienna/10 == 9)
+//                .max(Comparator.comparingInt(x -> x.zmienna)).get();
         //to nie dziala
 
+        ToIntFunction<KlasaZLiczba> dajLiczbeKlasy = KlasaZLiczba::getX;
+        KlasaZLiczba ob = new KlasaZLiczba(10);
+        System.out.println("to liczba z obiektu : "+dajLiczbeKlasy.applyAsInt(ob));
 
-        System.out.println("Porownanie: ");
-        Comparator<Integer> porownanie = (x,y) -> x-y;
-        System.out.println(porownanie.compare(20,8));
+        IntSupplier dajLiczbeObiektu = ob::getX;
+        System.out.println("to liczba z obiektu : "+dajLiczbeObiektu.getAsInt());
 
-        Comparator.comparingDouble(x -> 10);
 
 
 
@@ -103,5 +123,16 @@ class BoardGame {
             new BoardGame("Patchwork", 7.77, new BigDecimal("75"), 2, 2),
             new BoardGame("The Castles of Burgundy", 8.12, new BigDecimal("129.95"), 2, 4)
     );
+}
 
+class KlasaZLiczba{
+    private int x;
+
+    public int getX() {
+        return x;
+    }
+
+    public KlasaZLiczba(int x) {
+        this.x = x;
+    }
 }
