@@ -165,13 +165,21 @@ public class Zadanie1 {
                 //do forEach tylko w nowej linii, wiec imo bez sensu
         klasaZliczbaStream1INTEGER.forEach(System.out::println);
 
+        System.out.println("\n"+"OPERACJE NA STREAM 4 + peek:");
+        Stream<KlasaZLiczba> klasaZliczbaStreamPeak = listObject.stream()
+                .peek(x -> System.out.println(x.getX() + " " + x.getNapis()));
+        klasaZliczbaStreamPeak.forEach(System.out::println);
+        //najpierw wykona peek 55 bb np
+        //nastepie adres obiektu SamouczekProgramisty.Zadania._15_Strumienie.KlasaZLiczba@9629756
+
 
         /*Operacje bezposrenio na liscie*/
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 1:");
         listNumbers.stream()
                 .filter(x -> x>2)
                 .sorted()
-                .forEach(System.out::println);
+                .forEach(System.out::println);//nie musze mapowac bo lista
+                //przechowuje typ porsty
 
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 2:");
         listObject.stream()

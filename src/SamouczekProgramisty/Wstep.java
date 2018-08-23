@@ -3638,7 +3638,7 @@ public class Wstep {
         -map - kazdy z elementow moze zostac zmieniony do innego typu, nowy obiekt zwarty
                jest w nowym strumieniu
                Function <T, R> | R apply(T t)
-        -peak - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
+        -peek - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
                 stumien z tymi samymi elemntami
                 Consumer<T> | void accept(T t)
         -limi - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
