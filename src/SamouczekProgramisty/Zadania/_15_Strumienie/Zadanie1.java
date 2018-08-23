@@ -120,9 +120,39 @@ public class Zadanie1 {
                 .sorted(Comparator.comparing(KlasaZLiczba::getX).reversed())
                 .collect(toList());
         strumien.forEach(x -> System.out.println(x.getX()));
+        //-----------------------------------------------------------------------
+        ////////////////////////////////////////////
+        List<Integer> listNumbers = new ArrayList<>();
+        listNumbers.add(3);
+        listNumbers.add(1);
+        listNumbers.add(5);
+        listNumbers.add(9);
 
+        List<KlasaZLiczba> listObject = new ArrayList<>();
+        listObject.add(new KlasaZLiczba(33));
+        listObject.add(new KlasaZLiczba(11));
+        listObject.add(new KlasaZLiczba(55));
+        listObject.add(new KlasaZLiczba(99));
+        ////////////////////////////////////////////
+        /*Operacja na Strem*/
+        System.out.println("\n"+"OPERACJE NA STREAM 1:");
+        Stream<Integer> integerStream = listNumbers.stream()
+                .filter(x -> x>2)
+                .sorted();
+        integerStream.forEach(System.out::println);
 
+        System.out.println("\n"+"OPERACJE NA STREAM 2:");
+        Stream<KlasaZLiczba> klasaZLiczbaStream = listObject.stream()
+                .filter(x -> x.getX()>22)
+                .sorted(Comparator.comparing(KlasaZLiczba::getX));
+        klasaZLiczbaStream.forEach(x -> System.out.println(x.getX()));
 
+        /*Operacje bezposrenio na liscie*/
+        System.out.println("\n"+"OPERACJE bezposrenio na liscie 1:");
+        listNumbers.stream()
+                .filter(x -> x>2)
+                .sorted()
+                .forEach(System.out::println);
 
 
 
