@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.function.BiPredicate;
 import java.util.function.IntSupplier;
 import java.util.function.ToIntFunction;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -147,7 +148,8 @@ public class Zadanie1 {
         System.out.println("\n"+"OPERACJE NA STREAM 2:");
         Stream<KlasaZLiczba> klasaZLiczbaStream = listObject.stream()
                 .filter(x -> x.getX()>22)
-                .sorted(Comparator.comparing(KlasaZLiczba::getNapis));
+                .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reversed());
+                //musi byc okreslone jakie pole sortuje w liscie obiektow wlasnej klasy
         klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
 
         System.out.println("\n"+"OPERACJE NA STREAM 3 + map:");
@@ -178,8 +180,22 @@ public class Zadanie1 {
         listObject.stream()
                 .filter(x -> x.getX()>22)
                 .sorted(Comparator.comparing(KlasaZLiczba::getX))
-                .forEach(System.out::println);
+                .forEach(System.out::println);//jest typ obiektowy, powninennem wywloac map
 
+        /*Operacje na nowej liscie*/
+        System.out.println("\n"+"OPERACJE na nowej liscie 1:");
+        List<Integer> listNumbersX = listNumbers.stream()
+                .filter(x -> x>2)
+                .sorted(Comparator.reverseOrder())
+                .collect(toList());
+        listNumbersX.forEach(System.out::println);
+
+        System.out.println("\n"+"OPERACJE na nowej liscie 2:");
+        List<KlasaZLiczba> listObjectX = listObject.stream()
+                .sorted(Comparator.comparing(KlasaZLiczba::getNapis))
+                .collect(toList());
+                // lub .collect(Collectors.toList());
+        listObjectX.forEach(x -> System.out.println(x.getX() + " " + x.getNapis() ));
 
 
 
