@@ -201,6 +201,13 @@ public class Zadanie1 {
                 .sorted(Comparator.comparing(KlasaZLiczba::getX))
                 .forEach(System.out::println);//jest typ obiektowy, powninennem wywloac map
 
+        System.out.println("\n"+"OPERACJE bezposrenio na liscie 3 + peek:");
+        listObject.stream()
+                .filter(x -> x.getX()>22)
+                .sorted(Comparator.comparing(KlasaZLiczba::getX))
+                .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
+                .collect(toList());
+
         //---------
 
         /*Operacje na nowej liscie*/

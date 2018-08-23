@@ -3641,7 +3641,7 @@ public class Wstep {
         -peek - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
                 stumien z tymi samymi elemntami
                 Consumer<T> | void accept(T t)
-        -limi - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
+        -limit - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
                 ignorowane
                 Stream<BoardGame> strumienGier = games.stream().limit(10);
 
