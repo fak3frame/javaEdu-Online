@@ -83,7 +83,7 @@ public class Zadanie1 {
         //to nie dziala
 
         ToIntFunction<KlasaZLiczba> dajLiczbeKlasy = KlasaZLiczba::getX;
-        KlasaZLiczba ob = new KlasaZLiczba(10);
+        KlasaZLiczba ob = new KlasaZLiczba(10,"x");
         System.out.println("to liczba z obiektu : "+dajLiczbeKlasy.applyAsInt(ob));
 
         IntSupplier dajLiczbeObiektu = ob::getX;
@@ -110,10 +110,10 @@ public class Zadanie1 {
 
         System.out.println("Test lsty z obiektamy innej klasy:");
         List<KlasaZLiczba> klasaZLiczbaList = new ArrayList<>();
-        klasaZLiczbaList.add(new KlasaZLiczba(3));
-        klasaZLiczbaList.add(new KlasaZLiczba(2));
-        klasaZLiczbaList.add(new KlasaZLiczba(5));
-        klasaZLiczbaList.add(new KlasaZLiczba(1));
+        klasaZLiczbaList.add(new KlasaZLiczba(3, "x"));
+        klasaZLiczbaList.add(new KlasaZLiczba(2, "x"));
+        klasaZLiczbaList.add(new KlasaZLiczba(5, "x"));
+        klasaZLiczbaList.add(new KlasaZLiczba(1, "x"));
 
         List<KlasaZLiczba> strumien = klasaZLiczbaList.stream()
                 .filter(x -> x.getX()>2)
@@ -121,37 +121,61 @@ public class Zadanie1 {
                 .collect(toList());
         strumien.forEach(x -> System.out.println(x.getX()));
         //-----------------------------------------------------------------------
+        System.out.println("-----------------------------");
         ////////////////////////////////////////////
         List<Integer> listNumbers = new ArrayList<>();
+        listNumbers.add(5);
         listNumbers.add(3);
         listNumbers.add(1);
-        listNumbers.add(5);
         listNumbers.add(9);
 
         List<KlasaZLiczba> listObject = new ArrayList<>();
-        listObject.add(new KlasaZLiczba(33));
-        listObject.add(new KlasaZLiczba(11));
-        listObject.add(new KlasaZLiczba(55));
-        listObject.add(new KlasaZLiczba(99));
+        listObject.add(new KlasaZLiczba(55,"bb"));
+        listObject.add(new KlasaZLiczba(33,"cc"));
+        listObject.add(new KlasaZLiczba(11,"dd"));
+        listObject.add(new KlasaZLiczba(99,"aa"));
         ////////////////////////////////////////////
+
+
         /*Operacja na Strem*/
         System.out.println("\n"+"OPERACJE NA STREAM 1:");
         Stream<Integer> integerStream = listNumbers.stream()
                 .filter(x -> x>2)
-                .sorted();
+                .sorted(Comparator.reverseOrder());
         integerStream.forEach(System.out::println);
 
         System.out.println("\n"+"OPERACJE NA STREAM 2:");
         Stream<KlasaZLiczba> klasaZLiczbaStream = listObject.stream()
                 .filter(x -> x.getX()>22)
-                .sorted(Comparator.comparing(KlasaZLiczba::getX));
-        klasaZLiczbaStream.forEach(x -> System.out.println(x.getX()));
+                .sorted(Comparator.comparing(KlasaZLiczba::getNapis));
+        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
+
+        System.out.println("\n"+"OPERACJE NA STREAM 3 + map:");
+        Stream<KlasaZLiczba> klasaZLiczbaStream1 = listObject.stream()
+                .filter(x -> x.getX()>22);
+        Stream<Integer> klasaZliczbaStream1INTEGER = klasaZLiczbaStream1
+                .map(x -> x.getX());
+        klasaZliczbaStream1INTEGER.forEach(System.out::println);
+
 
         /*Operacje bezposrenio na liscie*/
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 1:");
         listNumbers.stream()
                 .filter(x -> x>2)
                 .sorted()
+                .forEach(System.out::println);
+
+        System.out.println("\n"+"OPERACJE bezposrenio na liscie 2:");
+        listObject.stream()
+                .filter(x -> x.getX()>22)
+                .sorted(Comparator.comparing(KlasaZLiczba::getX))
+                .map(x -> x.getX()*10)//ZMIENIAM PRZY OKAZJI TYP NA INTEGER ELEMETNOW STRUMIENIA!!
+                .forEach(System.out::println);
+
+        System.out.println("\n"+"OPERACJE bezposrenio na liscie 3:");
+        listObject.stream()
+                .filter(x -> x.getX()>22)
+                .sorted(Comparator.comparing(KlasaZLiczba::getX))
                 .forEach(System.out::println);
 
 
@@ -192,12 +216,18 @@ class BoardGame {
 
 class KlasaZLiczba{
     private int x;
+    private String napis;
+
+    public String getNapis() {
+        return napis;
+    }
 
     public int getX() {
         return x;
     }
 
-    public KlasaZLiczba(int x) {
+    public KlasaZLiczba(int x, String napis) {
         this.x = x;
+        this.napis = napis;
     }
 }
