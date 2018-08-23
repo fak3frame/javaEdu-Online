@@ -162,7 +162,7 @@ public class Zadanie1 {
                 .filter(x -> x.getX()>22);
         Stream<Integer> klasaZliczbaStream1INTEGER = klasaZLiczbaStream1
                 .map(x -> x.getX());//dalej nie bede mogl sie odwolac bezposcrenio
-                //do forEach tylko w nowej linii
+                //do forEach tylko w nowej linii, wiec imo bez sensu
         klasaZliczbaStream1INTEGER.forEach(System.out::println);
 
 
