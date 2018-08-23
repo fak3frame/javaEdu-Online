@@ -172,6 +172,7 @@ public class Zadanie1 {
         //najpierw wykona peek 55 bb np
         //nastepie adres obiektu SamouczekProgramisty.Zadania._15_Strumienie.KlasaZLiczba@9629756
 
+        //---------
 
         /*Operacje bezposrenio na liscie*/
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 1:");
@@ -180,6 +181,11 @@ public class Zadanie1 {
                 .sorted()
                 .forEach(System.out::println);//nie musze mapowac bo lista
                 //przechowuje typ porsty
+
+        System.out.println("\n"+"OPERACJE bezposrenio na liscie 1 + peak:");
+        listNumbers.stream()
+                .peek(x -> System.out.println(x))
+                .collect(toList());//doda wyswietlenie, bez tego nic nie bedzie na ekranie
 
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 2:");
         listObject.stream()
@@ -194,6 +200,8 @@ public class Zadanie1 {
                 .filter(x -> x.getX()>22)
                 .sorted(Comparator.comparing(KlasaZLiczba::getX))
                 .forEach(System.out::println);//jest typ obiektowy, powninennem wywloac map
+
+        //---------
 
         /*Operacje na nowej liscie*/
         System.out.println("\n"+"OPERACJE na nowej liscie 1:");
