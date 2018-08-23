@@ -143,20 +143,20 @@ public class Zadanie1 {
         ////////////////////////////////////////////
 
 
-        /*Operacja na Strem*/
+        /*Operacja na Strem<T>*/
         /*
         W type generycznym
 
         -obiektowym prostym Stream<Integer>
-        filter(x -> x>2)
-        sorted()
-        sorted(Comparator.reverseOrder())
+        .filter(x -> x>2)
+        .sorted()
+        .sorted(Comparator.reverseOrder())
         integerStream.forEach(System.out::println); // w oddzielnej linii
 
         -obiektowym Stream<KlasaZLiczba>
-        filter(x -> x.getX()>22)
-        sorted(Comparator.comparing(KlasaZLiczba::getNapis))
-        sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder)
+        .filter(x -> x.getX()>22)
+        .sorted(Comparator.comparing(KlasaZLiczba::getNapis))
+        .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder)
         klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis())); //w oddzielnej linii
 
         map,peek - bez sensu
@@ -191,7 +191,32 @@ public class Zadanie1 {
 
         //---------
 
-        /*Operacje bezposrenio na liscie*/
+        /*Operacje bezposrenio na liscie listObiektow.stream()*/
+        /*
+        Na liscie (pracuje na 1 lancuchu)
+
+        -z obiektami prostymi listNumbers.stream()
+        .filter(x -> x>2)
+        .sorted()
+        .sorted(Comparator.reverseOrder())
+        .forEach(System.out::println);//nie musze mapowac
+        //lub wyswietlenie z peek
+        .peek(x -> System.out.println(x)) //po tym musze dac collect
+        .collect(toList())
+
+        -z obiektami listObject.stream()
+        .filter(x -> x.getX()>22)
+        .sorted(Comparator.comparing(KlasaZLiczba::getX))
+        .sorted(Comparator.comparing(KlasaZLiczba::getX).reverseOrder())
+        .map(x -> x.getX()) //zmieniam typ na int jak ma metoda getX i moge dac forEach
+        .forEach(System.out::println); //lub
+        .forEach(x -> System.out.println(x.getX()));
+        //lub wyswietlenie z peek (nie musze mapowac)
+        .peek(x -> System.out.println(x.getX() + " "+ x.getNapis()))//musze po tym dac collect
+        .collect(toList());
+
+
+         */
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 1:");
         listNumbers.stream()
                 .filter(x -> x>2)
@@ -227,7 +252,14 @@ public class Zadanie1 {
 
         //---------
 
-        /*Operacje na nowej liscie*/
+        /*Operacje na nowej liscie List<T>*/
+        /*
+        Z typem obiektow
+
+        -Obiektowym prostym List<Integer>
+
+
+         */
         System.out.println("\n"+"OPERACJE na nowej liscie 1:");
         List<Integer> listNumbersX = listNumbers.stream()
                 .filter(x -> x>2)
