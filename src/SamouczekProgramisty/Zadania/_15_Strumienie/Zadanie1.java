@@ -3,6 +3,7 @@ package SamouczekProgramisty.Zadania._15_Strumienie;
 import SamouczekProgramisty.Zadania._13_Lambda.Zadanie2;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -89,9 +90,37 @@ public class Zadanie1 {
         System.out.println("to liczba z obiektu : "+dajLiczbeObiektu.getAsInt());
 
 
+        System.out.println("Test listy obiektowej");
         List<Zadanie1> listaLiczb = Arrays.asList(new Zadanie1(2), new Zadanie1(1), new Zadanie1(3));
-        Stream<Integer> stream = listaLiczb.stream()
+        Stream<Zadanie1> stream = listaLiczb.stream()
                 .peek(x -> x.zmienna+=1);
+        Stream<Integer> stream1 = stream.map(x -> x.zmienna);
+        stream1.forEach(System.out::println);
+
+
+        System.out.println("Test listy prstej");
+        List<Integer> listaProstaLiczba = Arrays.asList(2,5,7,1,9);
+        Stream<Integer> streamX = listaProstaLiczba.stream()
+                .filter(x -> x<9)
+                .sorted();
+        Stream<String> streamX2 = streamX
+                .map(x -> x.toString());
+        streamX2.forEach(System.out::println);
+
+
+        System.out.println("Test lsty z obiektamy innej klasy:");
+        List<KlasaZLiczba> klasaZLiczbaList = new ArrayList<>();
+        klasaZLiczbaList.add(new KlasaZLiczba(3));
+        klasaZLiczbaList.add(new KlasaZLiczba(2));
+        klasaZLiczbaList.add(new KlasaZLiczba(5));
+        klasaZLiczbaList.add(new KlasaZLiczba(1));
+
+        List<KlasaZLiczba> strumien = klasaZLiczbaList.stream()
+                .filter(x -> x.getX()>2)
+                .sorted(Comparator.comparing(KlasaZLiczba::getX).reversed())
+                .collect(toList());
+        strumien.forEach(x -> System.out.println(x.getX()));
+
 
 
 

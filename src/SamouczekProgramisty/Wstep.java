@@ -3575,7 +3575,7 @@ public class Wstep {
         /*
         Strumienie sluza do przetwarzania danych np z kolekcji czy wyrazen regulrnych
 
-        Nie sa struktrami danych! truktury służą do przechowywania danych a strumienie
+        Nie sa struktrami danych! struktury służą do przechowywania danych a strumienie
          służą do opisywania algorytmów, operacji na danych.
 
         Moga zrownoleglic prace na danych dzieki czemu mozliwe jest szybkie
