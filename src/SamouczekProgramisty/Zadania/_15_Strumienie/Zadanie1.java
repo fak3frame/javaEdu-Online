@@ -144,6 +144,23 @@ public class Zadanie1 {
 
 
         /*Operacja na Strem*/
+        /*
+        W type generycznym
+
+        -obiektowym prostym Stream<Integer>
+        filter(x -> x>2)
+        sorted()
+        sorted(Comparator.reverseOrder())
+        integerStream.forEach(System.out::println); // w oddzielnej linii
+
+        -obiektowym Stream<KlasaZLiczba>
+        filter(x -> x.getX()>22)
+        sorted(Comparator.comparing(KlasaZLiczba::getNapis))
+        sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder)
+        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis())); //w oddzielnej linii
+
+        map,peek - bez sensu
+         */
         System.out.println("\n"+"OPERACJE NA STREAM 1:");
         Stream<Integer> integerStream = listNumbers.stream()
                 .filter(x -> x>2)
