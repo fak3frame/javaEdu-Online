@@ -154,7 +154,8 @@ public class Zadanie1 {
         Stream<KlasaZLiczba> klasaZLiczbaStream1 = listObject.stream()
                 .filter(x -> x.getX()>22);
         Stream<Integer> klasaZliczbaStream1INTEGER = klasaZLiczbaStream1
-                .map(x -> x.getX());
+                .map(x -> x.getX());//dalej nie bede mogl sie odwolac bezposcrenio
+                //do forEach tylko w nowej linii
         klasaZliczbaStream1INTEGER.forEach(System.out::println);
 
 
@@ -170,7 +171,8 @@ public class Zadanie1 {
                 .filter(x -> x.getX()>22)
                 .sorted(Comparator.comparing(KlasaZLiczba::getX))
                 .map(x -> x.getX()*10)//ZMIENIAM PRZY OKAZJI TYP NA INTEGER ELEMETNOW STRUMIENIA!!
-                .forEach(System.out::println);
+                .forEach(System.out::println);//wiec nie musze sie tutaj juz odnosic do konkretnej zmeinnej
+                //.forEach(x -> System.out.println(x.getX()));
 
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 3:");
         listObject.stream()
