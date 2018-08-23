@@ -121,8 +121,13 @@ public class Zadanie1 {
                 .sorted(Comparator.comparing(KlasaZLiczba::getX).reversed())
                 .collect(toList());
         strumien.forEach(x -> System.out.println(x.getX()));
-        //-----------------------------------------------------------------------
+
+
+        ////////////////////////////////////////////////////
         System.out.println("-----------------------------");
+        ////////////////////////////////////////////////////
+
+
         ////////////////////////////////////////////
         List<Integer> listNumbers = new ArrayList<>();
         listNumbers.add(5);
@@ -196,6 +201,13 @@ public class Zadanie1 {
                 .collect(toList());
                 // lub .collect(Collectors.toList());
         listObjectX.forEach(x -> System.out.println(x.getX() + " " + x.getNapis() ));
+
+        System.out.println("\n"+"OPERACJE na nowej liscie 3 + map:");
+        List<String> listObjectXMap = listObject.stream()
+                .map(x -> x.getNapis())
+                .collect(toList());
+        listObjectXMap.forEach(System.out::println);//juz mam liste z 1 zmienna i moge prosto
+
 
 
 
