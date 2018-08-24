@@ -160,9 +160,11 @@ public class Zadanie1 {
         // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
         // wyswietlniem z odwolanie do metody ::
 
-       -//listaObiekow.stream().map(x -> x.getX());
+       -//listaObiekow.stream().map(x -> x.getX()).forEach(System.out::println);
+        //listaObiekow.stream().forEach(x -> System.out.println(x.getX() + " "+ x.getNapis()));
+        // bez mapowaania
         //Lub bezposrenim strumieniu na liscie
-        // z typem OBIKTOWYM - mapuje zeby wyswietlic zmienna
+        // z typem OBIKTOWYM - mapuje (opcjonalnie) zeby wyswietlic zmienna
         // kokretna zmienna np Integer, inaczej bede musial w wyswietleniu
         // forEach odwolac sie do konkretnego pola/pol, natomiast
         // w liscie z elementami prostymi nie musze mapowac bo mam
