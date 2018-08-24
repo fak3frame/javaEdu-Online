@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 46">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 48">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" afterDir="false" />
     </list>
@@ -38,15 +38,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="45448" />
+          <entry key="java" value="46451" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="246" />
+          <entry key="txt" value="248" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="45448" />
-          <entry key="PLAIN_TEXT" value="246" />
+          <entry key="JAVA" value="46451" />
+          <entry key="PLAIN_TEXT" value="248" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="917">
-              <caret line="289" column="19" selection-start-line="289" selection-start-column="19" selection-end-line="289" selection-end-column="19" />
+            <state relative-caret-position="511">
+              <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -417,20 +417,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01187" summary="Modyfikatory dostepu 14">
-      <created>1534713755142</created>
-      <option name="number" value="01187" />
-      <option name="presentableId" value="LOCAL-01187" />
-      <option name="project" value="LOCAL" />
-      <updated>1534713755143</updated>
-    </task>
-    <task id="LOCAL-01188" summary="Modyfikatory dostepu 15">
-      <created>1534713835632</created>
-      <option name="number" value="01188" />
-      <option name="presentableId" value="LOCAL-01188" />
-      <option name="project" value="LOCAL" />
-      <updated>1534713835632</updated>
-    </task>
     <task id="LOCAL-01189" summary="Modyfikatory dostepu 16">
       <created>1534714290472</created>
       <option name="number" value="01189" />
@@ -760,7 +746,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535050555596</updated>
     </task>
-    <option name="localTasksCounter" value="1236" />
+    <task id="LOCAL-01236" summary="Strumienie 47">
+      <created>1535127031929</created>
+      <option name="number" value="01236" />
+      <option name="presentableId" value="LOCAL-01236" />
+      <option name="project" value="LOCAL" />
+      <updated>1535127031933</updated>
+    </task>
+    <task id="LOCAL-01237" summary="Strumienie 48">
+      <created>1535127564567</created>
+      <option name="number" value="01237" />
+      <option name="presentableId" value="LOCAL-01237" />
+      <option name="project" value="LOCAL" />
+      <updated>1535127564567</updated>
+    </task>
+    <option name="localTasksCounter" value="1238" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -832,8 +832,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strumienie 22" />
-    <MESSAGE value="Strumienie 23" />
     <MESSAGE value="Strumienie 24" />
     <MESSAGE value="Strumienie 25" />
     <MESSAGE value="Strumienie 26" />
@@ -857,7 +855,9 @@
     <MESSAGE value="Strumienie 44" />
     <MESSAGE value="Strumienie 45" />
     <MESSAGE value="Strumienie 46" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 46" />
+    <MESSAGE value="Strumienie 47" />
+    <MESSAGE value="Strumienie 48" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 48" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Gotowe/GotoweMojaNauka/GradeBookTest.java">
@@ -1016,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="289" column="19" selection-start-line="289" selection-start-column="19" selection-end-line="289" selection-end-column="19" />
+        <state relative-caret-position="511">
+          <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
         </state>
       </provider>
     </entry>

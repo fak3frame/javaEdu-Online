@@ -151,19 +151,19 @@ public class Zadanie1 {
         map //Function<T, R> | R apply(T t)
         .map(x -> x.getX())
         //Uzywam do zmiany typu,
-        //Stream<Integer> streamX = lista.stream().map(x -> x.getX());
+       -//Stream<Integer> streamX = lista.stream().map(x -> x.getX());
         //Uzywam na Stream z typem prostym np <Integer> aby zmienic
         // rodzaj pol listy na ten z typu generycznego Strem a nastepnie w
         // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
         // wyswietlniem z odwolanie do metody ::
-        //listaObiekow.stream().map(x -> x.getX());
+       -//listaObiekow.stream().map(x -> x.getX());
         //Lub bezposrenim strumieniu na liscie
         // z typem OBIKTOWYM - mapuje zeby wyswietlic zmienna
         // kokretna zmienna np Integer, inaczej bede musial w wyswietleniu
         // forEach odwolac sie do konkretnego pola/pol, natomiast
         // w liscie z elementami prostymi nie musze bo mam
         // np Integer i moge odwolac sie bezposrenio w forEach sout ::
-        //List<Integer> listaX = lista.stream().
+       -//List<Integer> listaX = lista.stream().
         //Lub jesli tworze nowa liste z typem prostym aby stworzyc liste
         // pol wybranej kolekcji obiektow
 
@@ -171,18 +171,36 @@ public class Zadanie1 {
         .peek(x -> System.out.println(x))
         .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
         //Sluzy np do wyswietlenia,
-        //lista.strem().
-        //Uzywam w bezposrednim strumieniu na
-        // liscie z elem. prostymi i obiektowymi lub tworzac nowa liste
+       -//listaZIntegerani.strem().peek(System.out::println).collect(toList())
+        //listaZObiektami.strem().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
+        //Uzywam w bezposrednim strumieniu na liscie z elem. prostymi lub
+        // obiektowymi MUSZE NA KONCU .collect(toList())!
+       -//List<KlasaObiektow> listObjectX = listObject.stream()
+        //.peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
+        //.collect(toList());
+        //Lub tworzac nowa liste, NA KONCU .collect(toList());!
 
         forEach //Consumer<T> | void accept(T t)
         integerStream.forEach(System.out::println); //typ prosty/1 rodzaj pola
         klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
         .forEach(System.out::println); //bezposrenio na stuminiu + mapownie przed
-        //sluzy do zamkniecia struminia i np wyswietlenia, uzywam w type
-        // Stream TYLKO w oddzielnej linii, na stumieniu bezposrenim (z mapowaniem
-        // w przypadku typu obiektowego oby wybrac typ) lub w nowej liscie
-        // W ODDZIELNEJ LINII
+        //Sluzy do zamkniecia struminia i np wyswietlenia
+       -//Stream<Integer/MojaKlasa> integerStream/obiektyStream = listaInt/listaOb.stream();
+        //integerStream.forEach(System.out::println)
+        //obiektyStream.forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
+        //Uzywam w type Stream TYLKO w oddzielnej linii
+       -//listaInteger.stream().forEach(System.out::println);
+        //listaObiektow.stream().forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
+        //listaObiektow.stream().map(x -> x.getX()).forEach(System.out::println);
+        //Lub na stumieniu bezposrenim (moge z mapowaniem w przypadku typu obiektowego
+        // aby wybrac typ i odwolac sie besrednio z :: do konkretnego pola)
+       -//List<Integer> listaX = listaInteger.stream().collect(toList());
+        //listaX.forEach(System.out::println)
+        //List<KlasaObiektow> listaO = listaObiektow.stream().collect(toList());
+        //listaO.forEach(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()));
+        //List<Stream> listaS = listaObiektow.stream().map(x -> x.getNapis()).collect(toList());
+        //listaS.forEach(System.out::println);
+        //Lub w nowej liscie W ODDZIELNEJ LINII, na koncu musze dac Collect(toList())!!
 
         limit //moge wszedzie
         count //zwraca liczbe elementow w strumieniu
@@ -191,7 +209,8 @@ public class Zadanie1 {
         .sorted()/.sorted(Comparator.reverseOrder) - typy proste
         .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder) - typy wlasne
 
-        collect(Collectors.toList()) / collect(toList())
+        collect
+        .collect(Collectors.toList()) / collect(toList())
         //gdy przypisuje do listy musze dac na koncu
 
         .max(Comparator.comparingInt(x->x)).get();
@@ -293,7 +312,7 @@ public class Zadanie1 {
 
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 1 + peak:");
         listNumbers.stream()
-                .peek(x -> System.out.println(x))
+                .peek(System.out::println)
                 .collect(toList());//doda wyswietlenie, bez tego nic nie bedzie na ekranie
 
 
