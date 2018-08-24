@@ -154,9 +154,9 @@ public class Zadanie1 {
         .map(x -> x.getX())
         //Uzywam do zmiany typu,
 
-       -//Stream<Integer> streamX = lista.stream().map(x -> x.getX());
+       -//Stream<Integer> streamX = listaObiektow.stream().map(x -> x.getX());
         //Uzywam na Stream z typem prostym np <Integer> aby zmienic
-        // rodzaj pol listy na ten z typu generycznego Strem a nastepnie w
+        // rodzaj pol listy Obiektow na ten z typu generycznego Strem a nastepnie w
         // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
         // wyswietlniem z odwolanie do metody ::
 
@@ -165,12 +165,12 @@ public class Zadanie1 {
         // z typem OBIKTOWYM - mapuje zeby wyswietlic zmienna
         // kokretna zmienna np Integer, inaczej bede musial w wyswietleniu
         // forEach odwolac sie do konkretnego pola/pol, natomiast
-        // w liscie z elementami prostymi nie musze bo mam
+        // w liscie z elementami prostymi nie musze mapowac bo mam
         // np Integer i moge odwolac sie bezposrenio w forEach sout ::
 
        -//List<Integer> listaX = listaObiektow.stream().map(x -> x.getX());
         //Lub jesli tworze nowa liste z typem prostym aby wybrac pola
-        // z listy obiektow
+        // z listy obiektow i odwolac sie za pomoca :: w sout
 
 
         peek //Consumer<T> | void accept(T t)
