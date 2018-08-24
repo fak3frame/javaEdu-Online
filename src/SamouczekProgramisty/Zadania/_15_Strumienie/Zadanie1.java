@@ -151,16 +151,18 @@ public class Zadanie1 {
         map //Function<T, R> | R apply(T t)
         .map(x -> x.getX())
         //Uzywam do zmiany typu,
-        //Stream<Integer> streamX = lista.stream().
+        //Stream<Integer> streamX = lista.stream().map(x -> x.getX());
         //Uzywam na Stream z typem prostym np <Integer> aby zmienic
         // rodzaj pol listy na ten z typu generycznego Strem a nastepnie w
         // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
         // wyswietlniem z odwolanie do metody ::
-        //listaObiekow.stream().
+        //listaObiekow.stream().map(x -> x.getX());
         //Lub bezposrenim strumieniu na liscie
         // z typem OBIKTOWYM - mapuje zeby wyswietlic zmienna
-        // a nie adres referencji, na prostym nie musze bo mam liste
-        // z np Integer i moge odwolac sie bezposrenio w forEach sout ::
+        // kokretna zmienna np Integer, inaczej bede musial w wyswietleniu
+        // forEach odwolac sie do konkretnego pola/pol, natomiast
+        // w liscie z elementami prostymi nie musze bo mam
+        // np Integer i moge odwolac sie bezposrenio w forEach sout ::
         //List<Integer> listaX = lista.stream().
         //Lub jesli tworze nowa liste z typem prostym aby stworzyc liste
         // pol wybranej kolekcji obiektow
@@ -169,7 +171,7 @@ public class Zadanie1 {
         .peek(x -> System.out.println(x))
         .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
         //Sluzy np do wyswietlenia,
-        lista.strem().
+        //lista.strem().
         //Uzywam w bezposrednim strumieniu na
         // liscie z elem. prostymi i obiektowymi lub tworzac nowa liste
 
@@ -307,7 +309,7 @@ public class Zadanie1 {
         listObject.stream()
                 .filter(x -> x.getX()>22)
                 .sorted(Comparator.comparing(KlasaZLiczba::getX))
-                .forEach(System.out::println);//jest typ obiektowy, powninennem wywloac map
+                .forEach(x -> System.out.println("liczba: "+x.getX()+ " napis: "+x.getNapis()));
 
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 3 + peek:");
         listObject.stream()
