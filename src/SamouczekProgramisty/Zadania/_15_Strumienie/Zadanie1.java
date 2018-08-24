@@ -155,14 +155,15 @@ public class Zadanie1 {
         //Uzywam do zmiany typu,
 
        -//Stream<Integer> streamX = listaObiektow.stream().map(x -> x.getX());
+        // streamX.forEach(System.out::println);
         //Uzywam na Stream z typem prostym np <Integer> aby zmienic
         // rodzaj pol listy Obiektow na ten z typu generycznego Strem a nastepnie w
         // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
         // wyswietlniem z odwolanie do metody ::
 
        -//listaObiekow.stream().map(x -> x.getX()).forEach(System.out::println);
-        //listaObiekow.stream().forEach(x -> System.out.println(x.getX() + " "+ x.getNapis()));
-        // bez mapowaania
+        //*listaObiekow.stream().forEach(x -> System.out.println(x.getX() + " "+ x.getNapis()));
+        //* bez mapowaania
         //Lub bezposrenim strumieniu na liscie
         // z typem OBIKTOWYM - mapuje (opcjonalnie) zeby wyswietlic zmienna
         // kokretna zmienna np Integer, inaczej bede musial w wyswietleniu
