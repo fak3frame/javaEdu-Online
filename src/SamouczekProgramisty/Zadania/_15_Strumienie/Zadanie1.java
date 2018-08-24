@@ -561,3 +561,89 @@ class KlasaZLiczba{
         this.napis = napis;
     }
 }
+/*
+INTERFEJSY FUNKCYJNE:
+
+BiFunction<T, U, R> | R apply(T t, U u)
+
+BiFunction<Integer, String, KlasaMoja> obiektInterfejsu = KlasaMoja::new;
+KlasaMoja nowyObiektMojejKlasy = obiektInterfejsu("wartosc", 123)
+---------------
+Function <T, R> | R apply(T t)
+
+//na strumieniu: (map) x -> x.name//x -> x.name.toUpperCase()
+Function<String, Integer> zmianaSILambda = zmiennaString -> Integer.parseInt(zmiennaString);
+int L1 = zmianaSILambda.apply("12");
+---------------
+ToIntFunction<T> | int applyAsInt(T t)
+
+ToIntFunction<Integer> toIntFunction = x -> x+12;
+int y = toIntFunction.applyAsInt(22);
+---------------
+ToDoubleFunction<T> | double applyAsDouble(T t)
+
+ToDoubleFunction<Double> toDoubleFunction = x -> x+12.3;
+double y = toIntFunction.applyAsInt(34.5);
+---------------
+UnaryOperator<T> | T apply (T t)
+
+UnaryOperator<Integer> pomnozPrzezDwaLambda = liczbaDoMnozenia -> liczbaDoMnozenia*2;
+System.out.println("liczba 14 pomnozona przez 2  w lambdzie: "+pomnozPrzezDwaLambda.apply(14));
+---------------
+Supplier<T> | T get()
+
+Supplier<Integer> pokazInteger10Lambda = () -> 10;
+System.out.println("pokaz 10 Integer z lambdy : "+pokazInteger10Lambda.get());
+---------------
+IntSuplier | int getAsInt()
+
+IntSupplier pokaz10lambda = () -> 10;
+System.out.println("pokazuje 10 int z lambdy : "+pokaz10lambda.getAsInt());
+---------------
+BiPredicate<T, R> | boolean test (T t, R r)
+
+BiPredicate<Integer, Integer> czyRowne = (x,y) -> x==y;
+System.out.println(czyRowne.test(20,30));
+---------------
+Predicate<T> | boolean test(T t)
+
+//na strumieniu : (filter) x -> x.rating > 8//x -> new BigDecimal(150).compareTo(x.price) > 0
+Predicate<Integer> czyParzystaLambda2 = liczbaDoSprawdzenia -> liczbaDoSprawdzenia % 2 == 0;
+System.out.println("Czy liczba 15 jest parzysta : "+czyParzystaLambda2.test(15));
+---------------
+Consumer<T> | void accept(T t)
+
+//na strumieniu (forEach) System.out::println*po mapowaniu na jeden element z listy np name
+Consumer<Integer> pokazILambda = jakasLiczba -> System.out.println("liczba metody accept: "+jakasLiczba);
+pokazILambda.accept(123);
+
+Consumer<Integer> listaLiczbConsumer = x -> System.out.print(x+" ");
+listaLiczb.forEach(listaLiczbConsumer);
+listaLiczbConsumer.accept(listaLiczb.get(0));
+
+-------------------------------------------------------------------------------------------------------------
+
+ODWOLYWANIE SIE DO METOD :: :
+
+ToIntFunction<Object> obiekt = Object::hashCode;
+ToIntFunction<KlasaZLiczba> dajLiczbeKlasy = KlasaZLiczba::getX; //int applyAsInt(T t)
+KlasaZLiczba ob = new KlasaZLiczba(10);
+System.out.println("to liczba z obiektu : "+dajLiczbeKlasy.applyAsInt(ob));
+
+IntSupplier obiekt= obiekt::hashCode;
+IntSupplier dajLiczbeObiektu = ob::getX; //int getAsInt()
+System.out.println("to liczba z obiektu : "+dajLiczbeObiektu.getAsInt());
+
+IntSupplier dajLiczbeObiektu = KlasaZLiczba::getX; //gdy metoda getX jest static
+System.out.println("to liczba z obiektu : "+dajLiczbeObiektu.getAsInt());
+
+//z konstruktorami
+
+BiFunction<Integer, String, KlasaMoja> obiektInterfejsu = KlasaMoja::new;
+KlasaMoja nowyObiektMojejKlasy = obiektInterfejsu("wartosc", 123)
+
+
+METODY NA STRUMIENIACH:
+
+
+ */
