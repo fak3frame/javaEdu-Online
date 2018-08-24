@@ -143,27 +143,49 @@ public class Zadanie1 {
         //              SKRÓT                   //
         /* Operacje na strumieniach - interfejsy funkcyjne
 
-        .filter //Predicate<T> | boolean test(T t)
-        //moge wszedzie
+        filter //Predicate<T> | boolean test(T t)
+        .filter(x -> x.getX()>22) / .filter(x -> x.>22)
+        //moge wszedzie, sluzy do filtrowania, sprawdza wybrany warunek
+        // w lambdzie
 
-        .map //Function<T, R> | R apply(T t)
-        //uzywam do zmiany typu, uzywam w bezposrenim strumieniu na liscie
-        // z typem OBIKTOWYM - na prostym nie musze zeby wyswietlic zmienna
-        // a nie adres referencji
-        //lub jesli tworze nowa liste z typem prostym aby stworzyc liste
+        map //Function<T, R> | R apply(T t)
+        .map(x -> x.getX())
+        //Uzywam do zmiany typu,
+        //Stream<Integer> streamX = lista.stream().
+        //Uzywam na Stream z typem prostym np <Integer> aby zmienic
+        // rodzaj pol listy na ten z typu generycznego Strem a nastepnie w
+        // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
+        // wyswietlniem z odwolanie do metody ::
+        //listaObiekow.stream().
+        //Lub bezposrenim strumieniu na liscie
+        // z typem OBIKTOWYM - mapuje zeby wyswietlic zmienna
+        // a nie adres referencji, na prostym nie musze bo mam liste
+        // z np Integer i moge odwolac sie bezposrenio w forEach sout ::
+        //List<Integer> listaX = lista.stream().
+        //Lub jesli tworze nowa liste z typem prostym aby stworzyc liste
         // pol wybranej kolekcji obiektow
 
-        .peek //Consumer<T> | void accept(T t)
-        //sluzy np do wyswietlenia uzywam w bezposrednim strumieniu na
-        //liscie z elem. prostymi i obiektowymi.
+        peek //Consumer<T> | void accept(T t)
+        .peek(x -> System.out.println(x))
+        .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
+        //Sluzy np do wyswietlenia,
+        lista.strem().
+        //Uzywam w bezposrednim strumieniu na
+        // liscie z elem. prostymi i obiektowymi lub tworzac nowa liste
 
-        .forEach //Consumer<T> | void accept(T t)
+        forEach //Consumer<T> | void accept(T t)
+        integerStream.forEach(System.out::println); //typ prosty/1 rodzaj pola
+        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
+        .forEach(System.out::println); //bezposrenio na stuminiu + mapownie przed
         //sluzy do zamkniecia struminia i np wyswietlenia, uzywam w type
-        // Stream TYLKO w oddzielnej linii,
+        // Stream TYLKO w oddzielnej linii, na stumieniu bezposrenim (z mapowaniem
+        // w przypadku typu obiektowego oby wybrac typ) lub w nowej liscie
+        // W ODDZIELNEJ LINII
 
-        .limit //moge wszedzie
-        .count //zwraca liczbe elementow w strumieniu
+        limit //moge wszedzie
+        count //zwraca liczbe elementow w strumieniu
 
+        sorted
         .sorted()/.sorted(Comparator.reverseOrder) - typy proste
         .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder) - typy wlasne
 
@@ -219,14 +241,12 @@ public class Zadanie1 {
                 .filter(x -> x.getX()>22)
                 .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reversed());
                 //musi byc okreslone jakie pole sortuje w liscie obiektow wlasnej klasy
-        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
+        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis() + " "+x.getX() ));
 
         System.out.println("\n"+"OPERACJE NA STREAM 3 + map:");
-        Stream<KlasaZLiczba> klasaZLiczbaStream1 = listObject.stream()
-                .filter(x -> x.getX()>22);
-        Stream<Integer> klasaZliczbaStream1INTEGER = klasaZLiczbaStream1
-                .map(x -> x.getX());//dalej nie bede mogl sie odwolac bezposcrenio
-                //do forEach tylko w nowej linii, wiec imo bez sensu
+        Stream<Integer> klasaZliczbaStream1INTEGER = listObject.stream()
+                .filter(x -> x.getX()>22)
+                .map(x -> x.getX());
         klasaZliczbaStream1INTEGER.forEach(System.out::println);
 
         System.out.println("\n"+"OPERACJE NA STREAM 4 + peek:");
@@ -261,15 +281,13 @@ public class Zadanie1 {
         //lub wyswietlenie z peek (nie musze mapowac)
         .peek(x -> System.out.println(x.getX() + " "+ x.getNapis()))//musze po tym dac collect
         .collect(toList());
-
-
          */
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 1:");
         listNumbers.stream()
                 .filter(x -> x>2)
                 .sorted()
                 .forEach(System.out::println);//nie musze mapowac bo lista
-                //przechowuje typ porsty
+                // przechowuje typ porsty
 
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 1 + peak:");
         listNumbers.stream()
