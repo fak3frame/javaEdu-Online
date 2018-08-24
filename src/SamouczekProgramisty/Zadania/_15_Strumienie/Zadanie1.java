@@ -168,9 +168,9 @@ public class Zadanie1 {
         // w liscie z elementami prostymi nie musze bo mam
         // np Integer i moge odwolac sie bezposrenio w forEach sout ::
 
-       -//List<Integer> listaX = lista.stream().
-        //Lub jesli tworze nowa liste z typem prostym aby stworzyc liste
-        // pol wybranej kolekcji obiektow
+       -//List<Integer> listaX = listaObiektow.stream().map(x -> x.getX());
+        //Lub jesli tworze nowa liste z typem prostym aby wybrac pola
+        // z listy obiektow
 
 
         peek //Consumer<T> | void accept(T t)
@@ -183,35 +183,44 @@ public class Zadanie1 {
         //Uzywam w bezposrednim strumieniu na liscie z elem. prostymi lub
         // obiektowymi MUSZE NA KONCU .collect(toList())!
 
+       -//List<Integer> listInteger = listNumber.stream()
+        // .peek(System.out::println)
+        // .collect(toList());
        -//List<KlasaObiektow> listObjectX = listObject.stream()
-        //.peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
-        //.collect(toList());
+        // .peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
+        // .collect(toList());
+       -//List<String> listString = listObject.stream()
+        // .map(x -> x.getNapis())
+        // .peek(System.out::println)
+        // .collect(toList());
         //Lub tworzac nowa liste, NA KONCU .collect(toList());!
 
 
         forEach //Consumer<T> | void accept(T t)
-        integerStream.forEach(System.out::println); //typ prosty/1 rodzaj pola
-        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
-        .forEach(System.out::println); //bezposrenio na stuminiu + mapownie przed
+        strumienZInteger.forEach(System.out::println); //typ prosty/1 rodzaj pola
+        strumienZObiektami.forEach(x -> System.out.println(x.getNapis()));
+        .forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));//bezposrenio na stuminiu
+        .forEach(System.out::println); //bezposrenio na stuminiu z 1 typem zmiennych
         //Sluzy do zamkniecia struminia i np wyswietlenia
 
-       -//Stream<Integer/MojaKlasa> integerStream/obiektyStream = listaInt/listaOb.stream();
-        //integerStream.forEach(System.out::println)
-        //obiektyStream.forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
+       -//Stream<Integer> integerStream = listaInt.stream();
+        // integerStream.forEach(System.out::println)
+       -//Stream<MojaKlasa> obiektyStream = listaOb.stream();
+        // obiektyStream.forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
         //Uzywam w type Stream TYLKO w oddzielnej linii
 
        -//listaInteger.stream().forEach(System.out::println);
-        //listaObiektow.stream().forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
-        //listaObiektow.stream().map(x -> x.getX()).forEach(System.out::println);
+       -//listaObiektow.stream().forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
+       -//listaObiektow.stream().map(x -> x.getX()).forEach(System.out::println);
         //Lub na stumieniu bezposrenim (moge z mapowaniem w przypadku typu obiektowego
         // aby wybrac typ i odwolac sie besrednio z :: do konkretnego pola)
 
        -//List<Integer> listaX = listaInteger.stream().collect(toList());
-        //listaX.forEach(System.out::println)
-        //List<KlasaObiektow> listaO = listaObiektow.stream().collect(toList());
-        //listaO.forEach(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()));
-        //List<Stream> listaS = listaObiektow.stream().map(x -> x.getNapis()).collect(toList());
-        //listaS.forEach(System.out::println);
+        // listaX.forEach(System.out::println)
+       -//List<KlasaObiektow> listaO = listaObiektow.stream().collect(toList());
+        // listaO.forEach(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()));
+       -//List<Stream> listaS = listaObiektow.stream().map(x -> x.getNapis()).collect(toList());
+        // listaS.forEach(System.out::println);
         //Lub w nowej liscie W ODDZIELNEJ LINII, na koncu musze dac Collect(toList())!!
 
 
@@ -414,6 +423,17 @@ public class Zadanie1 {
         System.out.println("\n"+"OPERACJE na nowej liscie 4 + peek:");
         List<KlasaZLiczba> listObjectXPeek = listObject.stream()
                 .peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
+                .collect(toList());
+
+        System.out.println("\n\n"+"OPERACJE na nowej liscie 4 + peek 2:");
+        List<Integer> listInteger = listNumbers.stream()
+                .peek(System.out::println)
+                .collect(toList());
+
+        System.out.println("\n\n"+"OPERACJE na nowej liscie 4 + peek 3:");
+        List<String> listString = listObject.stream()
+                .map(x -> x.getNapis())
+                .peek(System.out::println)
                 .collect(toList());
 
         //---------
