@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 48">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 49">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" afterDir="false" />
     </list>
@@ -38,15 +38,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="46451" />
+          <entry key="java" value="46597" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="248" />
+          <entry key="txt" value="249" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="46451" />
-          <entry key="PLAIN_TEXT" value="248" />
+          <entry key="JAVA" value="46597" />
+          <entry key="PLAIN_TEXT" value="249" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
+            <state relative-caret-position="581">
+              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
             </state>
           </provider>
         </entry>
@@ -417,13 +417,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01189" summary="Modyfikatory dostepu 16">
-      <created>1534714290472</created>
-      <option name="number" value="01189" />
-      <option name="presentableId" value="LOCAL-01189" />
-      <option name="project" value="LOCAL" />
-      <updated>1534714290472</updated>
-    </task>
     <task id="LOCAL-01190" summary="Strumienie 1">
       <created>1534714354643</created>
       <option name="number" value="01190" />
@@ -760,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535127564567</updated>
     </task>
-    <option name="localTasksCounter" value="1238" />
+    <task id="LOCAL-01238" summary="Strumienie 49">
+      <created>1535129207522</created>
+      <option name="number" value="01238" />
+      <option name="presentableId" value="LOCAL-01238" />
+      <option name="project" value="LOCAL" />
+      <updated>1535129207522</updated>
+    </task>
+    <option name="localTasksCounter" value="1239" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -832,7 +832,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strumienie 24" />
     <MESSAGE value="Strumienie 25" />
     <MESSAGE value="Strumienie 26" />
     <MESSAGE value="Strumienie 27" />
@@ -857,7 +856,8 @@
     <MESSAGE value="Strumienie 46" />
     <MESSAGE value="Strumienie 47" />
     <MESSAGE value="Strumienie 48" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 48" />
+    <MESSAGE value="Strumienie 49" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 49" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Gotowe/GotoweMojaNauka/GradeBookTest.java">
@@ -1016,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
+        <state relative-caret-position="581">
+          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
         </state>
       </provider>
     </entry>

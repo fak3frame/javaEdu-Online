@@ -143,19 +143,23 @@ public class Zadanie1 {
         //              SKRÓT                   //
         /* Operacje na strumieniach - interfejsy funkcyjne
 
+
         filter //Predicate<T> | boolean test(T t)
         .filter(x -> x.getX()>22) / .filter(x -> x.>22)
         //moge wszedzie, sluzy do filtrowania, sprawdza wybrany warunek
         // w lambdzie
 
+
         map //Function<T, R> | R apply(T t)
         .map(x -> x.getX())
         //Uzywam do zmiany typu,
+
        -//Stream<Integer> streamX = lista.stream().map(x -> x.getX());
         //Uzywam na Stream z typem prostym np <Integer> aby zmienic
         // rodzaj pol listy na ten z typu generycznego Strem a nastepnie w
         // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
         // wyswietlniem z odwolanie do metody ::
+
        -//listaObiekow.stream().map(x -> x.getX());
         //Lub bezposrenim strumieniu na liscie
         // z typem OBIKTOWYM - mapuje zeby wyswietlic zmienna
@@ -163,37 +167,45 @@ public class Zadanie1 {
         // forEach odwolac sie do konkretnego pola/pol, natomiast
         // w liscie z elementami prostymi nie musze bo mam
         // np Integer i moge odwolac sie bezposrenio w forEach sout ::
+
        -//List<Integer> listaX = lista.stream().
         //Lub jesli tworze nowa liste z typem prostym aby stworzyc liste
         // pol wybranej kolekcji obiektow
+
 
         peek //Consumer<T> | void accept(T t)
         .peek(x -> System.out.println(x))
         .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
         //Sluzy np do wyswietlenia,
+
        -//listaZIntegerani.strem().peek(System.out::println).collect(toList())
         //listaZObiektami.strem().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
         //Uzywam w bezposrednim strumieniu na liscie z elem. prostymi lub
         // obiektowymi MUSZE NA KONCU .collect(toList())!
+
        -//List<KlasaObiektow> listObjectX = listObject.stream()
         //.peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
         //.collect(toList());
         //Lub tworzac nowa liste, NA KONCU .collect(toList());!
+
 
         forEach //Consumer<T> | void accept(T t)
         integerStream.forEach(System.out::println); //typ prosty/1 rodzaj pola
         klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
         .forEach(System.out::println); //bezposrenio na stuminiu + mapownie przed
         //Sluzy do zamkniecia struminia i np wyswietlenia
+
        -//Stream<Integer/MojaKlasa> integerStream/obiektyStream = listaInt/listaOb.stream();
         //integerStream.forEach(System.out::println)
         //obiektyStream.forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
         //Uzywam w type Stream TYLKO w oddzielnej linii
+
        -//listaInteger.stream().forEach(System.out::println);
         //listaObiektow.stream().forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
         //listaObiektow.stream().map(x -> x.getX()).forEach(System.out::println);
         //Lub na stumieniu bezposrenim (moge z mapowaniem w przypadku typu obiektowego
         // aby wybrac typ i odwolac sie besrednio z :: do konkretnego pola)
+
        -//List<Integer> listaX = listaInteger.stream().collect(toList());
         //listaX.forEach(System.out::println)
         //List<KlasaObiektow> listaO = listaObiektow.stream().collect(toList());
@@ -202,16 +214,22 @@ public class Zadanie1 {
         //listaS.forEach(System.out::println);
         //Lub w nowej liscie W ODDZIELNEJ LINII, na koncu musze dac Collect(toList())!!
 
+
         limit //moge wszedzie
+
+
         count //zwraca liczbe elementow w strumieniu
+
 
         sorted
         .sorted()/.sorted(Comparator.reverseOrder) - typy proste
         .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder) - typy wlasne
 
+
         collect
         .collect(Collectors.toList()) / collect(toList())
         //gdy przypisuje do listy musze dac na koncu
+
 
         .max(Comparator.comparingInt(x->x)).get();
         //na liscie z typami prostymi + przypisanie do zmiennej np Integer
@@ -223,6 +241,7 @@ public class Zadanie1 {
                 .max(Comparator.comparing(x -> x)).get();
         //lub z wybraniem z listy obiektow konkretnego pola i jego wartosci
         // max - wymagane mapowanie do wybranego typu
+
 
         .allMatch(x -> x>1) //+przypisanie do boolean (lista typ prosty)
         .anyMatch(x -> x.getNapis().equals("aa"))
