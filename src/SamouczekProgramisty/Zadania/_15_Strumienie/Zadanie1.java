@@ -240,7 +240,10 @@ public class Zadanie1 {
 
         collect
         .collect(Collectors.toList()) / collect(toList())
-        //gdy przypisuje do listy musze dac na koncu
+       -//List<KlasaZLiczba> listObjectX = listObject.stream().collect(toList());
+        //Gdy przypisuje do listy musze dac na koncu
+       -//listObject.stream().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() )).collect(toList());
+        //Lub gdy uzywam peek na strumieniu (bez tego zadziala ale nie wyswietli
 
 
         .max(Comparator.comparingInt(x->x)).get();
