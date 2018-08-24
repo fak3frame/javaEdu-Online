@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.BiPredicate;
-import java.util.function.IntSupplier;
-import java.util.function.ToIntFunction;
+import java.util.function.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -142,13 +140,59 @@ public class Zadanie1 {
         listObject.add(new KlasaZLiczba(99,"aa"));
         ////////////////////////////////////////////
 
+        //              SKRÓT                   //
+        /* Operacje na strumieniach - interfejsy funkcyjne
 
-        /*Operacja na Strem<T>*/
+        .filter //Predicate<T> | boolean test(T t)
+        //moge wszedzie
+
+        .map //Function<T, R> | R apply(T t)
+        //uzywam do zmiany typu, uzywam w bezposrenim strumieniu na liscie
+        // z typem OBIKTOWYM - na prostym nie musze zeby wyswietlic zmienna
+        // a nie adres referencji
+        //lub jesli tworze nowa liste z typem prostym aby stworzyc liste
+        // pol wybranej kolekcji obiektow
+
+        .peek //Consumer<T> | void accept(T t)
+        //sluzy np do wyswietlenia uzywam w bezposrednim strumieniu na
+        //liscie z elem. prostymi i obiektowymi.
+
+        .forEach //Consumer<T> | void accept(T t)
+        //sluzy do zamkniecia struminia i np wyswietlenia, uzywam w type
+        // Stream TYLKO w oddzielnej linii,
+
+        .limit //moge wszedzie
+        .count //zwraca liczbe elementow w strumieniu
+
+        .sorted()/.sorted(Comparator.reverseOrder) - typy proste
+        .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder) - typy wlasne
+
+        collect(Collectors.toList()) / collect(toList())
+        //gdy przypisuje do listy musze dac na koncu
+
+        .max(Comparator.comparingInt(x->x)).get();
+        //na liscie z typami prostymi + przypisanie do zmiennej np Integer
+        .max(Comparator.comparing(x -> x.getX())).get();
+        //na liscie z typami obiekotwymu + przypsianie do obiektu klasy
+        // a nastepnie wypisanie na tym obiekcie metoda get
+        int maxIntX = listObject.stream()
+                .map(x -> x.getX())
+                .max(Comparator.comparing(x -> x)).get();
+        //lub z wybraniem z listy obiektow konkretnego pola i jego wartosci
+        // max - wymagane mapowanie do wybranego typu
+
+        .allMatch(x -> x>1) //+przypisanie do boolean (lista typ prosty)
+        .anyMatch(x -> x.getNapis().equals("aa"))
+        //+przypisanie do boolean (lista obiektowa)
+         */
+
+
+        /*Operacja na Stream<T>*/
         /*
         W type generycznym
 
         -obiektowym prostym Stream<Integer>
-        .filter(x -> x>2)
+        .filter(x -> x>2) \
         .sorted()
         .sorted(Comparator.reverseOrder())
         integerStream.forEach(System.out::println); // w oddzielnej linii
@@ -157,15 +201,18 @@ public class Zadanie1 {
         .filter(x -> x.getX()>22)
         .sorted(Comparator.comparing(KlasaZLiczba::getNapis))
         .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder)
-        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis())); //w oddzielnej linii
+        klasaZLiczbaStream.forEach(x -> System.out.println(x.getNapis()));
 
-        map,peek - bez sensu
+        //w oddzielnej linii
+
+        map,peek - bez sensu w Stream<T>
          */
         System.out.println("\n"+"OPERACJE NA STREAM 1:");
         Stream<Integer> integerStream = listNumbers.stream()
                 .filter(x -> x>2)
                 .sorted(Comparator.reverseOrder());
         integerStream.forEach(System.out::println);
+
 
         System.out.println("\n"+"OPERACJE NA STREAM 2:");
         Stream<KlasaZLiczba> klasaZLiczbaStream = listObject.stream()
@@ -229,6 +276,7 @@ public class Zadanie1 {
                 .peek(x -> System.out.println(x))
                 .collect(toList());//doda wyswietlenie, bez tego nic nie bedzie na ekranie
 
+
         System.out.println("\n"+"OPERACJE bezposrenio na liscie 2:");
         listObject.stream()
                 .filter(x -> x.getX()>22)
@@ -252,13 +300,31 @@ public class Zadanie1 {
 
         //---------
 
-        /*Operacje na nowej liscie List<T>*/
+        /*Operacje na nowej liscie List<T> listX = list.stream()*/
         /*
-        Z typem obiektow
+        Z typem
 
-        -Obiektowym prostym List<Integer>
+        -Obiektow prostych List<Integer>
+        .filter(x -> x>2)
+        .sorted(Comparator.reverseOrder())
+        .collect(toList()); //wymagane na koncu
+        // lub .collect(Collectors.toList());
+        listNumbersX.forEach(System.out::println); //w oddzielnej linii
+        //lub peek (mam jedna zmeinna wiec proste ::prtintln)
+        .peek(System.out::println)
 
-
+        -Obiektow List<KlasaZLiczba>
+        .sorted(Comparator.comparing(KlasaZLiczba::getNapis))
+        .collect(toList());
+        listObjectX.forEach(x -> System.out.println(x.getX() + " " + x.getNapis() ));
+        //lub z konwersja do nowej listy typu generycznego wybranego pola
+        List<String> listObjectXMap = listObject.stream()
+                .map(x -> x.getNapis())
+                .collect(toList());
+        listObjectXMap.forEach(System.out::println);
+        //juz mam liste z 1 zmienna i moge prosto forEach
+        // lub przed .collect(toList()); dac .peek()
+        .peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
          */
         System.out.println("\n"+"OPERACJE na nowej liscie 1:");
         List<Integer> listNumbersX = listNumbers.stream()
@@ -267,6 +333,7 @@ public class Zadanie1 {
                 .collect(toList());
         listNumbersX.forEach(System.out::println);
 
+
         System.out.println("\n"+"OPERACJE na nowej liscie 2:");
         List<KlasaZLiczba> listObjectX = listObject.stream()
                 .sorted(Comparator.comparing(KlasaZLiczba::getNapis))
@@ -274,15 +341,96 @@ public class Zadanie1 {
                 // lub .collect(Collectors.toList());
         listObjectX.forEach(x -> System.out.println(x.getX() + " " + x.getNapis() ));
 
+        System.out.println("\n"+"OPERACJE na nowej liscie 2 + peak:");
+        List<KlasaZLiczba> listObjectXP = listObject.stream()
+                .peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
+                .collect(toList());
+        //nie musze pisac forEach do wyswietlenia w oddzielnej liscie
+
         System.out.println("\n"+"OPERACJE na nowej liscie 3 + map:");
         List<String> listObjectXMap = listObject.stream()
                 .map(x -> x.getNapis())
                 .collect(toList());
         listObjectXMap.forEach(System.out::println);//juz mam liste z 1 zmienna i moge prosto
 
+        System.out.println("\n"+"OPERACJE na nowej liscie 4 + peek:");
+        List<KlasaZLiczba> listObjectXPeek = listObject.stream()
+                .peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
+                .collect(toList());
 
+        //---------
 
+        /*Operacja wyciagania max / min*/
+        /*
+        Na liscie z obiektami
 
+        -Prostymi
+        .max(Comparator.comparingInt(x->x)).get();
+        //+ przypisanie do zmiennej typu protego np Integer
+
+        -Wlasnymi
+        .max(Comparator.comparing(x -> x.getX())).get();
+        //+ przypisanie do typu Obiektowego wybranej klasy
+        // wyswietlenie z metoda get wybranej zmiennej
+        .map(x -> x.getX())
+        .max(Comparator.comparing(x -> x)).get();
+        //lub z mapoweniem to moge przypisac do zmiennej prostej
+        // typu wybranego pola obieku z listy
+
+         */
+
+        System.out.println("\n\n"+"Wyciagniecie max do Integer");
+        Integer maxInt = listNumbers.stream() //moge tez do int
+                .max(Comparator.comparingInt(x->x)).get();
+        System.out.println("max Integer : "+maxInt);
+
+        System.out.println("\n"+"Wyciagniecie max do pola klasy z listy obiektow wlasnych");
+        KlasaZLiczba maxLiczba = listObject.stream()
+                .max(Comparator.comparing(x -> x.getX())).get();
+        //teraz zmianna maxLiczba zawiera jeden obiekt z najwieksza liczba i
+        // odpowiadajacemu jej napisowi
+        System.out.println("Obiekt z najwieksza liczba, liczba: "
+                +maxLiczba.getX()+" i odpowiadajacy napis: "+maxLiczba.getNapis());
+
+        System.out.println("\n"+"Wyciagniecie max do pola prostego z listy obiektow wlasnych");
+        int maxIntX = listObject.stream()
+                .map(x -> x.getX())
+                .max(Comparator.comparing(x -> x)).get();
+        System.out.print("max liczba z listy : "+ maxIntX);
+
+        //---------
+
+        /*Operacja sprawdznia dopasowania allMatch / anyMatch / noneMatch*/
+        /*
+        Operacje na liscie z obiektami
+
+        -Prostymi
+        .allMatch(x -> x>1);
+        //+przypisanie do typu boolean
+
+        -Obiektowymi
+        .anyMatch(x -> x.getNapis().equals("aa"))
+        //+przypisanie do typu boolean
+         */
+        System.out.println("\n\n"+"Dopasowanie allMatch typ prosty ");
+        boolean czyPasujaProsteAll = listNumbers.stream()
+                .allMatch(x -> x>1); //nie pasuje bo jest element = 1
+        System.out.println("Czy pasuja wszystkie proste : " + czyPasujaProsteAll);
+
+        System.out.println("\n"+"Dopasowanie anyMatch typ prosty ");
+        boolean czyPasujeJakisProstyAny = listNumbers.stream()
+                .anyMatch(x -> x>1); //pasuje bo jakis jest > 1
+        System.out.println("Czy pasuje chociaz jeden prosty : " + czyPasujeJakisProstyAny);
+
+        System.out.println("\n"+"Dopasowanie noneMatch typ prosty ");
+        boolean czyZadenNiePasujeNone = listNumbers.stream()
+                .noneMatch(x -> x>1); //nie pasuje bo sa elementy wieksze od 1
+        System.out.println("Czy kazdy nie pasuje : " + czyZadenNiePasujeNone);
+
+        System.out.println("\n"+"Dopasowanie anyMatch typ Obiektowy ");
+        boolean czyPasujeNapisJednegoObiektu = listObject.stream()
+                .anyMatch(x -> x.getNapis().equals("aa"));//true bo jeden napis pasuje
+        System.out.println("Czy jakis napis z obiektow pasuje :"+czyPasujeNapisJednegoObiektu);
     }
 }
 
