@@ -71,7 +71,7 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60401">
+            <state relative-caret-position="22431">
               <caret line="3672" column="65" selection-start-line="3672" selection-start-column="65" selection-end-line="3672" selection-end-column="65" />
             </state>
           </provider>
@@ -80,8 +80,8 @@
       <file leaf-file-name="Zadanie1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="164" column="80" selection-start-line="164" selection-start-column="80" selection-end-line="164" selection-end-column="80" />
+            <state relative-caret-position="555">
+              <caret line="177" column="56" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -432,13 +432,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01201" summary="Strumienie 12">
-      <created>1534774073785</created>
-      <option name="number" value="01201" />
-      <option name="presentableId" value="LOCAL-01201" />
-      <option name="project" value="LOCAL" />
-      <updated>1534774073785</updated>
-    </task>
     <task id="LOCAL-01202" summary="Strumienie 13">
       <created>1534774312918</created>
       <option name="number" value="01202" />
@@ -775,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535301669247</updated>
     </task>
-    <option name="localTasksCounter" value="1250" />
+    <task id="LOCAL-01250" summary="Strumienie 61">
+      <created>1535301932387</created>
+      <option name="number" value="01250" />
+      <option name="presentableId" value="LOCAL-01250" />
+      <option name="project" value="LOCAL" />
+      <updated>1535301932387</updated>
+    </task>
+    <option name="localTasksCounter" value="1251" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -847,7 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strumienie 36" />
     <MESSAGE value="Strumienie 37" />
     <MESSAGE value="Strumienie 38" />
     <MESSAGE value="Strumienie 39" />
@@ -872,20 +871,21 @@
     <MESSAGE value="Strumienie 58" />
     <MESSAGE value="Strumienie 59" />
     <MESSAGE value="Strumienie 60" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 60" />
+    <MESSAGE value="Strumienie 61" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 61" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java</url>
-          <line>553</line>
+          <line>554</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java</url>
-          <line>249</line>
+          <line>250</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -1031,13 +1031,6 @@
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Bank/Java8Collections.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Consumer.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Predicate.java" />
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60401">
-          <caret line="3672" column="65" selection-start-line="3672" selection-start-column="65" selection-end-line="3672" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1052,10 +1045,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22431">
+          <caret line="3672" column="65" selection-start-line="3672" selection-start-column="65" selection-end-line="3672" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="164" column="80" selection-start-line="164" selection-start-column="80" selection-end-line="164" selection-end-column="80" />
+        <state relative-caret-position="555">
+          <caret line="177" column="56" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
         </state>
       </provider>
     </entry>

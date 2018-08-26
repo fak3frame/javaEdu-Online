@@ -172,9 +172,10 @@ public class Zadanie1 {
         // natomiast w liscie z elementami prostymi nie musze mapowac bo mam
         // np Integer i moge odwolac sie bezposrenio w forEach sout ::
 
-       -//List<Integer> listaX = listaObiektow.stream().map(x -> x.getX());
+       -//List<Integer> listaX = listaObiektow.stream().map(x -> x.getX()).collect(toList());
         //Lub jesli tworze nowa liste z typem prostym aby wybrac pola
         // z listy obiektow i odwolac sie za pomoca :: w sout
+        // NIE ZAPOMINAM O .collect(toList()); na koncu!
 
 
         peek //Consumer<T> | void accept(T t)
