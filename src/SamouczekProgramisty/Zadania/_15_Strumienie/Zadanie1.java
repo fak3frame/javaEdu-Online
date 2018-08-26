@@ -254,6 +254,19 @@ public class Zadanie1 {
         //Uzywam na zmiennej Obiektowej WLASNEJ klasy i przypisuje jej
         // wybrana zmienna odwolujac sie w Comparatorze do getera :: + metoda get()!!
         // *NIE MAPUJE bo przypisuje do typu KlasaZLiczba!
+       -//Integer liczbaMax3 = listObject.stream()
+                .map(x -> x.getX())//mapuje bo z listy obiektow przypisuje do int
+                .max(Comparator.comparing(x -> x)).get();//WPISUJE x->x bez get bo mapowalem
+        // System.out.println(liczbaMax3);
+        //Lub na zmiennej prostej wybranego typu pola z klasy np int,
+        // uzywam z mapowanie bo musze wyciagnac jeden rodzaj zmiennej
+        // a nastepnie w comparting zapisuje x->x bez get. po tym nie
+        // zapominam o get() na koncu!!
+
+        System.out.println("4");
+        Integer liczbaMax4 = listNumbers.stream()
+                .max(Comparator.comparing(x -> x)).get();
+        System.out.println(liczbaMax4);
 
 
 
