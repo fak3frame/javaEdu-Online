@@ -241,7 +241,7 @@ public class Zadanie1 {
         collect
         .collect(Collectors.toList()) / collect(toList())
        -//List<KlasaZLiczba> listObjectX = listObject.stream().collect(toList());
-        //Gdy przypisuje do listy musze dac na koncu
+        //Gdy przypisuje do listy DOWOLNEJ musze dac na koncu
        -//listObject.stream().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() )).collect(toList());
         //Lub gdy uzywam peek na strumieniu (bez tego zadziala ale nie wyswietli
 
