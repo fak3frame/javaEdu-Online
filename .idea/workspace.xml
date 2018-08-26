@@ -80,8 +80,8 @@
       <file leaf-file-name="Zadanie1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="254" column="85" selection-start-line="254" selection-start-column="85" selection-end-line="254" selection-end-column="85" />
+            <state relative-caret-position="647">
+              <caret line="283" column="47" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -432,20 +432,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01195" summary="Strumienie 6">
-      <created>1534716099537</created>
-      <option name="number" value="01195" />
-      <option name="presentableId" value="LOCAL-01195" />
-      <option name="project" value="LOCAL" />
-      <updated>1534716099537</updated>
-    </task>
-    <task id="LOCAL-01196" summary="Strumienie 7">
-      <created>1534772273112</created>
-      <option name="number" value="01196" />
-      <option name="presentableId" value="LOCAL-01196" />
-      <option name="project" value="LOCAL" />
-      <updated>1534772273112</updated>
-    </task>
     <task id="LOCAL-01197" summary="Strumienie 8">
       <created>1534773047300</created>
       <option name="number" value="01197" />
@@ -775,7 +761,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535284140661</updated>
     </task>
-    <option name="localTasksCounter" value="1244" />
+    <task id="LOCAL-01244" summary="Strumienie 55">
+      <created>1535287921247</created>
+      <option name="number" value="01244" />
+      <option name="presentableId" value="LOCAL-01244" />
+      <option name="project" value="LOCAL" />
+      <updated>1535287921247</updated>
+    </task>
+    <task id="LOCAL-01245" summary="Strumienie 56">
+      <created>1535288134152</created>
+      <option name="number" value="01245" />
+      <option name="presentableId" value="LOCAL-01245" />
+      <option name="project" value="LOCAL" />
+      <updated>1535288134152</updated>
+    </task>
+    <option name="localTasksCounter" value="1246" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -823,7 +823,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32977912" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35330835" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35330835" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901752" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -847,8 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strumienie 30" />
-    <MESSAGE value="Strumienie 31" />
     <MESSAGE value="Strumienie 32" />
     <MESSAGE value="Strumienie 33" />
     <MESSAGE value="Strumienie 34" />
@@ -872,25 +870,21 @@
     <MESSAGE value="Strumienie 52" />
     <MESSAGE value="Strumienie 53" />
     <MESSAGE value="Strumienie 54" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 54" />
+    <MESSAGE value="Strumienie 55" />
+    <MESSAGE value="Strumienie 56" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 56" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java</url>
-          <line>520</line>
+          <line>540</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java</url>
-          <line>248</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1054,8 +1048,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="254" column="85" selection-start-line="254" selection-start-column="85" selection-end-line="254" selection-end-column="85" />
+        <state relative-caret-position="647">
+          <caret line="283" column="47" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
         </state>
       </provider>
     </entry>

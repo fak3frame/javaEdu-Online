@@ -252,29 +252,36 @@ public class Zadanie1 {
        -//KlasaZLiczba zmiennaO = listaObiektow.stream().max(Comparator.comparing(KlasaZLiczba::getX)).get();
         // System.out.println(zmiennaO.getX());
         //Uzywam na zmiennej Obiektowej WLASNEJ klasy i przypisuje jej
-        // wybrana zmienna odwolujac sie w Comparatorze do getera :: + metoda get()!!
+        // wybrane pole max odwolujac sie w Comparatorze do getera :: + metoda get()!!
         // *NIE MAPUJE bo przypisuje do typu KlasaZLiczba!
        -//Integer liczbaMax3 = listObject.stream()
                 .map(x -> x.getX())//mapuje bo z listy obiektow przypisuje do int
                 .max(Comparator.comparing(x -> x)).get();//WPISUJE x->x bez get bo mapowalem
         // System.out.println(liczbaMax3);
         //Lub na zmiennej prostej wybranego typu pola z klasy np int,
-        // uzywam z mapowanie bo musze wyciagnac jeden rodzaj zmiennej
-        // a nastepnie w comparting zapisuje x->x bez get. po tym nie
-        // zapominam o get() na koncu!!
+        // uzywam z mapowanie bo musze wyciagnac jeden rodzaj zmiennej z
+        // LISTY OBIEKTOW a nastepnie w comparting zapisuje x->x bez get.
+        // po tym nie zapominam o get() na koncu!!
 
-        System.out.println("4");
-        Integer liczbaMax4 = listNumbers.stream()
-                .max(Comparator.comparing(x -> x)).get();
-        System.out.println(liczbaMax4);
-
-
-
+       -//Integer liczbaMax4 = listNumbers.stream().max(Comparator.comparing(x -> x)).get();
+        // System.out.println(liczbaMax4);
+        //Lub tez z przypisaniem do typ prostego ale
+        // z listy z ELEMENTAMI PROSTYMI wiec nie musze
+        // mapowac
 
 
+
+        all/any/noneMatch
         .allMatch(x -> x>1) //+przypisanie do boolean (lista typ prosty)
         .anyMatch(x -> x.getNapis().equals("aa"))
-        //+przypisanie do boolean (lista obiektowa)
+        // +przypisanie do boolean (lista obiektowa)
+       -//boolean czyCokolwiekPasuje = listInteger.stream().anyMatch(x->x>1);
+        //Uzywam gdy chce sprawdzic czy jakikolwiek element z listy
+        // typow prostych pasuje do wzorca x>1
+       -//boolean czyWszystkoPasuje = listObject.stream()
+                .allMatch(x -> x.getX()>1);
+        //Lub gdy chce na liscie OBIEKTOW to musze odwolac
+        // sie do kokretnego pola getem
          */
 
 
@@ -532,23 +539,15 @@ public class Zadanie1 {
 
 
         System.out.println("TEEEEEEEEEEST");
+        boolean czyCokolwiekPasuje = listInteger.stream().anyMatch(x->x>1);
+        System.out.println(czyCokolwiekPasuje);
 
-        System.out.println("1");
-        KlasaZLiczba liczbaMax = listObject.stream() //pamietam o type KLASOWYM
-                //nie moge mapowac bo jest typ KlasaZLiczba!!
-                .max(Comparator.comparing(KlasaZLiczba::getX)).get();
-        System.out.println(liczbaMax.getX());//odwolanie do zmiennej
+        boolean czyWszystkoPasuje = listObject.stream()
+                .allMatch(x -> x.getX()>1);
+        System.out.println(czyWszystkoPasuje);
 
-        System.out.println("3");
-        Integer liczbaMax3 = listObject.stream()
-                .map(x -> x.getX())//mapuje bo z listy obiektow do int
-                .max(Comparator.comparing(x -> x)).get();
-        System.out.println(liczbaMax3);
 
-        System.out.println("4");
-        Integer liczbaMax4 = listNumbers.stream()
-                .max(Comparator.comparing(x -> x)).get();
-        System.out.println(liczbaMax4);
+
 
     }
 }
