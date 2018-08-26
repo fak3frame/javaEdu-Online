@@ -243,19 +243,20 @@ public class Zadanie1 {
        -//List<KlasaZLiczba> listObjectX = listObject.stream().collect(toList());
         //Gdy przypisuje do listy DOWOLNEJ musze dac na koncu
        -//listObject.stream().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() )).collect(toList());
-        //Lub gdy uzywam peek na strumieniu (bez tego zadziala ale nie wyswietli
+        //Lub gdy uzywam peek bezposrednio na strumieniu listy (bez tego zadziala ale nie wyswietli
 
 
-        .max(Comparator.comparingInt(x->x)).get();
-        //na liscie z typami prostymi + przypisanie do zmiennej np Integer
-        .max(Comparator.comparing(x -> x.getX())).get();
-        //na liscie z typami obiekotwymu + przypsianie do obiektu klasy
-        // a nastepnie wypisanie na tym obiekcie metoda get
-        int maxIntX = listObject.stream()
-                .map(x -> x.getX())
-                .max(Comparator.comparing(x -> x)).get();
-        //lub z wybraniem z listy obiektow konkretnego pola i jego wartosci
-        // max - wymagane mapowanie do wybranego typu
+        max
+        .max(Comparator.comparingInt(x->x)).get(); //po mapowaniu do typu zwyklaego + przypisanie do typu zwyklego
+        .max(Comparator.comparing(KlasaZLiczba::getX)).get
+       -//KlasaZLiczba zmiennaO = listaObiektow.stream().max(Comparator.comparing(KlasaZLiczba::getX)).get();
+        // System.out.println(zmiennaO.getX());
+        //Uzywam na zmiennej Obiektowej WLASNEJ klasy i przypisuje jej
+        // wybrana zmienna odwolujac sie w Comparatorze do getera :: + metoda get()!!
+        // *NIE MAPUJE bo przypisuje do typu KlasaZLiczba!
+
+
+
 
 
         .allMatch(x -> x>1) //+przypisanie do boolean (lista typ prosty)
@@ -515,6 +516,27 @@ public class Zadanie1 {
         boolean czyPasujeNapisJednegoObiektu = listObject.stream()
                 .anyMatch(x -> x.getNapis().equals("aa"));//true bo jeden napis pasuje
         System.out.println("Czy jakis napis z obiektow pasuje :"+czyPasujeNapisJednegoObiektu);
+
+
+        System.out.println("TEEEEEEEEEEST");
+
+        System.out.println("1");
+        KlasaZLiczba liczbaMax = listObject.stream() //pamietam o type KLASOWYM
+                //nie moge mapowac bo jest typ KlasaZLiczba!!
+                .max(Comparator.comparing(KlasaZLiczba::getX)).get();
+        System.out.println(liczbaMax.getX());//odwolanie do zmiennej
+
+        System.out.println("3");
+        Integer liczbaMax3 = listObject.stream()
+                .map(x -> x.getX())//mapuje bo z listy obiektow do int
+                .max(Comparator.comparing(x -> x)).get();
+        System.out.println(liczbaMax3);
+
+        System.out.println("4");
+        Integer liczbaMax4 = listNumbers.stream()
+                .max(Comparator.comparing(x -> x)).get();
+        System.out.println(liczbaMax4);
+
     }
 }
 
