@@ -285,6 +285,9 @@ public class Zadanie1 {
         // sie do kokretnego pola getem
          */
 
+        //                   END                     //
+
+
 
         /*Operacja na Stream<T>*/
         /*
@@ -540,12 +543,14 @@ public class Zadanie1 {
 
 
         System.out.println("TEEEEEEEEEEST");
-        boolean czyCokolwiekPasuje = listInteger.stream().anyMatch(x->x>1);
-        System.out.println(czyCokolwiekPasuje);
+        Integer mojMax = listInteger.stream()
+                .max(Integer::compare).get();
+        System.out.println(mojMax);
 
-        boolean czyWszystkoPasuje = listObject.stream()
-                .allMatch(x -> x.getX()>1);
-        System.out.println(czyWszystkoPasuje);
+        Integer mojMax2 = listObject.stream()
+                .map(KlasaZLiczba::getX)
+                .max(Integer::compareTo).get();
+        System.out.println(mojMax2);
 
 
 
