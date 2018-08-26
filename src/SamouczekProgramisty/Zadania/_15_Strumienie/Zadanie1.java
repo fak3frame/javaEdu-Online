@@ -184,7 +184,7 @@ public class Zadanie1 {
         //Sluzy np do wyswietlenia,
 
        -//listaZIntegerani.strem().peek(System.out::println).collect(toList())
-        //listaZObiektami.strem().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
+        //listaZObiektami.strem().peek(x -> System.out.println(x.getX() + " "+ x.getNapis())).collect(toList())
         //Uzywam w bezposrednim strumieniu na liscie z elem. prostymi lub
         // obiektowymi MUSZE NA KONCU .collect(toList())!
 
@@ -226,7 +226,7 @@ public class Zadanie1 {
         // listaO.forEach(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()));
        -//List<Stream> listaS = listaObiektow.stream().map(x -> x.getNapis()).collect(toList());
         // listaS.forEach(System.out::println);
-        //Lub w nowej liscie W ODDZIELNEJ LINII, na koncu musze dac Collect(toList())!!
+        //Lub w nowej liscie W ODDZIELNEJ LINII, na koncu stream() musze dac Collect(toList())!!
 
 
         limit //moge wszedzie
@@ -280,6 +280,19 @@ public class Zadanie1 {
         // z listy z ELEMENTAMI PROSTYMI wiec nie musze
         // mapowac
 
+       -//Comparator<KlasaZLiczba> comparatorInt = (x1, x2) -> Integer.compare(x1.getX(), x2.getX());
+        //Comparator<KlasaZLiczba> comparatorString = (x1, x2) -> x1.getNapis().compareTo(x2.getNapis());
+        //KlasaZLiczba najmniejszyWyraz = listObject.stream()
+                .min(comparatorString).get();
+        //System.out.println("najmniejszyWyraz : "+najmniejszyWyraz.getNapis());
+        //KlasaZLiczba najmniejszaLiczba = listObject.stream()
+                .min(comparatorInt).get();
+        //System.out.println("najmniejszaLiczba: "+najmniejszaLiczba.getX());
+        //Lub z uzyciem zmiennej Comparatora
+
+       -//Integer[] numbers = {4,1,10,2,3};
+        //System.out.println("Stream.min(): " + Arrays.stream(numbers).min(Integer::compare).get());
+        //Lub z uzyciem tablicy
 
 
         all/any/noneMatch
@@ -567,6 +580,20 @@ public class Zadanie1 {
                 //.max(Comparator.comparing(x -> x)).get();
                 .max(Comparator.comparing(String::valueOf)).get();
         System.out.println("max napis: "+maxNapis);
+
+        Comparator<KlasaZLiczba> comparatorInt = (x1, x2) -> Integer.compare(x1.getX(), x2.getX());
+        Comparator<KlasaZLiczba> comparatorString = (x1, x2) -> x1.getNapis().compareTo(x2.getNapis());
+
+        KlasaZLiczba najmniejszyWyraz = listObject.stream()
+                .min(comparatorString).get();
+        System.out.println("najmniejszyWyraz : "+najmniejszyWyraz.getNapis());
+
+        KlasaZLiczba najmniejszaLiczba = listObject.stream()
+                .min(comparatorInt).get();
+        System.out.println("najmniejszaLiczba: "+najmniejszaLiczba.getX());
+
+        Integer[] numbers = {4,1,10,2,3};
+        System.out.println("Stream.min(): " + Arrays.stream(numbers).min(Integer::compare).get());
 
 
     }
