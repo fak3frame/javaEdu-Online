@@ -163,13 +163,13 @@ public class Zadanie1 {
         // wyswietlniem z odwolanie do metody ::
 
        -//listaObiekow.stream().map(x -> x.getX()).forEach(System.out::println);
-        //*listaObiekow.stream().forEach(x -> System.out.println(x.getX() + " "+ x.getNapis()));
-        //* bez mapowaania
         //Lub bezposrenim strumieniu na liscie
         // z typem OBIKTOWYM - mapuje (opcjonalnie) zeby wyswietlic zmienna
         // kokretna zmienna np Integer, inaczej bede musial w wyswietleniu
-        // forEach odwolac sie do konkretnego pola/pol, natomiast
-        // w liscie z elementami prostymi nie musze mapowac bo mam
+        // forEach odwolac sie do konkretnego pola/pol,
+        // *listaObiekow.stream().forEach(x -> System.out.println(x.getX() + " "+ x.getNapis()));
+        // * bez mapowaania
+        // natomiast w liscie z elementami prostymi nie musze mapowac bo mam
         // np Integer i moge odwolac sie bezposrenio w forEach sout ::
 
        -//List<Integer> listaX = listaObiektow.stream().map(x -> x.getX());
