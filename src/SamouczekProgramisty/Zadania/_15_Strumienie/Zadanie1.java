@@ -258,13 +258,22 @@ public class Zadanie1 {
        -//Integer liczbaMax3 = listObject.stream()
                 .map(x -> x.getX())//mapuje bo z listy obiektow przypisuje do int
                 .max(Comparator.comparing(x -> x)).get();//WPISUJE x->x bez get bo mapowalem
+                // lub .max(Comparator.comparing(Integer::compare)).get();
+                // lub moge skorzystac z metody Integer::compare w max bo przemapowalem do Integer
+                // .max(Integer::compare).get();
+                // lub jesli przypisuje do String tylko inna metoda
+                // .max(String::valueOf).get();
         // System.out.println(liczbaMax3);
         //Lub na zmiennej prostej wybranego typu pola z klasy np int,
         // uzywam z mapowanie bo musze wyciagnac jeden rodzaj zmiennej z
-        // LISTY OBIEKTOW a nastepnie w comparting zapisuje x->x bez get.
+        // LISTY OBIEKTOW a nastepnie w comparing zapisuje x->x bez get.
+        // lub Integer::compare ew dla String String::valueOf, moge takze
+        // nie uzywac Comparator.comparing tylko w max od razu Integer::compare
         // po tym nie zapominam o get() na koncu!!
 
        -//Integer liczbaMax4 = listNumbers.stream().max(Comparator.comparing(x -> x)).get();
+       -//Integer liczbaMax4 = listNumbers.stream().max(Integer::compare).get();
+        // jesli typ prosty np Integer moge uzyc metody jej klasy w max Integer::compare
         // System.out.println(liczbaMax4);
         //Lub tez z przypisaniem do typ prostego ale
         // z listy z ELEMENTAMI PROSTYMI wiec nie musze
@@ -549,10 +558,14 @@ public class Zadanie1 {
 
         Integer mojMax2 = listObject.stream()
                 .map(KlasaZLiczba::getX)
-                .max(Integer::compareTo).get();
+                .max(Integer::compare).get();
         System.out.println(mojMax2);
 
-
+        String maxNapis = listObject.stream()
+                .map(KlasaZLiczba::getNapis)
+                //.max(Comparator.comparing(x -> x)).get();
+                .max(Comparator.comparing(String::valueOf)).get();
+        System.out.println("max napis: "+maxNapis);
 
 
     }
