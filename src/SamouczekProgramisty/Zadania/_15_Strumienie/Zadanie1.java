@@ -145,7 +145,8 @@ public class Zadanie1 {
 
 
         filter //Predicate<T> | boolean test(T t)
-        .filter(x -> x.getX()>22) / .filter(x -> x.>22)
+        .filter(x -> x.getX()>22) // typ listy obiektowy
+        .filter(x -> x>22) //typ listy prosty lub po mapowaniu
         //moge wszedzie, sluzy do filtrowania, sprawdza wybrany warunek
         // w lambdzie
 
