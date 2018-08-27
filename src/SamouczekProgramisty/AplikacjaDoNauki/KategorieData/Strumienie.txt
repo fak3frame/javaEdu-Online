@@ -1,0 +1,12 @@
+1. Napisz metode .filtr na strumieniu z listy liczb Integer ktora zapisze
+wszystkie liczby parzyste wieksze od 0. Wynik ma byc zapisany do zmiennej
+typu Stream.
+Nastepnie wyswietl kazdy element strumienia w forEach
+/-/
+Stream<Integer> strumien = listaInteger.stream()
+    .filter(x -> x%2==0);
+strumien.forEach(System.out::println);
+/--/
+2.
+
+

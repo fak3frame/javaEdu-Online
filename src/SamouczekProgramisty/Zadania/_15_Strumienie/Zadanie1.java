@@ -339,6 +339,7 @@ public class Zadanie1 {
         integerStream.forEach(System.out::println);
 
 
+
         System.out.println("\n"+"OPERACJE NA STREAM 2:");
         Stream<KlasaZLiczba> klasaZLiczbaStream = listObject.stream()
                 .filter(x -> x.getX()>22)
