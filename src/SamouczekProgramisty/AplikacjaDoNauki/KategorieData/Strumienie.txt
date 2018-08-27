@@ -1,12 +1,22 @@
-1. Napisz metode .filtr na strumieniu z listy liczb Integer ktora zapisze
-wszystkie liczby parzyste wieksze od 0. Wynik ma byc zapisany do zmiennej
+1.
+Napisz metode .filtr na strumieniu z listy liczb Integer ktora zapisze
+wszystkie liczby parzyste wieksze od 0, wynik ma byc zapisany do zmiennej
 typu Stream.
 Nastepnie wyswietl kazdy element strumienia w forEach
-/-/
+Odpowiedz:
 Stream<Integer> strumien = listaInteger.stream()
     .filter(x -> x%2==0);
 strumien.forEach(System.out::println);
-/--/
 2.
+TRESC zadania drugiego
+Odpowiedz:
+xd
+3.
+ZADANIE 3
+Odpowiedz:
+hh3h3h3hh3h3
+4.
+Nowe zadanie
 
-
+Odpowiedz:
+uuuuuuuuuuu

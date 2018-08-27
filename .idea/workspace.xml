@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +25,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ProgramStartowy.ic" NAME="ProgramStartowy Coverage Results" MODIFIED="1527608625775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>_1_ProgramStartowy.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javaEdu_Online$Factory.ic" NAME="Factory Coverage Results" MODIFIED="1535388686384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SamouczekProgramisty.AplikacjaDoNauki.*</FILTER>
     </SUITE>
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -75,7 +77,7 @@
       <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10982">
+            <state relative-caret-position="17">
               <caret line="682" column="70" selection-start-line="682" selection-start-column="64" selection-end-line="682" selection-end-column="70" />
             </state>
           </provider>
@@ -84,8 +86,8 @@
       <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="1242" column="48" selection-start-line="1242" selection-start-column="48" selection-end-line="1242" selection-end-column="48" />
+            <state relative-caret-position="147">
+              <caret line="402" column="19" selection-start-line="402" selection-start-column="16" selection-end-line="402" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -99,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Factory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Factory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="79">
+              <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kategorie.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Kategorie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="-6">
+              <caret line="62" column="53" lean-forward="true" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,8 +128,13 @@
       <file leaf-file-name="Strumienie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,8 +142,8 @@
       <file leaf-file-name="Strumienie.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="357">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -156,12 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>datain</find>
-      <find>static</find>
-      <find>stat</find>
-      <find>class wew</find>
-      <find>listy</find>
-      <find>dziedziczenie</find>
       <find>integer</find>
       <find>override</find>
       <find>sca</find>
@@ -186,6 +187,12 @@
       <find>get()</find>
       <find>stream</find>
       <find>plikach</find>
+      <find>regular</find>
+      <find>while</find>
+      <find>dopasowanie</find>
+      <find>matcher</find>
+      <find>entryse</find>
+      <find>try</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -246,11 +253,11 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie/Strumienie.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Strumienie.txt" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" />
       </list>
     </option>
   </component>
@@ -351,7 +358,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last.edited.regexp" value="12314" />
+    <property name="last.edited.regexp" value="Odpowiedz:" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -517,13 +524,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01204" summary="Strumienie 15">
-      <created>1534775067227</created>
-      <option name="number" value="01204" />
-      <option name="presentableId" value="LOCAL-01204" />
-      <option name="project" value="LOCAL" />
-      <updated>1534775067227</updated>
     </task>
     <task id="LOCAL-01205" summary="Strumienie 16">
       <created>1534775267221</created>
@@ -861,7 +861,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535307853686</updated>
     </task>
-    <option name="localTasksCounter" value="1253" />
+    <task id="LOCAL-01253" summary="Strumienie 64">
+      <created>1535365763077</created>
+      <option name="number" value="01253" />
+      <option name="presentableId" value="LOCAL-01253" />
+      <option name="project" value="LOCAL" />
+      <updated>1535365763081</updated>
+    </task>
+    <option name="localTasksCounter" value="1254" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -898,6 +905,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -932,7 +940,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strumienie 39" />
     <MESSAGE value="Strumienie 40" />
     <MESSAGE value="Strumienie 41" />
     <MESSAGE value="Strumienie 42" />
@@ -957,7 +964,8 @@
     <MESSAGE value="Strumienie 61" />
     <MESSAGE value="Strumienie 62" />
     <MESSAGE value="Strumienie 63" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 63" />
+    <MESSAGE value="Strumienie 64" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 64" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1091,7 +1099,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10982">
+        <state relative-caret-position="17">
           <caret line="682" column="70" selection-start-line="682" selection-start-column="64" selection-end-line="682" selection-end-column="70" />
         </state>
       </provider>
@@ -1105,39 +1113,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="1242" column="48" selection-start-line="1242" selection-start-column="48" selection-end-line="1242" selection-end-column="48" />
+        <state relative-caret-position="147">
+          <caret line="402" column="19" selection-start-line="402" selection-start-column="16" selection-end-line="402" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="-6">
+          <caret line="62" column="53" lean-forward="true" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="79">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
