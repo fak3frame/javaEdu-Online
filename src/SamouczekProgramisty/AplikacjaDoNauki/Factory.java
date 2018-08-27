@@ -11,9 +11,11 @@ public class Factory {
         Map<String, Map> baza = new HashMap<>();
         baza.put(s.nazwa, s.start());
 
+        List<String> listaCzytajaca = new ArrayList<>();
 
         Scanner wejscie = new Scanner(System.in);
         int przelacznik;
+        String pokazOdpowiedz;
         int counter;
         while (true) {
             try{
@@ -29,24 +31,20 @@ public class Factory {
                 if(przelacznik == 0){
                     break;
                 }
-                switch (przelacznik){
-                    case 1:
-                        System.out.println("Wybierz zadanie:");
 
-//                        for(Map.Entry<String, Map> x : baza.entrySet()){
-//                            for(int j = 1; j <x.getValue().values().size(); j++){
-//                                System.out.println(x.getValue().get(j));
-//                            }
-//                        }
-                        List<String> xx = (List)baza.get("Strumienie").get(1);
-                        System.out.println(xx.get(1));
-                        System.out.println(xx.get(2));
-                        System.out.println(xx.get(3));
+                System.out.println("Wybierz zadanie:"+"\n");
+                listaCzytajaca = (List)baza.get("Strumienie").get(przelacznik);
+                for (int i=0; i<listaCzytajaca.size(); i++){
+                    System.out.println(listaCzytajaca.get(i));
+                }
 
-                        System.out.println("Wcisniej enter zeby poznac odpowiedz");
-
-
-                        break;
+                System.out.println("\n"+"Wcisnij \"-\" zeby poznac odpowiedz");
+                pokazOdpowiedz = wejscie.nextLine();
+                if(pokazOdpowiedz.equals("-")){
+                    listaCzytajaca = (List)baza.get("Strumienie").get(przelacznik+1);
+                    for(int i = 0; i<listaCzytajaca.size(); i++){
+                        System.out.println(listaCzytajaca.get(i));
+                    }
                 }
 
             }catch (InputMismatchException e){
