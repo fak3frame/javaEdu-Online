@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 66">
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/WzorceProjektowe/Budowniczy/Fabryka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/WzorceProjektowe/Budowniczy/Samochod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/WzorceProjektowe/empty" afterDir="false" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="Strumienie 68">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,15 +45,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Stringi" value="114" />
-          <entry key="java" value="49790" />
+          <entry key="java" value="49844" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="358" />
+          <entry key="txt" value="448" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="49790" />
-          <entry key="PLAIN_TEXT" value="472" />
+          <entry key="JAVA" value="49844" />
+          <entry key="PLAIN_TEXT" value="562" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -84,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="461" column="61" selection-start-line="461" selection-start-column="56" selection-end-line="461" selection-end-column="61" />
+            <state relative-caret-position="274">
+              <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -108,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+            <state relative-caret-position="493">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="272">
+              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -132,10 +126,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="13" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#433#434#0" expanded="true" />
                 <element signature="e#469#470#0" expanded="true" />
               </folding>
@@ -146,10 +139,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#425#426#0" expanded="true" />
                 <element signature="e#461#462#0" expanded="true" />
               </folding>
@@ -160,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -169,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -190,7 +182,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scann</find>
       <find>sort</find>
       <find>import</find>
       <find>hashcode</find>
@@ -217,9 +208,10 @@
       <find>try</find>
       <find>scanner</find>
       <find>strumie</find>
-      <find>map</find>
       <find>listy</find>
       <find>random</find>
+      <find>trim</find>
+      <find>map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -234,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/Sortowanie.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/KlasaAnonimowa.java" />
@@ -279,12 +270,13 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/WzorceProjektowe/Samochod.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/WzorceProjektowe/Budowniczy/Fabryka.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/WzorceProjektowe/Budowniczy/Samochod.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java" />
       </list>
     </option>
   </component>
@@ -396,7 +388,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535499737257" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535500703583" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -553,20 +545,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01207" summary="Strumienie 18">
-      <created>1534775528298</created>
-      <option name="number" value="01207" />
-      <option name="presentableId" value="LOCAL-01207" />
-      <option name="project" value="LOCAL" />
-      <updated>1534775528298</updated>
-    </task>
-    <task id="LOCAL-01208" summary="Strumienie 19">
-      <created>1534775746114</created>
-      <option name="number" value="01208" />
-      <option name="presentableId" value="LOCAL-01208" />
-      <option name="project" value="LOCAL" />
-      <updated>1534775746114</updated>
     </task>
     <task id="LOCAL-01209" summary="Strumienie 20">
       <created>1534776146838</created>
@@ -897,7 +875,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535473119687</updated>
     </task>
-    <option name="localTasksCounter" value="1256" />
+    <task id="LOCAL-01256" summary="Strumienie 67">
+      <created>1535499733650</created>
+      <option name="number" value="01256" />
+      <option name="presentableId" value="LOCAL-01256" />
+      <option name="project" value="LOCAL" />
+      <updated>1535499733650</updated>
+    </task>
+    <task id="LOCAL-01257" summary="Strumienie 68">
+      <created>1535499820411</created>
+      <option name="number" value="01257" />
+      <option name="presentableId" value="LOCAL-01257" />
+      <option name="project" value="LOCAL" />
+      <updated>1535499820411</updated>
+    </task>
+    <option name="localTasksCounter" value="1258" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -978,8 +970,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strumienie 42" />
-    <MESSAGE value="Strumienie 43" />
     <MESSAGE value="Strumienie 44" />
     <MESSAGE value="Strumienie 45" />
     <MESSAGE value="Strumienie 46" />
@@ -1003,7 +993,9 @@
     <MESSAGE value="Strumienie 64" />
     <MESSAGE value="Strumienie 65" />
     <MESSAGE value="Strumienie 66" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 66" />
+    <MESSAGE value="Strumienie 67" />
+    <MESSAGE value="Strumienie 68" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strumienie 68" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1120,55 +1112,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt">
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="493">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="461" column="61" selection-start-line="461" selection-start-column="56" selection-end-line="461" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1179,13 +1129,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Factory.java">
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+        <state relative-caret-position="274">
+          <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
         </state>
       </provider>
     </entry>

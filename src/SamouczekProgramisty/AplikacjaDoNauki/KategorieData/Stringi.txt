@@ -1,5 +1,15 @@
 1.
-Napisz metode na zmiennej String "imie" ktora obetnie wszystkie biale znaki na poczatku i koncu
+Napisz metode na zmiennej String "imie" ktora OBETNIE wszystkie biale znaki na poczatku i koncu
 
 Odpowiedz:
 imie = imie.trim();
+
+2.
+Napisz metode na zmiennej String "imie" ktora zamieni wszystkie znaki na WIELKIE
+Odpowiedz:
+imit = imie.toUpperCase()
+
+3.
+Napisz metode na zmiennej String "imie" ktora zamieni wszystkie znaki na MAŁE
+Odpowiedz:
+imit = imie.toLowerCase();

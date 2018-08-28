@@ -21,7 +21,7 @@ public class FactoryEntryCategory {
 
                 nrZadania = (nrZadaniaGenerator.nextInt(liczbaZadanKategorii))+1;
 
-                System.out.println("---------------------------------------------");
+                System.out.println("\n"+"---------------------------------------------");
                 System.out.println("\n"+"Wylosowalem zadanie : "+nrZadania + "\n");
 
                 listaCzytajacaPyanie = baza.get((nrZadania*2)-1);
@@ -31,14 +31,15 @@ public class FactoryEntryCategory {
                     System.out.println(listaCzytajacaPyanie.get(i));
                 }
 
-                System.out.println("\n" + "Wcisnij \"-\" zeby poznac odpowiedz");
+                System.out.println("\n" + "Wcisnij \"a\" zeby poznac odpowiedz");
                 System.out.println("Lub \"e\" by wrocic do menu");
                 System.out.println("Lub dowolny znak by wylosowac kolejne pytanie");
                 wejscieWyjscie = wejscie.nextLine();
                 if(wejscieWyjscie.equals("e")){
                     break;
                 }
-                else if(wejscieWyjscie.equals("-")){
+                else if(wejscieWyjscie.equals("a")){
+                    System.out.println();
                     listaCzytajacaOdpowiedz = baza.get(nrZadania*2);
                     for(int i=0; i<listaCzytajacaOdpowiedz.size(); i++){
                         System.out.println(listaCzytajacaOdpowiedz.get(i));
