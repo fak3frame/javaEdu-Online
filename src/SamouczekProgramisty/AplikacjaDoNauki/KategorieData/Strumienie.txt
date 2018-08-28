@@ -7,16 +7,3 @@ Odpowiedz:
 Stream<Integer> strumien = listaInteger.stream()
     .filter(x -> x%2==0);
 strumien.forEach(System.out::println);
-2.
-TRESC zadania drugiego
-Odpowiedz:
-xd
-3.
-ZADANIE 3
-Odpowiedz:
-hh3h3h3hh3h3
-4.
-Nowe zadanie
-
-Odpowiedz:
-uuuuuuuuuuu

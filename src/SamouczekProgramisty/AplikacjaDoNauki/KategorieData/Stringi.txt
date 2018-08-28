@@ -1,0 +1,5 @@
+1.
+Napisz metode na zmiennej String "imie" ktora obetnie wszystkie biale znaki na poczatku i koncu
+
+Odpowiedz:
+imie = imie.trim();

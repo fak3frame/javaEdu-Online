@@ -6,10 +6,10 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Strumienie extends Kategorie {
-    public Strumienie() {
-        nazwa = "Strumienie";
-        lokalizacjaPliku = "src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt";
+public class Stringi extends Kategorie {
+    public Stringi() {
+        nazwa = "Stringi";
+        lokalizacjaPliku = "src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt";
     }
 
     @Override

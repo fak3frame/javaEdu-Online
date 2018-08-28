@@ -13,25 +13,23 @@ public class FactoryEntryCategory {
 
     String wejscieWyjscie;
 
-    String przelacznikPokazOdpowiedz;
-
-
-    public void entryMenu(Map<Integer, List> baza, int przelacznikKategorii) {
+    public void entryMenu(Map<Integer, List> baza) {
         while (true){
             try {
+
                 liczbaZadanKategorii = (baza.keySet().size())/2;
 
                 nrZadania = (nrZadaniaGenerator.nextInt(liczbaZadanKategorii))+1;
 
+                System.out.println("---------------------------------------------");
                 System.out.println("\n"+"Wylosowalem zadanie : "+nrZadania + "\n");
 
+                listaCzytajacaPyanie = baza.get((nrZadania*2)-1);
 
-                listaCzytajacaPyanie = baza.get(nrZadania);
+
                 for (int i = 0; i<listaCzytajacaPyanie.size(); i++){
                     System.out.println(listaCzytajacaPyanie.get(i));
                 }
-
-
 
                 System.out.println("\n" + "Wcisnij \"-\" zeby poznac odpowiedz");
                 System.out.println("Lub \"e\" by wrocic do menu");
@@ -41,20 +39,11 @@ public class FactoryEntryCategory {
                     break;
                 }
                 else if(wejscieWyjscie.equals("-")){
-                    listaCzytajacaOdpowiedz = baza.get(nrZadania+1);
+                    listaCzytajacaOdpowiedz = baza.get(nrZadania*2);
                     for(int i=0; i<listaCzytajacaOdpowiedz.size(); i++){
                         System.out.println(listaCzytajacaOdpowiedz.get(i));
                     }
                 }
-
-
-//                przelacznikPokazOdpowiedz = wejscieDoOdpowiedzi.nextLine();
-//                if (przelacznikPokazOdpowiedz.equals("-")) {
-//                    listaCzytajacaOdpowiedz = baza.get(nrZadania+1);
-//                    for (int i = 0; i < listaCzytajacaOdpowiedz.size(); i++) {
-//                        System.out.println(listaCzytajacaOdpowiedz.get(i));
-//                    }
-//                }
 
             }catch (InputMismatchException e){
                 wejscie.next();

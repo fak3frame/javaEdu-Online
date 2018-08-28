@@ -1,6 +1,7 @@
 package SamouczekProgramisty.AplikacjaDoNauki;
 
 import SamouczekProgramisty.AplikacjaDoNauki.KategorieData.FactoryEntryCategory;
+import SamouczekProgramisty.AplikacjaDoNauki.KategorieData.Stringi;
 import SamouczekProgramisty.AplikacjaDoNauki.KategorieData.Strumienie;
 
 import java.util.*;
@@ -8,18 +9,20 @@ import java.util.*;
 public class Factory {
 
     public static void main(String[] args) {
-        Strumienie s = new Strumienie();
+        Strumienie strumienie = new Strumienie();
+        Stringi stringi = new Stringi();
 
-        Map<String, Map> baza = new HashMap<>();
-        baza.put(s.nazwa, s.start());
 
-        List<String> listaCzytajaca = new ArrayList<>();
+        Map<String, Map> baza = new LinkedHashMap<>();
+        baza.put(strumienie.nazwa, strumienie.start());
+        baza.put(stringi.nazwa, stringi.start());
 
         Scanner wejscieDoPytania = new Scanner(System.in);
-        Scanner  wejscieDoOdpowiedzi = new Scanner(System.in);
+
+        List<String> listaKategorii = new ArrayList<>();
 
         int przelacznikKategorii;
-        String przelacznikPokazOdpowiedz;
+
         int licznikKategorii;
 
         while (true) {
@@ -32,30 +35,19 @@ public class Factory {
                     System.out.println(licznikKategorii+" : "+x.getKey());
                     licznikKategorii++;
                 }
+                System.out.println("licznik kategorii: "+licznikKategorii);
 
                 przelacznikKategorii = wejscieDoPytania.nextInt();
                 if(przelacznikKategorii == 0){
                     break;
                 }
 
-                FactoryEntryCategory entryCategory = new FactoryEntryCategory();
-                entryCategory.entryMenu(baza.get("Strumienie"), przelacznikKategorii);
+                for(String x : baza.keySet()){
+                    listaKategorii.add(x);
+                }
 
-//                System.out.println("Wybierz zadanie:"+"\n");
-//                listaCzytajaca = (List)baza.get("Strumienie").get(przelacznikKategorii);
-//                for (int i=0; i<listaCzytajaca.size(); i++){
-//                    System.out.println(listaCzytajaca.get(i));
-//                }
-//
-//                System.out.println("\n"+"Wcisnij \"-\" zeby poznac odpowiedz");
-//                przelacznikPokazOdpowiedz = wejscieDoOdpowiedzi.nextLine();
-//                if(przelacznikPokazOdpowiedz.equals("-")){
-//                    //listaCzytajaca = new ArrayList<>();
-//                    listaCzytajaca = (List)baza.get("Strumienie").get(przelacznikKategorii+1);
-//                    for(int i = 0; i<listaCzytajaca.size(); i++){
-//                        System.out.println(listaCzytajaca.get(i));
-//                    }
-//                }
+                FactoryEntryCategory entryCategory = new FactoryEntryCategory();
+                entryCategory.entryMenu(baza.get(listaKategorii.get(przelacznikKategorii-1)));
 
             }catch (InputMismatchException e){
                 System.out.println("Zly znak");
