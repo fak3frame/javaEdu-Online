@@ -290,6 +290,9 @@ class Wew4{///////////////////////////////////////////////////////
          Samochod - nadklasa/klasa bazowa
          SUV - podklasa/klasa pochodna
 
+         Obiekt klasy ktora dziedziczy ma dostep do wszystkich pol
+          i metod klasay bazowej
+
          -----
          //modyfikatory
          public - dostepny wszedzie
@@ -330,7 +333,7 @@ class Wew4{///////////////////////////////////////////////////////
           bezparametrowy (ukryty) przestaje isniec!
 
          -----
-         Klasa z modyfikatorem final nie moze byc rozszerzana!
+         Klasy i metody z modyfikatorem final nie moze byc rozszerzana!
 
 
 

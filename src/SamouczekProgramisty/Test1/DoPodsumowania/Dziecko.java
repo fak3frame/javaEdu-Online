@@ -14,7 +14,7 @@ public class Dziecko extends Ojciec {
 
     }
     public Dziecko(int a){
-        super(a);
+
         System.out.println("dziecko z param");
         this.a = a;
     }
@@ -22,5 +22,7 @@ public class Dziecko extends Ojciec {
     public static void main(String[] args) {
         Dziecko d = new Dziecko(2);
         Ojciec o = new Dziecko(2);
+        System.out.println(d.a);
+        System.out.println(d.x);
     }
 }
