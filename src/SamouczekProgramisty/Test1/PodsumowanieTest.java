@@ -6,8 +6,6 @@ public class PodsumowanieTest {
 
     int xD;
 
-    final String napisXX;
-    final int liczbaXX;
 
     final static int liczbaX = 40;
 
@@ -44,8 +42,7 @@ public class PodsumowanieTest {
     }
 
     public PodsumowanieTest(String napisXX, int liczbaXX){
-        this.napisXX = napisXX;
-        this.liczbaXX = liczbaXX;
+
 
     }
 

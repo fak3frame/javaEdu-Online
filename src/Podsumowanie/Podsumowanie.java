@@ -233,7 +233,8 @@ class Wew3{/////////////////////////////////////////////////////
         -----
         Moge w jednym konstruktorze odwolac sie do innego np
          w jedno lub bez parametrowym odwolac sie do dwuparamterowego
-         sluszy do tego slowo this
+         sluszy do tego slowo this i MUSI BYC ONO NA POCZATKU
+         KODU KONSTRUKTORA!
 
         int a;
         public Podsumowanie(){
@@ -266,7 +267,13 @@ class Wew4{///////////////////////////////////////////////////////
         }
 }/////////////////////////////////////////////////////////////////
 
+         -----
+         W przypadku dziedziczenia moge odwolac sie z konstruktora
+          podklasy do konstruktora klasy bazowej tylko zamiast
+          slowa this uzywam super i musi ono byc na poszatku
+          konstruktora
          */
+
     }
 }
 
