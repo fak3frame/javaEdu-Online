@@ -329,6 +329,9 @@ class Wew4{///////////////////////////////////////////////////////
          Musze pamietac ze jesli zadeklaruje konstruktor z parametrami to ten
           bezparametrowy (ukryty) przestaje isniec!
 
+         -----
+         Klasa z modyfikatorem final nie moze byc rozszerzana!
+
 
 
          */
