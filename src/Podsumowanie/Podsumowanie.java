@@ -108,6 +108,39 @@ public class Podsumowanie {
 
 
 
+        -----ZMIENNA STRING-----
+        */
+        String jakisString = "costam";
+        String jakisStringZLiczba = "costam123";
+        String laczonyString = "costam123" + 123;
+        String laczonyString2 = laczonyString + 345;
+
+        String stringZInta = String.valueOf(123);
+
+        //Standardowo String nie moze miec przypisane zmiennej int
+        // lecz jesli zrobie to z konkatenacja + np x + "" to wszystko
+        // zostanie przypisane do zmiennej String
+
+
+
+
+        /*
+        -----ZMIENNA INTEGER-----
+        */
+        Integer integer = 123;
+        Integer integer1 = new Integer("123123");
+        Integer integer2 = new Integer(12345);
+
+        String liczbaString = "123";
+
+        int intZeString = Integer.parseInt(liczbaString);
+        Integer IntegerZeString = Integer.parseInt(liczbaString);
+
+        Integer.valueOf(123);
+
+
+
+        /*
         -----METODY-----
 
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
@@ -283,6 +316,18 @@ class Wew4{///////////////////////////////////////////////////////
           podklasy do konstruktora klasy bazowej tylko zamiast
           slowa this uzywam super i musi ono byc NA POCZATKU
           konstruktora
+
+         -----
+         //metoda toString
+
+         kazda klasa powinna miec metode toString aby moc wyswietlic obiekt
+          w System.out zamiast adresu referencji
+
+         public String toString(){
+            return "zmienna a = " + a;
+         }
+
+
 
 
 

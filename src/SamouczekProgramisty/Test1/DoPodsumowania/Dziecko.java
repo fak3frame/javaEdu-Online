@@ -6,7 +6,7 @@ public class Dziecko extends Ojciec {
 
     @Override
     public String toString() {
-        return "zmiinna a = "
+        return "zmiinna a = "+a;
     }
 
     void metoda(int a){
