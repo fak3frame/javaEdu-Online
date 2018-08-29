@@ -72,7 +72,7 @@ public class Obiekty_1 {
         teraz korzystam z metody przyjmujacej obiekt na ktorym wewnatrz
          metody korzysta z akcesorow
         Motoda bez sensu poniewaz moge uzyc slowka this. i odniesc sie
-         do pol obiektu na ktorym wywolywana jest metoda !
+         do pol obiektu na ktorym wywolywana jest metodaZwykla !
 
 
         WYSYLAM REFERENCJE ! - jest to KOPIA adresu obieku, jesli zmienie wartosci
@@ -86,15 +86,15 @@ public class Obiekty_1 {
         System.out.println("\n"+"-4-");
         Punkt punkt4 = new Punkt();
         punkt4.ustawX(77);
-        Punkt.zwiekszX(punkt4); //metoda statyczna
+        Punkt.zwiekszX(punkt4); //metodaZwykla statyczna
         System.out.println(punkt4.dajX());
 
         System.out.println("\n"+"-5-");
         System.out.println("obiekt.sumujXY() : "+punkt3.sumujXY());//wykorzystam zmienne w obiekcie
-        //metoda nie przyjmuje wartosci tylko zwraca sume pol obiektu
+        //metodaZwykla nie przyjmuje wartosci tylko zwraca sume pol obiektu
         // majac do nich dostep dzieki wywolaniu jej na konktetnym obiekcie
         // z ustalonymi polami, wykorzystje this.
-        //metoda moze nazywac sie tak sama jak inna jesli przyjmuje inna ilosc paramtrow
+        //metodaZwykla moze nazywac sie tak sama jak inna jesli przyjmuje inna ilosc paramtrow
         // lub inny ich rodzaj
 
 
@@ -206,14 +206,14 @@ public class Obiekty_1 {
         //-------Dziedziczenie  2 + instrukcja super()-------------------
         /*
         Instrukcji super() uzywam do wywolanie konstruktora klasy nadrzednej.
-        // lub metody. super.metoda()
+        // lub metody. super.metodaZwykla()
         Ilosc parametrow jakie w nim umieszcze decyduje ktory to konstuktor
          np. super("","",0); wywola mi 3-param. konstruktor klasy nadrzednej
         Instrukcja super() musi byc ZAWSZE na poczatku w konstruktorze
         Zawsze dodawana jest automatycznie instukcja niejawna super(); w kazdym
          konstruktorze chyba ze zadeklaruje wlasna
 
-        Wywolanie metody z klasy nadrzednej uzywamy z "." np. super.metoda();
+        Wywolanie metody z klasy nadrzednej uzywamy z "." np. super.metodaZwykla();
          i nie musi byc ona juz na poczatku deklracji metody
          */
         System.out.println("\n"+"Dziedziczenie 2");
@@ -260,18 +260,18 @@ class Punkt{
         return wspY;
     }
 
-    static int odejmujLiczby(int x, int y){ //metoda statyczne - moge ja wywolac
+    static int odejmujLiczby(int x, int y){ //metodaZwykla statyczne - moge ja wywolac
         // z uzyciem nazwy klasy Punkt.odejmujLiczby(liczba1, liczba2);
         return x-y;
     }
 
     int sumujXY(){
         return this.wspX + this.wspY; //korzystam ze zmiennych obiektu
-        //na ktorym zostaje wywolana metoda
+        //na ktorym zostaje wywolana metodaZwykla
     }
     int sumujXY(Punkt pkt){ //z wykorzystaniem obiektu
         return pkt.dajX()+pkt.dajY();
-        //uzywam akcesrow na obiekcie na ktorym zostala wywolana metoda
+        //uzywam akcesrow na obiekcie na ktorym zostala wywolana metodaZwykla
     }
 
     static void zwiekszX(Punkt pkt){
@@ -422,7 +422,7 @@ class Pielegniarka extends Pracownik2{
 
     @Override
     public void pokazCos() {
-        super.pokazCos(); //wywolanie metody super z metoda, nie musi byc na poczatku
+        super.pokazCos(); //wywolanie metody super z metodaZwykla, nie musi byc na poczatku
         System.out.println("Pielegniarka");
         super.pokazCos();
     }

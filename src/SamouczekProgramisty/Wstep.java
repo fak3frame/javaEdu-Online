@@ -87,6 +87,7 @@ public class Wstep {
             return liczba>100;
         }
         void powiedzCos(){
+
             return;
             //Metoda void moze posiadac slowo retrun ale nie moze nic zwracac
         }
@@ -94,7 +95,7 @@ public class Wstep {
 
         //Metoda moze takze wywolywac w wyniku inna metode i sprawdzac czy wynik
         // jest taki sam. jesli bedzie taki sam da true
-        // return ! metoda();
+        // return ! metodaZwykla();
     class WeW4{////////////////////////////////
         int a;
         public boolean isOdd() {
@@ -276,8 +277,8 @@ public class Wstep {
         klasa moze byc poprzedzona modyfikatorem public lub zadnym
 
         SYGNATURA METODY jest to nazwa metody oraz jaki typ przyjmuje
-        public int mojaMetoda(int nazwa)
-        jej sygantura: mojaMetoda(int)
+        public int mojaStatycznaMetoda(int nazwa)
+        jej sygantura: mojaStatycznaMetoda(int)
 
         //Przeciazenia vs Przesloniecie
         Przesloniecie metody (override) wystepuje gdy klasa pochodna
@@ -287,7 +288,7 @@ public class Wstep {
          nazwie ale przyjmujacej inne argumenty
 
         //Dziedzieczenie cd.
-        metoda super.metoda(); wywoluje metode klasy bazowej o nazwie metoda();
+        metodaZwykla super.metodaZwykla(); wywoluje metode klasy bazowej o nazwie metodaZwykla();
 
         public Konstruktor()
             return this(new Klasa);
@@ -338,11 +339,11 @@ public class Wstep {
             metoda2();
         void metoda2()
             metoda3();
-        void metoda 3()
+        void metodaZwykla 3()
             throw new IllegalArgumentException("Liczba za mala");
 
         Wywolujac metode 1 w wyniku (stacktrace) otrzymamy najpierw
-         otrzymamy wyjatek a nastpnie wywolanie metod od konca(metoda 3-2-1)
+         otrzymamy wyjatek a nastpnie wywolanie metod od konca(metodaZwykla 3-2-1)
          jest to STOS WYWOLAN
 
         Exception in thread "main" java.lang.IllegalArgumentException: Liczba za mala
@@ -654,7 +655,7 @@ public class Wstep {
         //Ale po mimo tego ze parametryzuje go typem Prostokat to mege przypisac
         // obiekt Kwadrat poniwaz dziedziczy
         System.out.println("p2 daj nazwe: "+p2.dajNazwe());//Da kwadrat tylko
-        // dlatego ze metoda Prostokata jest nadpisywana
+        // dlatego ze metodaZwykla Prostokata jest nadpisywana
         System.out.println(p2.getClass()); //da pudelkoFigur tylko
 
 
@@ -795,7 +796,7 @@ public class Wstep {
 
 
         //f(klasa<? super Prostokat> obiekt) - “lower bound”
-        //Ta metoda moze operwac tylko na obiektach typu klasy WYZEJ Prostokatu
+        //Ta metodaZwykla moze operwac tylko na obiektach typu klasy WYZEJ Prostokatu
         // tzn InnePudelko4<Object>,<Figura>,<Prostokat>
         class InnePudelko4<T> {
             private T zmienna;
@@ -899,7 +900,7 @@ public class Wstep {
             public boolean equals(Object obj) {
                 if(obj == null)
                     return false;
-                //Zamiast sprawdzania instance of moge sprawdzic czy metoda
+                //Zamiast sprawdzania instance of moge sprawdzic czy metodaZwykla
                 // getClass() wywolana na obu obiektach zwroci ta sama
                 // wartosc
                 //if(obj.getClass() != this.getClass())
@@ -1133,7 +1134,7 @@ public class Wstep {
         //FileOutputStream zapisuje dane bajt po bajcie
         //DataOutputStream zapewnia bunarny zapis typow prymitywnych
         strumienWyjsciowy.writeInt(12355);
-        //Ta metoda zapisze typy proste jak int w sposob binarny
+        //Ta metodaZwykla zapisze typy proste jak int w sposob binarny
         if (strumienWyjsciowy != null) {
             strumienWyjsciowy.close();
         }
@@ -1333,9 +1334,9 @@ public class Wstep {
     void metoda(){///////////////////////////////////
         try(ObjectOutputStream strumienWyjsciowy = new ObjectOutputStream(new FileOutputStream("plik.bin"))){
             strumienWyjsciowy.writeObject(Integer.valueOf(4321));
-            //Zapisuje obiekt do stumienia metoda writeObject ktora zapisuje ta
+            //Zapisuje obiekt do stumienia metodaZwykla writeObject ktora zapisuje ta
             // zmienna jako Object wiec w odzycie bede musial RZUTOWAC!!
-            //Ta metoda moze przyjac wszystko
+            //Ta metodaZwykla moze przyjac wszystko
             strumienWyjsciowy.writeObject(Integer.parseInt("1234"));
             //moge takze uzyc metody writeInt aby zamisac zmienne jako int
             strumienWyjsciowy.writeInt(1234);
@@ -1347,13 +1348,13 @@ public class Wstep {
         try(ObjectInputStream strumienWejsciowy = new ObjectInputStream(new FileInputStream("plik.bin"))){
             Integer numer = (Integer)strumienWejsciowy.readObject();
             //Odczytuje pierwszy OBIEKT i zapisuje go do zmiennej obiektowej
-            // musze rzutowac poniewaz jest to typ Object - metoda readObject();
+            // musze rzutowac poniewaz jest to typ Object - metodaZwykla readObject();
             //Obiekty/zmienne zostaja zapisane w kolejnosci w jakiej byly dodane czyly 1,2
             System.out.println("numer 1: "+numer);
             numer = (Integer)strumienWejsciowy.readObject();
             System.out.println("numer 2: "+numer);
             int zmiennaInt = strumienWejsciowy.readInt();
-            //odczytuje zmienna metoda readInt wiec nie musze rzutowac
+            //odczytuje zmienna metodaZwykla readInt wiec nie musze rzutowac
             System.out.println("zmienna INT: "+zmiennaInt);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -1495,7 +1496,7 @@ public class Wstep {
         //Specjalna obsługa serializacji/deserializacji
         /*
         Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
-         jak ma byc serializowany OBIEKT metoda writeObject(obiekt) tzn
+         jak ma byc serializowany OBIEKT metodaZwykla writeObject(obiekt) tzn
          jakie jego pola maja byc serializowane!
 
         W zaleznosci od ilosci pol klasy moge dodac do strumienia pojedyncze jej
@@ -1536,7 +1537,7 @@ public class Wstep {
         W serializacji bloku try dodaje obiekt do stumienia strWyj.readObject(silnik) oraz
          moge dodatkowo dodac do strumienia zmienna int - strWyj.writeInt(zmiennaInt) i bede
          mogl w takim przypadku dostac sie do niej w bloku try w deserializacji. Dodanie
-         do strumienia zmiennej metoda writeInt nie ma nic wspolengo z moja metoda
+         do strumienia zmiennej metodaZwykla writeInt nie ma nic wspolengo z moja metodaZwykla
          writeObject()!!
          Zmienne dodane w metodzie writeObject sa dostepne tylko w metodzie readObject!!
 
@@ -1564,7 +1565,7 @@ public class Wstep {
         int wiek = Calendar.getInstance().get(Calendar.YEAR) - strWej.readInt();
         //Tworze zmienna lokalna i odejmuje w niej aktualny rok od roku urodzenia
         // zapisanego do strumienia w metodzie writeObject. dostaje sie do niego
-        // metoda strWej.readInt() - nie musze podawac nazwy bo dane wyciagane
+        // metodaZwykla strWej.readInt() - nie musze podawac nazwy bo dane wyciagane
         // sa w kolejnosci dodania - musze o niej pamietac oraz rodzaju zmiennej
         // aby uzyc poprawnej metody na strumieniu wejsciowym
          */
@@ -1581,8 +1582,8 @@ public class Wstep {
                 stringTans = strWej.readUTF(); //mam dostep do pol klasy wiec nie musze ich deklarowac
                 stringNormalny = strWej.readUTF();
                 liczba = strWej.readInt();
-                //Dodajew szystkie przyspisania do pol klasy ale moge zrobic to jedna metoda
-                // strWej.defaultReadObject(); - jest to standardowa metoda dzialania metody
+                //Dodajew szystkie przyspisania do pol klasy ale moge zrobic to jedna metodaZwykla
+                // strWej.defaultReadObject(); - jest to standardowa metodaZwykla dzialania metody
                 // readObject jesli jej nie zadeklaruje czyli dodanie wszystkich pol obiektu
                 // klasy do strumienia OBIEKTU
             }
@@ -1590,10 +1591,10 @@ public class Wstep {
                 //Na poczatku moge dodac strWyj.defaultWriteObject() aby
                 // zostal zapisany obiekt w calosci (wszystkie jego pola automatycznie)
                 // czyli to co ponizej
-                //Jest to standardowa metoda writeObject jesli nie stworze jej wlasnej
+                //Jest to standardowa metodaZwykla writeObject jesli nie stworze jej wlasnej
                 // deklaracji
                 strWyj.writeUTF(stringTans);
-                //wybrana metoda zapisu zalezna od rodzaju zmiennej
+                //wybrana metodaZwykla zapisu zalezna od rodzaju zmiennej
                 //moge nawet zapisac zmienna z parametrem Transient
                 strWyj.writeUTF(stringNormalny);
                 strWyj.writeInt(liczba+10);
@@ -1790,7 +1791,7 @@ public class Wstep {
 
 
         Metody:
-        mojEnum.vaues(); - metoda statyczna - wywolywana na nazwie enum/klasy
+        mojEnum.vaues(); - metodaZwykla statyczna - wywolywana na nazwie enum/klasy
          zwraca wartosci w fotmie tabeli typu wyliczeniowego:
          mojEnum.S, mojEnum.M itp., mozna
          uzyc do wypisania wartosci w petli foreach
@@ -1978,7 +1979,7 @@ public class Wstep {
         Sa w nim dyrektywy takie jak @param czy @retrun oraz opis
         Moga byc takrze @see, @author czy @version
         /**
-         * Multipies number by 2 // co robi metoda
+         * Multipies number by 2 // co robi metodaZwykla
          * @param parameter number that should be multipied // co sie stanie
          * // z parametrem ktory przyjmie
          * @return parameter multipied by 2// to co zwraca i jak
@@ -1993,7 +1994,7 @@ public class Wstep {
         Adnotacje przekazuja dodatkowe informacje na temat kodu
         Przekazuja dane o danych - kodzie zrodlowym
         Sa one specjalnym interfejsem
-        Umieszczamy je przed konkretnym elementem np. klasa/zmienna/metoda
+        Umieszczamy je przed konkretnym elementem np. klasa/zmienna/metodaZwykla
 
         Mozemy je stosowac do:
         -metody
@@ -2008,16 +2009,16 @@ public class Wstep {
         //Zastosowanie adnotacji:
 
         //-Dodatkowa informacja dla kompilatora
-        np @override informuje kompilator ze metoda jest przeslonita
+        np @override informuje kompilator ze metodaZwykla jest przeslonita
          w nadklasie lub interfejsu
-        Moge to wykorzystac np dodajac przed jakas metoda i jesli
+        Moge to wykorzystac np dodajac przed jakas metodaZwykla i jesli
          nie jest ona przeslonieciem innej metody kompilator wyswietli
          blad
         np:
         @Override
         public boolean equal(Object obj)
             return true;
-        //bedzie blad poniwaz brakuje "s" i metoda nie przeslania metody
+        //bedzie blad poniwaz brakuje "s" i metodaZwykla nie przeslania metody
            w podklasie
         */
 
@@ -2092,7 +2093,7 @@ public class Wstep {
             String A();
             String B();
         }
-        W kodzie programu (przed metoda lub polem - okresoly element target):
+        W kodzie programu (przed metodaZwykla lub polem - okresoly element target):
         @MyAnnotation(A = "", B = "")//przypisuje wartosci zmiennym w adnotacji
         void simpleMethod() {
         }
@@ -2153,7 +2154,7 @@ public class Wstep {
          i nie moga byc lokalne to jest w metodzie/bloku if
 
 
-        Klasa lokalna jest zdefiniowana wewnatrza bloku (metoda, blok if itp)
+        Klasa lokalna jest zdefiniowana wewnatrza bloku (metodaZwykla, blok if itp)
          i nie moze zawierac zadnego modyfikatora (public/private/protected)
 
         Klasa wewnetrzna lokalna moze korzystac ze ZMIENNYCH LOKALNYCH (gdy definiuja ja w metodzie)
@@ -2230,7 +2231,7 @@ public class Wstep {
         Klasa anonimowa zawsze jest klasa wewnetrzna i polaczona jest z tworzeniem
          jej jednej instancji
 
-        Na poczatku tworze intefrfejs z metoda i "tworze jego instancje", w metodzie
+        Na poczatku tworze intefrfejs z metodaZwykla i "tworze jego instancje", w metodzie
          interfacu dodajac jej dzialanie w {pelna definicja} - tak naprawde jest to klasa
          z nazwa klasy zewnetrznej z dodaniem na koncu $ z liczba klasy anonimowej
          w danej klasie
@@ -2246,7 +2247,7 @@ public class Wstep {
             @Override
             public void powiedzCzesc() {
                 System.out.println("witaj");
-            }//ta metoda musi byc!!
+            }//ta metodaZwykla musi byc!!
             //Moge takze w niej definiowac zmeinne i metody lecz glownie polega
             // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
             int zmienna = 123;
@@ -2354,19 +2355,19 @@ public class Wstep {
          to 0. Zmienne brane sa po kolei z Listy - this.wiek jest wiekiem
          elementu 0 a o.wiek jest wiekiem elementu 1. Jesli lista ma typ
          String to moge wywolywac na elementach metody np this.legth() lub porownywac
-         je metoda this.compareTo(o) -> wszytsko w metodzie int compare(String o)
+         je metodaZwykla this.compareTo(o) -> wszytsko w metodzie int compare(String o)
 
-        Jesli metoda Collection.sort przyjmie takze komparator to moge zrobic to
+        Jesli metodaZwykla Collection.sort przyjmie takze komparator to moge zrobic to
          dodajac nowa Klase implementujaca int. Comparator<KlasaDoSortowania> i w niej
          metode int compare(KlasaDoSortowania o1, KlasaDoSortowania o2)
-         to metoda sort bedzie wygladala:
+         to metodaZwykla sort bedzie wygladala:
          Collection.sort(lista, KlazaZKomparatorem)
         Lub jesli chce zrobic unikalne sortowanie to moge
          wykorzystac klase anonimowa z interfejsem Comparator ktory posiada
-         metode int compare(Klasa o1, Klasa o2) to metoda sort bedzie wygladala:
+         metode int compare(Klasa o1, Klasa o2) to metodaZwykla sort bedzie wygladala:
          Collection.sort(lista, new Comparator())...deklaracja compare
 
-        Jesli lista posiada typ String to w klasie anonimowej z Comparatorem metoda
+        Jesli lista posiada typ String to w klasie anonimowej z Comparatorem metodaZwykla
          compare podstawi przyjmowane obiekty za String
          Collections.sort(wyrazy, new Comparator<String>() {
          int compare (String o1, String o2); i moge posortowac
@@ -2430,7 +2431,7 @@ public class Wstep {
         /*
         Test jednostkowy jest sposoboem testowania programy ktory polega na wydzieleniu
          czesci funkcjonalnosci programu i testowaniu go w odosobnieniu.
-        Test jednostkowy to metoda testujaca metode/jednostke w innej klasie z dodana
+        Test jednostkowy to metodaZwykla testujaca metode/jednostke w innej klasie z dodana
          adnotacja @Test
 
         TDD sklada sie z 3 faz:
@@ -2485,14 +2486,14 @@ public class Wstep {
 
         PRZYKŁADOWE TESTY:
 
-        //Tworze obiekt i sprawdzam czy metoda klasy zwroci true
+        //Tworze obiekt i sprawdzam czy metodaZwykla klasy zwroci true
         @Test
         public void czyLiczba12JestWPrzedziale(){
             One o = new One(10,15);
             assertTrue(o.czyJestWPrzedziale(12));
         }
 
-        //Sprawdzam czy metoda zwroci wyjatek IllegalArgumentException
+        //Sprawdzam czy metodaZwykla zwroci wyjatek IllegalArgumentException
         @Test(expected = IllegalArgumentException.class) //test przejdzie
         // jesli zostanie wyrzucony podany wyjatek
         public void czyWyrzicWyjatekZlychParametrow(){
@@ -2510,7 +2511,7 @@ public class Wstep {
             }
             catch (IllegalArgumentException ex){
                 assertEquals("dolny przedzial jest wiekszy niz gorny!",ex.getMessage());
-                //jesli metoda wyrzuci DOKŁADNIE TAKI wyjatek to test przejdzie
+                //jesli metodaZwykla wyrzuci DOKŁADNIE TAKI wyjatek to test przejdzie
                 //jesli nie to test nie przejdzie
             }
         }
@@ -2961,7 +2962,7 @@ public class Wstep {
 
         -Kompilacja:
           Ide do lokalizacji pliku .java i wpisuje komende javac plik.java
-          ! plik.java musi nazywac sie tak jak nazwa klasy z metoda main !
+          ! plik.java musi nazywac sie tak jak nazwa klasy z metodaZwykla main !
           Ta komenda tworzy w tym folderze plik plik.class np
           javac plik.java
         -Uruchomienie:
@@ -3075,7 +3076,7 @@ public class Wstep {
         Jesli stringi zawieraja taki sam literal to sa przechowywane w tym
          samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis);
 
-        Jest takze metoda .intern();
+        Jest takze metodaZwykla .intern();
         Jesli wywolam ja na Stringu z konstruktorem new String("wartosc");
          i wystapi String z takim samym literalem to zostanie on "podpiety"
          pod tem sam adres (miejsce w cache) pomimo uzycia alokacji
@@ -3120,7 +3121,7 @@ public class Wstep {
         Uzywany jest znak + lecz laczy on lewostronnie np
         1 + 2 + "test" // 3test
         "test" + 1 + 2 // test12
-        Wyswietlajac jakas instancje klasy uzywana jest metoda tej klasy toString
+        Wyswietlajac jakas instancje klasy uzywana jest metodaZwykla tej klasy toString
          */
 
 
@@ -3153,10 +3154,10 @@ public class Wstep {
         //Formatter - formatowanie łańcuchów znaków
         /*
         Do formatowania moge uzyc:
-        -PrintWriter.format - metoda ktora wywoluje na obiekcie Formatter
+        -PrintWriter.format - metodaZwykla ktora wywoluje na obiekcie Formatter
          a nastepnie moge na tym obiekcie wywolac toString
 
-        -System.out.format - statyczna metoda w klasie String dziala jak ta
+        -System.out.format - statyczna metodaZwykla w klasie String dziala jak ta
          na obiekcie Formatter lecz wyswietla bezposrednio na ekran
          */
 
@@ -3392,18 +3393,18 @@ public class Wstep {
 
         //Odwolywanie sie do metod :: na obiektach
         Object obiekt = new Object();
-        //Tworze obiekt klasy np Object w ktorej jest metoda hashcode() zwracajaca int
+        //Tworze obiekt klasy np Object w ktorej jest metodaZwykla hashcode() zwracajaca int
         IntSupplier zmiennaIntInterace = obiekt::hashCode;
         //Tworze zmienna klasy anonimowej ktora w swojej metodzie nie przyjmuje nic ale
         // zwraca int.
         //Wykorzystuje to z obiektem klasy Object ktory ma w swojej klasie
-        // metode hashcode zwracajaca int laczac to z metoda interacu tez zwracajac int
-        //Od tej pory metoda obiektu klasy anonimowej getAsInt bezie zwracac
+        // metode hashcode zwracajaca int laczac to z metodaZwykla interacu tez zwracajac int
+        //Od tej pory metodaZwykla obiektu klasy anonimowej getAsInt bezie zwracac
         // hashCode() obiektu "obiekt)
         //Jesli odwoluje sie poprzez obiekt moge to zrobic tylko na interfejsie funkcyjnym
-        // ktorego metoda zgadza sie z metoda jaka wywoluje po :: oraz interface funkcyjny nie moze
+        // ktorego metodaZwykla zgadza sie z metodaZwykla jaka wywoluje po :: oraz interface funkcyjny nie moze
         // przyjmowac typu generycznego
-        //Chyba ze metoda jest statyczna to moge na takim interfejsie funkcjyjnym (bez typu
+        //Chyba ze metodaZwykla jest statyczna to moge na takim interfejsie funkcjyjnym (bez typu
         // generycznego) odwolac sie do metody poprzez Klasa a nie obiekt tj:
         // IntSupplier zmiennaIntInterace = Object::hashCode; - blad - hashCode nie jest static
 
@@ -3434,7 +3435,7 @@ public class Wstep {
         // przyjmuje typ generyczny np Object
         // int applyAsInt(T t)
         //Tworze obiekt klasy anonimowej przyjmujacej typ gneryczny Klasy Object
-        // a nastepnie metoda tego interfacu zwracajaca int i przyjmujaca typ generyczny
+        // a nastepnie metodaZwykla tego interfacu zwracajaca int i przyjmujaca typ generyczny
         // Object bedzie zwracac int rowny intowi zwracanemu przez
         // metode klasy Object - hashcode - zwracany typ (int) musi byc taki sam
         // w metodzie klasy generycznej jak i metody tego interfacu!!
@@ -3442,13 +3443,13 @@ public class Wstep {
         // ToIntFunction bede mogl wyslac dowolny obiekt klasy typu generycznego
         // czyli w tym przypadku Object bezInstancji.applyAsInt(instncjaObiektu)
         //Jesli odwoluje sie poprzez Klase moge to zrobic tylko na interfejscie funkcyjnym
-        // ktorego metoda zgadza sie z metoda jaka wywoluje po :: oraz interface funkcyjny musi
+        // ktorego metodaZwykla zgadza sie z metodaZwykla jaka wywoluje po :: oraz interface funkcyjny musi
         // przyjmowac typ generyczny
         Object instncjaObiektu = new Object();
         //Tworze instancje tej klasy
         System.out.println("Odwolanie do metody ze podania instancji : " + bezInstancji.applyAsInt(instncjaObiektu));
         //Na obiekcie klasy anonimowej wywoluje jego metode ktora przyjmuje instancje obiektu
-        // i dzieki deklaracji Object::hashCode wiem ze metoda ma zwrocic to co metoda hashCode
+        // i dzieki deklaracji Object::hashCode wiem ze metodaZwykla ma zwrocic to co metodaZwykla hashCode
         // klasy Object
 
         //inny przykład
@@ -3523,7 +3524,7 @@ public class Wstep {
 
         W przypadku dziedzicznia mozliwe jest nadpisywanie metod tzn jesli
          jest mozliwosc nadpisania metody z nadklasy to w podklasie bede mogl
-         ustawic dowolny modyfikator i nawet wywolac ja metoda super.metoda();
+         ustawic dowolny modyfikator i nawet wywolac ja metodaZwykla super.metodaZwykla();
 
         Aby uniknac mozliwosci nadpisania metody lub rozszerzenia klasy uzywam
          modyfikatora protected
@@ -3698,13 +3699,13 @@ public class Wstep {
         strumienLiczb = strumienLiczb.limit(2);
         System.out.println("W trakcie 3");
         strumienLiczb.forEach(System.out::println);
-        //metoda konczaca
+        //metodaZwykla konczaca
         System.out.println("PO");
 
 
         /*
         Strumienie przetwarzane sa sekwencyjnie w metodzie stream()
-         lub rownolegle (uruchamiany w kilku watkach) metoda parallelStrem
+         lub rownolegle (uruchamiany w kilku watkach) metodaZwykla parallelStrem
 
         Strumien sekwencyjny mozna przlaczyc na rownolegly uzywjac na nim
          metody parallel lub odwrotnie sequential
@@ -3729,13 +3730,13 @@ public class Wstep {
             .map(StreamsGoodPractices::timeConsumingTransformation)
             .filter(n -> n == 2000)
             .sum();
-        //metoda zostanie wykonana dla kazdej z liczb
+        //metodaZwykla zostanie wykonana dla kazdej z liczb
 
         int fastNumber = IntStream.range(1950, 2150)
             .filter(n -> n == 2000)
             .map(StreamsGoodPractices::timeConsumingTransformation)
             .sum();
-        //w tym przypadku metoda zostanie wykonana na przefiltrowanych
+        //w tym przypadku metodaZwykla zostanie wykonana na przefiltrowanych
         // elementach
 
         - Unikanie skomplikowanych wyrazen lambda
@@ -3828,7 +3829,7 @@ public class Wstep {
                         .filter(x -> x.maxPlayers > 4)
                         //wywolujac metode filter, tworze nowa instancje klasy Strem
                         //ta metda przechodzi jesli otrzyma wynik true
-                        // z interfacu  Predicate<T> z metoda  boolean test(T t) ktroy tworzy.
+                        // z interfacu  Predicate<T> z metodaZwykla  boolean test(T t) ktroy tworzy.
                         //Za typ generyczny przyjmuje BoardGame i jako x podstawiane
                         // sa elementty listy (kazdy). Metoda zworci true jesli wartosc
                         // x(element listy) z wybranym parametrem maxPlayers jest wiekszy od 4
@@ -3842,7 +3843,7 @@ public class Wstep {
                         //teraz tworze strumien z typem String i przypisuje do niego
                         // poprzednio filtrowany strumien
                         .map(x -> x.name.toUpperCase());
-                        //z pomoca metody map korzystam z interfacu Function <T, R> z metoda R apply(T t)
+                        //z pomoca metody map korzystam z interfacu Function <T, R> z metodaZwykla R apply(T t)
                         //Interface Function za T podstawia BoardGame i R String oraz w swojej metodzie
                         // zwrtaca przefiltrowane wczesniej 2 elementy tablicy z parametru name na typ
                         // String oraz z zamiana na duze litery.

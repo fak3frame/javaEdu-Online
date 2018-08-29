@@ -16,7 +16,7 @@ public class Obiekty_2 {
         /*
         Metoda hashCode() służy do zwrócenia unikalnej wartości liczbowej
          (typu int) dla każdego unikalnego obiektu. Gdy porownuje dwa
-         obiekty za pomoca metody equals() i zwraca true znaczy ze metoda
+         obiekty za pomoca metody equals() i zwraca true znaczy ze metodaZwykla
          hashCode() powinna zwraca taka sama wartosc.
 
         Metoda hashCode() jest dziedziczona z klasy Object i jesli jej nie
@@ -39,7 +39,7 @@ public class Obiekty_2 {
             return false;
         }
 
-        Przydatne jest tez rzutownie w finalnym sprawdzeniu poniewaz metoda
+        Przydatne jest tez rzutownie w finalnym sprawdzeniu poniewaz metodaZwykla
          przyjmuje obiekt klasy Object a wiemy juz ze jest on tej samej klasy
          co obiekt na ktorym ja wywolujemy
         Product product = (Product) o;                                                                                  !
@@ -129,7 +129,7 @@ public class Obiekty_2 {
          nie ma sensu lub wystapienie ich moze spowodowac nieporzadana prace
          programu
         Wyjatki sa obiektami i tworzymy je instrukcja new
-        Na poczatku deklarujemy jakie typy wyjatkow nasza metoda mozer zwracac
+        Na poczatku deklarujemy jakie typy wyjatkow nasza metodaZwykla mozer zwracac
          za pomoca instrukcjio throws. wymieniamy je po przecinku.
         W kodzie metody zazwyczaj zglaszamy je w instrukcji if korzystajac z
          throw

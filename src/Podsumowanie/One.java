@@ -2,7 +2,8 @@ package Podsumowanie;
 
 public class One {
     public static void main(String[] args) {
-        /* Skroty klawiszowe:
+        /*
+        -----SKTORY KLAWISZOWE-----
 
         alt + 1 - ukrycie okienka struktury projektu
         alt + strzalka - przleczanie pomiedy zakladkami
@@ -31,9 +32,10 @@ public class One {
         ctrl + spacja - podpowiedz
         ctrl + j - podpowiedzi dla klasy
         fori + tab - petla for
-         */
 
-        /* Ogolne
+
+
+        -----OGOLNE-----
 
         Klasa - projekt/foremka
         Obiekt/instancja - produkt
@@ -55,10 +57,45 @@ public class One {
 
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
+
+        public static String metodaDajacaString(int liczba){
+            return String.valueOf(liczba);
+        }
+        public int metodaDajacaInt(String napis){
+            return Integer.parseInt(napis);
+        }
+
+        Metody deklaruje TYLKO w klasie (nie w innych metodach)
+
         Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
+
+        Metode moge wywolac na obiekcie lub bezposrenio
+         mojObiekt.mojaMetoda();
+         mojaMetoda();
+
+        W statycznej metodzie(np main) NIE MOGE odwolac sie bezposrenio
+         do niestatycznej metody!!
+
+
+
+
+
+
+
+        -----ZMIENNE-----
+
+        int zmiennaInt = 123;
+        //zakres +/- 2,147,483,647
+
+        boolean prawdaFalsz = true;
+        //zakres true/false
+
+
+
 
         Aby operwac na obiekcie musze przypisac cod do jej referencji
         classOne X = new classOne();
+
 
 
 

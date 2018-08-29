@@ -13,14 +13,14 @@ public class ArraysMoja {
          Comparable oraz posiadac deklaracje metody compareTo()
          porownujaca 2 obiekty
 
-        Klasa Arrays posiada takze metoda asList() ktora zwraca
+        Klasa Arrays posiada takze metodaZwykla asList() ktora zwraca
          tablice w formie listy
 
         Najpopulrniejsze metody:
         -asList();
         -binarySearch();
         -equals(); porownuje dwie tablice dowolnych typow
-        -fill(); metoda pozwala uzupelnic tablice paramtrem podanym
+        -fill(); metodaZwykla pozwala uzupelnic tablice paramtrem podanym
          w tej metodzie
         -sort();
         */
@@ -40,7 +40,7 @@ public class ArraysMoja {
 
     }
 
-    //metoda wyświetlajca tablicę w ładnej formie
+    //metodaZwykla wyświetlajca tablicę w ładnej formie
     public static void pokazPracownikowPosortowanych(Pracownik[] pracownicy){
         for(Pracownik p : pracownicy){
             System.out.println(p);

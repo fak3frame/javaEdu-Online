@@ -54,7 +54,7 @@ public class Zadanie1 {
         Zadanie1 numbersStream = testList.stream()
                 .max(Comparator.comparingInt(x -> x.zmienna)).get();
         //to działa
-        //metoda .max na strumieniu przyjmuje Comparator na ktorym wywoluje metode
+        //metodaZwykla .max na strumieniu przyjmuje Comparator na ktorym wywoluje metode
         // statyczna comparingInt ktora przyjmuje interface funkcyjny ToIntFunction<T>
         // z meotda int applyAsInt(T value)
         //zmienna numbersStream zawiera teraz tylko jeden element listy i jest nim najwieksza
@@ -254,7 +254,7 @@ public class Zadanie1 {
        -//KlasaZLiczba zmiennaO = listaObiektow.stream().max(Comparator.comparing(KlasaZLiczba::getX)).get();
         // System.out.println(zmiennaO.getX());
         //Uzywam na zmiennej Obiektowej WLASNEJ klasy i przypisuje jej
-        // wybrane pole max odwolujac sie w Comparatorze do getera :: + metoda get()!!
+        // wybrane pole max odwolujac sie w Comparatorze do getera :: + metodaZwykla get()!!
         // *NIE MAPUJE bo przypisuje do typu KlasaZLiczba!
        -//Integer liczbaMax3 = listObject.stream()
                 .map(x -> x.getX())//mapuje bo z listy obiektow przypisuje do int
@@ -262,7 +262,7 @@ public class Zadanie1 {
                 // lub .max(Comparator.comparing(Integer::compare)).get();
                 // lub moge skorzystac z metody Integer::compare w max bo przemapowalem do Integer
                 // .max(Integer::compare).get();
-                // lub jesli przypisuje do String tylko inna metoda
+                // lub jesli przypisuje do String tylko inna metodaZwykla
                 // .max(String::valueOf).get();
         // System.out.println(liczbaMax3);
         //Lub na zmiennej prostej wybranego typu pola z klasy np int,
@@ -379,7 +379,7 @@ public class Zadanie1 {
         .filter(x -> x.getX()>22)
         .sorted(Comparator.comparing(KlasaZLiczba::getX))
         .sorted(Comparator.comparing(KlasaZLiczba::getX).reverseOrder())
-        .map(x -> x.getX()) //zmieniam typ na int jak ma metoda getX i moge dac forEach
+        .map(x -> x.getX()) //zmieniam typ na int jak ma metodaZwykla getX i moge dac forEach
         .forEach(System.out::println); //lub
         .forEach(x -> System.out.println(x.getX()));
         //lub wyswietlenie z peek (nie musze mapowac)
@@ -504,7 +504,7 @@ public class Zadanie1 {
         -Wlasnymi
         .max(Comparator.comparing(x -> x.getX())).get();
         //+ przypisanie do typu Obiektowego wybranej klasy
-        // wyswietlenie z metoda get wybranej zmiennej
+        // wyswietlenie z metodaZwykla get wybranej zmiennej
         .map(x -> x.getX())
         .max(Comparator.comparing(x -> x)).get();
         //lub z mapoweniem to moge przypisac do zmiennej prostej
@@ -720,7 +720,7 @@ IntSupplier obiekt= obiekt::hashCode;
 IntSupplier dajLiczbeObiektu = ob::getX; //int getAsInt()
 System.out.println("to liczba z obiektu : "+dajLiczbeObiektu.getAsInt());
 
-IntSupplier dajLiczbeObiektu = KlasaZLiczba::getX; //gdy metoda getX jest static
+IntSupplier dajLiczbeObiektu = KlasaZLiczba::getX; //gdy metodaZwykla getX jest static
 System.out.println("to liczba z obiektu : "+dajLiczbeObiektu.getAsInt());
 
 //z konstruktorami

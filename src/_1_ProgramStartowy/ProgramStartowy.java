@@ -266,7 +266,7 @@ public class ProgramStartowy {
         Obiekt jest reprezentacja klasy i jej nosnikiem. Poprzez obiekt mozemy sie odwolac do
          zmiennych i metod zawartych w klasie
 
-         Klasa funkcja(){return new Klasa;}//metoda zwroci nowy obiekt klasy Klasa
+         Klasa funkcja(){return new Klasa;}//metodaZwykla zwroci nowy obiekt klasy Klasa
         */
 
 
@@ -421,7 +421,7 @@ public class ProgramStartowy {
         /*
         class{
             int zmienna3 = 10;
-            void metoda(){
+            void metodaZwykla(){
                 System.out.println(zmienna3); //moge skorzystac
                 zmienna3 = 15; //zmieni sie
                 int zmienna4 = 10;//po zakonczeniu metody zmienna zadeklarowana w niej zniknie
@@ -455,7 +455,7 @@ public class ProgramStartowy {
 
             strumien = new RandomAccessFile("daneBinarne.txt", "rw");//otwieram plik
             // oraz wlaczam go do strumienia
-            while (strumien.read()!=-1) { //metoda po kolei pobiera bity i gdy dojdzie do konca pliku
+            while (strumien.read()!=-1) { //metodaZwykla po kolei pobiera bity i gdy dojdzie do konca pliku
                 // wyrzuci -1
                 iloscBitowWPliku++;
             }
@@ -530,7 +530,7 @@ public class ProgramStartowy {
 
             System.out.println("Podaj wiek: ");
             int wiek = Integer.parseInt(br.readLine());//wczytuje standardowo String dzieki wiec
-             //musze uzyc klasy oslonowej Integer z metoda paraseInt() aby zapisac do zmiennej int
+             //musze uzyc klasy oslonowej Integer z metodaZwykla paraseInt() aby zapisac do zmiennej int
 
             System.out.println("Podaj cyfre od 0 do 9: ");
             String l = br.readLine();

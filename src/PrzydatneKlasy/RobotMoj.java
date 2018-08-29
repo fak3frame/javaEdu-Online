@@ -42,7 +42,7 @@ public class RobotMoj {
         }
     }
 
-    //metoda drukownia napisu
+    //metodaZwykla drukownia napisu
     public void piszTekst(){
         int[] napis = {KeyEvent.VK_C,KeyEvent.VK_Z,KeyEvent.VK_E,
                 KeyEvent.VK_S,KeyEvent.VK_C,};
@@ -52,7 +52,7 @@ public class RobotMoj {
             robot.delay(200);
         }
     }
-    //metoda do zrzutu ekranu
+    //metodaZwykla do zrzutu ekranu
     public void screenCapture() {
         //pobieramy rozmiar ekranu i tworzymy Rectangle
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();

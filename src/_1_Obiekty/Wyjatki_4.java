@@ -40,7 +40,7 @@ public class Wyjatki_4 {
             o.jakasMetodaZCheckedException();
         }
         catch (IOException e){
-            e.printStackTrace(); //metoda pokazuje stos wywolania
+            e.printStackTrace(); //metodaZwykla pokazuje stos wywolania
         }
         finally {
             System.out.println("to sie wykona zawsze");
@@ -88,7 +88,7 @@ public class Wyjatki_4 {
         return godziny*60*60;
     }
     public void jakasMetodaZCheckedException()throws IOException{
-        //ta metoda MOZE dac wyjatek checked czyli taki jaki musiby obsluzyc
+        //ta metodaZwykla MOZE dac wyjatek checked czyli taki jaki musiby obsluzyc
         //nie obsluguje go wewnatrz
         throw new IOException();
     }

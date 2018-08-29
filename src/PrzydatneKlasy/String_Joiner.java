@@ -28,7 +28,7 @@ public class String_Joiner {
         //prefix - to co bedzie na poczatku ciagu
         //sufix - na koncu ciagu
         String napis = joiner.add("napis").add("napis2").toString();
-        //operacje dodawania metoda .add("")
+        //operacje dodawania metodaZwykla .add("")
         //moge przypisac do Stringa uzywajac na koncu metody .toString();
         System.out.println(napis);
 
@@ -55,7 +55,7 @@ public class String_Joiner {
         wszystkieImiona = wszystkieImiona.join(", ",lista);
         //pierwszy argument to separato a drugi lista
         System.out.println("wszytskie imiona: "+wszystkieImiona);
-        //taka metoda jest niezbyt dobra poniewaz najpierw musze zainicjowac
+        //taka metodaZwykla jest niezbyt dobra poniewaz najpierw musze zainicjowac
         // pustego stringa
 
 

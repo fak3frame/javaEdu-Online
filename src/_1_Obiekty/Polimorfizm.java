@@ -19,7 +19,7 @@ public class Polimorfizm {
 
         //---------2---------
         A obiekt = new B(); //przypisuje obiekt B do referecji typu A
-        obiekt.x();//metoda wspolna
+        obiekt.x();//metodaZwykla wspolna
         //obiekt.y(); blad poniewaz refencja wskazyje na klase w ktorej
         // nie ma tej metody, mozna wykorzystac rzutowanie
         ((B)obiekt).y();
@@ -76,7 +76,7 @@ class B implements A{
 abstract class Emeryt{
     public static final int ILOSC_OCZU = 2;//stala
     public abstract String krzyczNaDzieci();
-    //metoda abstrakcyjna bez ciała
+    //metodaZwykla abstrakcyjna bez ciała
     public void biegnijDoKlepiu(int odleglosc, int predkosc){
         double czas = (double)odleglosc / predkosc;
         System.out.println("czas: "+czas);

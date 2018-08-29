@@ -40,7 +40,7 @@ public class toRemember {
         // obiekow za pomoca metody sort z klasy Arrays
         // Arrays.sort(tablicaObiektow, new ObiektKlasySortujacej)
 
-        //Taka metoda oprocz tablicy przyjmuje obiekt klasy sortujacej
+        //Taka metodaZwykla oprocz tablicy przyjmuje obiekt klasy sortujacej
 
         //Klasa sortujaca implementuje intefejs Comparator z typem generycznym
         // klasy obiektow ktore chcemy posrotowac i w niej deklarauje
@@ -60,7 +60,7 @@ public class toRemember {
         */
 
         //Glowny rodzaj sortowania robie w glownej klasie z uzyciem interfejsu
-        // Comparable i metoda compareTo()
+        // Comparable i metodaZwykla compareTo()
 
 
         string1.compareTo(string2);
@@ -71,7 +71,7 @@ public class toRemember {
         //Mozna wywolac TYLKO na obiekcie
 
         //Metode compareTo deklaruje w klasie obiekow aby miec mozliwosc sortowania
-        // tablicy obiektow metoda sort klasy Arrays -
+        // tablicy obiektow metodaZwykla sort klasy Arrays -
         // Arrays.sort(tab)
         // uzywam w argumencie tylko tablicy obiekow!
 
@@ -160,11 +160,11 @@ public class toRemember {
         //Wykorzystuje metode asListy klasy Arrays
         String autaString = "";//musze zainicjowac wartoscia do metody join
         autaString = autaString.join(",",auta);
-        //przypisuje do Stringa z metoda join()
+        //przypisuje do Stringa z metodaZwykla join()
         System.out.println("String zrobiony z listy: "+autaString);
 
         //Bardziej zaawansownym uzyciem metody join jest uzycie strumienia
-        // oraz metody collect() w ktorej uzyje klasy Collectors z metoda
+        // oraz metody collect() w ktorej uzyje klasy Collectors z metodaZwykla
         // joining() w ktorej okresle co ma oddzielac napisy oraz jak ciag
         // ma sie zaczynac i konczyc
         String autaString2 = auta.stream().collect(Collectors
@@ -809,9 +809,9 @@ public class toRemember {
         pracowniks_xD[0] = new Programista(4000,400);
         pracowniks_xD[1] = new Programista(6000, 800);
 
-        System.out.println("wyswietlenie proste obiektu (metoda toString):");
+        System.out.println("wyswietlenie proste obiektu (metodaZwykla toString):");
         System.out.println(p1);
-        //laczona metoda toString w obu klasach
+        //laczona metodaZwykla toString w obu klasach
         //return super.toString()+" "+String.valueOf(linieKodu);
 
         System.out.println("Programista.pokazInfo((Programista) p1):");
@@ -819,7 +819,7 @@ public class toRemember {
         //public static void pokazInfo(final Programista p){
         //   System.out.println(p.getZarobki()+" "+p.linieKodu); }
         //musze zrzutowac bo metoada PRZYJMUJE OBIEKT a jest on typu Pracownik!
-        // a metoda przyjmuje programiste. Musi przyjmowac programiste poniewaz
+        // a metodaZwykla przyjmuje programiste. Musi przyjmowac programiste poniewaz
         // potrzebuje dostac sie do jego pol (linieKodu)
         // jest statyczna wiec wywoluje z nazwa klasy
 
@@ -828,21 +828,21 @@ public class toRemember {
 
         p1.getZarobki();
         p1.setZarobki(4000);
-        ((Programista) p1).getLinieKodu(); //rzutowanie bo metoda unikalna nadlasy
+        ((Programista) p1).getLinieKodu(); //rzutowanie bo metodaZwykla unikalna nadlasy
         // a typ jest Pracownika
         ((Programista) p1).setLinieKodu(350);
 
         Pracownik p2 = new Programista(((Programista)p1)); //kopiuje
         System.out.println("p2: "+p2);
 
-        p2.pracuj(); //metoda interfejsu ktory implementuje klasa abstr. Pracownik
+        p2.pracuj(); //metodaZwykla interfejsu ktory implementuje klasa abstr. Pracownik
         // ktora rozszerza Programista (klasa abstr. nie musi go deklarwoac
         // w kodzie lecz jesli tego nie zrobi to klasa rozszerzajaca ta klase
         // abstrakcyjna bedzie musiala to zrobic
 
         ((Programista) p2).piszKod();//teraz musze wykonac rzutownie
         // public void piszKod(){ linieKodu+=10; }
-        // poniewaz metoda jest unikalna w programiscie bez deklaracji
+        // poniewaz metodaZwykla jest unikalna w programiscie bez deklaracji
         // w klasie nadrzednej/badz interf. ktory implementuje
         //Musze wiec rzutowac jesli wywoluje cos czego nie ma w TYPIE obiektu
         // badz "nizej"
@@ -948,7 +948,7 @@ class Programista extends Pracownik{ //nie musze implementowac interf.
     }
     public void piszKod(){
         linieKodu+=10;
-    }//metoda unikalna, musi byc rzutowanie
+    }//metodaZwykla unikalna, musi byc rzutowanie
     public static void pokazInfo(final Programista p){
         System.out.println(p.getZarobki()+" "+p.linieKodu);
     }
