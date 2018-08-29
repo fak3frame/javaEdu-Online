@@ -147,6 +147,14 @@ class Wew2{/////////////////////////////////////////////////////
 }////////////////////////////////////////////////////////////////
         /*
 
+        -----
+        Przeciazenie metody (overload) jest gdy ta sama klasa
+         ma kilka metod o tej samej nazwie ale przyjmujace inne
+         parametry
+
+        public void metoda(){}
+        public void metoda(int a){}
+
 
 
         -----WPROWADZANIE DANYCH-----
@@ -198,7 +206,9 @@ class Wew3{/////////////////////////////////////////////////////
 
         Sluza do grupowania atrybutow/pol i metod
 
-        Tworzenie instancji klasy
+        Klasa moze miec TYLKO modyfikator public lub zaden!
+
+        //Tworzenie instancji klasy
 
         Podsumowanie obiekt = new Podsumowanie();
 
@@ -270,10 +280,58 @@ class Wew4{///////////////////////////////////////////////////////
          -----
          W przypadku dziedziczenia moge odwolac sie z konstruktora
           podklasy do konstruktora klasy bazowej tylko zamiast
-          slowa this uzywam super i musi ono byc na poszatku
+          slowa this uzywam super i musi ono byc NA POCZATKU
           konstruktora
-         */
 
+
+
+         -----DZIEDZICZENIE-----
+
+         Samochod - nadklasa/klasa bazowa
+         SUV - podklasa/klasa pochodna
+
+         -----
+         //modyfikatory
+         public - dostepny wszedzie
+         protected - dostepne wewnatrz obiektu, PAKIETU oraz klas pochodnych
+         brak modyfikatora - dostepny tylko w pakiecie(tym samym folderze)
+         private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
+
+         -----
+         Przesloniecie metody (override) gdy klasa pochodna ma taka
+          metode z taka sama nazwe i taka sama ilosc i rodzaj parametrow
+
+         -----
+         //Slowo super
+
+         Moge odwolac sie do takiej samej meody klasy bazowej uzywajac metody super
+
+         void metoda(){
+            super.metoda();
+         }
+
+         Moge odwolac sie do takiego samego konstruktora klasay bazowej uzywajac instrukcji
+          super() i musi byc ona NA POCZATKU kody konstruktora
+
+         public Podklasa(){
+            super();
+         }
+
+         -----
+         //Wywolywanie konstruktorow
+
+         Jesli klasa dziedziczy to przy tworzenie jej instancji niewazne czy typu
+          klasy bazowej czy pochodnej najpierw wywola sie konstukroe klasy bazowej!
+
+         Instrukcja super pozwala wybrac jaki konstuktor klasy bazowej ma byc wywolany,
+          standardowo jest super() niejawnie, czyli ten bezparametrowy
+
+         Musze pamietac ze jesli zadeklaruje konstruktor z parametrami to ten
+          bezparametrowy (ukryty) przestaje isniec!
+
+
+
+         */
     }
 }
 

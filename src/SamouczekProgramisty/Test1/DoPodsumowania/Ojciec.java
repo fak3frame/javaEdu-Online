@@ -1,12 +1,18 @@
 package SamouczekProgramisty.Test1.DoPodsumowania;
 
 public class Ojciec {
-    int a;
+    int x;
 
-    public Ojciec() {
+    void metoda(int a){
+
     }
 
-    public Ojciec(int a) {
-        this.a = a;
+    public Ojciec() {
+        System.out.println("ojciec");
+    }
+
+    public Ojciec(int x) {
+        System.out.println("ojciec z param");
+        this.x = x;
     }
 }
