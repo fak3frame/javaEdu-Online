@@ -235,6 +235,7 @@ class Wew3{/////////////////////////////////////////////////////
          ten bezparametrowy zostaje usuniety
 
         -----
+        //stworznie obiektu z wywolanie konstruktora z jedyn parametrem
         Podsumowanie obiekt = new Podsumowanie(12);
 
         public Podsumowanie(int a)[
@@ -335,6 +336,35 @@ class Wew4{///////////////////////////////////////////////////////
          -----
          Klasy i metody z modyfikatorem final nie moze byc rozszerzana!
 
+         -----
+         //kompozycja i dziedzicznie
+
+         W dziedizczeniu moge stworzyc polimorficznie obiekt klasy
+          pochodnej w typie klasy bazowej
+         Ojciec obiekt = new Dziecko();
+
+         W kompozycji moge w klasie stworzyc zmienna/atrybut/pole typu
+          innej klasy np
+         class Czlowiek{
+            public Zwierze zwierze;
+            public Budynek b = new Budynek;
+         }
+
+         -----
+         //Polimorfizm
+
+         Tworze obiekt polimorficznie (typ rodzic - obiekt dziecko)
+          aby moc w typie rodzica umiesciec inne klasy pochodne rodzica.
+
+         Rodzic r = new Dziecko();
+
+         Jesli stworze tak obiekt do dostep do metod DZIECKA bede mial tylko
+          z rzutowaniem! do metod rodzica mam dostep normalnie
+
+         ((Dziecko) r).metodaDziecka();
+
+         -----
+         //metoda toString
 
 
          */

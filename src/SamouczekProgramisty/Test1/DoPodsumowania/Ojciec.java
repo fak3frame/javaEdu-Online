@@ -7,6 +7,10 @@ public class Ojciec {
 
     }
 
+    void metodaOjca(){
+        System.out.println("metoda ojca");
+    }
+
     public Ojciec() {
         System.out.println("ojciec");
     }
