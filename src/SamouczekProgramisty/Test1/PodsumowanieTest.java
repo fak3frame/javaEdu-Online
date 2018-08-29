@@ -2,6 +2,15 @@ package SamouczekProgramisty.Test1;
 
 public class PodsumowanieTest {
 
+    static int a = 10;
+
+    int xD;
+
+    final String napisXX;
+    final int liczbaXX;
+
+    final static int liczbaX = 40;
+
     public static String mojaStatycznaMetoda(int liczba){
         //metodaZwykla();
         metodaStatic();
@@ -26,6 +35,20 @@ public class PodsumowanieTest {
 
     }
 
+    public PodsumowanieTest(){
+        this(20);
+    }
+
+    public PodsumowanieTest(int xD){
+        this.xD = xD;
+    }
+
+    public PodsumowanieTest(String napisXX, int liczbaXX){
+        this.napisXX = napisXX;
+        this.liczbaXX = liczbaXX;
+
+    }
+
     public static void main(String[] args) {
         String napis = mojaStatycznaMetoda(12);
         System.out.println(napis);
@@ -34,6 +57,8 @@ public class PodsumowanieTest {
 
         podsumowanieTest.metodaZwykla();
         podsumowanieTest.mojaStatycznaMetoda(12);
+
+        System.out.println(podsumowanieTest.a);
 
 
 

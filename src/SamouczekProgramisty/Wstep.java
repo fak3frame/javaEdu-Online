@@ -166,7 +166,7 @@ public class Wstep {
         Zmienna statyczna dotyczy klasy a nie obiektu lecz moezmy
          na obiekcie sie do niej odwolac
 
-
+        /*
 
         Jesli utworzymy wlasny konstruktor - kompilator nie doda domyslnego (tego bez parametrow)
         ----------------
@@ -235,7 +235,7 @@ public class Wstep {
 
         //INTERFACE
         /*
-        API (ang. Application Programming _1_Interface)
+        API (ang. Application Programming Interface)
         Jest to zestaw metod bez ich implementacji
         Wszystkie metody interfacu sa publiczne przez co implemetrujac je w
          klasach musi byc modyfikator public!!
