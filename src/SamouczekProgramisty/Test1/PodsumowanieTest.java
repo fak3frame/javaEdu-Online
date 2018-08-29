@@ -3,7 +3,7 @@ package SamouczekProgramisty.Test1;
 public class PodsumowanieTest {
 
     public static String mojaStatycznaMetoda(int liczba){
-        metodaZwykla();
+        //metodaZwykla();
         metodaStatic();
 
 
