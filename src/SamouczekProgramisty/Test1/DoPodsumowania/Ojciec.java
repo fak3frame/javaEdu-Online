@@ -19,4 +19,9 @@ public class Ojciec {
         System.out.println("ojciec z param");
         this.x = x;
     }
+
+    @Override
+    public String toString() {
+        return " zmienna x = "+x;
+    }
 }

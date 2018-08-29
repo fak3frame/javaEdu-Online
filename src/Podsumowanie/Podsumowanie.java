@@ -320,13 +320,15 @@ class Wew4{///////////////////////////////////////////////////////
          -----
          //metoda toString
 
-         kazda klasa powinna miec metode toString aby moc wyswietlic obiekt
+         Kazda klasa powinna miec metode toString aby moc wyswietlic obiekt
           w System.out zamiast adresu referencji
 
          public String toString(){
             return "zmienna a = " + a;
          }
-
+         //zmienna a jest intem lecz dzieki konkatenacji "+" z innym stringiem
+         // wszystko zostaje przypisane do stringa
+         //W innym przypadku moge uzyc metody klasy Integer.valueOf(a);
 
 
 
@@ -410,6 +412,9 @@ class Wew4{///////////////////////////////////////////////////////
 
          -----
          //metoda toString
+
+         W klasie pochodznej zwracam jej zmienne i na koncu dodaje + super.toString()
+          i w klasie bazowej zwracam zmienne klasy bazowej
 
 
          */
