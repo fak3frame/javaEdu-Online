@@ -48,8 +48,6 @@ public class Wstep {
         ctrl + spacja - podpowiedz
         ctrl + j - podpowiedzi dla klasy
         fori + tab - petla for
-
-
          */
 
         /*
