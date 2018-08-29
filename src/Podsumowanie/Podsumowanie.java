@@ -1,5 +1,9 @@
 package Podsumowanie;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Podsumowanie {
     public static void main(String[] args) {
         /*
@@ -55,6 +59,20 @@ public class Podsumowanie {
 
         IDE (ang. Integrated Development Environment)
 
+
+
+        -----ZMIENNE PROSTE-----
+
+        int zmiennaInt = 123;
+        //zakres +/- 2,147,483,647
+
+        boolean prawdaFalsz = true;
+        //zakres true/false
+
+
+
+        -----METODY-----
+
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
 
@@ -89,31 +107,43 @@ class Wew2{/////////////////////////////////////////////////////
         public void metodaNicNieZwracajaca(){
             return;
         }
-
 }////////////////////////////////////////////////////////////////
+
+        /*
+
+
+
+        -----WPROWADZANIE DANYCH-----
+        */
+class Wew3{/////////////////////////////////////////////////////
+        void start(){
+            String imie;
+            List<String> imiona = new ArrayList<>();
+            Scanner wejscie = new Scanner(System.in);
+            do{
+                imie = wejscie.nextLine();
+                if(!imie.equals("-"))
+                    imiona.add(imie);
+
+            }while (!imie.equals("-"));
+
+            //lub w samym while
+            while (true){
+                imie = wejscie.nextLine();
+                if(imie.equals("-"))
+                    break;
+                imiona.add(imie);
+            }
+        }
+}/////////////////////////////////////////////////////////////
+
 
 
 
 
         /*
-
-        -----ZMIENNE-----
-
-        int zmiennaInt = 123;
-        //zakres +/- 2,147,483,647
-
-        boolean prawdaFalsz = true;
-        //zakres true/false
-
-
-
-
         Aby operwac na obiekcie musze przypisac cod do jej referencji
         classOne X = new classOne();
-
-
-
-
          */
     }
 }
