@@ -90,11 +90,17 @@ public class Podsumowanie {
 
         String napis = "asd\n123";
 
+        //-----
+        //boxing unboxing
+
+        //Boxing jest to przypisywanie zmiennej prostej do obiektowej
+        Integer zmiennaIntegerBox = 12;
 
         //W przypadku typow prostych jest wykonywany automatyczny autoboxing
 
         int liczbaBox1 = new Integer(12);
-        //wykonuje operacje odwrotna czyli autounboxing
+        //operacja odwrotna czyli autounboxing
+        //przypisywanie do zmiennej prostej zmiennej obiektowej
 
 
         //Zmienne finalne
@@ -474,6 +480,42 @@ class Wew4{///////////////////////////////////////////////////////
          }
          catch(ArithmeticException | RuntimeException ex){}
          finally{}
+
+
+
+         -----STERTA + REFERENCJA + GC-----
+
+         Gdy tworze obiekty rezerowana jest pamiec (STERTA) - HEAP SPACE
+         Zmienne, które wskazują na obiekty na stercie zawierają referencje
+
+         JVM rezrwuje pamiec RAM
+
+         Zmienne trzymane sa na STOSIE - STACK
+
+         Gdy zajme caly stos zostanie wyrzucony wyjatek
+          java.lang.OutOfMemoryError
+
+         Null jest typem ktory nie moze posiadac nazwy przez co nie mozna
+          utworzyc zmiennej tego typu
+
+
+
+          -----KONWERSJA I RZUTOWANIE-----
+
+          Rzutowanie (cast) - konwersja JAWNA
+
+          Możemy rzutować wyłącznie na typ, który znajduje się hierarchii
+           dziedziczenia danego obiektu (to co jest "wyzej) inaczej wyrzuci
+           wyjatek java.lang.ClassCastException
+
+          Konwejsa niejawna gdy chce przypisac int do long i nie trace informacji
+           inaczej tj grzy przekrocze zakres np long do int moze pokazac -1
+
+          Konwersji poprzez rzutowanie moge uzcyc gdy chce np obciac reszte
+
+          int intValue = (int) 123.123F;
+
+
 
 
 
