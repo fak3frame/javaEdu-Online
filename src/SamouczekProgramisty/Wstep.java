@@ -536,7 +536,7 @@ public class Wstep {
         //Dzieki temu wywolujac metode getFruif() mam gwarancje ze zwrocony
         // zostanie poprawny obiekt
         //Nie musze w <> wpisywac ponownie Apple przy wywolaniu konstruktora
-        // BoxOnSteroidsk
+        // BoxOnSteroids
         //Moge takze stworzyc obiekt tej klasy bez deklaracji typu generycznego
         //BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
         BoxOnSteroids<Apple> BoxOnSteroidsApple2 = new BoxOnSteroids<>(new Apple());

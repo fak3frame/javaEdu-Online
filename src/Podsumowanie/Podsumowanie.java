@@ -462,6 +462,7 @@ class Wew4{///////////////////////////////////////////////////////
 
          Hierarchia dziedziczenia wyjatkow:
           Throwable <- Exception <- RuntimeException <- IllegalArgumentException
+
          -----
          Do oblusgi kilku wyjatkow w klauzuli try/catch moge zapisac
           je w oddzielnym catch lub uzywajac |
@@ -517,12 +518,149 @@ class Wew4{///////////////////////////////////////////////////////
 
 
 
+        -----TYPY GENERYCZNE-----
 
-
-
-
-
+        Typ generyczny jest szablonem pozwalajacym uniknac rzutowania
+        Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
+         trzeba bedzie rzutowac
          */
+        class Apple{
+        }
+        class AppleBox {
+            private Apple apple;
+            public AppleBox(Apple apple) {
+                this.apple = apple;
+            }
+            public Apple getApple() {
+                return apple;
+            }
+        }
+
+        class Orange {
+        }
+        class OrangeBox {
+            private Orange orange;
+            public OrangeBox(Orange orange) {
+                this.orange = orange;
+            }
+            public Orange getOrange() {
+                return orange;
+            }
+        }
+
+        class FruitBox {
+            private Object fruit; //Aby moc przyjac obiekt kazdej klasy
+            // (Apple/Orange) polimoficznie
+            // wykorzustuje nadklase kazdej klasy (Object)
+            // ale wszystkie metody na jego obiekcie bede musial rzuotwac
+            // co jest niezalecane
+            public FruitBox(Object fruit) {
+                this.fruit = fruit;
+            }
+            public Object getFruit() {
+                return fruit;
+            }
+        }
+        FruitBox pudelkoZOwocami = new FruitBox(new Orange());
+        Object orange = (Orange)pudelkoZOwocami.getFruit();
+        //musze rzutowac
+
+        //-----
+        class BoxOnSteroids<T> {
+            public T fruit;
+            public BoxOnSteroids(T fruit) {
+                this.fruit = fruit;
+            }
+            public T getFruit() {
+                return fruit;
+            }
+        }
+        BoxOnSteroids<Apple> pudelkoZJabkami = new BoxOnSteroids<>(new Apple());
+        /*
+        Za zmienna T podstawiam typ Apple ktory przypisywany jest do zmiennej fruit
+         w konstruktorze, nie musze juz rzutowac
+         */
+
+        BoxOnSteroids pudelkoBezTypu = new BoxOnSteroids<>(new Apple());
+        //moge zrobic bez podania typu generycznego ale bedzie on Object
+        // wiec chcac przypisac juz bede musial rzutowac!
+        Apple apple = (Apple) pudelkoBezTypu.getFruit();
+        BoxOnSteroids<Apple> nowePudelkoZJablkami = pudelkoBezTypu;
+        //teraz typ jest Apple po ponownym przypisaniu
+
+        //Musze pamietac ze jest w nim apple gdy bede chcial przypisac
+        // pudelkoBezTypu do Orange
+        //Orange orange1 = (Orange)pudelkoBezTypu.getFruit();
+        //wyjatek java.lang.ClassCastException
+
+        //-----
+        //Zagniezdzone klasy generyczne
+        class Pair<T, S> {
+            private T first;
+            private S second;
+            public Pair(T first, S second) {
+                this.first = first;
+                this.second = second;
+            }
+            public T getFirst() {
+                return first;
+            }
+            public S getSecond() {
+                return second;
+            }
+        }
+
+        Pair<BoxOnSteroids<Apple>,BoxOnSteroids<Orange>> para = new Pair<>(
+                new BoxOnSteroids<>(new Apple()),
+                new BoxOnSteroids<>(new Orange())
+        );
+
+        //------
+        //Extends
+        /*
+        interface Figura{
+            String dajNazwe();
+        }
+        */
+        class Kolo implements Figura {
+            @Override
+            public String dajNazwe() {
+                return "kolo";
+            }
+        }
+        class PudelkoFigur <T extends Figura>{
+            //Nie musze implemenetowac metod z int Figura!!
+            //Klasa parametryzujaca T musi rozszerzac Figure lub rozszerzac
+            // klase ktora go implementuje !!
+            // wiec bede mogl na polu z paramtrem T wywolac
+            // metody z tego interfejsu ktore nadpisza
+            // parametryzujace klasy!
+            private T figura;
+            public PudelkoFigur(T figura){
+                this.figura = figura;
+            }
+            public T getFigura() {
+                return figura;
+            }
+            public String dajNazwe(){
+                return figura.dajNazwe();//!!
+                //Wywola metode dajNazwe z klasy ktorej bedzie
+                // parmatryzowac typ generyczny czyli np. Kolo!!
+            }
+        }
+        PudelkoFigur<Kolo> kola = new PudelkoFigur<>(new Kolo());
+        kola.dajNazwe();
+
+        //pudelkoFigur<Apple> jablka = new pudelkoFigur<Apple>(new Apple());
+        //Blad kompilacji - Apple nie implementuje Figury ani nie rozszerza
+        // klasy implementujacych go!!
+
+
+
+
     }
 }
 
+interface Figura{
+    String dajNazwe();
+}
