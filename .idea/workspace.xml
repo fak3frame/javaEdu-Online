@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 11">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Dziecko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Dziecko.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Ojciec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Ojciec.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +34,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1057">
-                    <caret line="416" column="58" selection-start-line="416" selection-start-column="58" selection-end-line="416" selection-end-column="58" />
+                  <state relative-caret-position="836">
+                    <caret line="457" column="10" selection-start-line="457" selection-start-column="10" selection-end-line="457" selection-end-column="10" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
@@ -56,8 +54,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Dziecko.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="714">
-                    <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+                  <state relative-caret-position="731">
+                    <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
                     <folding>
                       <element signature="e#146#147#0" expanded="true" />
                       <element signature="e#203#204#0" expanded="true" />
@@ -88,15 +86,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Stringi" value="114" />
-          <entry key="java" value="59254" />
+          <entry key="java" value="60053" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="475" />
+          <entry key="txt" value="476" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="59254" />
-          <entry key="PLAIN_TEXT" value="589" />
+          <entry key="JAVA" value="60053" />
+          <entry key="PLAIN_TEXT" value="590" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -130,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="364" column="16" selection-start-line="364" selection-start-column="16" selection-end-line="364" selection-end-column="16" />
+            <state relative-caret-position="816">
+              <caret line="426" column="78" lean-forward="true" selection-start-line="425" selection-start-column="8" selection-end-line="426" selection-end-column="78" />
               <folding>
                 <element signature="e#2909#2910#0" expanded="true" />
                 <element signature="e#2950#2951#0" expanded="true" />
@@ -283,7 +281,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="55" />
-    <option name="width" value="1404" />
+    <option name="width" value="1388" />
     <option name="height" value="1447" />
   </component>
   <component name="ProjectView">
@@ -396,7 +394,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535566944907" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535643948240" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -553,13 +551,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01221" summary="Strumienie 32">
-      <created>1534957938573</created>
-      <option name="number" value="01221" />
-      <option name="presentableId" value="LOCAL-01221" />
-      <option name="project" value="LOCAL" />
-      <updated>1534957938573</updated>
     </task>
     <task id="LOCAL-01222" summary="Strumienie 33">
       <created>1534962714854</created>
@@ -897,7 +888,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535566796416</updated>
     </task>
-    <option name="localTasksCounter" value="1270" />
+    <task id="LOCAL-01270" summary="PODSUMOWANIE 12">
+      <created>1535567041302</created>
+      <option name="number" value="01270" />
+      <option name="presentableId" value="LOCAL-01270" />
+      <option name="project" value="LOCAL" />
+      <updated>1535567041302</updated>
+    </task>
+    <option name="localTasksCounter" value="1271" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -942,10 +940,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="0" width="1404" height="1447" extended-state="0" />
+    <frame x="55" y="0" width="1388" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26339287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26656628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -978,7 +976,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strumienie 56" />
     <MESSAGE value="Strumienie 57" />
     <MESSAGE value="Strumienie 58" />
     <MESSAGE value="Strumienie 59" />
@@ -1003,7 +1000,8 @@
     <MESSAGE value="PODSUMOWANIE 9" />
     <MESSAGE value="PODSUMOWANIE 10" />
     <MESSAGE value="PODSUMOWANIE 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 11" />
+    <MESSAGE value="PODSUMOWANIE 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1189,17 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Dziecko.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Ojciec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1215,10 +1202,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Dziecko.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="364" column="16" selection-start-line="364" selection-start-column="16" selection-end-line="364" selection-end-column="16" />
+        <state relative-caret-position="816">
+          <caret line="426" column="78" lean-forward="true" selection-start-line="425" selection-start-column="8" selection-end-line="426" selection-end-column="78" />
           <folding>
             <element signature="e#2909#2910#0" expanded="true" />
             <element signature="e#2950#2951#0" expanded="true" />
@@ -1230,8 +1228,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1057">
-          <caret line="416" column="58" selection-start-line="416" selection-start-column="58" selection-end-line="416" selection-end-column="58" />
+        <state relative-caret-position="836">
+          <caret line="457" column="10" selection-start-line="457" selection-start-column="10" selection-end-line="457" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

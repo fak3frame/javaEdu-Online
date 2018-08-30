@@ -1,6 +1,7 @@
 package Podsumowanie;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -211,6 +212,20 @@ class Wew3{/////////////////////////////////////////////////////
                     break;
                 imiona.add(imie);
             }
+
+            //iny przyklad
+            while (true){
+                try {
+                    imie = wejscie.nextLine();
+                    break;
+                }
+                catch (InputMismatchException e){
+                    wejscie.next();
+                }
+            }
+            if(imie.equals("Kamil")){
+                throw new IllegalArgumentException("jest juz kamil!");
+            }
         }
 }//////////////////////////////////////////////////////////////
         /*
@@ -415,6 +430,54 @@ class Wew4{///////////////////////////////////////////////////////
 
          W klasie pochodznej zwracam jej zmienne i na koncu dodaje + super.toString()
           i w klasie bazowej zwracam zmienne klasy bazowej
+
+
+
+         -----WYJATKI + BLOK TRY CATCH-----
+
+         Wyrzucac wyjatki moge za pomoca throw new np:
+          throw new IllegalArgumentException();
+
+         Lub throws w metodach np:
+         void metodaZWyjatkiem()throws IOException{
+            throw new IOException();
+         }
+
+         ----
+         Wyjatki dzielimy na CHECKED I UNCHECKED i dziedzicza one po klasie
+          Throwable
+
+         Checked - musi byc obluzony np IOException
+
+         Unchecked - nie musi np IllegalArgumentException
+
+         Jesli wyjatek ma w swojej hierarchii TYLKO Exception/Throwable
+          musi byc obsluzony, jesli cos wiecej to juz nie
+
+         Hierarchia dziedziczenia wyjatkow:
+          Throwable <- Exception <- RuntimeException <- IllegalArgumentException
+         -----
+         Do oblusgi kilku wyjatkow w klauzuli try/catch moge zapisac
+          je w oddzielnym catch lub uzywajac |
+         Dodatkowo mozna dodac blok finally ktory bedzie
+          sie wykonywal zawsze
+         Blok try moze byc bez catch ale musi byc finally
+
+         try {
+            throw new IllegalArgumentException();
+         }
+         catch (ArithmeticException ex) {}
+         catch (RuntimeException ex) {}
+
+         try{
+            throw new IllegalArgumentException();
+         }
+         catch(ArithmeticException | RuntimeException ex){}
+         finally{}
+
+
+
+
 
 
          */
