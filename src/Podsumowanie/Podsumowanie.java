@@ -90,6 +90,10 @@ public class Podsumowanie {
 
         String napis = "asd\n123";
 
+        //-----kolejnosc operatorow
+        //Operator +/-/* ma wiekszy priorytet niz ==!
+        //2+3==10; //najpierw doda a potem porowna
+
         //-----
         //boxing unboxing
 
@@ -194,6 +198,16 @@ class Wew2{/////////////////////////////////////////////////////
 
         public void metoda(){}
         public void metoda(int a){}
+
+
+
+        -----POROWNYWANIE TYPOW PROSTYCH-----
+
+        Oparator == lub !=
+
+
+
+
 
 
 
@@ -736,6 +750,8 @@ class Wew4{///////////////////////////////////////////////////////
                 this.zmienna=zmienna;
             }
             public void metoda1(PudelkoWildcards<?> pudelko){
+                //przyjeta zmienna pudelko jest to obiekt typu
+                // PudelkoWildcards
                 Object o = pudelko.zmienna;
                 //<?> moge parametryzowac wszystkim ale przypisac
                 // moge tylko do Object poniewaz jesli dam:
@@ -748,10 +764,113 @@ class Wew4{///////////////////////////////////////////////////////
             }
         }
 
+        PudelkoWildcards<Object> pudelkoWildcards = new PudelkoWildcards<>(new Object());
+        pudelkoWildcards.metoda1(pudelkoWildcards);
+        pudelkoWildcards.metoda1(new PudelkoWildcards<>(new Object()));
+        pudelkoWildcards.metoda1(new PudelkoWildcards<>(new Apple()));
+
+        PudelkoWildcards<Apple> pudelkoWildcards2 = new PudelkoWildcards<>(new Apple());
+        pudelkoWildcards2.metoda1(new PudelkoWildcards<>(new Object()));
+
+        //-----metoda wildcard
+        class PudelkoWildcards3<T>{
+            private T zmienna;
+            public PudelkoWildcards3(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public T getZmienna() {
+                return zmienna;
+            }
+            public void setZmienna(T zmienna) {
+                this.zmienna = zmienna;
+            }
+            public void metoda(PudelkoWildcards3<Figura> obiekt){
+                //metoda przyjmuje obiekt ktory moze byc typu
+                // figura(nie moze bo to interface) lub "nizej"
+                // czyli kwadrat/prostokat
+                Object o = obiekt.getZmienna();
+                Figura f = obiekt.getZmienna();
+                Kwadrat k = (Kwadrat) obiekt.getZmienna();
+                //Przyjety obiekt moge zapisac do zmiennej
+                // nizej czyli odwrotnie zeby miec gwaranje ze
+                // cokolwiek bym wyslal (Figura moze byc klasa)
+                // bedzie przypisane dobrze polimoficznie
+            }
+        }
+        PudelkoWildcards3<Object> test2 = new PudelkoWildcards3<>(new Object());
+
+        test2.metoda(new PudelkoWildcards3<>(new Kwadrat()));
+        //test2.metoda(new PudelkoWildcards3<>(new Prostokat()));
+        //Blad - metoda przypisuje NA SILE rzutujac do kwadratu
+
+        //-----metody "upper bound" ? extedns
+        class PudelkoWildcards2<T>{
+            private T zmienna;
+            public PudelkoWildcards2(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public T getZmienna() {
+                return zmienna;
+            }
+            public void setZmienna(T zmienna) {
+                this.zmienna = zmienna;
+            }
+
+            public void metoda(PudelkoWildcards2<? extends Figura> obiekt){
+                //W tej metodzie przyjety obiekt musi rozszerzac figure(interface)
+                // wiec wyslac do niego moge TYLKO cos co rozszrza figure!
+                //Przypisac do nowego obiektu mozna w druga strone czyli musze miec
+                // gwarancje ze obiekt bazowy jest Figura wiec moge dac typ
+                // obiektu "wyzej" figury czyli Object lub Figura aby byla
+                // pewnosc ze wysle dobry typ.
+                Object o = obiekt.getZmienna();
+                Figura f = obiekt.getZmienna();
+                Kwadrat k = (Kwadrat)obiekt.zmienna;
+                //Na sile rzutuje ale jesli ktos wysle do metody
+                // prostokat bedzie clad classCastException dlatego moge
+                // przypisac obiekt tylko do typu Figury badz "wyzej"
+            }
+        }
+        PudelkoWildcards2<Object> test = new PudelkoWildcards2<>(new Object());
+        PudelkoWildcards2<Prostokat> test3 = new PudelkoWildcards2<>(new Prostokat());
+
+        test.metoda(new PudelkoWildcards2<>(new Kwadrat()));
+        //test.metoda(new PudelkoWildcards2<>(new Prostokat()));
+        // blad poniewaz w metodzie na sile przypisuje obiek do kwadratu
+        // a probuje wyslac prostokat
+
+        //-----metody "lower bound" ? super
+        class PudelkoWildcards4<T>{
+            private T zmienna;
+            public PudelkoWildcards4(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public T getZmienna() {
+                return zmienna;
+            }
+            public void setZmienna(T zmienna) {
+                this.zmienna = zmienna;
+            }
+
+            public void metoda(PudelkoWildcards4<? super Prostokat> obiekt){
+                //Metoda moze przyjac Prostokat badz "wyzej" czyli
+                // Figure lub Object
+                Object o = obiekt.getZmienna();
+                Figura f = (Figura)obiekt.getZmienna();
+                //Przypisac moge tylko do Object poniewaz
+                // jesli wysle Object to niebde mogl przypisac go
+                // do Figury
+            }
+        }
+        PudelkoWildcards4<Object> test4 = new PudelkoWildcards4<>(new Object());
+
+        test4.metoda(new PudelkoWildcards4<>(new Prostokat()));
+        test4.metoda(new PudelkoWildcards4<>(new Kwadrat()));
+        test4.metoda(new PudelkoWildcards4<>(new Object()));
 
 
 
-        //-----
+
 
 
 

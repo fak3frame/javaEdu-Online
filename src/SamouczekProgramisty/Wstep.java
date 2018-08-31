@@ -851,7 +851,7 @@ public class Wstep {
         Operator +/-/* ma wiekszy priorytet niz ==
         2+3==10 // najpierw doda a potem porowna
 
-        Nalezy nie laczyc operaci sumownia tekstu + i porownywania dlatego
+        Nalezy nie laczyc operacji sumownia tekstu + i porownywania dlatego
          ze pierwszenstwo mialoby dodawania a nie mozna tego zrobic z teksem
          dletego ze porownywalibysmy String z int!!
         "10 == 10: " + 10 == 10 // compilation error!
