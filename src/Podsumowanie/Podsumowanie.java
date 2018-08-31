@@ -362,6 +362,9 @@ class Wew4{///////////////////////////////////////////////////////
          Obiekt klasy ktora dziedziczy ma dostep do wszystkich pol
           i metod klasay bazowej
 
+         Klasy rozszerzajace klase implementujaca interface nie musza
+          implementowac metody intefracu!
+
          -----
          //modyfikatory
          public - dostepny wszedzie
@@ -654,6 +657,37 @@ class Wew4{///////////////////////////////////////////////////////
         //pudelkoFigur<Apple> jablka = new pudelkoFigur<Apple>(new Apple());
         //Blad kompilacji - Apple nie implementuje Figury ani nie rozszerza
         // klasy implementujacych go!!
+
+
+
+        //-----DZIEDZIECZENIE KLAS GENERYCZNYCH-----
+        class Prostokat implements Figura{
+            @Override
+            public String dajNazwe() {
+                return "prostokat";
+            }
+        }
+        class Kwadrat extends Prostokat{
+            //Nie musze implementowac metod figury
+            public String dajNazwe(){
+                return "kwadrat";
+            }
+        }
+        Prostokat p1 = new Kwadrat();//moge bo rozszerza
+        PudelkoFigur<Prostokat> p3 = new PudelkoFigur<>(new Prostokat());
+
+        //pudelkoFigur<Prostokat> p4 = new pudelkoFigur<Kwadrat>(new Kwadrat());
+        //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
+        // nawet jesli rozszerza typ!!
+
+        PudelkoFigur<Prostokat> p2 = new PudelkoFigur<>(new Kwadrat());
+        //Ale po mimo tego ze parametryzuje go typem Prostokat to mege przypisac
+        // obiekt Kwadrat poniwaz dziedziczy
+        System.out.println("p2 daj nazwe: "+p2.dajNazwe());//Da kwadrat tylko
+        // dlatego ze metodaZwykla Prostokata jest nadpisywana
+        System.out.println(p2.getClass()); //da pudelkoFigur tylko
+
+
 
 
 
