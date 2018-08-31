@@ -5,7 +5,7 @@ import java.util.*;
 public class Podsumowanie {
     public static void main(String[] args) {
         /*
-        -----SKTORY KLAWISZOWE-----
+        --------------SKTORY KLAWISZOWE-------------------
 
         alt + 1 - ukrycie okienka struktury projektu
         alt + strzalka - przleczanie pomiedy zakladkami
@@ -36,8 +36,9 @@ public class Podsumowanie {
         fori + tab - petla for
 
 
+
         //------------------------------------------------------------------------
-        -----OGOLNE-----
+        -------------------------------OGOLNE-------------------------------------
 
         Klasa - projekt/foremka
         Obiekt/instancja - produkt
@@ -58,8 +59,9 @@ public class Podsumowanie {
         IDE (ang. Integrated Development Environment)
 
 
+
         //------------------------------------------------------------------------
-        -----ZMIENNE PROSTE-----
+        -----------------------------ZMIENNE PROSTE-------------------------------
         */
 
         int zmiennaInt = 123;
@@ -87,6 +89,7 @@ public class Podsumowanie {
 
         String napis = "asd\n123";
 
+
         //-----
         //boxing unboxing
 
@@ -111,8 +114,9 @@ public class Podsumowanie {
         wartosc liczby finalnej NIE MOZNA zmienic
 
 
+
         //------------------------------------------------------------------------
-        -----ZMIENNA STRING-----
+        --------------------------------ZMIENNA STRING----------------------------
         */
         String jakisString = "costam";
         String jakisStringZLiczba = "costam123";
@@ -147,9 +151,8 @@ public class Podsumowanie {
 
 
 
-
         //------------------------------------------------------------------------
-        /*-----ZMIENNA INTEGER-----
+        /*-------------------------ZMIENNA INTEGER--------------------------------
         */
         Integer integer = 123;
         Integer integer1 = new Integer("123123");
@@ -165,7 +168,7 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
-        /*-----METODY-----
+        /*---------------------------------METODY---------------------------------
 
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
@@ -204,6 +207,7 @@ class Wew2{/////////////////////////////////////////////////////
 }////////////////////////////////////////////////////////////////
         /*
 
+
         -----
         Przeciazenie metody (overload) jest gdy ta sama klasa
          ma kilka metod o tej samej nazwie ale przyjmujace inne
@@ -213,10 +217,12 @@ class Wew2{/////////////////////////////////////////////////////
         public void metoda(int a){}
 
 
+
         //------------------------------------------------------------------------
-        -----POROWNYWANIE TYPOW PROSTYCH-----
+        ----------------------------POROWNYWANIE TYPOW PROSTYCH-------------------
 
         Oparator == lub !=
+
 
         -----kolejnosc operatorow
         Operator +/-/* ma wiekszy priorytet niz ==!
@@ -228,6 +234,7 @@ class Wew2{/////////////////////////////////////////////////////
 
         "10 == 10: " + (10 == 10)
 
+
         -----
         porownywanie liczb zmiennoprzecinkowych polega
          na odjeciu ich od siebie w wartosci bezwzglednej
@@ -236,8 +243,9 @@ class Wew2{/////////////////////////////////////////////////////
         /*
 
 
+
         //------------------------------------------------------------------------
-        -----WPROWADZANIE DANYCH-----
+        --------------------------WPROWADZANIE DANYCH-----------------------------
         */
 class Wew3{/////////////////////////////////////////////////////
         void start(){
@@ -277,8 +285,9 @@ class Wew3{/////////////////////////////////////////////////////
         /*
 
 
+
         //------------------------------------------------------------------------
-        -----PAKIETY-----
+        -----------------------------------PAKIETY--------------------------------
 
         Słuza do grupowania i informowania gdzie znajduje sie klasa/interfejs
         /typ wyliczeniowy/adnotacja
@@ -295,8 +304,9 @@ class Wew3{/////////////////////////////////////////////////////
          Mam dostep dzieki temu takze do wszystkich jej statycznych metod
 
 
+
         //------------------------------------------------------------------------
-         -----KLASY-----
+         ------------------------------------KLASY--------------------------------
 
         Sluza do grupowania atrybutow/pol i metod
 
@@ -314,6 +324,7 @@ class Wew3{/////////////////////////////////////////////////////
         W nawiasie wpisuje paramtry jakie chce wyslac do konstruktora
          a ich ilosc decyduje jaki konstruktor zostanie wywolany
 
+
         -----
         Konstruktor jest to metoda ktora nazywa sie tak samo
          jak klasa i nie ma okreslonego jaki typ zwraca
@@ -328,12 +339,14 @@ class Wew3{/////////////////////////////////////////////////////
         Jesli zadeklaruje konstruktor z jakims parametrem to
          ten bezparametrowy zostaje usuniety
 
+
         -----
         //stworznie obiektu z wywolanie konstruktora z jedyn parametrem
         Podsumowanie obiekt = new Podsumowanie(12);
 
         public Podsumowanie(int a)[
         }
+
 
         -----
         Moge w jednym konstruktorze odwolac sie do innego np
@@ -351,6 +364,7 @@ class Wew3{/////////////////////////////////////////////////////
             this.a = a;
         }
 
+
         -----
         //konstruktor kopiujacy
         private Podsumowanie podsumowanie;
@@ -358,6 +372,7 @@ class Wew3{/////////////////////////////////////////////////////
         public Podsumowanie(Podsumowanie podsumowanie){
             this.podsumowanie = podsumowanie;
         }
+
 
         -----
         Zmienna statyczna dotyczy klasy a nie obiektu lecz moge
@@ -372,11 +387,13 @@ class Wew4{///////////////////////////////////////////////////////
         }
 }/////////////////////////////////////////////////////////////////
 
+
          -----
          W przypadku dziedziczenia moge odwolac sie z konstruktora
           podklasy do konstruktora klasy bazowej tylko zamiast
           slowa this uzywam super i musi ono byc NA POCZATKU
           konstruktora
+
 
          -----
          //metoda toString
@@ -392,8 +409,9 @@ class Wew4{///////////////////////////////////////////////////////
          //W innym przypadku moge uzyc metody klasy Integer.valueOf(a);
 
 
+
         //------------------------------------------------------------------------
-        -----METODA EQUALS I HASHCODE-----
+        -------------------------METODA EQUALS I HASHCODE-------------------------
 
         Sa one w klasie Object wiec moge je wywolac na kazdym
          obiekcie.
@@ -447,7 +465,7 @@ class Wew4{///////////////////////////////////////////////////////
 
 
         //------------------------------------------------------------------------
-        /* -----DZIEDZICZENIE-----
+        /* ------------------------------DZIEDZICZENIE----------------------------
 
          Samochod - nadklasa/klasa bazowa
          SUV - podklasa/klasa pochodna
@@ -458,6 +476,7 @@ class Wew4{///////////////////////////////////////////////////////
          Klasy rozszerzajace klase implementujaca interface nie musza
           implementowac metody intefracu! lecz maja do niej dostep
 
+
          -----
          //modyfikatory
          public - dostepny wszedzie
@@ -465,9 +484,11 @@ class Wew4{///////////////////////////////////////////////////////
          brak modyfikatora - dostepny tylko w pakiecie(tym samym folderze)
          private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
 
+
          -----
          Przesloniecie metody (override) gdy klasa pochodna ma taka
           metode z taka sama nazwe i taka sama ilosc i rodzaj parametrow
+
 
          -----
          //Slowo super
@@ -485,6 +506,7 @@ class Wew4{///////////////////////////////////////////////////////
             super();
          }
 
+
          -----
          //Wywolywanie konstruktorow
 
@@ -497,8 +519,10 @@ class Wew4{///////////////////////////////////////////////////////
          Musze pamietac ze jesli zadeklaruje konstruktor z parametrami to ten
           bezparametrowy (ukryty) przestaje isniec!
 
+
          -----
          Klasy i metody z modyfikatorem final nie moze byc rozszerzana!
+
 
          -----
          //kompozycja i dziedzicznie
@@ -514,6 +538,7 @@ class Wew4{///////////////////////////////////////////////////////
             public Budynek b = new Budynek;
          }
 
+
          -----
          //Polimorfizm
 
@@ -527,6 +552,7 @@ class Wew4{///////////////////////////////////////////////////////
 
          ((Dziecko) r).metodaDziecka();
 
+
          -----
          //metoda toString
 
@@ -534,8 +560,9 @@ class Wew4{///////////////////////////////////////////////////////
           i w klasie bazowej zwracam zmienne klasy bazowej
 
 
+
         //------------------------------------------------------------------------
-         -----WYJATKI + BLOK TRY CATCH-----
+         ---------------------------WYJATKI + BLOK TRY CATCH----------------------
 
          Wyrzucac wyjatki moge za pomoca throw new np:
           throw new IllegalArgumentException();
@@ -544,6 +571,7 @@ class Wew4{///////////////////////////////////////////////////////
          void metodaZWyjatkiem()throws IOException{
             throw new IOException();
          }
+
 
          ----
          Wyjatki dzielimy na CHECKED I UNCHECKED i dziedzicza one po klasie
@@ -558,6 +586,7 @@ class Wew4{///////////////////////////////////////////////////////
 
          Hierarchia dziedziczenia wyjatkow:
           Throwable <- Exception <- RuntimeException <- IllegalArgumentException
+
 
          -----
          Do oblusgi kilku wyjatkow w klauzuli try/catch moge zapisac
@@ -579,8 +608,9 @@ class Wew4{///////////////////////////////////////////////////////
          finally{}
 
 
+
         //------------------------------------------------------------------------
-         -----STERTA + REFERENCJA + GC-----
+         -----------------------STERTA + REFERENCJA + GC--------------------------
 
          Gdy tworze obiekty rezerowana jest pamiec (STERTA) - HEAP SPACE
          Zmienne, które wskazują na obiekty na stercie zawierają referencje
@@ -596,8 +626,9 @@ class Wew4{///////////////////////////////////////////////////////
           utworzyc zmiennej tego typu
 
 
+
         //------------------------------------------------------------------------
-          -----KONWERSJA I RZUTOWANIE-----
+          -------------------------KONWERSJA I RZUTOWANIE-------------------------
 
           Rzutowanie (cast) - konwersja JAWNA
 
@@ -613,8 +644,9 @@ class Wew4{///////////////////////////////////////////////////////
           int intValue = (int) 123.123F;
 
 
+
         //------------------------------------------------------------------------
-        -----TYPY GENERYCZNE-----
+        ----------------------------TYPY GENERYCZNE------------------------------
 
         Typ generyczny jest szablonem pozwalajacym uniknac rzutowania
         Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
@@ -661,6 +693,7 @@ class Wew4{///////////////////////////////////////////////////////
         Object orange = (Orange)pudelkoZOwocami.getFruit();
         //musze rzutowac
 
+
         //-----
         class BoxOnSteroids<T> {
             public T fruit;
@@ -689,6 +722,7 @@ class Wew4{///////////////////////////////////////////////////////
         //Orange orange1 = (Orange)pudelkoBezTypu.getFruit();
         //wyjatek java.lang.ClassCastException
 
+
         //-----
         //Zagniezdzone klasy generyczne
         class Pair<T, S> {
@@ -710,6 +744,7 @@ class Wew4{///////////////////////////////////////////////////////
                 new BoxOnSteroids<>(new Apple()),
                 new BoxOnSteroids<>(new Orange())
         );
+
 
         //------
         //Extends
@@ -752,8 +787,9 @@ class Wew4{///////////////////////////////////////////////////////
         // klasy implementujacych go!!
 
 
+
         //------------------------------------------------------------------------
-        //-----DZIEDZIECZENIE KLAS GENERYCZNYCH-----
+        //------------------DZIEDZIECZENIE KLAS GENERYCZNYCH----------------------
 
         class Prostokat implements Figura{
             @Override
@@ -780,6 +816,7 @@ class Wew4{///////////////////////////////////////////////////////
         System.out.println("p2 daj nazwe: "+p2.dajNazwe());//Da kwadrat tylko
         // dlatego ze metodaZwykla Prostokata jest nadpisywana
         System.out.println(p2.getClass()); //da pudelkoFigur tylko
+
 
         //-----
         class ZwyklePudelko<T>{
@@ -821,8 +858,9 @@ class Wew4{///////////////////////////////////////////////////////
         zwyklePudelko2 = null;
 
 
+
         //------------------------------------------------------------------------
-        //-----METODY Z ARGUEMNTAMI GENERYCZNYMI - WILDCARDS-----
+        //-----------METODY Z ARGUEMNTAMI GENERYCZNYMI - WILDCARDS----------------
 
         class PudelkoWildcards<T>{
             private T zmienna;
@@ -851,6 +889,7 @@ class Wew4{///////////////////////////////////////////////////////
 
         PudelkoWildcards<Apple> pudelkoWildcards2 = new PudelkoWildcards<>(new Apple());
         pudelkoWildcards2.metoda1(new PudelkoWildcards<>(new Object()));
+
 
         //-----metoda wildcard
         class PudelkoWildcards3<T>{
@@ -882,6 +921,7 @@ class Wew4{///////////////////////////////////////////////////////
         test2.metoda(new PudelkoWildcards3<>(new Kwadrat()));
         //test2.metoda(new PudelkoWildcards3<>(new Prostokat()));
         //Blad - metoda przypisuje NA SILE rzutujac do kwadratu
+
 
         //-----metody "upper bound" ? extedns
         class PudelkoWildcards2<T>{
@@ -919,6 +959,7 @@ class Wew4{///////////////////////////////////////////////////////
         // blad poniewaz w metodzie na sile przypisuje obiek do kwadratu
         // a probuje wyslac prostokat
 
+
         //-----metody "lower bound" ? super
         class PudelkoWildcards4<T>{
             private T zmienna;
@@ -950,13 +991,15 @@ class Wew4{///////////////////////////////////////////////////////
         //blad bo w metodzie NA SILE przypisuje Object do Figury
 
 
+
         //------------------------------------------------------------------------
-        /*-----KOLEKCJE-----
+        /*----------------------------KOLEKCJE------------------------------------
 
         Kolekcja to sposob grupownia obiektow, jest ona struktura danych
 
         lang.Iterable -> util.Collection -> util.List, util.Set, util.Queue
         util.Map
+
 
         -----
         Lista
@@ -979,6 +1022,7 @@ class Wew4{///////////////////////////////////////////////////////
         //W konstrukotrze LinkeList moge podac inna kolekcje
         // aby zostala ona przpisana do nowej LinkedLIsty
 
+
         //----
         //Metdoy:
         lista1.add("kamil"); // dodanie elementu
@@ -997,6 +1041,7 @@ class Wew4{///////////////////////////////////////////////////////
         // nie jaki jest rozmiar wstepny (w przypadku ArrayList)
         int pierwszeWystapienie = lista1.indexOf("kamil");
         int ostatnieWystapienie = lista1.lastIndexOf("kamil");
+
 
         /*----
         Zbior
@@ -1023,6 +1068,7 @@ class Wew4{///////////////////////////////////////////////////////
         Set<String> zbior3 = new LinkedHashSet<>(10);
         //Konstruktor zawiera wstepny rozmiar
 
+
         //-----
         zbior1.add("kamil");
         zbior1.addAll(zbior2);
@@ -1030,6 +1076,7 @@ class Wew4{///////////////////////////////////////////////////////
         boolean czyZawiera2 = zbior1.contains("Kamil");
         boolean czyPusta2 = zbior1.isEmpty();
         int iloscElementow = zbior1.size();
+
 
         /*----
         Mapy
@@ -1057,6 +1104,64 @@ class Wew4{///////////////////////////////////////////////////////
         //Konstruktor moze przkopiowac mape
         Map<Integer, String> mapa3 = new LinkedHashMap<>(23);
         //Konstruktor zawiera wstepny rozmiar
+
+
+        //-----
+        //metody:
+        mapa1.clear();
+        mapa1.put(0,"kamil");
+        mapa1.putAll(mapa2);
+        mapa1.get(0);// zwroci wartosc z klucza "0"
+        mapa1.remove(0);// usunie klucz "0" i jego wartosc
+        boolean czyKluczIstanieje = mapa1.containsKey(0);// czy mapa zawiera
+        // klucz "0"
+        boolean czyWartoscInsteniej = mapa1.containsValue("kamil");
+        boolean czyPusta3 = mapa1.isEmpty();
+        int iloscElementow2 = mapa1.size();
+        Set<Map.Entry<Integer,String>> zbiorKluczWartosc = mapa1.entrySet();
+        //kazdy element zbioru bedzie skladal sie z klucza i wartosci,
+        // odwolujac sie do elementu 0 moge wywolac na nim metode
+        // getKey() oraz getValue()
+
+
+        //-----
+        //Iterowanie:
+        mapa1.clear();
+        mapa1.put(0,"kamil");
+        mapa1.put(1,"tomek");
+
+        System.out.println("KLUCZE:");
+        for (Integer x : mapa1.keySet()){
+            System.out.println(x +": "+ mapa1.get(x));
+        }
+
+        System.out.println("WARTOSCI");
+        for (String x :mapa1.values()){
+            System.out.println(x);
+        }
+
+        System.out.println("ZBIOR KLUCZ WARTOSC");
+        Set<Map.Entry<Integer,String>> zbiorKluczWartosc2 = mapa1.entrySet();
+        for(Map.Entry<Integer,String> x : zbiorKluczWartosc2){
+            System.out.println(x.getKey()+": "+x.getValue());
+        }
+
+
+
+        /*--------------------------------------------------------------------
+        ----------------------OPERACJE NA PLIKACH-----------------------------
+         lokalizacje plikow w systemach
+        Windows: C:\katalog\plik.txt
+        Linux: /katalog/plik.txt
+
+
+
+
+
+
+         */
+
+
 
 
 
