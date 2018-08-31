@@ -1,9 +1,6 @@
 package Podsumowanie;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Podsumowanie {
     public static void main(String[] args) {
@@ -39,7 +36,7 @@ public class Podsumowanie {
         fori + tab - petla for
 
 
-
+        //------------------------------------------------------------------------
         -----OGOLNE-----
 
         Klasa - projekt/foremka
@@ -61,7 +58,7 @@ public class Podsumowanie {
         IDE (ang. Integrated Development Environment)
 
 
-
+        //------------------------------------------------------------------------
         -----ZMIENNE PROSTE-----
         */
 
@@ -90,10 +87,6 @@ public class Podsumowanie {
 
         String napis = "asd\n123";
 
-        //-----kolejnosc operatorow
-        //Operator +/-/* ma wiekszy priorytet niz ==!
-        //2+3==10; //najpierw doda a potem porowna
-
         //-----
         //boxing unboxing
 
@@ -118,7 +111,7 @@ public class Podsumowanie {
         wartosc liczby finalnej NIE MOZNA zmienic
 
 
-
+        //------------------------------------------------------------------------
         -----ZMIENNA STRING-----
         */
         String jakisString = "costam";
@@ -128,15 +121,35 @@ public class Podsumowanie {
 
         String stringZInta = String.valueOf(123);
 
+        /*
         //Standardowo String nie moze miec przypisane zmiennej int
         // lecz jesli zrobie to z konkatenacja + np x + "" to wszystko
         // zostanie przypisane do zmiennej String
 
+        String jest charakterystycznym obiektem poniewaz ta sama jego wartosc
+         jest alokowana w tym samym adresue GDY PRZYPISUJE GO POPRZEZ =
+         */
+        String napis1 = "test";
+        String napis2 = "test";
+        String napis3 = new String("test");
+        //Tutaj rezerwuje specjalnie oddzielnie miejsce w pamieci
+
+        System.out.println("Porownanie napis1 i napis2: "+(napis1==napis2));
+        //Pamietam o nawiasie bo inaczej doda moj "" do napis1 a nastepnie
+        // porowna z napis2!
+        System.out.println("Porownanie napis1 i napis3: "+(napis1==napis3));
+
+        //Porownujac zmienne obiektowe poprzez == porownuje ich adresy!!
+        // a wiec pokaze false poniewaz dalem new String.
+        //Poprawnym porownaniem jest metoda equals() ktora porownuje obiekty
+
+        System.out.println("Poprawne porownanie napis 1 i napis 3: "+napis1.equals(napis3));
 
 
 
-        /*
-        -----ZMIENNA INTEGER-----
+
+        //------------------------------------------------------------------------
+        /*-----ZMIENNA INTEGER-----
         */
         Integer integer = 123;
         Integer integer1 = new Integer("123123");
@@ -151,8 +164,8 @@ public class Podsumowanie {
 
 
 
-        /*
-        -----METODY-----
+        //------------------------------------------------------------------------
+        /*-----METODY-----
 
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
@@ -200,17 +213,30 @@ class Wew2{/////////////////////////////////////////////////////
         public void metoda(int a){}
 
 
-
+        //------------------------------------------------------------------------
         -----POROWNYWANIE TYPOW PROSTYCH-----
 
         Oparator == lub !=
 
+        -----kolejnosc operatorow
+        Operator +/-/* ma wiekszy priorytet niz ==!
+        2+3==10; //najpierw doda a potem porowna
+
+        "10 == 10: " + 10 == 10 // compilation error!
+         najpierw String "10 == 10: " dodaje do 10 czyli wychodzi
+         "10 == 10: 10" a nastepnie porownuje go z intem 10 - BLAD!
+
+        "10 == 10: " + (10 == 10)
+
+        -----
+        porownywanie liczb zmiennoprzecinkowych polega
+         na odjeciu ich od siebie w wartosci bezwzglednej
+         z dodaniem dokladnosci */
+        System.out.println(Math.abs(0.7 - 0.7)<0.00001);
+        /*
 
 
-
-
-
-
+        //------------------------------------------------------------------------
         -----WPROWADZANIE DANYCH-----
         */
 class Wew3{/////////////////////////////////////////////////////
@@ -251,7 +277,7 @@ class Wew3{/////////////////////////////////////////////////////
         /*
 
 
-
+        //------------------------------------------------------------------------
         -----PAKIETY-----
 
         Słuza do grupowania i informowania gdzie znajduje sie klasa/interfejs
@@ -269,7 +295,7 @@ class Wew3{/////////////////////////////////////////////////////
          Mam dostep dzieki temu takze do wszystkich jej statycznych metod
 
 
-
+        //------------------------------------------------------------------------
          -----KLASY-----
 
         Sluza do grupowania atrybutow/pol i metod
@@ -366,9 +392,62 @@ class Wew4{///////////////////////////////////////////////////////
          //W innym przypadku moge uzyc metody klasy Integer.valueOf(a);
 
 
+        //------------------------------------------------------------------------
+        -----METODA EQUALS I HASHCODE-----
+
+        Sa one w klasie Object wiec moge je wywolac na kazdym
+         obiekcie.
+        Domyslna implementacja equals zachowuje sie jak ==
+        */
+
+        class Krzeslo{
+            private String producent;
+            private Date dataProdukcji;
+            private int cena;
+            private double waga;
+
+            public Krzeslo(String producent, Date dataProdukcji, int cena, double waga) {
+                this.producent = producent;
+                this.dataProdukcji = dataProdukcji;
+                this.cena = cena;
+                this.waga = waga;
+            }
+
+            @Override
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Krzeslo krzeslo = (Krzeslo) o;
+                return cena == krzeslo.cena &&
+                        //porownywanie int prosto
+                        Double.compare(krzeslo.waga, waga) == 0 &&
+                        //porownywanie double - korzystam z klasy Double
+                        // metoda compare zwraca 0 gdy rowne i porownuje
+                        // do 0!
+                        Objects.equals(producent, krzeslo.producent) &&
+                        //porownywanie String i Date w Objects, metdoa
+                        // equals zwraca bezposrednio true/false
+                        Objects.equals(dataProdukcji, krzeslo.dataProdukcji);
+            }
+
+            @Override
+            public int hashCode() {
+                return Objects.hash(producent, dataProdukcji, cena, waga);
+            }
+        }
+
+        Krzeslo k1 = new Krzeslo("BRW", new Date(), 12, 12.5);
+        Krzeslo k2 = new Krzeslo("BRW", new Date(), 12, 12.5);
+        Krzeslo k3 = new Krzeslo("BRW", new Date(), 12, 13.5);
+
+        System.out.println("Porownuje krzeslo k1 z k2: "+k1.equals(k2));
+        System.out.println("Porownuje krzeslo k2 z k3: "+k2.equals(k3));
+        System.out.println("Porownuje krzeslo k1 z k3: "+k1.equals(k3));
 
 
-         -----DZIEDZICZENIE-----
+
+        //------------------------------------------------------------------------
+        /* -----DZIEDZICZENIE-----
 
          Samochod - nadklasa/klasa bazowa
          SUV - podklasa/klasa pochodna
@@ -455,7 +534,7 @@ class Wew4{///////////////////////////////////////////////////////
           i w klasie bazowej zwracam zmienne klasy bazowej
 
 
-
+        //------------------------------------------------------------------------
          -----WYJATKI + BLOK TRY CATCH-----
 
          Wyrzucac wyjatki moge za pomoca throw new np:
@@ -500,7 +579,7 @@ class Wew4{///////////////////////////////////////////////////////
          finally{}
 
 
-
+        //------------------------------------------------------------------------
          -----STERTA + REFERENCJA + GC-----
 
          Gdy tworze obiekty rezerowana jest pamiec (STERTA) - HEAP SPACE
@@ -517,7 +596,7 @@ class Wew4{///////////////////////////////////////////////////////
           utworzyc zmiennej tego typu
 
 
-
+        //------------------------------------------------------------------------
           -----KONWERSJA I RZUTOWANIE-----
 
           Rzutowanie (cast) - konwersja JAWNA
@@ -534,7 +613,7 @@ class Wew4{///////////////////////////////////////////////////////
           int intValue = (int) 123.123F;
 
 
-
+        //------------------------------------------------------------------------
         -----TYPY GENERYCZNE-----
 
         Typ generyczny jest szablonem pozwalajacym uniknac rzutowania
@@ -673,8 +752,9 @@ class Wew4{///////////////////////////////////////////////////////
         // klasy implementujacych go!!
 
 
-
+        //------------------------------------------------------------------------
         //-----DZIEDZIECZENIE KLAS GENERYCZNYCH-----
+
         class Prostokat implements Figura{
             @Override
             public String dajNazwe() {
@@ -741,7 +821,7 @@ class Wew4{///////////////////////////////////////////////////////
         zwyklePudelko2 = null;
 
 
-
+        //------------------------------------------------------------------------
         //-----METODY Z ARGUEMNTAMI GENERYCZNYMI - WILDCARDS-----
 
         class PudelkoWildcards<T>{
@@ -866,15 +946,117 @@ class Wew4{///////////////////////////////////////////////////////
 
         test4.metoda(new PudelkoWildcards4<>(new Prostokat()));
         test4.metoda(new PudelkoWildcards4<>(new Kwadrat()));
-        test4.metoda(new PudelkoWildcards4<>(new Object()));
+        //test4.metoda(new PudelkoWildcards4<>(new Object()));
+        //blad bo w metodzie NA SILE przypisuje Object do Figury
 
 
+        //------------------------------------------------------------------------
+        /*-----KOLEKCJE-----
 
+        Kolekcja to sposob grupownia obiektow, jest ona struktura danych
 
+        lang.Iterable -> util.Collection -> util.List, util.Set, util.Queue
+        util.Map
 
+        -----
+        Lista
 
+        Charakteryzuje sie tym ze jej rozmiar moze sie zmieniac, dobra praktyka
+         jest dlekarowanie ich jako typ List (ArrayList,LinkedList) aby
+         mozna byloby je potem bez problemu zmienic jedna na druga
 
+        -Moga przechowywac ten sam obiekt kilka raz
+        -Kolejnosc jest wazna
 
+        Dzielimy je na:
+        -LinkedList - gdy chce czesto dodawac/usuwac elementy
+        -ArrayList - gdy chce  czesto miec dostep do elementow
+        */
+
+        List<String> lista1 = new ArrayList<>(3);
+        //Tylko w ArrayList w konstruktorze moge podac wstepny rozmiar
+        List<String> lista2 = new LinkedList<>(lista1);
+        //W konstrukotrze LinkeList moge podac inna kolekcje
+        // aby zostala ona przpisana do nowej LinkedLIsty
+
+        //----
+        //Metdoy:
+        lista1.add("kamil"); // dodanie elementu
+        lista1.add(1,"kamil");
+        //dodaje na pozycje 2 element "kamil"
+        lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
+        // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
+        // po drugiej!
+        lista1.remove("Tomek");
+        lista1.remove(0);
+        String wezElement = lista1.get(0);// pobierze element z pozycji 0 listy
+        boolean czyZawiera = lista1.contains("kamil");// zwraca flage czt kolekcja
+        // zawiera dany element
+        boolean czyPusta = lista1.isEmpty();// zwraca flage czy lista jest pusta
+        int liczbaElementow = lista1.size();// zwraca liczbe elementow w liscie
+        // nie jaki jest rozmiar wstepny (w przypadku ArrayList)
+        int pierwszeWystapienie = lista1.indexOf("kamil");
+        int ostatnieWystapienie = lista1.lastIndexOf("kamil");
+
+        /*----
+        Zbior
+
+        Sluzy do przyechowywania unikalnych elementow, mozemy wykorzystac je
+         takze aby pozbyc sie duplikatow a Liscie dodajac wszystkie elementy
+         do nowego zbioru.
+
+        -Kolejnosc nie jest istotna
+        -Kazdy element jest unikatowy
+
+        Aby miec pewnosc ze element jest juz w zbioerze nalezy zaimpelementowac
+         metode hashCode oraz Equals !!
+
+        Zbiory dzielimy na
+        -HashSet
+        -TreeSet
+        -LinkedHashSet
+         */
+        Set<String> zbior1 = new HashSet<>(10);
+        //Konstruktor zawiera wstepny rozmiar
+        Set<String> zbior2 = new TreeSet<>(zbior1);
+        //Konstruktor moze przekopiowac kolekcje do nowej
+        Set<String> zbior3 = new LinkedHashSet<>(10);
+        //Konstruktor zawiera wstepny rozmiar
+
+        //-----
+        zbior1.add("kamil");
+        zbior1.addAll(zbior2);
+        zbior1.remove("kamil");
+        boolean czyZawiera2 = zbior1.contains("Kamil");
+        boolean czyPusta2 = zbior1.isEmpty();
+        int iloscElementow = zbior1.size();
+
+        /*----
+        Mapy
+
+        -Kolejnosc nie jest istotna
+        -Kazdy element jest unikatowy
+
+        Mapa jest kolekcja pozwalajaca przechowywac odwzorowanie zbioru
+         kluczy na liste wartosci. Klucze sa unikalne. Kluczami pownny byc
+         obiekty ktorych nie mozna zmienic (Immutable) czyli np String
+         lub Integer.
+        Klasy kluczy powinny miec poprawna implementacje metod HashCode oraz
+         equals.
+        Dodanie istniejacego klucza do kolekcji z wartoscia nadpisze istniejaca
+         wartosc starego klucza na nowa!
+
+        Mapy dzielimy na:
+        -HashMap
+        -TreeMap
+        -LinkedHashMap
+         */
+        Map<Integer, String> mapa1 = new HashMap<>(2);
+        //Konstruktor zawiera wstepny rozmiar
+        Map<Integer, String> mapa2 = new TreeMap<>(mapa1);
+        //Konstruktor moze przkopiowac mape
+        Map<Integer, String> mapa3 = new LinkedHashMap<>(23);
+        //Konstruktor zawiera wstepny rozmiar
 
 
 

@@ -857,7 +857,7 @@ public class Wstep {
         "10 == 10: " + 10 == 10 // compilation error!
         "10 == 10: " + (10 == 10)
 
-        Liczby zmienno przyecinkowe porownujemy poprzez odjecie
+        Liczby zmiennoprzyecinkowe porownujemy poprzez odjecie
          ich od siebie w wartosci bezwzglednej a nastepnie sprawdzenie czy
          sa one wieksze od liczby 0.0..1 w zaleznosci od jakiej dokladnosci
          chcemy
@@ -956,7 +956,7 @@ public class Wstep {
 
         //Deklaracja
         List<String> lista1 = new ArrayList<>(3);
-        //Tylko w ArrayList moge podac wstepny rozmiar
+        //Tylko w ArrayList w konstruktorze moge podac wstepny rozmiar
         List<String> lista2 = new LinkedList<>(lista1);
         //W konstrukotrze LinkeList moge podac inna kolekcje
         // aby zostala ona przpisana do nowej LinkedLIsty
