@@ -363,7 +363,7 @@ class Wew4{///////////////////////////////////////////////////////
           i metod klasay bazowej
 
          Klasy rozszerzajace klase implementujaca interface nie musza
-          implementowac metody intefracu!
+          implementowac metody intefracu! lecz maja do niej dostep
 
          -----
          //modyfikatory
@@ -632,7 +632,7 @@ class Wew4{///////////////////////////////////////////////////////
             }
         }
         class PudelkoFigur <T extends Figura>{
-            //Nie musze implemenetowac metod z int Figura!!
+            //Nie musze implemenetowac metod z int Figura
             //Klasa parametryzujaca T musi rozszerzac Figure lub rozszerzac
             // klase ktora go implementuje !!
             // wiec bede mogl na polu z paramtrem T wywolac
@@ -686,6 +686,73 @@ class Wew4{///////////////////////////////////////////////////////
         System.out.println("p2 daj nazwe: "+p2.dajNazwe());//Da kwadrat tylko
         // dlatego ze metodaZwykla Prostokata jest nadpisywana
         System.out.println(p2.getClass()); //da pudelkoFigur tylko
+
+        //-----
+        class ZwyklePudelko<T>{
+            private T zmienna;
+            ZwyklePudelko(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public T getZmienna() {
+                return zmienna;
+            }
+        }
+        class InnePudelko<T> extends ZwyklePudelko<T>{
+            public InnePudelko(T zmienna){
+                super(zmienna);
+            }
+            void powiedzCos(){
+                System.out.println("moje "+getZmienna()+" jest super");
+            }
+        }
+        InnePudelko<String> ip = new InnePudelko<>("cos");
+        ip.powiedzCos();
+        InnePudelko<Apple> ip2 = new InnePudelko<>(new Apple());
+        ip2.powiedzCos();
+        //pokaza "moje SamouczekProgramisty.Wstep$1Apple@7921b0a2 jest super"
+
+
+        ZwyklePudelko<Object> zwyklePudelko = new ZwyklePudelko<>(new Object());
+        zwyklePudelko.zmienna = new Apple();// poprawne - klasa dziedziczy;
+        ZwyklePudelko<Apple> zwyklePudelko1 = new ZwyklePudelko<>(new Apple());
+        zwyklePudelko1.zmienna = new Apple();
+
+
+        //----Paramtryzowanie <?> obiektow klas
+        ZwyklePudelko<?> zwyklePudelko2 = new ZwyklePudelko<>(new Apple());
+        ZwyklePudelko<?> zwyklePudelko3 = new ZwyklePudelko<>(new Object());
+        //jesli uzyje parametryzacaji <?> nie bede mogl zmienic pola tylko
+        // przypisac wartosc null;
+        // pudelkoWildcards2/2 = new Apple/Object(); - blad
+        zwyklePudelko2 = null;
+
+
+
+        //-----METODY Z ARGUEMNTAMI GENERYCZNYMI - WILDCARDS-----
+
+        class PudelkoWildcards<T>{
+            private T zmienna;
+            PudelkoWildcards(T zmienna){
+                this.zmienna=zmienna;
+            }
+            public void metoda1(PudelkoWildcards<?> pudelko){
+                Object o = pudelko.zmienna;
+                //<?> moge parametryzowac wszystkim ale przypisac
+                // moge tylko do Object poniewaz jesli dam:
+                //Apple o = pudelko.zmienna
+                // bede mogl przypisac za <?> Apple i bedzie poprawne
+                // lecz <?> moze przyjac tez String i bedzie blad;
+                //W metodzie musi byc kod zakladajacy dzialanie
+                // w kazdym przypadku
+                System.out.println("obiekt metody przyjmujacek <?> : "+o);
+            }
+        }
+
+
+
+
+        //-----
+
 
 
 
