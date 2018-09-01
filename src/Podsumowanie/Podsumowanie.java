@@ -1,6 +1,7 @@
 package Podsumowanie;
 
 import java.io.*;
+import java.security.PublicKey;
 import java.util.*;
 
 public class Podsumowanie {
@@ -67,8 +68,6 @@ public class Podsumowanie {
 
         int zmiennaInt = 123;
         //zakres +/- 2,147,483,647
-        int zmiennaInt2 = 123_123;
-        //zapis z literalem, pokaze normalnie, ulatwia czytelnosc
 
         int liczba = 1234_123;//liczba z literalem - ulatwia czytelnosc
         //pokaze liczbe normalnie
@@ -76,7 +75,7 @@ public class Podsumowanie {
         int liczba3 = 0777;//w systemie osemkowym (511)
 
         long liczba5 = 1232455;//nie musze pisac z koncowka L
-        long liczba4 = 123L;//da informacje ze bedzie to typ long
+        long liczba4 = 123L;//daje informacje ze bedzie to typ long
         // mozliwe jest uzycie "l" lecz zalecane jest "L"
 
         float liczba6 = 123.34F;//musi byc "F" lub "f"
@@ -103,9 +102,8 @@ public class Podsumowanie {
         //operacja odwrotna czyli autounboxing
         //przypisywanie do zmiennej prostej zmiennej obiektowej
 
-
         //Zmienne finalne
-        final int LICZBA_FINAL;
+        final int LICZBA_FINAL; //deklaracaj lokalna w main
         LICZBA_FINAL = 12;
         /*
         liczba finalana musi miec zadeklarowana wartosc chyba ze:
@@ -1386,35 +1384,15 @@ class Wew4{
         /*-------------------------------------------------------------------------
         -----------------------------SERIALIZACA-----------------------------------
 
-        erializacja to binarny zapis drzewa obiektow
+        Serializacja to binarny zapis drzewa obiektow
         Zserializowane obiekty mozna przeslac i zdeserializowac na innej
          maszynie wirtualnej tworzac nowe obiekty - obie maszyny musze miec
          dostep do skompilowanych wersji klas
-
-        Aby klasa mogla byc seriaizowana musi implmemntowac intefejs znacznikowy
-         (nie posiadajacy zadnej metody) java.io.Serializable ktory ma za zadanie
-         informowac ze instancje tej klasy moga byc serializowane
-        Jesli zserializuje instanjce klasy bez tego interfejsu zostanie wyrzucony wyjatek
-         NotSerializableException.
-
-        Klasa ktora jest rozszerzana przez klase ktora bedzie serializowana MUSI
-         miec konstrukotr bezparametrowy!
-        public class Fruit {} //klasa musi miec konstr. bezparam.
-        public class Apple extends Fruit implements Serializable {}//nie musi miec
-        // konstr. bezparam.
-        public class Tomato implements Serializable {}//nie musi miec konstr. bezparam.
-        // bo dziecziczy po object ktora posiada konstr. bezparametrowy
-
 
         Wymagana jest kolejnosc serializacji zgodna z deserializacja. Jesli dodaje
          do strumienia najpierw liste a potem zmienna int to w deserializacj najpierw
          bede musial odczytac liste a potem int bo inaczej wyrzuci wyjatek
          java.io.OptionalDataException
-
-        Transient
-        Gdy chcemy aby jakis pole klasy nie bylo serializowane np sekundy
-         od urodzenia osoby - wynik zdeserializowany na innej JVM bylby
-         bledny uzywamy przez zmienna parametru transient
         */
         class Wew7 {
             void metoda() {
@@ -1450,9 +1428,39 @@ class Wew4{
         wew7.metoda();
 
 
-        //-----
-        //Serializacja drzewa obiektow
-        //Obiekt serializowany i zdeserializowany beda mialy inny adres referncji
+        /*-----
+        Serializacja drzewa obiektow
+        Obiekt serializowany i zdeserializowany beda mialy inny adres referncji
+
+        Aby klasa mogla byc seriaizowana musi implmemntowac intefejs znacznikowy
+         (nie posiadajacy zadnej metody) java.io.Serializable ktory ma za zadanie
+         informowac ze instancje tej klasy moga byc serializowane
+        Jesli zserializuje instanjce klasy bez tego interfejsu zostanie wyrzucony wyjatek
+         NotSerializableException.
+
+        UWAGA! Jesli chce serializwoac moja klase ktora rozszerza inna to musze odwolac sie
+         w konstruktorze mojej klasy do konstruktora innej, chyba ze posiada ona konstruktor
+         bezparamtrowy to nie musze (wykona sie niejawne wywolanie odwolanie do konstruktora
+         bezparametrowegeo super(); )
+        */
+
+        class Auto {
+            private String marka;
+
+            public Auto(String marka) {
+                this.marka = marka;
+            }
+        }
+        class Audi extends Auto implements Serializable {
+            private int moc;
+
+            public Audi(String marka, int moc) {
+                super(marka);
+                this.moc = moc;
+            }
+        }
+
+
         class Opona implements Serializable {
             int rozmiar;
 
@@ -1527,6 +1535,11 @@ class Wew4{
         //-----
         //Zachowanie atrybytow transient oraz static po deserializacji
         /*
+        Transient
+        Gdy chcemy aby jakis pole klasy nie bylo serializowane np sekundy
+         od urodzenia osoby - wynik zdeserializowany na innej JVM bylby
+         bledny uzywamy przez zmienna parametru transient
+
         W przypadku serializowania pol statycznych beda one po serializacji mialy taka
          sama wartosc jak w deklaracji pola klasy poniewaz dotycza one klasy a nie obiektu
          UWAGA ! w jednym main jesli zrobimy serializacje i deserializacje pola statycznego
