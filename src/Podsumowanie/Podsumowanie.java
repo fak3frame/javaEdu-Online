@@ -1,9 +1,6 @@
 package Podsumowanie;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Podsumowanie {
@@ -142,22 +139,21 @@ public class Podsumowanie {
         String napis3 = new String("test");
         //Tutaj rezerwuje specjalnie oddzielnie miejsce w pamieci
 
-        System.out.println("Porownanie napis1 i napis2: "+(napis1==napis2));
+        System.out.println("Porownanie napis1 i napis2: " + (napis1 == napis2));
         //Pamietam o nawiasie bo inaczej doda moj "" do napis1 a nastepnie
         // porowna z napis2!
-        System.out.println("Porownanie napis1 i napis3: "+(napis1==napis3));
+        System.out.println("Porownanie napis1 i napis3: " + (napis1 == napis3));
 
         //Porownujac zmienne obiektowe poprzez == porownuje ich adresy!!
         // a wiec pokaze false poniewaz dalem new String.
         //Poprawnym porownaniem jest metoda equals() ktora porownuje obiekty
 
-        System.out.println("Poprawne porownanie napis 1 i napis 3: "+napis1.equals(napis3));
-
+        System.out.println("Poprawne porownanie napis 1 i napis 3: " + napis1.equals(napis3));
 
 
         //------------------------------------------------------------------------
         /*-------------------------ZMIENNA INTEGER--------------------------------
-        */
+         */
         Integer integer = 123;
         Integer integer1 = new Integer("123123");
         Integer integer2 = new Integer(12345);
@@ -170,7 +166,6 @@ public class Podsumowanie {
         Integer.valueOf(123);
 
 
-
         //------------------------------------------------------------------------
         /*---------------------------------METODY---------------------------------
 
@@ -180,14 +175,15 @@ public class Podsumowanie {
         Metoda moze byc zwykla(odnoaszaca sie do instancji klasy) lub
          statyczna(odnoszaca sie do klasy)
          */
-class Wew1{
-        public String metodaDajacaString(int liczba){
-            return String.valueOf(liczba);
+        class Wew1 {
+            public String metodaDajacaString(int liczba) {
+                return String.valueOf(liczba);
+            }
+
+            public int metodaDajacaInt(String napis) {
+                return Integer.parseInt(napis);
+            }
         }
-        public int metodaDajacaInt(String napis){
-            return Integer.parseInt(napis);
-        }
-}
 
         /*
         Metody deklaruje TYLKO w klasie (nie w innych metodach)
@@ -204,11 +200,11 @@ class Wew1{
         Metoda nie zwracajac nic void moze posiadac slowo return ale
          nie moze nic zwracac
          */
-class Wew2{
-        public void metodaNicNieZwracajaca(){
-            return;
+        class Wew2 {
+            public void metodaNicNieZwracajaca() {
+                return;
+            }
         }
-}
         /*
 
 
@@ -243,7 +239,7 @@ class Wew2{
         porownywanie liczb zmiennoprzecinkowych polega
          na odjeciu ich od siebie w wartosci bezwzglednej
          z dodaniem dokladnosci */
-        System.out.println(Math.abs(0.7 - 0.7)<0.00001);
+        System.out.println(Math.abs(0.7 - 0.7) < 0.00001);
         /*
 
 
@@ -251,41 +247,40 @@ class Wew2{
         //------------------------------------------------------------------------
         --------------------------WPROWADZANIE DANYCH-----------------------------
         */
-class Wew3{
-        void start(){
-            String imie;
-            List<String> imiona = new ArrayList<>();
-            Scanner wejscie = new Scanner(System.in);
-            do{
-                imie = wejscie.nextLine();
-                if(!imie.equals("-"))
-                    imiona.add(imie);
-
-            }while (!imie.equals("-"));
-
-            //lub w samym while
-            while (true){
-                imie = wejscie.nextLine();
-                if(imie.equals("-"))
-                    break;
-                imiona.add(imie);
-            }
-
-            //iny przyklad
-            while (true){
-                try {
+        class Wew3 {
+            void start() {
+                String imie;
+                List<String> imiona = new ArrayList<>();
+                Scanner wejscie = new Scanner(System.in);
+                do {
                     imie = wejscie.nextLine();
-                    break;
+                    if (!imie.equals("-"))
+                        imiona.add(imie);
+
+                } while (!imie.equals("-"));
+
+                //lub w samym while
+                while (true) {
+                    imie = wejscie.nextLine();
+                    if (imie.equals("-"))
+                        break;
+                    imiona.add(imie);
                 }
-                catch (InputMismatchException e){
-                    wejscie.next();
+
+                //iny przyklad
+                while (true) {
+                    try {
+                        imie = wejscie.nextLine();
+                        break;
+                    } catch (InputMismatchException e) {
+                        wejscie.next();
+                    }
                 }
-            }
-            if(imie.equals("Kamil")){
-                throw new IllegalArgumentException("jest juz kamil!");
+                if (imie.equals("Kamil")) {
+                    throw new IllegalArgumentException("jest juz kamil!");
+                }
             }
         }
-}
         /*
 
 
@@ -422,7 +417,7 @@ class Wew4{
         Domyslna implementacja equals zachowuje sie jak ==
         */
 
-        class Krzeslo{
+        class Krzeslo {
             private String producent;
             private Date dataProdukcji;
             private int cena;
@@ -462,10 +457,9 @@ class Wew4{
         Krzeslo k2 = new Krzeslo("BRW", new Date(), 12, 12.5);
         Krzeslo k3 = new Krzeslo("BRW", new Date(), 12, 13.5);
 
-        System.out.println("Porownuje krzeslo k1 z k2: "+k1.equals(k2));
-        System.out.println("Porownuje krzeslo k2 z k3: "+k2.equals(k3));
-        System.out.println("Porownuje krzeslo k1 z k3: "+k1.equals(k3));
-
+        System.out.println("Porownuje krzeslo k1 z k2: " + k1.equals(k2));
+        System.out.println("Porownuje krzeslo k2 z k3: " + k2.equals(k3));
+        System.out.println("Porownuje krzeslo k1 z k3: " + k1.equals(k3));
 
 
         //------------------------------------------------------------------------
@@ -656,13 +650,15 @@ class Wew4{
         Kazda tablice obiektow mozna uogolnic do Object lecz wszystko
          trzeba bedzie rzutowac
          */
-        class Apple{
+        class Apple {
         }
         class AppleBox {
             private Apple apple;
+
             public AppleBox(Apple apple) {
                 this.apple = apple;
             }
+
             public Apple getApple() {
                 return apple;
             }
@@ -672,9 +668,11 @@ class Wew4{
         }
         class OrangeBox {
             private Orange orange;
+
             public OrangeBox(Orange orange) {
                 this.orange = orange;
             }
+
             public Orange getOrange() {
                 return orange;
             }
@@ -682,6 +680,7 @@ class Wew4{
 
         class FruitBox {
             private Object fruit; //Aby moc przyjac obiekt kazdej klasy
+
             // (Apple/Orange) polimoficznie
             // wykorzustuje nadklase kazdej klasy (Object)
             // ale wszystkie metody na jego obiekcie bede musial rzuotwac
@@ -689,21 +688,24 @@ class Wew4{
             public FruitBox(Object fruit) {
                 this.fruit = fruit;
             }
+
             public Object getFruit() {
                 return fruit;
             }
         }
         FruitBox pudelkoZOwocami = new FruitBox(new Orange());
-        Object orange = (Orange)pudelkoZOwocami.getFruit();
+        Object orange = (Orange) pudelkoZOwocami.getFruit();
         //musze rzutowac
 
 
         //-----
         class BoxOnSteroids<T> {
             public T fruit;
+
             public BoxOnSteroids(T fruit) {
                 this.fruit = fruit;
             }
+
             public T getFruit() {
                 return fruit;
             }
@@ -732,19 +734,22 @@ class Wew4{
         class Pair<T, S> {
             private T first;
             private S second;
+
             public Pair(T first, S second) {
                 this.first = first;
                 this.second = second;
             }
+
             public T getFirst() {
                 return first;
             }
+
             public S getSecond() {
                 return second;
             }
         }
 
-        Pair<BoxOnSteroids<Apple>,BoxOnSteroids<Orange>> para = new Pair<>(
+        Pair<BoxOnSteroids<Apple>, BoxOnSteroids<Orange>> para = new Pair<>(
                 new BoxOnSteroids<>(new Apple()),
                 new BoxOnSteroids<>(new Orange())
         );
@@ -763,7 +768,7 @@ class Wew4{
                 return "kolo";
             }
         }
-        class PudelkoFigur <T extends Figura>{
+        class PudelkoFigur<T extends Figura> {
             //Nie musze implemenetowac metod z int Figura
             //Klasa parametryzujaca T musi rozszerzac Figure lub rozszerzac
             // klase ktora go implementuje !!
@@ -771,13 +776,16 @@ class Wew4{
             // metody z tego interfejsu ktore nadpisza
             // parametryzujace klasy!
             private T figura;
-            public PudelkoFigur(T figura){
+
+            public PudelkoFigur(T figura) {
                 this.figura = figura;
             }
+
             public T getFigura() {
                 return figura;
             }
-            public String dajNazwe(){
+
+            public String dajNazwe() {
                 return figura.dajNazwe();//!!
                 //Wywola metode dajNazwe z klasy ktorej bedzie
                 // parmatryzowac typ generyczny czyli np. Kolo!!
@@ -791,19 +799,18 @@ class Wew4{
         // klasy implementujacych go!!
 
 
-
         //------------------------------------------------------------------------
         //------------------DZIEDZIECZENIE KLAS GENERYCZNYCH----------------------
 
-        class Prostokat implements Figura{
+        class Prostokat implements Figura {
             @Override
             public String dajNazwe() {
                 return "prostokat";
             }
         }
-        class Kwadrat extends Prostokat{
+        class Kwadrat extends Prostokat {
             //Nie musze implementowac metod figury
-            public String dajNazwe(){
+            public String dajNazwe() {
                 return "kwadrat";
             }
         }
@@ -817,27 +824,30 @@ class Wew4{
         PudelkoFigur<Prostokat> p2 = new PudelkoFigur<>(new Kwadrat());
         //Ale po mimo tego ze parametryzuje go typem Prostokat to mege przypisac
         // obiekt Kwadrat poniwaz dziedziczy
-        System.out.println("p2 daj nazwe: "+p2.dajNazwe());//Da kwadrat tylko
+        System.out.println("p2 daj nazwe: " + p2.dajNazwe());//Da kwadrat tylko
         // dlatego ze metodaZwykla Prostokata jest nadpisywana
         System.out.println(p2.getClass()); //da pudelkoFigur tylko
 
 
         //-----
-        class ZwyklePudelko<T>{
+        class ZwyklePudelko<T> {
             private T zmienna;
-            ZwyklePudelko(T zmienna){
-                this.zmienna=zmienna;
+
+            ZwyklePudelko(T zmienna) {
+                this.zmienna = zmienna;
             }
+
             public T getZmienna() {
                 return zmienna;
             }
         }
-        class InnePudelko<T> extends ZwyklePudelko<T>{
-            public InnePudelko(T zmienna){
+        class InnePudelko<T> extends ZwyklePudelko<T> {
+            public InnePudelko(T zmienna) {
                 super(zmienna);
             }
-            void powiedzCos(){
-                System.out.println("moje "+getZmienna()+" jest super");
+
+            void powiedzCos() {
+                System.out.println("moje " + getZmienna() + " jest super");
             }
         }
         InnePudelko<String> ip = new InnePudelko<>("cos");
@@ -862,16 +872,17 @@ class Wew4{
         zwyklePudelko2 = null;
 
 
-
         //------------------------------------------------------------------------
         //-----------METODY Z ARGUEMNTAMI GENERYCZNYMI - WILDCARDS----------------
 
-        class PudelkoWildcards<T>{
+        class PudelkoWildcards<T> {
             private T zmienna;
-            PudelkoWildcards(T zmienna){
-                this.zmienna=zmienna;
+
+            PudelkoWildcards(T zmienna) {
+                this.zmienna = zmienna;
             }
-            public void metoda1(PudelkoWildcards<?> pudelko){
+
+            public void metoda1(PudelkoWildcards<?> pudelko) {
                 //przyjeta zmienna pudelko jest to obiekt typu
                 // PudelkoWildcards
                 Object o = pudelko.zmienna;
@@ -882,10 +893,10 @@ class Wew4{
                 // lecz <?> moze przyjac tez String i bedzie blad;
                 //W metodzie musi byc kod zakladajacy dzialanie
                 // w kazdym przypadku
-                System.out.println("obiekt metody przyjmujacek <?> : "+o);
+                System.out.println("obiekt metody przyjmujacek <?> : " + o);
             }
         }
-
+        System.out.println("-------------------");
         PudelkoWildcards<Object> pudelkoWildcards = new PudelkoWildcards<>(new Object());
         pudelkoWildcards.metoda1(pudelkoWildcards);
         pudelkoWildcards.metoda1(new PudelkoWildcards<>(new Object()));
@@ -896,18 +907,22 @@ class Wew4{
 
 
         //-----metoda wildcard
-        class PudelkoWildcards3<T>{
+        class PudelkoWildcards3<T> {
             private T zmienna;
-            public PudelkoWildcards3(T zmienna){
-                this.zmienna=zmienna;
+
+            public PudelkoWildcards3(T zmienna) {
+                this.zmienna = zmienna;
             }
+
             public T getZmienna() {
                 return zmienna;
             }
+
             public void setZmienna(T zmienna) {
                 this.zmienna = zmienna;
             }
-            public void metoda(PudelkoWildcards3<Figura> obiekt){
+
+            public void metoda(PudelkoWildcards3<Figura> obiekt) {
                 //metoda przyjmuje obiekt ktory moze byc typu
                 // figura(nie moze bo to interface) lub "nizej"
                 // czyli kwadrat/prostokat
@@ -928,19 +943,22 @@ class Wew4{
 
 
         //-----metody "upper bound" ? extedns
-        class PudelkoWildcards2<T>{
+        class PudelkoWildcards2<T> {
             private T zmienna;
-            public PudelkoWildcards2(T zmienna){
-                this.zmienna=zmienna;
+
+            public PudelkoWildcards2(T zmienna) {
+                this.zmienna = zmienna;
             }
+
             public T getZmienna() {
                 return zmienna;
             }
+
             public void setZmienna(T zmienna) {
                 this.zmienna = zmienna;
             }
 
-            public void metoda(PudelkoWildcards2<? extends Figura> obiekt){
+            public void metoda(PudelkoWildcards2<? extends Figura> obiekt) {
                 //W tej metodzie przyjety obiekt musi rozszerzac figure(interface)
                 // wiec wyslac do niego moge TYLKO cos co rozszrza figure!
                 //Przypisac do nowego obiektu mozna w druga strone czyli musze miec
@@ -949,7 +967,7 @@ class Wew4{
                 // pewnosc ze wysle dobry typ.
                 Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
-                Kwadrat k = (Kwadrat)obiekt.zmienna;
+                Kwadrat k = (Kwadrat) obiekt.zmienna;
                 //Na sile rzutuje ale jesli ktos wysle do metody
                 // prostokat bedzie clad classCastException dlatego moge
                 // przypisac obiekt tylko do typu Figury badz "wyzej"
@@ -965,23 +983,26 @@ class Wew4{
 
 
         //-----metody "lower bound" ? super
-        class PudelkoWildcards4<T>{
+        class PudelkoWildcards4<T> {
             private T zmienna;
-            public PudelkoWildcards4(T zmienna){
-                this.zmienna=zmienna;
+
+            public PudelkoWildcards4(T zmienna) {
+                this.zmienna = zmienna;
             }
+
             public T getZmienna() {
                 return zmienna;
             }
+
             public void setZmienna(T zmienna) {
                 this.zmienna = zmienna;
             }
 
-            public void metoda(PudelkoWildcards4<? super Prostokat> obiekt){
+            public void metoda(PudelkoWildcards4<? super Prostokat> obiekt) {
                 //Metoda moze przyjac Prostokat badz "wyzej" czyli
                 // Figure lub Object
                 Object o = obiekt.getZmienna();
-                Figura f = (Figura)obiekt.getZmienna();
+                Figura f = (Figura) obiekt.getZmienna();
                 //Przypisac moge tylko do Object poniewaz
                 // jesli wysle Object to niebde mogl przypisac go
                 // do Figury
@@ -993,7 +1014,6 @@ class Wew4{
         test4.metoda(new PudelkoWildcards4<>(new Kwadrat()));
         //test4.metoda(new PudelkoWildcards4<>(new Object()));
         //blad bo w metodzie NA SILE przypisuje Object do Figury
-
 
 
         //------------------------------------------------------------------------
@@ -1030,7 +1050,7 @@ class Wew4{
         //----
         //Metdoy:
         lista1.add("kamil"); // dodanie elementu
-        lista1.add(1,"kamil");
+        lista1.add(1, "kamil");
         //dodaje na pozycje 2 element "kamil"
         lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
         // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
@@ -1113,7 +1133,7 @@ class Wew4{
         //-----
         //metody:
         mapa1.clear();
-        mapa1.put(0,"kamil");
+        mapa1.put(0, "kamil");
         mapa1.putAll(mapa2);
         mapa1.get(0);// zwroci wartosc z klucza "0"
         mapa1.remove(0);// usunie klucz "0" i jego wartosc
@@ -1122,7 +1142,7 @@ class Wew4{
         boolean czyWartoscInsteniej = mapa1.containsValue("kamil");
         boolean czyPusta3 = mapa1.isEmpty();
         int iloscElementow2 = mapa1.size();
-        Set<Map.Entry<Integer,String>> zbiorKluczWartosc = mapa1.entrySet();
+        Set<Map.Entry<Integer, String>> zbiorKluczWartosc = mapa1.entrySet();
         //kazdy element zbioru bedzie skladal sie z klucza i wartosci,
         // odwolujac sie do elementu 0 moge wywolac na nim metode
         // getKey() oraz getValue()
@@ -1131,23 +1151,24 @@ class Wew4{
         //-----
         //Iterowanie:
         mapa1.clear();
-        mapa1.put(0,"kamil");
-        mapa1.put(1,"tomek");
+        mapa1.put(0, "kamil");
+        mapa1.put(1, "tomek");
 
+        System.out.println("-------------------");
         System.out.println("KLUCZE:");
-        for (Integer x : mapa1.keySet()){
-            System.out.println(x +": "+ mapa1.get(x));
+        for (Integer x : mapa1.keySet()) {
+            System.out.println(x + ": " + mapa1.get(x));
         }
 
         System.out.println("WARTOSCI");
-        for (String x :mapa1.values()){
+        for (String x : mapa1.values()) {
             System.out.println(x);
         }
 
         System.out.println("ZBIOR KLUCZ WARTOSC");
-        Set<Map.Entry<Integer,String>> zbiorKluczWartosc2 = mapa1.entrySet();
-        for(Map.Entry<Integer,String> x : zbiorKluczWartosc2){
-            System.out.println(x.getKey()+": "+x.getValue());
+        Set<Map.Entry<Integer, String>> zbiorKluczWartosc2 = mapa1.entrySet();
+        for (Map.Entry<Integer, String> x : zbiorKluczWartosc2) {
+            System.out.println(x.getKey() + ": " + x.getValue());
         }
 
 
@@ -1227,50 +1248,49 @@ class Wew4{
         }
          */
 
-class Wew4{
-        void metoda(){
-            String loklizacja = "src/Podsumowanie/PlikiTestowe/plik1.txt";
-            int liczbaDoZapisu = 12345;
-            FileWriter zapis = null;
-            //musi byc deklaracja do null zeby zamknac w finally!
-            try {
-                zapis = new FileWriter(loklizacja);
-                zapis.write(Integer.toString(liczbaDoZapisu));
-            }
-            catch (IOException e){
-                e.printStackTrace();
-            }
-            finally {
-                if(zapis !=null) {
-                    try {
-                        zapis.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
+        class Wew4 {
+            void metoda() {
+                //zapis
+                String loklizacja = "src/Podsumowanie/PlikiTestowe/plik1.txt";
+                int liczbaDoZapisu = 12345;
+                FileWriter zapis = null;
+                //musi byc deklaracja do null zeby zamknac w finally!
+                try {
+                    zapis = new FileWriter(loklizacja);
+                    zapis.write(Integer.toString(liczbaDoZapisu));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    if (zapis != null) {
+                        try {
+                            zapis.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
-            }
-            int liczbaDoOdczytu;
-            BufferedReader odczyt = null;
-            try{
-                odczyt = new BufferedReader(new FileReader(loklizacja));
-                String tmp = odczyt.readLine();
-                liczbaDoOdczytu = Integer.parseInt(tmp);
-                System.out.println("Odczytana liczba z pliku: "+liczbaDoOdczytu);
-            }
-            catch(IOException e){
-                e.printStackTrace();
-            }
-            finally {
-                if(odczyt != null) {
-                    try {
-                        odczyt.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                //odczyt
+                int liczbaDoOdczytu;
+                BufferedReader odczyt = null;
+                try {
+                    odczyt = new BufferedReader(new FileReader(loklizacja));
+                    String tmp = odczyt.readLine();
+                    liczbaDoOdczytu = Integer.parseInt(tmp);
+                    System.out.println("-------------------");
+                    System.out.println("Odczytana liczba z pliku: " + liczbaDoOdczytu);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    if (odczyt != null) {
+                        try {
+                            odczyt.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
         }
-}
         Wew4 wew4 = new Wew4();
         wew4.metoda();
 
@@ -1278,15 +1298,242 @@ class Wew4{
         //-----
         //Pliki binarne
 
+        class Wew5 {
+            void metoda() {
+                //zapis
+                String lokalizacja = "src/Podsumowanie/PlikiTestowe/plikBinarny1.txt";
+                int liczbaDoZapisu = 25152424;
+                DataOutputStream strumienWyjsciowy = null;
+                try {
+                    strumienWyjsciowy = new DataOutputStream(new FileOutputStream(lokalizacja));
+                    strumienWyjsciowy.writeInt(liczbaDoZapisu);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    if (strumienWyjsciowy != null) {
+                        try {
+                            strumienWyjsciowy.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                //odczyt
+                int liczbaDoOczytu;
+                DataInputStream strumienWejsciowy = null;
+                try {
+                    strumienWejsciowy = new DataInputStream(new FileInputStream(lokalizacja));
+                    liczbaDoOczytu = strumienWejsciowy.readInt();
+                    System.out.println("-------------------");
+                    System.out.println("Odczytana liczba z binarnego pliku: " + liczbaDoOczytu);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    if (strumienWejsciowy != null) {
+                        try {
+                            strumienWejsciowy.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }
+        Wew5 wew5 = new Wew5();
+        wew5.metoda();
+
+
+        //-----
+        //TRY WTIH RESOURCES
+        /*
+        w tym przypadku nie musze juz zamykac strumienia
+
+        boilerplate code - powtarzenie kodu
+        try-with-resources - cukier syntaktyczny - syntactic sugar
+         */
+        class Wew6 {
+            void metoda() {
+                String lokalizacja = "src/Podsumowanie/PlikiTestowe/plik2.txt";
+                String napisDoZapisu = "Try with resorces";
+                try (BufferedWriter zapisz = new BufferedWriter(new FileWriter(lokalizacja))) {
+                    zapisz.write(napisDoZapisu);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                //lub jednoczesny zapis i odczyt w () try
+                //zrobie kopie poprzedniego pliku do nowego plik3.txt
+                String lokalizacja2 = "src/Podsumowanie/PlikiTestowe/plik3.txt";
+                try (BufferedReader wczytaj = new BufferedReader(new FileReader(lokalizacja));
+                     //pamietam o ; po 1 instrukcji w try!
+                     BufferedWriter zapisz = new BufferedWriter(new FileWriter(lokalizacja2))) {
+                    zapisz.write(wczytaj.readLine());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        Wew6 wew6 = new Wew6();
+        wew6.metoda();
 
 
 
+        /*-------------------------------------------------------------------------
+        -----------------------------SERIALIZACA-----------------------------------
+
+        erializacja to binarny zapis drzewa obiektow
+        Zserializowane obiekty mozna przeslac i zdeserializowac na innej
+         maszynie wirtualnej tworzac nowe obiekty - obie maszyny musze miec
+         dostep do skompilowanych wersji klas
+
+        Aby klasa mogla byc seriaizowana musi implmemntowac intefejs znacznikowy
+         (nie posiadajacy zadnej metody) java.io.Serializable ktory ma za zadanie
+         informowac ze instancje tej klasy moga byc serializowane
+        Jesli zserializuje instanjce klasy bez tego interfejsu zostanie wyrzucony wyjatek
+         NotSerializableException.
+
+        Klasa ktora jest rozszerzana przez klase ktora bedzie serializowana MUSI
+         miec konstrukotr bezparametrowy!
+        public class Fruit {} //klasa musi miec konstr. bezparam.
+        public class Apple extends Fruit implements Serializable {}//nie musi miec
+        // konstr. bezparam.
+        public class Tomato implements Serializable {}//nie musi miec konstr. bezparam.
+        // bo dziecziczy po object ktora posiada konstr. bezparametrowy
 
 
+        Wymagana jest kolejnosc serializacji zgodna z deserializacja. Jesli dodaje
+         do strumienia najpierw liste a potem zmienna int to w deserializacj najpierw
+         bede musial odczytac liste a potem int bo inaczej wyrzuci wyjatek
+         java.io.OptionalDataException
+
+        Transient
+        Gdy chcemy aby jakis pole klasy nie bylo serializowane np sekundy
+         od urodzenia osoby - wynik zdeserializowany na innej JVM bylby
+         bledny uzywamy przez zmienna parametru transient
+        */
+        class Wew7 {
+            void metoda() {
+                String lokalizacja = "src/Podsumowanie/PlikiTestowe/plikObiektowy1.bin";
+                int liczbaDoZapisu = 32167;
+                String napisDoZapisu = "5 black dragons";
+                int liczba2DoZapisu = 69;
+                try (ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacja))) {
+                    strWyj.writeObject(liczbaDoZapisu);
+                    //zapisuje jako Object wiec bedzie mialo typ Object
+                    strWyj.writeObject(napisDoZapisu);
+                    strWyj.writeInt(liczba2DoZapisu);
+                    //zapisuje jako int wiec w odczycie nie bede musial rzutowac
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try (ObjectInputStream strWej = new ObjectInputStream(new FileInputStream(lokalizacja))) {
+                    int licbzaOdczytana = (Integer) strWej.readObject();
+                    String napisOdczytany = (String) strWej.readObject();
+                    int liczba2Odczytana = strWej.readInt();
+                    System.out.println("-------------------");
+                    System.out.println("licbzaOdczytana : " + licbzaOdczytana);
+                    System.out.println("napisOdczytany : " + napisOdczytany);
+                    System.out.println("liczba2Odczytana : " + liczba2Odczytana);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        Wew7 wew7 = new Wew7();
+        wew7.metoda();
 
 
+        //-----
+        //Serializacja drzewa obiektow
+        //Obiekt serializowany i zdeserializowany beda mialy inny adres referncji
+        class Opona implements Serializable {
+            int rozmiar;
 
+            public Opona(int rozmiar) {
+                this.rozmiar = rozmiar;
+            }
+
+            public int getRozmiar() {
+                return rozmiar;
+            }
+        }
+        class Silnik implements Serializable {
+            String nazwa;
+
+            public Silnik(String nazwa) {
+                this.nazwa = nazwa;
+            }
+
+            public String getNazwa() {
+                return nazwa;
+            }
+        }
+        class Samochod implements Serializable {
+            Opona[] opony;
+            Silnik silnik;
+
+            public Samochod(Silnik silnik, Opona[] opony) {
+                this.silnik = silnik;
+                this.opony = opony;
+            }
+
+            public Silnik getSilnik() {
+                return silnik;
+            }
+
+            public Opona[] getOpony() {
+                return opony;
+            }
+        }
+        class FabrykaSamochodow {
+            void main() {
+                System.out.println("-------------------");
+                String lokalizacja = "src/Podsumowanie/PlikiTestowe/plikObiektowy2.bin";
+                Opona[] opony = new Opona[]{new Opona(12),new Opona(15)};
+                Silnik silnik = new Silnik("Boxer");
+                Samochod samochod = new Samochod(silnik, opony);
+                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacja));
+                ObjectInputStream strWej = new ObjectInputStream(new FileInputStream(lokalizacja))){
+                    //zapis
+                    strWyj.writeObject(samochod);
+
+                    //odczyt
+                    Samochod noweAuto = (Samochod)strWej.readObject();
+                    //musze rzutowac
+                    System.out.println("nazwa silnika: "+noweAuto.silnik.getNazwa());
+                    Opona[] noweOpony = noweAuto.getOpony();
+                    for(int i=0; i<noweAuto.opony.length; i++){
+                        System.out.println("Opona "+(i+1)+" ma rozmiar : "+noweOpony[i].rozmiar);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        FabrykaSamochodow fabrykaSamochodow = new FabrykaSamochodow();
+        fabrykaSamochodow.main();
+
+
+        //-----
+        //Zachowanie atrybytow transient oraz static po deserializacji
+        /*
+        W przypadku serializowania pol statycznych beda one po serializacji mialy taka
+         sama wartosc jak w deklaracji pola klasy poniewaz dotycza one klasy a nie obiektu
+         UWAGA ! w jednym main jesli zrobimy serializacje i deserializacje pola statycznego
+         ze zmiana w obiekcie - pokaze po deserializacji takze zmieniona wartosc
+         */
     }
+
 }
 
 interface Figura{
