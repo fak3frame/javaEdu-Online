@@ -1536,8 +1536,8 @@ class Wew4{
         //Zachowanie atrybytow transient oraz static po deserializacji
         /*
         Transient
-        Gdy chcemy aby jakis pole klasy nie bylo serializowane np sekundy
-         od urodzenia osoby - wynik zdeserializowany na innej JVM bylby
+        Gdy chcemy aby jakis pole klasy nie bylo serializowane,
+         np sekundy od urodzenia osoby - wynik zdeserializowany na innej JVM bylby
          bledny uzywamy przez zmienna parametru transient
 
         W przypadku serializowania pol statycznych beda one po serializacji mialy taka
@@ -1545,6 +1545,47 @@ class Wew4{
          UWAGA ! w jednym main jesli zrobimy serializacje i deserializacje pola statycznego
          ze zmiana w obiekcie - pokaze po deserializacji takze zmieniona wartosc
          */
+        class Czlowiek implements Serializable{
+            private transient Integer identyfikator;
+            private transient int wiek;
+            private String imie;
+            public Czlowiek(Integer identyfikator, int wiek, String imie) {
+                this.identyfikator = identyfikator;
+                this.wiek = wiek;
+                this.imie = imie;
+            }
+        }
+        class CzlowiekFabryka{
+            String lokalizacja = "src/Podsumowanie/PlikiTestowe/plikObiektowy3.bin";
+            void zapisz(){
+                Czlowiek c1 = new Czlowiek(2341, 27, "Kamil");
+                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacja))){
+                    strWyj.writeObject(c1);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            void oczytaj(){
+                try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream(lokalizacja))){
+                    Czlowiek c2 = (Czlowiek)strWej.readObject();
+                    System.out.println("----------------------------");
+                    System.out.println("czlowiek identyfikator : "+c2.identyfikator);
+                    System.out.println("czlowiek wiek : "+c2.wiek);
+                    System.out.println("czlowiek imie : "+c2.imie);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        CzlowiekFabryka czlowiekFabryka = new CzlowiekFabryka();
+        czlowiekFabryka.zapisz();
+        czlowiekFabryka.oczytaj();
+
+
+
     }
 
 }
