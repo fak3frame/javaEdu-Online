@@ -1,5 +1,9 @@
 package Podsumowanie;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class Podsumowanie {
@@ -176,14 +180,14 @@ public class Podsumowanie {
         Metoda moze byc zwykla(odnoaszaca sie do instancji klasy) lub
          statyczna(odnoszaca sie do klasy)
          */
-class Wew1{/////////////////////////////////////////////////////
+class Wew1{
         public String metodaDajacaString(int liczba){
             return String.valueOf(liczba);
         }
         public int metodaDajacaInt(String napis){
             return Integer.parseInt(napis);
         }
-}////////////////////////////////////////////////////////////////
+}
 
         /*
         Metody deklaruje TYLKO w klasie (nie w innych metodach)
@@ -200,11 +204,11 @@ class Wew1{/////////////////////////////////////////////////////
         Metoda nie zwracajac nic void moze posiadac slowo return ale
          nie moze nic zwracac
          */
-class Wew2{/////////////////////////////////////////////////////
+class Wew2{
         public void metodaNicNieZwracajaca(){
             return;
         }
-}////////////////////////////////////////////////////////////////
+}
         /*
 
 
@@ -247,7 +251,7 @@ class Wew2{/////////////////////////////////////////////////////
         //------------------------------------------------------------------------
         --------------------------WPROWADZANIE DANYCH-----------------------------
         */
-class Wew3{/////////////////////////////////////////////////////
+class Wew3{
         void start(){
             String imie;
             List<String> imiona = new ArrayList<>();
@@ -281,7 +285,7 @@ class Wew3{/////////////////////////////////////////////////////
                 throw new IllegalArgumentException("jest juz kamil!");
             }
         }
-}//////////////////////////////////////////////////////////////
+}
         /*
 
 
@@ -378,14 +382,14 @@ class Wew3{/////////////////////////////////////////////////////
         Zmienna statyczna dotyczy klasy a nie obiektu lecz moge
          na obiekcie sie do niej odwolac
 
-class Wew4{///////////////////////////////////////////////////////
+class Wew4{
         staric int a = 10;
 
         main(){
             Wew4 obiekt = new Wew4();
             System.out.println(obiekt.a);
         }
-}/////////////////////////////////////////////////////////////////
+}
 
 
          -----
@@ -1150,16 +1154,133 @@ class Wew4{///////////////////////////////////////////////////////
 
         /*--------------------------------------------------------------------
         ----------------------OPERACJE NA PLIKACH-----------------------------
-         lokalizacje plikow w systemach
-        Windows: C:\katalog\plik.txt
-        Linux: /katalog/plik.txt
+        lokalizacje plikow w systemach
+         Windows: C:\katalog\plik.txt
+         Linux: /katalog/plik.txt
+
+        Sciezka w Javie zapisana do string bedzie nastepujaca:
+         "C:\\katalog\\plik.txt"
+
+        Sciezki mozemy podzielic na relatywne i absolutne
+        Absolutna jest pelna sciezka
+         C:\folder_2\folder_2_a\plik_2_a.txt
+        Relatywna jest ta z ktorego miejsca sie odnosimy
+         folder_2_a\plik_2_a.txt
 
 
+        Tryby dostepu do plikow dzieliy na:
+        -do odczytu
+        -do zapisu - kasuje plik jesli istnieje i utworzenie nowego lub
+          utowrzenie nowego jesli nie istnieje - domyslny tryb
+        -w trybie dolaczania - dopisuje do istniejacego pliku nowa wartosc
 
+        Klasa File zawiera postawowe operacje na plikach i przyjmowana jako
+         parametr moze posluzyc do utworzenia unstancji innej klasy np:
+        -FileReader - odczyt pliku znak po znaku
+        -BufferReade - odczyt linijka po linijce
+        new BufferedReader(new FileReader(new File("/path/to/text/file.txt")));
 
+        Jest to dostanie sie do pliku "warstwa po warstwie"
+        Mozna wykorzystac do tego konstruktory nie tworzac instancji klasy File
+        new BufferedReader(new FileReader("/path/to/text/file.txt"));
 
+        Klasy plikow maja wskaznik ktory po odczytaniu danych zostaje przesuniety
+         na miejsce gdzie ostatnio czytalismy plik!
 
+        Zmienna klasowa (FileWriter itp) tworze przed blokiem try/catch a w nim
+         przypisuje ich wartosc oraz wywoluje konkretna metode.
+        Oprocz tego w bloku finally musze zamknac strumien
+
+        Przydatne klasy:
+        -FileWriter - zapis do pliku tekstowego
+        FileWriter fileWriter = new FileWriter("/folder1/plik.txt");
+        fileWriter.write("napis");
+        if (fileWriter != null) {
+            fileWriter.close();
+        }
+
+        -BufferedReader - odczyt pliku
+        BufferedReader fileReader = new BufferedReader(new FileReader("/folder1/plik.txt"));
+        String linia = fileReader.readLine();
+        //Metoda zapisze cala linie z pliku tekstowego, moge umiescic to w while(true)
+        // i sprawdzic kiedy bedzie linie pusta if(linia == null){break;}
+        int liczbowo = Integer.parseInt(napis);
+        if (fileReader != null) {
+            fileReader.close();
+        }
+
+        -DataOutputStream - zapis binarny do pliku tekstowego
+        DataOutputStream strumienWyjsciowy = new DataOutputStream(new FileOutputStream(lokalizacja2));
+        //FileOutputStream zapisuje dane bajt po bajcie
+        //DataOutputStream zapewnia bunarny zapis typow prymitywnych
+        strumienWyjsciowy.writeInt(12355);
+        //Ta metodaZwykla zapisze typy proste jak int w sposob binarny
+        if (strumienWyjsciowy != null) {
+            strumienWyjsciowy.close();
+        }
+
+        -DataInputStream - odczyt binarnych danych
+        DataInputStream strumienWejsciowy = new DataInputStream(new FileInputStrem(lokalizacja));
+        int liczba = strumienWejsciowy.readInt();
+        if (strumienWejsciowy != null) {
+            strumienWejsciowy.close();
+        }
          */
+
+class Wew4{
+        void metoda(){
+            String loklizacja = "src/Podsumowanie/PlikiTestowe/plik1.txt";
+            int liczbaDoZapisu = 12345;
+            FileWriter zapis = null;
+            //musi byc deklaracja do null zeby zamknac w finally!
+            try {
+                zapis = new FileWriter(loklizacja);
+                zapis.write(Integer.toString(liczbaDoZapisu));
+            }
+            catch (IOException e){
+                e.printStackTrace();
+            }
+            finally {
+                if(zapis !=null) {
+                    try {
+                        zapis.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            int liczbaDoOdczytu;
+            BufferedReader odczyt = null;
+            try{
+                odczyt = new BufferedReader(new FileReader(loklizacja));
+                String tmp = odczyt.readLine();
+                liczbaDoOdczytu = Integer.parseInt(tmp);
+                System.out.println("Odczytana liczba z pliku: "+liczbaDoOdczytu);
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
+            finally {
+                if(odczyt != null) {
+                    try {
+                        odczyt.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+}
+        Wew4 wew4 = new Wew4();
+        wew4.metoda();
+
+
+        //-----
+        //Pliki binarne
+
+
+
+
 
 
 
