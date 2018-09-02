@@ -229,6 +229,10 @@ public class Podsumowanie {
 
         Metoda moze byc zwykla(odnoaszaca sie do instancji klasy/obiektu) lub
          statyczna(odnoszaca sie do klasy)
+
+        Metoda finalna nie moze byc przeslonieta! (nadpisana w innej klasie dziedziczacej)
+         final void metoda();
+
          */
         class Wew1 {
             public /* static */String metodaDajacaString(int liczba) {
@@ -359,6 +363,7 @@ public class Podsumowanie {
 
         Klasa moze byc zwykla/abstract/final!
 
+
         Klasa abstrakcyjna moze miec metody abstrakcyjne i zwykle i
          NIE DA SIE twrozyc instancji jej obiektow!
 
@@ -382,6 +387,8 @@ public class Podsumowanie {
         Konstruktor jest to metoda ktora nazywa sie tak samo
          jak klasa i nie ma okreslonego jaki typ zwraca
          oraz nie moze nic zwracac
+        Moze byc on public/protected/private (private - nie moge stworzyc tego
+         konstruktora w innej klasie!)
 
         public Podsumowanie(){
         }

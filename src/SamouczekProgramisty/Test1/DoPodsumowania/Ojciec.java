@@ -3,6 +3,7 @@ package SamouczekProgramisty.Test1.DoPodsumowania;
 public class Ojciec {
     int x;
 
+
     void metoda(int a){
 
     }
