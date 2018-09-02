@@ -1236,6 +1236,7 @@ class Wew4{
 
 
         //-----
+        //Metody:
         zbior1.add("kamil");
         zbior1.addAll(zbior2);
         zbior1.remove("kamil");
