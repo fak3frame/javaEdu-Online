@@ -21,6 +21,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class toRemember {
+    int cos(){
+        return 12;
+    }
+
+
     public static void main(String[] args) throws IOException, URISyntaxException {
 
         KlasaArrays3 obiektKlasy = new KlasaArrays3(10);

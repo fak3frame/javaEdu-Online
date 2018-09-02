@@ -247,8 +247,11 @@ public class Podsumowanie {
 
         Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
 
-        Metode moge wywolac tylko w innej metodziena i robie to na obiekcie lub
-         bezposrenio lub z pomoca klasy w ktorej sie znajduje jesli jest statyczna:
+        Metode moge wywolac tylko w innej metodziena chyba ze deklaruje zmienna i
+         przypisuje za pomoca metody wartosc "int zm = metodaDajInt();
+
+         Metody wywoluje na obiekcie lub bezposrenio lub z pomoca klasy w ktorej
+          sie znajduje jesli jest statyczna:
 
          mojObiekt.mojaMetoda();
          mojaMetoda();
@@ -291,6 +294,8 @@ public class Podsumowanie {
                 String imie;
                 List<String> imiona = new ArrayList<>();
                 Scanner wejscie = new Scanner(System.in);
+
+                //przyklad:
                 do {
                     imie = wejscie.nextLine();
                     if (!imie.equals("-"))
@@ -306,11 +311,14 @@ public class Podsumowanie {
                     imiona.add(imie);
                 }
 
-                //iny przyklad
+                //inny przyklad
                 while (true) {
                     try {
                         imie = wejscie.nextLine();
-                        break;
+                        if(imie.equals("-")) {
+                            break;
+                        }
+                        imiona.add(imie);
                     } catch (InputMismatchException e) {
                         wejscie.next();
                     }
