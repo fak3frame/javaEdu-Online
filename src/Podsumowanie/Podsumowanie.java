@@ -74,11 +74,11 @@ public class Podsumowanie {
         int liczba2 = -0xFF00;//w systemie szesnastkowym
         int liczba3 = 0777;//w systemie osemkowym (511)
 
-        long liczba5 = 1232455;//nie musze pisac z koncowka L
+        long liczba5 = 1232455;//opcjonalnie L
         long liczba4 = 123L;//daje informacje ze bedzie to typ long
         // mozliwe jest uzycie "l" lecz zalecane jest "L"
 
-        float liczba6 = 123.34F;//musi byc "F" lub "f"
+        float liczba6 = 123.34F;//MUSI byc "F" lub "f" na koncu!
 
         double liczba7 = 213.45;//opcjonalnie z d lub D
 
@@ -103,7 +103,10 @@ public class Podsumowanie {
         //przypisywanie do zmiennej prostej zmiennej obiektowej
 
         //Zmienne finalne
-        final int LICZBA_FINAL; //deklaracaj lokalna w main
+        //zalecane jest pisanie wszystkiego WIELKIMI_LITERAMI i oddzielac
+        // slowa "_"
+        final int LICZBA_FINAL; //deklaracaj lokalna czyli w metodzie(teraz main)
+        // wiec nie musze nadawac wartosci odrazu
         LICZBA_FINAL = 12;
         /*
         liczba finalana musi miec zadeklarowana wartosc chyba ze:
@@ -119,10 +122,17 @@ public class Podsumowanie {
         */
         String jakisString = "costam";
         String jakisStringZLiczba = "costam123";
+        //String liczbaString = 123; - blad
         String laczonyString = "costam123" + 123;
+        // z konkatenacja moge polaczayc z intem, moge nawet polaczyc z pustym
+        // Stringiem tj ""
         String laczonyString2 = laczonyString + 345;
 
-        String stringZInta = String.valueOf(123);
+        //metoda String.valueOf(); - PRZYJMUJE int/Integer, ZWRACA String
+        Integer integer4 = new Integer(1354);
+        String stringZInta = String.valueOf(integer4);
+        String stringZInta2 = String.valueOf(1234);
+
 
         /*
         //Standardowo String nie moze miec przypisane zmiennej int
@@ -158,10 +168,16 @@ public class Podsumowanie {
 
         String liczbaString = "123";
 
+        //metoda Ingeger.parseInt(); - przyjmuje String, zwraca int/Integer
         int intZeString = Integer.parseInt(liczbaString);
         Integer IntegerZeString = Integer.parseInt(liczbaString);
 
-        Integer.valueOf(123);
+
+        int intZInta = Integer.valueOf(123);
+        Integer integer3 = new Integer(1234);
+        int intZInt2 = Integer.valueOf(integer3);
+        Integer intZInta3 = Integer.valueOf(123);
+
 
 
         //------------------------------------------------------------------------
