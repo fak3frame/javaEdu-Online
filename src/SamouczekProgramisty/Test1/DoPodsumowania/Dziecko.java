@@ -3,6 +3,7 @@ package SamouczekProgramisty.Test1.DoPodsumowania;
 public class Dziecko extends Ojciec {
 
     int a;
+    static int zmiennaStatic = 10;
 
     @Override
     public String toString() {
@@ -45,6 +46,11 @@ public class Dziecko extends Ojciec {
         ((Dziecko) o).metodaDziecka();
 
         System.out.println(o);
+
+        System.out.println("----------------");
+        System.out.println(d.zmiennaStatic);
+        Dziecko.zmiennaStatic = 20;
+        System.out.println(d.zmiennaStatic);
 
     }
 }

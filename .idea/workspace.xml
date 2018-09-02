@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" line="1531" />
+    <bookmark url="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" line="1542" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 37">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 38">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
@@ -37,8 +37,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="850">
-                    <caret line="413" column="8" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="8" />
+                  <state relative-caret-position="646">
+                    <caret line="451" column="67" selection-start-line="451" selection-start-column="67" selection-end-line="451" selection-end-column="67" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="e#6986#6987#0" expanded="true" />
@@ -136,15 +136,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Stringi" value="114" />
-          <entry key="java" value="74992" />
+          <entry key="java" value="75343" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="506" />
+          <entry key="txt" value="507" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="74992" />
-          <entry key="PLAIN_TEXT" value="620" />
+          <entry key="JAVA" value="75343" />
+          <entry key="PLAIN_TEXT" value="621" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -494,7 +494,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535897467996" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535897917482" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -531,7 +531,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Podsumowanie">
+  <component name="RunManager" selected="Application.Dziecko">
     <configuration name="Dziecko" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Test1.DoPodsumowania.Dziecko" />
       <module name="javaStartMojSkrypt" />
@@ -627,10 +627,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Dziecko" />
         <item itemvalue="Application.Podsumowanie" />
         <item itemvalue="Application.toRemember" />
         <item itemvalue="Application.Wstep" />
-        <item itemvalue="Application.Dziecko" />
         <item itemvalue="Application.PodsumowanieTest" />
       </list>
     </recent_temporary>
@@ -645,13 +645,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01247" summary="Strumienie 58">
-      <created>1535289823836</created>
-      <option name="number" value="01247" />
-      <option name="presentableId" value="LOCAL-01247" />
-      <option name="project" value="LOCAL" />
-      <updated>1535289823836</updated>
     </task>
     <task id="LOCAL-01248" summary="Strumienie 59">
       <created>1535292600078</created>
@@ -989,7 +982,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535897338225</updated>
     </task>
-    <option name="localTasksCounter" value="1296" />
+    <task id="LOCAL-01296" summary="PODSUMOWANIE 38">
+      <created>1535897671811</created>
+      <option name="number" value="01296" />
+      <option name="presentableId" value="LOCAL-01296" />
+      <option name="project" value="LOCAL" />
+      <updated>1535897671811</updated>
+    </task>
+    <option name="localTasksCounter" value="1297" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1037,7 +1037,7 @@
     <frame x="123" y="0" width="1295" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2866397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2866397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1046,7 +1046,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35262758" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35262758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1070,7 +1070,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 13" />
     <MESSAGE value="PODSUMOWANIE 14" />
     <MESSAGE value="PODSUMOWANIE 15" />
     <MESSAGE value="PODSUMOWANIE 16" />
@@ -1095,7 +1094,8 @@
     <MESSAGE value="PODSUMOWANIE 35" />
     <MESSAGE value="PODSUMOWANIE 36" />
     <MESSAGE value="PODSUMOWANIE 37" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 37" />
+    <MESSAGE value="PODSUMOWANIE 38" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 38" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1356,8 +1356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="413" column="8" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="8" />
+        <state relative-caret-position="646">
+          <caret line="451" column="67" selection-start-line="451" selection-start-column="67" selection-end-line="451" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6986#6987#0" expanded="true" />

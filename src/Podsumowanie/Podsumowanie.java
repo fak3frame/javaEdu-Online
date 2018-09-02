@@ -434,29 +434,41 @@ public class Podsumowanie {
             this.a = a;
             this.b = b;
         }
-        MojaKlasa obiekt = new MojaKlasa();
-        //wartosci a i b obiektu beda wynosic 20 i 30
+        main(){
+            MojaKlasa obiekt = new MojaKlasa();
+            //wartosci a i b obiektu beda wynosic 20 i 30
+        }
 
 
         -----
-        //konstruktor kopiujacy
-        private Podsumowanie podsumowanie;
+        //konstruktor kopiujacy (obiekt)
+        private MojaKlasa mojaKlasaObiekt;
 
-        public Podsumowanie(Podsumowanie podsumowanie){
-            this.podsumowanie = podsumowanie;
+        public Podsumowanie(MojaKlasa mojaKlasaObiekt){
+            this.mojaKlasaObiekt = mojaKlasaObiekt;
+        }
+
+        main(){
+            MojaKlasa obiekt = new MojaKlasa(innyObiektMojejKlasy);
         }
 
 
         -----
         Zmienna statyczna dotyczy klasy a nie obiektu lecz moge
-         na obiekcie sie do niej odwolac
+         na obiekcie sie do niej odwolac. Jesli zmienie jej wartosc
+         to na kazdym obiekcie takze dokona sie jej zmiena!
 
 class Wew4{
         staric int a = 10;
 
         main(){
             Wew4 obiekt = new Wew4();
+            System.out.println(obiekt.a); //wywoluje zmienna statyczna na
+            // obiekcie - jest to mozliwe
+            //pokaze 10
+            WeW4.a = 20;
             System.out.println(obiekt.a);
+            //pokaze 20!!
         }
 }
 
