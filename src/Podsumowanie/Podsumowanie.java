@@ -552,9 +552,9 @@ class Wew4{
                         // metoda compare zwraca 0 gdy rowne i porownuje
                         // do 0!
                         Objects.equals(producent, krzeslo.producent) &&
+                        Objects.equals(dataProdukcji, krzeslo.dataProdukcji);
                         //porownywanie String i Date w Objects, metdoa
                         // equals zwraca bezposrednio true/false
-                        Objects.equals(dataProdukcji, krzeslo.dataProdukcji);
             }
 
             @Override
@@ -565,24 +565,35 @@ class Wew4{
 
         Krzeslo k1 = new Krzeslo("BRW", new Date(), 12, 12.5);
         Krzeslo k2 = new Krzeslo("BRW", new Date(), 12, 12.5);
-        Krzeslo k3 = new Krzeslo("BRW", new Date(), 12, 13.5);
+        Krzeslo k3 = new Krzeslo("BRW", new Date(), 12, 80.5);
 
+        System.out.println("-------------------");
         System.out.println("Porownuje krzeslo k1 z k2: " + k1.equals(k2));
         System.out.println("Porownuje krzeslo k2 z k3: " + k2.equals(k3));
         System.out.println("Porownuje krzeslo k1 z k3: " + k1.equals(k3));
+        System.out.println("-------------------");
 
 
         //------------------------------------------------------------------------
         /* ------------------------------DZIEDZICZENIE----------------------------
 
          Samochod - nadklasa/klasa bazowa
-         SUV - podklasa/klasa pochodna
+         SUV - podklasa/klasa pochodna/potomna
 
          Obiekt klasy ktora dziedziczy ma dostep do wszystkich pol
           i metod klasay bazowej
 
          Klasy rozszerzajace klase implementujaca interface nie musza
           implementowac metody intefracu! lecz maja do niej dostep
+         interface X{
+            void metodaX();
+         }
+         class One implements X{
+            void metodaX(){} //musi miec
+         }
+         class Two extedns One{
+            void metodaX(){} //opcjonalna, niewymagana, jest dostep
+         }
 
 
          -----
