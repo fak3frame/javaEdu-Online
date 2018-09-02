@@ -390,14 +390,14 @@ public class Podsumowanie {
         Moze byc on public/protected/private (private - nie moge stworzyc tego
          konstruktora w innej klasie!)
 
-        public Podsumowanie(){
+        public Podsumowanie(){ //konstruktor bezparametrowy
         }
 
         Standardowo kazda klasa ma swoj konstrukor bezparametrowy
          bez znaczenia czy go zadeklaruje
 
         Jesli zadeklaruje konstruktor z jakims parametrem to
-         ten bezparametrowy zostaje usuniety
+         ten bezparametrowy zostaje usuniety!!
 
 
         -----
