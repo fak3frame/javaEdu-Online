@@ -120,6 +120,7 @@ public class Podsumowanie {
         //------------------------------------------------------------------------
         --------------------------------ZMIENNA STRING----------------------------
         */
+        //String jest zmienna obiektowa
         String jakisString = "costam";
         String jakisStringZLiczba = "costam123";
         //String liczbaString = 123; - blad
@@ -133,12 +134,7 @@ public class Podsumowanie {
         String stringZInta = String.valueOf(integer4);
         String stringZInta2 = String.valueOf(1234);
 
-
         /*
-        //Standardowo String nie moze miec przypisane zmiennej int
-        // lecz jesli zrobie to z konkatenacja + np x + "" to wszystko
-        // zostanie przypisane do zmiennej String
-
         String jest charakterystycznym obiektem poniewaz ta sama jego wartosc
          jest alokowana w tym samym adresue GDY PRZYPISUJE GO POPRZEZ =
          */
@@ -146,6 +142,8 @@ public class Podsumowanie {
         String napis2 = "test";
         String napis3 = new String("test");
         //Tutaj rezerwuje specjalnie oddzielnie miejsce w pamieci
+        // wiec po mimo tej samej wartosci napis3 i napis1/2 porownanie prost
+        // == da false, wiec nalezy porownac to metoda .equals()
 
         System.out.println("Porownanie napis1 i napis2: " + (napis1 == napis2));
         //Pamietam o nawiasie bo inaczej doda moj "" do napis1 a nastepnie
@@ -162,19 +160,22 @@ public class Podsumowanie {
         //------------------------------------------------------------------------
         /*-------------------------ZMIENNA INTEGER--------------------------------
          */
-        Integer integer = 123;
+        Integer integer = 123; //boxing
         Integer integer1 = new Integer("123123");
         Integer integer2 = new Integer(12345);
 
-        String liczbaString = "123";
 
         //metoda Ingeger.parseInt(); - przyjmuje String, zwraca int/Integer
+        String liczbaString = "123";
+
         int intZeString = Integer.parseInt(liczbaString);
         Integer IntegerZeString = Integer.parseInt(liczbaString);
 
 
-        int intZInta = Integer.valueOf(123);
+        //metoda Integer.valueOf() PRZYJMUJE int/Integer, ZWRACA int/Integer
         Integer integer3 = new Integer(1234);
+
+        int intZInta = Integer.valueOf(123);
         int intZInt2 = Integer.valueOf(integer3);
         Integer intZInta3 = Integer.valueOf(123);
 
