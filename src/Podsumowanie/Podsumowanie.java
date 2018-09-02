@@ -66,7 +66,7 @@ public class Podsumowanie {
         -----------------------------ZMIENNE PROSTE-------------------------------
         */
 
-        int zmiennaInt = 123;
+        int zmiennaInt = 123; //nie moze miec koncowki i/I
         //zakres +/- 2,147,483,647
 
         int liczba = 1234_123;//liczba z literalem - ulatwia czytelnosc
@@ -82,7 +82,7 @@ public class Podsumowanie {
 
         double liczba7 = 213.45;//opcjonalnie z d lub D
 
-        short liczba8 = 234;
+        short liczba8 = 234; //nie moze miec koncowki s/S
 
         boolean prawdaFalsz = true;
         //zakres true/false
