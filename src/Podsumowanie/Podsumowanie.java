@@ -118,21 +118,50 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
+        ----------------------POROWNYWANIE TYPOW PROSTYCH-------------------------
+
+        Oparator == lub !=
+
+
+        -----kolejnosc operatorow
+        Operator +/-/* ma wiekszy priorytet niz ==!
+        2+3==10; //najpierw doda a potem porowna
+
+        "10 == 10: " + 10 == 10 // compilation error!
+         najpierw String "10 == 10: " dodaje do 10 czyli wychodzi
+         "10 == 10: 10" a nastepnie porownuje go z intem 10 - BLAD!
+
+        "10 == 10: " + (10 == 10)
+        //da wynik 10 == 10: true
+
+
+        -----
+        porownywanie liczb zmiennoprzecinkowych polega
+         na odjeciu ich od siebie w wartosci bezwzglednej
+         z dodaniem dokladnosci */
+        System.out.println(Math.abs(0.7 - 0.7) < 0.00001);
+
+        System.out.println("10 == 10: " + (10 == 10));
+        /*
+
+
+
+        //------------------------------------------------------------------------
         --------------------------------ZMIENNA STRING----------------------------
         */
-        //String jest zmienna obiektowa
+
+        //String jest specyficzna zmienna obiektowa
+
+
+        //Przypisywanie wartosci
         String jakisString = "costam";
         String jakisStringZLiczba = "costam123";
         //String liczbaString = 123; - blad
         String laczonyString = "costam123" + 123;
         // z konkatenacja moge polaczayc z intem, moge nawet polaczyc z pustym
-        // Stringiem tj ""
+        // Stringiem tj "" lub moge wykorzystac metode valueOf()
         String laczonyString2 = laczonyString + 345;
 
-        //metoda String.valueOf(); - PRZYJMUJE int/Integer, ZWRACA String
-        Integer integer4 = new Integer(1354);
-        String stringZInta = String.valueOf(integer4);
-        String stringZInta2 = String.valueOf(1234);
 
         /*
         String jest charakterystycznym obiektem poniewaz ta sama jego wartosc
@@ -157,6 +186,15 @@ public class Podsumowanie {
         System.out.println("Poprawne porownanie napis 1 i napis 3: " + napis1.equals(napis3));
 
 
+        //metoda String.valueOf(); - PRZYJMUJE int/Integer/String, ZWRACA String
+        Integer integer4 = new Integer(1354);
+
+        String stringZInta = String.valueOf(integer4);
+        String stringZInta2 = String.valueOf(1234);
+        String stringZeString = String.valueOf("123d4");
+
+
+
         //------------------------------------------------------------------------
         /*-------------------------ZMIENNA INTEGER--------------------------------
          */
@@ -166,19 +204,22 @@ public class Podsumowanie {
 
 
         //metoda Ingeger.parseInt(); - przyjmuje String, zwraca int/Integer
-        String liczbaString = "123";
-
-        int intZeString = Integer.parseInt(liczbaString);
-        Integer IntegerZeString = Integer.parseInt(liczbaString);
+        int intZeString = Integer.parseInt("1234");
+        Integer IntegerZeString = Integer.parseInt("1234");
 
 
-        //metoda Integer.valueOf() PRZYJMUJE int/Integer, ZWRACA int/Integer
-        Integer integer3 = new Integer(1234);
-
+        //metoda Integer.valueOf() PRZYJMUJE int/Integer/String, ZWRACA int/Integer
         int intZInta = Integer.valueOf(123);
-        int intZInt2 = Integer.valueOf(integer3);
+        int intZInt4 = Integer.valueOf("1345");
+        //jesli bedzie niepoprawne wywali wyjatek NumberFormatException
         Integer intZInta3 = Integer.valueOf(123);
-        Integer intZInta4 = Integer.valueOf(integer3);
+        Integer intZInta4 = Integer.valueOf(new Integer(1234));
+
+
+        //metoda Character.getNumericValue() PRZYJMUJE char, ZWRACA int/Integer
+        int znak = Character.getNumericValue('a');//pojedynczy ''!
+        // znak = 10, niezaleznie od wielkosci
+
 
 
 
@@ -240,32 +281,6 @@ public class Podsumowanie {
         ------
         Przesloniecie metody (override) gdy klasa pochodna ma taka
           metode z taka sama nazwe i taka sama ilosc i rodzaj parametrow
-
-
-
-        //------------------------------------------------------------------------
-        ----------------------POROWNYWANIE TYPOW PROSTYCH-------------------------
-
-        Oparator == lub !=
-
-
-        -----kolejnosc operatorow
-        Operator +/-/* ma wiekszy priorytet niz ==!
-        2+3==10; //najpierw doda a potem porowna
-
-        "10 == 10: " + 10 == 10 // compilation error!
-         najpierw String "10 == 10: " dodaje do 10 czyli wychodzi
-         "10 == 10: 10" a nastepnie porownuje go z intem 10 - BLAD!
-
-        "10 == 10: " + (10 == 10)
-
-
-        -----
-        porownywanie liczb zmiennoprzecinkowych polega
-         na odjeciu ich od siebie w wartosci bezwzglednej
-         z dodaniem dokladnosci */
-        System.out.println(Math.abs(0.7 - 0.7) < 0.00001);
-        /*
 
 
 
