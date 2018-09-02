@@ -178,6 +178,7 @@ public class Podsumowanie {
         int intZInta = Integer.valueOf(123);
         int intZInt2 = Integer.valueOf(integer3);
         Integer intZInta3 = Integer.valueOf(123);
+        Integer intZInta4 = Integer.valueOf(integer3);
 
 
 
