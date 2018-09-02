@@ -592,7 +592,7 @@ class Wew4{
             void metodaX(){} //musi miec
          }
          class Two extedns One{
-            void metodaX(){} //opcjonalna, niewymagana, jest dostep
+            void metodaX(){} //opcjonalna, niewymagana, jest do niej dostep
          }
 
 
@@ -601,22 +601,21 @@ class Wew4{
          public - dostepny wszedzie
          protected - dostepne wewnatrz obiektu, PAKIETU oraz klas pochodnych
          brak modyfikatora - dostepny tylko w pakiecie(tym samym folderze)
-         private - dostepne wewnatrz obiektu, klasy pochodne nie maja dostepu
-
-
-         -----
-         Przesloniecie metody (override) gdy klasa pochodna ma taka
-          metode z taka sama nazwe i taka sama ilosc i rodzaj parametrow
+         private - dostepne wewnatrz klasy, klasy pochodne nie maja dostepu
 
 
          -----
          //Slowo super
 
-         Moge odwolac sie do takiej samej meody klasy bazowej uzywajac metody super
+         Moge odwolac sie do takiej samej meody klasy bazowej uzywajac metody super,
+          moze byc ona w dowolnym miejscu kodu metody
 
          void metoda(){
+            System.out.println("Porownuje krzeslo k2 z k3: " + k2.equals(k3));
             super.metoda();
+            System.out.println("Porownuje krzeslo k2 z k3: " + k2.equals(k3));
          }
+
 
          Moge odwolac sie do takiego samego konstruktora klasay bazowej uzywajac instrukcji
           super() i musi byc ona NA POCZATKU kody konstruktora
@@ -630,23 +629,29 @@ class Wew4{
          //Wywolywanie konstruktorow
 
          Jesli klasa dziedziczy to przy tworzenie jej instancji niewazne czy typu
-          klasy bazowej czy pochodnej najpierw wywola sie konstukroe klasy bazowej!
+          klasy bazowej czy pochodnej najpierw wywola sie konstuktor klasy bazowej!
+          Dziala to tak ze w konstruktorze klasy pochodnej ZAWSZE jest na poczatku jest
+          instrukcja super(); ktora wykonuje sie pierwsza. Nie musimy jej deklarowac.
+          Za pomoca jej moge wybrac jaki konstruktor klasy bazowej ma sie wywolac np
+          super(12, 30); wywolam najpierw konstruktor 2 parametrowy i wysle do niego
+          te zmienne a nastepnie wywolaja sie instrukcje kontruktora klasy pochodnej
 
-         Instrukcja super pozwala wybrac jaki konstuktor klasy bazowej ma byc wywolany,
-          standardowo jest super() niejawnie, czyli ten bezparametrowy
+         Dziecko d = new Dziecko();
+         Ojciec o = new Dziecko();
 
          Musze pamietac ze jesli zadeklaruje konstruktor z parametrami to ten
           bezparametrowy (ukryty) przestaje isniec!
 
 
          -----
-         Klasy i metody z modyfikatorem final nie moze byc rozszerzana!
+         Klasy z modyfikatorem final nie moga byc rozszerzana!
+         Metody z modyfikatorem final nie moga byc nadpisywane!
 
 
          -----
          //kompozycja i dziedzicznie
 
-         W dziedizczeniu moge stworzyc polimorficznie obiekt klasy
+         W dziedziczniu moge stworzyc polimorficznie obiekt klasy
           pochodnej w typie klasy bazowej
          Ojciec obiekt = new Dziecko();
 
@@ -687,8 +692,10 @@ class Wew4{
           throw new IllegalArgumentException();
 
          Lub throws w metodach np:
-         void metodaZWyjatkiem()throws IOException{
-            throw new IOException();
+         void metodaZWyjatkiem()throws ArithmeticException{
+            if(y==0){
+                    throw new ArithmeticException("nie moge dzilic przez 0");
+                }
          }
 
 
@@ -832,6 +839,8 @@ class Wew4{
             }
         }
         BoxOnSteroids<Apple> pudelkoZJabkami = new BoxOnSteroids<>(new Apple());
+        Apple jablko = pudelkoZJabkami.getFruit();
+        //Orange pomarancza = pudelkoZJabkami.getFruit(); - blad, wykryje go IDE
         /*
         Za zmienna T podstawiam typ Apple ktory przypisywany jest do zmiennej fruit
          w konstruktorze, nie musze juz rzutowac
@@ -891,8 +900,10 @@ class Wew4{
         }
         class PudelkoFigur<T extends Figura> {
             //Nie musze implemenetowac metod z int Figura
+
             //Klasa parametryzujaca T musi rozszerzac Figure lub rozszerzac
             // klase ktora go implementuje !!
+
             // wiec bede mogl na polu z paramtrem T wywolac
             // metody z tego interfejsu ktore nadpisza
             // parametryzujace klasy!
@@ -912,7 +923,7 @@ class Wew4{
                 // parmatryzowac typ generyczny czyli np. Kolo!!
             }
         }
-        PudelkoFigur<Kolo> kola = new PudelkoFigur<>(new Kolo());
+        PudelkoFigur<Kolo> kola = new PudelkoFigur<Kolo>(new Kolo());
         kola.dajNazwe();
 
         //pudelkoFigur<Apple> jablka = new pudelkoFigur<Apple>(new Apple());
@@ -936,13 +947,13 @@ class Wew4{
             }
         }
         Prostokat p1 = new Kwadrat();//moge bo rozszerza
-        PudelkoFigur<Prostokat> p3 = new PudelkoFigur<>(new Prostokat());
+        PudelkoFigur<Prostokat> p3 = new PudelkoFigur<Prostokat>(new Prostokat());
 
         //pudelkoFigur<Prostokat> p4 = new pudelkoFigur<Kwadrat>(new Kwadrat());
         //Blad - nie moge przypisac tak referncji - paramtryzowanie innym typem
         // nawet jesli rozszerza typ!!
 
-        PudelkoFigur<Prostokat> p2 = new PudelkoFigur<>(new Kwadrat());
+        PudelkoFigur<Prostokat> p2 = new PudelkoFigur<Prostokat>(new Kwadrat());
         //Ale po mimo tego ze parametryzuje go typem Prostokat to mege przypisac
         // obiekt Kwadrat poniwaz dziedziczy
         System.out.println("p2 daj nazwe: " + p2.dajNazwe());//Da kwadrat tylko
@@ -973,6 +984,7 @@ class Wew4{
         }
         InnePudelko<String> ip = new InnePudelko<>("cos");
         ip.powiedzCos();
+        //pokaze : moje cos jest super
         InnePudelko<Apple> ip2 = new InnePudelko<>(new Apple());
         ip2.powiedzCos();
         //pokaza "moje SamouczekProgramisty.Wstep$1Apple@7921b0a2 jest super"
@@ -989,7 +1001,7 @@ class Wew4{
         ZwyklePudelko<?> zwyklePudelko3 = new ZwyklePudelko<>(new Object());
         //jesli uzyje parametryzacaji <?> nie bede mogl zmienic pola tylko
         // przypisac wartosc null;
-        // pudelkoWildcards2/2 = new Apple/Object(); - blad
+        // pudelkoWildcards2/3 = new Apple/Object(); - blad
         zwyklePudelko2 = null;
 
 
@@ -1027,7 +1039,7 @@ class Wew4{
         pudelkoWildcards2.metoda1(new PudelkoWildcards<>(new Object()));
 
 
-        //-----metoda wildcard
+        //-----metody wildcard
         class PudelkoWildcards3<T> {
             private T zmienna;
 
@@ -1049,18 +1061,25 @@ class Wew4{
                 // czyli kwadrat/prostokat
                 Object o = obiekt.getZmienna();
                 Figura f = obiekt.getZmienna();
-                Kwadrat k = (Kwadrat) obiekt.getZmienna();
                 //Przyjety obiekt moge zapisac do zmiennej
                 // nizej czyli odwrotnie zeby miec gwaranje ze
                 // cokolwiek bym wyslal (Figura moze byc klasa)
-                // bedzie przypisane dobrze polimoficznie
+                // bedzie przypisane dobrze polimoficznie!
+
+                //Kwadrat k = (Kwadrat) obiekt.getZmienna();
+                // juz musze rzutowac bo metoda nie wie czy
+                // wysle Kwadrat czy Prostokat, jesli
+                // dam ta instukcje i wysle Prostokat to wyrzuci
+                // wyjatek!
             }
         }
         PudelkoWildcards3<Object> test2 = new PudelkoWildcards3<>(new Object());
 
         test2.metoda(new PudelkoWildcards3<>(new Kwadrat()));
-        //test2.metoda(new PudelkoWildcards3<>(new Prostokat()));
-        //Blad - metoda przypisuje NA SILE rzutujac do kwadratu
+        test2.metoda(new PudelkoWildcards3<>(new Prostokat()));
+        //test2.metoda(new PudelkoWildcards3<>(new Object()));
+        //blad - wysylam cos wyzje niz figura
+
 
 
         //-----metody "upper bound" ? extedns
