@@ -1,7 +1,6 @@
 package Podsumowanie;
 
 import java.io.*;
-import java.security.PublicKey;
 import java.util.*;
 
 public class Podsumowanie {
@@ -318,13 +317,13 @@ public class Podsumowanie {
                         if(imie.equals("-")) {
                             break;
                         }
+                        if (imie.equals("Kamil")) {
+                            throw new IllegalArgumentException("jest juz kamil!");
+                        }
                         imiona.add(imie);
                     } catch (InputMismatchException e) {
                         wejscie.next();
                     }
-                }
-                if (imie.equals("Kamil")) {
-                    throw new IllegalArgumentException("jest juz kamil!");
                 }
             }
         }
@@ -356,11 +355,19 @@ public class Podsumowanie {
 
         Sluza do grupowania atrybutow/pol i metod
 
-        Klasa moze miec TYLKO modyfikator public lub zaden!
+        Klasa moze miec modyfikator dostepu public lub zaden!
+
+        Klasa moze byc zwykla/abstract/final!
+
+        Klasa abstrakcyjna moze miec metody abstrakcyjne i zwykle i
+         NIE DA SIE twrozyc instancji jej obiektow!
+
+        Klasa finalna nie moze byc rozszerzana!
+
 
         //Tworzenie instancji klasy
 
-        Podsumowanie obiekt = new Podsumowanie();
+        MojaKlasa obiekt = new MojaKlasa();
 
         Aby operwac na obiekcie musze przypisac cos do jej referencji
          np wywoluja konstruktor klasy slowem new
