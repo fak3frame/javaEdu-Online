@@ -1189,14 +1189,13 @@ class Wew4{
 
         //----
         //Metody:
-        lista1.add("kamil"); // dodanie elementu
-        lista1.add(1, "kamil");
+        lista1.add("Kamil"); // dodanie elementu
+        lista1.add(1, "Tomek");//index musi byc poprawny (nie moze byc pustego
+        // elementu) bo wyrzuci wyjatek IndexOutOfBoundsException
         //dodaje na pozycje 2 element "kamil", iteracja od 0
         lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
         // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
         // po drugiej!
-        lista1.remove("Tomek");
-        lista1.remove(0);
         String wezElement = lista1.get(0);// pobierze element z pozycji 0 listy
         boolean czyZawiera = lista1.contains("kamil");// zwraca flage czt kolekcja
         // zawiera dany element
@@ -1205,6 +1204,9 @@ class Wew4{
         // nie jaki jest rozmiar wstepny (w przypadku ArrayList)
         int pierwszeWystapienie = lista1.indexOf("kamil");
         int ostatnieWystapienie = lista1.lastIndexOf("kamil");
+        lista1.remove("Kamil");//usuwam element pierwszy i element drugi przeskakuje
+        // na 1 (0)
+        lista1.remove(0);
 
 
         /*----
