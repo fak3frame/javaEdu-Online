@@ -1098,7 +1098,7 @@ class Wew4{
                 this.zmienna = zmienna;
             }
 
-            public void metoda(PudelkoWildcards2<? extends Figura> obiekt) {
+            public void metoda(PudelkoWildcards2<? extends Kwadrat> obiekt) {
                 //W tej metodzie przyjety obiekt musi rozszerzac figure(interface)
                 // wiec wyslac do niego moge TYLKO cos co rozszrza figure!
                 //Przypisac do nowego obiektu mozna w druga strone czyli musze miec
@@ -1169,10 +1169,10 @@ class Wew4{
         Lista
 
         Charakteryzuje sie tym ze jej rozmiar moze sie zmieniac, dobra praktyka
-         jest dlekarowanie ich jako typ List (ArrayList,LinkedList) aby
-         mozna byloby je potem bez problemu zmienic jedna na druga
+         jest dlekarowanie ich jako typ List (List<String> list = new ArrayList<>();
+         aby mozna byloby je potem bez problemu zmienic jedna na druga
 
-        -Moga przechowywac ten sam obiekt kilka raz
+        -Moga przechowywac ten sam obiekt kilka razy
         -Kolejnosc jest wazna
 
         Dzielimy je na:
@@ -1188,7 +1188,7 @@ class Wew4{
 
 
         //----
-        //Metdoy:
+        //Metody:
         lista1.add("kamil"); // dodanie elementu
         lista1.add(1, "kamil");
         //dodaje na pozycje 2 element "kamil"
