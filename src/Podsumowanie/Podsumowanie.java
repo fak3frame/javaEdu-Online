@@ -188,11 +188,12 @@ public class Podsumowanie {
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
          aby zaoszczedzic pisania kodu oraz poprawic jego czytelnosc
 
-        Metoda moze byc zwykla(odnoaszaca sie do instancji klasy) lub
+        Metoda moze byc zwykla(odnoaszaca sie do instancji klasy/obiektu) lub
          statyczna(odnoszaca sie do klasy)
          */
         class Wew1 {
-            public String metodaDajacaString(int liczba) {
+            public /* static */String metodaDajacaString(int liczba) {
+                //nie moge dac static bo jetsem w main
                 return String.valueOf(liczba);
             }
 
@@ -202,16 +203,19 @@ public class Podsumowanie {
         }
 
         /*
-        Metody deklaruje TYLKO w klasie (nie w innych metodach)
+        Metody DEKLARUJE TYLKO w klasie (nie w innych metodach)
 
         Metody nie powinny przyjmowac duzej ilosc argumentow ("code smell")
 
-        Metode moge wywolac na obiekcie lub bezposrenio
+        Metode moge wywolac tylko w innej metodziena i robie to na obiekcie lub
+         bezposrenio lub z pomoca klasy w ktorej sie znajduje jesli jest statyczna:
+
          mojObiekt.mojaMetoda();
          mojaMetoda();
+         Klasa.mojaStatycznaMetoda();
 
         W statycznej metodzie(np main) NIE MOGE odwolac sie bezposrenio
-         do niestatycznej metody!!
+         do niestatycznej metody poniewaz main jest statyczny!!
 
         Metoda nie zwracajac nic void moze posiadac slowo return ale
          nie moze nic zwracac
@@ -233,9 +237,14 @@ public class Podsumowanie {
         public void metoda(int a){}
 
 
+        ------
+        Przesloniecie metody (override) gdy klasa pochodna ma taka
+          metode z taka sama nazwe i taka sama ilosc i rodzaj parametrow
+
+
 
         //------------------------------------------------------------------------
-        ----------------------------POROWNYWANIE TYPOW PROSTYCH-------------------
+        ----------------------POROWNYWANIE TYPOW PROSTYCH-------------------------
 
         Oparator == lub !=
 
