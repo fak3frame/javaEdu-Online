@@ -469,6 +469,8 @@ class Wew4{
             WeW4.a = 20;
             System.out.println(obiekt.a);
             //pokaze 20!!
+            System.out.println(WeW4.a);
+            //to samo
         }
 }
 
