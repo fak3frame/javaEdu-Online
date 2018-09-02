@@ -479,7 +479,12 @@ class Wew4{
          W przypadku dziedziczenia moge odwolac sie z konstruktora
           podklasy do konstruktora klasy bazowej tylko zamiast
           slowa this uzywam super i musi ono byc NA POCZATKU
-          konstruktora
+          konstruktora!
+
+         public MojaPodKlasa(int x){//konstruktor
+            super(12);//odwolanie do kosntruktora 1 parametrowego klasy Bazowej
+            this.x = x;
+         }
 
 
          -----
@@ -492,7 +497,8 @@ class Wew4{
             return "zmienna a = " + a;
          }
          //zmienna a jest intem lecz dzieki konkatenacji "+" z innym stringiem
-         // wszystko zostaje przypisane do stringa
+         // wszystko zostaje przypisane do stringa i jest poprawnie zwrocony typ
+         // w ratrun
          //W innym przypadku moge uzyc metody klasy Integer.valueOf(a);
 
 
@@ -503,6 +509,11 @@ class Wew4{
         Sa one w klasie Object wiec moge je wywolac na kazdym
          obiekcie.
         Domyslna implementacja equals zachowuje sie jak ==
+
+        Metode equals deklaruje w klasach poniewaz jesli bede chcial porownac obiekty
+         mojej klasy to nie bede porowynwac ich adresow(domyslna implementacja) tylko
+         wartoci pol tych obiektow. W metodzie equals moge wybrac jakie pola
+         maja byc porownywane!
         */
 
         class Krzeslo {
@@ -518,11 +529,17 @@ class Wew4{
                 this.waga = waga;
             }
 
+            //konstrukcja equals z rozynymi zmiennymi (umieszczone sa wszystkie z klasy)
             @Override
             public boolean equals(Object o) {
                 if (this == o) return true;
+                //musze sprawdzic czy nie sprawdzam tego samego obiektu
                 if (o == null || getClass() != o.getClass()) return false;
+                //musze sprawdzic czy nie porownuje z nullem lub czy obiekty nie sa innych
+                // klas
                 Krzeslo krzeslo = (Krzeslo) o;
+                //Przypisuje typ przyslnego obiektu z Object do wybranej klasy dla czytelniejszego
+                // pozniejszego zapisu
                 return cena == krzeslo.cena &&
                         //porownywanie int prosto
                         Double.compare(krzeslo.waga, waga) == 0 &&
