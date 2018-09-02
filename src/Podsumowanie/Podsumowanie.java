@@ -1191,7 +1191,7 @@ class Wew4{
         //Metody:
         lista1.add("kamil"); // dodanie elementu
         lista1.add(1, "kamil");
-        //dodaje na pozycje 2 element "kamil"
+        //dodaje na pozycje 2 element "kamil", iteracja od 0
         lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
         // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
         // po drugiej!
