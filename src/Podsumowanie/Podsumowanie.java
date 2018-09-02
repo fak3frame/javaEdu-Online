@@ -514,6 +514,11 @@ class Wew4{
          mojej klasy to nie bede porowynwac ich adresow(domyslna implementacja) tylko
          wartoci pol tych obiektow. W metodzie equals moge wybrac jakie pola
          maja byc porownywane!
+
+        Metoda hashCode sluzy do tego aby zwrocic liczbe int wygenerowana z obiektu
+         na podstawie WYBRANYCH pol ktore wpisuje w metodzie Objects.hash() metody
+         hashCode(). Przydaje sie to np w zbiorach aby sprawdzic czy nie ma juz takiego
+         samego obiektu (w zbiorach kazdy element jest unikalny)!
         */
 
         class Krzeslo {
