@@ -402,12 +402,21 @@ public class Podsumowanie {
 
         -----
         //stworznie obiektu z wywolanie konstruktora z jedyn parametrem
-        Podsumowanie obiekt = new Podsumowanie(12);
-
-        public Podsumowanie(int a)[
+        */
+        class MojaKlasa{
+            private int a;
+            public MojaKlasa(int a) {
+                this.a = a;
+            }
         }
 
+        MojaKlasa obiektMK = new MojaKlasa(10);
+        //MojaKlasa obiektMK2 = new MojaKlasa();
+        // blad - po zadeklarowaniu konstruktora 1 parametrowego ten bezparametowy
+        // przestal istniec!
 
+
+        /*
         -----
         Moge w jednym konstruktorze odwolac sie do innego np
          w jedno lub bez parametrowym odwolac sie do dwuparamterowego
@@ -415,14 +424,18 @@ public class Podsumowanie {
          KODU KONSTRUKTORA!
 
         int a;
-        public Podsumowanie(){
-            this(20);
-            //wysylam 1 zmienna czyli do konstruktora
-            // 1 parametrowego
+        int b;
+        public MojaKlasa(){
+            this(20,30);
+            //wysylam wysylam wlasne domyslne wartosci do konstruktora
+            // 2 parametrowego
         }
-        public Podsumowanie(int a){
+        public MojaKlasa(int a, int b){
             this.a = a;
+            this.b = b;
         }
+        MojaKlasa obiekt = new MojaKlasa();
+        //wartosci a i b obiektu beda wynosic 20 i 30
 
 
         -----
