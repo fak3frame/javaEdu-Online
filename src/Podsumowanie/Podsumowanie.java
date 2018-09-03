@@ -1223,9 +1223,14 @@ class Wew4{
          metode hashCode oraz Equals !!
 
         Zbiory dzielimy na
-        -HashSet
-        -TreeSet
-        -LinkedHashSet
+        -HashSet - w srodku umieszczona jest tablica mieszajaca, wymaga
+         implementacji hashCode oraz equals
+
+        -TreeSet - uporzadkowywwuje elementy wg naturalnego porzedku, wymagane
+         jest do tego implementacja interfejsu Comparable lub uzycie odpowiedniego
+         Comparatora
+
+        -LinkedHashSet - dodatkowo zapamietuje kolejnosc dodawnych elementow
          */
         Set<String> zbior1 = new HashSet<>(10);
         //Konstruktor zawiera wstepny rozmiar
@@ -1249,7 +1254,7 @@ class Wew4{
         Mapy
 
         -Kolejnosc nie jest istotna
-        -Kazdy element jest unikatowy
+        -Kazdy element kluczy jest unikatowy
 
         Mapa jest kolekcja pozwalajaca przechowywac odwzorowanie zbioru
          kluczy na liste wartosci. Klucze sa unikalne. Kluczami pownny byc
@@ -1287,8 +1292,8 @@ class Wew4{
         int iloscElementow2 = mapa1.size();
         Set<Map.Entry<Integer, String>> zbiorKluczWartosc = mapa1.entrySet();
         //kazdy element zbioru bedzie skladal sie z klucza i wartosci,
-        // odwolujac sie do elementu 0 moge wywolac na nim metode
-        // getKey() oraz getValue()
+        // W petli foreach z typem Map.Entry<TypKlucza, TypWartosci> bede mogl
+        // na elemencie wywolac metode getKey() i getValue()
 
 
         //-----
@@ -1602,6 +1607,18 @@ class Wew4{
             public Audi(String marka, int moc) {
                 super(marka);
                 this.moc = moc;
+            }
+        }
+        class Factory{
+            String lokalizacjaX = "src/Podsumowanie/PlikiTestowe/plikObiektowy4.bin";
+            void start(){
+                try(ObjectInputStream strWyj = new ObjectInputStream(new FileInputStream(lokalizacjaX))){
+                    Audi audi = new Audi("audi", 120);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 
