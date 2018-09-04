@@ -1623,6 +1623,7 @@ class Wew4{
         }
 
 
+
         class Opona implements Serializable {
             int rozmiar;
 
