@@ -1624,6 +1624,7 @@ class Wew4{
         Factory factory = new Factory();
 
 
+
         class Opona implements Serializable {
             int rozmiar;
 
