@@ -2026,15 +2026,45 @@ class Wew4{
         System.out.println("Rozszerzony Enum:");
         System.out.println(KoszulkaRozmiarDokladnie.S);
         //pokaze samo S
-        System.out.println(KoszulkaRozmiarDokladnie.S.dajdlugoscRekawa());
-        //pokaze podwartosc jednego z wartosci.
+        System.out.println(KoszulkaRozmiarDokladnie.S.dajSzerokoscKlatki());
+        //pokaze podwartosc jednego z wartosci - 48
 
         /*
-        sout(rozszerzonyEnum.S);
-         pokaze : S
-        sout(rozszerzonyEnum.S.getChestWidth());
-         pokaze podwartosci S - w tym przypadku pierwsza czyli 10
+        public enum KoszulkaRozmiarDokladnie{
+            S(10,20,30), //3 wartosci wiec 3 param. konstr. musze stworzyc
+            M(20,30,40), // oraz 3 prywatne pola Enuma
+            L(30,40,50); //SREDNIK JESLI JEST COS PO WARTOSCIACH!
+
+            //tworze 3 zmienne poniewaz kazna zmienna ma 3 "podwartosci"
+            // i przypisuje im wartosci w konstruktorze:
+            private int chestWidth;
+            private int shirtLength;
+            private int sleeveLength;
+
+            //konstruktor jest zawsze private!
+            KoszulkaRozmiarDokladnie(int chestWidth, int shirtLength, int sleeveLength)
+                this.chestWidth = chestWidth;
+                this.shirtLength = shirtLength;
+                this.sleeveLength = sleeveLength;
+            }
+
+            //oraz tworze getery do tych pol
+            // aby moc sie do nich odwolac na poszczegolnych wartosciach
+            // np: mojEnum.S.getPodZmeinna1(); - w sout pokaze wybrana podwartosc
+            // podZmiennej1 np: 30;
+            public int getChestWidth() {
+                return chestWidth;
+            }
+            public int getShirtLength() {
+                return shirtLength;
+            }
+            public int getSleeveLength() {
+                return sleeveLength;
+            }
+        }
+
          */
+
 
 
 
