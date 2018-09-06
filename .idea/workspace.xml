@@ -5,11 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" line="49" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 56">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 57">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +38,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="924">
-                    <caret line="1958" column="8" selection-start-line="1958" selection-start-column="8" selection-end-line="1958" selection-end-column="8" />
+                  <state relative-caret-position="1057">
+                    <caret line="1991" column="57" selection-start-line="1991" selection-start-column="57" selection-end-line="1991" selection-end-column="57" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="e#19045#19046#0" expanded="true" />
@@ -77,15 +75,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Stringi" value="114" />
-          <entry key="java" value="81147" />
+          <entry key="java" value="81324" />
           <entry key="regexp" value="2" />
-          <entry key="txt" value="527" />
+          <entry key="txt" value="528" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="81147" />
-          <entry key="PLAIN_TEXT" value="641" />
+          <entry key="JAVA" value="81324" />
+          <entry key="PLAIN_TEXT" value="642" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -124,8 +122,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="1658" lean-forward="true" selection-start-line="1658" selection-end-line="1658" />
+            <state relative-caret-position="683">
+              <caret line="1724" column="40" lean-forward="true" selection-start-line="1722" selection-start-column="8" selection-end-line="1724" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -163,7 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tablic</find>
       <find>foreac</find>
       <find>break</find>
       <find>wiek</find>
@@ -193,6 +190,7 @@
       <find>dziedzicz</find>
       <find>parse</find>
       <find>throw new</find>
+      <find>czlowiek</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -389,7 +387,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536252914178" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536253723149" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -540,13 +538,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01267" summary="PODSUMOWANIE 9">
-      <created>1535564594235</created>
-      <option name="number" value="01267" />
-      <option name="presentableId" value="LOCAL-01267" />
-      <option name="project" value="LOCAL" />
-      <updated>1535564594235</updated>
     </task>
     <task id="LOCAL-01268" summary="PODSUMOWANIE 10">
       <created>1535566119357</created>
@@ -884,7 +875,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536251407416</updated>
     </task>
-    <option name="localTasksCounter" value="1316" />
+    <task id="LOCAL-01316" summary="PODSUMOWANIE 57">
+      <created>1536253719875</created>
+      <option name="number" value="01316" />
+      <option name="presentableId" value="LOCAL-01316" />
+      <option name="project" value="LOCAL" />
+      <updated>1536253719875</updated>
+    </task>
+    <option name="localTasksCounter" value="1317" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -965,7 +963,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 32" />
     <MESSAGE value="PODSUMOWANIE 33" />
     <MESSAGE value="PODSUMOWANIE 34" />
     <MESSAGE value="PODSUMOWANIE 35" />
@@ -990,7 +987,8 @@
     <MESSAGE value="PODSUMOWANIE 54" />
     <MESSAGE value="PODSUMOWANIE 55" />
     <MESSAGE value="PODSUMOWANIE 56" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 56" />
+    <MESSAGE value="PODSUMOWANIE 57" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 57" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1193,15 +1191,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="1658" lean-forward="true" selection-start-line="1658" selection-end-line="1658" />
+        <state relative-caret-position="683">
+          <caret line="1724" column="40" lean-forward="true" selection-start-line="1722" selection-start-column="8" selection-end-line="1724" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="1958" column="8" selection-start-line="1958" selection-start-column="8" selection-end-line="1958" selection-end-column="8" />
+        <state relative-caret-position="1057">
+          <caret line="1991" column="57" selection-start-line="1991" selection-start-column="57" selection-end-line="1991" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#19045#19046#0" expanded="true" />

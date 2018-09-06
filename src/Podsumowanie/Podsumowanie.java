@@ -1966,10 +1966,81 @@ class Wew4{
 
 
 
+         /*-------------------------------------------------------------------------
+        ------------------------ENUM TYP WYLICZENIOWY-------------------------------
+
+        Sluzy do grupownia znanych nam wartosci - latwo je rozbudowywac
+
+        Wartosci typu wyliczniowego maja atrybut public static final !
+         wiec odwolujac sie do nich podaje nazwe typu wyliczeniowego
+         np zmienna w klasie:
+        */
+         KoszulkaRozmiar rozmiar = KoszulkaRozmiar.M;
+
+         /*
+        Wartosci pisze wielkimi literami
+
+        Enum nie mozna rozszerzac - jest jako final ! i nie moze dziedziczyc
+         poniewaz dziedzicy po java.lang.Enum
+
+        Wartosci enum mozna porownywac ==
+
+        Nie mozna tworzyc instancji enum
+
+        Przyklad uzycia w switch: */
+         switch (rozmiar){
+             case L://pisze sama wartosc bez nazwy klasy!
+                 System.out.println("mam rozmiar l");
+                 break;
+         }
+
+
     }
 
 }
 
 interface Figura{
     String dajNazwe();
+}
+enum KoszulkaRozmiar{
+    S,M,L,XL
+}
+enum KoszulkaRozmiarDokladnie{
+    S(48, 71, 36),
+    M(52, 74, 38),
+    L(56, 76, 41),
+    XL(61, 79, 41);
+
+    private int szerokoscKlatki;
+    private int wysokoscKoszulki;
+    private int dlugoscRekawa;
+
+    KoszulkaRozmiarDokladnie(int szerokoscKlatki, int wysokoscKoszulki, int dlugoscRekawa){
+        this.szerokoscKlatki = szerokoscKlatki;
+        this.wysokoscKoszulki = wysokoscKoszulki;
+        this.dlugoscRekawa = dlugoscRekawa;
+    }
+    int dajSzerokoscKlatki(){
+        return szerokoscKlatki;
+    }
+    int dajwysokoscKoszulki(){
+        return wysokoscKoszulki;
+    }
+    int dajdlugoscRekawa(){
+        return dlugoscRekawa;
+    }
+}
+
+enum EnumDoTekstu{
+    SPOKOJNY{
+        public String format(String wiadomosc){
+            return "To twoja wiadomosc spokojna: " + wiadomosc;
+        }
+    },
+    NERWOWY {
+        public String format(String wiadomosc) {
+            return "To twoja wiadomosc nerwowa: " + wiadomosc;
+        }
+    };
+    public abstract String format(String wiadomosc);
 }
