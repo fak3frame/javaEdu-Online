@@ -1589,13 +1589,16 @@ class Wew4{
          NotSerializableException.
 
         UWAGA! Jesli chce serializwoac moja klase ktora rozszerza inna to musze odwolac sie
-         w konstruktorze mojej klasy do konstruktora innej, chyba ze posiada ona konstruktor
+         w konstruktorze mojej klasy do konstruktora innej + ta inna klasa musi miec
+         konstruktor BEZPARAMETROWY, chyba ze posiada ona konstruktor
          bezparamtrowy to nie musze (wykona sie niejawne wywolanie odwolanie do konstruktora
          bezparametrowegeo super(); )
         */
 
         class Auto {
             private String marka;
+
+            public Auto(){}
 
             public Auto(String marka) {
                 this.marka = marka;
@@ -1611,17 +1614,30 @@ class Wew4{
         }
         class Factory{
             String lokalizacjaX = "src/Podsumowanie/PlikiTestowe/plikObiektowy4.bin";
-            void start(){
-                try(ObjectInputStream strWyj = new ObjectInputStream(new FileInputStream(lokalizacjaX))){
+            void seriazlize(){
+                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacjaX))){
                     Audi audi = new Audi("audi", 120);
+                    strWyj.writeObject(audi);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
+            void deserialize(){
+                try(ObjectInputStream strWyj = new ObjectInputStream(new FileInputStream(lokalizacjaX))){
+                    Audi audi2 = (Audi) strWyj.readObject();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         Factory factory = new Factory();
+        factory.seriazlize();
+        factory.deserialize();
+
 
 
 
