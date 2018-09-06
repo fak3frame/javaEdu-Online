@@ -1595,10 +1595,10 @@ class Wew4{
          bezparametrowegeo super(); )
         */
 
-        class Auto {
+        class Auto { // ta klasa nie musi implementwoac intef. Serializable
             private String marka;
 
-            public Auto(){}
+            public Auto(){}//ta klasa musi miec konstruktor bezparametowy! - bezwglednie
 
             public Auto(String marka) {
                 this.marka = marka;
