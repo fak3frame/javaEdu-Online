@@ -1998,17 +1998,44 @@ class Wew4{
          }
 
          /*
-         Konstruktor Enum jest zawsze private ! - nie musze tego modyfikatora pisac
+        Konstruktor Enum jest zawsze private ! - nie musze tego modyfikatora pisac
 
-         Enum moze byc prosty lub rozszerzony:
 
-        Prosty sklada sie z podanych wartosci bez specyfikacji (podwartosci)
+        Enum moze byc prosty lub rozszerzony:
+
+        -Prosty:
+        Sklada sie z podanych wartosci bez specyfikacji (podwartosci)
         public enum mojEnum{
             S,M,L,XL
         }
         Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
          srednika
-          */
+
+
+         -Rozszerzony:
+        Kazda wartosc Enuma moze posiadac podwartosci ktore przypisuje
+         do oddzielnych prywatnych pol Enuma i nadaje im wartosci w konstruktorze
+        Tyle ile podam podwartosci w kazdej zmiennej tylu parametrowy konstruktor
+         musze stworzyc oraz tyle prywanych zmiennych stworzyc!
+        W konstruktorze decyduje ktore pole Enuma jest przyporzedkowane
+         ktorej zmiennej!
+        Robie to poniweaz chcac sie dostac do podwartosci zmiennej moge to
+         zrobic tylko za pomoca geterow nowych pol ktore maja przypisane
+         podwartosci kazdej zmiennej */
+
+        System.out.println("Rozszerzony Enum:");
+        System.out.println(KoszulkaRozmiarDokladnie.S);
+        //pokaze samo S
+        System.out.println(KoszulkaRozmiarDokladnie.S.dajdlugoscRekawa());
+        //pokaze podwartosc jednego z wartosci.
+
+        /*
+        sout(rozszerzonyEnum.S);
+         pokaze : S
+        sout(rozszerzonyEnum.S.getChestWidth());
+         pokaze podwartosci S - w tym przypadku pierwsza czyli 10
+         */
+
 
 
     }
