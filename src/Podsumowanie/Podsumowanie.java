@@ -1976,6 +1976,9 @@ class Wew4{
          np zmienna w klasie:
         */
          KoszulkaRozmiar rozmiar = KoszulkaRozmiar.M;
+        System.out.println("------------------");
+        System.out.println(rozmiar);
+        //pokaze sama wartosc Enum czyli M!
 
          /*
         Wartosci pisze wielkimi literami
@@ -1993,6 +1996,19 @@ class Wew4{
                  System.out.println("mam rozmiar l");
                  break;
          }
+
+         /*
+         Konstruktor Enum jest zawsze private ! - nie musze tego modyfikatora pisac
+
+         Enum moze byc prosty lub rozszerzony:
+
+        Prosty sklada sie z podanych wartosci bez specyfikacji (podwartosci)
+        public enum mojEnum{
+            S,M,L,XL
+        }
+        Wartosci oddzielamy przecinkiem, jesli nie ma nic na po nich nie stawiem
+         srednika
+          */
 
 
     }
