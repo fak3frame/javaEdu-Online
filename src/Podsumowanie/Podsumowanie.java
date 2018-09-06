@@ -1639,8 +1639,7 @@ class Wew4{
         factory.deserialize();
 
 
-
-
+        //----
 
         class Opona implements Serializable {
             int rozmiar;
