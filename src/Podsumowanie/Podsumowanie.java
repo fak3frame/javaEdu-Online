@@ -1722,6 +1722,7 @@ class Wew4{
 
         W przypadku serializowania pol statycznych beda one po serializacji mialy taka
          sama wartosc jak w deklaracji pola klasy poniewaz dotycza one klasy a nie obiektu
+         tzn beda mialy taka wartosc jak klasa ktora je deserialzuje!
          UWAGA ! w jednym main jesli zrobimy serializacje i deserializacje pola statycznego
          ze zmiana w obiekcie - pokaze po deserializacji takze zmieniona wartosc
          */
@@ -1750,6 +1751,7 @@ class Wew4{
                     Czlowiek c2 = (Czlowiek)strWej.readObject();
                     System.out.println("----------------------------");
                     System.out.println("czlowiek identyfikator : "+c2.identyfikator);
+                    //pokaze null
                     System.out.println("czlowiek wiek : "+c2.wiek);
                     System.out.println("czlowiek imie : "+c2.imie);
                 } catch (IOException e) {
@@ -1763,6 +1765,18 @@ class Wew4{
         CzlowiekFabryka czlowiekFabryka = new CzlowiekFabryka();
         czlowiekFabryka.zapisz();
         czlowiekFabryka.oczytaj();
+
+
+        //----
+        //Specjalna obsługa serializacji/deserializacji
+        /*
+        Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
+         jak ma byc serializowany OBIEKT metodaZwykla writeObject(obiekt) tzn
+         jakie jego pola maja byc serializowane!
+
+
+
+         */
 
 
 
