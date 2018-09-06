@@ -1536,9 +1536,9 @@ public class Wstep {
 
         W serializacji bloku try dodaje obiekt do stumienia strWyj.readObject(silnik) oraz
          moge dodatkowo dodac do strumienia zmienna int - strWyj.writeInt(zmiennaInt) i bede
-         mogl w takim przypadku dostac sie do niej w bloku try w deserializacji. Dodanie
-         do strumienia zmiennej metodaZwykla writeInt nie ma nic wspolengo z moja metodaZwykla
-         writeObject()!!
+         mogl w takim przypadku dostac sie do niej w bloku try w deserializacji.
+         Dodanie do strumienia zmiennej metodaZwykla writeInt nie ma nic wspolengo z moja
+         meotda writeObject()!! poniewaz dotycza one zapisywanego obiektu!
          Zmienne dodane w metodzie writeObject sa dostepne tylko w metodzie readObject!!
 
         Natomiast w deserializacji (blok try w metodzie) w takim przypadku moge tylko

@@ -1768,14 +1768,200 @@ class Wew4{
 
 
         //----
-        //Specjalna obsługa serializacji/deserializacji
+        //Specjalna (wlasna) obsługa serializacji/deserializacji
         /*
-        Moge dodac wlasne metody readObject oraz writeObject aby zmodyfikowac
-         jak ma byc serializowany OBIEKT metodaZwykla writeObject(obiekt) tzn
-         jakie jego pola maja byc serializowane!
+        Moge dodac wlasne metody (PRIVATE VOID!) readObject oraz writeObject aby zmodyfikowac
+         jak ma byc serializowany OBIEKT polega to na stworzeniu w serializowanej
+         klasie metody writeObject/readObject przyjmujacej artgument ObjectOutputStream
+         lub ObjectInputStream i wyrzuca wyjatki IOException a readObjet takze
+         ClassNotFoundException.
+        W Ciele metdody deklaruje co strumien ma zapisywac lub jak maja zachowywac
+         sie jego elementy przy odczycie.
+
+        W przypadku metody writeObject wybieram pola klasy jakie maja zapisane i
+         do odpowiedniego typu pola wybieram odpowiednia metode np:
+         strWyj.writeUTF(stringTans); - dla String
+         //UWAGA ! ZMIENNA TRANSIENT ZOSTANIE TAKZE ZAPISANA DO STRIMIENIA
+         strWyj.writeInt(liczba+10); - dla int
+        W metodzie readObject analogiczne odczytuje i przypisuje do pol to
+         co chce
+         stringTans = strWej.readUTF();
+         liczba = strWej.readInt();
+
+        Jesli do ktorejs z metod dodam strWyj.defaultReadObject() lub
+          strWej.defaultReadObject(); to wszystkie pola klasy zostana
+          zserializwoane oraz zdeserializowane i przypisane do wartosci pol.
+
+        Moge rowniez dodac NOWE swoje zmienne w tej metodzie i zmieniac ich wartosc oraz
+         modyfikowac zmienne serializowanego obiektu - wszystko dotyczylo bedzie
+         serializowanego OBIEKTU!!
+        W takim przypadku jesli bede chcial dodac dodatkowa zmianna do strumienia
+         w metodzie writeObject bede mogl uzyc
+         metody np. dla int - int nowaZmienna =10; strWyj.writeInt(nowaZeminna); i zostanie
+         dodana kolejna zmienna zapisana w struminiu (kolejnosc zapisu musi byc
+         taka sama jak kolejnosc odczytu!!)
+         UWAGA!!
+         Do zmiennej dodatkowej dodanej do strumienia w metodzie writeObject bede mogl
+         dostac sie tylkow metodzie readObject a nie w dodatkowej metodzie
+         strWej.readInt(); w bloku try!!
+        Wiec jesli na poczatku metody mialem strWyj.defaultReadObject() a nastepnie dodalem
+         zmienna int do stumienia strWyj.writeInt(nowaZeminna) to w metodzie odczytu
+         readObject takze bede musial na poczatku dac strWej.defaultReadObject();
+         i opcjonalnie dostac sie do dodatkowej zmiennej int zapisanej do niej
+         system.out.println(strWej.readInt());
+        Dodatkowe zmienne w metodach write/readObject dotycza zapisu zmiennych w obiekcie!!
+
+        W serializacji bloku try dodaje obiekt do stumienia strWyj.readObject(silnik) oraz
+         moge dodatkowo dodac do strumienia zmienna int - strWyj.writeInt(zmiennaInt) i bede
+         mogl w takim przypadku dostac sie do niej w bloku try w deserializacji.
+         Dodanie do strumienia zmiennej metodaZwykla writeInt nie ma nic wspolengo z moja
+         meotda writeObject()!! poniewaz dotycza one zapisywanego obiektu!
+         Zmienne dodane w metodzie writeObject sa dostepne tylko w metodzie readObject!!
+        UWAGA!
+         Kolejnosc dodawania elementow do strumienia W BLOKU TRY ma znaczenie!
+         Jelis dam najpierw w bloku try w serializacji:
+         strWyj.writeObject(obiekt);
+         strWyj.writeInt(123);
+         to w deserializacji bloku try bede musial dac w takiej kolejnosci:
+         Klasa obiekt = (Klasa)strWej.readObject();
+         int x = strWej.readInt();
+         */
+        class SerializacjaUnikalna implements Serializable{
+            private transient String stringTans;
+            private String stringNormalny;
+            private int liczba;
+            public SerializacjaUnikalna(String stringTans, String stringNormalny, int liczba){
+                this.stringTans = stringTans;
+                this.stringNormalny = stringNormalny;
+                this.liczba = liczba;
+            }
+            private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
+                stringTans = strWej.readUTF(); //mam dostep do pol klasy wiec nie musze ich deklarowac
+                stringNormalny = strWej.readUTF();
+                liczba = strWej.readInt();
+                //Dodajew wszystkie przyspisania do pol klasy ale moge zrobic to jedna metodaZwykla
+                // strWej.defaultReadObject(); - jest to standardowa metodaZwykla dzialania metody
+                // readObject jesli jej nie zadeklaruje czyli dodanie wszystkich pol obiektu
+                // klasy do strumienia OBIEKTU
+            }
+            private void writeObject(ObjectOutputStream strWyj) throws IOException {
+                //Na poczatku moge dodac strWyj.defaultWriteObject() aby
+                // zostal zapisany obiekt w calosci (wszystkie jego pola automatycznie)
+                // czyli to co ponizej
+                //Jest to standardowa metodaZwykla writeObject jesli nie stworze jej wlasnej
+                // deklaracji
+                strWyj.writeUTF(stringTans);
+                //wybrana metodaZwykla zapisu zalezna od rodzaju zmiennej
+                //moge nawet zapisac zmienna z parametrem Transient
+                strWyj.writeUTF(stringNormalny);
+                strWyj.writeInt(liczba+10);
+            }
+        }
+        class SerializacjaUnikalnaFabryka{
+            void main(){
+                SerializacjaUnikalna s = new SerializacjaUnikalna("napT", "napN", 10);
+                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("SU"))){
+                    strWyj.writeObject(s);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("SU"))){
+                    SerializacjaUnikalna s2 = (SerializacjaUnikalna) strWej.readObject();
+                    System.out.println(s2.stringTans);
+                    System.out.println(s2.stringNormalny);
+                    System.out.println(s2.liczba);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
 
+        //----
 
+        //Dziedziczenie w serializacji
+        /*
+        Klasa ktora rozszerza klase implementujaca inteface Serializable
+         automatycznie takze go implementuje wiec takze jest serializowana!!
+
+        Jesli chce aby klasa nie byla serializowna moge nadpisac metody
+         private void readObject(ObjectInputStream strWej) lub/oraz
+         void writeObject(ObjectOutputStream strWyj)
+         i wyrzucic w nich odpowienio podpisany wyjatek NotSerializableException
+         */
+        class Chinczyk extends Czlowiek{
+
+            public Chinczyk(Integer identyfikator, int wiek, String imie) {
+                super(identyfikator, wiek, imie);
+            }
+            private void writeObject(ObjectOutputStream strWyj) throws IOException {
+                throw new NotSerializableException("Nie serialzuje Chinczyka");
+            }
+            private void readObject(ObjectInputStream strWej) throws IOException {
+                throw new NotSerializableException("Nie serialzuje Chinczyka");
+            }
+        }
+
+
+        //----
+
+        //Interface Externalizable
+        /*
+        Klasa implementujaca ten interface musi posiadac konstruktor bezparametrowy
+         oraz implementowac wlasne metody strumienia wyjscia i wejscia
+         writeExternal oraz readExternal deklarujace dzialanie zapisu obiektow do strumienia
+        W tych metodach nie ma metody defaultWrite/ReadObject !! wiec musze
+         sam zadklarwoac wszystko co chce odczytac i zapisac do strumienia z Obiektu
+         */
+        class PelnaKontrola implements Externalizable{
+
+            private String napis;
+            public PelnaKontrola(){
+
+            }
+            public PelnaKontrola(String napis){
+                this.napis=napis;
+            }
+            @Override
+            public void writeExternal(ObjectOutput out) throws IOException {
+                out.writeUTF(napis);
+            }
+            @Override
+            public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+                napis = in.readUTF();
+            }
+            void main(){
+                PelnaKontrola pK = new PelnaKontrola("testuje Pelna konrole");
+                try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("pelnaKontrola.bin"))){
+                    out.writeObject(pK);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("pelnaKontrola.bin"))){
+                    PelnaKontrola pKnew = (PelnaKontrola) in.readObject();
+                    System.out.println(pKnew.napis);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+
+        //----
+
+        //Pole serialVersionUID
+        /*
+        Tworze je aby sprawdzic poprawnosc serializacji i deserializacji
+        private static long serialVersionUID;
+        Moge nadac jej wartosc sam lub kompilator zrobi to za mnie
          */
 
 
