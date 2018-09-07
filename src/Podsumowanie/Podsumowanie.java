@@ -2140,14 +2140,100 @@ class Wew4{
             };
             public abstract String format(String wiadomosc);
         }
-
-
          */
 
 
 
+         /*-------------------------------------------------------------------------
+        ------------------------ADNOTACJE / DYREKTYWA JavaDoc-----------------------
+
+        JavaDoc to standardowy mechanizm generowania dokumentacji, jest
+         on w specjalnym komentarzu wieloliniowym zaczynajacym sie od /**
+         z * na poczatku kazdej linii
+        Sa w nim dyrektywy takie jak @param czy @retrun oraz opis
+        Moga byc takrze @see, @author czy @version
+        /**
+         * Multipies number by 2 // co robi metodaZwykla
+         * @param parameter number that should be multipied // co sie stanie
+         * // z parametrem ktory przyjmie
+         * @return parameter multipied by 2// to co zwraca i jak
+         */
+         /*
+        public int timesTwo(int param){
+            return param * 2;
+        }
 
 
+        //----
+        //Adnotacje
+        Przekazuja dodatkowe informacje na temat kodu
+        Przekazuja dane o danych - kodzie zrodlowym
+        Sa one specjalnym interfejsem
+        Umieszczamy je przed konkretnym elementem np. klasa/zmienna/metodaZwykla
+
+        Mozemy je stosowac do:
+        -metody
+        -klasy
+        -pola/atrybutu klasy
+        -parametru metody(to co przyjmuje)
+        -zmiennej lokalnej
+        -konstruktora
+        -adnotacji typu
+
+
+        //----
+        //Zastosowanie adnotacji:
+
+        -Dodatkowa informacja dla kompilatora
+        np @override informuje kompilator ze metodaZwykla jest przeslonita
+         w nadklasie lub interfejsu
+        Moge to wykorzystac np dodajac przed jakas metodaZwykla i jesli
+         nie jest ona przeslonieciem innej metody kompilator wyswietli
+         blad
+        np:
+        @Override
+        public boolean equal(Object obj){
+            return true;}
+        //bedzie blad poniwaz brakuje "s" i metodaZwykla nie przeslania metody
+           w podklasie
+
+
+        -Adnotacje przetwarzane w trakcie kompilacji */
+
+        List listOfUndefinedObjects = new ArrayList();
+        List<Integer> listOfIntegers = (List<Integer>) listOfUndefinedObjects;
+        //pokazuje ostrzerzenie jak najade myszka poswietlony tekst na zolto
+        /*
+        kompilator moze nas ostrzec ze jesli dodamy do listy listOfUndefinedObjects
+         typ inny niz Integer to chca zrzutowac do Integer wyrzuc blad (np String)
+         ClassCastException
+         "Warning:(10, 56) java: unchecked cast
+         required: java.util.List<java.lang.Integer>
+         found: java.util.List"
+
+        Aby zapobiec takiemu ostrzeganiu dodaje przed rzutowaniem @SuppressWarnings
+         i moge ja przypisac do typu, atrybutu, metody, parametru metody,
+         konstruktora czy zmiennej lokalnej np listy
+        */
+        List listOfUndefinedObjects2 = new ArrayList();
+        @SuppressWarnings("unchecked")
+        List<Integer> listOfIntegers2 = (List<Integer>) listOfUndefinedObjects;
+        /*
+        Kompilator nie bedzie nas ostrzegal przed zagrozeniami typu unchecked przy
+         konkretnej zmiennej
+
+
+        -Adnotacje w trakcie uruchomienia programu
+        Sluzy do tego mechanizm refleksji, moge w trakcie dzialania
+         programu pobierac informacje o skompilowanym kodzie czyli np klasie/jej metodach
+         czy zmiennych
+        np. @PostConstruct
+
+
+        //-----
+        //Definiowanie adnotacji
+
+         */
     }
 
 }
