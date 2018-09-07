@@ -2609,7 +2609,41 @@ class Wew4{
         assertNotSame()
 
 
+        ----
+        PRZYKŁADOWE TESTY:
 
+        -Tworze obiekt i sprawdzam czy metodaZwykla klasy zwroci true
+        @Test
+        public void czyLiczba12JestWPrzedziale(){
+            One o = new One(10,15);
+            assertTrue(o.czyJestWPrzedziale(12));
+        }
+
+        -Sprawdzam czy metodaZwykla zwroci wyjatek IllegalArgumentException
+        @Test(expected = IllegalArgumentException.class) //test przejdzie
+        // jesli zostanie wyrzucony podany wyjatek
+        public void czyWyrzicWyjatekZlychParametrow(){
+            new One(20,10); //wyjatek jest w konstruktorze klasy One
+        }
+
+        Sposob 2:
+        @Test
+        public void czyWyrzicWyjatekZlychParametrow2(){
+            try{
+                new One(20,10); //tutaj powinno wyrzucic wyjatek i w catch
+                //go porownam z oczekiwanym
+
+                //jesli jednak to sie nie stanie wywoluje metode fail
+                fail("Wyjatek nie zostal rzucony"); //czyli test nie przeszedl
+                //wywola wyrzucenie wyjatku AssertionError z napisem
+                //test nie przejdzie
+            }
+            catch (IllegalArgumentException ex){
+                assertEquals("dolny przedzial jest wiekszy niz gorny!",ex.getMessage());
+                //jesli metodaZwykla wyrzuci DOKŁADNIE TAKI wyjatek to test przejdzie
+                //jesli nie to test nie przejdzie
+            }
+        }
 
         */
 
