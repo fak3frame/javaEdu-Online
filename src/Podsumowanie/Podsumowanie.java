@@ -2453,11 +2453,12 @@ class Wew4{
         Sortowanie z uzycem Collections.sort i interfacem Comparator
          z klasa anonimowa
 
-        Metoda Collection.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem
+        Metoda Collection.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem!
 
         Jesli metoda przyjmuje:
 
         -TYLKO kolekcje z typem generycznym mojej klasy
+        //Collections.sort(listaDoSortowania);
         To moja klasa musi implementowac interface Comparable z metoda
          int compareTo(Object o). Metoda zwraca >0 gdy this.wartosc jest wieksze
          od o.wartosc, <0 gdy odwrtnie i 0 gdy rowne
@@ -2510,7 +2511,7 @@ class Wew4{
 
 
          -Kolekcje z typem generycznym mojej klasy ORAZ komparator
-
+          Collections.sort(listaDoSortowania, new KlasaSortujaca());
          1. Moge stworzyc nowa klasa implementujaca interfejs
          Comparator<KlasaDoSortowania> i w niej metode interfejsu
          int compare (KlasaDoSortowania o1, KlasaDoSortowania o2)
