@@ -2,6 +2,8 @@ package Podsumowanie;
 
 import java.io.*;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class Podsumowanie {
@@ -2665,6 +2667,40 @@ class Wew4{
         @BeforeClass - uruchamiana przed wszystkimi testame
         @AfterClass - uruchamiana po wszytkich testach
         */
+
+
+
+        /*-------------------------------------------------------------------------
+        ----------------------------WYRAŻENIA REGULARNE----------------------------
+
+        Wyrażenie regularne (ang. regular expression) to „wzorzec”, który opisuje grupę
+         łańcuchów znaków i jest nastepnie kompilowany przez
+         silnik wyrażeń regularnych do wewnętrznej postaci.
+
+        W praktyce jednym z głównych zastosowań jest weryfikacja czy dany łańcuch znaków
+         pasuje do wzorca. Wzorcem tym jest wyrażenie regularne.
+
+        W Javie wyrazenia rgularne wykorzystuje klasy Pattern i Matcher
+        */
+
+        //DEKLARACJA
+        //Na poczatku deklaruje wzorzec
+        Pattern wzorzec = Pattern.compile("costam");
+        //Nastepnie z pomoca obiektu wzorca deklaruje wybrane dopaseowanie
+        // czyli to co chce sprawdzic (np moge wprowadzic wlasny text)
+        Matcher dopasowanie = wzorzec.matcher("pisze costam");
+        //Aby sprawdzic dopasowanie dokladne uzywam metody matches() ktora
+        // zwraca true albo false. Wywoluje ja na obiekcie Matcher:
+        dopasowanie.matches(); //zwroci false poniewaz moj tekst nie pasuje
+        // w poelni do wzorca
+        // Aby spawdzic czy jakakolwiek czesc ciegu dopsowania pasuje do wzorca
+        // uzywam metody find()
+        dopasowanie.find();//teraz da true poniewaz czesc teksu pasuje do wzorca
+
+
+
+
+
 
 
     }
