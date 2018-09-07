@@ -2645,6 +2645,25 @@ class Wew4{
             }
         }
 
+
+        ----
+        Przed testami moge dodac zmienna Obiektu klasy np
+        One one;
+        i stworzyc jej obiekt na potzeby testow dodajac metode z adnotacja
+        @Before ktora jest wywolywana przed kazdym testem
+
+        @Before
+        public start(){
+            one = new One(10,20);
+        }
+        i korzystac w kazdym tescie zmiennej one z podanymi parametrami
+
+
+        ----
+        Istnieja takze metody:
+        @After - uruchamina po kazdym tescie
+        @BeforeClass - uruchamiana przed wszystkimi testame
+        @AfterClass - uruchamiana po wszytkich testach
         */
 
 
