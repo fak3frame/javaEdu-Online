@@ -2181,6 +2181,31 @@ class Wew4{
         -adnotacji typu
 
 
+        Adnotacja powinna miec informacje: (przed definicja)
+        -@Target (ElementType.METHOD/TYPE/ANNOTATION_TYPE/CONSTRUCTOR/FIELD/
+                              LOCAL_VARIABLE/MODULE/PACKAGE)
+         Do jakiche elementow moze byc stosowana np.
+         @Target(ElementType.METHOD)
+         jesli jej nie okresle to bede mogl jej uzywac wszedzie z wyjatkiem typow
+         typ wyliczniowy : ElementType
+
+        -@Retention (RetentionPolicy.RUNTIME/CLASS/SOURCE)
+         Jak dlugo dane o adnotacji powinny byc przechowywane / gdzie beda wykrywane
+         adnotacje - jest to retencja
+         np: @Retention(RetentionPolicy.SOURCE)
+         typ wyliczniowy: RetentionPolicy
+        Informacje o odnotacji moga byc:
+          * usuwane przez kompilator w trakcie kompilacji - tylko w kodzie zrodlowym .SOURCE
+          * umieszczone w skompilowanej klasie ale nie dostepne w uruchomionym progr .CLASS
+          * dostepne w trakcie uruchomionego programu .RUNTIME
+         Jesli potrzebuje wykorzystac ja tylko w trakcie kompilacji to wygeneruje
+          to mniejszy bajtkod
+
+         Jesli nie okresle retencji wlasnej adnotacji (nie dodam @Retention) to przyjmie
+          ona wartosc domyslna @Retention(RetentionPolicy.CLASS) czyli sa zapisane w pliku
+          class ale nie sa dostpene w trakcie uruchomienia porgramu
+
+
         //----
         //Zastosowanie adnotacji:
 
@@ -2199,7 +2224,6 @@ class Wew4{
 
 
         -Adnotacje przetwarzane w trakcie kompilacji */
-
         List listOfUndefinedObjects = new ArrayList();
         List<Integer> listOfIntegers = (List<Integer>) listOfUndefinedObjects;
         //pokazuje ostrzerzenie jak najade myszka poswietlony tekst na zolto
@@ -2211,9 +2235,9 @@ class Wew4{
          required: java.util.List<java.lang.Integer>
          found: java.util.List"
 
-        Aby zapobiec takiemu ostrzeganiu dodaje przed rzutowaniem @SuppressWarnings
-         i moge ja przypisac do typu, atrybutu, metody, parametru metody,
-         konstruktora czy zmiennej lokalnej np listy
+        Aby zapobiec takiemu ostrzeganiu dodaje przed rzutowaniem adnotacje
+         @SuppressWarnings i moge ja przypisac do typu, atrybutu, metody,
+         parametru metody, konstruktora czy zmiennej lokalnej np listy
         */
         List listOfUndefinedObjects2 = new ArrayList();
         @SuppressWarnings("unchecked")
@@ -2231,9 +2255,71 @@ class Wew4{
 
 
         //-----
-        //Definiowanie adnotacji
+        //Definiowanie wlasnej adnotacji
 
-         */
+        np:
+        @Retention(RetentionPolicy.SOURCE) - adnotacja bedzie tylko w kodzie zrodlowym
+        @Target(ElementType.FIELD) - moze byc uzyta wylacznie na atrutach klasy
+        public @interface SampleFieldAnnotation {
+            String id(); - to jest element "id" (przyjmie argument podczas uzcia adnotacji
+        }                                        czyli jest "argumentem")
+
+
+
+        Adnotacja moze przyjac tzw argument podczas wywolania np @SuppressWarnings("unchecked");
+        to adnotacja SuppressWarnings przyjmie String
+
+        PRZYKLADOWA DEKLARACJA:
+        @Retention(RetentionPolicy.RUNTIME)
+        @Target({ElementType.METHOD, ElementType.FIELD})
+        public @interface MyAnnotation {
+            String A();
+            String B();
+        }
+        a w kodzie programu (przed metodaZwykla lub polem - okreslony element target):
+        @MyAnnotation(A = "", B = "")//przypisuje wartosci zmiennym w adnotacji
+        void simpleMethod() {
+        }
+
+
+        //----
+        public @interface Retention {
+            RetentionPolicy value();
+        }
+        Deklaracja:
+        @Retention(RetentionPolicy.SOURCE)
+        @Retention(value=RetentionPolicy.SOURCE) - przypisuje wartosc lecz
+          zadziala jak linijka wyzej poniewaz retencje mam juz okreslona
+
+        Moge takze przyjac tablice do jakich elementow ma byc stosowana
+        public @interface Target {
+            ElementType[] value();
+        }
+        Deklaracja (4 rozne sposoby tego samego dzialania):
+        @Target(ElementType.FIELD) - 1 element tablicy
+        @Target(value=ElementType.FIELD) - -//-
+        @Target({ElementType.FIELD}) - tutaj wymieniam po , bo jest tablica
+        @Target(value={ElementType.FIELD}) - -//-
+
+
+        //----
+        Wartosci domyslne adnotacji:
+        @Retention(RetentionPolicy.RUNTIME)
+        //informacja o tej adnotacji jest dostępna w trakcie wykonania programu.
+        @Target({ElementType.FIELD, ElementType.CONSTRUCTOR, ElementType.METHOD})
+        //Adnotację tę możemy stosować do atrybutów klasy, konstruktorów i metod.
+        // wymieniam je po przecinku w {} - przyjmuje tablice typu enum ElementType
+
+        public @interface AnnotationWithDefaultValues {
+            String firstElement() default "someDefaultValue";
+            int [] secondElement() default {1, 2, 3};
+            float thirdElement();
+        }
+        //W takim przypadku podczas deklaracji adnaotacji w kodzie
+        // nie musze przypisywac wartosci z atrybutem default ale moge
+        */
+
+
     }
 
 }
