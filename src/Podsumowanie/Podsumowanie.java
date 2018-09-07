@@ -2184,13 +2184,13 @@ class Wew4{
         Adnotacja powinna miec informacje: (przed definicja)
         -@Target (ElementType.METHOD/TYPE/ANNOTATION_TYPE/CONSTRUCTOR/FIELD/
                               LOCAL_VARIABLE/MODULE/PACKAGE)
-         Do jakiche elementow moze byc stosowana np.
+         Czyli do jakich elementow moze byc stosowana np.
          @Target(ElementType.METHOD)
          jesli jej nie okresle to bede mogl jej uzywac wszedzie z wyjatkiem typow
          typ wyliczniowy : ElementType
 
         -@Retention (RetentionPolicy.RUNTIME/CLASS/SOURCE)
-         Jak dlugo dane o adnotacji powinny byc przechowywane / gdzie beda wykrywane
+         Czyli jak dlugo dane o adnotacji powinny byc przechowywane / gdzie beda wykrywane
          adnotacje - jest to retencja
          np: @Retention(RetentionPolicy.SOURCE)
          typ wyliczniowy: RetentionPolicy
@@ -2263,6 +2263,8 @@ class Wew4{
         public @interface SampleFieldAnnotation {
             String id(); - to jest element "id" (przyjmie argument podczas uzcia adnotacji
         }                                        czyli jest "argumentem")
+        gdybym chcial jej uzyc musialbym wyslac jakis String do niej
+        @SampleFieldAnnotation("napis")
 
 
 
@@ -2284,7 +2286,8 @@ class Wew4{
 
         //----
         public @interface Retention {
-            RetentionPolicy value();
+            RetentionPolicy value(); //przyjmuje typ RetentionPolicy wiec musze taki wyslac
+                                     // podczas uczycia
         }
         Deklaracja:
         @Retention(RetentionPolicy.SOURCE)
@@ -2318,6 +2321,79 @@ class Wew4{
         //W takim przypadku podczas deklaracji adnaotacji w kodzie
         // nie musze przypisywac wartosci z atrybutem default ale moge
         */
+
+
+
+        /*-------------------------------------------------------------------------
+        ------------------------KLASY WEWNETRZNE I ANONIMOWE-----------------------
+
+        Istnieje kilka typow klas wewnetrznych:
+        -standardowe
+        -statyczne
+        -lokalne
+        -anonimowe
+
+        Klasa wewnetrzna NIELOKALNA moze miec kazdy modyfikator
+        Klasa wewnetrzna ma dostep do wszytkich atrybutow i metod klasy zewnetrznej
+
+        Wewnetrzene interfejsy i typy wyliczneniowe sa ZAWSZE STATYCZNE!
+         i nie moga byc lokalne to jest w metodzie/bloku if
+
+        Klasa lokalna jest zdefiniowana wewnatrza bloku (metodaZwykla, blok if itp)
+         i nie moze zawierac zadnego modyfikatora (public/private/protected)
+
+        Dostep do klas lokalnych jest tylko w bloku w ktorym zostaly zdefiniowane!
+        */
+        class KlasaGlowna{
+
+            class KlasaWewnetrzna {
+            }
+            //koniec klasy wewnetrznej!
+
+            public KlasaWewnetrzna rozpocznij(){//metoda
+                return new KlasaWewnetrzna();
+                //nie musze pisac return this.new KlasaWeWnetrznaZwykla();
+            }
+
+            //Tworznie instancji klasy wewnetrznej
+            public void main(){
+                //TWORZENIE OBIEKTU gdy klasa wewnetrzna jest NIESTATYCZNA!
+                KlasaGlowna klasaGlowna = new KlasaGlowna();
+
+                KlasaGlowna.KlasaWewnetrzna klasaWewnetrzna = klasaGlowna.new KlasaWewnetrzna();
+                //1 tworze obiekt klasy ZEW
+                //2 tworze obekt typu KLASA_ZEW.KLASA_WEW i wywoluje na obiekcie klasy
+                // zewnetrznej konstruktor klasy wewnetrzej
+                KlasaGlowna.KlasaWewnetrzna klasaWewnetrzna2 = klasaGlowna.rozpocznij();
+                //lub za pomoca metody
+
+                //INNA METODA: (gdy klasa wewnetrzna JEST STATYCZNA!)
+                //np w innej klasie - bezposrednio
+                //KlasaZew.KlasaWew obiekt = new KlasaZew.KlasaWew();
+
+                //INNA METODA2:(gdy klasa wewnetrza jest STATYCZNA i TYLKO W KLASIE
+                // W MAIN TEJ SAMEJ KLASY!! moge tworzyc bezposrenio obiekt klasy wew
+                KlasaWewnetrzna obWew2 = new KlasaWewnetrzna();
+
+
+                //----
+                final int liczba = 10;
+                int liczbaNieFinalna = 20;
+                //liczbaNieFinalna = 40; BLAD!! jesli klasa wewnatrz metody (lokalna)
+                // korzysta ze zmiennych moge TYLKO RAZ zadeklarawoac jej wartosc!
+
+                class KlasaWeWLokalna{//jestem w main
+                    void powiedzCos(){
+                        System.out.println(liczba);
+                        System.out.println(liczbaNieFinalna);
+                    }
+                }
+            }
+        }
+
+
+        //----
+
 
 
     }
