@@ -2464,28 +2464,32 @@ class Wew4{
          UWAGA ! (metoda przyjmuje typ Object  wiec musze rzutowac)
         Zmienne brane sa po kolei z Listy - this.wartosc jest wartoscia
          elementu 0 a o.wartosc jest wartoscia elementu 1.
-
-        List<KlasaDoSortowania> listaDoSortowanie = Arrays.asList(
-                new KlasaDoSortowania(40),
-                new KlasaDoSortowania(12),
-                new KlasaDoSortowania(50),
-                new KlasaDoSortowania(2)
-
+        */
+        List<KlasaDoSortowania> listaDoSortowania = Arrays.asList(
+                new KlasaDoSortowania("dddd"),
+                new KlasaDoSortowania("aaaaaa"),
+                new KlasaDoSortowania("ee"),
+                new KlasaDoSortowania("cccccccc"),
+                new KlasaDoSortowania("f"),
+                new KlasaDoSortowania("b")
         );
-
-         class KlasaDoSortowania implements Comparable{
-            public int wartosc;
-            public KlasaDoSortowania(int wartosc) {
-                this.wartosc = wartosc;
+         class KlasaDoSortowania2 implements Comparable{
+            public String napis;
+            public KlasaDoSortowania2(String napis) {
+                this.napis = napis;
             }
             @Override
             public int compareTo(Object o) {
                 KlasaDoSortowania x = (KlasaDoSortowania)o;
-                return this.wartosc - x.wartosc;
+                return this.napis.length() - x.napis.length();
             }
 
         }
-        Collections.sort(listaDoSortowanie);
+        Collections.sort(listaDoSortowania);
+        System.out.println("Sortowanie 1 wg dlugosci:");
+        for(KlasaDoSortowania x : listaDoSortowania){
+            System.out.print(x.napis+ " ");
+        }
         /*
         --
         Jesli klasa ma zmienna typu String to moge takze sprawdzic dlugosc
@@ -2509,15 +2513,19 @@ class Wew4{
          Moge stworzyc nowa klasa implementujaca interfejs
          Comparator<KlasaDoSortowania> i w niej metode interfejsu
          int compare (KlasaDoSortowania o1, KlasaDoSortowania o2)
-
-         class KlasaSortujaca implements Comparator<KlasaDoSortowania>{
+         */
+         class KlasaSortujaca2 implements Comparator<KlasaDoSortowania>{
             @Override
             public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
                 return o1.napis.compareTo(o2.napis);
             }
          }
-          Collection.sort(listaDoSortowanie, KlasaSortujaca)
-
+          Collections.sort(listaDoSortowania, new KlasaSortujaca());
+        System.out.println("\n"+"Sortowanie 2 wg naturalnego porzadku:");
+        for(KlasaDoSortowania x : listaDoSortowania){
+            System.out.print(x.napis+ " ");
+        }
+          /*
           --
           Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
            i definicje sortowania w wywolaniu metody sort
@@ -2529,36 +2537,6 @@ class Wew4{
             }
           });
          */
-
-
-
-
-
-
-
-        List<KlasaDoSortowania> listaDoSortowanie = Arrays.asList(
-                new KlasaDoSortowania("Kamil"),
-                new KlasaDoSortowania("Aamil"),
-                new KlasaDoSortowania("Xamil"),
-                new KlasaDoSortowania("Wamil")
-
-
-        );
-        System.out.println();
-        Collections.sort(listaDoSortowanie);
-
-        Collections.sort(listaDoSortowanie, new Comparator<KlasaDoSortowania>() {
-            @Override
-            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
-                return o1.napis.compareTo(o2.napis);
-            }
-        });
-
-
-
-        for(KlasaDoSortowania x : listaDoSortowanie){
-            System.out.println(x.napis);
-        }
 
 
 
@@ -2624,7 +2602,7 @@ class KlasaDoSortowania implements Comparable{
     @Override
     public int compareTo(Object o) {
         KlasaDoSortowania x = (KlasaDoSortowania)o;
-        return this.napis.compareTo(x.napis);
+        return this.napis.length() - x.napis.length();
     }
 }
 class KlasaSortujaca implements Comparator<KlasaDoSortowania>{
