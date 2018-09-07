@@ -2457,7 +2457,7 @@ class Wew4{
 
         Jesli metoda przyjmuje:
 
-        -Kolekcje z typem generycznym mojej klasy
+        -TYLKO kolekcje z typem generycznym mojej klasy
         To moja klasa musi implementowac interface Comparable z metoda
          int compareTo(Object o). Metoda zwraca >0 gdy this.wartosc jest wieksze
          od o.wartosc, <0 gdy odwrtnie i 0 gdy rowne
@@ -2487,6 +2487,7 @@ class Wew4{
         }
         Collections.sort(listaDoSortowanie);
         /*
+        --
         Jesli klasa ma zmienna typu String to moge takze sprawdzic dlugosc
          napisu wykorzystujac lenght
 
@@ -2494,7 +2495,7 @@ class Wew4{
                 KlasaDoSortowania x = (KlasaDoSortowania)o;
                 return this.napis.length() - x.napis.length();
          }
-
+        --
          Lub jesli chce posortowac Stringi wedlug naturalnego porzadku to
           moge uzyc metody metody compareTo w compareTo!
 
@@ -2503,6 +2504,30 @@ class Wew4{
                 return this.napis.length() - x.napis.length();
          }
 
+
+         -Kolekcje z typem generycznym mojej klasy ORAZ komparator
+         Moge stworzyc nowa klasa implementujaca interfejs
+         Comparator<KlasaDoSortowania> i w niej metode interfejsu
+         int compare (KlasaDoSortowania o1, KlasaDoSortowania o2)
+
+         class KlasaSortujaca implements Comparator<KlasaDoSortowania>{
+            @Override
+            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
+                return o1.napis.compareTo(o2.napis);
+            }
+         }
+          Collection.sort(listaDoSortowanie, KlasaSortujaca)
+
+          --
+          Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
+           i definicje sortowania w wywolaniu metody sort
+
+          Collections.sort(listaDoSortowanie, new Comparator<KlasaDoSortowania>() {
+            @Override
+            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
+                return o1.napis.compareTo(o2.napis);
+            }
+          });
          */
 
 
@@ -2521,6 +2546,13 @@ class Wew4{
         );
         System.out.println();
         Collections.sort(listaDoSortowanie);
+
+        Collections.sort(listaDoSortowanie, new Comparator<KlasaDoSortowania>() {
+            @Override
+            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
+                return o1.napis.compareTo(o2.napis);
+            }
+        });
 
 
 
@@ -2593,5 +2625,11 @@ class KlasaDoSortowania implements Comparable{
     public int compareTo(Object o) {
         KlasaDoSortowania x = (KlasaDoSortowania)o;
         return this.napis.compareTo(x.napis);
+    }
+}
+class KlasaSortujaca implements Comparator<KlasaDoSortowania>{
+    @Override
+    public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
+        return o1.napis.compareTo(o2.napis);
     }
 }
