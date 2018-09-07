@@ -2692,13 +2692,90 @@ class Wew4{
         //Aby sprawdzic dopasowanie dokladne uzywam metody matches() ktora
         // zwraca true albo false. Wywoluje ja na obiekcie Matcher:
         dopasowanie.matches(); //zwroci false poniewaz moj tekst nie pasuje
-        // w poelni do wzorca
+        // w poelni do wzorca "pisze costam" =/= "costam"
         // Aby spawdzic czy jakakolwiek czesc ciegu dopsowania pasuje do wzorca
         // uzywam metody find()
         dopasowanie.find();//teraz da true poniewaz czesc teksu pasuje do wzorca
+        //"pisze costam" =/= "costam" ale "costam" = "costam"
+
+        /*
+
+        Znaki biale:
+        \n - nowa linia
+        \r - usuniecie wszystkiego do poczatku linii
+        \t - tabulacja
+        \f - strzalka w gore (napisana doslowanie jako obrazek)
+        \x0B - wertykalny tabulator
 
 
+        POMOC W IDE
+        moge na deklaracji wzorca uzyc <alt + enter> i dac Check RegExp aby na szybko
+         sprawdzic czy podany wpisany w okno wzorzec pasuje
 
+
+        Gdy chce aby w ciagu znakow 2 + 3 = 5 nie bylo brane "+" jako
+         dodoawanie musze dodac \przed+ : 2 \+ 3 = 5
+         jednak w javie wyrazenia regularne sa jako Strng wiec
+         pojedynczy \ jest interpretowany specjalnie jak np \t - tabulator
+         czy \n nowa linia dlatego nalezy dodac podwojny \\
+         2 \\+3 = 5
+
+
+        W przypadku gdy chce pominac dzialanie "\" w liczbie z tym
+         znakiem np 123\4 musze dodac pojedynczy \ przed \ czyli
+         123\\4 a nastepnie przed kazdym \ dodac ponownie kolejny
+         czyli 123\\\\4
+
+
+        ----
+        POWTORZENIA:
+        znak ? - element przed ? (standardowo 1 litera ciagu) moze wystapic
+                 0 lub 1 raz, pozostala czesc przed i po nim musi byc niezmieniona
+                 np. kr?at
+        -(0 - 1) wystapien
+        Poprawnie : krat, kat
+        Blednie : rkat, at, wkrat, rat
+         */
+        Pattern wzorKrat = Pattern.compile("kr?at");
+        Matcher dopasowanie2 = wzorKrat.matcher("krat");
+        System.out.println(dopasowanie2.matches());//true
+
+
+        /*
+        znak * - to co jest przed nim moze zostac pomienita lub wystapic dowlona
+                 ilosc razy
+                 np uwa*ga
+        -(0 - nieskonczonosci) wystapien
+        Poprawnie : uwga, uwaga, uwaaaaga
+        Blednie : auwaga, waga
+
+
+        znak + - dziala jak * tylko ze wystapienie musi byc CO NAJMNIEJ jedno
+                 np de+bil
+        -(1 - nieskonczonosci) wystapien
+        Poprawnie : debil, deeeebil
+        Blednie : dbil, edebil
+
+
+        ----
+        Dokladniejsze powtorzenia:
+        -{x} - oznacza że element poprzedzający musi wystąpić dokładnie x razy,
+        np. kr{3}at -> krrrat.
+        -{x,y} - oznacza, że element poprzedzający musi wystąpić od x do y razy,
+        np. kr{2,3}at -> krrrat, krrat.
+        -{x,} - oznacza, że element poprzedzający musi wystąpić co najmniej x razy,
+        np. kr{1,} -> krat, krrrrat, krrrrrrrat...
+        -{,y} - oznacza, że element poprzedzający musi wystąpić co najwyżej y razy.
+        np. kr{,2}at -> ????????????
+
+        Moge zastapic proste na te z {}:
+        a*la -> a{0,}la
+        a+la -> a{1,}la
+        a?la -> a{0,1}la
+
+        */
+
+        Pattern x = Pattern.compile("k{,2}at");
 
 
 
