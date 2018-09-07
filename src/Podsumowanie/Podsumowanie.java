@@ -2580,6 +2580,35 @@ class Wew4{
 
         Założeniem TDD jest pisanie testow do jak najkrotszej ilosci kodu
 
+        Dobra praktyka jest jednego dnia napisania testow zeby kolejnego
+         rozpoczac pisanie samej funkcjonalnosci
+
+
+        ----
+        Testy jednostkowe z JUnit
+
+        CTR+F5 uruchomi ostatni test/testy
+
+        Asercje to metody JUnit ktore przyjmuja rozne wartosci i koncza test
+         wynikiem pozytywnym lub negatywnym
+
+
+        Sa to metody statyczne z klasy Assert. Moge miec do nich dostep poprzez
+         import statyczny tej klasy
+         import static org.junit.Assert.*; i pisze po prostu assertTrue(costam());
+         lub pisania ich po nazwie klasy np. Assert.assertTrue(costam());
+
+        Najczestsze metody:
+        assertTrue()
+        assertFalse()
+        assertNull()
+        assertNotNull()
+        assertEquals()
+        assertNotEquals()
+        assertSame() - sprawdza adresy obiektow
+        assertNotSame()
+
+
 
 
         */
