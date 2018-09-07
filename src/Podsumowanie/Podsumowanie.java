@@ -2448,6 +2448,23 @@ class Wew4{
         powitanie.powiedzCzesc();//na obiekcie klasy wywoluje metode tego interfacu
 
 
+        /*----
+        Sortowanie z uzycem Collection.sort i interfacem Comparator
+         z klasa anonimowa
+
+        Metoda Collection.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem
+
+        Jesli metoda przyjmuje:
+
+        -Kolekcje z typem generycznym mojej klasy
+        To moja klasa musi implementowac interface Comparable z metoda
+         int compareTo(MojaKlasa o). Metoda zwraca >1 gdy this.wartosc jest wieksze
+         od o.wartosc, <0 gdy odwrtnie i 0 gdy rowne
+        Zmienne brane sa po kolei z Listy - this.wartosc jest wartoscia
+         elementu 0 a o.wartosc jest wartoscia elementu 1.
+
+
+        */
 
 
     }
