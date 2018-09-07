@@ -2062,8 +2062,81 @@ class Wew4{
                 return sleeveLength;
             }
         }
+         */
+
+
+        //----
+
+        //Metody:
+
+        //.vlues() - metoda statyczna wywolywana na nazwie Enuma, pokaze wartosci
+        //          jakie ma Enum, mozna wyswoetlic w foreach
+        System.out.println("Wartosci Enuma porstego");
+        for (KoszulkaRozmiar x : KoszulkaRozmiar.values()){
+            System.out.print(x + " ");
+        }
+        System.out.println("\n\n"+"Wartosci Enuma rozszerzonego");
+        for (KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
+            System.out.print("\n"+x + " ");
+            System.out.print(x.dajSzerokoscKlatki() + " ");
+            System.out.print(x.dajwysokoscKoszulki() + " ");
+            System.out.print(x.dajdlugoscRekawa());
+
+        }
+
+
+        //.valueOf("WARTOSC") - metoda statyczna wywolywana na nazwie enuma, pokaze
+        //                       wartosc wpisanej w "" wartosci
+        System.out.println("\n"+KoszulkaRozmiarDokladnie.valueOf("S"));
+        //pokaze samo S
+        System.out.println(KoszulkaRozmiar.valueOf("S"));
+        //pokaze samo S
+
+
+        //.ordinal(); - metoda wywolywana na zmiennej typu Enum,
+        //              pokaze numer kolejnosci zmiennej Enuma
+        //              ktora posiada wybrana zmienna (liczone od 0)
+        KoszulkaRozmiar koszulka3 = KoszulkaRozmiar.XL;
+        System.out.println("Numer zmiennej Enuma koszulki 3 : "+koszulka3.ordinal());
+        //3 (XL jest 4 ale liczy od 0)
+
+
+        //.name() - metoda wywolywana na zmiennej typu Enum,
+        //           zwroci wartosc zmiennej na jakiej zostanie wywowlana metoda
+        KoszulkaRozmiar koszulka1 = KoszulkaRozmiar.S;
+        System.out.println("koszulka1 : "+koszulka1.name());
+        //S
+        KoszulkaRozmiarDokladnie koszulka2 = KoszulkaRozmiarDokladnie.M;
+        System.out.println("koszulka2 : "+koszulka2.name());
+        //M
+
+
+        //----
+        /*Metody abstrakcyjne Enuma:
+        Sluza do stworzenia definicji metody ktorych cialo deklaruje w wartociach
+         po nazwie w {}
+
+        Metoda abstakcujna nie posiada ciala tylko definicje (co przyjmuje i
+         jaki typ zwraca)
+        Wartosci enuma moga posiadac podwartosci w () i metody w {}
+        Metoda musi pasowac do metody abstakcyjnej tj typ przyjmowany,
+         jej nazwa i to co zwraca + tutaj deklaruje cialo!
+
+
+        public enum mojEnum{
+            IMIE{
+                public String dajDane(String napis)
+                    return "Witaj " + napis;
+            },
+            NAZWISKO{
+                public String dajDane(String napis)
+                    return "Masz na nazwisko: " + napis;
+            };
+            public abstract String dajDane(String napis);
+        }
 
          */
+
 
 
 
@@ -2117,3 +2190,4 @@ enum EnumDoTekstu{
     };
     public abstract String format(String wiadomosc);
 }
+
