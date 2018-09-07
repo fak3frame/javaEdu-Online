@@ -2266,7 +2266,7 @@ public class Wstep {
         /*
         public class AnonymousClasses {
             public static class RobotStatyczny {
-            //KLASA WEW JEST STATYCZNA!! wiec deklaruje jej obiek bezposrenio
+            //KLASA WEW JEST STATYCZNA!! wiec deklaruje jej obieky bezposrenio
             // tj. KlasaZew.KlasaWew ob = new KlasaZew.KlasaWew(new AnonymousClasses.GreetingModule() {
             // deklaracja metody interfacu});
             // lub bezposrenio bez pomocy klasy zew: KlasaWew ob = new KlasaWew(new GreetingModule(){

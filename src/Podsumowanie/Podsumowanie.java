@@ -2346,6 +2346,9 @@ class Wew4{
         */
         class KlasaGlowna{
 
+            /*static*/ class KlasaWewnetrznaStatyczna{
+            }
+
             class KlasaWewnetrzna {
             }
             //koniec klasy wewnetrznej!
@@ -2357,7 +2360,7 @@ class Wew4{
 
             //Tworznie instancji klasy wewnetrznej
             public void main(){
-                //TWORZENIE OBIEKTU gdy klasa wewnetrzna jest NIESTATYCZNA!
+                //metoda 1 gdy klasa jest niestatyczna (KlasaWewnetrzna)
                 KlasaGlowna klasaGlowna = new KlasaGlowna();
 
                 KlasaGlowna.KlasaWewnetrzna klasaWewnetrzna = klasaGlowna.new KlasaWewnetrzna();
@@ -2367,13 +2370,15 @@ class Wew4{
                 KlasaGlowna.KlasaWewnetrzna klasaWewnetrzna2 = klasaGlowna.rozpocznij();
                 //lub za pomoca metody
 
+
                 //INNA METODA: (gdy klasa wewnetrzna JEST STATYCZNA!)
                 //np w innej klasie - bezposrednio
-                //KlasaZew.KlasaWew obiekt = new KlasaZew.KlasaWew();
+                //KlasaGlowna.KlasaWewnetrznaStatyczna obiekt = new KlasaGlowna.KlasaWewnetrznaStatyczna();
+
 
                 //INNA METODA2:(gdy klasa wewnetrza jest STATYCZNA i TYLKO W KLASIE
                 // W MAIN TEJ SAMEJ KLASY!! moge tworzyc bezposrenio obiekt klasy wew
-                KlasaWewnetrzna obWew2 = new KlasaWewnetrzna();
+                KlasaWewnetrznaStatyczna obWew2 = new KlasaWewnetrznaStatyczna();
 
 
                 //----
@@ -2404,6 +2409,44 @@ class Wew4{
             //Set<Map.Entry<K, V>> entrySet() - deklaracja entrySet()
             System.out.println(x.getKey() + " ma " + x.getValue() + " dni");
         }
+
+
+        //----
+        /* Klasy anonimowe:
+        Jest to klasa definiowana w kodzie ktora posiada dokladnie 1 instancje
+        Klasa anonimowa zawsze jest klasa wewnetrzna i polaczona jest z tworzeniem
+         jej jednej instancji
+
+        Na poczatku tworze interface z metoda (co przyjmuje, co zwraca i jak sie nazywa)
+        Nastpenie tworze instancje tego interfacu i wpisuje dzialanie jego metody
+         (typ przyjmowany i zwracany musi sie zgadzac!)
+        Teoretycnie nie tworze jego instancji tylko instancje klasy Anonimowej
+         typu tego Interfacu.
+        Klasa anonimowa sklada sie z nazwy klasy w ktorej jest tworzona z dodaniem
+         $ i numeru ktory jest numerem klasy anonimowej w kodzie liczonej od 1!
+         np:Podsumowanie$1
+
+         //deklracja na koncu:
+        interface Powitanie{
+           void powiedzCzesc();
+        }
+         */
+        Powitanie powitanie = new Powitanie() {
+            @Override
+            public void powiedzCzesc() {
+                System.out.println("Czesc, jestem z klasy anonimowej");
+            }
+
+            //Moge takze w tej klasie definiowac zmeinne i metody lecz glownie polega
+            // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
+            int zmienna = 123;
+            int metoda(){
+                return zmienna;
+            }
+        };//nie zapominam o sredniku
+        System.out.println();
+        powitanie.powiedzCzesc();//na obiekcie klasy wywoluje metode tego interfacu
+
 
 
 
@@ -2456,4 +2499,7 @@ enum EnumDoTekstu{
     };
     public abstract String format(String wiadomosc);
 }
-
+//deklracja na koncu:
+interface Powitanie{
+    void powiedzCzesc();
+}
