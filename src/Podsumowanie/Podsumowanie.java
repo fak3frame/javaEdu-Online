@@ -2393,6 +2393,17 @@ class Wew4{
 
 
         //----
+        System.out.println();
+        Map<String, Integer> dniWMiesiacu = new HashMap<>();
+        dniWMiesiacu.put("styczen", 31);
+        dniWMiesiacu.put("luty", 28);
+        dniWMiesiacu.put("marzec", 31);
+
+        for(Map.Entry<String, Integer> x : dniWMiesiacu.entrySet() ){
+            //interface Entry<K, V> - deklaracja intefejsu klasy Map - Entry
+            //Set<Map.Entry<K, V>> entrySet() - deklaracja entrySet()
+            System.out.println(x.getKey() + " ma " + x.getValue() + " dni");
+        }
 
 
 

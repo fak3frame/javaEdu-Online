@@ -2220,6 +2220,7 @@ public class Wstep {
         //Klasa Map posiada interface Entry ktory przyjmuje zbior
         // Set<Map.Entry<K,V>> i iterujac po elementach
         // mam dostep do metod getKey() oraz getVaule()
+        //for(Integer x : lista)
         for(Map.Entry<String, Integer> x : dniWMiesiacy.entrySet() ){
             System.out.println(x.getKey() + " ma " + x.getValue() + " dni");
         }
