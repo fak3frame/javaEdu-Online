@@ -2464,7 +2464,7 @@ class Wew4{
          UWAGA ! (metoda przyjmuje typ Object  wiec musze rzutowac)
         Zmienne brane sa po kolei z Listy - this.wartosc jest wartoscia
          elementu 0 a o.wartosc jest wartoscia elementu 1.
-        */
+
         List<KlasaDoSortowania> listaDoSortowanie = Arrays.asList(
                 new KlasaDoSortowania(40),
                 new KlasaDoSortowania(12),
@@ -2472,12 +2472,60 @@ class Wew4{
                 new KlasaDoSortowania(2)
 
         );
+
+         class KlasaDoSortowania implements Comparable{
+            public int wartosc;
+            public KlasaDoSortowania(int wartosc) {
+                this.wartosc = wartosc;
+            }
+            @Override
+            public int compareTo(Object o) {
+                KlasaDoSortowania x = (KlasaDoSortowania)o;
+                return this.wartosc - x.wartosc;
+            }
+
+        }
+        Collections.sort(listaDoSortowanie);
+        /*
+        Jesli klasa ma zmienna typu String to moge takze sprawdzic dlugosc
+         napisu wykorzystujac lenght
+
+         public int compareTo(Object o) {
+                KlasaDoSortowania x = (KlasaDoSortowania)o;
+                return this.napis.length() - x.napis.length();
+         }
+
+         Lub jesli chce posortowac Stringi wedlug naturalnego porzadku to
+          moge uzyc metody metody compareTo w compareTo!
+
+         public int compareTo(Object o) {
+                KlasaDoSortowania x = (KlasaDoSortowania)o;
+                return this.napis.length() - x.napis.length();
+         }
+
+         */
+
+
+
+
+
+
+
+        List<KlasaDoSortowania> listaDoSortowanie = Arrays.asList(
+                new KlasaDoSortowania("Kamil"),
+                new KlasaDoSortowania("Aamil"),
+                new KlasaDoSortowania("Xamil"),
+                new KlasaDoSortowania("Wamil")
+
+
+        );
         System.out.println();
         Collections.sort(listaDoSortowanie);
 
 
+
         for(KlasaDoSortowania x : listaDoSortowanie){
-            System.out.println(x.wartosc);
+            System.out.println(x.napis);
         }
 
 
@@ -2537,14 +2585,13 @@ interface Powitanie{
 }
 
 class KlasaDoSortowania implements Comparable{
-    public int wartosc;
-    public KlasaDoSortowania(int wartosc) {
-        this.wartosc = wartosc;
+    public String napis;
+    public KlasaDoSortowania(String napis) {
+        this.napis = napis;
     }
-
     @Override
     public int compareTo(Object o) {
         KlasaDoSortowania x = (KlasaDoSortowania)o;
-        return this.wartosc - x.wartosc;
+        return this.napis.compareTo(x.napis);
     }
 }
