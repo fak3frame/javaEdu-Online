@@ -2121,19 +2121,26 @@ class Wew4{
         Wartosci enuma moga posiadac podwartosci w () i metody w {}
         Metoda musi pasowac do metody abstakcyjnej tj typ przyjmowany,
          jej nazwa i to co zwraca + tutaj deklaruje cialo!
-
-
-        public enum mojEnum{
+         */
+        String enumText;
+        enumText = EnumDoTekstu.IMIE.format("Kamil");
+        enumText = enumText.concat(EnumDoTekstu.NAZWISKO.format("Zajac"));
+        System.out.println(enumText);
+        /*
+        enum EnumDoTekstu{
             IMIE{
-                public String dajDane(String napis)
-                    return "Witaj " + napis;
+                public String format(String wiadomosc){
+                    return "Czesc " + wiadomosc;
+                }
             },
-            NAZWISKO{
-                public String dajDane(String napis)
-                    return "Masz na nazwisko: " + napis;
+            NAZWISKO {
+                public String format(String wiadomosc) {
+                    return " " + wiadomosc;
+                }
             };
-            public abstract String dajDane(String napis);
+            public abstract String format(String wiadomosc);
         }
+
 
          */
 
@@ -2178,14 +2185,14 @@ enum KoszulkaRozmiarDokladnie{
 }
 
 enum EnumDoTekstu{
-    SPOKOJNY{
+    IMIE{
         public String format(String wiadomosc){
-            return "To twoja wiadomosc spokojna: " + wiadomosc;
+            return "Czesc " + wiadomosc;
         }
     },
-    NERWOWY {
+    NAZWISKO {
         public String format(String wiadomosc) {
-            return "To twoja wiadomosc nerwowa: " + wiadomosc;
+            return " " + wiadomosc;
         }
     };
     public abstract String format(String wiadomosc);
