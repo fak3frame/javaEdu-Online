@@ -2543,6 +2543,48 @@ class Wew4{
 
 
 
+        /*-------------------------------------------------------------------------
+        ------------------------TEST DRUVEN DEVELOPMENT TDD------------------------
+
+        Test jednostkowy jest sposoboem testowania programu ktory polega na wydzieleniu
+         czesci funkcjonalnosci programu i testowaniu go w odosobnieniu.
+        Test jednostkowy to metoda testujaca metode/jednostke w innej klasie z dodana
+         adnotacja @Test
+
+        TDD sklada sie z 3 faz:
+        -Red : napisanie testow funckjinalnosci przed napsianiem kodu.
+        Napisany test nie moze sie powiesc bo nie napisalem jeszcze funkcjonalnosci
+        Testy jednostkowe podkreslone sa w IDE na czerwono jesli nie przechodza
+        Kod moze sie nawet nie kompilowac jesli napislem test dla metody
+         ktora jeszcze nie istanieje
+        -Greeen : napisanie funkcjonalnosci "na szybko" ktora sprawi ze testy
+        zostana zaliczone
+        Musze napisac kod ktory zaliczy wszystkie testy
+        -Refactor : Zmieniam kod aby byl "czysty" np dodanie metody ktora
+        bedzie spelniac funkcjonalnosci aby nie powtrzac kodu czy stworzenie innej
+        klasy.
+
+        Przed napisaniem funkcjonalnosci nalezy najpierw napisac testy do niej
+
+        Klasa testujaca inna klase nazwya sie tak samo jak ta klasa z dopisanym Test i
+         powinna byc w innym folderze niz klasa np wszystkie klasy testowe moge byc w folderze
+         Test
+
+        Metody testujace powinny nazywac sie tak aby zrozumiec co testuja
+        np
+        @Test
+        public void czyLiczba12JestWPrzedziale(){
+            One o = new One(10,15);
+            assertTrue(o.czyJestWPrzedziale(12));
+        }
+
+        Założeniem TDD jest pisanie testow do jak najkrotszej ilosci kodu
+
+
+
+        */
+
+
     }
 
 }
