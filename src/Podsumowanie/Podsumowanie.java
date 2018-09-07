@@ -2,6 +2,7 @@ package Podsumowanie;
 
 import java.io.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Podsumowanie {
     public static void main(String[] args) {
@@ -2449,7 +2450,7 @@ class Wew4{
 
 
         /*----
-        Sortowanie z uzycem Collection.sort i interfacem Comparator
+        Sortowanie z uzycem Collections.sort i interfacem Comparator
          z klasa anonimowa
 
         Metoda Collection.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem
@@ -2458,13 +2459,27 @@ class Wew4{
 
         -Kolekcje z typem generycznym mojej klasy
         To moja klasa musi implementowac interface Comparable z metoda
-         int compareTo(MojaKlasa o). Metoda zwraca >1 gdy this.wartosc jest wieksze
+         int compareTo(Object o). Metoda zwraca >0 gdy this.wartosc jest wieksze
          od o.wartosc, <0 gdy odwrtnie i 0 gdy rowne
+         UWAGA ! (metoda przyjmuje typ Object  wiec musze rzutowac)
         Zmienne brane sa po kolei z Listy - this.wartosc jest wartoscia
          elementu 0 a o.wartosc jest wartoscia elementu 1.
-
-
         */
+        List<KlasaDoSortowania> listaDoSortowanie = Arrays.asList(
+                new KlasaDoSortowania(40),
+                new KlasaDoSortowania(12),
+                new KlasaDoSortowania(50),
+                new KlasaDoSortowania(2)
+
+        );
+        System.out.println();
+        Collections.sort(listaDoSortowanie);
+
+
+        for(KlasaDoSortowania x : listaDoSortowanie){
+            System.out.println(x.wartosc);
+        }
+
 
 
     }
@@ -2516,7 +2531,20 @@ enum EnumDoTekstu{
     };
     public abstract String format(String wiadomosc);
 }
-//deklracja na koncu:
+
 interface Powitanie{
     void powiedzCzesc();
+}
+
+class KlasaDoSortowania implements Comparable{
+    public int wartosc;
+    public KlasaDoSortowania(int wartosc) {
+        this.wartosc = wartosc;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        KlasaDoSortowania x = (KlasaDoSortowania)o;
+        return this.wartosc - x.wartosc;
+    }
 }
