@@ -2505,12 +2505,13 @@ class Wew4{
 
          public int compareTo(Object o) {
                 KlasaDoSortowania x = (KlasaDoSortowania)o;
-                return this.napis.length() - x.napis.length();
+                return this.napis.compareTo(x.napis);
          }
 
 
          -Kolekcje z typem generycznym mojej klasy ORAZ komparator
-         Moge stworzyc nowa klasa implementujaca interfejs
+
+         1. Moge stworzyc nowa klasa implementujaca interfejs
          Comparator<KlasaDoSortowania> i w niej metode interfejsu
          int compare (KlasaDoSortowania o1, KlasaDoSortowania o2)
          */
@@ -2526,8 +2527,9 @@ class Wew4{
             System.out.print(x.napis+ " ");
         }
           /*
+
           --
-          Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
+          2. Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
            i definicje sortowania w wywolaniu metody sort
 
           Collections.sort(listaDoSortowanie, new Comparator<KlasaDoSortowania>() {
