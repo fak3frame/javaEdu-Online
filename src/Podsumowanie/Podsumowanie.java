@@ -2789,9 +2789,45 @@ class Wew4{
         a+la -> a{1,}la
         a?la -> a{0,1}la
 
+
+        ----
+        Kompbinacja k+a.*ta:
+        k+ (k musi wystapic conajmniej 1 raz, przed nim nic)
+        .* (moge wstawic dowolny ciag lub nic, UWAGA! łaczone z *! bez * bylby to 1 znak!
+        Poprawne : kata, kkax&dta, kaRta, kaSIA MA KOta, kkkka#$*&JHDFTATAta
+        Bledne : ata (brak k na poczatku), kta (brak a po pierwszym k)
+
+        Kombinacja .+@.+\.pl (wyrazenie regularne maila)
+        .+ - dowolny symbol lub ciag użyty co najmniej raz,
+        @ - małpa,
+        .+ - ponownie dowolny symbol lub ciag użyty co najmniej raz,
+        \. - kropka rozumiana dosłownie
+        pl - pl doslownie
+
+
+        ----
+        Klasy w wyrazeniach regularnych
+        Oznaczaja grupy symboli w []
+         np [rtmp]aca oznacza ze musimy wykorzystac JEDEN z sumboli w [] nie
+         wiecej
+        Poprawnie : raca, taca, maca
+        Błednie : praca -> 2 litery wkorzystane, pacanow -> czesc po sie nie zgadza
+
+        Mozna wykorzystac takze zakres alfabetyczny lub liczbowy,
+          np [a-d]uma
+        Poprawnie : auma, buma, cuma
+        Blednie : fuma, abuma->2 litery
+         np [0-7]xyz
+        Poprawnie : 0xyz, 1xyz
+        Blednie : 8xyz, 07xyz->2 cyfry
+         np [a-z]+ -> musi byc dowolna mala litera conajmniej raz
+
+
+
+
         */
 
-        Pattern x = Pattern.compile("ko.*ek");
+        Pattern x = Pattern.compile("koek[a-c]");
 
 
 

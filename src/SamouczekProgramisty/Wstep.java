@@ -2705,7 +2705,7 @@ public class Wstep {
         Poprawnie : raca, taca, maca
         Błednie : praca -> 2 litery wkorzystane, pacanow -> czesc po sie nie zgadza
 
-        Mozna wykorzystac takze zakres alfabetyczny lub liczbowy, musze umieciec -
+        Mozna wykorzystac takze zakres alfabetyczny lub liczbowy, musze umiescic
          w innym miejscu niz na koncu
          np [a-d]uma
         Poprawnie : auma, buma, cuma
