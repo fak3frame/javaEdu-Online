@@ -326,7 +326,8 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
-        /*-------------------------ZMIENNA INTEGER--------------------------------
+        /*--------------Formatter - formatowanie łańcuchów znaków-----------------
+
         Do formatowania moge uzyc:
         -PrintWriter.format - metodaZwykla ktora wywoluje na obiekcie Formatter
          a nastepnie moge na tym obiekcie wywolac toString
@@ -340,9 +341,38 @@ public class Podsumowanie {
         mojFormatter.format("Urodzilem sie w %d i mam na imie %s", 1991, "Kamil");
         String formatterString = mojFormatter.toString();
         System.out.println(formatterString);
+
         //lub z uzyciem system.out.format
         System.out.format("Urodzilem sie w %d i mam na imie %s", 1991, "Kamil");
 
+
+        /*----
+        Sekwencje
+        Sekwencje ktore uzupelniamy maja wzor:
+        %[indeks argumentu$][flagi][szerokość][.precyzja]konwersja
+
+        W pierwszym przykladzie uzylem %d i %s i sa to same flagi d i s;
+
+        Znaczniki:
+        %b - wartosc logiczna
+        %s - lancuch znakow
+        %d - liczba calkowita
+        %o - liczba calkowita w systemie osemkowym
+        %x - liczba calkowita w systemie szesnastkowym
+        %f - liczba zmiennoprzecinkowa
+        bez argumentow:
+        %% - doslowne umieszczenie %
+        %n - dodanie nowej linii
+
+        Indeks argumentu liczba$- sluzy do tego aby uzyc jednego argumentu kilka razy
+        liczone od 1!
+        np */
+        System.out.println("\n");
+        System.out.format("[%2$s] [%1$s] [%1$s]", "pierwszy argument", "drugi argument");
+        //2$ - oznacza ze uzyje 2 argumentu
+        //s - oznaczajaca ze to ciag znakow
+        //wynik:
+        //[drugi argument] [pierwszy argument] [pierwszy argument]
 
 
 
@@ -692,7 +722,7 @@ class Wew4{
         Krzeslo k2 = new Krzeslo("BRW", new Date(), 12, 12.5);
         Krzeslo k3 = new Krzeslo("BRW", new Date(), 12, 80.5);
 
-        System.out.println("-------------------");
+        System.out.println("\n"+"-------------------");
         System.out.println("Porownuje krzeslo k1 z k2: " + k1.equals(k2));
         System.out.println("Porownuje krzeslo k2 z k3: " + k2.equals(k3));
         System.out.println("Porownuje krzeslo k1 z k3: " + k1.equals(k3));
