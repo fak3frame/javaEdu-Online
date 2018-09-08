@@ -2757,6 +2757,22 @@ class Wew4{
         Blednie : dbil, edebil
 
 
+        znak . - na miejscu . MUSI wystapic dowolny JEDEN ZNAK poza znakiem konca lini
+                  Przykad ko.ek :
+        Poprawnie : kotek, koDek
+        Blednie : koek, ktek
+                  Jest tez mozliwosc wstawinia po nim np * czyli .* to moze wystapic
+                  dowolny ciag lub jego brak w miejscu kropki! lub + czyli .+ wiec
+                  MUSI byc dowolny znak lub ciag!
+                  Przyklad ko.*ek
+        Poprawnie : koek, kotek, koDDDDek
+        Blednie : ktek
+                  Przyklad ko.+ek
+        Poprawnie : kotek, kottttttek, koDDDDDek
+        Blednie : koek, ktek
+
+
+
         ----
         Dokladniejsze powtorzenia:
         -{x} - oznacza że element poprzedzający musi wystąpić dokładnie x razy,
@@ -2775,7 +2791,7 @@ class Wew4{
 
         */
 
-        Pattern x = Pattern.compile("k{,2}at");
+        Pattern x = Pattern.compile("ko.*ek");
 
 
 
