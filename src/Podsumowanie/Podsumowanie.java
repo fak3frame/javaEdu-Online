@@ -2891,6 +2891,9 @@ class Wew4{
          na zmiennej dopasowania .matches(); aby moc sprawdzic
          co znajduje sie w danej grupie!
 
+        Jesli jednak calosc chce sprawdzic moge wywolac metode .matches()
+         i w wyswietleniu uzyje .group() - bez numeru grupy!!
+
         Jesli nie bedzie nic w grupie a bede chcial sie do niej dostac wyrzuci
          wyjatek IllegalStateException
 
@@ -2899,6 +2902,8 @@ class Wew4{
          (pomija ta z indeksem 0)
         .group(numerGrupy) - zwraca grupe z wybranym numerm (ciag znakow jaki
           sie w niej znajduje)
+
+
         */
         Pattern kotPattern = Pattern.compile("[^-]+--(\\w+)--.*");
         //[^-]* dowolne znaki za wyjatkiem - (musi to byc aby moc oddzielic pierwsze wystapienie -)
@@ -2912,7 +2917,7 @@ class Wew4{
         System.out.println("Imie kota : "+kotMatcher.group(1));
 
         /*
-        przyklad \w+ \((\w+)\) \w+
+        przyklad \w+ \((\w+)\) \w+ (WSZEDZIE WE WZORCU MUSZE DAC 2x\ !!)
          \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
                poniewaz jesli dam odstep to bedzie juz szukalo \( bo odstep jest
                kolejnym znakiem w moim wzorcu + odstep nie pasuje do \w!!
@@ -2926,11 +2931,117 @@ class Wew4{
          Poprawnie : Kamil (kicu) Zajac
           w grupie z numerem 0 jest "kicu"
 
+
+         przyklad -?[1-9]+\d*(,\d+)? - liczba zmiennoprzecinkowa
+         -? : - moze byc jeden raz lub w ogole
+         [1-9]+ : liczba/y z przedzialu 1-9 musza byc na poczatku zeby nie bylo 0!
+         \d* : dodaje aby byla mozliwosc wstawinia po pierwszej liczbie zera
+
+         przyklad [1-9]+\d*[a-zA-Z]?\\[1-9]+\d*[a-zA-Z]? - numer domu w formacie 12a\3a
+          moze byc 12\2, 2a\3, 2\3a ale blednie a\2, 2\d
+
+         przyklad [A-Z][a-z]+([ -][A-Z][a-z]+)? - nazwa miasta
+          Na przykład Wrocław, Zielona Gora czy Bielsko-Biala jest ok,
+          jednak Ptysiow123 już nie.
+
+
+        ----
+        Zachłanność wyrażeń regularnych (dla .find())
+
+        .+/?/* - wylapie najwiecej jak to mozliwe
+        .+? - wylapie najmniej jak to mozliwe
+        (.+)</p - wez wszystko do ostanitego wystapienia </p
+        (.+?)</p - wez wszystko do 1 wystapienia </p
+
+        Np chce umiescic w grupie to co jest pomiedzy <> i uzywam
+         find zeby zlapalo cokolwiek */
+        Pattern wzorzecZachlanny = Pattern.compile("<(.+)>");
+        Matcher dopasowanieWZ = wzorzecZachlanny.matcher("<em>jakis podkreslony tekst</em>gdfgdfg");
+        dopasowanieWZ.find(); //UZYWAM FIND!
+        System.out.println("znacznik podkreslenia 1 : "+dopasowanieWZ.group(1));
+        //znacznik podkreslenia 1 : em>jakis podkreslony tekst</em - BLAD
+
+        Pattern wzorzecZachlanny2 = Pattern.compile("<([^>]+)>"); //poprawne
+        Matcher dopasowanieWZ2 = wzorzecZachlanny2.matcher("<em>jakis podkreslony tekst</em>");
+        dopasowanieWZ2.find();
+        System.out.println("znacznik podkreslenia 2 : "+dopasowanieWZ2.group(1));
+        //znacznik podkreslenia 2 : em
+
+        /*
+        Symbole powtórzeń {}, ?, * czy + dopasowują zawsze najwięcej jak tylko się da
+        Istenieje przelacznik ktory zmienia zachowanie powtorzenia i jest to znak ? czyli
+         wylapuje najmniej jak to mozliwe
+
+        <(.+?)> - poprawne
+
+
+        {} tez jest zachlanny i w find {3,5} znajdzie wszystko od 3 do 5 znakow a z ? tylko
+            3 pierwsze znaki
+        */
+        Pattern wzorzecNieZachlanny = Pattern.compile("(.{3,5})");
+        Matcher dopazsowanieWNZ = wzorzecNieZachlanny.matcher("123123");
+        dopazsowanieWNZ.find(); //123
+        System.out.println("Dopasownie niezachlanne {} : "+dopazsowanieWNZ.group(1));
+
+
+        /*----
+        -Alternatywa
+        W grupie moge wpisac | to wybierze jedno z ciagu
+            np "skrec w (lewo|prawo)" lub jedno z kilku pies|lew|kot
+
+
+        ----
+        -Pomijanie grup
+        Moge pominac jedna z grup uzywajac na poczatku niej ?:
+            np: (?:Tomek|Kamil) ma (kota|psa) - w grupie 1 bedzie kota/psa
+
+
+        ----
+        -Nazwyanie grup
+        Umieszcz na poczatku grupy ?<nazwaGruoy>
+            np (?<dzien>\d{2})
+        Moge potem wyswietlic numerem lub nazwa .group("dzien")
+
+
+        ----
+        Ponowne uzycie grup
+        Aby uzyc zawartosci innej gdupy we wzorcu moge dac \\nrGrupy
+
+        "<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>"
+        chce do pierwszej grupy dac znacznik p
+        do 2 to co jest pomiedzy PIERWSZYM <p></p>
+
+
+        "<(.+?)>(.+?)</p"
+
+        < : doslownie
+        (.+?)> : wezmie do pierwszej gdupy to co jest przed PIERWSZYM >
+                 czyli samo "p"
+        (.+?)</p : wezmie wszystko do 1 WYSTAPIENIA </p gdybym dal bez ?
+                    tj. (.+)</p to wzieloby do OSTNIEGO WYSTAPIENIA </p!
+
+        Moge takze wykorzystac zawartosc 1 grupy czyli "p"
+         "<(.+?)>(.+?)</\\1"
+         < : doslownie
+         (.+?)> : wezmie do pierwszej gdupy to co jest przed PIERWSZYM >
+                  czyli samo "p"
+         (.+?)</\\1> : wezmie wszystko do 1 WYSTAPIENIA </ + zawartosc 1 grupy
+                       oznaczona \\1 czyli p co -> </p jak w przykladzie wyzej
+
+
+
          */
 
 
 
-        Pattern x = Pattern.compile("\\w+ \\((\\w+)\\) \\w+");
+
+
+
+
+        Pattern x = Pattern.compile("<(.+?)>(.+?)</p");
+        Matcher dx = x.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
+        dx.find();
+        System.out.println(dx.group(2));
 
 
 

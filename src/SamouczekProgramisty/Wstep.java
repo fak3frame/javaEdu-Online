@@ -2808,7 +2808,7 @@ public class Wstep {
         // \) : doslwnie )
         //  : odstep
         // \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
-        //WSZEDZIE WE WZORCU MUSZE DAC 2x\ !!!
+        //
         Pattern wzorNazwyKsiazki = Pattern.compile("\\w+ \\((\\w+\\\\)\\) \\w+");
         Matcher dopasowanieNazwyKsiazki = wzorNazwyKsiazki.matcher("jacek (debil\\) pawlak");
         //musze uzyc 2x \ aby bylo interpretowane doslownie w lancuchu
@@ -2819,9 +2819,9 @@ public class Wstep {
         /* ZAD 1
         Sprawdza czy liczba zmiennoprzecinkowa podana przez użytkownika
          ma poprawny format. Na przykład liczba 123,2341515132135 czy -10
-         są poprawne ale 18-12 czy 123, już nie,
+         są poprawne ale 18-12 czy 123, już nie
          */
-        Pattern wzorzecZad1 = Pattern.compile("-?\\d+(,\\d+)?");
+        Pattern wzorzecZad1 = Pattern.compile("-?[1-9]+\\d*(,\\d+)?");
 
 
         /* ZAD 2
@@ -2829,7 +2829,7 @@ public class Wstep {
          Poprawnym numerem jest 123\2A, 24B\3 czy 12\5, ale
          już numer abc\cba nie,
          */
-        Pattern wzorzecZad2 = Pattern.compile("\\d+[a-zA-Z]?\\\\\\d+[a-zA-Z]?");
+        Pattern wzorzecZad2 = Pattern.compile("[1-9]+\\d*[a-zA-Z]?\\\\[1-9]+\\d*[a-zA-Z]?");
 
         /* ZAD 3
         Sprawdza czy użytkownik wprowadził poprawną nazwę miasta.
@@ -2848,6 +2848,7 @@ public class Wstep {
         Matcher dopasowanieWZ = wzorzecZachlanny.matcher("<em>jakis podkreslony tekst</em>gdfgdfg");
         dopasowanieWZ.find();
         System.out.println("znacznik podkreslenia 1 : "+dopasowanieWZ.group(1));
+        //znacznik podkreslenia 1 : em>jakis podkreslony tekst</em
         //Poprawnie:
         Pattern wzorzecZachlannyPoprawny = Pattern.compile("<([^>]+)>");
         Matcher dopasowanieWZP = wzorzecZachlannyPoprawny.matcher("<em>jakis podkreslony tekst</em>");
@@ -2911,7 +2912,7 @@ public class Wstep {
         System.out.println("wzorzecUzyciaGrup grupa 2 : " + dopasowanieWUG.group(2));
 
         //moge uzyc zawartosci innej grupy juz we wzorcu w klauzuli \\NR_GRUPY
-        Pattern wzorzecUzyciaGrup2 = Pattern.compile("<(.+?)>(.+?)</\\1");
+        Pattern wzorzecUzyciaGrup2 = Pattern.compile("<(.+?)>(.+?)</\\1>");
         // \\1 to p wiec bedzie uniwersalne dla znacznika
         Matcher dopasowanieWUG2 = wzorzecUzyciaGrup2.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
         dopasowanieWUG2.find();
