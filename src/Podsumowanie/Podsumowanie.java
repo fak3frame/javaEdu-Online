@@ -2914,6 +2914,7 @@ class Wew4{
         //.* dowolne znaki badz ich brak do konca
         Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. jest super");
         kotMatcher.matches();//konieczne aby umiescilo w grupy
+        System.out.println();
         System.out.println("Imie kota : "+kotMatcher.group(1));
 
         /*
@@ -3029,8 +3030,32 @@ class Wew4{
                        oznaczona \\1 czyli p co -> </p jak w przykladzie wyzej
 
 
-
+        ----
+        Kotwice
+         ^ oznacza poczatek lancucha znakow
+            np c^
+            true : csd, csdg (DLA FIND!!)
+            false : dsdfc
+        $ oznacza koniec łańcucha znaków.
+            np d$
+            true : qwd, qasd
+            false : asfdf
          */
+        Pattern wzorzecLiczb = Pattern.compile("\\d+");//musza byc same liczby
+        //moge dac "\\d+?" to find znajdzie 1 liczbe
+        Matcher dopasowanieLiczb = wzorzecLiczb.matcher("abc123def");
+        System.out.println("find : "+dopasowanieLiczb.find()); // true
+        System.out.println("pierwsza liczba : "+dopasowanieLiczb.group());
+        //DO GRUPY BEDE MOGL SIE DOSTAC JESLI OSTATNIA METODA NA DOPASOWANIU
+        // BEDZIE TRUE (find lub matches) INACZEJ BEDZIE BLAD !
+        System.out.println("matches : "+dopasowanieLiczb.matches()); // false
+
+        Pattern wzorzecKotwicy = Pattern.compile("\\d+$");//liczby na koncu
+        Matcher dopasowanieWK = wzorzecKotwicy.matcher("abc123");
+        //matches bedzie flase
+        dopasowanieWK.find();
+        //jesli na koncu dam litere tj abc123x to find takze bedze false
+        System.out.println("liczby z konca : "+dopasowanieWK.group());
 
 
 
@@ -3038,10 +3063,10 @@ class Wew4{
 
 
 
-        Pattern x = Pattern.compile("<(.+?)>(.+?)</p");
+        Pattern x = Pattern.compile("\\d+$");
         Matcher dx = x.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
         dx.find();
-        System.out.println(dx.group(2));
+        //System.out.println(dx.group(2));
 
 
 
