@@ -197,6 +197,16 @@ public class Podsumowanie {
 
 
 
+        /*------------------------------------------------------------------------
+        ------------String cache i StringBuilder/StringBuffer/StringJouner--------
+
+
+
+
+        */
+
+
+
         //------------------------------------------------------------------------
         /*-------------------------ZMIENNA INTEGER--------------------------------
          */
@@ -3151,10 +3161,10 @@ class Wew4{
 
 
          Serwlet to klasa ktora obsluguje zapytanie wyslane do serwera i moze na nie
-          odpowiedziec
-         Odpowienikiem jar - skompilowanych klas webowych jest plik WAR (web archive)
-          miedzy innymi sa to serwlety. Moga znajdowac sie w nim takze pliki JAR
-          zawierajace niezbedne zaleznosci potrzebne do dzialania aplikacji webowej!
+          odpowiedziec dpowienikiem jar - skompilowanych klas webowych jest plik WAR
+          (web archive) miedzy innymi sa to serwlety. Moga znajdowac sie w nim takze
+          pliki JAR zawierajace niezbedne zaleznosci potrzebne do dzialania aplikacji
+          webowej!
 
          Plik war instaluje sie na konterze serwletow (deploy) ktory posredniczy
           w obludze zapytan.
@@ -3167,6 +3177,10 @@ class Wew4{
 
          Jednymi z najpopularniejszych serwerow aplikacji i kontenerow serwletow sa:
           Tomcat, Jetty, Glassfish, WildFly, Weblogic
+
+
+
+
 
 
 
