@@ -2756,21 +2756,20 @@ class Wew4{
         Poprawnie : debil, deeeebil
         Blednie : dbil, edebil
 
-
+        ----
         znak . - na miejscu . MUSI wystapic dowolny JEDEN ZNAK poza znakiem konca lini
                   Przykad ko.ek :
         Poprawnie : kotek, koDek
         Blednie : koek, ktek
-                  Jest tez mozliwosc wstawinia po nim np * czyli .* to moze wystapic
-                  dowolny ciag lub jego brak w miejscu kropki! lub + czyli .+ wiec
-                  MUSI byc dowolny znak lub ciag!
+                  Jest tez mozliwosc wstawinia po nim powtorzenia np * czyli .* to moze
+                  wystapic dowolny ciag lub jego brak w miejscu kropki! lub + czyli .+
+                  wiec MUSI byc dowolny znak lub ciag!
                   Przyklad ko.*ek
         Poprawnie : koek, kotek, koDDDDek
         Blednie : ktek
                   Przyklad ko.+ek
         Poprawnie : kotek, kottttttek, koDDDDDek
         Blednie : koek, ktek
-
 
 
         ----
@@ -2807,9 +2806,12 @@ class Wew4{
 
         ----
         Klasy w wyrazeniach regularnych
-        Oznaczaja grupy symboli w []
-         np [rtmp]aca oznacza ze musimy wykorzystac JEDEN z sumboli w [] nie
-         wiecej
+        Oznaczaja grupy symboli w [] - moge umiescic w nim pojedynczo symbole lub zakres/y
+         z - np[rtmp] lub [a-c] lub [a-dA-D] i moge wykorzystac tylko JEDEN Z SYMBOLI!
+         UWAGA! jesli uzyje powtorzenia +/* to bede mogl uzic ciagu z tych symboli!!
+        Aby - byl iterpretowany doslownie musze go umieciec na koncu klasy np [abc-]xyz
+
+         np [rtmp]aca
         Poprawnie : raca, taca, maca
         Błednie : praca -> 2 litery wkorzystane, pacanow -> czesc po sie nie zgadza
 
@@ -2817,17 +2819,101 @@ class Wew4{
           np [a-d]uma
         Poprawnie : auma, buma, cuma
         Blednie : fuma, abuma->2 litery
+
          np [0-7]xyz
         Poprawnie : 0xyz, 1xyz
         Blednie : 8xyz, 07xyz->2 cyfry
-         np [a-z]+ -> musi byc dowolna mala litera conajmniej raz
+
+         np [a-z]+ -> musi byc dowolna MAŁA litera conajmniej raz ALE moge uzyc
+                      dowolna ilosc razy kazdej z nich!
+        Poprawnie : abcdeeee, a
+        Blednie : abCCd2, 3d, ,
 
 
+         np [a-cA-C0-3]bum
+        Poprawnie : abum, Bbum, 0bum
+        Blednie : dbum, aA0bum -> 2 z przedzialow
 
 
+        ----
+        Negacje: (dopasowanie wszystko oprocz przedzialu klasy, przedzial ze znakiem ^
+         na poczatku) Aby ^ byl itrerpretowany doslownie musze umiescic go w innym
+          miejscu niz na poczatku np [x^yz]awa
+            np [^xyz]awa
+        Poprawnie : kawa, pawa, Wawa
+        Blednie : zawa, yawa, yzawa
+
+        Lub z wykorzystniem powtorzenia +/*
+            np [xyz]+awa
+        Poprawnie : xxxyyyyzzzzzyyyawa, xawa
+        Blednie : awa, kawa
+
+
+        ----
+        Klasy predefiniowane (w skrocie) np \d (w string musze dac podwojne \d-> \\d)
+        \d - jakakolwiek cyfra [0-9] np \\d
+        Poprawnie : 1,2,6
+        Blednie : d,_,.,D
+        \D - jakikolwiek znak, który nie jest cyfrą [^0-9] np \\D
+        Poprawnie : _,d,D
+        Blednie : 2,4
+        \w znak używany w słowach [a-zA-Z0-9_] (_ na koncu jest brany doslownie)
+        Poprawnie : d,S,3,_
+        Blednie : .,?,-
+        \W znak NIE używany w słowach [^a-zA-Z0-9_]
+        Poprawnie : .,?,-
+        Blednie : d,D,3,_
+        \s znaki biale np tabulacja [ \t\n\r\f\x0B]
+        \S neegacja \s [^ \t\n\r\f\x0B]
+
+
+        Przykład daty :  \\d{4}-\\d{2}-\\d{2}
+        \d{4} - cztery cyfry oznaczające rok,
+        - - minus oddzielający rok od miesiąca,
+        \d{2} - dwie cyfry oznaczające miesiąc,
+        - - minus oddzielający miesiąc od dnia,
+        \d{2} - dwie cyfry oznaczające dzień.
+
+
+        ----
+        Grupy
+        Sluza do wyluskania z lancucha znakow wybranej czesci
+
+        Grupy rozpoczynaja sie w () np. (\w+) - dowolny znak/liczba conajmniej raz,
+         ciag ktory bedzie pasowal zostanie umieszczony w grupie numer 1
+
+        Numerowane sa od 1
+
+        Jezeli dany lancuch pasuje do wyrazenia regularnego to
+         znajduje sie w grupie z numerem 1
+
+        Po przypisaniu wzorca i dopasowania musze wywolac metode
+         na zmiennej dopasowania .matches(); aby moc sprawdzic
+         co znajduje sie w danej grupie!
+
+        Jesli nie bedzie nic w grupie a bede chcial sie do niej dostac wyrzuci
+         wyjatek IllegalStateException
+
+        Metody:
+        .groupCount() - zwraca liczbe grup w wyrazeniu regularnym
+         (pomija ta z indeksem 0)
+        .group(numerGrupy) - zwraca grupe z wybranym numerm (ciag znakow jaki
+          sie w niej znajduje)
         */
+        Pattern kotPattern = Pattern.compile("[^-]+--(\\w+)--.*");
+        //[^-]* dowolne znaki za wyjatkiem - (musi to byc aby moc oddzielic pierwsze wystapienie -)
+        // nie zadziala gdy bede mial tylko jeden - przed -- poniewaz po pierwszym - bedzie szukalo
+        // kolejnego -
+        //(\\w+) grupa w ktorej bedzie szukalo conajmniej 1 znaku
+        //-- doslownie
+        //.* dowolne znaki badz ich brak do konca
+        Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. jest super");
+        kotMatcher.matches();
+        System.out.println("Imie kota : "+kotMatcher.group(1));
 
-        Pattern x = Pattern.compile("koek[a-c]");
+
+
+        Pattern x = Pattern.compile("[xyz]+awa");
 
 
 
