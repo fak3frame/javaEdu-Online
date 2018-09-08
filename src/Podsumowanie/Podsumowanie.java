@@ -5,9 +5,6 @@ import java.util.*;
 import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-
-import static javafx.scene.input.KeyCode.T;
 
 public class Podsumowanie {
     public static void main(String[] args) {
@@ -3501,6 +3498,27 @@ class Wew4{
 
 
         //----
+        //Przyklady zastosowan:
+        //Wypisanie liczb z kolekcji
+        List<Integer> listaLiczb2 = Arrays.asList(2,4,6,8,7);
+        Consumer<Integer> listaLiczbConsumer2 = x -> System.out.print(x+" ");
+        //-Consumer<T> | void accept(T t)
+        listaLiczb.forEach(listaLiczbConsumer);
+        //petla forEach dziala tyle obrotow ile lista posiada elementow
+        //wysyla przy kazdym obrocie swoj elelement czyli w tym przypadku
+        // element typu integer
+        System.out.println();
+        listaLiczbConsumer.accept(listaLiczb.get(0));
+
+
+        //lub w skrocie z mechanizmem odwolania sie do metod
+        System.out.println();
+        listaLiczb.forEach(System.out::print);
+        //wysylam kaxdy element do Klasy System.out z odwolasniem sie do jego
+        // metody print
+
+
+        //----
         //Odwolywanie sie do metod :: na obiektach
         Object obiekt = new Object();
         //Tworze obiekt klasy np Object w ktorej jest metodaZwykla hashcode() zwracajaca int
@@ -3528,10 +3546,9 @@ class Wew4{
         // generycznego) odwolac sie do metody poprzez Klasa a nie obiekt tj:
         IntSupplier zmiennaIntInteraceX = KlasaZMetodaReturnInt::staticDajInt;
 
-        //Gdy interface przyjmuje typ generyczny to moge sie odwolac do metody
-        // NIESTATYCZNEJ na podstawie NAZWY KLASY
+        //Gdy interface przyjmuje typ generyczny (klasy z jakiej bede wywolywal metode)
+        // to moge sie odwolac do metody NIESTATYCZNEJ na podstawie NAZWY KLASY!
         ToIntFunction<Object> bezInstancji = Object::hashCode;
-
 
 
         //inny przyklad
@@ -3540,8 +3557,37 @@ class Wew4{
         System.out.println("podany obiekt wiek ma wiek : "+wiekSupplier.getAsInt());
         //zwroci 10
 
-        //Odwolywanie sie do metod bez podania instancji klasy a po prostu Klasy:
+
+        //Odwolywanie sie do metod :: bez podania instancji klasy a po prostu Klasy
         ToIntFunction<Object> bezInstancji2 = Object::hashCode;
+        /* -ToIntFunction<T> | int applyAsInt(T t)
+        Od tej pory wywyolujac metode applyAsInt na obiekcie "bezInstancji" klasy anonimowej
+         ToIntFunction bede mogl wyslac dowolny obiekt klasy typu generycznego
+         czyli w tym przypadku Object bezInstancji.applyAsInt(instncjaObiektu)
+        Jesli odwoluje sie poprzez Klase moge to zrobic tylko na interfejscie funkcyjnym
+         ktorego typ zwracany metody zgadza sie z typem zwracanym metody jaka wywoluje po ::
+         oraz interface funkcyjny musi przyjmowac typ generyczny
+         */
+        Object instncjaObiektu = new Object();
+        //Tworze instancje tej klasy
+        System.out.println("Odwolanie do metody ze podania instancji : " +
+                bezInstancji.applyAsInt(instncjaObiektu));
+
+        //inny przykład
+        ToIntFunction<Wiek> wiekToIntFunction = Wiek::getWiek;
+        Wiek obiektWiek2 = new Wiek(20);
+        System.out.println("Wiek toIntFunction : "+wiekToIntFunction.applyAsInt(obiektWiek2));
+
+
+        //----
+        //Odwolanie sie do konstruktora
+        Supplier<Object> objectSupplier = Object::new;
+        //-Supplier<T> | T get()
+        //Metoda tego interfacu zwraca generyk taki jaki przyjmuje
+        System.out.println(objectSupplier.get());
+        //pokazuje refernecje nowego obiektu czyli:
+        System.out.println(new Object());
+
 
 
 

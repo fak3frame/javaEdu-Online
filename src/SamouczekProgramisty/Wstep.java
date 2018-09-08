@@ -3476,7 +3476,7 @@ public class Wstep {
         //zmienna przyjeta przez metode typu generycznego T nazwalem lizbaZListy (t) w deklaracji
         listaLiczb.forEach(listaLiczbConsumer);
         //petla forEach dziala tyle obrotow ile lista posiada elementow
-        //wysyla przy kazdym obrocie swoj elelement czyli w tym przyoadku
+        //wysyla przy kazdym obrocie swoj elelement czyli w tym przypadku
         // element typu integer
         System.out.println();
         listaLiczbConsumer.accept(listaLiczb.get(0));
