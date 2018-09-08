@@ -3059,17 +3059,42 @@ class Wew4{
 
 
 
+        /*-------------------------------------------------------------------------
+        ----------------------------Java z linii polecen---------------------------
+
+        Instalujac JRE mam komende java ktoa uruchamia maszyne wirtualna wywolujac
+         metode main w odpowieniej klasie a instalujac JDK mam dostep do javac ktora
+         jest kompilatorem ktory tworzy plik class z pliku java a jar jest to
+         narzedzie ktore tworzy pliki jar
+
+        Instrukcja dodawania zmiennej srodowiskowej JDK w windows 10
+         PS -> System -> Zaawansowane ustaiwnia systemu -> Zmienne środowiskowe
+         W dziale Zmienne systemowe dodaje nowa zmienna lub edytuje o nazwie Path
+         Nastepnie dodaje wybieram Nowy i wklejam lokalizjacje folderu bin JDK np"
+         C:\Program Files\Java\jdk-10.0.2\bin
+
+        -Kompilacja:
+          Ide do lokalizacji pliku .java i wpisuje komende javac plik.java
+          UWAGA! plik.java musi nazywac sie tak jak nazwa klasy z metodaZwykla main !
+          Ta komenda tworzy w tym folderze plik plik.class :
+
+        -Uruchomienie:
+          Wpisuje komende java i nazwe pliku .class BEZ ROZSZERZENIA! np:
+          java plik
+
+        Jesli chce skompilowac klase w jakims podfolderze wpisauje
+         javac pl\samouczekprogramisty\commandline\DisplayName.java
+        Jesli chce uruchomic skompilowana klase, wpisuje java z classpath
+         czyli zamiast \ wpisuje . oraz w pliku klasu musi byc lokalizacja
+         package miejsca w ktorym bede uruchamial kompilacje!! np:
+         package pl.naukajavy.liniapolecen;
+        Uruchomienie bedzie wiec wygladalo:
+         java pl.samouczekprogramisty.commandline.DisplayName
 
 
 
 
-        Pattern x = Pattern.compile("\\d+$");
-        Matcher dx = x.matcher("<p>Some paragraph <em>emphasized</em></p><p>Other paragraph</p>");
-        dx.find();
-        //System.out.println(dx.group(2));
-
-
-
+        */
 
     }
 
