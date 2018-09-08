@@ -417,7 +417,7 @@ public class Podsumowanie {
 
         //----
         /*Kombinacja %3$(,08.3f
-        %3$ - 3 argument
+        3$ - 3 argument
         ( - otocznie ujemnych liczb nawiasami
         , - seperacja liczb
         0 - uzupelnienie zerami do konca szerokosci
@@ -3373,13 +3373,38 @@ class Wew4{
 
 
 
+        /*-------------------------------------------------------------------------
+        --------------------------WYRAZENIA LAMBDA---------------------------------
+
+        ogolna składnia:
+        <lista parametrów> -> <ciało wyrażenia>
+
+        (x) -> x * x
+        wyrazenie lambda podnoszace liczbe do dwadratu
+        x -> x * x
+        Nawiasy takze sa opcjonalne jesli przyjmowany parametr jest tylko 1
+
+        () -> "napis"
+        wyrazenie nie przyjmuje parametrow ale zwraca instancje klasy String
+
+        Nie musze podawac typow paramatrow ale jest to mozliwe
+        (Integer x, Long y) -> System.out.println(x * y)
+        (x, y) -> System.out.println(x * y)
+        metdoa przyjmuje Integer i Long i nie zwraca nic!
+
+        Zazwyczaj wyrazenie lambda to 1 linia kodu lecz jesli jest wiecej to
+         uzywam nawiasow {}
+
+
+        Zamiana klasy anonimowej na lambde:
+
+        interface CzyParzysta<T>{
+            boolean sprawdz(T obiekt);
+        }//deklaracja na koncu  */
 
 
 
 
-
-
-        */
 
     }
 
