@@ -2908,12 +2908,29 @@ class Wew4{
         //-- doslownie
         //.* dowolne znaki badz ich brak do konca
         Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. jest super");
-        kotMatcher.matches();
+        kotMatcher.matches();//konieczne aby umiescilo w grupy
         System.out.println("Imie kota : "+kotMatcher.group(1));
 
+        /*
+        przyklad \w+ \((\w+)\) \w+
+         \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
+               poniewaz jesli dam odstep to bedzie juz szukalo \( bo odstep jest
+               kolejnym znakiem w moim wzorcu + odstep nie pasuje do \w!!
+          : JEDEN odstep
+         \( : ( uzyty doslownie
+         (\w+\\) : gdupa w ktorej cyfry, litery lub podkreslnikj sa uzyte conajmniej raz
+         oraz \\ ktory oznacz doslowne wystapienie \
+         \) : doslwnie )
+          : odstep
+         \w+ : cyfry, litery lub podkreslnikj uzyte conajmniej raz (NIE ODSTEP!!)
+         Poprawnie : Kamil (kicu) Zajac
+          w grupie z numerem 0 jest "kicu"
+
+         */
 
 
-        Pattern x = Pattern.compile("[xyz]+awa");
+
+        Pattern x = Pattern.compile("\\w+ \\((\\w+)\\) \\w+");
 
 
 
