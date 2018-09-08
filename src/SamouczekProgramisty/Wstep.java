@@ -3097,7 +3097,7 @@ public class Wstep {
         //zwraca literal z zamienionymi ciagami
         mojLiteral = mojLiteral.replace("napis", "CIAG");
         //-substring(start, koniec); -substrin(start);
-        //zwraca wybrana czesc lansucha
+        //zwraca wybrana czesc lancucha
         mojLiteral = mojLiteral.substring(2,10);
         mojLiteral = mojLiteral.substring(1);
         //-toLowerCase();

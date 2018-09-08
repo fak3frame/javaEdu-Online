@@ -160,8 +160,23 @@ public class Podsumowanie {
         Jesli stringi zawieraja taki sam literal to sa przechowywane w tym
          samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis)
 
-        /*
+        Jest takze metodaZwykla .intern();
+        Jesli wywolam ja na Stringu z konstruktorem new String("wartosc");
+         i wystapi String z takim samym literalem to zostanie on "podpiety"
+         pod tem sam adres (miejsce w cache) pomimo uzycia alokacji
+         pamieci z uzyem slowa new np:
+         */
+        String mojLiteral = "jakis napis";
+        String mojLiteralKopia = new String("jakis napis").intern();
 
+        /*
+        String przetrzymuje znaki w tablicy znakow char[]
+
+        Instancje klasy String sa niemutowalne czyli kazda zmiana
+         powoduje stworzenie nowego obiektu klasy String
+         */
+
+        //----
         //Przypisywanie wartosci
         String jakisString = "costam";
         String jakisStringZLiczba = "costam123";
@@ -170,7 +185,6 @@ public class Podsumowanie {
         // z konkatenacja moge polaczayc z intem, moge nawet polaczyc z pustym
         // Stringiem tj "" lub moge wykorzystac metode valueOf()
         String laczonyString2 = laczonyString + 345;
-
 
         /*
         String jest charakterystycznym obiektem poniewaz ta sama jego wartosc
@@ -195,6 +209,21 @@ public class Podsumowanie {
         System.out.println("Poprawne porownanie napis 1 i napis 3: " + napis1.equals(napis3));
 
 
+        //Konkatenacja (laczenie stringow)
+        /*
+        Kazda modyfikacja stringa to tworznie nowgo obiektu
+        String x = "Kasia"
+        String s = x+" i Tomek"; // to tak naprawde:
+        s = new StringBuilder(x).append(" i Tomek").toString();
+
+
+        Uzywany jest znak + lecz laczy on lewostronnie np
+        1 + 2 + "test" // 3test
+        "test" + 1 + 2 // test12
+        Wyswietlajac jakas instancje klasy uzywana jest metodaZwykla tej klasy toString
+        */
+
+
         //metoda String.valueOf(); - PRZYJMUJE int/Integer/String, ZWRACA String
         Integer integer4 = new Integer(1354);
 
@@ -203,18 +232,70 @@ public class Podsumowanie {
         String stringZeString = String.valueOf("123d4");
 
 
+        //----
+        //Biblioteka zawierajaca wiele metod dla Stringa jest bo commons-lang a w niej
+        // np klasa StringUtils zawierajaca wiele metod dla lancuchow znakow
+
+        //Popularna metody Stringa:
+        String str = "132";
+        String strX = "132";
+
+        str = str.trim(); //usuniecie bialych znakow na poczaku i koncu
+        str = str.toUpperCase().toLowerCase();
+        boolean b1 = str.isEmpty();
+        int i1 = str.length();
+        char[] t1 = str.toCharArray();
+        char ch1 = str.charAt(0);
+
+        str = str.substring(1,2);//wyciaga przedzial stringa od poz 1 do 2(nr pozycji w int)
+        str = str.substring(1);//wyciagnie przedzial od poz 1 do konca
+        String[] t2 = str.split("asd");//podzieli tam gdzie wystapi "asd"
+        str = str.replace("asd","asd");
+        boolean b2 = str.matches("test");
+        int i2 = str.indexOf("1"); i2 = str.lastIndexOf("1");
+
+        boolean b3 = str.equals(str);
+        str = str.concat("123").concat(str);
+        boolean b4 = str.startsWith("123");
+        boolean b5 = str.endsWith("123");
+        boolean b6 = str.contains("123");
+
+        byte[] t3 = str.getBytes();
+        int i3 = str.compareTo(strX);//porowna alfabetycznie
+        //gdy str bedzie "wiekszy" zwroci -1, gdy "mniejszy" 1 i gdy rowny to 0
+
+
 
         /*------------------------------------------------------------------------
-        ------------String cache i StringBuilder/StringBuffer/StringJouner--------
+        -----------------StringBuilder/StringBuffer/StringJouner------------------
 
-
-
-
-
-
-
+        StringBuilder
+        Ta klasa takze zawiera ciag w tablicy znakow char[] lecz mozna
+         ja zmieniac i konwertowac do String uzywajac toString
         */
+        StringBuilder mojSB = new StringBuilder("123");
+        //Konstruktor moze przyjac wartosc ciagu lub jesli podam liczbe to jego
+        // pojemnosc (capacity)
 
+        StringBuilder mojSB2 = new StringBuilder();
+        mojSB2.append(2).append("123").append(mojLiteral).append(12.3);
+        //append moze przyjac dowolny typ
+
+
+        /*----
+        StringBuffer
+
+        Mozna uzywac go bezpiecznie nawet w aplikacjach wielowoatkowych
+
+        Jej instancje nie powinny byc wspoldzielone pomiedzy watkami
+
+        Klasa StringBuffer ma synchronicje przez co jest wolniejsza!
+
+
+        ----
+        StringJoiner
+
+        Wykorzystuje do laczenia strumieni
 
 
         //------------------------------------------------------------------------
