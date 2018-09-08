@@ -3092,6 +3092,84 @@ class Wew4{
          java pl.samouczekprogramisty.commandline.DisplayName
 
 
+        ----
+        Aby skompilowac i uruchomic klase z zewnetrzna biblioteka uzywam polecenia
+         -cp
+
+        Przyklad:
+         kompilacja:
+         javac -cp commons-lang3-3.5.jar pl.naukajavy\liniapolecen\WyswietlImie.java
+         uruchomienie:
+         java -cp .;commons-lang3-3.5.jar pl.naukajavy.liniapolecen.WyswietlImie
+
+        Jesli uzywam zewnetrznej biblioteki to musze sciagnac jej plik jar i
+         umiescic go w folderze glownym (tam gdzie uruchamiam kompilacjie)
+         oraz dodac import w kodzie
+
+
+        ----
+        PLIKI JAR
+        jest to archiwum ze skompilowanymi klasami. klasy wewnatrz archiwum
+         znajduja sie w odpowiednich katalogach
+
+        Program jar moze tworzyc jak i wyswietlac zawartosc archiwum
+         Wyswietlenie :
+         jar tf plikJar.jar
+         Utworzenie :
+         jar cf <nazwa pliku wyjściowego> <lista katalogów, klas do umieszczenia w pliku JAR>
+         np: jar cf PierwszyPlikJar.jar . (kropka oznacza zeby spakowalo wszystko)
+
+        Uruchamianie pliku jar:
+         java -jar aplka.jar
+
+        moge takze dodac domyslna klase do uruchomienia pliku jar komenda:
+         jar -cfe plik.jar jakasNazwa Klasa.class
+
+
+
+        /*-------------------------------------------------------------------------
+        --------------------------Aplikacje webowe - INFO--------------------------
+
+        Aplikacje webowe DLA KIENTA nie potrzebuja plikow do dzialania co daje
+          im przewage nad aplikacjami desktopowymi. Sa instalowane na serwerze
+          i dostep do nich jest za posrednictwem internetu przez przegladarke int.
+          z poziomu komoutera/telefonu/tabletu.
+         Zaleta jest takze poprawianie bledu, w przypadku aplikacji desktopowych
+          uzytkownik musi instalowac aktualizacje a aplikacje webowe sa aktualizowane
+          na serwerze co zwalnia uzytkownika z jakichkolwiek dzialan i sa one
+          niewidoczne
+
+         Serwerm jest maszana badz aplikacja na komputerze np Apache HTTP Server
+          czy nginx, sa to serwery HTTP. Jesli klient wpisze adres w przegladarce
+          wysle zapytanie do serwera (aplikacja na serwerze) odpowie odczytujac swoje
+          pliki z dysku serwera - serwowanie plikow statycznych.
+         Aplikacje webowe pokazuja zawartosc ktora jest zmienna czyli np z komentarzami
+          ktore dodaj klient
+
+         Aplikacja webowa iterpretuje zapytanie wyslane przez przegladarke klienta i
+          odpowiada dynamicznie plikiem ktory jest zrozumialy dla przegladarki klienta
+
+
+         Serwlet to klasa ktora obsluguje zapytanie wyslane do serwera i moze na nie
+          odpowiedziec
+         Odpowienikiem jar - skompilowanych klas webowych jest plik WAR (web archive)
+          miedzy innymi sa to serwlety. Moga znajdowac sie w nim takze pliki JAR
+          zawierajace niezbedne zaleznosci potrzebne do dzialania aplikacji webowej!
+
+         Plik war instaluje sie na konterze serwletow (deploy) ktory posredniczy
+          w obludze zapytan.
+
+         1. wysłanie żądania z przeglądarki do serwera (maszyny)
+         2. przekazanie żądania do kontenera serwletów/serwera aplikacji
+         3. przetworzenie żądania przez serwlet/aplikację webową
+         4. przekazanie odpowiedzi z kontenera serwletów do serwera
+         5. wysłanie odpowiedzi do klienta (przeglądarki internetowej)
+
+         Jednymi z najpopularniejszych serwerow aplikacji i kontenerow serwletow sa:
+          Tomcat, Jetty, Glassfish, WildFly, Weblogic
+
+
+
 
 
         */
