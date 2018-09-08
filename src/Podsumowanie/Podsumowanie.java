@@ -150,10 +150,17 @@ public class Podsumowanie {
 
         //------------------------------------------------------------------------
         --------------------------------ZMIENNA STRING----------------------------
-        */
 
-        //String jest specyficzna zmienna obiektowa
+        Literal znakowy jest to ciag znakow w "" np instancja klasy String.
 
+        String jest specyficzna zmienna obiektowa
+
+        Intancja klasy String nie musi byc tworzeona ze slowem new
+
+        Jesli stringi zawieraja taki sam literal to sa przechowywane w tym
+         samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis)
+
+        /*
 
         //Przypisywanie wartosci
         String jakisString = "costam";
@@ -199,6 +206,9 @@ public class Podsumowanie {
 
         /*------------------------------------------------------------------------
         ------------String cache i StringBuilder/StringBuffer/StringJouner--------
+
+
+
 
 
 
