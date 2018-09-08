@@ -326,6 +326,27 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
+        /*-------------------------ZMIENNA INTEGER--------------------------------
+        Do formatowania moge uzyc:
+        -PrintWriter.format - metodaZwykla ktora wywoluje na obiekcie Formatter
+         a nastepnie moge na tym obiekcie wywolac toString
+
+        -System.out.format - statyczna metodaZwykla w klasie String dziala jak ta
+         na obiekcie Formatter lecz wyswietla bezposrednio na ekran
+         */
+
+        //Przyklady:
+        Formatter mojFormatter = new Formatter();
+        mojFormatter.format("Urodzilem sie w %d i mam na imie %s", 1991, "Kamil");
+        String formatterString = mojFormatter.toString();
+        System.out.println(formatterString);
+        //lub z uzyciem system.out.format
+        System.out.format("Urodzilem sie w %d i mam na imie %s", 1991, "Kamil");
+
+
+
+
+        //------------------------------------------------------------------------
         /*---------------------------------METODY---------------------------------
 
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
