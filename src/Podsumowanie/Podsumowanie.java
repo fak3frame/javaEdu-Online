@@ -364,7 +364,7 @@ public class Podsumowanie {
         %% - doslowne umieszczenie %
         %n - dodanie nowej linii
 
-        Indeks argumentu liczba$- sluzy do tego aby uzyc jednego argumentu kilka razy
+        //-Indeks argumentu [liczba$] - sluzy do tego aby uzyc jednego argumentu kilka razy
         liczone od 1!
         np */
         System.out.println("\n");
@@ -373,6 +373,57 @@ public class Podsumowanie {
         //s - oznaczajaca ze to ciag znakow
         //wynik:
         //[drugi argument] [pierwszy argument] [pierwszy argument]
+
+        //-Szerodkosc [liczba] (minimalna)
+        //np:
+        System.out.println();
+        System.out.format("[%10s] [%3s]", "test", "test");
+        //10 - szerokosc 10 znakow (uzupelni pustymi znakami od lewej
+        //3 - szerokosc ale ciag jest dluzszy wiec zapisze wszystko!
+        //wynik
+        //[      test] [test]
+
+        //-Precyzja [.liczba] (dokladnosc dla liczb zmiennoprzecinkowych)
+        //np:
+        double dd = 1.1234567;
+        System.out.println();
+        System.out.format("[%.10f] [%.3f] [%f]", dd, dd, dd);
+        //.10 - wyswietli 10 miejsc po przecinku, jak brakuje to doda 0
+        //.3 - wyswwietli 3 miejsca, reszte obetnie
+        //bez niczego - wyswietli calosc
+        //wynik:
+        //[1.1234567890] [1.123] [1.123457]
+
+        /*
+        -Flagi (dodatkowe zachowanie znacnzikow konwersji)
+        - szerokosc bedzie powiekszana z prawej strony : "|%-10d|",3 -> |3         |
+        + liczba zawsze będzie zawierała znak (nawet jeśli jest dodatnia) : "%+d",3 -> +3
+        0 liczba będzie uzupełniona 0 do żądanej szerokości : "%010d",3 -> 0000000003
+        ( liczby ujemne nie będą prezentowane ze znakiem : "%(d",-323 -> (323)
+        // tylko liczby ujemna da w nawias
+        , użyj separatora do grupowania liczb : "%,d",1000000 -> 1 000 000
+         */
+
+        //Lokalizacja [Locale.KRAJ/forLanguageTag("KRAJ")]
+        double someNumber = 12345.12;
+        System.out.println();
+        System.out.format(Locale.US, "%,.2f%n", someNumber);
+        //12,345.12
+        System.out.format(Locale.GERMAN, "%,.2f%n", someNumber);
+        //12.345,12
+        System.out.format(Locale.forLanguageTag("PL"), "%,.2f%n", someNumber);
+        //12 345,12
+
+
+        //----
+        /*Kombinacja %3$(,08.3f
+        %3$ - 3 argument
+        ( - otocznie ujemnych liczb nawiasami
+        , - seperacja liczb
+        0 - uzupelnienie zerami do konca szerokosci
+        8 - szerokosc
+        .3 - 3 miejsca po przcinku
+        f - liczba zmiennoprzecinkowa
 
 
 
