@@ -2,9 +2,12 @@ package Podsumowanie;
 
 import java.io.*;
 import java.util.*;
+import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+
+import static javafx.scene.input.KeyCode.T;
 
 public class Podsumowanie {
     public static void main(String[] args) {
@@ -3404,6 +3407,148 @@ class Wew4{
 
 
 
+        CzyParzysta<Integer> czyParzystaAnonim = new CzyParzysta<Integer>() {
+            @Override
+            public boolean sprawdz(Integer obiekt) {
+                return obiekt%2==0;
+            }
+        };
+        System.out.println();
+        System.out.println("Czy liczba 15 jest parzysta : "+czyParzystaAnonim.sprawdz(15));
+        System.out.println("Czy liczba 20 jest parzysta : "+czyParzystaAnonim.sprawdz(20));
+
+        //to samo w labda:
+        CzyParzysta<Integer> czyParzystaLambda = obiekt -> obiekt % 2 == 0;
+        System.out.println("Czy liczba 15 jest parzysta: "+czyParzystaAnonim.sprawdz(15));
+        System.out.println("Czy liczba 20 jest parzysta: "+czyParzystaAnonim.sprawdz(20));
+
+
+
+        /*-------------------------------------------------------------------------
+        --------------------------Interface funkcyjny---------------------------------
+
+        To taki interface ktory posiada jedna metode abstrakcyjna i adnotacje @FunctionalInterface
+
+        Przykladem moze byc interface spradzajacy czy liczba jest parzysta:
+
+        @FunctionalInterface
+        interface CzyParzysta<T>{
+            boolean sprawdz(T obiekt);
+        }
+
+
+        ----
+        Java posiada zestaw gotowych interfejsow funkcjonalnych
+         w pakiecie java.util.function, najwazniejsze z nich to:
+
+         */
+
+
+        //-BiFunction<T, U, R> - R apply(T t, U u)
+        //moge odwolac sie konstruktora klasy z 2 zmiennymi ::new
+        // + przypisanie wartosci tej klasy w wywolaniu na obiekcie bifunction metody apply i
+        // wyslaniu do niej wartosci jako parametry - to przypisuje do nowego obiektu tej klasy
+        BiFunction<String, Integer, KlasaMoja> obiektInterfejsu = KlasaMoja::new;
+         KlasaMoja obKlasaMoja = obiektInterfejsu.apply("wartosc", 123);
+
+        //-Function<T, R> - R apply (T t)
+        //na strumieniu: (map) x -> x.name//x -> x.name.toUpperCase()
+        Function<String, Integer> zmianaSILambda = zmiennaString -> Integer.parseInt(zmiennaString);
+        int L1 = zmianaSILambda.apply("12");
+
+        //-ToIntFunction<T> | int applyAsInt(T t)
+        ToIntFunction<Integer> toIntFunction = x -> x+12;
+        int y = toIntFunction.applyAsInt(22);
+
+        //-ToDoubleFunction<T> | double applyAsDouble(T t)
+        ToDoubleFunction<Double> toDoubleFunction = x -> x+12.3;
+        double y2 = toDoubleFunction.applyAsDouble(34.5);
+
+        //-UnaryOperator<T> | T apply (T t)
+        UnaryOperator<Integer> pomnozPrzezDwaLambda = liczbaDoMnozenia -> liczbaDoMnozenia*2;
+        System.out.println("14*2  w lambdzie: "+pomnozPrzezDwaLambda.apply(14));
+
+        //-Supplier<T> | T get()
+        //moge odwolac sie konstruktora klasy ::new
+        Supplier<Integer> pokazInteger10Lambda = () -> 10;
+        System.out.println("pokaz 10 Integer z lambdy : "+pokazInteger10Lambda.get());
+
+        //-IntSuplier | int getAsInt()
+        IntSupplier pokaz10lambda = () -> 10;
+        System.out.println("pokazuje 10 int z lambdy : "+pokaz10lambda.getAsInt());
+
+        //-BiPredicate<T, R> | boolean test (T t, R r)
+        BiPredicate<Integer, Integer> czyRowne = (g,h) -> g==h;
+        System.out.println(czyRowne.test(20,30));
+
+        //-Predicate<T> | boolean test(T t)
+        //na strumieniu : (filter) x -> x.rating > 8
+        //x -> new BigDecimal(150).compareTo(x.price) > 0
+        Predicate<Integer> czyParzystaLambda2 = liczbaDoSprawdzenia -> liczbaDoSprawdzenia % 2 == 0;
+        System.out.println("Czy liczba 15 jest parzysta : "+czyParzystaLambda2.test(15));
+
+        //-Consumer<T> | void accept(T t)
+        //na strumieniu (forEach) System.out::println
+        //*po mapowaniu na jeden element z listy np name
+        Consumer<Integer> pokazILambda = jakasLiczba -> System.out.println("jakasLiczba");
+        pokazILambda.accept(123);
+        //przyklad z foreach
+        Consumer<Integer> listaLiczbConsumer = x -> System.out.print(x+" ");
+        List<Integer>listaLiczb = Arrays.asList(4,2,5,7,0);
+        listaLiczb.forEach(listaLiczbConsumer);
+        System.out.println();
+        listaLiczbConsumer.accept(listaLiczb.get(0));
+
+
+        //----
+        //Odwolywanie sie do metod :: na obiektach
+        Object obiekt = new Object();
+        //Tworze obiekt klasy np Object w ktorej jest metodaZwykla hashcode() zwracajaca int
+        IntSupplier zmiennaIntInterace = obiekt::hashCode;
+        //-IntSuplier | int getAsInt()
+        //Tworze zmienna klasy anonimowej ktora w swojej metodzie nie przyjmuje nic ale
+        // zwraca int.
+        //Wykorzystuje to z obiektem klasy Object ktory ma w swojej klasie
+        // metode hashcode zwracajaca int laczac to z metodaZwykla interacu tez zwracajac int
+        //Od tej pory metoda obiektu klasy anonimowej getAsInt bezie zwracac
+        // hashCode() obiektu obiekt
+
+        //lub w lambdzie:
+        IntSupplier zmiennaIntInterfaceLambda = () -> obiekt.hashCode();
+
+        System.out.println("test hashcode :: : "+zmiennaIntInterace.getAsInt());
+        System.out.println(obiekt.hashCode());//to samo
+        System.out.println(zmiennaIntInterfaceLambda.getAsInt());
+
+        //Jesli odwoluje sie poprzez obiekt (jak wyzej) moge to zrobic tylko na interfejsie funkcyjnym
+        // ktorego metoda zgadza sie z metoda jaka wywoluje po :: oraz interface funkcyjny NIE MOZE
+        // przyjmowac typu generycznego!! jak np IntSuplier | int getAsInt()
+
+        //Chyba ze metoda jest statyczna to moge na takim interfejsie funkcjyjnym (bez typu
+        // generycznego) odwolac sie do metody poprzez Klasa a nie obiekt tj:
+        IntSupplier zmiennaIntInteraceX = KlasaZMetodaReturnInt::staticDajInt;
+
+        //Gdy interface przyjmuje typ generyczny to moge sie odwolac do metody
+        // NIESTATYCZNEJ na podstawie NAZWY KLASY
+        ToIntFunction<Object> bezInstancji = Object::hashCode;
+
+
+
+        //inny przyklad
+        Wiek obiektWiek = new Wiek(10);
+        IntSupplier wiekSupplier = obiektWiek::getWiek;
+        System.out.println("podany obiekt wiek ma wiek : "+wiekSupplier.getAsInt());
+        //zwroci 10
+
+        //Odwolywanie sie do metod bez podania instancji klasy a po prostu Klasy:
+        ToIntFunction<Object> bezInstancji2 = Object::hashCode;
+
+
+
+
+
+
+
 
 
     }
@@ -3475,5 +3620,34 @@ class KlasaSortujaca implements Comparator<KlasaDoSortowania>{
     @Override
     public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
         return o1.napis.compareTo(o2.napis);
+    }
+}
+interface CzyParzysta<T>{
+    boolean sprawdz(T obiekt);
+}
+class KlasaMoja{
+    int liczba;
+    String napis;
+
+    public KlasaMoja(String napis, int liczba) {
+        this.liczba = liczba;
+        this.napis = napis;
+    }
+}
+class KlasaZMetodaReturnInt{
+    static int staticDajInt(){
+        return 50;
+    }
+}
+
+class Wiek{
+    int wiek;
+
+    public int getWiek() {
+        return wiek;
+    }
+
+    public Wiek(int wiek) {
+        this.wiek = wiek;
     }
 }
