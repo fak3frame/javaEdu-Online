@@ -537,12 +537,56 @@ public class Podsumowanie {
                 }
             }
         }
-        /*
 
 
 
         //------------------------------------------------------------------------
-        -----------------------------------PAKIETY--------------------------------
+        /*------------------------Modyfikatory dostepu----------------------------
+
+        Public / Protected / Private / Brak
+
+        Public - dostepny wszedzie (klasa / pola / metody / typ wewnetrzny)
+
+        Protecetd - dostepny dla metod / pol / typow wewnetrznych (NIE MOZNA DO KLAS)
+         pozwala na dostep w klasach nizej i nawet w innych pakietach
+         Dane z tym modyfikatorem dostepne sa takze w tym samym pakiecie!!
+
+        Brak modyfikatora - dostepny dla szystkiego, dostep tylko w tym samym pakiecie
+
+        Private - dostepny dla klass wewnetrznych NIELOKALNYCH / metod / pol
+
+
+        OGOLNA TABELA MODYFIKATOROW
+        Modyfikator	        Klasa	Pakiet	Podklasa	Inni	Poprawny dla klas
+        public	            tak	    tak	    tak	        tak	    tak
+        protected	        tak	    tak	    tak	        nie	    nie
+        brak modyfikatora	tak	    tak	    nie	        nie	    tak
+        private	            tak	    nie	    nie	        nie	    nie
+
+
+        Enkapsulajca / hermetyzacja - jest to spsob urycia elementow klasy
+        Zalecane sa jak najbardziej restrykcyjne modyfikatory dostepu cyzli
+         private do wszystkich pol i metod ktore beda uzywane wewnatrz klasy,
+         w pozostalych przypadkach public. Protgected uzywam w zlozonych
+         relacjach lub brak modyfikatora.
+
+
+        Interface oraz jego metody jesli nie maja modyfikatora sa PUBLICZNE
+
+        Typ wyliczeniowy oraz jego pola jesli nie maja modyfikatora sa PUBLICZNE
+
+
+        W przypadku dziedzicznia mozliwe jest nadpisywanie metod tzn jesli
+         jest mozliwosc nadpisania metody z nadklasy to w podklasie bede mogl
+         ustawic dowolny modyfikator i nawet wywolac ja metodaZwykla super.metodaZwykla();
+
+        Aby uniknac mozliwosci nadpisania metody lub rozszerzenia klasy uzywam
+         modyfikatora protected
+
+
+
+        //------------------------------------------------------------------------
+        ----------------------------------PAKIETY--------------------------------
 
         Słuza do grupowania i informowania gdzie znajduje sie klasa/interfejs
         /typ wyliczeniowy/adnotacja
