@@ -140,6 +140,7 @@ public class Zadanie1 {
         listObject.add(new KlasaZLiczba(99,"aa"));
         ////////////////////////////////////////////
 
+
         //              SKRÓT                   //
         /* Operacje na strumieniach - interfejsy funkcyjne
 
