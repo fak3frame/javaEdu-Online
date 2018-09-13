@@ -1,55 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 101">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ArrayFactory.ic" NAME="ArrayFactory Coverage Results" MODIFIED="1530114993104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/javaEdu_Online$Wstep.ic" NAME="Wstep Coverage Results" MODIFIED="1531917123454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SamouczekProgramisty.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ProgramStartowy.ic" NAME="ProgramStartowy Coverage Results" MODIFIED="1527608625775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>_1_ProgramStartowy.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ArrayFactory.ic" NAME="ArrayFactory Coverage Results" MODIFIED="1530114993104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/javaEdu_Online$Factory.ic" NAME="Factory Coverage Results" MODIFIED="1535469618003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SamouczekProgramisty.AplikacjaDoNauki.*</FILTER>
     </SUITE>
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="17">
+                    <caret line="572" selection-start-line="572" selection-end-line="572" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2070858659">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Stringi" value="114" />
-          <entry key="java" value="94791" />
+          <entry key="java" value="94793" />
           <entry key="regexp" value="18" />
-          <entry key="txt" value="578" />
+          <entry key="txt" value="579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="94791" />
-          <entry key="PLAIN_TEXT" value="692" />
+          <entry key="JAVA" value="94793" />
+          <entry key="PLAIN_TEXT" value="693" />
           <entry key="RegExp" value="18" />
         </counts>
       </usages-collector>
@@ -58,12 +78,12 @@
           <entry key="Stringi" value="1" />
           <entry key="bin" value="1" />
           <entry key="empty" value="3" />
-          <entry key="java" value="87" />
+          <entry key="java" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="87" />
+          <entry key="JAVA" value="88" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -71,10 +91,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
+            <state relative-caret-position="1746">
               <caret line="134" column="27" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -83,29 +103,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="3532" column="10" selection-start-line="3491" selection-start-column="8" selection-end-line="3532" selection-end-column="10" />
+            <state relative-caret-position="364">
+              <caret line="3481" column="53" lean-forward="true" selection-start-line="3481" selection-start-column="53" selection-end-line="3481" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podsumowanie.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="543" column="77" lean-forward="true" selection-start-line="543" selection-start-column="77" selection-end-line="543" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Zadanie1.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3281">
-              <caret line="209" selection-start-line="209" selection-end-line="209" />
+            <state relative-caret-position="296">
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
         </entry>
@@ -196,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/FinalTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Bank/Java8Collections.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie/Strumienie.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Strumienie.txt" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/Kategorie.java" />
@@ -220,6 +230,7 @@
         <option value="$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
+        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" />
       </list>
     </option>
   </component>
@@ -229,7 +240,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="183" />
     <option name="y" value="2" />
     <option name="width" value="1252" />
@@ -326,8 +337,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,6 +391,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Ojciec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Podsumowanie.Ojciec" />
@@ -391,6 +405,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Podsumowanie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Podsumowanie.Podsumowanie" />
@@ -402,6 +419,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Wstep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Wstep" />
@@ -413,10 +433,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -424,48 +447,23 @@
       <option name="MAIN_CLASS_NAME" value="toRemember" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -496,13 +494,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01311" summary="PODSUMOWANIE 52">
-      <created>1536183082110</created>
-      <option name="number" value="01311" />
-      <option name="presentableId" value="LOCAL-01311" />
-      <option name="project" value="LOCAL" />
-      <updated>1536183082110</updated>
     </task>
     <task id="LOCAL-01312" summary="PODSUMOWANIE 53">
       <created>1536250453993</created>
@@ -840,7 +831,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536558273355</updated>
     </task>
-    <option name="localTasksCounter" value="1360" />
+    <task id="LOCAL-01360" summary="PODSUMOWANIE 101">
+      <created>1536786710299</created>
+      <option name="number" value="01360" />
+      <option name="presentableId" value="LOCAL-01360" />
+      <option name="project" value="LOCAL" />
+      <updated>1536786710303</updated>
+    </task>
+    <option name="localTasksCounter" value="1361" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -885,43 +883,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="183" y="2" width="1252" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32977912" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3008739" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32955465" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35205993" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901752" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901752" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27939042" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26677853" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24963716" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35205993" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32977912" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901752" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901752" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3008739" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24963716" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3274498" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32955465" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 76" />
     <MESSAGE value="PODSUMOWANIE 77" />
     <MESSAGE value="PODSUMOWANIE 78" />
     <MESSAGE value="PODSUMOWANIE 79" />
@@ -946,14 +943,15 @@
     <MESSAGE value="PODSUMOWANIE 98" />
     <MESSAGE value="PODSUMOWANIE 99" />
     <MESSAGE value="PODSUMOWANIE 100" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 100" />
+    <MESSAGE value="PODSUMOWANIE 101" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 101" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java</url>
-          <line>568</line>
+          <line>569</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1051,16 +1049,6 @@
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/DoPodsumowania/Ojciec.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Map.java" />
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/MojaAdnotacja.java" />
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="134" column="27" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" />
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_10_KlasyAnonimowe/AnonymousClasses.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1092,22 +1080,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3281">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        <state relative-caret-position="296">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="3532" column="10" selection-start-line="3491" selection-start-column="8" selection-end-line="3532" selection-end-column="10" />
+        <state relative-caret-position="1746">
+          <caret line="134" column="27" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="543" column="77" lean-forward="true" selection-start-line="543" selection-start-column="77" selection-end-line="543" selection-end-column="77" />
+        <state relative-caret-position="17">
+          <caret line="572" selection-start-line="572" selection-end-line="572" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="3481" column="53" lean-forward="true" selection-start-line="3481" selection-start-column="53" selection-end-line="3481" selection-end-column="53" />
         </state>
       </provider>
     </entry>
