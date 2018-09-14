@@ -3481,6 +3481,7 @@ public class Wstep {
         System.out.println();
         listaLiczbConsumer.accept(listaLiczb.get(0));
 
+
         //lub w skrocie z mechanizmem odwolania sie do metod
         System.out.println();
         listaLiczb.forEach(System.out::print);
