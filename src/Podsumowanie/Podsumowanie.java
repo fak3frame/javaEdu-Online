@@ -3811,9 +3811,7 @@ class Wew4{
         strumienMapa.put("a",1);
         strumienMapa.put("b",2);
         strumienMapa.values().stream().mapToInt(Integer::intValue).sum();
-        System.out.println("x : "+strumienMapa.values());
-
-        /*
+        System.out.println("x : "+strumienMapa.values());/*
 
         -peek - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
                 stumien z tymi samymi elemntami
@@ -3824,7 +3822,14 @@ class Wew4{
 
         -limit - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
                 ignorowane*/
-        numbers.stream().limit(2);
+        numbers.stream().limit(2);/*
+
+        -sum - sumuje wartosci ze strumienia - MUSZA BYC MAPOWANE SPECJALNA METODA
+               mapToInt!*/
+        int slowNumber3 = numbers.stream()
+                .mapToInt(Integer::intValue)
+                .sum();/*
+
 
 
         //----
@@ -3901,7 +3906,26 @@ class Wew4{
 
         Strumien sekwencyjny mozna przlaczyc na rownolegly uzywjac na nim
          metody parallel lub odwrotnie sequential
-        */
+
+
+        ----
+        Przyklad zastosowania - gdy chce sie pozbyc if:
+
+        for (BoardGame x : games) {
+                    if (x.maxPlayers > 4) {
+                        if (x.rating > 8) {
+                            if (new BigDecimal(150).compareTo(x.price)>0) {
+                                //nie moge porownac int 150 z bigDecimal wiec musze stworzyc
+                                // lokalna zmienna BigDecimal z wartoscia 150 oraz wywolac
+                                // metode compareTo
+
+        moge zastapic to strumieniem:
+        games.stream()
+                     .filter(x -> x.maxPlayers > 4)
+                     .filter(x -> x.rating > 8)
+                     .filter(x -> new BigDecimal(150).compareTo(x.price) > 0)
+                     .map(x -> x.name.toUpperCase())
+                     .forEach(System.out::println);
 
 
         /*----
@@ -3943,14 +3967,192 @@ class Wew4{
 
             return (every4Years && notEvery100Years) || every400Years;
         }
+
+        ----
+        Operacje na strumieniach - dokladny opis + interfejsy funkcyjne
+
+
+        filter //Predicate<T> | boolean test(T t)
+        .filter(x -> x.getX()>22) // typ listy obiektowy
+        .filter(x -> x>22) //typ listy prosty lub po mapowaniu
+        //moge wszedzie, sluzy do filtrowania, sprawdza wybrany warunek
+        // w lambdzie
+
+
+        map //Function<T, R> | R apply(T t)
+        .map(x -> x.getX())
+        .mapToInt(Integer::intValue)
+        //Uzywam do zmiany typu,
+
+       -//Stream<Integer> streamX = listaObiektow.stream().map(x -> x.getX());
+        // streamX.forEach(System.out::println);
+        //Uzywam na Stream z typem prostym np <Integer> aby zmienic
+        // rodzaj pol listy Obiektow na ten z typu generycznego Strem a nastepnie w
+        // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
+        // wyswietlniem z odwolanie do metody ::
+
+       -//listaObiekow.stream().map(x -> x.getX()).forEach(System.out::println);
+        //Lub bezposrenim strumieniu na liscie
+        // z typem OBIKTOWYM - mapuje (opcjonalnie) zeby wyswietlic zmienna
+        // kokretna zmienna np Integer, inaczej bede musial w wyswietleniu
+        // forEach odwolac sie do konkretnego pola/pol,
+        // *listaObiekow.stream().forEach(x -> System.out.println(x.getX() + " "+ x.getNapis()));
+        // * bez mapowaania
+        // natomiast w liscie z elementami prostymi nie musze mapowac bo mam
+        // np Integer i moge odwolac sie bezposrenio w forEach sout ::
+
+       -//List<Integer> listaX = listaObiektow.stream().map(x -> x.getX()).collect(toList());
+        //Lub jesli tworze nowa liste z typem prostym aby wybrac pola
+        // z listy obiektow i odwolac sie za pomoca :: w sout
+        // NIE ZAPOMINAM O .collect(toList()); na koncu!
+
+       -//int sumaInt = liczbyy.stream()
+        //        .mapToInt(Integer::intValue)
+        //        //musze dac metode mapToInt aby uzyc sum()!
+        //        .filter(x -> x>4)
+        //        .sum();
+        //Metoda .mapToInt przypisuje zmienne strumienia do int przez co moge
+        // uzyc metody sum
+
+
+        peek //Consumer<T> | void accept(T t)
+        .peek(x -> System.out.println(x))
+        .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
+        //Sluzy np do wyswietlenia,
+
+       -//listaZIntegerani.strem().peek(System.out::println).collect(toList())
+        //listaZObiektami.strem().peek(x -> System.out.println(x.getX() + " "+ x.getNapis())).collect(toList())
+        //Uzywam w bezposrednim strumieniu na liscie z elem. prostymi lub
+        // obiektowymi MUSZE NA KONCU .collect(toList())!
+
+       -//List<Integer> listInteger = listNumber.stream()
+        // .peek(System.out::println)
+        // .collect(toList());
+       -//List<KlasaObiektow> listObjectX = listObject.stream()
+        // .peek(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()))
+        // .collect(toList());
+       -//List<String> listString = listObject.stream()
+        // .map(x -> x.getNapis())
+        // .peek(System.out::println)
+        // .collect(toList());
+        //Lub tworzac nowa liste, NA KONCU .collect(toList());!
+
+
+        forEach //Consumer<T> | void accept(T t)
+        strumienZInteger.forEach(System.out::println); //typ prosty/1 rodzaj pola
+        strumienZObiektami.forEach(x -> System.out.println(x.getNapis()));
+        .forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));//bezposrenio na stuminiu
+        .forEach(System.out::println); //bezposrenio na stuminiu z 1 typem zmiennych
+        //Sluzy do zamkniecia struminia i np wyswietlenia
+
+       -//Stream<Integer> integerStream = listaInt.stream();
+        // integerStream.forEach(System.out::println)
+       -//Stream<MojaKlasa> obiektyStream = listaOb.stream();
+        // obiektyStream.forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
+        //Uzywam w type Stream TYLKO w oddzielnej linii
+
+       -//listaInteger.stream().forEach(System.out::println);
+       -//listaObiektow.stream().forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
+       -//listaObiektow.stream().map(x -> x.getX()).forEach(System.out::println);
+        //Lub na stumieniu bezposrenim (moge z mapowaniem w przypadku typu obiektowego
+        // aby wybrac typ i odwolac sie besrednio z :: do konkretnego pola)
+
+       -//List<Integer> listaX = listaInteger.stream().collect(toList());
+        // listaX.forEach(System.out::println)
+       -//List<KlasaObiektow> listaO = listaObiektow.stream().collect(toList());
+        // listaO.forEach(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()));
+       -//List<Stream> listaS = listaObiektow.stream().map(x -> x.getNapis()).collect(toList());
+        // listaS.forEach(System.out::println);
+        //Lub w nowej liscie W ODDZIELNEJ LINII, na koncu stream() musze dac Collect(toList())!!
+
+
+        limit //moge wszedzie
+
+
+        count //zwraca liczbe elementow w strumieniu
+
+
+        sorted
+        .sorted()/.sorted(Comparator.reverseOrder) - typy proste
+        .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder) - typy wlasne
+
+
+        collect
+        .collect(Collectors.toList()) / collect(toList())
+       -//List<KlasaZLiczba> listObjectX = listObject.stream().collect(toList());
+        //Gdy przypisuje do listy DOWOLNEJ musze dac na koncu
+       -//listObject.stream().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() )).collect(toList());
+        //Lub gdy uzywam peek bezposrednio na strumieniu listy (bez tego zadziala ale nie wyswietli
+
+
+        max
+        .max(Comparator.comparingInt(x->x)).get(); //po mapowaniu do typu zwyklaego + przypisanie do typu zwyklego
+        .max(Comparator.comparing(KlasaZLiczba::getX)).get
+       -//KlasaZLiczba zmiennaO = listaObiektow.stream().max(Comparator.comparing(KlasaZLiczba::getX)).get();
+        // System.out.println(zmiennaO.getX());
+        //Uzywam na zmiennej Obiektowej WLASNEJ klasy i przypisuje jej
+        // wybrane pole max odwolujac sie w Comparatorze do getera :: + metodaZwykla get()!!
+        // *NIE MAPUJE bo przypisuje do typu KlasaZLiczba!
+       -//Integer liczbaMax3 = listObject.stream()
+                .map(x -> x.getX())//mapuje bo z listy obiektow przypisuje do int
+                .max(Comparator.comparing(x -> x)).get();//WPISUJE x->x bez get bo mapowalem
+                // lub .max(Comparator.comparing(Integer::compare)).get();
+                // lub moge skorzystac z metody Integer::compare w max bo przemapowalem do Integer
+                // .max(Integer::compare).get();
+                // lub jesli przypisuje do String tylko inna metodaZwykla
+                // .max(String::valueOf).get();
+        // System.out.println(liczbaMax3);
+        //Lub na zmiennej prostej wybranego typu pola z klasy np int,
+        // uzywam z mapowanie bo musze wyciagnac jeden rodzaj zmiennej z
+        // LISTY OBIEKTOW a nastepnie w comparing zapisuje x->x bez get.
+        // lub Integer::compare ew dla String String::valueOf, moge takze
+        // nie uzywac Comparator.comparing tylko w max od razu Integer::compare
+        // po tym nie zapominam o get() na koncu!!
+
+       -//Integer liczbaMax4 = listNumbers.stream().max(Comparator.comparing(x -> x)).get();
+       -//Integer liczbaMax4 = listNumbers.stream().max(Integer::compare).get();
+        // jesli typ prosty np Integer moge uzyc metody jej klasy w max Integer::compare
+        // System.out.println(liczbaMax4);
+        //Lub tez z przypisaniem do typ prostego ale
+        // z listy z ELEMENTAMI PROSTYMI wiec nie musze
+        // mapowac
+
+       -//Comparator<KlasaZLiczba> comparatorInt = (x1, x2) -> Integer.compare(x1.getX(), x2.getX());
+        //Comparator<KlasaZLiczba> comparatorString = (x1, x2) -> x1.getNapis().compareTo(x2.getNapis());
+        //KlasaZLiczba najmniejszyWyraz = listObject.stream()
+                .min(comparatorString).get();
+        //System.out.println("najmniejszyWyraz : "+najmniejszyWyraz.getNapis());
+        //KlasaZLiczba najmniejszaLiczba = listObject.stream()
+                .min(comparatorInt).get();
+        //System.out.println("najmniejszaLiczba: "+najmniejszaLiczba.getX());
+        //Lub z uzyciem zmiennej Comparatora
+
+       -//Integer[] numbers = {4,1,10,2,3};
+        //System.out.println("Stream.min(): " + Arrays.stream(numbers).min(Integer::compare).get());
+        //Lub z uzyciem tablicy
+
+
+        all/any/noneMatch
+        .allMatch(x -> x>1) //+przypisanie do boolean (lista typ prosty)
+        .anyMatch(x -> x.getNapis().equals("aa"))
+        // +przypisanie do boolean (lista obiektowa)
+       -//boolean czyCokolwiekPasuje = listInteger.stream().anyMatch(x->x>1);
+        //Uzywam gdy chce sprawdzic czy jakikolwiek element z listy
+        // typow prostych pasuje do wzorca x>1
+       -//boolean czyWszystkoPasuje = listObject.stream()
+                .allMatch(x -> x.getX()>1);
+        //Lub gdy chce na liscie OBIEKTOW to musze odwolac
+        // sie do kokretnego pola getem
+
+
+        sum
+        .sum();
+        -int suma = liczbyLista.stream().mapToInt(Integer::intValue).sum();
+        //Metoda sumuje liczby strumienia, MUSI byc zmapowane z metoda mapToInt!
+        // + moge wykorzystac metode klasy Integer zwracajaca int;
+
+
          */
-
-
-
-
-
-
-
 
 
 

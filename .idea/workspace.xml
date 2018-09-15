@@ -3,31 +3,51 @@
   <component name="ChangeListManager">
     <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ArrayFactory.ic" NAME="ArrayFactory Coverage Results" MODIFIED="1530114993104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/javaEdu_Online$Wstep.ic" NAME="Wstep Coverage Results" MODIFIED="1531917123454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SamouczekProgramisty.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ProgramStartowy.ic" NAME="ProgramStartowy Coverage Results" MODIFIED="1527608625775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>_1_ProgramStartowy.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/javaStartMojSkrypt$ArrayFactory.ic" NAME="ArrayFactory Coverage Results" MODIFIED="1530114993104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SamouczekProgramisty.Zadania._4_Zestaw._4_Petle.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/javaEdu_Online$Factory.ic" NAME="Factory Coverage Results" MODIFIED="1535469618003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SamouczekProgramisty.AplikacjaDoNauki.*</FILTER>
     </SUITE>
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="568">
+                    <caret line="3971" column="50" selection-start-line="3971" selection-start-column="50" selection-end-line="3971" selection-end-column="50" />
+                    <folding>
+                      <element signature="e#135007#135008#0" expanded="true" />
+                      <element signature="e#135057#135058#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2070858659">
@@ -37,23 +57,23 @@
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="4" />
-          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Stringi" value="114" />
-          <entry key="java" value="94794" />
+          <entry key="java" value="95206" />
           <entry key="regexp" value="18" />
           <entry key="txt" value="581" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="94794" />
+          <entry key="JAVA" value="95206" />
           <entry key="PLAIN_TEXT" value="695" />
           <entry key="RegExp" value="18" />
         </counts>
@@ -63,12 +83,12 @@
           <entry key="Stringi" value="1" />
           <entry key="bin" value="1" />
           <entry key="empty" value="3" />
-          <entry key="java" value="88" />
+          <entry key="java" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="88" />
+          <entry key="JAVA" value="90" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -76,10 +96,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toRemember.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toRemember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
+            <state relative-caret-position="976">
               <caret line="134" column="27" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,47 +108,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wstep.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="3834" column="44" lean-forward="true" selection-start-line="3834" selection-start-column="44" selection-end-line="3835" selection-end-column="41" />
-              <folding>
-                <element signature="e#17631#17638#0" expanded="true" />
-                <element signature="e#81164#81194#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="-44549">
+              <caret line="1021" column="11" selection-start-line="1021" selection-start-column="8" selection-end-line="1021" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podsumowanie.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="3903" column="10" lean-forward="true" selection-start-line="3903" selection-start-column="10" selection-end-line="3903" selection-end-column="10" />
-              <folding>
-                <element signature="e#16160#16161#0" expanded="true" />
-                <element signature="e#16222#16223#0" expanded="true" />
-                <element signature="e#17082#17083#0" expanded="true" />
-                <element signature="e#17120#17121#0" expanded="true" />
-                <element signature="e#42561#42567#0" expanded="true" />
-                <element signature="e#43433#43444#0" expanded="true" />
-                <element signature="e#43718#43729#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Zadanie1.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="315" column="66" selection-start-line="315" selection-start-column="66" selection-end-line="315" selection-end-column="66" />
+            <state relative-caret-position="-2924">
+              <caret line="306" column="43" lean-forward="true" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ojciec.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Ojciec.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -166,7 +164,6 @@
       <find>scanner</find>
       <find>strumie</find>
       <find>listy</find>
-      <find>map</find>
       <find>random</find>
       <find>tostr</find>
       <find>Integer.val</find>
@@ -182,6 +179,7 @@
       <find>?</find>
       <find>::</find>
       <find>stringbu</find>
+      <find>map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -256,17 +254,19 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="184" />
-    <option name="y" value="6" />
-    <option name="width" value="1253" />
-    <option name="height" value="867" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="86" />
+    <option name="width" value="1390" />
+    <option name="height" value="1447" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,9 +359,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,6 +411,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Ojciec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Podsumowanie.Ojciec" />
@@ -425,6 +425,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Podsumowanie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Podsumowanie.Podsumowanie" />
@@ -436,6 +439,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Wstep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SamouczekProgramisty.Wstep" />
@@ -447,10 +453,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -458,48 +467,23 @@
       <option name="MAIN_CLASS_NAME" value="toRemember" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -919,36 +903,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="86" y="0" width="1390" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32977912" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3008739" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32955465" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901752" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35205993" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901752" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.266328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29473683" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24963716" />
-      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3274498" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35205993" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32977912" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901752" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014514" side_tool="true" weight="0.3196005" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901752" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3008739" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24963716" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3274498" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32955465" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1100,16 +1084,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="134" column="27" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/stream/IntStream.java" />
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Ojciec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1117,43 +1092,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/stream/IntStream.java">
+    <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="601" column="8" selection-start-line="601" selection-start-column="8" selection-end-line="601" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="315" column="66" selection-start-line="315" selection-start-column="66" selection-end-line="315" selection-end-column="66" />
+        <state relative-caret-position="976">
+          <caret line="134" column="27" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Wstep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="3834" column="44" lean-forward="true" selection-start-line="3834" selection-start-column="44" selection-end-line="3835" selection-end-column="41" />
-          <folding>
-            <element signature="e#17631#17638#0" expanded="true" />
-            <element signature="e#81164#81194#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="-44549">
+          <caret line="1021" column="11" selection-start-line="1021" selection-start-column="8" selection-end-line="1021" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2924">
+          <caret line="306" column="43" lean-forward="true" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="3903" column="10" lean-forward="true" selection-start-line="3903" selection-start-column="10" selection-end-line="3903" selection-end-column="10" />
+        <state relative-caret-position="568">
+          <caret line="3971" column="50" selection-start-line="3971" selection-start-column="50" selection-end-line="3971" selection-end-column="50" />
           <folding>
-            <element signature="e#16160#16161#0" expanded="true" />
-            <element signature="e#16222#16223#0" expanded="true" />
-            <element signature="e#17082#17083#0" expanded="true" />
-            <element signature="e#17120#17121#0" expanded="true" />
-            <element signature="e#42561#42567#0" expanded="true" />
-            <element signature="e#43433#43444#0" expanded="true" />
-            <element signature="e#43718#43729#0" expanded="true" />
+            <element signature="e#135007#135008#0" expanded="true" />
+            <element signature="e#135057#135058#0" expanded="true" />
           </folding>
         </state>
       </provider>
