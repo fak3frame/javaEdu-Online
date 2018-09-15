@@ -1,10 +1,14 @@
 package Podsumowanie;
 
 import java.io.*;
+import java.lang.reflect.Field;
 import java.util.*;
 import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.*;
+
+import static java.util.stream.Collectors.toList;
 
 public class Podsumowanie {
     public static void main(String[] args) {
@@ -449,6 +453,16 @@ public class Podsumowanie {
             public int metodaDajacaInt(String napis) {
                 return Integer.parseInt(napis);
             }
+
+            public boolean czyDobraLiczba(int x){
+                boolean czyParzysta = x%2==0;
+                boolean czyWiekszaOd0 = x>0;
+                boolean czyMniejszaOd10 = x<10;
+
+                return (czyMniejszaOd10 && czyWiekszaOd0) || czyParzysta;
+                //metoda da true jesli podana liczba bedzie wieksza od 0 i
+                // mniejsza od 10 LUB bedzie parzysta!
+            }
         }
 
         /*
@@ -545,15 +559,33 @@ public class Podsumowanie {
 
         Public / Protected / Private / Brak
 
+
+        Pole - brak/**public/**protected/**private/*final
+         *jesli zmienna globalna - musze zadeklarowac wartosc lub
+         *przypisac ja w konstruktorze, jesli zmienna lokalna - nie musze
+         *od razu przypisywac wartosci!
+         **tylko dla zmiennych globalnych!
+
+        Klasa - brak/public/**private/**protected/final*
+         *nie mozna jej w takim wypadku rozszerzac!
+         **tylko dla klas wewnetrznych NIELOKLNYCH
+         ***klasa wewnetzna LOKLANA nie moze miec modyfikatora!
+
+        Metoda -  brak/public/protected/private/*final
+         *nie mozna jej nadpisac
+         ** nie deklaruje metod w metodach!
+
+
+        ----
         Public - dostepny wszedzie (klasa / pola / metody / typ wewnetrzny)
 
-        Protecetd - dostepny dla metod / pol / typow wewnetrznych (NIE MOZNA DO KLAS)
+        Protecetd - dostepny dla METOD / POL / TYPOW WEWNETRZNYCH (NIE MOZNA DO KLAS!)
          pozwala na dostep w klasach nizej i nawet w innych pakietach
          Dane z tym modyfikatorem dostepne sa takze w tym samym pakiecie!!
 
-        Brak modyfikatora - dostepny dla szystkiego, dostep tylko w tym samym pakiecie
+        Brak modyfikatora - dostepny dla wszystkiego, dostep tylko w tym samym pakiecie
 
-        Private - dostepny dla klass wewnetrznych NIELOKALNYCH / metod / pol
+        Private - dostepny dla klas wewnetrznych NIELOKALNYCH / metod / pol
 
 
         OGOLNA TABELA MODYFIKATOROW
@@ -564,10 +596,10 @@ public class Podsumowanie {
         private	            tak	    nie	    nie	        nie	    nie
 
 
-        Enkapsulajca / hermetyzacja - jest to spsob urycia elementow klasy
+        Enkapsulajca / hermetyzacja - jest to spsob ukrycia elementow klasy
         Zalecane sa jak najbardziej restrykcyjne modyfikatory dostepu cyzli
          private do wszystkich pol i metod ktore beda uzywane wewnatrz klasy,
-         w pozostalych przypadkach public. Protgected uzywam w zlozonych
+         w pozostalych przypadkach public. Protected uzywam w zlozonych
          relacjach lub brak modyfikatora.
 
 
@@ -581,8 +613,46 @@ public class Podsumowanie {
          ustawic dowolny modyfikator i nawet wywolac ja metodaZwykla super.metodaZwykla();
 
         Aby uniknac mozliwosci nadpisania metody lub rozszerzenia klasy uzywam
-         modyfikatora protected
+         modyfikatora final
 
+
+        ----
+        Mechanizm refleksji
+
+        Nie jest zazwyczaj stosowany w kodzie produkcyjnym. Sluzy on do tego
+         aby miec dostep do dowolnego elementu klasy pomijajac modyfikatory
+         dostepu
+         */
+        class BankAccount {
+
+            private int balance = 100;
+
+            public int getBalance() {
+                return balance;
+            }
+        }
+        // w klasie zlodzieja
+        BankAccount account = new BankAccount();
+        System.out.println("\n"+"Stan konta: "+ account.getBalance());
+
+        try{
+            Field balance = BankAccount.class.getDeclaredField("balance");
+            //Definiuje obiekt klasy refleksji
+            //Wywoluje na niej NazweKlasy potem class i na koncu metode
+            // np getDeclaredField("nazwaPola") w nawiasie podaje nazwe
+            // pola
+            balance.setAccessible(true);
+            //na zmiennej klasy refleksji zmianiam modyfikator wybranej
+            // wczesniej zmiennej
+            balance.set(account, -5000);
+            //Za pomoca metody na obiekcie klasy reflekcji set
+            // moge ustawic nowa wartosc wybranego pola
+
+        }catch (NoSuchFieldException | IllegalAccessException x) {
+            System.out.println(x.getMessage());
+        }
+
+        System.out.println("Stan konta po zmianie: "+ account.getBalance()); /*
 
 
         //------------------------------------------------------------------------
@@ -3633,6 +3703,250 @@ class Wew4{
 
 
 
+        /*-------------------------------------------------------------------------
+        ----------------------------------STRUMIENIE-------------------------------
+
+        Strumienie sluza do przetwarzania danych np z kolekcji czy wyrazen regulrnych
+
+        Nie sa struktrami danych! struktury służą do przechowywania danych a strumienie
+         służą do opisywania algorytmów, operacji na danych.
+
+        Moga zrownoleglic prace na danych dzieki czemu mozliwe jest szybkie
+         przetwarzanie duzych zbiorow danych
+
+
+        Strumien nie moze modyfikowac danych! */
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(15);
+        numbers.add(3);
+        numbers.add(12);
+        numbers.add(8);
+        List<Wiek> listaWiek = new ArrayList<>();
+        listaWiek.add(new Wiek(15));
+        listaWiek.add(new Wiek(3));
+        listaWiek.add(new Wiek(12));
+        listaWiek.add(new Wiek(8));
+        List<Imie> listaImie = new ArrayList<>();
+        listaImie.add(new Imie("kamil"));
+        listaImie.add(new Imie("adam"));
+        listaImie.add(new Imie("pawel"));
+        listaImie.add(new Imie("gracjan"));
+
+        numbers.stream()
+            .map(v -> numbers.add(v) ? 1 : 0)
+            //chce dodac do listy elementy - BLAD ConcurrentModificationException
+            //.forEach(System.out::println);
+            ;
+
+
+        //----
+        //Operacje na strumieniach
+
+        //-Tworzenie strumienia
+        Stream<Integer> strumien1 = numbers.stream();
+
+
+        //-Przetwarzanie danych wewnatrz strumienia
+        Stream<Integer> strumien2 = numbers.stream()
+                .filter(x -> x>10);
+
+        Stream<Wiek> strumien3 = listaWiek.stream()
+                .filter(x -> x.getWiek()>10);
+        strumien3.map(x -> x.getWiek()*2);
+
+        Stream<Imie> strumien4 = listaImie.stream();
+        strumien4.map(x -> x.getImie().toUpperCase());
+        //musze zrobic w oddzielnej linii
+
+
+        //-Zakonczenie strumienia
+
+
+        //----
+        //Tworzenie strumienia:
+
+        //-Na podstawie kolekcji
+        Stream<Integer> strumien6 = new LinkedList<Integer>().stream();
+        Stream<Integer> strumien5 = numbers.stream();
+
+        //-Na podstawie tablicy
+        Stream<Integer> strumien7 = Arrays.stream(new Integer[]{});
+
+        //-Na podstawie lancucha znakow rozdzielanego przez wyrazenie regularne
+        Stream<String> strumien8 = Pattern.compile(".").splitAsStream("some longer sentence");
+
+        //-Strumien typow prstych
+        DoubleStream randomDoubles = new Random().doubles();
+        IntStream randomInts = new Random().ints();
+        LongStream randomLongs = new Random().longs();
+
+        //- Strumien pusty
+        Stream.empty();
+
+        //-Strumien danych z pliku
+        try(Stream<String> lines = new BufferedReader(new FileReader("plik1.txt")).lines()){
+            //zrob cos
+        } catch (FileNotFoundException e) {
+        }
+
+
+        //----
+        /*Operacje:
+
+        -filter - zwraca strumien zawierajacy tylko te elemnty dla ktorych
+                  filtr zwrocil wartosc true
+                  Predicate<T> | boolean test(T t)*/
+        numbers.stream().filter(x -> x>10);
+        listaWiek.stream().filter(x -> x.getWiek()>10);/*
+
+        -map - kazdy z elementow moze zostac zmieniony do innego typu, nowy obiekt zwarty
+               jest w nowym strumieniu, uzywam aby zmiec typ
+               Function <T, R> | R apply(T t)*/
+        Stream<Integer> strumien9 = listaWiek.stream()
+                .map(x -> x.getWiek());
+        strumien9.forEach(System.out::println);
+        listaWiek.stream().map(Wiek::getWiek).forEach(System.out::println);
+
+        Map<String, Integer> strumienMapa = new HashMap<>();
+        strumienMapa.put("a",1);
+        strumienMapa.put("b",2);
+        strumienMapa.values().stream().mapToInt(Integer::intValue).sum();
+        System.out.println("x : "+strumienMapa.values());
+
+        /*
+
+        -peek - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
+                stumien z tymi samymi elemntami
+                Consumer<T> | void accept(T t)*/
+        numbers.stream().peek(System.out::println).collect(toList());
+        listaWiek.stream().peek(x -> System.out.print(x.getWiek())).collect(toList());
+        /*musi byc collect(toList()) bo inaczej nic nie wyswietli
+
+        -limit - zwraca strumien ograniczony do zadanej liczby elementow, pozostale sa
+                ignorowane*/
+        numbers.stream().limit(2);
+
+
+        //----
+        /*Konczenie strumienia:
+
+        Operacje konczaace nie moga zwracac typu Strem oraz nie musza zwracac nic.
+        Jesli odwolam sie do zamknietego strumienia wyrzuci blad:
+        IllegalStateException: stream has already been operated upon or closed
+
+        Przyklady zamkniec strumieni:
+
+        - forEach - wykonuje zadaną operację dla każdego elementu
+                    Consumer<T> | void accept(T t) */
+        Stream<Wiek> filtrowanyStrumien = listaWiek.stream()
+                        .filter(x -> x.getWiek() > 4);
+                        //strumien typu Wiek filtruje
+        Stream<Integer> liczbyZeStrumienia = filtrowanyStrumien
+                        .map(x -> x.getWiek());
+                        //map zmieniam strumien Wiek na Integer to znaczy
+                        // elementy zapisuje do strumienia tylko elementy typu Integer
+        liczbyZeStrumienia.forEach(System.out::println);/*
+                        //posiadajac typ Integer w stumieniu moge wywolac sout
+
+
+        - count - zwraca liczbę elementów w strumieniu (strumien nie moze byc zamkniety!)*/
+        System.out.println("ilosc elem w strumieniu : "+strumien1.count());/*
+
+
+        - allMatch - zwraca flagę informującą czy wszystkie elementy spełniają warunek.
+                      Przestaje sprawdzać na pierwszym elemencie, który tego warunku nie spełnia
+                      //Predicate<T> | boolean test(T t)*/
+        boolean czyWszystkoWiekszeOdZera = listaWiek.stream().allMatch(x -> x.getWiek()>0);/*
+
+
+        -collect - pozwala na utworzenie nowego typu na podstawie elementów strumienia.
+                    Przy pomocy tej metody można na przykład utworzyć listę. Klasa Collectors
+                    zawiera sporo gotowych implementacji.*/
+        Stream<Integer> strumienNaInt = listaWiek.stream().map(x -> x.getWiek());
+        List<Integer> listaZeStrimienia = strumienNaInt.collect(Collectors.toList());
+
+
+        //----
+        //Wlasciewosci strumieni
+
+        //Metoda konczonca dopiero rozpoczyna przetwazranie elementow
+
+        System.out.println();
+        IntStream strumienLiczb = IntStream.range(0, 8);
+        //tworze strumien z liczbami 0 - 7
+        System.out.println("Przed");
+        strumienLiczb = strumienLiczb.filter(x -> x % 2 == 0);
+        //filtruje i zapisuje tylko liczby parzyste do strumienia
+        System.out.println("W trakcie 1");
+        strumienLiczb = strumienLiczb.map(x -> {
+            System.out.println("> " + x );
+            //wyswietlam ">" i liczbe
+            return x;
+            //+ zwracam ta liczba
+            //operacja map jest rozbudowana o wyswietlenie
+            // ale musi tez zwracac
+        });
+        System.out.println("W trakcie 2");
+        strumienLiczb = strumienLiczb.limit(2);
+        //obcinam liczby do 2
+        System.out.println("W trakcie 3");
+        strumienLiczb.forEach(System.out::println);
+        //metodaZwykla konczaca wyswietla strumien
+        System.out.println("PO");
+
+
+        /*----
+        Strumienie przetwarzane sa sekwencyjnie w metodzie stream()
+         lub rownolegle (uruchamiany w kilku watkach) metodaZwykla parallelStrem
+
+        Strumien sekwencyjny mozna przlaczyc na rownolegly uzywjac na nim
+         metody parallel lub odwrotnie sequential
+        */
+
+
+        /*----
+        Dobre praktyki:
+
+        - Filtrowanie na poczatku
+        */
+        List<Integer> liczbyy = Arrays.asList(3,4,5);
+        int slowNumber = liczbyy.stream()
+                .mapToInt(Integer::intValue)
+                //musze dac metode mapToInt aby uzyc sum()!
+                .filter(x -> x>4)
+                .sum();
+        //lepiej dac filtrowanie na poczatku aby nie mapowac
+        // niepotrzebnych elementow
+        int slowNumber2 = liczbyy.stream()
+                .filter(x -> x>4)
+                .mapToInt(Integer::intValue)
+                .sum();/*
+
+
+        - Unikanie skomplikowanych wyrazen lambda
+        Lepiej jest stworzyc oddzielna metode do tego
+
+        IntStream.range(1950, 2150)
+            .filter(y -> (y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
+            .forEach(System.out::println);
+
+        //lepiej zmienic kod na bardziej czytelny:
+        IntStream.range(1950, 2150)
+            .filter(StreamsGoodPractices::isLeapYear)
+            //za pomoca metody klasy
+            .forEach(System.out::println);
+
+        public static boolean isLeapYear(int year) {
+            boolean every4Years = year % 4 == 0;
+            boolean notEvery100Years = year % 100 != 0;
+            boolean every400Years = year % 400 == 0;
+
+            return (every4Years && notEvery100Years) || every400Years;
+        }
+         */
+
+
+
 
 
 
@@ -3731,12 +4045,19 @@ class KlasaZMetodaReturnInt{
 
 class Wiek{
     int wiek;
-
     public int getWiek() {
         return wiek;
     }
-
     public Wiek(int wiek) {
         this.wiek = wiek;
+    }
+}
+class Imie{
+    String imie;
+    public String getImie() {
+        return imie;
+    }
+    public Imie(String imie){
+        this.imie =imie;
     }
 }

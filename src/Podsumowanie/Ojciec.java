@@ -1,8 +1,15 @@
 package Podsumowanie;
 
-import java.io.*;
 
-public class Ojciec{}
+class Ojciec{
+     void metoda(){
+
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
 
 
 

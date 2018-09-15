@@ -307,6 +307,13 @@ public class Zadanie1 {
                 .allMatch(x -> x.getX()>1);
         //Lub gdy chce na liscie OBIEKTOW to musze odwolac
         // sie do kokretnego pola getem
+
+
+        sum
+        .sum();
+        -int suma = liczbyLista.stream().mapToInt(Integer::intValue).sum();
+        //Metoda sumuje liczby strumienia, MUSI byc zmapowane z metoda mapToInt
+        // + moge wykorzystac metode klasy Integer zwracajaca int;
          */
 
         //                   END                     //
