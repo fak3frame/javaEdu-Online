@@ -3981,7 +3981,7 @@ class Wew4{
 
         map //Function<T, R> | R apply(T t)
         .map(x -> x.getX())
-        .mapToInt(Integer::intValue)
+        .mapToInt(Integer::intValue) //na potrzeby sum();
         //Uzywam do zmiany typu,
 
        -//Stream<Integer> streamX = listaObiektow.stream().map(x -> x.getX());
@@ -4020,7 +4020,7 @@ class Wew4{
         peek //Consumer<T> | void accept(T t)
         .peek(x -> System.out.println(x))
         .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
-        //Sluzy np do wyswietlenia,
+        //Sluzy np do wyswietlenia, musze na koncu dac .collect(toList())! bo nic nie wyswietli
 
        -//listaZIntegerani.strem().peek(System.out::println).collect(toList())
         //listaZObiektami.strem().peek(x -> System.out.println(x.getX() + " "+ x.getNapis())).collect(toList())
