@@ -3976,7 +3976,7 @@ class Wew4{
         .filter(x -> x.getX()>22) // typ listy obiektowy
         .filter(x -> x>22) //typ listy prosty lub po mapowaniu
         //moge wszedzie, sluzy do filtrowania, sprawdza wybrany warunek
-        // w lambdzie
+        // w lambdzie, elementy ktore na wartunek beda true zostana w strumieniu
 
 
         map //Function<T, R> | R apply(T t)
@@ -3988,8 +3988,10 @@ class Wew4{
         // streamX.forEach(System.out::println);
         //Uzywam na Stream z typem prostym np <Integer> aby zmienic
         // rodzaj pol listy Obiektow na ten z typu generycznego Strem a nastepnie w
-        // forEach w nowej liini odwolac sie besposrewnio do wybranego pola z
-        // wyswietlniem z odwolanie do metody ::
+        // forEach moge wyswietlic elementy strumienia z odwolaniem do metody
+        // System.out::println bo mam juz elementy w strumieniu typu prostego,
+        // moge takze bez mapowania wyswielic w forEach lecz gdy bede mial strumien
+        // z obiektami bede musial odwolac sie do pol .forEach(x -> System.out.println(x.getX());
 
        -//listaObiekow.stream().map(x -> x.getX()).forEach(System.out::println);
         //Lub bezposrenim strumieniu na liscie
