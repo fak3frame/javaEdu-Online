@@ -3879,7 +3879,8 @@ class Wew4{
 
 
         - count - zwraca liczbę elementów w strumieniu (strumien nie moze byc zamkniety!)*/
-        System.out.println("ilosc elem w strumieniu : " + strumien1.count());/*
+        Stream<Wiek> stumienWieks = listaWiek.stream();
+        System.out.println("ilosc elem w strumieniu : " + stumienWieks.count());/*
 
 
         - allMatch - zwraca flagę informującą czy wszystkie elementy spełniają warunek.
@@ -4106,9 +4107,13 @@ class Wew4{
        -System.out.println(strumien1.count());
 
 
-        sorted
+        sorted //Stream + bezposrednio + nowa lista
         .sorted()/.sorted(Comparator.reverseOrder) - typy proste
         .sorted(Comparator.comparing(KlasaZLiczba::getNapis).reverseOrder) - typy wlasne
+
+       -Stream<Wiek> strumienWiekSorted = listaWiek.stream().sorted(Comparator.comparing(Wiek::getWiek));
+       -strumienWiekSorted.sorted(Comparator.comparing(Wiek::getWiek));
+       -List<Wiek> listaWiekSorted = strumienWiekSorted.sorted(Comparator.comparing(Wiek::getWiek)).collect(toList());
 
 
         collect
@@ -4119,9 +4124,9 @@ class Wew4{
         //Lub gdy uzywam peek bezposrednio na strumieniu listy (bez tego zadziala ale nie wyswietli
 
 
-        max
+        max //przypisuje do zmiennej
         .max(Comparator.comparingInt(x->x)).get(); //po mapowaniu do typu zwyklaego + przypisanie do typu zwyklego
-        .max(Comparator.comparing(KlasaZLiczba::getX)).get
+        .max(Comparator.comparing(KlasaZLiczba::getX)).get();
        -//KlasaZLiczba zmiennaO = listaObiektow.stream().max(Comparator.comparing(KlasaZLiczba::getX)).get();
         // System.out.println(zmiennaO.getX());
         //Uzywam na zmiennej Obiektowej WLASNEJ klasy i przypisuje jej
@@ -4129,16 +4134,16 @@ class Wew4{
         // *NIE MAPUJE bo przypisuje do typu KlasaZLiczba!
        -//Integer liczbaMax3 = listObject.stream()
                 .map(x -> x.getX())//mapuje bo z listy obiektow przypisuje do int
-                .max(Comparator.comparing(x -> x)).get();//WPISUJE x->x bez get bo mapowalem
+                .max(Comparator.comparing(x -> x)).get();//WPISUJE x->x bez getX bo mapowalem
                 // lub .max(Comparator.comparing(Integer::compare)).get();
-                // lub moge skorzystac z metody Integer::compare w max bo przemapowalem do Integer
-                // .max(Integer::compare).get();
-                // lub jesli przypisuje do String tylko inna metodaZwykla
-                // .max(String::valueOf).get();
+                // lub .max(Integer::compare).get();
+                // tzn. moge skorzystac z metody Integer::compare w max bo przemapowalem do Integer
+                // lub .max(String::valueOf).get();
+                // tzn. jesli przypisuje do String tylko inna metodaZwykla
         // System.out.println(liczbaMax3);
         //Lub na zmiennej prostej wybranego typu pola z klasy np int,
         // uzywam z mapowanie bo musze wyciagnac jeden rodzaj zmiennej z
-        // LISTY OBIEKTOW a nastepnie w comparing zapisuje x->x bez get.
+        // LISTY OBIEKTOW a nastepnie w comparing zapisuje x->x bez getX.
         // lub Integer::compare ew dla String String::valueOf, moge takze
         // nie uzywac Comparator.comparing tylko w max od razu Integer::compare
         // po tym nie zapominam o get() na koncu!!
