@@ -3997,14 +3997,14 @@ class Wew4{
         Operacje na strumieniach - dokladny opis + interfejsy funkcyjne
 
 
-        filter //Predicate<T> | boolean test(T t)
+        filter //Predicate<T> | boolean test(T t) //Stream + bezposrednio + nowa lista
         .filter(x -> x.getX()>22) // typ listy obiektowy
         .filter(x -> x>22) //typ listy prosty lub po mapowaniu
-        //moge wszedzie, sluzy do filtrowania, sprawdza wybrany warunek
+        //Sluzy do filtrowania, sprawdza wybrany warunek
         // w lambdzie, elementy ktore na wartunek beda true zostana w strumieniu
 
 
-        map //Function<T, R> | R apply(T t)
+        map //Function<T, R> | R apply(T t) //Stram + bezposrednio + nowa lista
         .map(x -> x.getX())
         .mapToInt(Integer::intValue) //na potrzeby sum();
         //Uzywam do zmiany typu,
@@ -4042,7 +4042,7 @@ class Wew4{
         // uzyc metody sum
 
 
-        peek //Consumer<T> | void accept(T t)
+        peek //Consumer<T> | void accept(T t) //bezposrednio + nowa lista
         .peek(x -> System.out.println(x))
         .peek(x -> System.out.println(x.getX() + " "+ x.getNapis() ))
         //Sluzy np do wyswietlenia, musze na koncu dac .collect(toList())! bo nic nie wyswietli
@@ -4065,7 +4065,7 @@ class Wew4{
         //Lub tworzac nowa liste, NA KONCU .collect(toList());!
 
 
-        forEach //Consumer<T> | void accept(T t)
+        forEach //Consumer<T> | void accept(T t) //Stream + bezposrednio + nowa lista
         strumienZInteger.forEach(System.out::println); //typ prosty/1 rodzaj pola
         strumienZObiektami.forEach(x -> System.out.println(x.getNapis()));
         .forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));//bezposrenio na stuminiu
@@ -4073,19 +4073,18 @@ class Wew4{
         //Sluzy do zamkniecia struminia i np wyswietlenia
 
        -//Stream<Integer> integerStream = listaInt.stream();
-        // integerStream.forEach(System.out::println)
+        // integerStream.forEach(System.out::println) //NOWA LINIA
        -//Stream<MojaKlasa> obiektyStream = listaOb.stream();
         // obiektyStream.forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
-        //Uzywam w type Stream TYLKO w oddzielnej linii
 
-       -//listaInteger.stream().forEach(System.out::println);
+       -//listaInteger.stream().forEach(System.out::println); //JEDNA LINIA
        -//listaObiektow.stream().forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
        -//listaObiektow.stream().map(x -> x.getX()).forEach(System.out::println);
         //Lub na stumieniu bezposrenim (moge z mapowaniem w przypadku typu obiektowego
         // aby wybrac typ i odwolac sie besrednio z :: do konkretnego pola)
 
        -//List<Integer> listaX = listaInteger.stream().collect(toList());
-        // listaX.forEach(System.out::println)
+        // listaX.forEach(System.out::println) //NOWA LINIA
        -//List<KlasaObiektow> listaO = listaObiektow.stream().collect(toList());
         // listaO.forEach(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()));
        -//List<Stream> listaS = listaObiektow.stream().map(x -> x.getNapis()).collect(toList());
@@ -4093,10 +4092,18 @@ class Wew4{
         //Lub w nowej liscie W ODDZIELNEJ LINII, na koncu stream() musze dac Collect(toList())!!
 
 
-        limit //moge wszedzie
+        limit //Stream + bezposrednio + nowa lista
+        .limit(liczba)
+        //ograniczam liczbe elementow w strumieniu
+
+       -Stream<Wiek> strumienWiek = listaWiek.stream().limit(2);
+       -listaWiek.stream().limit(2);
+       -List<Wiek> listaWiekLimit = listaWiek.stream().limit(2).collect(toList());
 
 
         count //zwraca liczbe elementow w strumieniu
+
+       -System.out.println(strumien1.count());
 
 
         sorted
