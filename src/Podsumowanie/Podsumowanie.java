@@ -251,12 +251,13 @@ public class Podsumowanie {
         char[] t1 = str.toCharArray();
         char ch1 = str.charAt(0);
 
-        str = str.substring(1,2);//wyciaga przedzial stringa od poz 1 do 2(nr pozycji w int)
+        str = str.substring(1, 2);//wyciaga przedzial stringa od poz 1 do 2(nr pozycji w int)
         str = str.substring(1);//wyciagnie przedzial od poz 1 do konca
         String[] t2 = str.split("asd");//podzieli tam gdzie wystapi "asd"
-        str = str.replace("asd","asd");
+        str = str.replace("asd", "asd");
         boolean b2 = str.matches("test");
-        int i2 = str.indexOf("1"); i2 = str.lastIndexOf("1");
+        int i2 = str.indexOf("1");
+        i2 = str.lastIndexOf("1");
 
         boolean b3 = str.equals(str);
         str = str.concat("123").concat(str);
@@ -326,7 +327,6 @@ public class Podsumowanie {
         //metoda Character.getNumericValue() PRZYJMUJE char, ZWRACA int/Integer
         int znak = Character.getNumericValue('a');//pojedynczy ''!
         // znak = 10, niezaleznie od wielkosci
-
 
 
         //------------------------------------------------------------------------
@@ -454,10 +454,10 @@ public class Podsumowanie {
                 return Integer.parseInt(napis);
             }
 
-            public boolean czyDobraLiczba(int x){
-                boolean czyParzysta = x%2==0;
-                boolean czyWiekszaOd0 = x>0;
-                boolean czyMniejszaOd10 = x<10;
+            public boolean czyDobraLiczba(int x) {
+                boolean czyParzysta = x % 2 == 0;
+                boolean czyWiekszaOd0 = x > 0;
+                boolean czyMniejszaOd10 = x < 10;
 
                 return (czyMniejszaOd10 && czyWiekszaOd0) || czyParzysta;
                 //metoda da true jesli podana liczba bedzie wieksza od 0 i
@@ -538,7 +538,7 @@ public class Podsumowanie {
                 while (true) {
                     try {
                         imie = wejscie.nextLine();
-                        if(imie.equals("-")) {
+                        if (imie.equals("-")) {
                             break;
                         }
                         if (imie.equals("Kamil")) {
@@ -551,7 +551,6 @@ public class Podsumowanie {
                 }
             }
         }
-
 
 
         //------------------------------------------------------------------------
@@ -633,9 +632,9 @@ public class Podsumowanie {
         }
         // w klasie zlodzieja
         BankAccount account = new BankAccount();
-        System.out.println("\n"+"Stan konta: "+ account.getBalance());
+        System.out.println("\n" + "Stan konta: " + account.getBalance());
 
-        try{
+        try {
             Field balance = BankAccount.class.getDeclaredField("balance");
             //Definiuje obiekt klasy refleksji
             //Wywoluje na niej NazweKlasy potem class i na koncu metode
@@ -648,11 +647,11 @@ public class Podsumowanie {
             //Za pomoca metody na obiekcie klasy reflekcji set
             // moge ustawic nowa wartosc wybranego pola
 
-        }catch (NoSuchFieldException | IllegalAccessException x) {
+        } catch (NoSuchFieldException | IllegalAccessException x) {
             System.out.println(x.getMessage());
         }
 
-        System.out.println("Stan konta po zmianie: "+ account.getBalance()); /*
+        System.out.println("Stan konta po zmianie: " + account.getBalance()); /*
 
 
         //------------------------------------------------------------------------
@@ -723,8 +722,9 @@ public class Podsumowanie {
         -----
         //stworznie obiektu z wywolanie konstruktora z jedyn parametrem
         */
-        class MojaKlasa{
+        class MojaKlasa {
             private int a;
+
             public MojaKlasa(int a) {
                 this.a = a;
             }
@@ -873,8 +873,8 @@ class Wew4{
                         // do 0!
                         Objects.equals(producent, krzeslo.producent) &&
                         Objects.equals(dataProdukcji, krzeslo.dataProdukcji);
-                        //porownywanie String i Date w Objects, metdoa
-                        // equals zwraca bezposrednio true/false
+                //porownywanie String i Date w Objects, metdoa
+                // equals zwraca bezposrednio true/false
             }
 
             @Override
@@ -887,7 +887,7 @@ class Wew4{
         Krzeslo k2 = new Krzeslo("BRW", new Date(), 12, 12.5);
         Krzeslo k3 = new Krzeslo("BRW", new Date(), 12, 80.5);
 
-        System.out.println("\n"+"-------------------");
+        System.out.println("\n" + "-------------------");
         System.out.println("Porownuje krzeslo k1 z k2: " + k1.equals(k2));
         System.out.println("Porownuje krzeslo k2 z k3: " + k2.equals(k3));
         System.out.println("Porownuje krzeslo k1 z k3: " + k1.equals(k3));
@@ -1399,7 +1399,6 @@ class Wew4{
         test2.metoda(new PudelkoWildcards3<>(new Prostokat()));
         //test2.metoda(new PudelkoWildcards3<>(new Object()));
         //blad - wysylam cos wyzje niz figura
-
 
 
         //-----metody "upper bound" ? extedns
@@ -1918,7 +1917,8 @@ class Wew4{
         class Auto { // ta klasa nie musi implementwoac intef. Serializable
             private String marka;
 
-            public Auto(){}//ta klasa musi miec konstruktor bezparametowy! - bezwglednie
+            public Auto() {
+            }//ta klasa musi miec konstruktor bezparametowy! - bezwglednie
 
             public Auto(String marka) {
                 this.marka = marka;
@@ -1932,10 +1932,11 @@ class Wew4{
                 this.moc = moc;
             }
         }
-        class Factory{
+        class Factory {
             String lokalizacjaX = "src/Podsumowanie/PlikiTestowe/plikObiektowy4.bin";
-            void seriazlize(){
-                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacjaX))){
+
+            void seriazlize() {
+                try (ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacjaX))) {
                     Audi audi = new Audi("audi", 120);
                     strWyj.writeObject(audi);
                 } catch (FileNotFoundException e) {
@@ -1944,8 +1945,9 @@ class Wew4{
                     e.printStackTrace();
                 }
             }
-            void deserialize(){
-                try(ObjectInputStream strWyj = new ObjectInputStream(new FileInputStream(lokalizacjaX))){
+
+            void deserialize() {
+                try (ObjectInputStream strWyj = new ObjectInputStream(new FileInputStream(lokalizacjaX))) {
                     Audi audi2 = (Audi) strWyj.readObject();
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -2004,21 +2006,21 @@ class Wew4{
             void main() {
                 System.out.println("-------------------");
                 String lokalizacja = "src/Podsumowanie/PlikiTestowe/plikObiektowy2.bin";
-                Opona[] opony = new Opona[]{new Opona(12),new Opona(15)};
+                Opona[] opony = new Opona[]{new Opona(12), new Opona(15)};
                 Silnik silnik = new Silnik("Boxer");
                 Samochod samochod = new Samochod(silnik, opony);
-                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacja));
-                ObjectInputStream strWej = new ObjectInputStream(new FileInputStream(lokalizacja))){
+                try (ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacja));
+                     ObjectInputStream strWej = new ObjectInputStream(new FileInputStream(lokalizacja))) {
                     //zapis
                     strWyj.writeObject(samochod);
 
                     //odczyt
-                    Samochod noweAuto = (Samochod)strWej.readObject();
+                    Samochod noweAuto = (Samochod) strWej.readObject();
                     //musze rzutowac
-                    System.out.println("nazwa silnika: "+noweAuto.silnik.getNazwa());
+                    System.out.println("nazwa silnika: " + noweAuto.silnik.getNazwa());
                     Opona[] noweOpony = noweAuto.getOpony();
-                    for(int i=0; i<noweAuto.opony.length; i++){
-                        System.out.println("Opona "+(i+1)+" ma rozmiar : "+noweOpony[i].rozmiar);
+                    for (int i = 0; i < noweAuto.opony.length; i++) {
+                        System.out.println("Opona " + (i + 1) + " ma rozmiar : " + noweOpony[i].rozmiar);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -2046,34 +2048,37 @@ class Wew4{
          UWAGA ! w jednym main jesli zrobimy serializacje i deserializacje pola statycznego
          ze zmiana w obiekcie - pokaze po deserializacji takze zmieniona wartosc
          */
-        class Czlowiek implements Serializable{
+        class Czlowiek implements Serializable {
             private transient Integer identyfikator;
             private transient int wiek;
             private String imie;
+
             public Czlowiek(Integer identyfikator, int wiek, String imie) {
                 this.identyfikator = identyfikator;
                 this.wiek = wiek;
                 this.imie = imie;
             }
         }
-        class CzlowiekFabryka{
+        class CzlowiekFabryka {
             String lokalizacja = "src/Podsumowanie/PlikiTestowe/plikObiektowy3.bin";
-            void zapisz(){
+
+            void zapisz() {
                 Czlowiek c1 = new Czlowiek(2341, 27, "Kamil");
-                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacja))){
+                try (ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream(lokalizacja))) {
                     strWyj.writeObject(c1);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            void oczytaj(){
-                try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream(lokalizacja))){
-                    Czlowiek c2 = (Czlowiek)strWej.readObject();
+
+            void oczytaj() {
+                try (ObjectInputStream strWej = new ObjectInputStream(new FileInputStream(lokalizacja))) {
+                    Czlowiek c2 = (Czlowiek) strWej.readObject();
                     System.out.println("----------------------------");
-                    System.out.println("czlowiek identyfikator : "+c2.identyfikator);
+                    System.out.println("czlowiek identyfikator : " + c2.identyfikator);
                     //pokaze null
-                    System.out.println("czlowiek wiek : "+c2.wiek);
-                    System.out.println("czlowiek imie : "+c2.imie);
+                    System.out.println("czlowiek wiek : " + c2.wiek);
+                    System.out.println("czlowiek imie : " + c2.imie);
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (ClassNotFoundException e) {
@@ -2146,15 +2151,17 @@ class Wew4{
          Klasa obiekt = (Klasa)strWej.readObject();
          int x = strWej.readInt();
          */
-        class SerializacjaUnikalna implements Serializable{
+        class SerializacjaUnikalna implements Serializable {
             private transient String stringTans;
             private String stringNormalny;
             private int liczba;
-            public SerializacjaUnikalna(String stringTans, String stringNormalny, int liczba){
+
+            public SerializacjaUnikalna(String stringTans, String stringNormalny, int liczba) {
                 this.stringTans = stringTans;
                 this.stringNormalny = stringNormalny;
                 this.liczba = liczba;
             }
+
             private void readObject(ObjectInputStream strWej) throws IOException, ClassNotFoundException {
                 stringTans = strWej.readUTF(); //mam dostep do pol klasy wiec nie musze ich deklarowac
                 stringNormalny = strWej.readUTF();
@@ -2164,6 +2171,7 @@ class Wew4{
                 // readObject jesli jej nie zadeklaruje czyli dodanie wszystkich pol obiektu
                 // klasy do strumienia OBIEKTU
             }
+
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
                 //Na poczatku moge dodac strWyj.defaultWriteObject() aby
                 // zostal zapisany obiekt w calosci (wszystkie jego pola automatycznie)
@@ -2174,18 +2182,18 @@ class Wew4{
                 //wybrana metodaZwykla zapisu zalezna od rodzaju zmiennej
                 //moge nawet zapisac zmienna z parametrem Transient
                 strWyj.writeUTF(stringNormalny);
-                strWyj.writeInt(liczba+10);
+                strWyj.writeInt(liczba + 10);
             }
         }
-        class SerializacjaUnikalnaFabryka{
-            void main(){
+        class SerializacjaUnikalnaFabryka {
+            void main() {
                 SerializacjaUnikalna s = new SerializacjaUnikalna("napT", "napN", 10);
-                try(ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("SU"))){
+                try (ObjectOutputStream strWyj = new ObjectOutputStream(new FileOutputStream("SU"))) {
                     strWyj.writeObject(s);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                try(ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("SU"))){
+                try (ObjectInputStream strWej = new ObjectInputStream(new FileInputStream("SU"))) {
                     SerializacjaUnikalna s2 = (SerializacjaUnikalna) strWej.readObject();
                     System.out.println(s2.stringTans);
                     System.out.println(s2.stringNormalny);
@@ -2211,14 +2219,16 @@ class Wew4{
          void writeObject(ObjectOutputStream strWyj)
          i wyrzucic w nich odpowienio podpisany wyjatek NotSerializableException
          */
-        class Chinczyk extends Czlowiek{
+        class Chinczyk extends Czlowiek {
 
             public Chinczyk(Integer identyfikator, int wiek, String imie) {
                 super(identyfikator, wiek, imie);
             }
+
             private void writeObject(ObjectOutputStream strWyj) throws IOException {
                 throw new NotSerializableException("Nie serialzuje Chinczyka");
             }
+
             private void readObject(ObjectInputStream strWej) throws IOException {
                 throw new NotSerializableException("Nie serialzuje Chinczyka");
             }
@@ -2235,33 +2245,38 @@ class Wew4{
         W tych metodach nie ma metody defaultWrite/ReadObject !! wiec musze
          sam zadklarwoac wszystko co chce odczytac i zapisac do strumienia z Obiektu
          */
-        class PelnaKontrola implements Externalizable{
+        class PelnaKontrola implements Externalizable {
 
             private String napis;
-            public PelnaKontrola(){
+
+            public PelnaKontrola() {
 
             }
-            public PelnaKontrola(String napis){
-                this.napis=napis;
+
+            public PelnaKontrola(String napis) {
+                this.napis = napis;
             }
+
             @Override
             public void writeExternal(ObjectOutput out) throws IOException {
                 out.writeUTF(napis);
             }
+
             @Override
             public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
                 napis = in.readUTF();
             }
-            void main(){
+
+            void main() {
                 PelnaKontrola pK = new PelnaKontrola("testuje Pelna konrole");
-                try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("pelnaKontrola.bin"))){
+                try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("pelnaKontrola.bin"))) {
                     out.writeObject(pK);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("pelnaKontrola.bin"))){
+                try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("pelnaKontrola.bin"))) {
                     PelnaKontrola pKnew = (PelnaKontrola) in.readObject();
                     System.out.println(pKnew.napis);
                 } catch (FileNotFoundException e) {
@@ -2295,7 +2310,7 @@ class Wew4{
          wiec odwolujac sie do nich podaje nazwe typu wyliczeniowego
          np zmienna w klasie:
         */
-         KoszulkaRozmiar rozmiar = KoszulkaRozmiar.M;
+        KoszulkaRozmiar rozmiar = KoszulkaRozmiar.M;
         System.out.println("------------------");
         System.out.println(rozmiar);
         //pokaze sama wartosc Enum czyli M!
@@ -2311,11 +2326,11 @@ class Wew4{
         Nie mozna tworzyc instancji enum
 
         Przyklad uzycia w switch: */
-         switch (rozmiar){
-             case L://pisze sama wartosc bez nazwy klasy!
-                 System.out.println("mam rozmiar l");
-                 break;
-         }
+        switch (rozmiar) {
+            case L://pisze sama wartosc bez nazwy klasy!
+                System.out.println("mam rozmiar l");
+                break;
+        }
 
          /*
         Konstruktor Enum jest zawsze private ! - nie musze tego modyfikatora pisac
@@ -2392,12 +2407,12 @@ class Wew4{
         //.vlues() - metoda statyczna wywolywana na nazwie Enuma, pokaze wartosci
         //          jakie ma Enum, mozna wyswoetlic w foreach
         System.out.println("Wartosci Enuma porstego");
-        for (KoszulkaRozmiar x : KoszulkaRozmiar.values()){
+        for (KoszulkaRozmiar x : KoszulkaRozmiar.values()) {
             System.out.print(x + " ");
         }
-        System.out.println("\n\n"+"Wartosci Enuma rozszerzonego");
-        for (KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()){
-            System.out.print("\n"+x + " ");
+        System.out.println("\n\n" + "Wartosci Enuma rozszerzonego");
+        for (KoszulkaRozmiarDokladnie x : KoszulkaRozmiarDokladnie.values()) {
+            System.out.print("\n" + x + " ");
             System.out.print(x.dajSzerokoscKlatki() + " ");
             System.out.print(x.dajwysokoscKoszulki() + " ");
             System.out.print(x.dajdlugoscRekawa());
@@ -2407,7 +2422,7 @@ class Wew4{
 
         //.valueOf("WARTOSC") - metoda statyczna wywolywana na nazwie enuma, pokaze
         //                       wartosc wpisanej w "" wartosci
-        System.out.println("\n"+KoszulkaRozmiarDokladnie.valueOf("S"));
+        System.out.println("\n" + KoszulkaRozmiarDokladnie.valueOf("S"));
         //pokaze samo S
         System.out.println(KoszulkaRozmiar.valueOf("S"));
         //pokaze samo S
@@ -2417,17 +2432,17 @@ class Wew4{
         //              pokaze numer kolejnosci zmiennej Enuma
         //              ktora posiada wybrana zmienna (liczone od 0)
         KoszulkaRozmiar koszulka3 = KoszulkaRozmiar.XL;
-        System.out.println("Numer zmiennej Enuma koszulki 3 : "+koszulka3.ordinal());
+        System.out.println("Numer zmiennej Enuma koszulki 3 : " + koszulka3.ordinal());
         //3 (XL jest 4 ale liczy od 0)
 
 
         //.name() - metoda wywolywana na zmiennej typu Enum,
         //           zwroci wartosc zmiennej na jakiej zostanie wywowlana metoda
         KoszulkaRozmiar koszulka1 = KoszulkaRozmiar.S;
-        System.out.println("koszulka1 : "+koszulka1.name());
+        System.out.println("koszulka1 : " + koszulka1.name());
         //S
         KoszulkaRozmiarDokladnie koszulka2 = KoszulkaRozmiarDokladnie.M;
-        System.out.println("koszulka2 : "+koszulka2.name());
+        System.out.println("koszulka2 : " + koszulka2.name());
         //M
 
 
@@ -2664,22 +2679,22 @@ class Wew4{
 
         Dostep do klas lokalnych jest tylko w bloku w ktorym zostaly zdefiniowane!
         */
-        class KlasaGlowna{
+        class KlasaGlowna {
 
-            /*static*/ class KlasaWewnetrznaStatyczna{
+            /*static*/ class KlasaWewnetrznaStatyczna {
             }
 
             class KlasaWewnetrzna {
             }
             //koniec klasy wewnetrznej!
 
-            public KlasaWewnetrzna rozpocznij(){//metoda
+            public KlasaWewnetrzna rozpocznij() {//metoda
                 return new KlasaWewnetrzna();
                 //nie musze pisac return this.new KlasaWeWnetrznaZwykla();
             }
 
             //Tworznie instancji klasy wewnetrznej
-            public void main(){
+            public void main() {
                 //metoda 1 gdy klasa jest niestatyczna (KlasaWewnetrzna)
                 KlasaGlowna klasaGlowna = new KlasaGlowna();
 
@@ -2707,8 +2722,9 @@ class Wew4{
                 //liczbaNieFinalna = 40; BLAD!! jesli klasa wewnatrz metody (lokalna)
                 // korzysta ze zmiennych moge TYLKO RAZ zadeklarawoac jej wartosc!
 
-                class KlasaWeWLokalna{//jestem w main
-                    void powiedzCos(){
+                class KlasaWeWLokalna {//jestem w main
+
+                    void powiedzCos() {
                         System.out.println(liczba);
                         System.out.println(liczbaNieFinalna);
                     }
@@ -2724,7 +2740,7 @@ class Wew4{
         dniWMiesiacu.put("luty", 28);
         dniWMiesiacu.put("marzec", 31);
 
-        for(Map.Entry<String, Integer> x : dniWMiesiacu.entrySet() ){
+        for (Map.Entry<String, Integer> x : dniWMiesiacu.entrySet()) {
             //interface Entry<K, V> - deklaracja intefejsu klasy Map - Entry
             //Set<Map.Entry<K, V>> entrySet() - deklaracja entrySet()
             System.out.println(x.getKey() + " ma " + x.getValue() + " dni");
@@ -2760,7 +2776,8 @@ class Wew4{
             //Moge takze w tej klasie definiowac zmeinne i metody lecz glownie polega
             // to na tym ze wykorzysstuje ja tylko do zaimplementowania interfesju
             int zmienna = 123;
-            int metoda(){
+
+            int metoda() {
                 return zmienna;
             }
         };//nie zapominam o sredniku
@@ -2793,22 +2810,24 @@ class Wew4{
                 new KlasaDoSortowania("f"),
                 new KlasaDoSortowania("b")
         );
-         class KlasaDoSortowania2 implements Comparable{
+        class KlasaDoSortowania2 implements Comparable {
             public String napis;
+
             public KlasaDoSortowania2(String napis) {
                 this.napis = napis;
             }
+
             @Override
             public int compareTo(Object o) {
-                KlasaDoSortowania x = (KlasaDoSortowania)o;
+                KlasaDoSortowania x = (KlasaDoSortowania) o;
                 return this.napis.length() - x.napis.length();
             }
 
         }
         Collections.sort(listaDoSortowania);
         System.out.println("Sortowanie 1 wg dlugosci:");
-        for(KlasaDoSortowania x : listaDoSortowania){
-            System.out.print(x.napis+ " ");
+        for (KlasaDoSortowania x : listaDoSortowania) {
+            System.out.print(x.napis + " ");
         }
         /*
         --
@@ -2835,16 +2854,16 @@ class Wew4{
          Comparator<KlasaDoSortowania> i w niej metode interfejsu
          int compare (KlasaDoSortowania o1, KlasaDoSortowania o2)
          */
-         class KlasaSortujaca2 implements Comparator<KlasaDoSortowania>{
+        class KlasaSortujaca2 implements Comparator<KlasaDoSortowania> {
             @Override
             public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
                 return o1.napis.compareTo(o2.napis);
             }
-         }
-          Collections.sort(listaDoSortowania, new KlasaSortujaca());
-        System.out.println("\n"+"Sortowanie 2 wg naturalnego porzadku:");
-        for(KlasaDoSortowania x : listaDoSortowania){
-            System.out.print(x.napis+ " ");
+        }
+        Collections.sort(listaDoSortowania, new KlasaSortujaca());
+        System.out.println("\n" + "Sortowanie 2 wg naturalnego porzadku:");
+        for (KlasaDoSortowania x : listaDoSortowania) {
+            System.out.print(x.napis + " ");
         }
           /*
 
@@ -3232,7 +3251,7 @@ class Wew4{
         Matcher kotMatcher = kotPattern.matcher("mam kota o imieniu --Lucky--. jest super");
         kotMatcher.matches();//konieczne aby umiescilo w grupy
         System.out.println();
-        System.out.println("Imie kota : "+kotMatcher.group(1));
+        System.out.println("Imie kota : " + kotMatcher.group(1));
 
         /*
         przyklad \w+ \((\w+)\) \w+ (WSZEDZIE WE WZORCU MUSZE DAC 2x\ !!)
@@ -3276,13 +3295,13 @@ class Wew4{
         Pattern wzorzecZachlanny = Pattern.compile("<(.+)>");
         Matcher dopasowanieWZ = wzorzecZachlanny.matcher("<em>jakis podkreslony tekst</em>gdfgdfg");
         dopasowanieWZ.find(); //UZYWAM FIND!
-        System.out.println("znacznik podkreslenia 1 : "+dopasowanieWZ.group(1));
+        System.out.println("znacznik podkreslenia 1 : " + dopasowanieWZ.group(1));
         //znacznik podkreslenia 1 : em>jakis podkreslony tekst</em - BLAD
 
         Pattern wzorzecZachlanny2 = Pattern.compile("<([^>]+)>"); //poprawne
         Matcher dopasowanieWZ2 = wzorzecZachlanny2.matcher("<em>jakis podkreslony tekst</em>");
         dopasowanieWZ2.find();
-        System.out.println("znacznik podkreslenia 2 : "+dopasowanieWZ2.group(1));
+        System.out.println("znacznik podkreslenia 2 : " + dopasowanieWZ2.group(1));
         //znacznik podkreslenia 2 : em
 
         /*
@@ -3299,7 +3318,7 @@ class Wew4{
         Pattern wzorzecNieZachlanny = Pattern.compile("(.{3,5})");
         Matcher dopazsowanieWNZ = wzorzecNieZachlanny.matcher("123123");
         dopazsowanieWNZ.find(); //123
-        System.out.println("Dopasownie niezachlanne {} : "+dopazsowanieWNZ.group(1));
+        System.out.println("Dopasownie niezachlanne {} : " + dopazsowanieWNZ.group(1));
 
 
         /*----
@@ -3361,18 +3380,18 @@ class Wew4{
         Pattern wzorzecLiczb = Pattern.compile("\\d+");//musza byc same liczby
         //moge dac "\\d+?" to find znajdzie 1 liczbe
         Matcher dopasowanieLiczb = wzorzecLiczb.matcher("abc123def");
-        System.out.println("find : "+dopasowanieLiczb.find()); // true
-        System.out.println("pierwsza liczba : "+dopasowanieLiczb.group());
+        System.out.println("find : " + dopasowanieLiczb.find()); // true
+        System.out.println("pierwsza liczba : " + dopasowanieLiczb.group());
         //DO GRUPY BEDE MOGL SIE DOSTAC JESLI OSTATNIA METODA NA DOPASOWANIU
         // BEDZIE TRUE (find lub matches) INACZEJ BEDZIE BLAD !
-        System.out.println("matches : "+dopasowanieLiczb.matches()); // false
+        System.out.println("matches : " + dopasowanieLiczb.matches()); // false
 
         Pattern wzorzecKotwicy = Pattern.compile("\\d+$");//liczby na koncu
         Matcher dopasowanieWK = wzorzecKotwicy.matcher("abc123");
         //matches bedzie flase
         dopasowanieWK.find();
         //jesli na koncu dam litere tj abc123x to find takze bedze false
-        System.out.println("liczby z konca : "+dopasowanieWK.group());
+        System.out.println("liczby z konca : " + dopasowanieWK.group());
 
 
 
@@ -3517,21 +3536,20 @@ class Wew4{
         }//deklaracja na koncu  */
 
 
-
         CzyParzysta<Integer> czyParzystaAnonim = new CzyParzysta<Integer>() {
             @Override
             public boolean sprawdz(Integer obiekt) {
-                return obiekt%2==0;
+                return obiekt % 2 == 0;
             }
         };
         System.out.println();
-        System.out.println("Czy liczba 15 jest parzysta : "+czyParzystaAnonim.sprawdz(15));
-        System.out.println("Czy liczba 20 jest parzysta : "+czyParzystaAnonim.sprawdz(20));
+        System.out.println("Czy liczba 15 jest parzysta : " + czyParzystaAnonim.sprawdz(15));
+        System.out.println("Czy liczba 20 jest parzysta : " + czyParzystaAnonim.sprawdz(20));
 
         //to samo w labda:
         CzyParzysta<Integer> czyParzystaLambda = obiekt -> obiekt % 2 == 0;
-        System.out.println("Czy liczba 15 jest parzysta: "+czyParzystaAnonim.sprawdz(15));
-        System.out.println("Czy liczba 20 jest parzysta: "+czyParzystaAnonim.sprawdz(20));
+        System.out.println("Czy liczba 15 jest parzysta: " + czyParzystaAnonim.sprawdz(15));
+        System.out.println("Czy liczba 20 jest parzysta: " + czyParzystaAnonim.sprawdz(20));
 
 
 
@@ -3560,7 +3578,7 @@ class Wew4{
         // + przypisanie wartosci tej klasy w wywolaniu na obiekcie bifunction metody apply i
         // wyslaniu do niej wartosci jako parametry - to przypisuje do nowego obiektu tej klasy
         BiFunction<String, Integer, KlasaMoja> obiektInterfejsu = KlasaMoja::new;
-         KlasaMoja obKlasaMoja = obiektInterfejsu.apply("wartosc", 123);
+        KlasaMoja obKlasaMoja = obiektInterfejsu.apply("wartosc", 123);
 
         //-Function<T, R> - R apply (T t)
         //na strumieniu: (map) x -> x.name//x -> x.name.toUpperCase()
@@ -3568,35 +3586,35 @@ class Wew4{
         int L1 = zmianaSILambda.apply("12");
 
         //-ToIntFunction<T> | int applyAsInt(T t)
-        ToIntFunction<Integer> toIntFunction = x -> x+12;
+        ToIntFunction<Integer> toIntFunction = x -> x + 12;
         int y = toIntFunction.applyAsInt(22);
 
         //-ToDoubleFunction<T> | double applyAsDouble(T t)
-        ToDoubleFunction<Double> toDoubleFunction = x -> x+12.3;
+        ToDoubleFunction<Double> toDoubleFunction = x -> x + 12.3;
         double y2 = toDoubleFunction.applyAsDouble(34.5);
 
         //-UnaryOperator<T> | T apply (T t)
-        UnaryOperator<Integer> pomnozPrzezDwaLambda = liczbaDoMnozenia -> liczbaDoMnozenia*2;
-        System.out.println("14*2  w lambdzie: "+pomnozPrzezDwaLambda.apply(14));
+        UnaryOperator<Integer> pomnozPrzezDwaLambda = liczbaDoMnozenia -> liczbaDoMnozenia * 2;
+        System.out.println("14*2  w lambdzie: " + pomnozPrzezDwaLambda.apply(14));
 
         //-Supplier<T> | T get()
         //moge odwolac sie konstruktora klasy ::new
         Supplier<Integer> pokazInteger10Lambda = () -> 10;
-        System.out.println("pokaz 10 Integer z lambdy : "+pokazInteger10Lambda.get());
+        System.out.println("pokaz 10 Integer z lambdy : " + pokazInteger10Lambda.get());
 
         //-IntSuplier | int getAsInt()
         IntSupplier pokaz10lambda = () -> 10;
-        System.out.println("pokazuje 10 int z lambdy : "+pokaz10lambda.getAsInt());
+        System.out.println("pokazuje 10 int z lambdy : " + pokaz10lambda.getAsInt());
 
         //-BiPredicate<T, R> | boolean test (T t, R r)
-        BiPredicate<Integer, Integer> czyRowne = (g,h) -> g==h;
-        System.out.println(czyRowne.test(20,30));
+        BiPredicate<Integer, Integer> czyRowne = (g, h) -> g == h;
+        System.out.println(czyRowne.test(20, 30));
 
         //-Predicate<T> | boolean test(T t)
         //na strumieniu : (filter) x -> x.rating > 8
         //x -> new BigDecimal(150).compareTo(x.price) > 0
         Predicate<Integer> czyParzystaLambda2 = liczbaDoSprawdzenia -> liczbaDoSprawdzenia % 2 == 0;
-        System.out.println("Czy liczba 15 jest parzysta : "+czyParzystaLambda2.test(15));
+        System.out.println("Czy liczba 15 jest parzysta : " + czyParzystaLambda2.test(15));
 
         //-Consumer<T> | void accept(T t)
         //na strumieniu (forEach) System.out::println
@@ -3604,8 +3622,8 @@ class Wew4{
         Consumer<Integer> pokazILambda = jakasLiczba -> System.out.println("jakasLiczba");
         pokazILambda.accept(123);
         //przyklad z foreach
-        Consumer<Integer> listaLiczbConsumer = x -> System.out.print(x+" ");
-        List<Integer>listaLiczb = Arrays.asList(4,2,5,7,0);
+        Consumer<Integer> listaLiczbConsumer = x -> System.out.print(x + " ");
+        List<Integer> listaLiczb = Arrays.asList(4, 2, 5, 7, 0);
         listaLiczb.forEach(listaLiczbConsumer);
         System.out.println();
         listaLiczbConsumer.accept(listaLiczb.get(0));
@@ -3614,8 +3632,8 @@ class Wew4{
         //----
         //Przyklady zastosowan:
         //Wypisanie liczb z kolekcji
-        List<Integer> listaLiczb2 = Arrays.asList(2,4,6,8,7);
-        Consumer<Integer> listaLiczbConsumer2 = x -> System.out.print(x+" ");
+        List<Integer> listaLiczb2 = Arrays.asList(2, 4, 6, 8, 7);
+        Consumer<Integer> listaLiczbConsumer2 = x -> System.out.print(x + " ");
         //-Consumer<T> | void accept(T t)
         listaLiczb.forEach(listaLiczbConsumer);
         //petla forEach dziala tyle obrotow ile lista posiada elementow
@@ -3647,7 +3665,7 @@ class Wew4{
         //lub w lambdzie:
         IntSupplier zmiennaIntInterfaceLambda = () -> obiekt.hashCode();
 
-        System.out.println("test hashcode :: : "+zmiennaIntInterace.getAsInt());
+        System.out.println("test hashcode :: : " + zmiennaIntInterace.getAsInt());
         System.out.println(obiekt.hashCode());//to samo
         System.out.println(zmiennaIntInterfaceLambda.getAsInt());
 
@@ -3667,7 +3685,7 @@ class Wew4{
         //inny przyklad
         Wiek obiektWiek = new Wiek(10);
         IntSupplier wiekSupplier = obiektWiek::getWiek;
-        System.out.println("podany obiekt wiek ma wiek : "+wiekSupplier.getAsInt());
+        System.out.println("podany obiekt wiek ma wiek : " + wiekSupplier.getAsInt());
         //zwroci 10
 
 
@@ -3689,7 +3707,7 @@ class Wew4{
         //inny przykład
         ToIntFunction<Wiek> wiekToIntFunction = Wiek::getWiek;
         Wiek obiektWiek2 = new Wiek(20);
-        System.out.println("Wiek toIntFunction : "+wiekToIntFunction.applyAsInt(obiektWiek2));
+        System.out.println("Wiek toIntFunction : " + wiekToIntFunction.applyAsInt(obiektWiek2));
 
 
         //----
@@ -3708,7 +3726,7 @@ class Wew4{
 
         Strumienie sluza do przetwarzania danych np z kolekcji czy wyrazen regulrnych
 
-        Nie sa struktrami danych! struktury służą do przechowywania danych a strumienie
+        Nie sa struktrami danych! Struktury służą do przechowywania danych a strumienie
          służą do opisywania algorytmów, operacji na danych.
 
         Moga zrownoleglic prace na danych dzieki czemu mozliwe jest szybkie
@@ -3733,10 +3751,10 @@ class Wew4{
         listaImie.add(new Imie("gracjan"));
 
         numbers.stream()
-            .map(v -> numbers.add(v) ? 1 : 0)
-            //chce dodac do listy elementy - BLAD ConcurrentModificationException
-            //.forEach(System.out::println);
-            ;
+                .map(v -> numbers.add(v) ? 1 : 0)
+        //chce dodac do listy elementy - BLAD ConcurrentModificationException
+        //.forEach(System.out::println);
+        ;
 
 
         //----
@@ -3744,15 +3762,17 @@ class Wew4{
 
         //-Tworzenie strumienia
         Stream<Integer> strumien1 = numbers.stream();
+        listaWiek.stream().forEach(x -> System.out.print(" wiek : "+x.getWiek()));
+        List<Integer> wieks = listaWiek.stream().map(Wiek::getWiek).collect(toList());
 
 
         //-Przetwarzanie danych wewnatrz strumienia
         Stream<Integer> strumien2 = numbers.stream()
-                .filter(x -> x>10);
+                .filter(x -> x > 10);
 
         Stream<Wiek> strumien3 = listaWiek.stream()
-                .filter(x -> x.getWiek()>10);
-        strumien3.map(x -> x.getWiek()*2);
+                .filter(x -> x.getWiek() > 10);
+        strumien3.map(x -> x.getWiek() * 2);
 
         Stream<Imie> strumien4 = listaImie.stream();
         strumien4.map(x -> x.getImie().toUpperCase());
@@ -3760,6 +3780,10 @@ class Wew4{
 
 
         //-Zakonczenie strumienia
+        strumien1.forEach(System.out::println);
+        listaWiek.stream().forEach(x -> System.out.print(" wiek2 : "+x.getWiek()));
+        wieks.forEach(x -> System.out.println(x));
+
 
 
         //----
@@ -3784,7 +3808,7 @@ class Wew4{
         Stream.empty();
 
         //-Strumien danych z pliku
-        try(Stream<String> lines = new BufferedReader(new FileReader("plik1.txt")).lines()){
+        try (Stream<String> lines = new BufferedReader(new FileReader("plik1.txt")).lines()) {
             //zrob cos
         } catch (FileNotFoundException e) {
         }
@@ -3796,8 +3820,8 @@ class Wew4{
         -filter - zwraca strumien zawierajacy tylko te elemnty dla ktorych
                   filtr zwrocil wartosc true
                   Predicate<T> | boolean test(T t)*/
-        numbers.stream().filter(x -> x>10);
-        listaWiek.stream().filter(x -> x.getWiek()>10);/*
+        numbers.stream().filter(x -> x > 10);
+        listaWiek.stream().filter(x -> x.getWiek() > 10);/*
 
         -map - kazdy z elementow moze zostac zmieniony do innego typu, nowy obiekt zwarty
                jest w nowym strumieniu, uzywam aby zmiec typ
@@ -3808,10 +3832,10 @@ class Wew4{
         listaWiek.stream().map(Wiek::getWiek).forEach(System.out::println);
 
         Map<String, Integer> strumienMapa = new HashMap<>();
-        strumienMapa.put("a",1);
-        strumienMapa.put("b",2);
+        strumienMapa.put("a", 1);
+        strumienMapa.put("b", 2);
         strumienMapa.values().stream().mapToInt(Integer::intValue).sum();
-        System.out.println("x : "+strumienMapa.values());/*
+        System.out.println("x : " + strumienMapa.values());/*
 
         -peek - pozwala przeprowadzic operacje na kazdym elemencie w stumieniu, zwraca
                 stumien z tymi samymi elemntami
@@ -3844,24 +3868,24 @@ class Wew4{
         - forEach - wykonuje zadaną operację dla każdego elementu
                     Consumer<T> | void accept(T t) */
         Stream<Wiek> filtrowanyStrumien = listaWiek.stream()
-                        .filter(x -> x.getWiek() > 4);
-                        //strumien typu Wiek filtruje
+                .filter(x -> x.getWiek() > 4);
+        //strumien typu Wiek filtruje
         Stream<Integer> liczbyZeStrumienia = filtrowanyStrumien
-                        .map(x -> x.getWiek());
-                        //map zmieniam strumien Wiek na Integer to znaczy
-                        // elementy zapisuje do strumienia tylko elementy typu Integer
+                .map(x -> x.getWiek());
+        //map zmieniam strumien Wiek na Integer to znaczy
+        // elementy zapisuje do strumienia tylko elementy typu Integer
         liczbyZeStrumienia.forEach(System.out::println);/*
                         //posiadajac typ Integer w stumieniu moge wywolac sout
 
 
         - count - zwraca liczbę elementów w strumieniu (strumien nie moze byc zamkniety!)*/
-        System.out.println("ilosc elem w strumieniu : "+strumien1.count());/*
+        System.out.println("ilosc elem w strumieniu : " + strumien1.count());/*
 
 
         - allMatch - zwraca flagę informującą czy wszystkie elementy spełniają warunek.
                       Przestaje sprawdzać na pierwszym elemencie, który tego warunku nie spełnia
                       //Predicate<T> | boolean test(T t)*/
-        boolean czyWszystkoWiekszeOdZera = listaWiek.stream().allMatch(x -> x.getWiek()>0);/*
+        boolean czyWszystkoWiekszeOdZera = listaWiek.stream().allMatch(x -> x.getWiek() > 0);/*
 
 
         -collect - pozwala na utworzenie nowego typu na podstawie elementów strumienia.
@@ -3884,7 +3908,7 @@ class Wew4{
         //filtruje i zapisuje tylko liczby parzyste do strumienia
         System.out.println("W trakcie 1");
         strumienLiczb = strumienLiczb.map(x -> {
-            System.out.println("> " + x );
+            System.out.println("> " + x);
             //wyswietlam ">" i liczbe
             return x;
             //+ zwracam ta liczba
@@ -3933,16 +3957,16 @@ class Wew4{
 
         - Filtrowanie na poczatku
         */
-        List<Integer> liczbyy = Arrays.asList(3,4,5);
+        List<Integer> liczbyy = Arrays.asList(3, 4, 5);
         int slowNumber = liczbyy.stream()
                 .mapToInt(Integer::intValue)
                 //musze dac metode mapToInt aby uzyc sum()!
-                .filter(x -> x>4)
+                .filter(x -> x > 4)
                 .sum();
         //lepiej dac filtrowanie na poczatku aby nie mapowac
         // niepotrzebnych elementow
         int slowNumber2 = liczbyy.stream()
-                .filter(x -> x>4)
+                .filter(x -> x > 4)
                 .mapToInt(Integer::intValue)
                 .sum();/*
 
@@ -4152,15 +4176,127 @@ class Wew4{
         -int suma = liczbyLista.stream().mapToInt(Integer::intValue).sum();
         //Metoda sumuje liczby strumienia, MUSI byc zmapowane z metoda mapToInt!
         // + moge wykorzystac metode klasy Integer zwracajaca int;
-
-
          */
+    }
 
 
 
+    //ALGORYTMY:
+
+    //Metoda dzielaca liczbe na czesci i pokazujaca ja od tylu
+    public void printCharPerLine(int number) {
+        while (number > 0) {
+            int reminder = number % 10;
+            number /= 10;
+            System.out.println(reminder);
+        }
+    }
+    //lub
+    public void liczbaOdTylu(int x){
+        String s = x+"";
+        for (int i = s.length()-1; i>=0; i--) {
+            System.out.println(s.charAt(i));
+        }
+    }
+
+    //Metoda odwracajaca napis:
+    public static String odwrocNapis(String s){
+        StringBuilder sb = new StringBuilder(s);
+        sb.reverse();
+        return sb.toString();
+    }
+    public static String odwrocNapis2(String s){
+        String sTemp = "";
+        for (int i = s.length()-1; i >=0 ; i--) {
+            sTemp= sTemp+s.charAt(i);
+        }
+        return sTemp;
+    }
+    public static String odwrocNapis3(String s){
+        char[] tab = s.toCharArray();
+        String sReturn = "";
+        for (int i = tab.length-1; i >= 0; i--) {
+            sReturn += tab[i];
+        }
+        return sReturn;
+    }
+
+    //Metoda zwracajaca liczbe binarna:
+    public static int liczbaBinarna(int x){
+        StringBuilder sb = new StringBuilder();
+        while (x>0){
+            sb.append(x%2);
+            x/=2;
+        }
+        return Integer.valueOf(sb.reverse().toString());
+    }
+    public static void naBinarny(Integer x){
+        String out = "";
+        while (x>0){
+            out+=x%2;
+            x/=2;
+        }
+        System.out.println(new StringBuilder(out).reverse());
+    }
+
+    //Metoda spawdzajaca czy napis jest palimdromem:
+    public static boolean czyPalindrom(String x){
+        int licznik = x.length()-1;
+        for (int i = 0; i < x.length()/2; i++) {
+            if(x.charAt(i)==x.charAt(licznik))
+                licznik--;
+            else{
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //Metoda sortujaca babelkowo:
+    public static void sortujBabelkowo(int[]tab) {
+        int licznik = 0;
+        while (licznik < tab.length) {
+            for (int i = 0; i < tab.length - licznik - 1; i++) {
+                if (tab[i] > tab[i + 1]) {
+                    int tmp = tab[i];
+                    tab[i] = tab[i + 1];
+                    tab[i + 1] = tmp;
+                }
+            }
+            licznik++;
+        }
+    }
+    public static void sortujBabelkowo3(int[] x){
+        int licznik = x.length-1;
+        while (licznik>0){
+            for (int i = 0; i < licznik; i++) {
+                if(x[i]>x[i+1]){
+                    int tmp = x[i+1];
+                    x[i+1]=x[i];
+                    x[i]=tmp;
+                }
+            }
+            licznik--;
+        }
+    }
+    public static void sortujBabelkowo2(int[] tab){
+        for (int i = 0; i < tab.length; i++) {
+            for (int j = 0; j < tab.length; j++) {
+                //System.out.println("tab i["+i+"]="+tab[i]+", tab j["+j+"]="+tab[j]);
+                if(tab[i]<tab[j]){
+                    //System.out.println("switch");
+                    int tmp = tab[j];
+                    tab[j]=tab[i];
+                    tab[i]=tmp;
+                    //System.out.println("after switch: tab i["+i+"]="+tab[i]+", tab j["+j+"]="+tab[j]);
+                }
+            }
+        }
     }
 
 }
+
+//------------------------KLASY POMOCNICZE DO KODU MAIN----------------------
 
 interface Figura{
     String dajNazwe();
@@ -4265,3 +4401,15 @@ class Imie{
         this.imie =imie;
     }
 }
+
+//WAZNE INFO OGOLNE DO ZAPAMIETANIA!!
+/*
+zmienna final OBIEKTOWA nie musi posiadac nadanwej wartosci
+ nawet w kosntruktorze
+zmeinna final prosta JESLI jest zadeklarwoana GLOBALNIE
+ musi miec nadana wartosc CHYBA ZE nadadnie wartosci jest
+ w konstruktorze tej klasy
+zmienna final zadeklarowana LOKALNIE nie musi miec nadanej
+ wartosci
+
+ */

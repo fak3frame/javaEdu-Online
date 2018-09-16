@@ -210,7 +210,7 @@ public class Zadanie1 {
         //Sluzy do zamkniecia struminia i np wyswietlenia
 
        -//Stream<Integer> integerStream = listaInt.stream();
-        // integerStream.forEach(System.out::println)
+        // integerStream.forEach(System.out::println) //ODZIELNA LINIA!
        -//Stream<MojaKlasa> obiektyStream = listaOb.stream();
         // obiektyStream.forEach(x -> System.out.println(x.getNapis()+" "+x.getLiczba()));
         //Uzywam w type Stream TYLKO w oddzielnej linii
@@ -222,7 +222,7 @@ public class Zadanie1 {
         // aby wybrac typ i odwolac sie besrednio z :: do konkretnego pola)
 
        -//List<Integer> listaX = listaInteger.stream().collect(toList());
-        // listaX.forEach(System.out::println)
+        // listaX.forEach(System.out::println) //ODDZIELNA LINIA!
        -//List<KlasaObiektow> listaO = listaObiektow.stream().collect(toList());
         // listaO.forEach(x -> System.out.print("x: "+x.getX()+" napis: "+x.getNapis()));
        -//List<Stream> listaS = listaObiektow.stream().map(x -> x.getNapis()).collect(toList());

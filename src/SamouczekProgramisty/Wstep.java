@@ -3821,7 +3821,7 @@ public class Wstep {
 
                 //Rozpisanie stream
                 Stream<BoardGame> strumienGier = games.stream();
-                //Stream jest interfejsem generycznym Stream<T>
+                //Stream jest interfejsem generycznym Stream<T>chro
                 //tworze instancje interfejsu z typem generycznym BoardGame
                 //z pomoca listy games przechowujacej elementy klasy BoardGame
                 // wywoluje metode stream();
