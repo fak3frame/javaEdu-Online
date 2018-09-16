@@ -3992,6 +3992,7 @@ class Wew4{
             return (every4Years && notEvery100Years) || every400Years;
         }
 
+
         ----
         Operacje na strumieniach - dokladny opis + interfejsy funkcyjne
 
