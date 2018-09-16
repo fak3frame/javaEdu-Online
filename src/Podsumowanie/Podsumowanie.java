@@ -348,7 +348,7 @@ public class Podsumowanie {
 
         //metody:
         mojSB.ensureCapacity(13);//z zakresem 16/34/dokladnym
-        mojSB.append("123").append("123");
+        mojSB.append("123").append(str);
         mojSB.replace(0,1,"123");
         mojSB.insert(0, "123");
         mojSB.reverse();
@@ -1746,7 +1746,6 @@ class Wew4{
                 //wartunki
             }
          )};
-
          */
 
 
@@ -1771,13 +1770,16 @@ class Wew4{
         -Kolejnosc jest wazna
 
         Dzielimy je na:
-        -LinkedList - gdy chce czesto dodawac/usuwac elementy
-        -ArrayList - gdy chce  czesto miec dostep do elementow
+        -LinkedList - gdy chce czesto dodawac/usuwac elementy - implemenacja dowiazana
+        -ArrayList - gdy chce  czesto miec dostep do elementow - implemenacja tablicowa
+
+        Dobra praktyka jest uzywanie typu List aby potem moc zmienic rodzaj
         */
 
         List<String> lista1 = new ArrayList<>(3);
         //Tylko w ArrayList w konstruktorze moge podac wstepny rozmiar
         List<String> lista2 = new LinkedList<>(lista1);
+        List<String> lista3 = Arrays.asList("Pawel", "Lukas", "Janek");
         //W konstrukotrze LinkeList moge podac inna kolekcje
         // aby zostala ona przpisana do nowej LinkedLIsty
 
@@ -1788,9 +1790,13 @@ class Wew4{
         lista1.add(1, "Tomek");//index musi byc poprawny (nie moze byc pustego
         // elementu) bo wyrzuci wyjatek IndexOutOfBoundsException
         //dodaje na pozycje 2 element "kamil", iteracja od 0
-        lista1.addAll(lista2);// dodanie wszystkich elementow z jednej kolekcji
+        lista1.addAll(lista3);// dodanie wszystkich elementow z jednej kolekcji
         // do drugiej, nie nadpisze istenijacych tylko polaczy obie listy jedna
         // po drugiej!
+        lista1.remove("Kamil");//usuwam element pierwszy i element drugi przeskakuje
+        // na 1 (0)
+        lista1.remove(1);
+        lista2.clear();
         String wezElement = lista1.get(0);// pobierze element z pozycji 0 listy
         boolean czyZawiera = lista1.contains("kamil");// zwraca flage czt kolekcja
         // zawiera dany element
@@ -1799,9 +1805,7 @@ class Wew4{
         // nie jaki jest rozmiar wstepny (w przypadku ArrayList)
         int pierwszeWystapienie = lista1.indexOf("kamil");
         int ostatnieWystapienie = lista1.lastIndexOf("kamil");
-        lista1.remove("Kamil");//usuwam element pierwszy i element drugi przeskakuje
-        // na 1 (0)
-        lista1.remove(0);
+
 
 
         /*----
@@ -1815,7 +1819,9 @@ class Wew4{
         -Kazdy element jest unikatowy
 
         Aby miec pewnosc ze element jest juz w zbioerze nalezy zaimpelementowac
-         metode hashCode oraz Equals !!
+         metode hashCode oraz Equals !! Metoda hashCode w klasie oblicza wartosc
+         liczbowa obiektu na podstawie wartosci jego WYBRANYCH pol i przez te
+         wartosci wie ze obiekt jest w zbiorze
 
         Zbiory dzielimy na
         -HashSet - w srodku umieszczona jest tablica mieszajaca, wymaga
@@ -1843,6 +1849,10 @@ class Wew4{
         boolean czyZawiera2 = zbior1.contains("Kamil");
         boolean czyPusta2 = zbior1.isEmpty();
         int iloscElementow = zbior1.size();
+        Iterator iterator = zbior1.iterator();
+
+        //*dodatkowo w TreeSet mamy dodatkowo mozliwosc zworcenia "najmniejszego"
+        //  elementu first() oraz najwiekszego last()
 
 
         /*----
@@ -1850,6 +1860,8 @@ class Wew4{
 
         -Kolejnosc nie jest istotna
         -Kazdy element kluczy jest unikatowy
+
+        Mapa nie rozszerza kolekcji
 
         Mapa jest kolekcja pozwalajaca przechowywac odwzorowanie zbioru
          kluczy na liste wartosci. Klucze sa unikalne. Kluczami pownny byc
@@ -1861,9 +1873,12 @@ class Wew4{
          wartosc starego klucza na nowa!
 
         Mapy dzielimy na:
-        -HashMap
-        -TreeMap
-        -LinkedHashMap
+        -HashMap - posiada tablice mieszajaca i kolejnosc elementow nie jest
+                    ustalona
+        -TreeMap - Dodatkowo posiada sortowanie, wymagana implementacja interfejsu
+                    Comprable lub implementacji Comparatora
+        -LinkedHashMap - zapamietuje dodatkowo kolejnosc dodawanych elementow,
+                         wykorzystuje liste wiazana. Prdzydatne przy iteracji
          */
         Map<Integer, String> mapa1 = new HashMap<>(2);
         //Konstruktor zawiera wstepny rozmiar
@@ -1872,23 +1887,37 @@ class Wew4{
         Map<Integer, String> mapa3 = new LinkedHashMap<>(23);
         //Konstruktor zawiera wstepny rozmiar
 
+        mapa3.put(0, "Kamil");
+        mapa3.put(3, "Tomek");
+        mapa3.put(9, "Pawel");
+        mapa3.put(12, "Jan");
+        mapa3.put(2, "Krzysztof");
+
 
         //-----
         //metody:
         mapa1.clear();
-        mapa1.put(0, "kamil");
+        mapa1.put(0, "Przemek");
         mapa1.putAll(mapa2);
-        mapa1.get(0);// zwroci wartosc z klucza "0"
+        String imiePod0 = mapa1.get(0);// zwroci wartosc z klucza "0"
         mapa1.remove(0);// usunie klucz "0" i jego wartosc
         boolean czyKluczIstanieje = mapa1.containsKey(0);// czy mapa zawiera
         // klucz "0"
         boolean czyWartoscInsteniej = mapa1.containsValue("kamil");
         boolean czyPusta3 = mapa1.isEmpty();
         int iloscElementow2 = mapa1.size();
-        Set<Map.Entry<Integer, String>> zbiorKluczWartosc = mapa1.entrySet();
+        Set<Integer> zbiorKluczy = mapa3.keySet();
+        Set<Integer> zbiorKluczySortowany = new TreeSet<>(mapa3.keySet());
+        //beda posortowane
+
+        Collection<String> kolekcjaWartosci = mapa3.values();
+        //moge dac bezposreniednio tylko do Collection bo taki typ zwraca
+        // metoda values()
+        List<String> zbiorWartosci = new LinkedList<>(mapa3.values());
+        //musze dac w konstruktorze bo metoda .values() zwraca typ Collection
+
+        Set<Map.Entry<Integer, String>> zbiorKluczWartosc = mapa3.entrySet();
         //kazdy element zbioru bedzie skladal sie z klucza i wartosci,
-        // W petli foreach z typem Map.Entry<TypKlucza, TypWartosci> bede mogl
-        // na elemencie wywolac metode getKey() i getValue()
 
 
         //-----
@@ -1913,6 +1942,107 @@ class Wew4{
         for (Map.Entry<Integer, String> x : zbiorKluczWartosc2) {
             System.out.println(x.getKey() + ": " + x.getValue());
         }
+        //lub bez deklaracji oddzielnego zbioru
+        System.out.println("ZBIOR KLUCZ WARTOSC 2");
+        for(Map.Entry<Integer, String> x : mapa1.entrySet()){
+            System.out.println("klucz nowy: "+x.getKey());
+            System.out.println("wartosci nowa: "+x.getValue());
+        }
+
+
+
+        /*-------------------------------------------------------------------------
+        -----------------SORTOWANIE KOLEKCJI COMPARABLE COMPARATOR-----------------
+
+
+        Sortowanie z uzycem Collections.sort, Arrays.sort i interfacem Comparator
+         z klasa anonimowa
+
+        Metoda Collection.sort lub Arrays.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem!
+
+        Jesli metoda przyjmuje:
+
+        -TYLKO kolekcje z typem generycznym mojej klasy
+        //Collections.sort(listaDoSortowania);
+        To moja klasa musi implementowac interface Comparable<KlasaDoSortowania> z metoda
+         int compareTo(KlasaDoSortowania o). Metoda zwraca >0 gdy this.wartosc jest wieksze
+         od o.wartosc, <0 gdy odwrtnie i 0 gdy rowne
+        Zmienne brane sa po kolei z Listy - this.wartosc jest wartoscia
+         elementu 0 a o.wartosc jest wartoscia elementu 1.
+        */
+        List<KlasaDoSortowania> listaDoSortowania = Arrays.asList(
+                new KlasaDoSortowania("dddd"),
+                new KlasaDoSortowania("aaaaaa"),
+                new KlasaDoSortowania("ee"),
+                new KlasaDoSortowania("cccccccc"),
+                new KlasaDoSortowania("f"),
+                new KlasaDoSortowania("b")
+        );
+        class KlasaDoSortowania2 implements Comparable<KlasaDoSortowania2> {
+            public String napis;
+
+            public KlasaDoSortowania2(String napis) {
+                this.napis = napis;
+            }
+
+            @Override
+            public int compareTo(KlasaDoSortowania2 o) {
+                return this.napis.length() - o.napis.length();
+            }
+
+        }
+        Collections.sort(listaDoSortowania);
+        System.out.println("Sortowanie 1 wg dlugosci:");
+        for (KlasaDoSortowania x : listaDoSortowania) {
+            System.out.print(x.napis + " ");
+        }
+        /*
+        --
+        Jesli klasa ma zmienna typu String to moge takze sprawdzic dlugosc
+         napisu wykorzystujac lenght
+
+         public int compareTo(KlasaDoSortowania o) {
+                return this.napis.length() - o.napis.length();
+         }
+        --
+         Lub jesli chce posortowac Stringi wedlug naturalnego porzadku to
+          moge uzyc metody metody compareTo w compareTo!
+
+         public int compareTo(KlasaDoSortowania o) {
+                return this.napis.compareTo(o.napis);
+         }
+
+
+         -Kolekcje z typem generycznym mojej klasy ORAZ komparator
+          Collections.sort(listaDoSortowania, new KlasaSortujaca());
+         1. Moge stworzyc nowa klasa implementujaca interfejs
+         Comparator<KlasaDoSortowania> i w niej metode interfejsu
+         int compare (KlasaDoSortowania o1, KlasaDoSortowania o2)
+         */
+        class KlasaSortujaca2 implements Comparator<KlasaDoSortowania> {
+            @Override
+            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
+                return o1.napis.compareTo(o2.napis);
+            }
+        }
+        Collections.sort(listaDoSortowania, new KlasaSortujaca());
+        System.out.println("\n" + "Sortowanie 2 wg naturalnego porzadku:");
+        for (KlasaDoSortowania x : listaDoSortowania) {
+            System.out.print(x.napis + " ");
+        }
+          /*
+
+          --
+          2. Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
+           i definicje sortowania w wywolaniu metody sort
+
+          Collections.sort(listaDoSortowanie, new Comparator<KlasaDoSortowania>() {
+            @Override
+            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
+                return o1.napis.compareTo(o2.napis);
+            }
+          });
+         */
 
 
 
@@ -3059,101 +3189,6 @@ class Wew4{
         };//nie zapominam o sredniku
         System.out.println();
         powitanie.powiedzCzesc();//na obiekcie klasy wywoluje metode tego interfacu
-
-
-        /*----
-        Sortowanie z uzycem Collections.sort, Arrays.sorti interfacem Comparator
-         z klasa anonimowa
-
-        Metoda Collection.sort lub Arrays.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem!
-
-        Jesli metoda przyjmuje:
-
-        -TYLKO kolekcje z typem generycznym mojej klasy
-        //Collections.sort(listaDoSortowania);
-        To moja klasa musi implementowac interface Comparable z metoda
-         int compareTo(Object o). Metoda zwraca >0 gdy this.wartosc jest wieksze
-         od o.wartosc, <0 gdy odwrtnie i 0 gdy rowne
-         UWAGA ! (metoda przyjmuje typ Object  wiec musze rzutowac)
-        Zmienne brane sa po kolei z Listy - this.wartosc jest wartoscia
-         elementu 0 a o.wartosc jest wartoscia elementu 1.
-        */
-        List<KlasaDoSortowania> listaDoSortowania = Arrays.asList(
-                new KlasaDoSortowania("dddd"),
-                new KlasaDoSortowania("aaaaaa"),
-                new KlasaDoSortowania("ee"),
-                new KlasaDoSortowania("cccccccc"),
-                new KlasaDoSortowania("f"),
-                new KlasaDoSortowania("b")
-        );
-        class KlasaDoSortowania2 implements Comparable {
-            public String napis;
-
-            public KlasaDoSortowania2(String napis) {
-                this.napis = napis;
-            }
-
-            @Override
-            public int compareTo(Object o) {
-                KlasaDoSortowania x = (KlasaDoSortowania) o;
-                return this.napis.length() - x.napis.length();
-            }
-
-        }
-        Collections.sort(listaDoSortowania);
-        System.out.println("Sortowanie 1 wg dlugosci:");
-        for (KlasaDoSortowania x : listaDoSortowania) {
-            System.out.print(x.napis + " ");
-        }
-        /*
-        --
-        Jesli klasa ma zmienna typu String to moge takze sprawdzic dlugosc
-         napisu wykorzystujac lenght
-
-         public int compareTo(Object o) {
-                KlasaDoSortowania x = (KlasaDoSortowania)o;
-                return this.napis.length() - x.napis.length();
-         }
-        --
-         Lub jesli chce posortowac Stringi wedlug naturalnego porzadku to
-          moge uzyc metody metody compareTo w compareTo!
-
-         public int compareTo(Object o) {
-                KlasaDoSortowania x = (KlasaDoSortowania)o;
-                return this.napis.compareTo(x.napis);
-         }
-
-
-         -Kolekcje z typem generycznym mojej klasy ORAZ komparator
-          Collections.sort(listaDoSortowania, new KlasaSortujaca());
-         1. Moge stworzyc nowa klasa implementujaca interfejs
-         Comparator<KlasaDoSortowania> i w niej metode interfejsu
-         int compare (KlasaDoSortowania o1, KlasaDoSortowania o2)
-         */
-        class KlasaSortujaca2 implements Comparator<KlasaDoSortowania> {
-            @Override
-            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
-                return o1.napis.compareTo(o2.napis);
-            }
-        }
-        Collections.sort(listaDoSortowania, new KlasaSortujaca());
-        System.out.println("\n" + "Sortowanie 2 wg naturalnego porzadku:");
-        for (KlasaDoSortowania x : listaDoSortowania) {
-            System.out.print(x.napis + " ");
-        }
-          /*
-
-          --
-          2. Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
-           i definicje sortowania w wywolaniu metody sort
-
-          Collections.sort(listaDoSortowanie, new Comparator<KlasaDoSortowania>() {
-            @Override
-            public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
-                return o1.napis.compareTo(o2.napis);
-            }
-          });
-         */
 
 
 

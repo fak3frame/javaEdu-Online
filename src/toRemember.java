@@ -589,7 +589,7 @@ public class toRemember {
 
         //------------------------------------------------------------------------
 
-        // SORTOWANIE LIST COMPARABLE COMPARATOR
+        // SORTOWANIE KOLEKCJI COMPARABLE COMPARATOR
 
         System.out.println("\n"+"SORTOWANIE LIST COMPARABLE COMPARATOR:");
         Czlowiek c1 = new Czlowiek("Kamil","bbb", 'm' );
