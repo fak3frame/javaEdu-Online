@@ -674,9 +674,8 @@ public class toRemember {
         W przypadku gdy wyjatek dziedziczy po Exception a nie ma RuntimeException jest
          wyjatkiem checked, w kazdym innym przypadku jest typu unchecked
 
-        Wyjatki mozna obluzyc na 2 sposoby, jeden to poprzez blok try/catch a drugi
-         to zepchniecie go na poziom nizej czyli do metody wywolujacej za pomoca
-         klauzuli throws
+
+
         */
         boolean czyPoprawne = false;
         if(!czyPoprawne && 1>2){
@@ -1051,6 +1050,7 @@ class Czlowiek implements Comparable<Czlowiek>{
         int wyjscie = this.nazwisko.compareTo(o.nazwisko);
         if(wyjscie==0)
             return this.imie.compareTo(o.imie);
+        //jesli takie samo nazwisko to sortuje po imieniu
         else
             return wyjscie;
     }

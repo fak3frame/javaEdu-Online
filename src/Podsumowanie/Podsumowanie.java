@@ -6,6 +6,8 @@ import java.io.*;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.List;
 import java.util.function.*;
@@ -721,7 +723,7 @@ public class Podsumowanie {
         --------------------------WPROWADZANIE DANYCH-----------------------------
         */
         class Wew3 {
-            void start() {
+            void start() throws FileNotFoundException {
                 String imie;
                 List<String> imiona = new ArrayList<>();
                 Scanner wejscie = new Scanner(System.in);
@@ -729,10 +731,13 @@ public class Podsumowanie {
                 //przyklad:
                 do {
                     imie = wejscie.nextLine();
+                    //wpisuje imie
                     if (!imie.equals("-"))
+                        //jesli nie wpisalem - doda do listy
                         imiona.add(imie);
 
                 } while (!imie.equals("-"));
+                //wyjscie z petli
 
                 //lub w samym while
                 while (true) {
@@ -757,8 +762,36 @@ public class Podsumowanie {
                         wejscie.next();
                     }
                 }
+
+                //inny przyklad z hasNext
+                String s = "Hello World! 3 + 3.0 = 6";
+                Scanner scanner = new Scanner(s);
+                //umieszczam w scanner moj napis
+                System.out.println("" + scanner.hasNext());
+                //sprawdza czy skaner ma token(cos dalej) - true
+                System.out.println("" + scanner.nextLine());
+                //wypisuje na ekran zawartosc i przesowna token na ostatnia pozycje
+                System.out.println("" + scanner.hasNext());
+                //token jest na koncu - false
+                scanner.close();
+                //zamykam
+
+                //inny przyklad z hasNext z czytaniem pliku
+                Scanner scanner2 = new Scanner(new File("filepath"));
+                //skaner zawiera teraz plik
+                ArrayList<String> list = new ArrayList<>();
+                while (scanner2.hasNext()){
+                    //jesli token jest na koncu (koniec pliku) wychodzi z petli
+                    list.add(scanner2.next());
+                    //umieszczam elementy do listy. kazdy element z pliku
+                    // jest oddzielony spacja (metoda next)
+                    // tj. pierwszy wyraz element 0 , 2 ->1 itp.
+                }
+                scanner2.close();//musze zamknac
+
             }
         }
+
 
 
         //------------------------------------------------------------------------
@@ -1241,12 +1274,18 @@ class Wew4{
          Hierarchia dziedziczenia wyjatkow:
           Throwable <- Exception <- RuntimeException <- IllegalArgumentException
 
+         Wyjatki mozna obluzyc na 2 sposoby, jeden to poprzez blok try/catch a drugi
+          to zepchniecie go na poziom nizej czyli do metody wywolujacej za pomoca
+          klauzuli throws
+
 
          -----
          Do oblusgi kilku wyjatkow w klauzuli try/catch moge zapisac
           je w oddzielnym catch lub uzywajac |
+
          Dodatkowo mozna dodac blok finally ktory bedzie
           sie wykonywal zawsze
+
          Blok try moze byc bez catch ale musi byc finally
 
          try {
@@ -2011,6 +2050,18 @@ class Wew4{
          public int compareTo(KlasaDoSortowania o) {
                 return this.napis.compareTo(o.napis);
          }
+        --
+         Lub jesli mam imie i nazwiko jako pola to moge zrobic
+          sortowanie po nazwisku a jesli rowne to po imieniu
+
+         public int compareTo(Czlowiek o){
+            int wyjscie = this.nazwisko.compareTo(o.nazwisko);
+            if(wyjscie==0)
+                return this.imie.compareTo(o.imie);
+            //jesli takie samo nazwisko to sortuje po imieniu
+            else
+                return wyjscie;
+        }
 
 
          -Kolekcje z typem generycznym mojej klasy ORAZ komparator
@@ -2022,7 +2073,14 @@ class Wew4{
         class KlasaSortujaca2 implements Comparator<KlasaDoSortowania> {
             @Override
             public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
-                return o1.napis.compareTo(o2.napis);
+                int wyjscie = o1.napis.compareTo(o2.napis);
+                if(wyjscie == 0){
+                    //jesli napisy beda rowne
+                    return o1.compareTo(o2);
+                    //wykorzystam sortowanie Comparable z klasy obiektow
+                }
+                else
+                    return wyjscie;
             }
         }
         Collections.sort(listaDoSortowania, new KlasaSortujaca());
@@ -2034,15 +2092,15 @@ class Wew4{
 
           --
           2. Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
-           i definicje sortowania w wywolaniu metody sort
+           i definicje sortowania w wywolaniu metody sort*/
 
-          Collections.sort(listaDoSortowanie, new Comparator<KlasaDoSortowania>() {
+          Collections.sort(listaDoSortowania, new Comparator<KlasaDoSortowania>() {
             @Override
             public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
                 return o1.napis.compareTo(o2.napis);
             }
           });
-         */
+
 
 
 
@@ -2253,6 +2311,47 @@ class Wew4{
         }
         Wew6 wew6 = new Wew6();
         wew6.metoda();
+
+
+        //----
+        //Ze strumieniami
+
+        String adresPliku = "src/Podsumowanie/PlikiTestowe/plik4.txt";
+        try(Stream<String> stream = Files.lines(Paths.get(adresPliku))) {
+            //umieszczam w zmiennej Stream plik, kazda linia to jeden
+            // element strumienia
+            System.out.println("Linie mojego pliku");
+            stream.forEach(System.out::println);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        //moge takze uzyc filtracji
+        try(Stream<String> stream = Files.lines(Paths.get(adresPliku))) {
+
+            List<String> linie = new ArrayList<>();
+            linie = stream
+                    .filter(x->!x.startsWith("linia 2"))
+                    //nie zaczyna sie na "linia 2"
+                    .map(String::toUpperCase)
+                    .collect(toList());
+            System.out.println("Linie po filtracji + zmiana liter na duze");
+            linie.forEach(System.out::println);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        //moge uzyc BufferedReader
+        try(BufferedReader br = new BufferedReader(new FileReader(adresPliku))){
+            List<String> linie = new ArrayList<>();
+            linie = br.lines().collect(toList());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
 
