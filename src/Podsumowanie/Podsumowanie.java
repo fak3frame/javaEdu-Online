@@ -4157,21 +4157,22 @@ class Wew4{
         // mapowac
 
        -//Comparator<KlasaZLiczba> comparatorInt = (x1, x2) -> Integer.compare(x1.getX(), x2.getX());
-        //Comparator<KlasaZLiczba> comparatorString = (x1, x2) -> x1.getNapis().compareTo(x2.getNapis());
-        //KlasaZLiczba najmniejszyWyraz = listObject.stream()
-                .min(comparatorString).get();
-        //System.out.println("najmniejszyWyraz : "+najmniejszyWyraz.getNapis());
+        // tworze zmienna comparatora ktora potem wykorzytsam w metodzie min
         //KlasaZLiczba najmniejszaLiczba = listObject.stream()
                 .min(comparatorInt).get();
         //System.out.println("najmniejszaLiczba: "+najmniejszaLiczba.getX());
+       -//Comparator<KlasaZLiczba> comparatorString = (x1, x2) -> x1.getNapis().compareTo(x2.getNapis());
+        //KlasaZLiczba najmniejszyWyraz = listObject.stream()
+                .min(comparatorString).get();
+        //System.out.println("najmniejszyWyraz : "+najmniejszyWyraz.getNapis());
         //Lub z uzyciem zmiennej Comparatora
 
        -//Integer[] numbers = {4,1,10,2,3};
         //System.out.println("Stream.min(): " + Arrays.stream(numbers).min(Integer::compare).get());
-        //Lub z uzyciem tablicy
+        //Lub z uzyciem tablicy i klasy Arrays
 
 
-        all/any/noneMatch
+        all/any/noneMatch //przypisuje do zmiennej
         .allMatch(x -> x>1) //+przypisanie do boolean (lista typ prosty)
         .anyMatch(x -> x.getNapis().equals("aa"))
         // +przypisanie do boolean (lista obiektowa)
@@ -4184,7 +4185,7 @@ class Wew4{
         // sie do kokretnego pola getem
 
 
-        sum
+        sum //przypisuje do zmiennej
         .sum();
         -int suma = liczbyLista.stream().mapToInt(Integer::intValue).sum();
         //Metoda sumuje liczby strumienia, MUSI byc zmapowane z metoda mapToInt!
