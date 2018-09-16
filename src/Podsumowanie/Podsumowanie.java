@@ -1,8 +1,13 @@
 package Podsumowanie;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.*;
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.*;
+import java.util.List;
 import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -65,6 +70,11 @@ public class Podsumowanie {
         JDK - zestaw narzedzi zawierajacy takze kompilator javac
 
         IDE (ang. Integrated Development Environment)
+
+        Hermetyzajca/Enkapsulacja - ustawianie pol klas jako prywatne/protected
+         i dostep do niech poprzez akcesory i mutatory
+
+        Rekursja - odwolanie sie do innego konstruktora
 
 
 
@@ -301,6 +311,24 @@ public class Podsumowanie {
         //gdy str bedzie "wiekszy" zwroci -1, gdy "mniejszy" 1 i gdy rowny to 0
 
 
+        //----
+        //Moge przeniesc zawartosc listy do Stringa za pomoca metody join
+        List<String>auta = Arrays.asList("audi","mercedes");
+        //Wykorzystuje metode asListy klasy Arrays
+        String autaString = "";//musze zainicjowac wartoscia do metody join
+        autaString = autaString.join(",",auta);
+        //przypisuje do Stringa z metodaZwykla join()
+        System.out.println("String zrobiony z listy: "+autaString);
+
+        //Bardziej zaawansownym uzyciem metody join jest uzycie strumienia
+        // oraz metody collect() w ktorej uzyje klasy Collectors z metodaZwykla
+        // joining() w ktorej okresle co ma oddzielac napisy oraz jak ciag
+        // ma sie zaczynac i konczyc
+        String autaString2 = auta.stream().collect(Collectors
+                .joining(", ","{","}"));
+        System.out.println("String zrobiony ze strumienia: "+autaString2);
+
+
 
         /*------------------------------------------------------------------------
         -----------------StringBuilder/StringBuffer/StringJouner------------------
@@ -310,12 +338,27 @@ public class Podsumowanie {
          ja zmieniac i konwertowac do String uzywajac toString
         */
         StringBuilder mojSB = new StringBuilder("123");
+        StringBuilder mojSBpojemnosc = new StringBuilder(123);
         //Konstruktor moze przyjac wartosc ciagu lub jesli podam liczbe to jego
         // pojemnosc (capacity)
 
         StringBuilder mojSB2 = new StringBuilder();
         mojSB2.append(2).append("123").append(mojLiteral).append(12.3);
         //append moze przyjac dowolny typ
+
+        //metody:
+        mojSB.ensureCapacity(13);//z zakresem 16/34/dokladnym
+        mojSB.append("123").append("123");
+        mojSB.replace(0,1,"123");
+        mojSB.insert(0, "123");
+        mojSB.reverse();
+        mojSB.delete(0,1);
+        int i4 = mojSB.indexOf("x");
+        int i5 = mojSB.capacity();
+        int i6 = mojSB.length();
+        char c = mojSB.charAt(0);
+        String str2 = mojSB.substring(1,2);
+        String strS = mojSB.toString();
 
 
         /*----
@@ -332,6 +375,23 @@ public class Podsumowanie {
         StringJoiner
 
         Wykorzystuje do laczenia strumieni
+        Rozwiazuje problem wyrazen lambda oraz upraszcza laczenie Stringow
+        */
+
+        System.out.println("StringJoiner");
+        StringJoiner joiner = new StringJoiner("");
+        //Musze okreslic w konstruktorze 1 lub 3 parametry, gdy podam jeden
+        // bedzie to separator oddzielajacy stringi, gdy podam 3 bedzie to
+        // separator, prefix(to co na poczatku ciagu) i suffix(na koncu)
+
+        StringJoiner joiner2 = new StringJoiner(",","{","}");
+
+        joiner2.add("napis").add("napis2");
+        String napisSJ = joiner2.toString();
+        //Nie ma metody substring();
+        System.out.println("Dlugosc StringJoinera: "+joiner2.length());
+        System.out.println("StringJoiner na String: "+napisSJ);
+
 
 
         //------------------------------------------------------------------------
@@ -342,7 +402,7 @@ public class Podsumowanie {
         Integer integer2 = new Integer(12345);
 
 
-        //metoda Ingeger.parseInt(); - przyjmuje String, zwraca int/Integer
+        //metoda Ingeger.parseInt(); - PRZYJMUJE String, zwraca int/Integer
         int intZeString = Integer.parseInt("1234");
         Integer IntegerZeString = Integer.parseInt("1234");
 
@@ -358,6 +418,52 @@ public class Podsumowanie {
         //metoda Character.getNumericValue() PRZYJMUJE char, ZWRACA int/Integer
         int znak = Character.getNumericValue('a');//pojedynczy ''!
         // znak = 10, niezaleznie od wielkosci
+
+
+        Integer.compare(integer1, integer2 );
+        //Zwroci 1 gdy integer2 wiekszy, -1 gdy mniejszy i 0 gdy rowny
+        //Przydante podczas tworzenia metod compare() oraz compareTo()
+
+        integer1.compareTo(integer2);
+        //Zwroci 1 gdy integer2 wiekszy, -1 gdy mniejszy i 0 gdy rowny
+
+
+
+
+        //------------------------------------------------------------------------
+        /*----------------------KLASA MATH I BIGINTEGER---------------------------
+         */
+        Math.abs(9);
+        Math.pow(2,2);
+        Math.sqrt(4);
+        Math.round(9.26134); //zaokrlaglenie
+        Math.min(10,12);
+        Math.max(10,12);
+
+
+        BigInteger bi = new BigInteger("1234");
+        BigInteger bi2 = BigInteger.valueOf(1234);
+        BigDecimal bd = new BigDecimal("123132.3244");
+
+        bi.add(bi2);
+        bi.subtract(bi2);
+        bi.multiply(bi2);
+        bi.divide(bi);
+
+
+
+        //------------------------------------------------------------------------
+        /*------------------------------KLASA RANDOM------------------------------
+        */
+        Random random = new Random();
+        boolean prawdaCzyFalsz = random.nextBoolean();
+        double los = random.nextDouble();
+        // pokaze od 0 do 1 (0+jakies liczby po przecinku), moge pomnozyc aby przesunac ,
+        float los2 = random.nextFloat();//mniejszy zakres
+        int los3 = random.nextInt();//standardowo pokaze z calego zakresu
+        // int lecz moge to zawezic podajac liczbe w paramterze np:
+        int los4 = random.nextInt(10); //wylosuje liczbe z zakresu 0-9
+
 
 
         //------------------------------------------------------------------------
@@ -463,6 +569,58 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
+        //-------------------------PETLE I WARTUNKI-------------------------------
+        */
+        //Switch
+        int a = 10;
+        switch (a){
+            case 2:
+                //zrob cos
+                break;//bez break wykona kolejny case
+            case 11:
+
+                break;
+            default:
+                //nie musze dawac break, wykona sie jak zaden case nie bedzie pasowac
+        }
+
+
+        //----
+        //while
+        while (true){
+            //zrob cos
+            break;
+        }
+
+        int aWhile = 10;
+        while(aWhile>0){
+            System.out.println("Drukuje napis while :"+aWhile);
+            //10-1
+            aWhile--;
+        }
+
+
+        //----
+        //do while
+        do{
+            System.out.println("robie do : "+aWhile);
+            //0-9
+            aWhile++;
+        }while (aWhile<10);//SRENIK!
+
+
+        //----
+        //for
+        for (int i = 0; i < 10; i+=10) {
+            if(a>10){
+                break;//opcjonalne wyjscie z petli for
+            }
+        }
+
+
+
+
+        //------------------------------------------------------------------------
         /*---------------------------------METODY---------------------------------
 
         Metoda - worek do grupujacy zestaw instrukcji. Tworzymy je
@@ -520,6 +678,25 @@ public class Podsumowanie {
         class Wew2 {
             public void metodaNicNieZwracajaca() {
                 return;
+            }
+        }
+        /*
+
+        Metoda moze przyjac nieokreslona liczbe argumentow poprzez zastosowanie ...
+        */
+        class Wew34{
+            void main(){
+                metodaSumujaca(1,2,3,4);
+                int[] tabInt = {1,2,3,4};
+                metodaSumujaca(tabInt);
+
+            }
+            public int metodaSumujaca(int...tab){
+                int suma = 0;
+                for(int x:tab){
+                    suma+=x;
+                }
+                return suma;
             }
         }
         /*
@@ -1504,6 +1681,74 @@ class Wew4{
         test4.metoda(new PudelkoWildcards4<>(new Kwadrat()));
         //test4.metoda(new PudelkoWildcards4<>(new Object()));
         //blad bo w metodzie NA SILE przypisuje Object do Figury
+
+
+
+        //------------------------------------------------------------------------
+        /*--------------------------KLASA ARRAYS----------------------------------
+         */
+        //metody:
+        // .asList(); //zamiana tablicy na kolekcje
+        List<String>imionaLista1 = Arrays.asList("kamil","tomek");
+        String[] imionaTablica = {"kamil","tomek"};
+        List<String>imionaLista2 = Arrays.asList(imionaTablica);
+
+        //.equals(); - porownywanie tablic
+        int[] tabEquals1 = {1,2,3,4};
+        int[] tabEquals2 = {1,2,3,5};
+        int[] tabEquals3 = {1,2,3,4};
+        System.out.println("Porownanie tablic 1:");
+        System.out.println(Arrays.equals(tabEquals1,tabEquals2));
+        System.out.println("Porownanie tablic 2:");
+        System.out.println(Arrays.equals(tabEquals1,tabEquals3));
+
+        //.toString() //pokazuje tablice z elementami w [] i elementy oddzielone sa ,
+        int[] tabToString = {1,5,3,62};
+        System.out.println("Arrays.toString():");
+        System.out.println(Arrays.toString(tabToString));
+        String tabToStringX = Arrays.toString(tabToString);
+        //zapisze do stringa tablice w [] oddzielajac elem ,
+        System.out.println("xxxxxx: "+tabToStringX);
+        //zeby wybrac co ma oddzielac mozna uzyc metody join
+        // deklaracja wczesniej
+
+        //.copyOf();
+        int[] tabCopyOf = Arrays.copyOf(tabToString, tabToString.length);
+        System.out.println("copyOf():");
+        System.out.println(Arrays.toString(tabCopyOf));
+
+        //.fill();//tylko dla tablic!
+        Arrays.fill(imionaTablica, "xD");
+
+        //.sort();
+        int[] tabSort = {2,5,1,8};
+        Arrays.sort(tabSort);
+        System.out.println("Sort klasy Arrays:");
+        for(int x:tabSort)
+            System.out.print(x+" ");
+
+
+        /*----
+        Tablice z obiektami sortuje tak samo jak kolekcje tzn uzywam
+         tablicy obiektow (klasa musi implementowac interface Comparable
+         oraz metode compareTo) w metodzie sort
+        Arrays.sort(tablicaObiektow)
+
+         lub dodaje jeszcze obiekt klasy sortujacej implementujacej inteface
+          Comparator<klasaDoSoretowania> i metode compare
+         Arrays.sort(tablicaObiektow, new KlasaSortujaca())
+
+         lub bezposrednio deklarjue dzialanie sortowanie z uzyciem klasy anonimowej
+          tzn w metodzie sort oprocz tablicy obiektow tworze obiekt interfacu
+          Comparator<KlasaDoSortowania>
+         Arrays.sort(tablicaObiektow, new Comparator<Klasa Obiektow>(){
+            public int compare(KlasaArrays2 o1, KlasaArrays2 o2) {
+                //wartunki
+            }
+         )};
+
+         */
+
 
 
         //------------------------------------------------------------------------
@@ -4149,10 +4394,14 @@ class Wew4{
 
         collect
         .collect(Collectors.toList()) / collect(toList())
+        .collect(Collectors.joining(", ","{","}"));
        -//List<KlasaZLiczba> listObjectX = listObject.stream().collect(toList());
         //Gdy przypisuje do listy DOWOLNEJ musze dac na koncu
        -//listObject.stream().peek(x -> System.out.println(x.getX() + " "+ x.getNapis() )).collect(toList());
         //Lub gdy uzywam peek bezposrednio na strumieniu listy (bez tego zadziala ale nie wyswietli
+
+       -//String autaString2 = auta.stream().collect(Collectors.joining(", ","{","}"));
+        //Przypisuje do stringa zawartosc kolekcji
 
 
         max //przypisuje do zmiennej
@@ -4222,6 +4471,40 @@ class Wew4{
         //Metoda sumuje liczby strumienia, MUSI byc zmapowane z metoda mapToInt!
         // + moge wykorzystac metode klasy Integer zwracajaca int;
          */
+
+
+        /*-------------------------------------------------------------------------
+        -----------------------------KLASA ROBOT-----------------------------------
+
+        Klasa robot sluzy do automatycznego uzywania klawiatury, myszy,
+         robienia zrzutow ekranu i odczytywaniu informacji o pixelach
+
+        METODY:
+        keyPress(int keycode) np keyPress(KeyEvent.VK_C)
+        keyRelease(int keycode)
+        mousePress(int buttons) - podaje stale z klasy InputEvent:
+         (BUTTON1_MASK, BUTTON2_MASK, BUTTON3_MASK)
+        mouseRelease(int buttons)
+        createScreenCapture(Rectangle screenRect)
+        delay(czas) - opoznienie
+
+         */
+        try {
+            Robot mojRobot = new Robot();
+            //robot moze byc umieszczony w klasie jako zmienna Robot robot;
+            mojRobot.delay(1000);
+            int[]tabPrzyciskow={KeyEvent.VK_C,KeyEvent.VK_Z,KeyEvent.VK_E,
+                    KeyEvent.VK_S,KeyEvent.VK_C};
+            for (int i=0;i<0;i++){
+                mojRobot.keyPress(tabPrzyciskow[i]);
+                mojRobot.delay(100);
+            }
+        }catch (AWTException e){
+            System.out.println("Co on robi?");
+            e.printStackTrace();
+        }
+
+
     }
 
 
