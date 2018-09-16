@@ -150,6 +150,37 @@ public class Podsumowanie {
         System.out.println("10 == 10: " + (10 == 10));
         /*
 
+        -----
+        Moge takze porownac elementy wykorzysttujac metrody compare/compareTo/equals*/
+        KlasaDoSortowania obiektKlasy = new KlasaDoSortowania("asd");
+        String string1 = "asd";
+        String string2 = "asd";
+        Integer mojInteger = 1234;
+        int[] intsTab = {1234,2134};
+
+        Integer.compare(1,2);
+        Character.compare('c','d');
+        Double.compare(23.2, 234.2);
+        Arrays.compare(intsTab,intsTab);
+        //uzywam tej metody w klasie sortujacej i implementujacej Comparator<klasa>
+        //Collections.sort(listaObiektow, new obiektKlasySortujacej())
+
+        string1.compareTo(string2);
+        string1.compareToIgnoreCase(string2);
+        mojInteger.compareTo(mojInteger);
+        obiektKlasy.compareTo(obiektKlasy);//klasa musi miec ta metode w deklaracji!!
+        // + implementowac interace Comparable
+        //Collections.sort(listaObiektow)
+
+        Objects.equals(string1, string2); //dla Stringow
+        Arrays.equals(intsTab, intsTab); //dla tablic
+        string1.equals(string2);
+        mojInteger.equals(mojInteger);
+        intsTab.equals(intsTab);
+        obiektKlasy.equals(obiektKlasy);//klasa musi miec metode equals w ktorej
+        // wybieram jakie pola klasy bede porownywal
+        /*
+
 
 
         //------------------------------------------------------------------------
@@ -2786,10 +2817,10 @@ class Wew4{
 
 
         /*----
-        Sortowanie z uzycem Collections.sort i interfacem Comparator
+        Sortowanie z uzycem Collections.sort, Arrays.sorti interfacem Comparator
          z klasa anonimowa
 
-        Metoda Collection.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem!
+        Metoda Collection.sort lub Arrays.sort przyjmuje sama Kolekcje lub Kolekcje z Comparatorem!
 
         Jesli metoda przyjmuje:
 
