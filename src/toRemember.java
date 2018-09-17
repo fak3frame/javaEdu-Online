@@ -884,7 +884,7 @@ public class toRemember {
 }
 
 interface Praca{
-    public void pracuj();
+    void pracuj();
 }
 abstract class Pracownik implements Praca{ //klasa abstr. nie musi implementowac
     //metod implementowego interf. natomiast klasy dziedziczace juz tak

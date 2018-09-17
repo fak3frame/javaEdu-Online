@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 114">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 115">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toRemember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRemember.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +34,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="936">
-                    <caret line="2358" selection-start-line="2358" selection-end-line="2358" />
+                  <state relative-caret-position="476">
+                    <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="e#22618#22619#0" expanded="true" />
@@ -192,15 +192,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Stringi" value="114" />
-          <entry key="java" value="102975" />
+          <entry key="java" value="102976" />
           <entry key="regexp" value="18" />
-          <entry key="txt" value="618" />
+          <entry key="txt" value="619" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="102975" />
-          <entry key="PLAIN_TEXT" value="732" />
+          <entry key="JAVA" value="102976" />
+          <entry key="PLAIN_TEXT" value="733" />
           <entry key="RegExp" value="18" />
         </counts>
       </usages-collector>
@@ -253,22 +253,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/toRemember.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="774" column="37" selection-start-line="774" selection-start-column="37" selection-end-line="774" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#23526#23527#0" expanded="true" />
-                <element signature="e#23611#23612#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -283,9 +268,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>trim</find>
-      <find>podklas</find>
-      <find>value</find>
       <find>dziedzicz</find>
       <find>parse</find>
       <find>throw new</find>
@@ -313,6 +295,9 @@
       <find>linie moje</find>
       <find>buffered</find>
       <find>wyjatki</find>
+      <find>dziedziczenie</find>
+      <find>hashcode</find>
+      <find>final</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -376,8 +361,8 @@
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_15_Strumienie/Zadanie1.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik2.txt" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik4.txt" />
-        <option value="$PROJECT_DIR$/src/toRemember.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
+        <option value="$PROJECT_DIR$/src/toRemember.java" />
       </list>
     </option>
   </component>
@@ -440,73 +425,6 @@
             </path>
             <path>
               <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Podsumowanie" type="462c0819:PsiDirectoryNode" />
-              <item name="PlikiTestowe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Podsumowanie" type="462c0819:PsiDirectoryNode" />
-              <item name="PlikiTestowe" type="462c0819:PsiDirectoryNode" />
-              <item name="MojFolder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="AplikacjaDoNauki" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="AplikacjaDoNauki" type="462c0819:PsiDirectoryNode" />
-              <item name="KategorieData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Test1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_15_Strumienie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SamouczekProgramisty" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadania" type="462c0819:PsiDirectoryNode" />
-              <item name="_15_Strumienie" type="462c0819:PsiDirectoryNode" />
-              <item name="Zadanie1.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -517,7 +435,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537142554218" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537142566434" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -668,13 +586,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01325" summary="PODSUMOWANIE 66">
-      <created>1536334795735</created>
-      <option name="number" value="01325" />
-      <option name="presentableId" value="LOCAL-01325" />
-      <option name="project" value="LOCAL" />
-      <updated>1536334795735</updated>
     </task>
     <task id="LOCAL-01326" summary="PODSUMOWANIE 67">
       <created>1536335326641</created>
@@ -1012,7 +923,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537137975688</updated>
     </task>
-    <option name="localTasksCounter" value="1374" />
+    <task id="LOCAL-01374" summary="PODSUMOWANIE 115">
+      <created>1537142579471</created>
+      <option name="number" value="01374" />
+      <option name="presentableId" value="LOCAL-01374" />
+      <option name="project" value="LOCAL" />
+      <updated>1537142579471</updated>
+    </task>
+    <option name="localTasksCounter" value="1375" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1069,7 +987,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35110435" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35110435" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1093,7 +1011,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 89" />
     <MESSAGE value="PODSUMOWANIE 90" />
     <MESSAGE value="PODSUMOWANIE 91" />
     <MESSAGE value="PODSUMOWANIE 92" />
@@ -1118,7 +1035,8 @@
     <MESSAGE value="PODSUMOWANIE 112" />
     <MESSAGE value="PODSUMOWANIE 113" />
     <MESSAGE value="PODSUMOWANIE 114" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 114" />
+    <MESSAGE value="PODSUMOWANIE 115" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 115" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1288,20 +1206,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toRemember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="774" column="37" selection-start-line="774" selection-start-column="37" selection-end-line="774" selection-end-column="37" />
+        <state relative-caret-position="-932">
+          <caret line="941" column="22" selection-start-line="941" selection-start-column="22" selection-end-line="944" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#23526#23527#0" expanded="true" />
             <element signature="e#23611#23612#0" expanded="true" />
+            <element signature="e#36819#36820#0" expanded="true" />
+            <element signature="e#36848#36849#0" expanded="true" />
+            <element signature="e#36947#36948#0" expanded="true" />
+            <element signature="e#37013#37014#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="2358" selection-start-line="2358" selection-end-line="2358" />
+        <state relative-caret-position="476">
+          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#22618#22619#0" expanded="true" />
