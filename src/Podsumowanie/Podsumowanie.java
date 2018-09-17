@@ -7,7 +7,9 @@ import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.*;
 import java.util.List;
 import java.util.function.*;
@@ -18,7 +20,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.toList;
 
 public class Podsumowanie {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         /*
         --------------SKTORY KLAWISZOWE-------------------
 
@@ -723,7 +725,7 @@ public class Podsumowanie {
         --------------------------WPROWADZANIE DANYCH-----------------------------
         */
         class Wew3 {
-            void start() throws FileNotFoundException {
+            void start() throws IOException {
                 String imie;
                 List<String> imiona = new ArrayList<>();
                 Scanner wejscie = new Scanner(System.in);
@@ -788,6 +790,13 @@ public class Podsumowanie {
                     // tj. pierwszy wyraz element 0 , 2 ->1 itp.
                 }
                 scanner2.close();//musze zamknac
+
+
+                //-----
+                //Z BufferedReader
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                int x = Integer.parseInt(br.readLine());
+                String y = br.readLine();
 
             }
         }
@@ -2129,7 +2138,7 @@ class Wew4{
         Klasa File zawiera postawowe operacje na plikach i przyjmowana jako
          parametr moze posluzyc do utworzenia unstancji innej klasy np:
         -FileReader - odczyt pliku znak po znaku
-        -BufferReade - odczyt linijka po linijce
+        -BufferReader - odczyt linijka po linijce
         new BufferedReader(new FileReader(new File("/path/to/text/file.txt")));
 
         Jest to dostanie sie do pliku "warstwa po warstwie"
@@ -2311,6 +2320,42 @@ class Wew4{
         }
         Wew6 wew6 = new Wew6();
         wew6.metoda();
+
+
+        //----
+        //Tworzenie folderu/pliku Klasycznie
+        //-tworznie pliku
+        String lokalizacja3 = "src/Podsumowanie/PlikiTestowe/plik5.txt";
+        if(!Files.exists(Paths.get(lokalizacja3)))
+            Files.createFile(Paths.get(lokalizacja3));
+        //lub
+        String lokalizacja4 = "src/Podsumowanie/PlikiTestowe/plik6.txt";
+        File file = new File(lokalizacja4);
+        if(!file.exists())
+            file.createNewFile();
+
+        //tworznie folderu
+        String lokalizacja = "src/Podsumowanie/PlikiTestowe/MojFolder";
+        new File(lokalizacja).mkdir();
+
+        //lub
+        String lokalizacja2 = "src/Podsumowanie/PlikiTestowe/MojFolder2";
+        if(!Files.exists(Paths.get(lokalizacja2)))
+            Files.createDirectory(Paths.get(lokalizacja2));
+
+
+        //----
+        //Kopiowanie pliku
+        String gdzieSkopiowac = "src/Podsumowanie/PlikiTestowe/MojFolder/plikSkopiwoany.txt";
+        //nazywam plik tam gdzie ma byc skopiowany
+        Files.copy(Paths.get(lokalizacja3)
+                ,Paths.get(gdzieSkopiowac)
+                ,StandardCopyOption.REPLACE_EXISTING);
+        //Prenosszenie pliku
+        String gdziePrzeniesc = "src/Podsumowanie/PlikiTestowe/MojFolder2/plikPrzeniesiony.txt";
+        Files.move(Paths.get(lokalizacja4),
+                Paths.get(gdziePrzeniesc),
+                StandardCopyOption.REPLACE_EXISTING);
 
 
         //----
