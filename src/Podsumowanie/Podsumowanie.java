@@ -4308,6 +4308,9 @@ class Wew4{
                 .mapToInt(Integer::intValue)
                 .sum();/*
 
+        -collect - moge uzyc do wyswietlenie w toString
+        rycerze.stream().map(Objects::toString).collect(Collectors.joining(","));
+
 
 
         //----
@@ -4580,6 +4583,8 @@ class Wew4{
 
        -//String autaString2 = auta.stream().collect(Collectors.joining(", ","{","}"));
         //Przypisuje do stringa zawartosc kolekcji
+       -//rycerze.stream().map(Objects::toString).collect(Collectors.joining(","));
+        // moge uzyc w toString do zwrocenia kolekcji z mapowaniem
 
 
         max //przypisuje do zmiennej
