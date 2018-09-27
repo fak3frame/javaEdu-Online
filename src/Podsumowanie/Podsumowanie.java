@@ -635,6 +635,19 @@ public class Podsumowanie {
         Metoda finalna nie moze byc przeslonieta! (nadpisana w innej klasie dziedziczacej)
          final void metoda();
 
+        Klasa moze posiadac tez metode staric ktora wykona sie po skompilowaniu klasy
+
+        private static Map<String, Imie> pracownicy = new HashMap<>();
+        static{
+            pracownicy.put("Pawel", new Imie("pawel));
+        }
+        private static Optional<Imie> znajdz(String imie){
+            return Optional.ofNullable(pracownicy.get(imie));
+        }
+        //teraz wywolujac metode statyczna w innej klasie mam dostep do statycznych
+          pol jak np mapa
+        Optional<Imie> pracownik = PracownikRepository.znajdz("Pawel");
+
          */
         class Wew1 {
             public /* static */String metodaDajacaString(int liczba) {
@@ -4664,7 +4677,7 @@ class Wew4{
          miec wartosc null.
 
         Metody:
-        - empty - tworzy pusty Optional z wartością null w środku.
+        - empty() - tworzy pusty Optional z wartością null w środku.
         - of(T value) - tworzy Optional z podaną wartością. W przypadku przekazania
            null dostaniemy nullPointerException.
         - ofNullable(T value) - również tworzy Optional z podaną wartością, ale w
@@ -4675,6 +4688,33 @@ class Wew4{
            wartość czy też null.
         - get() - pobranie przechowywanego obiektu. Jeżeli takiego nie
            ostaniemy: NoSuchElementException
+
+
+        */
+        Map<String, Imie> mapaOptional = new HashMap<>();
+        mapaOptional.put("Pawel", new Imie("pawel"));
+        mapaOptional.put("Tomek", new Imie("tomek"));
+
+        Optional<Imie> optionalOfPawel = Optional.of(mapaOptional.get("Pawel"));
+        //Optional<Imie> optionalPusty = Optional.of(mapaOptional.get("Kamil"));
+        //Optional<Imie> optionalPusty2 = Optional.of(null);
+        //Metoda of Zwraca optionala z wybranym obiektem ale zaklada ze NIE BEDZIE
+        // W ARGUMENCIE PRZESLANY NULL!
+        //Obydwie metody stworza wyjatek nullpointexception
+
+        Optional<Imie> optionalPawel = Optional.ofNullable(mapaOptional.get("Pawel"));
+        Optional<Imie> optionalKamil = Optional.ofNullable(mapaOptional.get("Kamil"));//brak
+        Optional<Imie> optionalNull = Optional.ofNullable(null);
+        //Metoda ofNullable nie wyrzuca wyjatku w przyslania nulla tylko tworzy pusty
+        // obiekt Optional
+        //TA METODA JEST BARDZIEJ ZALECANA!
+
+        Optional<Imie> optionalEmpty = Optional.empty();
+        //zwraca pusty optional
+
+
+
+
 
 
 
