@@ -4690,6 +4690,7 @@ class Wew4{
            ostaniemy: NoSuchElementException
 
 
+        Uzycie:
         */
         Map<String, Imie> mapaOptional = new HashMap<>();
         mapaOptional.put("Pawel", new Imie("pawel"));
@@ -4713,21 +4714,61 @@ class Wew4{
         //zwraca pusty optional
 
 
+        Imie nowyPracownik = optionalPawel.get();
+        //zapis do obiektu z optionala
+
+        //Imie nowyPracownik2 = optionalNull.get();
+        //zwroci wyjatek bo jest null wiec moge uzyc metody isPresent():
+
         if(optionalPawel.isPresent()){//metoda zwroci true jesli Optional ma cos w srodku
-            Imie imie = optionalPawel.get();
-            System.out.println("Imie optional pawel: "+imie.getImie());
+            Imie nowyPracownik3 = optionalPawel.get();
+            System.out.println("Imie optional pawel: "+nowyPracownik3.getImie());
         }
-        //lub
+
+
         optionalPawel.ifPresent(x -> System.out.println(x.getImie()));
+        //metoda if present przyjmuje consumer czyli moze cos wyswietlic
         //lub
         Optional<String> optionalString = optionalPawel.map(x -> x.getImie());
         //w mapoweniu nie moge dac Wiek::getWiek bo metoda nie jest statyczna
-        // jak mapa!!
+        // jak mapa w srodku optionala!!
         System.out.println("Imie z nowego Optional<String>:");
         optionalString.ifPresent(System.out::println);
         //lub w 1 linii
         System.out.println("Imie z map+ifpresent:");
-        optionalPawel.map(x -> x.getImie()).ifPresent(System.out::println);
+        optionalPawel
+                .map(x -> x.getImie())
+                .ifPresent(System.out::println);
+        //UWAGA maptownie zmieni tylko TYP GENERYCZNY OPTIONALA!!
+
+
+        //Moge takze filtrowac
+        System.out.println("filtrowanie:");
+        optionalPawel
+                .filter(x -> x.getImie().equals("Pawel"))
+                .map(x -> x.getImie())
+                .map(String::toUpperCase)
+                .ifPresent(System.out::println);
+
+
+        //Jesli nie bedzie obiektu w Optional lub nie przjedzie filtr moge
+        // uzyc orElse()
+        String imiePracownika = optionalPawel
+                .filter(x->x.getImie().equals("P"))
+                .map(x -> x.getImie())
+                .orElse("Brak pracownika");
+                //.orElseThrow(()-> new RuntimeException("brak prownika"));
+                //lub z wyrzuceniem wyjatku
+
+        System.out.println("Imie pracownika : "+imiePracownika);
+
+
+        //W javie 9 moge stworzyc strumien z optionala
+        optionalNull
+                .or(()->Optional.of(new Imie("Kamil")))
+                //ta metoda przyjmuje Suplier
+                .map(x->x.getImie())
+                .ifPresent(System.out::println);
 
 
 
