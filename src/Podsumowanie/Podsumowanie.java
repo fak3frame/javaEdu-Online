@@ -4656,6 +4656,29 @@ class Wew4{
          */
 
 
+
+        /*-------------------------------------------------------------------------
+        --------------------------KLASA Optional-----------------------------------
+
+        Klasa Optional to generyczny pojemnik ze zmeinna dowolnego typu ktora moze
+         miec wartosc null.
+
+        Metody:
+        - empty - tworzy pusty Optional z wartością null w środku.
+        - of(T value) - tworzy Optional z podaną wartością. W przypadku przekazania
+           null dostaniemy nullPointerException.
+        - ofNullable(T value) - również tworzy Optional z podaną wartością, ale w
+           przypadku przekazania null nie zostanie zgłoszony wyjątek.
+        - Optional(T value) - konstruktor rzucający błąd w przypadku przekazania
+           wartości null.
+        - isPresent() - zwraca boolean mówiący czy w środku znajduje się jakaś
+           wartość czy też null.
+        - get() - pobranie przechowywanego obiektu. Jeżeli takiego nie
+           ostaniemy: NoSuchElementException
+
+
+
+
         /*-------------------------------------------------------------------------
         -----------------------------KLASA ROBOT-----------------------------------
 
@@ -4686,6 +4709,8 @@ class Wew4{
             System.out.println("Co on robi?");
             e.printStackTrace();
         }
+
+
 
 
     }
