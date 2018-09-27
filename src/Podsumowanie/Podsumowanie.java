@@ -4713,6 +4713,26 @@ class Wew4{
         //zwraca pusty optional
 
 
+        if(optionalPawel.isPresent()){//metoda zwroci true jesli Optional ma cos w srodku
+            Imie imie = optionalPawel.get();
+            System.out.println("Imie optional pawel: "+imie.getImie());
+        }
+        //lub
+        optionalPawel.ifPresent(x -> System.out.println(x.getImie()));
+        //lub
+        Optional<String> optionalString = optionalPawel.map(x -> x.getImie());
+        //w mapoweniu nie moge dac Wiek::getWiek bo metoda nie jest statyczna
+        // jak mapa!!
+        System.out.println("Imie z nowego Optional<String>:");
+        optionalString.ifPresent(System.out::println);
+        //lub w 1 linii
+        System.out.println("Imie z map+ifpresent:");
+        optionalPawel.map(x -> x.getImie()).ifPresent(System.out::println);
+
+
+
+
+
 
 
 
