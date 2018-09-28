@@ -4676,6 +4676,8 @@ class Wew4{
         Klasa Optional to generyczny pojemnik ze zmeinna dowolnego typu ktora moze
          miec wartosc null.
 
+        W javie 9 moge stworzyc strumien z optionala
+
         Metody:
         - empty() - tworzy pusty Optional z wartością null w środku.
         - of(T value) - tworzy Optional z podaną wartością. W przypadku przekazania
@@ -4696,6 +4698,7 @@ class Wew4{
         mapaOptional.put("Pawel", new Imie("pawel"));
         mapaOptional.put("Tomek", new Imie("tomek"));
 
+        //OF
         Optional<Imie> optionalOfPawel = Optional.of(mapaOptional.get("Pawel"));
         //Optional<Imie> optionalPusty = Optional.of(mapaOptional.get("Kamil"));
         //Optional<Imie> optionalPusty2 = Optional.of(null);
@@ -4703,6 +4706,7 @@ class Wew4{
         // W ARGUMENCIE PRZESLANY NULL!
         //Obydwie metody stworza wyjatek nullpointexception
 
+        //OFNULLABLE
         Optional<Imie> optionalPawel = Optional.ofNullable(mapaOptional.get("Pawel"));
         Optional<Imie> optionalKamil = Optional.ofNullable(mapaOptional.get("Kamil"));//brak
         Optional<Imie> optionalNull = Optional.ofNullable(null);
@@ -4710,10 +4714,12 @@ class Wew4{
         // obiekt Optional
         //TA METODA JEST BARDZIEJ ZALECANA!
 
+        //EMPTY
         Optional<Imie> optionalEmpty = Optional.empty();
         //zwraca pusty optional
 
 
+        //GET
         Imie nowyPracownik = optionalPawel.get();
         //Metoda get wyciaga obiekt z Opbtional
 
@@ -4721,30 +4727,29 @@ class Wew4{
         //zwroci wyjatek bo jest null wiec moge uzyc metody isPresent() poniewaz
         // zwraca true jesli NIE MA w sobie nulla
 
+        //ISPRESENT
         if(optionalPawel.isPresent()){//metoda zwroci true jesli Optional ma cos w srodku
             Imie nowyPracownik3 = optionalPawel.get();
             System.out.println("Imie optional pawel: "+nowyPracownik3.getImie());
         }
 
-
+        //IFPRESENT
         optionalPawel.ifPresent(x -> System.out.println(x.getImie()));
-        //metoda if present przyjmuje consumer czyli moze cos wyswietlic
-        //lub
-        Optional<String> optionalString = optionalPawel.map(x -> x.getImie());
+        //metoda ifPresent zadziala jesli w Optionalu jest obiekt oraz przyjmuje
+        // consumer czyli moze cos wyswietlic
+
+        Optional<String> optionalString = optionalPawel
+                .map(x -> x.getImie());
         //w mapoweniu nie moge dac Wiek::getWiek bo metoda nie jest statyczna
         // jak mapa w srodku optionala!!
-        System.out.println("Imie z nowego Optional<String>:");
         optionalString.ifPresent(System.out::println);
-        //lub w 1 linii
-        System.out.println("Imie z map+ifpresent:");
+
         optionalPawel
                 .map(x -> x.getImie())
                 .ifPresent(System.out::println);
         //UWAGA maptownie zmieni tylko TYP GENERYCZNY OPTIONALA!!
 
-
         //Moge takze filtrowac
-        System.out.println("filtrowanie:");
         optionalPawel
                 .filter(x -> x.getImie().equals("Pawel"))
                 .map(x -> x.getImie())
@@ -4752,24 +4757,44 @@ class Wew4{
                 .ifPresent(System.out::println);
 
 
+        //ORELSE
         //Jesli nie bedzie obiektu w Optional lub nie przjedzie filtr moge
-        // uzyc orElse()
+        // uzyc orElse() ktora zwroci STRING!
         String imiePracownika = optionalPawel
-                .filter(x->x.getImie().equals("P"))
+                .filter(x->x.getImie().equals("Pwl"))
                 .map(x -> x.getImie())
                 .orElse("Brak pracownika");
                 //.orElseThrow(()-> new RuntimeException("brak prownika"));
                 //lub z wyrzuceniem wyjatku
 
-        System.out.println("Imie pracownika : "+imiePracownika);
 
+        //Java 9:
 
-        //W javie 9 moge stworzyc strumien z optionala
+        //OR
+        //Metoda wykonuje sie jesli w Optional jest null i zawiera interfaca
+        // supplier czyli nic nie przujmuje a zwraca cos
+        //Moge jestli Optional ma null do stworzenia obiektu i moge
+        // wykorzystac metode of Optional
         optionalNull
                 .or(()->Optional.of(new Imie("Kamil")))
-                //ta metoda przyjmuje Suplier
                 .map(x->x.getImie())
                 .ifPresent(System.out::println);
+
+        //IFPRESENTORELSE
+        //Metoda wykona 1 z 2 instrukcji:
+        //Moze wyswietlic (consumer) jesli cos jest w Optional lub jesli jest null
+        // wykona sie druga instrukcja (runnable - nic nie przyjmuje nic nie zwraca)
+        // np wyswietlenie napisu
+        optionalNull
+                .or(()->Optional.of(new Imie("Janusz")))
+                .filter(x -> x.getImie().equals("Jan"))
+                .map(x -> x.getImie())
+                .ifPresentOrElse(
+                        System.out::println,
+                        () -> System.out.println("brak Jana")
+                );
+
+
 
 
 
