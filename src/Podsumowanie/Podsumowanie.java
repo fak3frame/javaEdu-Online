@@ -4715,10 +4715,11 @@ class Wew4{
 
 
         Imie nowyPracownik = optionalPawel.get();
-        //zapis do obiektu z optionala
+        //Metoda get wyciaga obiekt z Opbtional
 
         //Imie nowyPracownik2 = optionalNull.get();
-        //zwroci wyjatek bo jest null wiec moge uzyc metody isPresent():
+        //zwroci wyjatek bo jest null wiec moge uzyc metody isPresent() poniewaz
+        // zwraca true jesli NIE MA w sobie nulla
 
         if(optionalPawel.isPresent()){//metoda zwroci true jesli Optional ma cos w srodku
             Imie nowyPracownik3 = optionalPawel.get();
