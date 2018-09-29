@@ -4728,7 +4728,8 @@ class Wew4{
         // zwraca true jesli NIE MA w sobie nulla
 
         //ISPRESENT
-        if(optionalPawel.isPresent()){//metoda zwroci true jesli Optional ma cos w srodku
+        //metoda zwroci true jesli Optional ma cos w srodku
+        if(optionalPawel.isPresent()){
             Imie nowyPracownik3 = optionalPawel.get();
             System.out.println("Imie optional pawel: "+nowyPracownik3.getImie());
         }
