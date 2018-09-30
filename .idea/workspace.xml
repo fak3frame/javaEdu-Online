@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 125">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 126">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,13 +46,13 @@
           <entry key="Stringi" value="114" />
           <entry key="java" value="107637" />
           <entry key="regexp" value="18" />
-          <entry key="txt" value="634" />
+          <entry key="txt" value="635" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="107637" />
-          <entry key="PLAIN_TEXT" value="748" />
+          <entry key="PLAIN_TEXT" value="749" />
           <entry key="RegExp" value="18" />
         </counts>
       </usages-collector>
@@ -110,7 +109,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="-247">
               <caret line="4732" column="54" lean-forward="true" selection-start-line="4732" selection-start-column="54" selection-end-line="4732" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -301,7 +300,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538171488407" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538322072309" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -452,13 +451,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01336" summary="PODSUMOWANIE 77">
-      <created>1536353371848</created>
-      <option name="number" value="01336" />
-      <option name="presentableId" value="LOCAL-01336" />
-      <option name="project" value="LOCAL" />
-      <updated>1536353371848</updated>
     </task>
     <task id="LOCAL-01337" summary="PODSUMOWANIE 78">
       <created>1536353603710</created>
@@ -796,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538170703604</updated>
     </task>
-    <option name="localTasksCounter" value="1385" />
+    <task id="LOCAL-01385" summary="PODSUMOWANIE 126">
+      <created>1538233719072</created>
+      <option name="number" value="01385" />
+      <option name="presentableId" value="LOCAL-01385" />
+      <option name="project" value="LOCAL" />
+      <updated>1538233719072</updated>
+    </task>
+    <option name="localTasksCounter" value="1386" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -841,7 +840,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="161" y="0" width="1586" height="1447" extended-state="0" />
+    <frame x="161" y="0" width="1586" height="1447" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20380078" />
@@ -853,7 +852,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.35110435" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.35110435" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -877,7 +876,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 100" />
     <MESSAGE value="PODSUMOWANIE 101" />
     <MESSAGE value="PODSUMOWANIE 102" />
     <MESSAGE value="PODSUMOWANIE 103" />
@@ -902,7 +900,8 @@
     <MESSAGE value="PODSUMOWANIE 123" />
     <MESSAGE value="PODSUMOWANIE 124" />
     <MESSAGE value="PODSUMOWANIE 125" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 125" />
+    <MESSAGE value="PODSUMOWANIE 126" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 126" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,7 +1099,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
+        <state relative-caret-position="-247">
           <caret line="4732" column="54" lean-forward="true" selection-start-line="4732" selection-start-column="54" selection-end-line="4732" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />

@@ -4512,6 +4512,9 @@ class Wew4{
         //Metoda .mapToInt przypisuje zmienne strumienia do int przez co moge
         // uzyc metody sum
 
+       -//return rycerze.stream().map(Objects::toString).collect(Collectors.joining(","));
+       //W metodzie toString moge tak wyswielic kolekcje obiektow
+
 
         peek //Consumer<T> | void accept(T t) //bezposrednio + nowa lista
         .peek(x -> System.out.println(x))
