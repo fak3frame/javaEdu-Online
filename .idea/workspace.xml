@@ -29,16 +29,17 @@
     <session id="2070858659">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -109,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
-              <caret line="4732" column="54" lean-forward="true" selection-start-line="4732" selection-start-column="54" selection-end-line="4732" selection-end-column="54" />
+            <state relative-caret-position="85">
+              <caret line="4688" column="69" lean-forward="true" selection-start-line="4688" selection-start-column="69" selection-end-line="4688" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,8 +238,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="161" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="175" />
+    <option name="y" value="6" />
     <option name="width" value="1586" />
     <option name="height" value="1447" />
   </component>
@@ -268,6 +270,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -295,7 +298,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -840,10 +842,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="161" y="0" width="1586" height="1447" extended-state="1" />
+    <frame x="672" y="61" width="1586" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20380078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27260813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1031,9 +1033,7 @@
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/empty">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/MojFolder">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/MojFolder" />
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1041,19 +1041,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik3.txt" />
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik1.txt" />
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PlikiTestowe/plik2.txt" />
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Ojciec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1072,15 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-932">
           <caret line="941" column="22" selection-start-line="941" selection-start-column="22" selection-end-line="944" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#23526#23527#0" expanded="true" />
-            <element signature="e#23611#23612#0" expanded="true" />
-            <element signature="e#36819#36820#0" expanded="true" />
-            <element signature="e#36848#36849#0" expanded="true" />
-            <element signature="e#36947#36948#0" expanded="true" />
-            <element signature="e#37013#37014#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,19 +1069,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding>
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4084#4085#0" expanded="true" />
-            <element signature="e#4812#4813#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="4732" column="54" lean-forward="true" selection-start-line="4732" selection-start-column="54" selection-end-line="4732" selection-end-column="54" />
+        <state relative-caret-position="85">
+          <caret line="4688" column="69" lean-forward="true" selection-start-line="4688" selection-start-column="69" selection-end-line="4688" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
