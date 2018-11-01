@@ -2024,13 +2024,17 @@ class Wew4{
          liczbowa obiektu na podstawie wartosci jego WYBRANYCH pol i przez te
          wartosci wie ze obiekt jest w zbiorze
 
-        Zbiory dzielimy na
+        Zbiory glownie dzielimy na:
         -HashSet - w srodku umieszczona jest tablica mieszajaca, wymaga
-         implementacji hashCode oraz equals
+         implementacji hashCode oraz equals,
+         MOZE przechowywac wartosc null
+         Ma stala szybkosc dzialania
 
         -TreeSet - uporzadkowywwuje elementy wg naturalnego porzedku, wymagane
          jest do tego implementacja interfejsu Comparable lub uzycie odpowiedniego
-         Comparatora
+         Comparatora lub ustalic specyfikacje w konstruktorze
+         NIE MOZE przechowywac wartosci null
+         Szybkosc dzialanie jest wyliczana logarytmicznie
 
         -LinkedHashSet - dodatkowo zapamietuje kolejnosc dodawnych elementow
          */
@@ -2125,6 +2129,23 @@ class Wew4{
 
         HashMap pozwala na uzycie jednego klucza null i nieograniczonej ilosci wartosci
          null, do iterowania wykorzystuje iterator, jest duzo szybsza od HashTable
+
+
+        HashMapa sklada sie z Bucketow i ma ograniczona ich ilosc
+
+        Jesli w jednym puckecie jest wiecej niz jeden obiekt (kolizja) tworzona jest
+         w Bucketach LinkedLista na obiekty typu Entry
+        Jesli chce wyciagnac obiekt z takiej listy HashMap wywoluje na kazdym elemencie
+         metode equals i porownje hash obiektu jaki chcemy wyciagnac z obiektami z listy
+         i jesli wynik da true obiekt bedzie wyciagniety
+
+        HashMap podczas wkladania obiektu put() wywolywana jest metoda hashCode()
+         na kluczu i wywoluje na hashu wlasna metode hashujaca aby znalezc
+         miejsce w BUCKETcie na obiekt typu Entry
+        Klucz i wartosc jest przechowywana jako Map.Entry w Bucket-cie
+
+        Podczas proby wyciagniecia obiektu z Mapy get() generowany jest takze jego hashcode
+         ktory pozwoli wyciagnac poprawny obiekt z Bucketu
 
          */
         Map<Integer, String> mapa1 = new HashMap<>(2);
