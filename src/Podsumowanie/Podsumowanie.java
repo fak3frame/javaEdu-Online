@@ -1871,6 +1871,18 @@ class Wew4{
         //------------------------------------------------------------------------
         /*----------------------------KOLEKCJE------------------------------------
 
+
+        /* Iterator
+
+        Jest to interfejs posiadajacy metody potrzebne do iterowania kazdej z kolekcji
+
+        Mozemy dzieki niemu przeprowadzic operacjie takie jak usuniecie czy odczyt
+
+
+
+
+        ----
+
         Kolekcja to sposob grupownia obiektow, jest ona struktura danych
 
         Kolekcja jest to obiek pozwalajacy na grupowanie obiektow
@@ -1924,7 +1936,7 @@ class Wew4{
         -----
         Lista
 
-        Dzielimy je na:
+        Głowne Listy dzielimy na:
         -LinkedList - gdy chce czesto dodawac/usuwac elementy - implemenacja dowiazana
         -ArrayList - gdy chce  czesto miec dostep do elementow - implemenacja tablicowa
 
@@ -1936,6 +1948,25 @@ class Wew4{
         Dobra praktyka jest dlekarowanie ich jako typ List
          (List<String> list = new ArrayList<>();
          aby mozna byloby je potem bez problemu zmienic jedna na druga
+
+
+        ArrayList przechowuje pod jakim ideksem jest dany element
+        LinkedList przechowuje informacje o nastepnym elemencie
+
+        Odczyt - ArrayList jest dzieki indeksom szybszy poniewaz w LinkedList trzeba
+                 przeiterowac cala kolekcje aby znalezc element
+
+        Usuwanie - W LinkedList zmienia sie tylko odnosnik do kolejnego elementu przez
+                    co jest szybsze od ArrayList gdzie musi sie zmienic polozenie wszystkich
+                    elementow za usunietym
+
+        Dodawnia - W LikedList nie istnieje ryzyko powiekszenia tablcy i kopiowania zawartosci
+                   do nowej listy, w ArrayList jesli przekrocze rozmiar to stworzona zostanie
+                   nowa lista i wszystkie elementy zostana przekopiowane
+                   Dodatkowo jesli dodam element w innym miejscu niz na koncu, wszystkie
+                   elementy po nim beda musialy zostac przesuniete
+
+
         */
 
         List<String> lista1 = new ArrayList<>(3);
@@ -2028,8 +2059,8 @@ class Wew4{
 
         Kolejka sluzy do przechowywyanie obiektow w wybranej kolejnosci do przetworzenia
 
-        -FIFO - Obiekt pierwszy dodany zostaje pierwszy przetworzony ("rurka")
-        -LIFO - Obiekt ostatni dodany zostaje pierwszy przetworzony ("pojemnik")
+        -FIFO - Obiekt pierwszy dodany zostaje pierwszy przetworzony ("rurka") - kolejka
+        -LIFO - Obiekt ostatni dodany zostaje pierwszy przetworzony ("pojemnik") - sterta(stack)
 
         W klasie PriorityQueue porzadkuje za pomoca obiektu klasy Comparatora lub
          naturalnego kolejkowania
