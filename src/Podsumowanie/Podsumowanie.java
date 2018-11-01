@@ -1921,22 +1921,21 @@ class Wew4{
                 -HashTable(k)
 
 
-
         -----
         Lista
-
-        Charakteryzuje sie tym ze jej rozmiar moze sie zmieniac, dobra praktyka
-         jest dlekarowanie ich jako typ List (List<String> list = new ArrayList<>();
-         aby mozna byloby je potem bez problemu zmienic jedna na druga
-
-        -Moga przechowywac ten sam obiekt kilka razy
-        -Kolejnosc jest wazna
 
         Dzielimy je na:
         -LinkedList - gdy chce czesto dodawac/usuwac elementy - implemenacja dowiazana
         -ArrayList - gdy chce  czesto miec dostep do elementow - implemenacja tablicowa
 
-        Dobra praktyka jest uzywanie typu List aby potem moc zmienic rodzaj
+        -Moga przechowywac ten sam obiekt kilka razy
+        -Kolejnosc jest wazna
+        -Moda dynamicznie zmieniac swoj rozmiar
+
+
+        Dobra praktyka jest dlekarowanie ich jako typ List
+         (List<String> list = new ArrayList<>();
+         aby mozna byloby je potem bez problemu zmienic jedna na druga
         */
 
         List<String> lista1 = new ArrayList<>(3);
@@ -1974,12 +1973,12 @@ class Wew4{
         /*----
         Zbior
 
-        Sluzy do przyechowywania unikalnych elementow, mozemy wykorzystac je
-         takze aby pozbyc sie duplikatow a Liscie dodajac wszystkie elementy
-         do nowego zbioru.
 
         -Kolejnosc nie jest istotna
         -Kazdy element jest unikatowy
+
+        Moge pozbyc sie duplikatow elementow z Listy zamieniajac ja na Zbior
+         z uzyciem metody addAll()
 
         Aby miec pewnosc ze element jest juz w zbioerze nalezy zaimpelementowac
          metode hashCode oraz Equals !! Metoda hashCode w klasie oblicza wartosc
