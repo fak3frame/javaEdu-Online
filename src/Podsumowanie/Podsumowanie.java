@@ -1896,6 +1896,32 @@ class Wew4{
         Collections jest to klasa ktora posiada statyczne metody do operacji
          na kolekcjach takie jak sortowanie, wyszukiwanie elementu etc.
 
+
+        -Collection(i)
+            -List(i)
+                -ArrayList(k)
+                -LinkedList(k)
+            -Set(i)
+                -HashSet(k)
+                    -LinkedHashSet(k)
+                -SortedSet(i)
+                    -NavigableSet(i)
+                        -TreeSet(k)
+            -Queue(i)
+                -PriorityQueue(k)
+                -BlockingQueue(k)
+
+        -Map(i)
+            -SortedMap(i)
+                -TreeMap(k)
+            -AbstractMap(k)
+                -TreeMap(k)
+                -HashMap(k)
+                    -LinkedHashMap(k)
+                -HashTable(k)
+
+
+
         -----
         Lista
 
