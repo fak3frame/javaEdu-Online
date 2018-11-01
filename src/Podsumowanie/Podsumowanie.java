@@ -211,7 +211,8 @@ public class Podsumowanie {
          samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis)
 
         Jesli zadeklaruje zmienna String bez slowa new wyladuje ona w pamieci
-         lokalnej w kontenerze o nazwie String pool
+         lokalnej w kontenerze o nazwie String pool, jesli z to w pamieci
+         lokalnej bezposrednio
 
         Jest takze metodaZwykla .intern();
         Jesli wywolam ja na Stringu z konstruktorem new String("wartosc");
