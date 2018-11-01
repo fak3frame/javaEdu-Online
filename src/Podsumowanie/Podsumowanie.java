@@ -1877,7 +1877,8 @@ class Wew4{
 
         W odrownieniu od tablic nie maja sztywno okreslonego rozmiaru
 
-
+        Framework kolekcji - struktura kolekcji jest to zbior struktur danych oraz
+         algorytmow do operacji na nich (dodawanie, usuwanie, przeszukiwanie itp)
 
         -----
         Lista
