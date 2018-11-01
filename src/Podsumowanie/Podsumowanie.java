@@ -56,8 +56,19 @@ public class Podsumowanie {
         //------------------------------------------------------------------------
         -------------------------------OGOLNE-------------------------------------
 
-        Klasa - projekt/foremka
+        Klasa - projekt/foremka/schemat
+
+        Na jej podstawie tworzone sa jej obiekty, zawiera pola oraz metody
+         jakie bedzie mozna wykonywac np przez jej obiekt
+
+
         Obiekt/instancja - produkt
+
+        Jest to jednostka zawierajaca stan zapisanych pol oraz zachowania definiowane
+         przez metody. Metody odpowiadaja za operacje wykonywane na wewnetrznych stanach
+         obiektu oraz komunikacje pomiedzy dwoma roznymi obiektami
+
+
 
         Maszyna wirtualna pomaga zarzadzac pamiecia
 
@@ -66,11 +77,16 @@ public class Podsumowanie {
         Y-funkcjonalonsci
         Z-latki
 
-        JVM - maszyna witrualna javy np Oracle
+        JVM - maszyna witrualna javy np Oracle, jest to "procesor" wykonujacy
+               skompilowany kod javy (kod bajtowy), dziala ona wyzej niz poziom
+               maszynowy aby mogla byc uruchomiona na kazdej platformie
+               Jest w niej np Garbage Collector
 
-        JRE - maszyna wirtualna tylko dla uruchamiania programow
+        JRE - maszyna wirtualna w ktorej programy javy sa uruchamiane
 
-        JDK - zestaw narzedzi zawierajacy takze kompilator javac
+        JDK - zestaw narzedzi zawierajacy takze kompilator javac, maszyne wyrtualna
+               do uruchomienia kodu bajtowego javy (JRE), narzedzia tekie jak JavaDoc
+               czy Debugger
 
         IDE (ang. Integrated Development Environment)
 
@@ -994,7 +1010,18 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
-         ------------------------------------KLASY--------------------------------
+         ------------------------KLASY I INTEFEJSY--------------------------------
+
+        /* Interfejsy
+
+
+
+
+
+
+
+        ---------
+        /* Klasy:
 
         Sluza do grupowania atrybutow/pol i metod
 
@@ -1305,6 +1332,9 @@ class Wew4{
 
          -----
          //Polimorfizm
+
+         W Javie wszytkie Klasy sa polimorficzne poniewaz kazda dziedziczy po
+          Object
 
          Tworze obiekt polimorficznie (typ rodzic - obiekt dziecko)
           aby moc w typie rodzica umiesciec inne klasy pochodne rodzica.
