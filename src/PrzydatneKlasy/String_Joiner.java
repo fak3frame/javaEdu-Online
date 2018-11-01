@@ -1,6 +1,6 @@
 package PrzydatneKlasy;
 
-import javafx.scene.shape.Path;
+//import javafx.scene.shape.Path;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

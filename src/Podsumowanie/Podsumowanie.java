@@ -217,14 +217,26 @@ public class Podsumowanie {
          lokalnej w kontenerze o nazwie String pool, jesli z to w pamieci
          lokalnej bezposrednio
 
+
+        String itern:
+
         Jest takze metodaZwykla .intern();
+
         Jesli wywolam ja na Stringu z konstruktorem new String("wartosc");
          i wystapi String z takim samym literalem to zostanie on "podpiety"
          pod tem sam adres (miejsce w cache) pomimo uzycia alokacji
          pamieci z uzyem slowa new np:
          */
         String mojLiteral = "jakis napis";
+        String mojLiteralNiePodpiety = new String("jakis napis");
         String mojLiteralKopia = new String("jakis napis").intern();
+
+        System.out.println();
+        System.out.println("porownanie bez itern : "+(mojLiteral==mojLiteralNiePodpiety));
+        System.out.println("porownanie z itern : "+(mojLiteral==mojLiteralKopia));
+        System.out.println();
+
+
 
         /*
         String przetrzymuje znaki w tablicy znakow char[]
@@ -234,8 +246,8 @@ public class Podsumowanie {
          powoduje stworzenie nowego obiektu klasy String
 
         Zwiazane jest to z:
-         -bezpiczenstwem - nazwa uzytkownika / haslo jest zapisane jako string
-                            przez co jest wieksze bezpieczenstwo
+         -bezpiczenstwem - dane typu nazwa uzytkownika / haslo polaczone z baza danych nie
+                            jest tak latwo zmienic przez co jest wieksze bezpieczenstwo
          -synchronizacja - w programach wielowatkowych niezmienialnosc stringa
                             rozwiazuje problem z synchronizacja
          -zarzadzanie pamiecia - jesli obiekty maja ta sama wartosc moga byc
