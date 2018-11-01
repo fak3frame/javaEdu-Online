@@ -1014,9 +1014,20 @@ public class Podsumowanie {
 
         /* Interfejsy
 
+        Jest to typ refencyjny
+
+        Moze zawierac zmienne ktore sa finalne i statyczne
+
+        Moze zawierac deklaracje metod (jej nazwa oraz to co zwraca i przyjmuje bez
+         deklracaji ciala)
+
+        Klasa moze ich implementowac dowlona ilosc a rozszerzac moze tylko jedna klase
+
+        Intefejsy moga rozszerzac inne i DOWOLNA ICH ILOSC
 
 
-
+        W javie 8 powstaly interfejsy z metodami domyslnymi (default) oraz statycznymi
+         i moga one zawierac cialo
 
 
 
