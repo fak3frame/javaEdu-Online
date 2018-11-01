@@ -370,6 +370,10 @@ public class Podsumowanie {
          obiekty tworze ze slowem new, StringBuffer i String sa bezpieczne
          wielowatkowo, StringBuilder ma najwyzsza wydajnosc
 
+        Klasy String, StringBuilder, StringBuffer sa final przez co nie moga
+         byc rozszerzane natomiast nie ma to znaczenia jesli chodzi o
+         modyfikowalnosc ich obiektow
+
 
         StringBuilder
         Ta klasa takze zawiera ciag w tablicy znakow char[] lecz mozna
