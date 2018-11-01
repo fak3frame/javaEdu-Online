@@ -1879,6 +1879,22 @@ class Wew4{
 
         Framework kolekcji - struktura kolekcji jest to zbior struktur danych oraz
          algorytmow do operacji na nich (dodawanie, usuwanie, przeszukiwanie itp)
+        Jest on wbudowany w JDK
+
+        Najpopularniejsze:
+        -Collection
+        – List
+        – Set
+        – SortedSet
+        – Map
+        – SortedMap
+
+        Kolekcje poprawiaja szybkosc dzialania oraz jakosc oprogramowania.
+
+        Collection jest to glowny interfejs kolekcji
+
+        Collections jest to klasa ktora posiada statyczne metody do operacji
+         na kolekcjach takie jak sortowanie, wyszukiwanie elementu etc.
 
         -----
         Lista
