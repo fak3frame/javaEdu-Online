@@ -217,6 +217,13 @@ public class Podsumowanie {
          lokalnej w kontenerze o nazwie String pool, jesli z to w pamieci
          lokalnej bezposrednio
 
+        W Stringu nie powiniennem przechowywac hasel poniewaz przez proste
+         przypisanie obiekt String laduje w string pool z dluzsza zywotnoscia
+         niz w pamieci lokalnej (heap) przez co uzytkownik z dostepem
+         do pamieci moze taki obiekt przechwycic
+        Dodatkowo nie mozna pozbyc sie zawartosci obiektu String (immutable)
+        Hasla powinny byc przechowywane w tablicy znakow char[]
+
 
         String itern:
 
