@@ -1873,8 +1873,10 @@ class Wew4{
 
         Kolekcja to sposob grupownia obiektow, jest ona struktura danych
 
-        lang.Iterable -> util.Collection -> util.List, util.Set, util.Queue
-        util.Map
+        Kolekcja jest to obiek pozwalajacy na grupowanie obiektow
+
+        W odrownieniu od tablic nie maja sztywno okreslonego rozmiaru
+
 
 
         -----
