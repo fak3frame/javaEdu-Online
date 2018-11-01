@@ -207,6 +207,9 @@ public class Podsumowanie {
 
         Intancja klasy String nie musi byc tworzeona ze slowem new
 
+        String w odroznieniu od typow prymitywnych ma swoje miejsce w pamieci
+         lokalnej - string pool
+
         Jesli stringi zawieraja taki sam literal to sa przechowywane w tym
          samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis)
 
@@ -251,16 +254,25 @@ public class Podsumowanie {
         // Stringiem tj "" lub moge wykorzystac metode valueOf()
         String laczonyString2 = laczonyString + 345;
 
+
         /*
         String jest charakterystycznym obiektem poniewaz ta sama jego wartosc
-         jest alokowana w tym samym adresue GDY PRZYPISUJE GO POPRZEZ =
+         jest alokowana w tym samym adresie w pamieci lokalnej w string pool
+         GDY PRZYPISUJE GO POPRZEZ =
          */
         String napis1 = "test";
         String napis2 = "test";
+
         String napis3 = new String("test");
-        //Tutaj rezerwuje specjalnie oddzielnie miejsce w pamieci
-        // wiec po mimo tej samej wartosci napis3 i napis1/2 porownanie prost
+        //Tutaj rezerwuje specjalnie oddzielnie miejsce w pamieci (lokalnej)
+        // poza string pool
+        // wiec po mimo tej samej wartosci napis3 i napis1/2 porownanie proste
         // == da false, wiec nalezy porownac to metoda .equals()
+
+        // porownanie == porownuje adresy a string przypisany za pomoca "="
+        // jesli ma wartosc rowna innemu stringowi przypisanemu za pomoca "="
+        // to laduje w tym samym miejscu w pamieci (string pool) wiec porownanie
+        // == da wynik true
 
         System.out.println("Porownanie napis1 i napis2: " + (napis1 == napis2));
         //Pamietam o nawiasie bo inaczej doda moj "" do napis1 a nastepnie
@@ -352,6 +364,12 @@ public class Podsumowanie {
 
         /*------------------------------------------------------------------------
         -----------------StringBuilder/StringBuffer/StringJouner------------------
+
+        StringBuilder,StringBuffer sa klasami ktorych obiekty sa zmienialne,
+         obiekty sa umieszczane w pamieci lokalnej a nie w String pool,
+         obiekty tworze ze slowem new, StringBuffer i String sa bezpieczne
+         wielowatkowo, StringBuilder ma najwyzsza wydajnosc
+
 
         StringBuilder
         Ta klasa takze zawiera ciag w tablicy znakow char[] lecz mozna
