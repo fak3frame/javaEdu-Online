@@ -199,6 +199,8 @@ public class Podsumowanie {
         //------------------------------------------------------------------------
         --------------------------------ZMIENNA STRING----------------------------
 
+        String jest to klasa w pakiecie java.lang
+
         Literal znakowy jest to ciag znakow w "" np instancja klasy String.
 
         String jest specyficzna zmienna obiektowa
@@ -207,6 +209,9 @@ public class Podsumowanie {
 
         Jesli stringi zawieraja taki sam literal to sa przechowywane w tym
          samym miejscu w pamieci chyba ze uzyjemy slowa new String("napis)
+
+        Jesli zadeklaruje zmienna String bez slowa new wyladuje ona w pamieci
+         lokalnej w kontenerze o nazwie String pool
 
         Jest takze metodaZwykla .intern();
         Jesli wywolam ja na Stringu z konstruktorem new String("wartosc");
@@ -220,8 +225,19 @@ public class Podsumowanie {
         /*
         String przetrzymuje znaki w tablicy znakow char[]
 
+
         Instancje klasy String sa niemutowalne czyli kazda zmiana
          powoduje stworzenie nowego obiektu klasy String
+
+        Zwiazane jest to z:
+         -bezpiczenstwem - nazwa uzytkownika / haslo jest zapisane jako string
+                            przez co jest wieksze bezpieczenstwo
+         -synchronizacja - w programach wielowatkowych niezmienialnosc stringa
+                            rozwiazuje problem z synchronizacja
+         -zarzadzanie pamiecia - jesli obiekty maja ta sama wartosc moga byc
+                                  umieszczone w jedym miejscu w pamieci
+
+
          */
 
         //----
