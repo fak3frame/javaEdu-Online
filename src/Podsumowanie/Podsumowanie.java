@@ -2002,6 +2002,12 @@ class Wew4{
         Set<String> zbior3 = new LinkedHashSet<>(10);
         //Konstruktor zawiera wstepny rozmiar
 
+        /*
+        Aby wypisac elementy ze zbioru wykorzystuje iterator lub petle for (Enhanced For Loop)
+
+
+         */
+
 
         //-----
         //Metody:
@@ -2017,24 +2023,43 @@ class Wew4{
         //  elementu first() oraz najwiekszego last()
 
 
+        /*---
+        Kolejka (Queue)
+
+        Kolejka sluzy do przechowywyanie obiektow w wybranej kolejnosci do przetworzenia
+
+        -FIFO - Obiekt pierwszy dodany zostaje pierwszy przetworzony ("rurka")
+        -LIFO - Obiekt ostatni dodany zostaje pierwszy przetworzony ("pojemnik")
+
+        W klasie PriorityQueue porzadkuje za pomoca obiektu klasy Comparatora lub
+         naturalnego kolejkowania
+
+         */
+
+
         /*----
-        Mapy
+        Map
+
+        Map jest to obiekt ktory mapuje klucz do wartosci - klucze sa unikalne, wartosci
+         moga sie powtarzac
+
+        Interfejs Map znajduje sie we frameworku kolekcji ale nie implementuje
+         interfejsu Collection! Wiaze sie to z tym ze elementy ze implementacje
+         Collection posiadaja pojedyncze elemety a Map pary w formie klucz-wartosc
+         przez co funkcje Collection nie sa kompatybilne z mapami!
 
         -Kolejnosc nie jest istotna
         -Kazdy element kluczy jest unikatowy
 
-        Mapa nie rozszerza kolekcji
-
-        Mapa jest kolekcja pozwalajaca przechowywac odwzorowanie zbioru
-         kluczy na liste wartosci. Klucze sa unikalne. Kluczami pownny byc
-         obiekty ktorych nie mozna zmienic (Immutable) czyli np String
+        Mapa pozwala przechowywac odwzorowanie zbioru kluczy na liste wartosci.
+        Kluczami pownny byc obiekty ktorych nie mozna zmienic (Immutable) czyli np String
          lub Integer.
         Klasy kluczy powinny miec poprawna implementacje metod HashCode oraz
          equals.
         Dodanie istniejacego klucza do kolekcji z wartoscia nadpisze istniejaca
          wartosc starego klucza na nowa!
 
-        Mapy dzielimy na:
+        Podstawowe impementacjie Map dzielimy na:
         -HashMap - posiada tablice mieszajaca i kolejnosc elementow nie jest
                     ustalona
         -TreeMap - Dodatkowo posiada sortowanie, wymagana implementacja interfejsu
