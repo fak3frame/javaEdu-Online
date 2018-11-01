@@ -1871,12 +1871,17 @@ class Wew4{
         //------------------------------------------------------------------------
         /*----------------------------KOLEKCJE------------------------------------
 
-
+        ----
         /* Iterator
 
         Jest to interfejs posiadajacy metody potrzebne do iterowania kazdej z kolekcji
 
         Mozemy dzieki niemu przeprowadzic operacjie takie jak usuniecie czy odczyt
+
+        Iterator przeszukuje liste w jedna strone i pozwala tylko na usuniecie
+
+        ListIterator pozwala na przeszukiwanie listy w obie strony i moze byc uzywany
+         tylko do list, pozwala na dodawanie, zmiane oraz usuniecie wartosci
 
 
 
@@ -1966,6 +1971,9 @@ class Wew4{
                    Dodatkowo jesli dodam element w innym miejscu niz na koncu, wszystkie
                    elementy po nim beda musialy zostac przesuniete
 
+        Pamiec - w LinkedList przechowuje adres i dane poprzedniego i kolejnego elementu
+                 natomiast w ArrayList tylko index elementu i jego wartosc
+
 
         */
 
@@ -2054,6 +2062,7 @@ class Wew4{
         //  elementu first() oraz najwiekszego last()
 
 
+
         /*---
         Kolejka (Queue)
 
@@ -2068,8 +2077,18 @@ class Wew4{
          */
 
 
+
         /*----
         Map
+
+        -Map(i)
+            -SortedMap(i)
+                -TreeMap(k)
+            -AbstractMap(k)
+                -TreeMap(k)
+                -HashMap(k)
+                    -LinkedHashMap(k)
+                -HashTable(k)
 
         Map jest to obiekt ktory mapuje klucz do wartosci - klucze sa unikalne, wartosci
          moga sie powtarzac
@@ -2097,6 +2116,16 @@ class Wew4{
                     Comprable lub implementacji Comparatora
         -LinkedHashMap - zapamietuje dodatkowo kolejnosc dodawanych elementow,
                          wykorzystuje liste wiazana. Prdzydatne przy iteracji
+
+
+        HashTable jest synchronizowane wiec uzywane jest w aplikacjach wielowatkowych
+         (jest wolniejsza przez to) oraz nie zwzwala na posiadanie elementu i klucza null
+         Do iterowania wykorzystuje enumator
+         HashTable moze byc zastapiane przez szybsze ConcurrentHashMap
+
+        HashMap pozwala na uzycie jednego klucza null i nieograniczonej ilosci wartosci
+         null, do iterowania wykorzystuje iterator, jest duzo szybsza od HashTable
+
          */
         Map<Integer, String> mapa1 = new HashMap<>(2);
         //Konstruktor zawiera wstepny rozmiar
@@ -2136,6 +2165,7 @@ class Wew4{
 
         Set<Map.Entry<Integer, String>> zbiorKluczWartosc = mapa3.entrySet();
         //kazdy element zbioru bedzie skladal sie z klucza i wartosci,
+        //Metoda entrySet() zwraca zbior
 
 
         //-----
@@ -2160,7 +2190,9 @@ class Wew4{
         for (Map.Entry<Integer, String> x : zbiorKluczWartosc2) {
             System.out.println(x.getKey() + ": " + x.getValue());
         }
-        //lub bez deklaracji oddzielnego zbioru
+
+        //lub bez deklaracji oddzielnego zbioru wywolujac na mapie bezposrenio metode
+        // entrySet() w petli
         System.out.println("ZBIOR KLUCZ WARTOSC 2");
         for(Map.Entry<Integer, String> x : mapa1.entrySet()){
             System.out.println("klucz nowy: "+x.getKey());
