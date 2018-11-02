@@ -1553,6 +1553,25 @@ class Wew4{
          z niego korzystac w aplikacjach wielowatkowych
 
 
+        .sleep(200);
+
+        Klasa rozszerzajaca Thread lub implementujaca Runnable w metodzie run
+         moze w bloku try (wyjatek do obsluzenia - InterrptedException) wywolac
+         na watku (zmienna Thread) metode sleep() i w jej parametrze podac czas
+         przerwy
+
+        @Override
+        public void run() {
+            System.out.println("456");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("123");
+        }
+
+
 
 
 
