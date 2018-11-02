@@ -1517,16 +1517,43 @@ class Wew4{
          metode run ktora zadeklarowalem tworzac obiekt Runnable w nowym
          watku
 
-        1)
-        Runnable mojRun = () -> {
-                for(int i=0; i<10; i++){
-                    System.out.println("x");
-                }
-        };
-        2)
-        Thread t1 = new Thread(mojRun)
-        3)
-        t1.start();
+        1)-----------
+            Runnable mojRun = () -> {
+                   for(int i=0; i<10; i++){
+                       System.out.println("x");
+                   }
+            };
+        2)------------
+            Thread t1 = new Thread(mojRun)
+        3)------------
+            t1.start();
+        --------------
+
+
+        Metoda .join()
+
+        Wywolana na watku (w bloku try obslugujacym wyjatek InterruptedException)
+         informuje program ze zanim przejdzie do dalszej czesci polecen musi
+         poczekac na wykonie operacji na danym watku
+
+
+        Metoda z parametrem synchronized
+
+        Kazdy obiekt w Javie posiada monitor lock (zamek)
+        Jesli wykonuje na obiekcie watku jakas metode synchronized to pobierany jest
+         jego (obiektu) klucz SynchronizedMethod
+        Synchronizacja pobiera zamek i zwalnia go tylko po wykoaniu czynnosci przez
+         co dopiero w tedy inny watek moze skorzystac z tej metody
+
+
+        Obiekt lub kod jest bezpiczny do pracy z watkami (Thread safety) jesli
+         bedzie dzialal wedlug oczekiwan jesli kilka roznych watkow bedzie
+         z nim wspolpracowac
+        StringBuffer jest zsynchronizowany (przez to wolniejszy) przez co mozna
+         z niego korzystac w aplikacjach wielowatkowych
+
+
+
 
 
 
@@ -4897,6 +4924,16 @@ class Wew4{
 
         ----
         Operacje na strumieniach - dokladny opis + interfejsy funkcyjne
+
+        Tworzac obiekt interfejsu funkcujnego moge na nim pozniej wywolac jego
+         metode
+
+        Runnable o1 = () -> {
+            for(int i = 0; i < 5; i++){
+                System.out.println("x");
+            }
+        };
+        p1.run();
 
 
         filter //Predicate<T> | boolean test(T t) //Stream + bezposrednio + nowa lista

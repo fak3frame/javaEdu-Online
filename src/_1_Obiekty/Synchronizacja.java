@@ -1,7 +1,13 @@
 package _1_Obiekty;
 
 public class Synchronizacja {
+
     private int licznik;
+
+    public synchronized void zwieksz(){
+        licznik++;
+    }
+
 
     public static void main(String[] args) {
         Synchronizacja synchronizacja = new Synchronizacja();
@@ -12,7 +18,7 @@ public class Synchronizacja {
     private void test(){
         Runnable runnable = () -> {
             for(int i = 0; i < 5000; i++){
-                licznik++;
+                zwieksz();
             }
         };
         System.out.println(licznik);
@@ -23,7 +29,7 @@ public class Synchronizacja {
     private void licz(){
         Runnable runnable = () -> {
             for(int i = 0; i < 5000; i++){
-                licznik++;
+                zwieksz();
             }
         };
 
@@ -33,12 +39,12 @@ public class Synchronizacja {
         watek1.start();
         watek2.start();
 
-//        try{
-//            watek1.join();
-//            watek2.join();
-//        }catch (InterruptedException ex){
-//            ex.printStackTrace();
-//        }
+        try{
+            watek1.join();
+            watek2.join();
+        }catch (InterruptedException ex){
+            ex.printStackTrace();
+        }
 
 
         System.out.println(licznik);

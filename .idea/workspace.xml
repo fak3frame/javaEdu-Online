@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 149">
-      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja.java" afterDir="false" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 150">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,24 +134,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="14050" />
-          <entry key="txt" value="28" />
+          <entry key="java" value="15181" />
+          <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14050" />
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="JAVA" value="15181" />
+          <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -162,8 +161,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="1518" column="38" selection-start-line="1518" selection-start-column="38" selection-end-line="1518" selection-end-column="38" />
+            <state relative-caret-position="438">
+              <caret line="1547" column="8" selection-start-line="1547" selection-start-column="8" selection-end-line="1547" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,17 +173,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Runnable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="-256">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="23" />
+              <folding>
+                <element signature="e#82#83#0" expanded="true" />
+                <element signature="e#109#110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -204,7 +198,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>equals</find>
       <find>collect</find>
       <find>SWITCH</find>
       <find>switch</find>
@@ -234,6 +227,7 @@
       <find>interfejs</find>
       <find>run</find>
       <find>serializa</find>
+      <find>funkcyjne</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -377,7 +371,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541170575543" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541172850033" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -534,13 +528,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01360" summary="PODSUMOWANIE 101">
-      <created>1536786710299</created>
-      <option name="number" value="01360" />
-      <option name="presentableId" value="LOCAL-01360" />
-      <option name="project" value="LOCAL" />
-      <updated>1536786710303</updated>
     </task>
     <task id="LOCAL-01361" summary="PODSUMOWANIE 102">
       <created>1536857309876</created>
@@ -878,7 +865,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541167474992</updated>
     </task>
-    <option name="localTasksCounter" value="1409" />
+    <task id="LOCAL-01409" summary="PODSUMOWANIE 150">
+      <created>1541170723807</created>
+      <option name="number" value="01409" />
+      <option name="presentableId" value="LOCAL-01409" />
+      <option name="project" value="LOCAL" />
+      <updated>1541170723808</updated>
+    </task>
+    <option name="localTasksCounter" value="1410" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -926,7 +920,7 @@
     <frame x="75" y="23" width="1361" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22365429" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22365429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -959,7 +953,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 125" />
     <MESSAGE value="PODSUMOWANIE 126" />
     <MESSAGE value="PODSUMOWANIE 127" />
     <MESSAGE value="PODSUMOWANIE 128" />
@@ -984,7 +977,8 @@
     <MESSAGE value="PODSUMOWANIE 147" />
     <MESSAGE value="PODSUMOWANIE 148" />
     <MESSAGE value="PODSUMOWANIE 149" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 149" />
+    <MESSAGE value="PODSUMOWANIE 150" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 150" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1172,15 +1166,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="-256">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#82#83#0" expanded="true" />
+            <element signature="e#109#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="1518" column="38" selection-start-line="1518" selection-start-column="38" selection-end-line="1518" selection-end-column="38" />
+        <state relative-caret-position="438">
+          <caret line="1547" column="8" selection-start-line="1547" selection-start-column="8" selection-end-line="1547" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
