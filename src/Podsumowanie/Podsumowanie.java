@@ -99,6 +99,22 @@ public class Podsumowanie {
 
         //------------------------------------------------------------------------
         -----------------------------ZMIENNE PROSTE-------------------------------
+
+        Zmienne dzielimy na prymitywne i zlozone (nie-prymitywne np String, Array, List)
+
+        Zmienne prymitywne zapisuje mala litera a zlozone duza
+
+        Podstawowe zmienne prymitywne:
+        -boolean
+        -char
+        -byte
+        -short
+        -int
+        -long
+        -float
+
+
+
         */
 
         int zmiennaInt = 123; //nie moze miec koncowki i/I
@@ -126,23 +142,35 @@ public class Podsumowanie {
 
 
         //-----
-        //boxing unboxing
+        //BOXING unboxing
 
-        //Boxing jest to przypisywanie zmiennej prostej do obiektowej
+        /*
+        Klasy typu Boolean/Float to klasy wrapperclass
+
+        Dzieki nim moge uzywac typow prymitywnych np w listach/mapach
+        */
+
         Integer zmiennaIntegerBox = 12;
 
-        //W przypadku typow prostych jest wykonywany automatyczny autoboxing
 
-        int liczbaBox1 = new Integer(12);
-        //operacja odwrotna czyli autounboxing
-        //przypisywanie do zmiennej prostej zmiennej obiektowej
+        //Autoboxing jest to automatyczne konwertowanie typu prostego do wrappera
+        Integer zmiennaIntegerX = new Integer(123);
 
+        //Autounboxing jest to przypisanie zmiennej Obiektowej np Integer do int
+        int zmiennaIntX = zmiennaIntegerX;
+
+
+        //----
         //Zmienne finalne
+
         //zalecane jest pisanie wszystkiego WIELKIMI_LITERAMI i oddzielac
         // slowa "_"
+
         final int LICZBA_FINAL; //deklaracaj lokalna czyli w metodzie(teraz main)
+
         // wiec nie musze nadawac wartosci odrazu
         LICZBA_FINAL = 12;
+
         /*
         liczba finalana musi miec zadeklarowana wartosc chyba ze:
          -jej przypisanie wartosci jest w konstruktorze klasy
@@ -1403,8 +1431,8 @@ class Wew4{
           lub wyzucic poziom wyzej za pomoca throws (np IOException)
 
          Unchecked - niesprawdzony - powstaje w wyniku bledu po uruchomieniu porgramu
-          np dzielenie przez zero, nie musi zostac obsluzony (np IllegalArgumentException)
-
+          np dzielenie przez zero lub wskazanie na null, nie musi zostac obsluzony
+          (np IllegalArgumentException)
 
 
          Jesli wyjatek ma w swojej hierarchii TYLKO Exception/Throwable
