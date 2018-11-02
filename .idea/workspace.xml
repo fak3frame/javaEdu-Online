@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 152">
-      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja2.java" afterDir="false" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 153">
+      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
@@ -134,24 +134,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15870" />
-          <entry key="txt" value="32" />
+          <entry key="java" value="18195" />
+          <entry key="txt" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15870" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="JAVA" value="18195" />
+          <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -161,8 +161,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="1574" column="8" selection-start-line="1574" selection-start-column="8" selection-end-line="1574" selection-end-column="8" />
+            <state relative-caret-position="297">
+              <caret line="1631" lean-forward="true" selection-start-line="1631" selection-end-line="1631" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#92278#92279#0" expanded="true" />
@@ -175,10 +175,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja2.java">
+        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="594">
+              <caret line="55" column="9" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -242,7 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/ItemTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Gotowe/GotoweMojaNauka/GradeBookTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Gotowe/GotoweMojaNauka/SubjectTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/GotoweMojeNauka/BasketTest.java" />
@@ -292,6 +296,7 @@
         <option value="$PROJECT_DIR$/src/Test1.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja2.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja3.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
       </list>
     </option>
@@ -371,7 +376,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541174356885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541180063937" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -408,14 +413,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Start">
-    <configuration name="Ojciec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Podsumowanie.Ojciec" />
+  <component name="RunManager" selected="Application.Aplikacja">
+    <configuration name="Aplikacja" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Aplikacja" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Podsumowanie.*" />
+          <option name="PATTERN" value="_1_Obiekty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -504,17 +509,17 @@
     <list>
       <item itemvalue="Application.Podsumowanie" />
       <item itemvalue="Application.Wstep" />
-      <item itemvalue="Application.Ojciec" />
       <item itemvalue="Application.Synchronizacja" />
       <item itemvalue="Application.Start" />
+      <item itemvalue="Application.Aplikacja" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Aplikacja" />
         <item itemvalue="Application.Start" />
         <item itemvalue="Application.Synchronizacja" />
         <item itemvalue="Application.Podsumowanie" />
         <item itemvalue="Application.Wstep" />
-        <item itemvalue="Application.Ojciec" />
       </list>
     </recent_temporary>
   </component>
@@ -528,13 +533,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01363" summary="PODSUMOWANIE 103">
-      <created>1536965958509</created>
-      <option name="number" value="01363" />
-      <option name="presentableId" value="LOCAL-01363" />
-      <option name="project" value="LOCAL" />
-      <updated>1536965958510</updated>
     </task>
     <task id="LOCAL-01364" summary="PODSUMOWANIE 105">
       <created>1537033985434</created>
@@ -872,7 +870,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541173024299</updated>
     </task>
-    <option name="localTasksCounter" value="1412" />
+    <task id="LOCAL-01412" summary="PODSUMOWANIE 153">
+      <created>1541174597157</created>
+      <option name="number" value="01412" />
+      <option name="presentableId" value="LOCAL-01412" />
+      <option name="project" value="LOCAL" />
+      <updated>1541174597157</updated>
+    </task>
+    <option name="localTasksCounter" value="1413" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -953,7 +958,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 128" />
     <MESSAGE value="PODSUMOWANIE 129" />
     <MESSAGE value="PODSUMOWANIE 130" />
     <MESSAGE value="PODSUMOWANIE 131" />
@@ -978,7 +982,8 @@
     <MESSAGE value="PODSUMOWANIE 150" />
     <MESSAGE value="PODSUMOWANIE 151" />
     <MESSAGE value="PODSUMOWANIE 152" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 152" />
+    <MESSAGE value="PODSUMOWANIE 153" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 153" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -999,7 +1004,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/function/Consumer.java" />
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Bank/Java8Collections.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Consumer.java" />
@@ -1176,15 +1180,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="1574" column="8" selection-start-line="1574" selection-start-column="8" selection-end-line="1574" selection-end-column="8" />
+        <state relative-caret-position="297">
+          <caret line="1631" lean-forward="true" selection-start-line="1631" selection-end-line="1631" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#92278#92279#0" expanded="true" />

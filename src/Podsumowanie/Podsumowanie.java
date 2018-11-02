@@ -1572,10 +1572,61 @@ class Wew4{
         }
 
 
+        Zmienna z parametrem volatile
+
+        Jesli dodam prez typem zmiennej slowo valitile to watki korzystjace z niej
+         beda korzystac z tej samej kopii zmiennej oraz zapis bedzie zawsze
+         przed oczytem
+        W przypadku jesli tego nie zadeklaruje to zmieniajac ja watek moze operowac na
+         jej kopii jej wartosci przez miana i nie widziec zmiany
 
 
+        Pula watkow (Thread Pool) / Klasa ExecutorService/Executors
+
+        Moge stowrzyc pule watkow ktore beda wykonywaly sie jednoczesnie
+        Robie to w klasie aplikacji
+        Aby to zrobic deklaruje zmienna ExecutorService i przisuje jej pule
+         wywolujac statyczne metode newFixedThreadPool() z klasy Exectors
+         gdzie jako parametr podaje liczbe watkow w puli
+
+        ExecutorService excutor = Executors.newFixedThreadPool(2);
+
+        Nastepnie aby wywolac metode run() z klasy watka (implementujacej Runnable)
+         na obiekcie executor (typ ExecutorService) wywoluje metode .submit() i jako
+         parametr przekazuje nowy obiekt klasy watku
+        Moge kilka razy wywolac metode submit i beda sie one wywolywane grupami
+         pol jak okreslilem wczesniej
+
+        excutor.submit(new Synchronizacja3("czyszczenie"));
+        excutor.submit(new Synchronizacja3("sprzatanie"));
+        excutor.submit(new Synchronizacja3("odkurzanie"));
+        excutor.submit(new Synchronizacja3("mycie"));
+        excutor.submit(new Synchronizacja3("szorowanie"));
+
+        /*
+        / W przypadku gdy deklarowalem watek porzez typ Thread :
+        / Thread t1 = new Thread(new Watek());
+        / t1.start();
+        */
+        /*
 
 
+        Aby zakonczyc watek typu ExecutorService wywoluje na jego obiekcie
+         metode .shutdown()
+
+        excutor.shutdown();
+
+
+        Aby zatrzymac dalszy kod przed zakonczeniem watku ExeturService moge
+         dodac w bloku try (catch (InterruptedException ex)) metode .awaitTermination()
+         gdzie jako parametr podaje liczbe i typ czasu jaki ma czekac gdyby watek sie
+         nie zakonczyl do momentu az automatycznie przejdzie do dalszej czesci kodu
+
+        try{
+            excutor.awaitTermination(3, TimeUnit.SECONDS);
+        }catch (InterruptedException ex){
+            ex.printStackTrace();
+        }
 
 
 
