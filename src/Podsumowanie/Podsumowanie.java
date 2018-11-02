@@ -1439,7 +1439,7 @@ class Wew4{
          Proces - program
 
          Watek - najmniejsza czesc programu mogaca pracowac jednoczesnie z innymi
-                  watkami
+                  watkami (obiekt klasy Thread)
 
 
          Klasa wielowatkowa posiada implementacje metody run() ktora wywolujemy za
@@ -1447,7 +1447,7 @@ class Wew4{
          Wywolanie bezposrednio metody run() nie stworzy nowego watku
 
 
-         W Javie moge tylko raz uruchomi jeden watek, jesli wywolam metode .start()
+         W Javie moge tylko raz uruchomic jeden watek, jesli wywolam metode .start()
           na tym samym watku zostanie wyrzucony wyjatek IllegalThreadStateException
 
 
@@ -1455,6 +1455,7 @@ class Wew4{
           typu Future oraz wyrzucic wyjatek.
          Obiekt Future pozwala na spradzenie czy dana operacja sie skonczyla przez co
           wiemy ze mozemy pobrac wartosc ktora istenieje
+
 
 
          Sa dwa rodzaje implementacji watkow w Javie:
@@ -1503,6 +1504,29 @@ class Wew4{
         t2.start();
         t3.start();
 
+
+        1)
+        Interfejs funkcyjny Runnable zawiera metode run() ktora nic nie przyjmuje
+         i nic nie zwraca wiec wiec tworzac jego obiekt deklaruje dzialanie
+         metody run
+        2)
+        Nastepnie moge wyslac go w parametrze konstruktora tworzac
+         obiekt Thread
+        3)
+        I na koniec wywolac metode .start() na obiekcie Thread aby wywolac
+         metode run ktora zadeklarowalem tworzac obiekt Runnable w nowym
+         watku
+
+        1)
+        Runnable mojRun = () -> {
+                for(int i=0; i<10; i++){
+                    System.out.println("x");
+                }
+        };
+        2)
+        Thread t1 = new Thread(mojRun)
+        3)
+        t1.start();
 
 
 
