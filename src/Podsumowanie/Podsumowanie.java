@@ -1447,6 +1447,16 @@ class Wew4{
          Wywolanie bezposrednio metody run() nie stworzy nowego watku
 
 
+         W Javie moge tylko raz uruchomi jeden watek, jesli wywolam metode .start()
+          na tym samym watku zostanie wyrzucony wyjatek IllegalThreadStateException
+
+
+         Intefejs Callable w odroznieniu od Runnable jest w stanie zwrocic wartosc
+          typu Future oraz wyrzucic wyjatek.
+         Obiekt Future pozwala na spradzenie czy dana operacja sie skonczyla przez co
+          wiemy ze mozemy pobrac wartosc ktora istenieje
+
+
          Sa dwa rodzaje implementacji watkow w Javie:
 
          1 - klasa roszerza klase Thread
@@ -1470,7 +1480,8 @@ class Wew4{
         o3.start();
 
 
-        2 - Klasa implementuje interfejs Runnable
+        2 - Klasa implementuje interfejs Runnable (metoda zalecana poniewaz moge moge
+             rozszerzac inna klase)
 
         class WatekTwo implements Runnable{
 
@@ -1491,6 +1502,9 @@ class Wew4{
         t1.start();
         t2.start();
         t3.start();
+
+
+
 
 
 
