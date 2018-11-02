@@ -1023,7 +1023,7 @@ public class Podsumowanie {
 
         Klasa moze ich implementowac dowlona ilosc a rozszerzac moze tylko jedna klase
 
-        Intefejsy moga rozszerzac inne i DOWOLNA ICH ILOSC
+        Intefejsy moga ROZSZERZAC inne INTERFEJSCY - dowolna ich ilosc
 
 
         W javie 8 powstaly interfejsy z metodami domyslnymi (default) oraz statycznymi
@@ -1041,8 +1041,22 @@ public class Podsumowanie {
         Klasa moze byc zwykla/abstract/final!
 
 
-        Klasa abstrakcyjna moze miec metody abstrakcyjne i zwykle i
-         NIE DA SIE twrozyc instancji jej obiektow!
+        /* Klasa abstrakcyjna:
+
+        Klasa abstrakcyjna moze miec metody abstrakcyjne i zwykle (z cialem)
+
+        Metody abstrakcyjne nie zawieraja ciala tylko jej szkielet
+
+        Klasa dziedziczaca po klasie abstrakcyjnej musi zawierac
+         implementacje wszystkich jej metod ABSTRAKCYJNYCH lub takze byc
+         abstrakcyjna
+
+        NIE DA SIE twrozyc instancji klas abstrakcyjnych
+
+        Klasa abstrakcyjna w odroznieniu od interfejsu moze rozszerzac inna klase
+
+
+        /* Klasy zwykle:
 
         Klasa finalna nie moze byc rozszerzana!
 
@@ -1384,9 +1398,14 @@ class Wew4{
          Wyjatki dzielimy na CHECKED I UNCHECKED i dziedzicza one po klasie
           Throwable
 
-         Checked - musi byc obluzony np IOException
 
-         Unchecked - nie musi np IllegalArgumentException
+         Checked - sprawdzony - powstaje w wyniku kompilacji, trzeba go obsluzyc
+          lub wyzucic poziom wyzej za pomoca throws (np IOException)
+
+         Unchecked - niesprawdzony - powstaje w wyniku bledu po uruchomieniu porgramu
+          np dzielenie przez zero, nie musi zostac obsluzony (np IllegalArgumentException)
+
+
 
          Jesli wyjatek ma w swojej hierarchii TYLKO Exception/Throwable
           musi byc obsluzony, jesli cos wiecej to juz nie
