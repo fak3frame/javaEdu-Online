@@ -90,10 +90,23 @@ public class Podsumowanie {
 
         IDE (ang. Integrated Development Environment)
 
+        GarbageCollector wykonywany w maszynie wirtualnej Javy JVM i pozbywa sie
+         nieuzwyanych przez aplikacje obiektow aby zwolnic pamiec dla nowych.
+        Kompaktowanie pamieci jest to ustawienie w pamieci obiektow obok siebie
+         aby dostep do nich szybki i prosty
+
+
         Hermetyzajca/Enkapsulacja - ustawianie pol klas jako prywatne/protected
          i dostep do niech poprzez akcesory i mutatory
 
         Rekursja - odwolanie sie do innego konstruktora
+
+
+        Porowynyanie == porownuje miejsce w pamieci
+
+        Metoda equals porownuje obiekty przez ustalone kryteria i jest zwarta w klasie
+         Object wiec moze zostac nadpisana przez moje klasy w celu specyficznego
+         porownywania obiektow (ich pol)
 
 
         Java 8 wprowadzila:
@@ -1413,6 +1426,74 @@ class Wew4{
 
          W klasie pochodznej zwracam jej zmienne i na koncu dodaje + super.toString()
           i w klasie bazowej zwracam zmienne klasy bazowej
+
+
+
+        //------------------------------------------------------------------------
+         ----------------------------WIELOWATKOWOSC-------------------------------
+
+         Java jest jezykiem wielowatkowym wiec mozna jednoczenie wykonywac dwie
+          lub wiecej czesci programu jednosczenie przez procesory wielordzeniowe
+          /wielowatkowe
+
+         Proces - program
+
+         Watek - najmniejsza czesc programu mogaca pracowac jednoczesnie z innymi
+                  watkami
+
+
+         Klasa wielowatkowa posiada implementacje metody run() ktora wywolujemy za
+          pomoca metody start() na obiekcie klasy aby stworzyc nowy watek
+         Wywolanie bezposrednio metody run() nie stworzy nowego watku
+
+
+         Sa dwa rodzaje implementacji watkow w Javie:
+
+         1 - klasa roszerza klase Thread
+
+        class WatekOne extends Thread{
+
+            @override
+            public void run(){
+                System.out.println("watek 1");
+            }
+        }
+
+        W main klasy glownej tworze obiekty tej klasy i wywoluje metode start():
+
+        WatekOne o1 = new WatekOne();
+        WatekOne o2 = new WatekOne();
+        WatekOne o3 = new WatekOne();
+
+        o1.start();
+        o2.start();
+        o3.start();
+
+
+        2 - Klasa implementuje interfejs Runnable
+
+        class WatekTwo implements Runnable{
+
+            @override
+            public void run(){
+                System.out.println("watek 1");
+            }
+        }
+
+        W main klasy glownej tworze obiekty klasy Thread i jako paraetr konstruktora
+         wysylam nowy obiek mojej klasy po czym na obiektach Thread wywoluje metode
+         start()
+
+        Thread t1 = new Thread(new WatekTwo());
+        Thread t2 = new Thread(new WatekTwo());
+        Thread t3 = new Thread(new WatekTwo());
+
+        t1.start();
+        t2.start();
+        t3.start();
+
+
+
 
 
 
