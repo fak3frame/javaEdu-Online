@@ -96,6 +96,13 @@ public class Podsumowanie {
         Rekursja - odwolanie sie do innego konstruktora
 
 
+        Java 8 wprowadzila:
+
+        -Wyrazenia Lambda
+        -Strumienie
+        -Meotdy statyczne i podstawowe(default) w interfejsach
+
+
 
         //------------------------------------------------------------------------
         -----------------------------ZMIENNE PROSTE-------------------------------
@@ -112,8 +119,6 @@ public class Podsumowanie {
         -int
         -long
         -float
-
-
 
         */
 
@@ -161,22 +166,25 @@ public class Podsumowanie {
 
 
         //----
-        //Zmienne finalne
+        /*Zmienne finalne
 
-        //zalecane jest pisanie wszystkiego WIELKIMI_LITERAMI i oddzielac
-        // slowa "_"
-
-        final int LICZBA_FINAL; //deklaracaj lokalna czyli w metodzie(teraz main)
-
-        // wiec nie musze nadawac wartosci odrazu
-        LICZBA_FINAL = 12;
-
-        /*
-        liczba finalana musi miec zadeklarowana wartosc chyba ze:
+        liczba finalana musi miec zadeklarowana wartosc od razu chyba ze:
          -jej przypisanie wartosci jest w konstruktorze klasy
          -jest zadeklarowana lokalnie(w metodzie)
 
-        wartosc liczby finalnej NIE MOZNA zmienic
+        wartosc liczby finalnej raz zadeklraowanej NIE MOZNA zmienic
+
+        zalecane jest pisanie wszystkiego WIELKIMI_LITERAMI i oddzielac
+         slowa "_"
+        */
+
+        final int LICZBA_FINAL; //deklaracaj lokalna czyli w metodzie(teraz main)
+        // wiec nie musze nadawac wartosci odrazu
+
+        LICZBA_FINAL = 12;
+
+        /*
+
 
 
 
@@ -2713,6 +2721,11 @@ class Wew4{
 
         /*-------------------------------------------------------------------------
         -----------------------------SERIALIZACA-----------------------------------
+
+        Serializacja jest proces w ktorym zapisuje obiekt na sekwencje bitow,
+         aby obiekt danej klasy mogl byc serializowany musi ona implementowac
+         interfejsc Serializable
+
 
         Serializacja to binarny zapis drzewa obiektow
         Zserializowane obiekty mozna przeslac i zdeserializowac na innej
