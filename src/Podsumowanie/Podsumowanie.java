@@ -391,6 +391,9 @@ public class Podsumowanie {
         Spring Beany sa to obiekty zarzadzane przez kontener Springa, tworzone sa
          za pomoca plikow xml, lub przy pomocy klas konfiguracyjnych @Configration
          z adnotacja @Bean
+        Nie sa one bezpieczne do pracy z wieloma watkami poniewaz moge ustawic ich
+         zasieg(singleton jest bezpieczny w zaleznosci od implementacji natiomiast
+         w prototype za kazdym razem jest tworzony nowy obiekt)
 
 
         Zasieg Beana:
@@ -409,12 +412,44 @@ public class Podsumowanie {
          -autodetekcje
 
 
+        Glowne moduly Springa:
+
+        Spring Core Container podstawa frameworka, zawierajacy moduly:
+        -Spring Core, Spring Bean - zapewnia podstawowe czesci frameworku
+          takie jak odwrocenie kontroli czy wstrzykiwanie zaleznosci
+        -SpEL (Spring Expression Language) uzywany w warstwie widoku do
+          mnipulacji opiektu
+        -Spring Context - umozliwia dostep do skonfigurowanych i zdefiniowanych
+          w Springu obiektow
+
+         Web - do aplikacji webowych
+
+         Data Access/Integration (dostęp do danych i ich integracja):
+         -JDBC (Java DataBase Conectivity)
+         -ORM (Object Relational Mapping) - moduł ten zapewnia warstwę integracji
+          dla popularnych frameworków takich jak Hibernate czy JPA
+         -OXM (Object/XML Mapping, czyli mapowanie XML-owe)
+         -JMS (Java Message Service)
+         -Transaction
+
+         AOP (Aspect Oriented Programming) oraz Instrumentation
+
+         Test – moduł ten zawiera framework testowy, który wspiera componenty
+          Springa przy użyciu JUnit oraz TestNG. Zawiera również mocki obiektów
+
+
+
          Spring Security
 
          Jest to wewnetrzny framewrk springa ktory odpowiada za uwierzytelnianie
           i autoryzacje
 
          Dziala na zasadzie filtrow ktore musi przejsc kazde zapytanie do aplikacji
+
+         Moge dzieki niemu okreslic do jakiej czesci aplikacji ma dostep uzytkownik
+          zalogowany/niezalogowany czy admin
+
+
 
 
         //------------------------------------------------------------------------
