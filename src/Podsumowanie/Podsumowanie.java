@@ -225,7 +225,43 @@ public class Podsumowanie {
         ----
         Builder
 
+        Uzywany gdy tworzony obiekt ma wiele parametrow
 
+
+
+        Klasa bazowa posiada prywatne pole ustawione na null/0 + setery i getery
+         np Burger
+
+        Tworze interfejs do tej klasy np BurgerBuilder zawierajacy metody
+        -tworzenie obiektu klasy
+          //Burger build()
+        -zwracanie obiektu interfejsu z nazwa setera i przyjmujaca odpowiedni
+          parametr adekwatny do zmiennej klasy bazowej np:
+          //BurgerBuilder setMeat(final String meat);
+          //BurgerBuilder setSauce(final String sauce);
+
+        Tworze klase ktora bedzie imlemntowac ten interfejs i deklarwoac
+         dzialanie metod np: BurgerBuilderImpl implements BurgerBuilder
+        Zawierac ona prywane pole obiektu klasy bazowej bez przypisanej wartosci
+         oraz konstruktor bezparametrowy ktory przypisze mu wartosc poprzez
+         wywolanie konstruktora klasy bazowej
+         //private Burger buger;
+         //public BurgerBuilderImpl(){ burger = new Burger();}
+        Przykladowa implementacja metod:
+         //public Burger build(){ return burger;}
+         //public BurgerBuilder setMeat(String meat){
+             burger.setMeat(meat);
+             return this;}
+
+         W klasie produkcyjnej tworze obiekt interfejsu ktoremu przypisuje
+          wartosc poprzez wywolanie konstruktora klasy ktora go implementuje
+         //BurgerBuilder builder = new BurgerBuilderImpl();
+         Nastepnie na tym obiekcie operuje poprzez jego metody (metody klasy impl)
+         //builder.setBread("White");
+         //builder.setSauce("BBQ");
+         Nastepnie tworze obiekt klasy bazowej i przupisuje mu wartosc poprzez wywolanie
+          na obiekcie builder metody build
+         //Burger burger = builder.build();
 
 
         ----
