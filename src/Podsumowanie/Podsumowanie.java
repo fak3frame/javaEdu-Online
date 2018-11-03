@@ -118,6 +118,71 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
+        ---------------------------WZORCE PROJEKTOWE------------------------------
+
+        Model MVC - Model View Controller
+
+        Wsorzec dzieli sie na:
+
+        -View - to co widac na stronie, odpowiada za interakcje z uzytkownikiem,
+                 wyswietla dane z Modelu
+        -Model - przechowuje dane ktore bede wyswieltac w widoku (View) i modyfikowac
+                  i komunikuje sie z baza danych np mapowanie tabel
+        -Controller - mozg zaplikacji, zawiera logike biznesowa, przetwarza zadania
+                       z widoku i przetwarza dane otrzymane z modelu, posrednik
+                       pomiedy widokiem i modelem
+
+                  Uzytkownik
+                   <-akcja->
+                     WIDOK
+              <-Aktualizacja widoku-
+                -Akcja uzytkownika->
+                   KONTROLER
+                 <-odczyt danych-
+              -Aktualizacja danych->
+                      Model
+
+        ----
+        Singleton
+
+        Jest to klasa ktorej moge utworzyc jeden obiekt w aplikacji
+
+        Taka klasa posiada:
+
+        -prywatne statyczne pole typu instancji tej klasy kotrej przypisuje
+          wartosc poprzez wywolanie jej konstruktora
+        //private static MojaKlasaSingleton instance = new MojaKlasaSingleton();
+
+        -prywatny konstruktor nie robiacy nic
+        //private MojaKlasaSingleton(){};
+
+        -PUBLICZNA statyczna metode o nazwie getInstance() zwracajaca wartosc
+          pola instancji
+        //public static MojaKlasaSingleton getInstance(){
+            return instnce;
+          }
+
+        *W przypaku lazy singletona przypisuje wartosc pola instancji null oraz
+          w metodzie ktora ja zwraca dodaje warunek jesli wynosi null to
+          przypisuje jej wartosc z konstruktora i nastepnie (po za if) zwracam
+
+
+        ----
+        Obserwator
+
+        Popularny w palikacjach z rozbudowanym interfejsem graficznym
+
+        Wystepuje obiekt (subject)
+
+        Akje moga sie wydarzyc w dowolnym momencie
+
+
+
+
+
+
+
+        //------------------------------------------------------------------------
         -----------------------------ZMIENNE PROSTE-------------------------------
 
         Zmienne dzielimy na prymitywne i zlozone (nie-prymitywne np String, Array, List)
