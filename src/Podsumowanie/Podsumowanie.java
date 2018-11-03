@@ -223,6 +223,12 @@ public class Podsumowanie {
 
 
         ----
+        Fabryka Abstrakcyjna (Abstract Factory)
+
+        Sluzy do tego aby stowrzyc kolejny poziom Fabryk na zasadzie wzorca Fabryki
+
+
+        ----
         Builder
 
         Uzywany gdy tworzony obiekt ma wiele parametrow
