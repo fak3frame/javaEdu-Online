@@ -168,6 +168,39 @@ public class Podsumowanie {
 
 
         ----
+        Singleton do aplikacji wielowatkowych
+
+        Tworze Enum dla klasy np EnumKlasa
+
+        dodaje wartosc
+        //INSTANCE;
+
+        nastepnie dodaje prywatne pola klasy np
+        //private String imie;
+
+        oraz seter do nich
+        //public void setImie(String imie){ this.imie = imie;}
+
+        nastepnie metode w kotrej moge dodac warunki uzaleznione od wartosci moich pol np:
+        //public void kimJestes(){
+            if(imie == null){ System.out.println("jestes nikim");}
+            else{ System.out.println("jestes "+imie);}
+          }
+
+
+        W klasie pordukcyjnej tworze obiekt typu Singleton i przypsiuje wartosc
+         z wartosci Enuma
+        //EnumKlasa singleton = EnumKlasa.INSTNACE;
+
+        nastepnie na tym obiekcie moge wywolac metode oraz setery
+        //singleton.kimJestes();
+        //singleton.setImie("kamil");
+
+        UWAGA
+        po serializacji wartosci pol zostana wyzerowane!
+
+
+        ----
         Obserwator
 
         Popularny w palikacjach z rozbudowanym interfejsem graficznym
