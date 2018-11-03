@@ -174,7 +174,22 @@ public class Podsumowanie {
 
         Wystepuje obiekt (subject)
 
-        Akje moga sie wydarzyc w dowolnym momencie
+        Akcje moga sie wydarzyc w dowolnym momencie (np wcisniecie dowolnego guzika)
+         dlatego caly czas musi dzialac menager zdarzen (Obserwator/Listener)
+        Przez caly czas nasluchuje i jesli przycisk zostanie wcisniety podejmuje
+         konkretna akcjie
+        Jest to programowanie sterowane zdarzeniami Event Driven Programming
+
+        Przyklad:
+        Wyslany mail (zdarzenie) przez uzytkownika (podmiot) do prcownika (obserator)
+         ktory wykonuje odpowiednie zadanie
+
+
+        ----
+        Schemat fabryk (Factory Pattern)
+
+
+
 
 
 
