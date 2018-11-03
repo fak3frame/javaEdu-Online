@@ -188,6 +188,38 @@ public class Podsumowanie {
         ----
         Schemat fabryk (Factory Pattern)
 
+        Wykorzystuje gdy chce tworzyc duza ilosc obiektow implemtujacych ten sam
+         interfejs lub rozszerzajacy jedna klase
+
+        Przydatne takze jesli chce przekazac duza ilosc parametrow do konstruktora
+
+
+        Implementacja:
+        Klaca bazowa ma unikalna metode klasy po ktorej dziedziczy lub interfejsu
+         (metody w klasach maja unikalna funkcjonalnosc) np work()
+
+        Tworze klase Fabryki np RobotFactory w ktorej dodaje publiczna
+         metode np makeRobot zwracajaca obiekt typu interfejsu lub klasy po kotrej
+         moje klasy dziedzicza np Robot ktora jaka poarametr przyjmuje zmienna
+         ktorej wartosc bedzie okreslala jaki obiekt zwrocic metoda
+        //pubic Robot makeRobot(String robotType){
+        W ciele metody podaje warunku dla zmiennej robotType aby wybrac jakiego
+         typu ma zostac obiekt obiekt zwrocony np:
+        //if(robotType == "DRILLING ROBOT"){ return new DrillingRobot();}
+        Po za warunkami daje return null
+
+        W klasie gdzie tworze obiekty - tworze jeden obiekt klasy fabryki
+        //RobotFactory robotFactory = new RobotFactory();
+        Nastepnie twrze obiekty typu interfejsu lub klasy po ktorej moje klasy
+         dziedzicza i przypisuje im wartosc porzez wywolanie na obiekcie fabryki
+         metody i przekazanie jako parametr wartosc ktora wybierze typ obiektu np:
+        //Robot drillingRobot1 = robotFactory.makeRobot("DRILLING ROBOT");
+        //Robot badJokeRobot = robotFactory.makeRobot("BAD JOKE ROBOT");
+
+        Na koniec na kazdym z tych obiektow moge wywolac wspolna metode
+         ktora zosatanie wybrana z odpowiedniej klasy na podstawie typu obiektu
+        //drillingRobot1.work();
+        //badJokeRobot.work();
 
 
 
