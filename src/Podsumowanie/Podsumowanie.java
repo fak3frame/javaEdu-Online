@@ -223,13 +223,47 @@ public class Podsumowanie {
 
 
         ----
+        Builder
+
+
+
+
+        ----
         DAO
 
         Data Access Object - sluzy do stworznie abstrakcyjen wartwy aplikacji
          rozdzielajacej logike biznesowa od bazy danych
 
-        Klasa DAO implementuje interfejs ktory zawiera wszystkie metody
-         operacji na bazach danych CRUD (crate, retrive, update, delete)
+        Klasa DAO implementuje interfejs DAO ktory zawiera wszystkie metody (statyczne)
+         operacji na bazach danych CRUD (crate, retrive, update, delete) i tworzy
+         ich implemetacje
+
+        Klasa logki biznesowej (np Kontroller) wykorzystje metody intefejsu
+         do dzialania na bazach dancyh nie ingerujac w ich implementacje
+         dzieki czemu jesli wykonam jakas akcje na bazie danych to logika
+         biznesowa pozostanie bez zmian
+
+        Dane przkazywanie danych sluza beany
+
+        Wywoluje metody interfejsu DAO w aplikacji i wysylam lub otrzymuje
+         bean/y np FakturaDAO.utworzFakture()
+
+
+        ----
+        SOLID
+
+        Sa to zasady projektowania aplikacji
+
+        S - Single Rensponsibility Principle (SRP) zasada jednej odpowidzialnosci
+
+        O - Open Closed Desig Principle (OCD) zasada otwarty-zamkniety
+
+        L - Liskov Substitution Principle (LSP) zasada podstawienia Liskov
+
+        I - Interface Segregation Principle (ISP) zasada segregacji interfejsow
+
+        D - Dependency Inversion Principle (DIP) zasada osrocenia zaleznosci
+
 
 
 
