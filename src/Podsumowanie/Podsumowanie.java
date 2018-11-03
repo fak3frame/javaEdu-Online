@@ -348,7 +348,7 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
-        --------------------------SPRING TEORIA doatek----------------------------
+        --------------------------SPRING TEORIA ----------------------------------
 
         Bean jest to podstawowy obiekt do przekazywania danych pomiedzy poszczegolnymi
          czesciami aplikacji
@@ -356,6 +356,65 @@ public class Podsumowanie {
         Skladaja sie z prwyatnych pol, seterow, geterow oraz pustego konstruktora
 
         Przykladem jest Spring Bean na kotrym operuje Spring Framework
+
+
+        Spring jest to framerwork stworzony glownie do aplikacji webowych
+
+        Mozemy w nim latwo laczyc dane pomiedzy komponentami za pomoca wstrzykiwania
+         zaleznosci
+
+        Spring jest lekki (podstawa ok 2MB)
+
+        Posiada Odwrocenie sterownia (Inversion of Control) - polega to na tym ze
+         funkcja sterowania przeplywam jest sterowana przez Springa ktory
+         oddziela "co zrobic" od "kiedy zrobic"
+
+        Spring posiada kontener w ktorym przechowywane sa Spring Beany
+
+        Spring pozwala na tworzenie aplikacji opartch o model MVC, tzn
+         mozna tworzyc aplikacje webowe oraz oraz web serwisy (Restful web services)
+
+        W Springu latwo pisac testy poniewaz logika biznesowa nie zawiera bezposrenich
+         zaleznosci przez co testy pisane sa za pomoca mockowych (pozornych) beanow
+
+
+        Wstrzykiwanie zaleznosci pozwala na luzne laczenie obiektow aplikacji aby
+         mogly ze soba wspolpracowac (loosecoupling)
+        Dzieki temu sa one niezalezne
+        Aplikacje latwo rozbudowywac
+        Latwo wykonywac testy
+
+        Wstrzykiwanie zaleznosci realizuje poprzez adnotacjie @Autowired bezposrenio
+         do pol lub za pomoca konstruktora/setera
+
+
+        Spring Beany sa to obiekty zarzadzane przez kontener Springa, tworzone sa
+         za pomoca plikow xml, lub przy pomocy klas konfiguracyjnych @Configration
+         z adnotacja @Bean
+
+
+        Zasieg Beana:
+        -singleton - zawsze bede operowal na tym samym beanie
+        -prototype - gdy bede pobieral beana bede otrzymywal nowa jego kopie
+        -request - w aplikacjach webowych, bean bedzie na nowo tworzony za kazdym
+          zapytaniem http
+        -session - w aplikacjach webowych, bean bedzie raz tworzony w sesji http
+        -global-session - j.w. bedzie tworzony w golbalnej sesji
+
+
+        Wstrzykiwanie moze byc realizowane na podstawie:
+         -typu danych
+         -nazwy
+         -konstruktora
+         -autodetekcje
+
+
+         Spring Security
+
+         Jest to wewnetrzny framewrk springa ktory odpowiada za uwierzytelnianie
+          i autoryzacje
+
+         Dziala na zasadzie filtrow ktore musi przejsc kazde zapytanie do aplikacji
 
 
         //------------------------------------------------------------------------
