@@ -222,11 +222,31 @@ public class Podsumowanie {
         //badJokeRobot.work();
 
 
+        ----
+        DAO
+
+        Data Access Object - sluzy do stworznie abstrakcyjen wartwy aplikacji
+         rozdzielajacej logike biznesowa od bazy danych
+
+        Klasa DAO implementuje interfejs ktory zawiera wszystkie metody
+         operacji na bazach danych CRUD (crate, retrive, update, delete)
 
 
 
 
 
+
+
+
+        //------------------------------------------------------------------------
+        --------------------------SPRING TEORIA doatek----------------------------
+
+        Bean jest to podstawowy obiekt do przekazywania danych pomiedzy poszczegolnymi
+         czesciami aplikacji
+
+        Skladaja sie z prwyatnych pol, seterow, geterow oraz pustego konstruktora
+
+        Przykladem jest Spring Bean na kotrym operuje Spring Framework
 
 
         //------------------------------------------------------------------------
