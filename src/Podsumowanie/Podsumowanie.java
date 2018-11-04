@@ -419,7 +419,16 @@ public class Podsumowanie {
 
 
         Zamiennikiem konfiguracji XMLa jest konfiguracja przez adnotacje
+         (klasa konfiguracyjna @Configuration z adnotacjami @Bean)
 
+        Dzieki niej latwiej znalezc blad (w XML latwo o ilterowke)
+        Jeslie wystapi blad bedzie to wiadome juz podczas kompilacjie programu
+         a w przypadku XMLa dopiero podzczas dzialania programu
+        Latwiejszy jest tez proces debugowania, refaktoringu i poruszania sie po
+         strukturze aplikacji niz w przypadku konfiguracji przez XML
+
+
+        Programowanie aspektowe w Springu (Aspect Oriented Programming)
 
 
         Glowne moduly Springa:
