@@ -412,6 +412,16 @@ public class Podsumowanie {
          -autodetekcje
 
 
+        Plik konfiguracyjny Springa jest to plik XML ktory zawiera informacje o
+         klasach ktore beda uzywane w aplikacji
+        Zawiera konfiguracje klas oraz ich polaczenia
+        Czytelnosc pliku XML jest wygodna
+
+
+        Zamiennikiem konfiguracji XMLa jest konfiguracja przez adnotacje
+
+
+
         Glowne moduly Springa:
 
         Spring Core Container podstawa frameworka, zawierajacy moduly:
