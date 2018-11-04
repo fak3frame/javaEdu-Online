@@ -428,7 +428,8 @@ public class Podsumowanie {
          strukturze aplikacji niz w przypadku konfiguracji przez XML
 
 
-        Programowanie aspektowe w Springu (Aspect Oriented Programming)
+        Programowanie aspektowe w Springu (Aspect Oriented Programming) polega na
+         rozdzieleniu aplikacji na moduly
 
 
         Glowne moduly Springa:
