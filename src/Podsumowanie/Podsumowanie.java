@@ -5961,5 +5961,4 @@ zmeinna final prosta JESLI jest zadeklarwoana GLOBALNIE
  w konstruktorze tej klasy
 zmienna final zadeklarowana LOKALNIE nie musi miec nadanej
  wartosci
-
  */
