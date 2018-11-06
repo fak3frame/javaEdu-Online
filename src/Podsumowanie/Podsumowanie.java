@@ -430,6 +430,27 @@ public class Podsumowanie {
 
         Programowanie aspektowe w Springu (Aspect Oriented Programming) polega na
          rozdzieleniu aplikacji na moduly
+        W programowuaniu obiektowym najwazniejsze sa obiekty a w askepktowym
+         aspekty
+        Aspekt jest to taka funkcjonalnosc ktora ma wplyw na cala aplikacje i
+         jest wykonywana przez caly przekroj aplikacji
+        Przykladem moze byc aspekt raportowania poniewaz raporty sa potrzebne
+         w roznych czesciach aplikacji
+        Tworze jeden modul raportowania ktory uzywny jest w roznych miejscach
+         aplikacji
+
+        Punk laczenia (JoinPoint) - jest to miejsce w aplikacji w ktorym moge podpiac
+         aspekt np wywolanie metody czy modyfikacja pola
+
+
+        Porada (Advice) - jest to akcja wykonywana przez aspekt w konkretnym punkcie
+         przylaczenia
+        Porady moga miec rozne typy czyli gdzie zostana uzyte:
+        - Before - przed punktem przylaczenia (adnotacja @Before)
+        - After retrurning - po wykonaniu (aspekt zostanie wykonany po
+
+
+
 
 
         Glowne moduly Springa:
