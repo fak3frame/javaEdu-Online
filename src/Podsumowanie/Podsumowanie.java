@@ -447,7 +447,10 @@ public class Podsumowanie {
          przylaczenia
         Porady moga miec rozne typy czyli gdzie zostana uzyte:
         - Before - przed punktem przylaczenia (adnotacja @Before)
-        - After retrurning - po wykonaniu (aspekt zostanie wykonany po
+        - After retrurning - po wykonaniu (aspekt zostanie wykonany po czynnosci
+           w punkcie przylaczania (adnotacja @AfterReturning) pod warunkiem
+           ze metoda zakonczy sie poprawnie
+        -
 
 
 
