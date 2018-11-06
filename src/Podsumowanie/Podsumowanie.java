@@ -450,7 +450,12 @@ public class Podsumowanie {
         - After retrurning - po wykonaniu (aspekt zostanie wykonany po czynnosci
            w punkcie przylaczania (adnotacja @AfterReturning) pod warunkiem
            ze metoda zakonczy sie poprawnie
-        -
+        - After throwing - aspekt zostanie wykonany po wyrzuceniu przez metode bledu
+           (adnotacja @AfterThrowing)
+        - After - aspekt zostanie wykonany po wykonaniu metody niezaleznie od tego
+           czy wyrzuci ona blad (adnotacja @After)
+        - Around - aspekt zostanie wykonany przed i po punkcie w ktorym jest przylaczony
+           (adnotacja @Around)
 
 
 
