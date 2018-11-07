@@ -5978,6 +5978,2537 @@ class Imie{
     }
 }
 
+
+
+//--------------------------------------------------
+/*-------------------SPRING------------------------------
+
+
+@SpringBootApplication
+//@ComponentScan({"com.dekar.ProjektDekar.aplikacja", "com.dekar.ProjektDekar.component"})
+//@ImportResource("classpath:config/spring-config.xml")
+//@PropertySource("classpath:rycerzFinalRepository.properties")
+@EnableScheduling
+
+//@EnableAutoConfiguration(exclude = {JndiConnectionFactoryAutoConfiguration.class,
+//DataSourceAutoConfiguration.class,
+//HibernateJpaAutoConfiguration.class, JpaRepositoriesAutoConfiguration.class,
+// DataSourceTransactionManagerAutoConfiguration.class})
+
+public class ProjektDekarApplication {
+
+	public static void main(String[] args) {
+
+		SpringApplication.run(ProjektDekarApplication.class, args);
+
+
+
+		/*
+		@Value
+		@Autowired
+		@Component
+		@Configuration - klasa konfiguracyjna
+		@Service - posrednik pomiedzy kontrolerem a repo
+		@Controller - mapuje
+		@SpringBootApplication - glowna kalsa
+		@ComponentScan - import class
+		@ImportResource - import xml
+		@PropertySource - import properties
+		@PostConstruct @PreDestroy
+		@RequestMapping - jaki adres w argumencie adnotacji ma byc jakim plikiem html
+						  zwracanym przez metode z ta adnotacja
+		@EnableScheduling - wlacz timer - dodaje w klasie glownej
+		@Bean(name = "lancelot") - metoda tworzaca bean w klasie @Configuration
+		@Scope("prototype") - zasieg (w klasie konf po @Bean/ w klasie komponent/ w xml
+		@Qualifier(value = "lancelot") - wybor beana jaki ma byc wstrzykniety po nazwie
+		@Primarty - ustawienie beana jako glownego w klasie konf - gdy nie mam podanego
+					Qualifier i bede szukal beana w kontenerze po TYPIE
+		CommandLineRunner
+
+
+
+
+		Spring
+
+		Kolejnosc dzialania aplikacji Spring
+		1. Start aplikacji
+		2. Uruchamiany jest kontext springowy
+		3. Skanuje on klasy szukajac z adnotacja @Component (beanow) w folderze gdzie jest klasa
+		    startowa ProjektApplication z GŁOWNA metoda run oraz w folderach wyzej *standardowo
+		4. Kontekst standardowo tworzy obiekty tych klas i wrzuca je do kontenera pod nazwa tej
+		    klasy pisane z malej litery Zamek -> zamek i jest to robione na zasadzie mapy
+			tj. nazwa klasy jest kluczem a obiekt wartoscia zamek -> obiektZamku
+		   Gdy utworzy obiekt takiej klasy uruchamia metode z adnotacja @PostConstruct
+		   W pierwszej kolejnosci uzupelniany jest kontener obiektami komponentow ktore
+			nie maja pol z adnotacja @Autowired aby moc je wstrzyknac do nich wartosci
+			majac pelny kontener klas @Component z polami potrzebymi do wstrzykniecia.
+		   Gdy jakas klasa posiada pole innej klasy z adnotacja @Autowired, kontekst
+			wtrzykuje jej wartosc z kontenera. Jesli nie znajdzie wyrzuci blad ze pole
+			wymaga beana klasy ktora nie istnieje lub nie ma adnotacje @Component
+
+		  Moge dodac opcje przeszukiwania gdzie kontekst ma szukac komponentow dodajac w klasie
+		   glownej po adnotacji SprinngBootApplication adnotacje @ComponentScan gdzie moge
+		   wprowadzic foldery lub klasy pojedynczo w liscie
+		  Inna metoda przeszukiwania komponentow jest dodanie w klasie SpringBootApplication
+		   dodanie adnotacji @ImportResource i opis dzialania kontekstu z klasami w pliku
+		   XML
+		  Ostania metoda konfiguracji kontekstu jest dodanie klas/y konfiguracyjnych
+		   z adnotacja @Configuration w ktorych deklaruje metody zwracajace beany (obiekty),
+		   dodatkowo moge w takiej klasie dodac takze plik XML, klasa taka nie wymaga importu
+		  Wszystkie metody tworzenia benow do kontera łacza sie i moge nawzajem z siebie korzystac!
+		   tj klasy z @Component, z pliku XML oraz z klas konfiguracyjnych
+		5. Po uzupelnieniu kontenera wywolywane sa metody run z klas implementujacych
+			inerace CommandLineRunner
+		5. Po zakonczeniu nastepuje niszczenie beanow i zamykanie kontekstu + wywolanie
+			metod jesli sa z adnotacja @PreDestroy
+
+        //Uklad folderow
+		-Klase głowna SpringBootApplication z metoda statyczna run tworze w glownym folderze
+		  np AplikacjaDekar
+		-Klasy zwykle tj ktorych obiekty bede tworzyl, takze @Component tworze w folderze domain
+		  w folderze glownym
+		-Klasy konfiguracyjne @Configuration w folderze config w folderze glownym
+		  np. MainConfig, RycerzConfig (nie wymagaja importu)
+		-Klasy @Repository czyli te z jednym obiektem do tworzenia obiektow innych
+		  klas tworze w foldrze domain -> repository np. RycerzRepository
+		-Klasy @Service - logik biznesowych czyli tam gdzie tworze metody jak operowac na
+		  obiektach klas repository tworze w folderze glownym w services np.ZadanieService
+		  Sa one posrednikiem pomiedzy klasami @Controller a @Respository aby moc
+		  zapisac obiekt lub go wyciagnac + wykonac jakas filtracje
+		-Klasy kontrolerow @Controller tworze w folderze glownym w controllers np HelloController
+		  i sluza np do tego aby zmapowac metode @RequestMapping("/hello") i zwrocic w niej
+		  nazwe pliku html
+
+		-Pliki ze zmiennymi tworze w folderze resources, plik glowny - appliction.properties
+		  *(glowny nie wymaga importu, innt juz tak) nazwa innego pliku np. rycerz.properties
+		  *(import np: @PropertySource("classpath:zamek.properties"))
+		-Konfiguracje XML tworze w folerze resources a w nim config glowyny spring-config.xml
+		  lub dodatkowe np: rycerz-config.xml, *(XML wymaga importu w klasie glownej lub
+		  konfiguracyjnej @ImportResource("classpath:config/spring-config.xml"))
+		-Pliki HTML zwykle tworze w folderze resources a w nim folder static np
+		  hellowrold.html
+		-Pliki HTML do obslugi przez thymeleaf w folderze resources -> templates
+		  np. rycerze.html
+
+
+		Klasy oznaczane adnotacja @Component sa Spring beanami / komponwntami
+
+		Konekst musi skorzystac z jakiegos konstrukora klasy ktora jest
+		 komponentem - @Component - Spring bean!
+
+		Klasy implementujace interface CommandLineRunner maja metode run ktora
+		 uruchamiana jest po wczytaniu do kontenera wszystkich beanow (klas z
+		 adnotacja @Component lub tych okreslonych w pliku XML lub klasach
+		 konfiguracyjnych)
+
+		Komponent moze posiadac takze metody ktore wywoluja sie po stworzeniu jej obiektu
+		 przez kontekst oraz przed zniszczeniem. Uzywam do tego adnotacji @PostConstruct
+		 oraz @PreDestroy przed nazwa metody
+
+
+        //Konfiguracja tworzenia komponentow
+		Konfigracje beanow moge zrobic na 3 sposoby:
+		 -za pomoca bezposredniej adnotacji @Coponent przed nazwa klasy
+		 -poprzez plik xml + dadanie w klasie SpringBootApplication lub klasie
+		   konfiguracyjnej adnotacji @ImportResource("classpath:config/spring-config.xml")
+		   aby zaimporotwac ten plik xml
+		 -z uzyciem klasy konfiguracyjnej @Configuration - nie wymaga importu
+		   + opconlne zaimportowanie do niej pliku xml
+		   @ImportResource("classpath:config/spring-config.xml")
+
+		Beany umieszczone za pomoca wszystkich metod do kontnera maja do siebie dostep!
+
+		Podstawowa konfiguracja rozpoczyna sie porzez dodanie adnotacji @Component
+
+		Jesli chce skorzystac z baz danych czyli zmiennych DataSource
+		 czyli np ustawienie ich adresu, uzytkownikow itp uzywam konfiguracji przez
+		 klasy konfiguracyjne @Configuration
+		Uzywam tez dla Spring MVC czyli np gdzie sa nasze strony internetowe, templety itp
+		Ustawienia spring beanow przez klase konfiguracyjna polega na stworzeniu metod
+		 zwracjacych dany spring bean + wstrzykiwanie danych w srodku tej metody
+
+		Konfiguracje XML uzywam w starszych aplikacjach i duzych projektach
+		Polega ona na stworzeniu tagow bean z nazwa beana i jego adresem klasy +
+		 operacje wstrzykiwnia prze konstruktor lub seter
+		Importuje konfiguracje przez @ImportResource("classpath:config/spring-config.xml")
+
+
+
+        //Wstrzykiwanie zaleznosci
+		Wstrzykiwanie zaleznosci jest to uzupenienie danymi z kontenera za pomoca
+		 metod (seterow), konstrukora lub bezposrenio do pol klasy
+
+		Wstrzykiwanie zaleznosci z adnotacja @Autowired musi zostac zrealizowane
+		 i polega ono na automatycznym wstrzykiwaniu po uruchomieniu kontekstu i
+		 uzupelnieniu kontenera Spring beanami.
+		Wstrzykiwanie STANDARDOWO z ta adnotacja polega na szukaniu w kontenerze
+		 zmiennej/beana PO TYPIE! wiec jesli sa 2 jednego typu powstanie blad.
+		 Aby to naprawic musze wstrzyknac bean po nazwie podajac adnotacjie @Qualifier
+		@Autowired moge przypisac do pola (wstrzykiwanie przez reflection API), setera i
+		 konstrukora
+		Po uzupelnieniu kontenera kontekst wstrzykuje wartosci z kontenera do
+		 seterow/pol/konstruktorow z ta adnotacja.
+
+		Wstrzykiwanie w XML
+		 przez konstruktor:
+		 <constructor-arg index="0" value/ref="Pszemek"/>
+		 constructor-arg index okrezla ktory parametr okreslam natomiast
+		  value okresla konkretna wartosc a ref inny Bean
+		 w xml nie moge wstrzykiwac bezposrenio do pol tylko musze przez seter:
+		 <property name="zadanieProsty" value/ref="zadanieProsty"/>
+		 UWAGA: property name jak w przykladnie wyzej okresla nazwe metody
+		  czyli w klasie MUSI ona nazywac sie setZadanieProsty
+
+		Wstrzykiwanie w klasach konfiguracyjnych jest przez metode @Bean
+		 zwracajaca dany bean. W metodach klasy konfiguracyjnej tworze obiekty
+		 wybranej klasy i wstrzykuje innego beana poprzez wywolanie innej metody
+		 zwracajacej bean np ZamekProsty zamekProsty = new ZamekProsty(rycerzProsty());
+		Lub opcjonalnie tworze @Autowired ze zmienna wybranego typu
+
+
+
+		//----Przypisywanie wartosci z @Value + plik properties
+
+		Pola typow prostych moge takze uzupelnic wartoscia z adnotacja @Value robiac
+		 to bezposrenio (z = ) lub @Value lub korzystajac z pliku properties w parametrze
+		 @Value
+
+		Moge przypisac wartosc besposrenio w adnotacji @Value("Lancelot") *jest to
+		 rzadko spotykane (przypisuje wartosci "Lancelot") dziala to tak samo
+		 jak bym przypisal wartosci przez "=" ale tak przypisze to kontekst
+
+		Moge przypisac wartosc takze z pliku application.properties - dodaje do niego linijke
+		 z nazwa zmiennej np moj.zamek.nazwa=SUPER ZAMEK, a w adnotacji moge sie do niej odwolac
+		 np: @Value("${moj.zamek.nazwa}")
+
+		Moge takze uzyc wartosci domyslnej jesli nie jest uzupelniona taka wartosc w pliku
+		 properties wpisujac po : wartosc tj. @Value("${moj.zamek.nazwa:SUPER NAZWA}")
+		 wiec jesli w pliku application.properties nie znajdzie wartosci dla nazwy
+		 zmiennej moj.zamek.nazwa to przypisze jej wartosci "SUPER NAZWA"
+
+	 	Moge takze stworzyc WLASNY plik properties w folderze resources lecz aby klasa
+	 	 zaczela korzystac takze z niego musze dodac kolejna adnotacje PropertySource
+	 	 z classpath zaraz po adnotacji @Component np:
+	 	 @PropertySource("classpath:zamek.properties")
+	 	Moge to zrobic w klasie SpringBootApplication lub tej w ktorej korzystam z @Value
+	 	UWAGA! jesli application.properties ma takze potrzebna zmienna to kontekst pobierze
+	 	 ja najpierw z tego pliku a nie z mojego
+
+
+		//----Uruchamianie aplikacji + obsluga zmiennej context
+
+		Aplikacja uruchamiana jest z klasy z adnotacja @SpringBootApplication
+		 w ktorej w main wywoluje statyczna metode main z klasy SpringApplication
+		 i wysylam do niej plik class mojej klasy glownej tj. z adnotacja @SpringBootApplication
+		 np ProjektDekarApplication.class oraz args z maina.
+		Ta metoda zwraca kontekst
+		 SpringApplication.run(ProjektDekarApplication.class, args);
+
+		Taki kontekst moge przypisac do zmiennej typu ConfigurableApplicationContext
+		ConfigurableApplicationContext ctx = SpringApplication.run(ProjektDekarApplication.class, args);
+		Ta zmienna zawiera teraz caly konteks i moge z niego wyciagnac obiekty klas
+		 czyli tych z adnotacja @Contekst - bean. np:
+		 Zamek zamek = (Zamek)ctx.getBean("zamek");
+		 musze rzutowac bo metoda zwraca obiekt typu Object!
+
+
+		//----Inne przeszukiwanie komponentow
+
+		Aby kontekst mogl przeszukiwac komponenty w innych miejscach niz standardowo moge w klasie
+		 glownej dodac adnotacje po SpringBootApplication @ComponentScan i podac foldery do
+		 przeszukiwania czyli liste wartosci np:
+		 @ComponentScan({"com.dekar.ProjektDekar.aplikacja", "com.dekar.ProjektDekar.component"})
+		 W przypadku jesli klase przeniose do innego folderu powstanie blad
+
+		Moge takze dodac recznie kazda klase ktore sa komponentami
+		 @ComponentScan(basePackageClasses = {Starter.class, StarterProsty.class, Rycerz.class,
+		 RycerzProsty.class, Zadanie.class, ZadanieProsty.class, Zamek.class, ZamekProsty.class,
+		 TestComponent.class})
+		Dzieki takiemu podejsciu importuje te klasy wiec jesli je przeniose je do innego folderu
+		 za pomoca refaktoringu to zmieni sie takze ich adres w takim imporcie!
+
+
+		 //----Scope - zasieg beana
+
+		 Kazdy bean ma swoj zasieg - scope
+		 Domyslnie jest on ustawiony na singleton czyli jeden bean ma jedna instancje
+		 @Scope("singleton")
+
+		 Aby to zmienic ustawiam scope na prototype
+		 Po adnotacji @Component dodaje @Scope("prototype")
+		 Przez to, gdy bean ma wstrzyknac zaleznosc do innego beana to za kazdym wstrzyknieciem
+		  bedzie tworzona NOWA NIEZALEZNA instancja tego beana przez co zmiana kazdej z nich
+		  w klasach do ktorych zostala wstrzyknieta nie bedzie miala wplywu na pozostale
+		  beany tego samego komponentu!
+
+		 Dla klasy konfiguracyjnej aby jej metoda tworzaca beana ustawiala go jako nowy
+		  niezalezny obiekt dodaje po adnotacji @Bean andotacje @Scope("prototype")
+
+		 W XML w linijce bean dodaje kolejny atrybut scope="prototype"
+		  <bean id="rycerzProsty" class="com.dekar.ProjektDekar.Aplikacja.domain.RycerzProsty"
+		  scope="prototype">
+
+
+		//----Tworzenie kilku beanow jednego komponentu (typu, np z inna nazwa ale ten sam typ)
+
+		Za pomoca klasy konfiguracyjnej:
+
+		Tworze metody jak wczesniej zwracajace obiekt wybranego beana razem z adnotacja
+		 @Bean tylko zmieniam nazwe metody na wybrana lub podajac parametr name w @Bean
+		 i moge stworzyc kilka metod zwracajcych ten sam typ beana ale z inna nazwa
+
+		Teraz moge w cialach metod ustawiac takze niezalezne dane
+
+		Powienienem tez uzyc nie nazwy metody jako nazwy beana tylko dodac do adnotacji @Bean
+		 paramet name = "lancelot" to nazwe beana bedzie bralo z niego
+
+
+		Standardowo adnotacja @Autowired wstrzykuje za pomoca TYPU czyli nazwa beana
+		 w kontenerze jest taka jak jego typ np rycerz -> obiektRycerza i jest tylko
+		 jeden bean tego typu
+
+		Jesli bede mial w kontenerze 2 beany tego samego typu ale z inna nazwa np:
+		 percival -> obiektRycerz, lancelot -> obiektRycerza
+		 i kontekst bedzie chcial wstrzyknac to powstanie blad
+		 @Autowired
+		 Rycerz rycerz
+
+		Aby wybrac bean do wstrzykniecia za pomoca nazwy uzywam adnotacji @Qualifier
+
+		W przypadku pol lub seterow z pojedynczym parametrem moge uzyc adnotacji
+		 po @Autowired np:
+		 @Autowired
+		 @Qualifier(value = "lancelot")
+		 Rycerz rycerz;
+
+		 @Autowired
+		 @Qualifier(value = "lancelot")
+		 public void setRycerz(Rycerz rycerz){this.rycerz = rycerz;}
+
+		W przypadku konstruktora lub setera z 1 lub wiecej parametrem wpisuje
+		 @Qualifier przed przyjmowanym parametrem:
+		 public Zamek(@Qualifier(value = "lancelot") Rycerz rycerz)
+		 void setRycerz(@Qualifier(value = "lancelot") Rycerz rycerz)
+
+		Jesli jednak nie mam okreslonego @Qualifier we wstrzykiwaniu moge
+		 w klasie konfiguracyjnej dac adnotacje @Primary dla JEDNEJ metody
+		 tworzacej dany typ beana aby stworzony bean po mimo innej nazwy byl
+		 traktowany jako glowny czyli brany po TYPIE! czyli np:
+		 @Bean(name = "lancelot")
+		 @Primary
+		 rycerz -> obiektRycerza (metoda ustawia go jako "lancelot" ale w kontenerze
+		  bedzie jako rycerz i brany bedzie po typie!)
+
+
+		Konfigruajc XML dodaje kolejnego beana z innym id niz nazwa klasy bo
+		 id to traktowane jako nazwa beana ktory bedzie umieszczony do kontenera.
+		Moge stworzyc kilka beanow o roznym id i tym samym typie (adres klasy)
+		Jako parametr ref wpisuje nowe id - dla konstruktora i setera!
+		 PAMIETAM ZE W XML WSTRZYKUJE PRZEZ SETERY
+
+		Ustawienie primary robie w linijce bean dodajac parametr primary na true
+		 <bean id="rycerzProsty" class="com.dekar.ProjektDekar.Aplikacja.domain.RycerzProsty"
+          primary="true">
+
+
+        //----Wstrykiwanie do listy/zbioru
+
+        Jesli wstrzykuje do listy/zbioru moge usunac @Qualifier bo moze zostac wstrzykniete
+         kilka elementow
+
+        W metodzie toString liste moge wyswietlic LISTE za pomoca strumienia
+         rycerze.stream().map(Objects::toString).collect(Collectors.joining(","));
+
+        Jesli uzywam ZBIORU jako kolekcji - kazdy element jest unikalny wiec klasa ktora
+         bedzie wstrzykiwana musi generowac odpowiedzni hashcode na podstawie wybranych
+         zmiennych ktore beda wybierac czy element jest unikalny!
+
+
+        Jesli chce aby wstrzyknac do listy unikalnych rycerzy moge stworzyc nowa klase
+         korzystajaca z konstruktora klasy bazowej np RycerzDuelujacy lecz jest to metoda brzydka
+
+
+        Wstrzykiwanie do map moge zrobic TYLKO za pomoca XMLa
+
+        Wstrzykiwanie list/zbiorow przez XMLa polega na zagniezdzeniu tagu property i takze
+         robie to za pomoca setera w klasie!!
+         <property name="rycerze">
+            <list> //lub <set>
+                <ref bean="percival"/> lub <value type="costam"/>
+                <ref bean="lancelot"/>
+            </list>
+        </property>
+        w klasie zamek trworze liste List<Rycerz> rycerze = new ArrayList<>() i setera:
+        public void setRycerze(List<Rycerz> rycerze) {
+        	this.rycerze = rycerze;
+    	}
+
+        Dla map uzywam podobnej konstrukcji
+        <property name="rycerze">
+            <map>
+                <entry key="lancelot" value-ref="lancelot"/>
+                <entry key="percival" value-ref="persival"/>
+            </map>
+        </property>
+
+
+		//----Dodanie interwalow czasowych
+
+		Sluzy do tego taskrunner ze springa
+		W klasie SpringBootApplication na poczatku dodaje adnotacje @EnableScheduling
+		Taskrunner bedzie odpowiadal kiedy jakie zadanie ma sie wykonac
+
+		Aby metoda wykonywala sie co jakis interwal czasowy - dodaje adnotacje
+		 @Scheduled(fixedDelay = 1000) w klasie repository
+		 gdzie fixedDelay jest czasem w ms co ile
+		 ma sie ona uruchamiac (od czasu zakonczenia), moge takze dac fixedRate
+		 to czas zostanie liczony od uruchomienia metody.
+		Jako kolejny parametr w @Scheduled moge dodac initialDelay = 3000 po ,
+		 i bedzie to czas jaki uruchomi sie od uruchominia kontnera np:
+		 //@Scheduled(fixedDelay = 1000, initialDelay = 3000)
+
+		Moge takze skorzystac z czasu podanego w zmiennej String np z  pliku
+		 properties :
+		 @Scheduled(fixedDelayString = "${tworzenieZadaniaOczekiwanie}")
+
+
+		W XMLu musze dodac linijke <task:scheduler id="myScheduler" pool-size="10"/>
+		 gdzie id jest nazwa a pool-size jest ilosc metod ile moze z tego skorzystac
+
+		Aby dodac wykonywanie metody dodaje linijki
+		<task:scheduled-tasks>
+        	<task:scheduled ref="zadanieFinalRepository" method="createRandomZadanieFinal"
+        	 fixed-rate="1000"/>
+    	</task:scheduled-tasks>
+
+
+
+		//KONFIGURACJA KOMPONENTOW PRZEZ XML
+
+		Dodatkowa opcja przeszukiwania komponentow jest dodanie ich do pliku xml
+
+		Ta metoda uzywana jest w wiekszych projektach i w starszych aplikacjach
+
+		Zaleta jest to ze nie trzeba skakac po klasach szukajac tych z adnotacjami
+		 @Component oraz wartosci moge przypisywac w pliku XML
+
+		Wszystkie klasy typu komponent umieszczone za pomoca adnotacji @Component
+		 czy w pliku xml laduja w tym samym kontenrze i maja do siebie dostep!
+
+		Wada konfiguracji xml jest to ze nie mozna wstrzyknac bezposrednio wartosci
+		 (tam gdzie bylo @Autowired) do pola tylko musze zrobic to przez metode
+		 wstrzykujaca (seter - nazwa musi byc setZmienna!!)
+		 taka funkcjonalnosc uzywa znacznika <property>
+
+		Aby dodac konfiguracje dzialania kontekstu za pomoca pliku xml musze dodac
+		 adnotacje w glownej klasie SpringBootApplication po adnotacji SpringBootApplication
+		 @ImportResource("classpath:config/spring-config.xml"), moge takze dodac ja do klasy
+		 konfiguracyjnej!
+
+		W katalogu resources tworze katalog config w ktorym tworze plik spring-config.xml
+		 lub dodatkowy dla klasy np zamekProsty-config.xml
+
+
+		Podstawowa struktura jest dodanie na poczatku xmlversion oraz beans xmlns z internetu.
+
+		Kolejna rzecza jaka dodaje jest adres glownej paczki czyli tej gdzie sa WSZYSTKIE klasy!
+		 <context:component-scan base-package="com.dekar.ProjektDekar"/>
+
+		Aby dodac klase jako komponent dodaje linijke z tagiem bean
+		 <bean id="zadanie" class="com.dekar.ProjektDekar.Aplikacja.domain.ZadanieProsty"/>
+		 gdzie id jest to nazwa beana jaki zostanie umieszczony do kontenera oraz jej adres.
+		Teraz klasa NIE MOZE miec adnotacji @Component i kontekst bedzie traktowal ja jak
+		 klase komponent (z adnotacja @Component) czyli umiesci ja do kontenera
+
+		Moge dodac do beana metody ktore wykonuja sie po stworzeniu beana oraz przed jego
+		 zniszczeniem i robie to w linijce deklaracji beana uzywjac znacznikow init-method
+		 oraz destroy-method gdzie podaje ich nazwe np:
+		 <bean id="zamekProsty" class="com.dekar.ProjektDekar.Aplikacja.domain.ZamekProsty"
+          init-method="buduj" destroy-method="zniszcz">
+
+
+		Dodatkowo moge uzupelnic dane przez wstrzykiwanie czyli jak z adnotacja @Autowired
+		 tzn ustawianie zaleznosci i moge to zrobic w XML TYLKO dla konstruktroa i
+		 metody (setera)
+
+		Dodaje kolejnego beana w xml lecz nie zamykam go odrazu po deklaracji (/>) tylko
+		 dodaje kolejne linijki az dam zamkniecie </bean>
+
+		Dla konstruktora uzywm znacnzika <constructor-arg> np
+		 <constructor-arg index="0" value="Pszemek"/>
+		 gdzie index jest to numer paramatru jaki przyjmuje konstruktor (numerowane od 0)
+		 oraz value czyli wartosc
+		Moge zamiast value dac ref to wtrzyknie innego beana po nazwie(obiekt z kontenera)
+		 np:
+		 <constructor-arg index="0" ref="rycerzProsty"/>
+		 wstrzyknie do parametru 0 konstruktora bean o nazwie rycerzProsty (jego id)
+
+		Jesli chce skorzystac z setera uzywam tagu <property>, teraz moge skorzystac
+		 z wstrzykiwania tej metody (SETERA) (tam gdzie byla adnotacja @Autowired)
+		 poprzez podanie ktorego setera (ZA POMOCA NAZWY) chce uzyc za pomoca name
+		 oraz czy ma wtrzyknac inny bean czy wartosc np:
+		<property name="zadanieProsty" ref="zadanieProsty"/>
+		 jako name podaje nazwe setera (nazwa w takim przypadku musi byc : setZadanieProsty!!)
+		 a ref jako nazwe beana jakiego ma wtrzyknac z kontenera (z xmla jest to id)
+		 (pisane z malej litery jak obiekt w konterze)
+		 UWAGA! Metoda musi byc seterem czyli miec nazwe setZadanieProsty!!
+		 Moge tez dac value zeby podalo konkretna wartosc np:
+		 <property name="nazwa" value="123"/>
+		 to nazwa setera MUSI BYC setNazwa!!
+
+		Moge takze ustawic wartosc wstrzykiwana z pliku properties.
+		Przypisuje to tak jak value np:
+		 <property name="nazwa" value="${moj.zamek.nazwa:SUPER NAZWA DEFAULTOWA}"/>
+		Jesli NIE JEST to standardowy plik application.properties to musze na poczatku
+		 pliku xml dodac linijke po context:component-scan :
+		 <context:property-placeholder location="classpath:zamek.properties"/>
+
+
+		Moge takze dodac inny plik xml do konfiguracji. Umieszczam go w tym samym folderze
+		 i dodaje linijke w glownym pliku import resource np:
+		 <import resource="classpath:config/zamekProsty-config.xml"/>
+		Nowy plik xml takze musi posiadac konfiguracje poczatkowa - beans oraz xml version
+		 ale nie musi juz miec component-scan
+
+
+		Aby kazdy bean ktory bedzie wstrzykiwany nie byl singletonem (ta sama instancja)
+		 dodaje kolejny parametr w tagu bean scope="prototype"
+
+
+		Aby stworzyc kilka beanow jednego typu po prostu tworze kilka beanow z id innym
+		 niz nazwa klasy (pisane z malej litery). Teraz bean bedzie mozliwy do wyszukania
+		 po nazwie a nie po TYPIE jak standardowo!
+
+		Aby wstrzyknac wybrany bean po nazwie po prostu w ref podaje jego nazwe
+
+		Jesli chce ustawic aby bean jakiegos typu byl beanem GLOWNYM czyli mogl
+		 po mimo innej nazwy byc wstrzykniety po TYPIE dodaje w linijce bean
+		 tag primary tj: primary="true"
+
+
+
+		//KONFIGURACJA PRZEZ KLASE KONFIGURACYJNA @Configuration
+
+		W katalogu glownym (tam gdzie jest klasa startowa) tworze klatalog config
+		 a w nim klase MainConfig
+		Klasa ta bedzie zawierac definicje beanow jak w XML
+
+		Tworzenie beana polega na metodach z adnotacja @Bean ktora zwraca konkretny
+		 obiekt (standardowo metoda nie przujmije parametru) np:
+		 public ZadanieProsty zadanieProsty(){
+          return new ZadanieProsty();}
+        UWAGA to jak nazwa sie metoda bedzie nazwa beana w kontenerze!!
+         chyba ze podam w adnotacji @Bean parametr name
+
+        Moge w takiej klasie utworzyc obiekty z wlasnymi wartosciami przypisanymi
+         w konstruktorze np:
+		 RycerzProsty rycerzProsty = new RycerzProsty("pawel konfig", 99);
+		 (odpowiednik w xml :
+		 <constructor-arg index="0" value="pawel konfig"/>
+		 <constructor-arg index="0" value="99"/>)
+		 oraz skorzystac z innego beana moge na nowow stworzonym obiekcie
+		 w tej metodzie wywolac seter z klasy i wyslac tam to co zwroci inna
+		 metoda @Bean!
+		 rycerzProsty.setZadanieProsty(zadanieProsty());
+		 (odpowiednik w xml:
+		 <property name="zadanieProsty" ref="zadanieProsty"/>)
+		 Na koniec takze musze zwrocic obiekt return rycerzProsty!
+
+		Do klasy konfiguracyjnej moge takze dodac obsluge beanow przez plik xml
+		 dodaja adnotacje @ImportResource po @Configuration np:
+		 @ImportResource("classpath:config/zamekProsty-config.xml")
+
+
+		Adnotacja @Bean moze takze przyjac parametry takie jak name oraz
+		 moge ustawic pola metody inicjalizujacej oraz metody niszczacej np:
+		 @Bean(name = "zamekProsty", initMethod = "buduj", destroyMethod = "zniszcz")
+		Teraz bean w kontenerze bedzie nazywal sie jak nazwa a nie jak metoda
+		 zwracajaca bean!
+
+
+		Moge takze dodac obsluge pliku properties jak wczesniej w klasach np:
+		 @PropertySource("classpath:zamek.properties")
+
+		Aby skorzystac ze zmiennych pliku properties moge w metodzie zwracajacej
+		 mojego beana dodac PRZYJMOWANE PARAMETRY rownowazne z typami pol pliku
+		 properties oraz dodac adnotacje @Value po @Bean! np:
+		  @Bean
+    	  @Value("${moj.zamek.nazwa:SUPER NAZWA DEFAULTOWA}")
+    	  public ZamekProsty zamekProsty(String nazwa)
+    	  i na koniec moge przypisac ja przez wywolanie na obiekcie metody
+          setera np:
+          zamekProsty.setNazwa(name);
+          i na koniec jak wczescniej tez zwrocic obiekt
+          return zamekProsty;
+
+		Moge takze skorzystac ze zmiennej z pliku properties za pomoca dodania
+		 pola POZA metoda bean (metoda brzydka)
+		 i skorzystac z adnotacji @Value np:
+		 @Value("${moj.zamek.nazwa:SUPER NAZWA DEFAULTOWA}")
+         String name;
+         a na koniec skorzystanie z niej w srodku metody zwracjacej obiekt @bean
+
+
+        Moge takze dodac dodatkowa klase konfiguracyjna.
+        Dodaje nowa klase w tym samym folderze (config) np ZamekProstyConfig
+         oraz dodaje jej takze adnotacje @Configuration
+        W klasie konfiguracyjnej DODATKOWEJ dodaje adnotacje @Import i wpisuje
+         klase z ktorej korzysta np:
+         @Import(MainConfig.class)
+        UWAGA! jesli klasa korzysta z beanow (obiektow) utworzonych w innej klasie
+         klasie konfiguracyjnej NIE BEDE MOGL z nich skorzystac!
+
+
+        Aby kazdy bean ktory zwroci metoda @Bean na potrzeby wstrzykniecia nie byl
+         singletonem(ta sama instancja) uzywam po @Bean adnotacji @Scope("prototype")
+
+
+        Aby utworzyc kilka niezalezbych beanow jednego typu ustawiem parametr name
+         w @Bean lub zmieniam nazwe metody.
+
+        Jesli wstrzykiwanie jest po TYPIE czyli nie ma okreslonej nazwy a typ
+         klasy np: @Autowired Zamek zamek to moge jeden z tych metod jednego
+         typu dac z adnotacja @Primarty aby byl on metoda tworzaca GŁOWNY bean
+         tego typu
+
+        Okreslenie beana po nazwie nie po typie polega na dodaniu adnotacji
+         @Qualifier. W seterze/konstruktorze przed typem daje ta adnotacjie
+         np public Zamek(@Qualifier(value = "lancelot") Rycerz rycerz)
+        Natomiast dla smiennych po adnotacji @Autowired np:
+         @Autowiered
+         @Qualifier(value = "lancelot")
+         Rycerz rycerz;
+
+
+         //Maven - pom xml
+
+         Import polega na dodaniu tagu <dependency>
+
+         Dla dodatkowych bibliotek springa podaje groupId oraz artifactId poniewaz
+          mam na poczatku dodanego taga parent z version
+
+         Jedna z podstawowych bibliotek springa sa:
+
+         Spring MVC - spring-boot-starter
+         <groupId>org.springframework.boot</groupId>
+		 <artifactId>spring-boot-web</artifactId>
+
+		 Thymeleaf
+		 <groupId>org.springframework.boot</groupId>
+		 <artifactId>spring-boot-starter-thymeleaf</artifactId>
+
+
+		 Aby dodac niezalezna biblioteke musze dodac takze wersje
+
+		 Jquery
+		 <groupId>org.webjars</groupId>
+		 <artifactId>jquery</artifactId>
+		 <version>3.3.1-1</version>
+
+		 Bootstrap
+		 <groupId>org.webjars</groupId>
+		 <artifactId>bootstrap</artifactId>
+		 <version>4.1.3</version>
+
+
+
+
+
+		//TESTOWANIE
+	    Klasa Testowa ktora ma adnotacje
+	     @RunWith(SpringRunner.class)
+	     @SpringBootTest
+	     korzysta z kontekstu springo przez co testy sa bardzo wolne.
+	     Lepiej jest stworzyc testy nie korzystajace z kontekstu
+
+		metoda @Test "contextLoads" sprawdza czy zaladowal sie kontekst springowy
+
+		Korzystajac z testow z uzyciem kontekstu jesli uzywam obiektow klas ktore korzystaja
+		 z wstrzykiwania powninennem przed testami wstrzyknac im wartosc z
+		 kontenera dodajac pole potrzebnej klasy z adnotacja @Autowired np:
+		 @Autowired
+	     RycerzProsty rycerzProsty;
+		 poniewaz jesli stworze w tescie nowy obiekt z new nie korzystam
+		 z wstrzykiwania zaleznosci jak np @Value czy @Autowired w moich klasach
+		 przez co wartosci pol moga byc zle
+
+		Lepiej jest stworzyc klase testowa nie korzystajaca z kontekstu i
+		 stworzyc w niej test w ktorym stworze drzewo obiektow od "gory"
+		 a na koncu sprawdze czy otrzymany String z toString bedzie rownal
+		 sie z moim wpisanym reczenie Stringiem za pomoca metody assertEquals
+
+		Moge takze wykorzystac dodatkowy konstruktor BEZ MODYFIKATORA w klasie
+		 ktora przyjmuje wartosci pol ktore sa wstrzykiwane oraz umieszczam
+		 klase testowa w takim samym folderze (nazwa) jakim jest ta klasa testowa
+	     np domain przez co bede mial dostep do tego konstruktora. *(Klasy bez modyfikatoa
+	     maja dostep do pol w klasach z tej samej paczki!)
+	     Teraz tworzac obiekt w metodzie testowej moge wyslac do niego wartosci
+	     jakie te pola otrzymalyby przez wstrzykiwanie
+
+	    Moge takze usunac wstrzykiwanie proste do pol za pomoca @Value i
+	     przypisac wartosci z = poniewaz tak samo to zadziala a nie bede
+	     juz musial korzystac z wtrzykiwania!
+
+	    Moge takze skorzystac z wstrzykiwania przez metode tej klasy
+	     wywolujac ja na stworzonym obiekcie w tescie i wysylajac odpowienie
+	     parametry lub inny obiekt
+
+
+
+	    //OBIEKTY BEZSTANOWE / WZORZEC SINGLETON
+		Kazde pole klasy nazywam stanem obiektu
+
+		Klasa Utils jest to odpowiednik mojej klasy z nazwa Utils po nazwie klasy
+		 np PersonUtils i zawiera ona tylko zestaw metod ktore robia jakies operacje
+		 na obiektach i nie posiadaja wlasego stanu (pol)
+		Taka klasa i nazywa sie bezstanowa i jej obiekty sa bezstanowe
+		Takie klasy opakowuje we wzorzez Singleton
+		Polega on na tym ze na danej maszynie wirtualnej znajduje sie tylko jedna instancja
+		 danej klasy
+		W klasie Utils tworze jej prywatne statyczne pole o nazwie instance i przypisuje null,
+		 nastepnie tworze prywatny konstruktor nie robiacy nic aby nie mozna bylo tworzyc jej
+		 obiektu oraz metode getInstance ktora zwraca obiekt tej klasy i ma wartunek jesli nie
+		 jest stworzony obiekt tej klasy to go tworzy - definicja :
+
+		 public OsobaUtils getInstance(){
+         	if(instance == null){
+             	instance = new OsobaUtils();
+         	}
+         	return instance;
+         }
+
+
+
+		//SPRING MVC - Model View Controler
+
+    	Jest to wzorzec architektoniczny
+
+    	Polega to na tym zeby odsperowac widok od medelu a polaczenie ich
+    	 realizwoane jest przez kontroler
+
+    	W Spring jest to zrealizowane inaczej
+    	Request (np http) trafia do front kontrolera (w Spring nazywa sie Disptcher
+    	 Servleter) jego zadeniem jest wyslanie go do odpowiedniego kontrolera na
+    	 podstawie requestu jaki otrzymal od uzytkownika. Jednak aby wybrac komponent
+    	 musi uzyc koljnego komponentu Handler Mapping
+    	Handler Mapper na podstawie requestu moze wskazac do jakiego kontrolera ma
+    	 trafic request, nastepnie to wskazanie przesyla z powrotem do dispatcher
+    	 servletu
+    	Kolejnym etapem jest wyslanie przez ten servlet requesta do wskaznego przez
+    	 handler mappera - kontrolera
+    	Kontrolerem jest komponent springowy ktorego zadaniem jest rozebranie requestu
+    	 np http czyli wyciagniecie metadanych, parametrow z adresu url, jego
+    	 nastepnym zadaniem jest przeslanie tego do odpowienich komponentow realizujacych
+    	 wybrna logike biznesowa
+
+    	NP. jesli chce dodac obiekt (rycerza) to kontroler dostanie pola formularza
+    	 nastepnie przesle te informacje do komponentu knightRepository ktory wywola
+    	 metode createKnight i zostanie dodany do listy rycerzy. Nastpenie ten
+    	 komponent zwroci nowa liste do kontrolera.
+    	 Kontrole opakowuje taka
+    	 liste w dodatkowe metadane i powstaje model + dorzuca tam logiczna nazwe
+    	 widoku ktory ma sie wyswietlic uzytkownikowi i ta paczka wraca do
+    	 dispatcher servletu
+    	 Servlet tworzy widok dla uzytkownika jako odpowiedz i robi to na podstawie nazwy
+    	 widoku ktora przyszla z kontrolera lecz pomaga sobie View Resolverem ktory na
+    	 podstawie nazwy logicznej widoku jest w stanie wskazac konkretna sciezke gdzie
+    	 dana strona jsf sie znajduje.
+    	 Gdy Disptcher Servlet wie jaki widok ma zostac uzyty wysyla to do View
+    	 a nastepnie do uztkownika
+
+
+    	Aby aplikacja miala paczke spring mvc musze dodac dependencje w maven czyli
+    	 pliku pom.xml
+
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		Zostanie dodany tomcat oraz frontcontroller czyli dispatched servlet
+
+
+		//Tworzenie aplikacji webowej spring mvc
+		Tworze w glownym katalogu folder controllers i umieszczam tam klasy z
+		 adnotacja @Controller
+		Jest to specjalny typ komponentu springa ktory odpowiada za mapowanie
+		 requestu na logike biznesowa
+
+		Aby metoda zostala umieszczona do mapping handlera dodaje przed nia
+		 adnotacje @RequestMapping("/hello")
+		Do mapping handlera pod nazwa hello zostala umieszczona metoda kontrolera
+		 getRycerze
+		 public String getRycerze(Model model){
+		Metoda getRycerze musi komunikowac sie z view resolverem i wyswietlac ja na ekran
+		Aby to zrobic powinna zwracac string z nazwa pliku np plik.html
+
+		Pliki standardowe html umiszczam w folderze reources/static
+
+
+		Teraz wykonalem kroki:
+		-Wpisalem adres w przegladarce localhost:8080/hello
+		-Do dispatched servleta trafia adres localhost:8080/hello, wycina on
+		 adres i wysyla samo hello do handler mappingu
+		-Handler mapper @RequestMapping zmapowal /hello na metode klasy HelloController
+		 z hello i odeslal ta informacje do dispatcher servleta
+		-Dispatcher Servlet przechodzi do odpowiedniego juz kontroleru (HelloControler)
+		-W Controlerze wykonuje sie metoda hello (nie mam zadnej logiki biznesowej)
+		 i zwraca nazwa logiczna widoku czyli nazwa pliku html
+		-Dispatcher Servlet wysyla ta nazwe pliku do View Reolvera
+		-View Resolver odpowiada ze nazwa tego pliku znajduje sie w wybranej lokalizacji
+		-Dispatcher przesyla dane do widoku i generuje on widok dla uzytkownika
+
+		-----
+
+		Jako silinik szablonow uzyje Thymeleaf na potrzeby html
+		Dodaje dependencje
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+
+		Kontroler jest komponentem frontendowym modyfikujacym widok i model
+		Reposytorium jest komponentem bezposrednio komunikujacym sie z baza danych
+		 Tworze interface ktory bedzie szablonem dla klasy pamieci i bazy danych
+		  Bedzie on zawietal wszytskie metody i mape
+		 Tworze klase pamieci reposytorium @Repository np: InMemoryRepository ktora
+		  implementuje interface repo
+		 Tworze klase do bazy danych np DBRycerzRepository
+		Service @Service jest komponentem pomiedzy nimi
+
+
+		W kontrolerze @Controller wybrnego typu np RycerzController wstrzykuje RycerzService
+		 @Autowired
+    	 RycerzService rycerzService;
+    	Czyli bean z kontenera ktory jest posrednikiem
+
+
+		//Odczyt - metoda GET
+		Nastepnie dodaje mapowanie @RequestMapping("/rycerze") do metody
+		 public String getRycerze() aby wywolywala sie ona po wpisaniu
+		 w przegladarce /rycerze
+		 @RequestMapping("/rycerze")
+		Jest to metoda typu GET!
+
+		Ta metoda przyjmuje obiekt typu Model i dodaje do niego elementy
+		 public String getRycerze(Model model){
+
+		Teraz dodaje elementy do modelu
+
+		Moge dodac obiekt prosty w formie stringa
+		 model.addAttribute("hello", "Witaj swiecie");
+		 to w html element o nazwie hello bedzie mial prosta wartosci w formie
+		 Stringa i bede mogl wyswietlic to w html jako text np w akapicie:
+		 <p th:text="${hello}"/>
+		 w ${} podaje nazwe elementu
+
+		Dodanie listy do modelu:
+		W mojej metodzie get moge stworzyc liste z typem jaki chce posiadac i
+		 przypisuje do niej liste jaka zwroci mi metoda get z klasy Service
+		 (posrednik) i wywoluje to metode na wstrzyknietym jej wczesniej obiekcie
+		 np:
+		  List<Rycerz> allRycerze = rycerzService.getAllRycerze();
+		Dodaje do modelu  nowy obiekt jak wczesniej: nazwa + element, w moim przypadku
+		 obiektem bedzie lista (element) a jego nazwe przypisze jako "rycerze"
+		 model.addAttribute("rycerze", allRycerze);
+
+		Na koniec metoda zwraca nazwe logiczna pliku html np rycerze;
+		Bedzie on szukany w folderze reources/templates
+
+
+		 //Wyjscie danych z metody
+		Tworze maping do nowej metody ktora bedzie wysylac nowy pusty obiekt
+		 na kotrym bede operowal
+		 @RequestMapping("/newrycerz")
+   		  public String createRycerz(Model model){
+   		po wpisaniu adresu /newrycerz bedzie uruchamiala sie ta metoda
+
+   		W ciele dodaje do modelu nowy obiekt mojej klasy i nazwam go "rycerz"
+   		Bede na nim operowal w html
+   		 model.addAttribute("rycerz", new Rycerz());
+   		A na koniec zwracam nazwe logiczna pliku nowego pliku html
+   		 return "rycerzform";
+
+
+		//Zapis - metoda Post
+		Dodaje maping ale juz na wartosc i metode
+		@RequestMapping(value = "/rycerze", method = RequestMethod.POST)
+
+   		Teraz tworze metode do ZAPISU rycerzy - komunikacja od strony FRONTENDU
+   		 wiec metoda nie przyjmuje modelu tylko obiekt ktory wczesniej wyslalem i
+   		 operowalem na nim w html
+   		 public String saveRycerz(Rycerz rycerz){
+
+   		Wysylam przyslnego rycerza wywolujac na wstrzyknietym obiekcie metode
+   		 serwisu di zapisu i wstawiam tam przyjety przez metode obiekt
+   		 rycerzService.saveRycerz(rycerz);
+
+   		Na koniec aby przekierwalo mnie do wybranego pliku html wstawam:
+   		 return "redirect:/rycerze";
+
+
+
+		W klasie Service @Service np RycerzService tworze zmienna wybrnego interfacu reposytrium
+		 i wstrzykuje ja z kontenera np:
+		 @Autowired
+    	 RycerzRepository rycerzRepository;
+
+    	Nastepnie tworze metode get zwracjaca wybrany typ obiektu, w moim przykladnie bedzie
+    	 to lista
+    	 public List<Rycerz> getAllRycerze(){
+        	return new ArrayList<>(rycerzRepository.getAllRycerze());}
+		Taki posrenik w formie Service jest potrzebny gdy bede chcial jakos
+		 odchudzic moje elementy i robie to w srodku metody
+
+		Dodatkow tworze metode zapisu obiektu ktory moze byc przyslany z kontrolera
+		 public void saveRycerz(Rycerz rycerz) {
+		A w srodku na wstrzyknietym obiekcie wywoluje metode dodania rycerza do kolekcji
+		 rycerzRepository.createRycerz(rycerz);
+
+
+
+		W interfejsie reposytorium np RycerzRepository tworze deklaracje wszystkich
+		 potrzebnych metod np:
+		 -metoda dodajaca obiekt do kolekcji za pomoca pol
+		  void createRycerz(String imie, int wiek);
+		 -metode dodajaca obiekt do kolekcji za pomoca przeslanego obiektu
+		  void createRycerz(Rycerz rycerz);
+		 -metoda zwracajaca kolekcje wybranego typu obiektu
+     	  Collection<Rycerz> getAllRycerze();
+		 -metode zwracajaca pojedynczy obiekt z kolekcji
+    	  Rycerz getRycerz(String imie);
+		 -metode usuwajaca obiekt z kolekcji
+    	  void deleteRycerz(String imie);
+		 -metode postConstuct
+          void buduj();
+
+
+		W klasie reposytorium @Repository pamieci np: InMemoryRepository implementuje
+		 odpowiedni interface i jego metody
+
+		Dodatkowo dodaje nowa kolekcje w formie Mapy gdzie kluczem moze byc nazwa obiektu
+		 czyli jakies jego pole a wartoscia jej obiekt np:
+		 Map<String, Rycerz> rycerze = new HashMap<>();
+		 moja wartoscia bedzie wartosc obiektu imie (String)
+
+		W kazdej z metod operuje na kolekcji (dodaje/usuwam/odczytuje itp.)
+
+		W metodzie postConstruct np: buduj dodaje adnotacje @PostConstruct oraz
+		 moge dodac startowe obiekty do mojej mapy na "sztywno"
+
+
+
+
+		//FRONT END - THYMELEAF / BOOTSTRAP / JQUERY
+
+		Pliki html umieszczam w :
+
+		zwykłe : resourced/static
+		thymeleaf/bootstrap : resources/templates
+
+		<!DOCTYPE HTML>
+		<html xmlns:th="http://www.thymeleaf.org">
+		<head>
+			<title>Zaczynam : Web Content</title>
+			<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8"/>
+
+			<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}"/>
+
+			<script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+			<script th:src="@{/webjars/bootstarp/4.1.3/bootstrap.min.js}"></script>
+		</head>
+
+		<p>akapit
+		<div>kontener
+		<table>tablica
+		<tr>wiersz
+		<td>kolumna
+		<thead>
+		<tbody>
+		<form>formularz
+
+
+		//Kontenery
+		Aby kontener byl obslugiwany przez bootstapa okreslam klase:
+		<div class="container"> - jesli dam nazwe container to bedzie to obslugiwane
+		 przez bootstrapa
+
+
+		//Odnoszenie sie do elementow w thymeleaf
+		Odczyt uzywa znacznika ${}
+
+		Moge odniesc sie do przyslanych obiektow string np w th:test w akapicie
+		<p th:text="${hello}"/>
+
+		Lub w kontenerze z listy + petla foreach
+		<div th:each="rycerz : ${rycerze}">
+            <p th:text="${rycerz.imie}"/>
+        </div>
+
+        Lub w tablicy z listy + petla foreach
+        <tbody th:each="x : ${rycerze}">
+            <tr>
+                <td th:text="${x.imie}"></td>
+                <td th:text="${x.wiek}"></td>
+            </tr>
+        </tbody>
+
+
+
+		//Tabele
+		Tabele umieszczam w konterze z klasa bootstarapa:
+		<div class="container">
+
+		Aby tabela byla obslugiwana przez bootstapa okrespam klase:
+		<table class="table">
+
+		Jako glowe tabeli dodaje thead:
+		<thead>
+		Nastepnie dodaje wiersz tr:
+		<tr>
+		i w nim kolumny td:
+		<td>Imie</td>
+
+		Jako cialo tabeli dodaje z th z thymeleafe + wczytuje liste do petli
+		 foreach
+        <tbody th:each="x : ${rycerze}">
+        Wczytuje wyslana obiekt w formie listy o nazwie "rycerze"
+
+        Kazdy element bedzie iterowany jako "x" na ktorym bede mogl
+         odwolac sie do pola klasy po . uzywajac th:text
+        Dodaje wiersz <tr> a w nim elemeny w kolumnach <td>
+        <tr>
+            <td th:text="${x.imie}"></td>
+            <td th:text="${x.wiek}"></td>
+        </tr>
+
+        Na koniec zamykam tabele </table>
+
+        Moge dodac kolejny kontener jako wiersz aby zarezerwowal przestrzen w
+         formie wiersza i byl umieszczony w nim przycisk odnoszacy sie do
+         innego adresu (adres strony dodawania obiektu)
+        <div class="row">
+            <a href="/newrycerz">Dodaj nowego rycerza</a>
+        </div>
+
+
+
+		//Formulatrze + zapis metoda post
+		Zapis uzywa znacznika *{}
+
+		Caly formularz moge umiescic w kontenerze klasy bootstrap:
+		<div class="container">
+
+
+		Aby folmularz byl obslugiwany przez bootstapa okreslam klase:
+		<form class="form-forizontal"
+
+		Aby okreslic NAZWE do jakiego obiektu mam zapisywac dodaje
+		th:object="${rycerz}"
+		UWAGA! musze miec seter w klasie!
+
+		Aby okreslic METODE do jakiej ma byc formularz przeslany
+		th:action="@{/rycerze}"
+		Metoda bedzie teraz POST i miala wartosc value = "/rycerze"!
+
+		Aby okreslic metode jaka maja byc przeslane dane daje:
+		th:method="post"
+
+		<form class="form-forizontal" th:object="${rycerz}" th:action="@{/rycerze}"
+		 th:method="post">
+
+
+		Wstawianie pola formularzy robie poprzez kontenery z klasa bootastrapa
+		 w okreslonym wczesniej <form> np:
+		<div class="form-group"> //kazdy formularz
+
+		Wewnatrz dodaje tytul z bootstrapa:
+		<label class="control-label">Imie:</label>
+		Oraz z htmla typ danych, klase bootsraoa i pole z thymeleafa
+		<input type="text" class="form-control" th:field="*{imie}"/>
+		Inny type to np number, input musi byc zamkniety! />
+
+		Na koniec zamykam kontenery
+
+		Teraz moge dodac kolejny kontener z przciskiem i klasa bootstap
+		Okreslam typ operacji oraz klase bootstrapa
+		<div class="row">
+			<button type="submit" class="btn btn-default">Utworz rycerza</button>
+	 	</div>
+
+	 	Na koniec zamykam moj formularz </form>
+
+
+
+
+		//----Konfiguracja finalna
+
+		Hierarchia : Klasa domenowa -> (I) DomenaReposytorium ->
+					 InMemoryRepository/DomenaReposytorium ->
+					 DomenaService -> DomenaController -> forntend(pliki html)
+					 ----
+					 Component -> (autowired) Controller
+					 ----
+					 Utils (klasa generwania nowego id - NoweId)
+					 ----
+					 Formatter (w services)
+
+
+		//plik pom.xml
+
+		GropuId - nazwa firmy np com.fak3frame lub nazwa projektu
+		ArtifactId - nazwa projektu np GraWCwiczenia lub nazwa modulu
+
+		<parent>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.0.5.RELEASE</version>
+            <relativePath/> <!-- lookup parent from repository -->
+        </parent>
+
+        dependencje:
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.3.1-1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.1.3</version>
+		</dependency>
+	</dependencies>
+
+
+
+		//Klasa startowa @SpringBootApplication
+
+		Umieszczam ja w folderze glownym com.firma.Projekt
+
+		nazwa : NazwaProjektuApplication
+
+        @SpringBootApplication
+        public class GraWyzwaniaCwiczenioweApplication {
+            public static void main(String[] args) {
+                SpringApplication.run(GraWyzwaniaCwiczenioweApplication.class, args);
+            }
+        }
+
+
+
+		//Klasy domenowe (bazowe)
+
+		Umieszczam je w folderze com.firma.Projekt->domain
+
+        Klasy ktorych obiekty umieszczam w innych nie musza byc komponentami jak np Rycerz,
+         RycerzInformacje , Zadanie
+
+
+		KLASA RYCERZ:
+
+        Klasa posiada:
+         -pole int id,level
+         -pola z okreslonymi wymogami imie, wiek (@NotNull itp)
+         -pole obiektowe Zadanie
+         -pusty konstruktor(na potrzeby tworzenia obiektu)
+         -konstruktor przyjmujacy podstawowe dane (swoich pol - imie/wiek)
+           + ustawia lvl = 1
+		 -konstruktor przujmujacy obiekt tej klasy (kopiujacy) + ustawia lvl = 1
+		 -setery i getery (seter Zadania ustawia zadanie.setRozpoczety(true))
+		 -metode equals
+		 -metode hashCode na postawie wybranego pola zapewniajaca unikalnosc elemwntow
+		   w ZBIORZE
+		 -metode toString
+
+
+		 Aby klasa mogla miec pola ktore moga miec przypisana konkretna wartosc
+		  moge dodac adnotacje (przed deklaracja pola):
+		  -@NotNull - wartosc musi byc przypisana
+		  -@Size(min = 2, max = 15) - dlugosc stringa
+		  -@Min(2) / @Max(40) - wartosc liczbowa min / max
+		  -@Range(min = 18, max = 60) - zakres liczbowy
+		 Moge takze dodac komunikat w przypadku bledu inny niz standardowy wpisujac
+		  parametr message w adnotacji np:
+		   @Range(min = 18, max = 60, message = "wiek musi byc z przedzialu 18-60")
+		   private int wiek;
+
+        **
+		/ Aby mogly one zostac sprawdzone w formularzu na stronie - dodaje w metodzie
+		/  Controllera w przyjetych parametrach (przed paramtrem obiektu - Rycerz rycerz)
+		/  adnotacje @Valid oraz do operacji na bledach kolejny argument BindingResult
+		/   //public String saveRycerz(@Valid Rycerz rycerz, BindingResult bindingResult){
+		/ W srodku metody odpowiednie operacje na bindingResult takie jak sprawdznie
+		/  czy wystapil blad if(bindingResult.hasErrors()){ i jesli tak to zwracam jeszcze
+		/  raz strone do wprowadzania formularza + opcjonalne wyswietlenie bledu na konsoli
+		/  a jesli nie (else) to przekierowanie na strone glowna
+        /
+		/ W pliku html :
+		/  <p th:if="${#fields.hasErrors('wiek')}" th:errors="*{wiek}"/>
+		**
+
+
+		KLASA ZADANIE:
+
+		Klasa posiada:
+		-pole String opis
+		-pole int nagroda = 100,
+		-pole int protected dlugoscWSekundach = 3
+		-pole boolean rozpoczety, zakonczony usatwione na false
+		-pole int id
+		  Pole ma adnotacje @Id oraz @GeneratedValue(strategy = GenerationType.AUTO) aby za kazdym
+		  razem gdy bede wstawial obiekt do bazy danych to to pole bedzie mialo unikalna wartosc
+		-pole protected kiedy zadanie zostanie rozpoczete LocalDateTime dataRozpoczecia;
+		-pusty konstruktor (na potrzeby hibernate)
+		-konstruktor przyjmujacy int id oraz String opis
+		-setery i getery
+		-w SETERZE rozpoczecia (setRozpoczety) dodaje:
+		  -warunek sprawdzajacy czy flaga rozpoczety jest true to ustawiam zmienna dataRozpoczecia
+		   na aktualny czas
+		    //if(rozpoczety){
+		    //    this.dataRozpoczecia = LocalDateTime.now();}
+		-w GETERZE zakocznia (isZakonczony) dodaje:
+		  -warunek sprawdzajacy czy flaga this.zakonczony jest true to zwracam this.zakonczony
+		  -jesli nie (else) dodaje:
+		    -zmienna LocalDateTime teraz z aktualnym czas
+		      //LocalDateTime teraz = LocalDateTime.now();
+		    -zmienna LocalDateTime dataZakonczeniaZadania ktorej przypisze date rozpoczecia z
+		      metoda .plusSeconds w ktorej umieszcze wartosc dlugoscWSekundach
+		    -flage czyJestZakonczony ktora okresli sie za pomoca metody .isAfter(dataZakonczeniaZadania)
+		      na zmiennej daty "teraz"
+		    -warunek sprawdzajacy czy flaga "czyJestZakonczony" jest true to ustawi this.zakonczony
+		      na true;
+		    -na koniec zwroce flage czyJestZakonczony
+		      //if(this.zakonczony){
+		  	  //	return this.zakonczony;
+			  //}
+			  //else {
+			  //	LocalDateTime teraz = LocalDateTime.now();
+			  //
+			  //	LocalDateTime dataZakoczeniaZadania = this.dataRozpoczecia.plusSeconds(this.dlugoscWSekundach);
+			  //
+			  //	boolean czyJestZakoczniony = teraz.isAfter(dataZakoczeniaZadania);
+			  //
+			  //	if(czyJestZakoczniony){
+			  //		this.zakonczony = true;
+			  //	}
+	  		  //
+			  //	return czyJestZakoczniony;
+		  	  //}
+		-toString
+
+
+
+		//Utils
+
+		Umieszczam w Aplikacja->utils
+
+		Np. klasa do generowania nowego id (klasa zwykla) bez adnotacji
+
+		Posiada statyczna publiczna metede przyjmujaca ZBIOR Integer
+
+		Metoda ma warnku sprawdzjace:
+		 -jesli ma przyslany pusty zbior zwraca 0
+		 -jesli nie to tworzy zmienna integer ktorej przypisuje wartosc na podstawie strumienia
+		  wywolanego na przyslanym zbiorze i metody max(Integer::compare) + .get() aby
+		  przypisac to do zmiennej Integer
+
+		//static public int getNewId(Set<Integer> klucze) {
+		//	if (klucze.isEmpty()){
+		//		return 0;
+		//	}
+		//	else {
+		//	  	Integer integer = klucze.stream().max(Integer::compare).get();
+		//	  	return integer+1;
+		//  	}
+		//}
+
+
+
+		//Reposytoria @Repositrory + inerface Repository
+
+		Umieszczam je w folderze com.firma.Projekt->domain->repository (razem z interface)
+
+		Interface deklaruje metody jakie ma miec klasa @Repostory i musi go implementowac
+
+        Adnotacja @Repository dziala tak samo jak @Component ale jest informacja dla
+         programisty
+
+        Te klasy maja swoj stan i sa singletonami czyli maja tylko 1 instancje
+
+        Reposytorium moze miec MAPE (BEZ WSTRZYKIWANIA!) dla okreslonej klasy domenowej.
+         Jej kluczem jest jest id lub wybrne pole klasy domenowej
+         Wartoscia jest obiekt klasy domenowej
+
+        Klasa posiada metode toString
+
+
+		REPOSYTORIUM RYCERZA:
+
+		Mapa: (bez wstrzykiwania)
+		 //Map<Integer, Rycerz> rycerze = new HashMap<>();
+
+		Metody:
+
+		//1
+         -dodanie obiektu (stworzy nowy) na podstawie podstawowych danych klasy
+            //void createRycerz(String imie, int wiek),
+           Tworze w metodzie nowy obiekt klasy domentowej i przypisuje mu przyslane
+            wartosci poprzez konstruktor klasy domentowej
+             //Rycerz rycerz = new Rycerz(imie, wiek);
+           Nastepnie przypisuje id obiektowi nowemu poprzez wywoalnie na tym obiekcie
+            setera ID i jako parametr wywoluje statyczna metode klasy Utils do
+            generowania nowgo ID i wysylam jej zbior kluczy mapy repo
+ 			//rycerz.setId(NoweId.getNewId(rycerze.keySet()));
+ 		   Na koniec umieszczam w mapie nowe id (poprzez wywolanie getera id na nowym
+ 		    obiekcie) oraz nowy obiekt jako wartosc
+            //rycerze.put(rycerz.getId(), rycerz);
+
+		//2
+         -dodanie obiektu na podstawie przyslanego obiektu
+            //void createRycerz(Rycerz rycerz)
+           Zasada dzialania jak wyzej - tworznie nowego obiektu (korzystam z innego kosntr.),
+            generownie nowego id i wlozenie wszystkiego do mapy
+            //Rycerz rycerzNowy = new Rycerz(rycerz);
+		    //rycerzNowy.setId(NoweId.getNewId(rycerze.keySet()));
+            //rycerze.put(rycerzNowy.getId(), rycerzNowy);
+
+		//3
+         -usuniecie elementu mapy na podstawie przyslanego klucza
+           //void deleteRycerz(Integer id)
+           Sprawdzam czy mapa jest pusta a nastepnie czy jest wybrany element w mapie
+            i jesli tak to dopiero usuwam
+           //rycerze.remove(id);
+
+		//4
+         -zwrocenie obiektu Rycerza (wartosci mapy) na podstawie otrzymanego id (klucza)
+           //Rycerz getRycerzById(Integer id){
+           //	 return rycerze.get(id);}
+
+		//5
+         -zwrocenie obiektu mapy na podstawie jednego z podstaowych danych obiektu w
+            mapie w formie Optionala
+             //Optional<Rycerz> getRycerz(String imie){
+           Korzystam z Optionala poniewaz moze nie byc takiego obiektu a nie moge zwrocic nulla
+           W metodzie tworze zmienna Optional i pzypisuje jej wartosc poprzez wywolanie na
+            wartosciach mapy strumienia i metody filtrujacej (porownuje wartosci pola imie do
+            przyslanego stringa) oraz metody findAny() aby znalezc pierwsza wartosc
+           Na koniec zwracam nowy Optional
+            //Optional<Rycerz> rycerzPoImieniu = rycerze.values().stream()
+            //		.filter(x -> x.getImie().equals(imie))
+            //		.findAny();
+		    //return rycerzPoImieniu;
+
+		//6
+         -zwrocenie kolekcji wartosci mapy Collection<Rycerze> na podstawie wartosci mapy
+           //Collection<Rycerz> getAllRycerze() {
+           //	return rycerze.values();}
+
+        //7
+         -dodanie obiektu Rycerza do mapy na podstawie przyslanego id oraz obiektu
+           Rycerza (uaktualnienie poniewaz przysylam id znajdujace sie juz w mapie
+           natomiast Rycerz jest inny)
+           //public void uaktualniRycerza(int id, Rycerz rycerz){
+           //   rycerze.put(id, rycerz);}
+           **
+           / Serwis przyjmuje sam obiekt Rycerza i wywoluje na nim geter id po
+		   / czym wysyla przechwycone id i obiekt Rycerza do repo
+		   **
+
+
+        REPOSYTORIUM ZADANIA:
+
+        Mapa:
+         //Map<Integer, Zadanie> zadania = new HashMap<>();
+
+        Zmienna Random
+         //Random random = new Random();
+         Na potrzeby losoania zadania
+
+        Metody:
+
+        //1
+        -Metoda dodajaca obiekt Zadania do mapy na podstawie przyslanego Stringa (opis)
+          //public void createZadanie(String opis){
+         Metoda generuje nowe id za pomoca klasy utils NoweId z uzyciem jej statycznej
+          metody i wyslania do niej zbiory kluczy mapy Zadan
+          //int noweId = NoweId.getNewId(zadania.keySet());
+         Natepnie tworzy nowy obiekt Zadania korzystajac z nowego id i przyslanego Stringa
+          //Zadanie zadanie = new Zadanie(noweId, opis);
+         Na koniec dodaje id i Zadania do mapy Zadan
+          //zadania.put(noweId, zadanie);
+
+		//2
+		-Metoda zwracajaca Liste Zadan z mapy (na podstawie values)
+		 Nie zwracam Collection<Zadanie> tylko liste wiec w retrun musze stworzyc nowa
+		  liste i dac przypisac jej wartosci z mapy
+		   //public List<Zadanie> getZadanieLista(){
+		   //   return new ArrayList<>(zadania.values());}
+
+		//3
+		-Metoda usuwajaca Zadanie z mapy na podstawie przyslanego gotowego obiektu Zadania
+		 //public void deleteZadanie(Zadanie zadanie){
+		 Metoda usuwa element z mapy za pomoca wywolania na przyslanym obiekcie getera ID
+		  oraz wykorzystanie tej wartosci
+		   //zadania.remove(zadanie.getId());}
+
+		//4
+		-Metoda dodajaca Zadanie na podstawie przyslanego obiektu Zadania
+		  //public void uaktualnij(Zadanie zadanie) {
+		 Metoda przyjmuje Zadanie i dodaje je do mapy - jako klucz wywoluje geter ID na
+		  przyslanym obiekcie i wartosc jako obiekt Zadnaie (Zadanie w mapie zostaje
+		  nadpisane poniewaz istanieje juz takie tylko teraz z parametrem rozpoczete
+		  ustawione na true)
+		   //zadania.put(zadanie.getId(), zadanie);
+		  **
+		  / Serwis przechwytuje obiekt Zadania i przesyla go dalej natomiast Controller
+		  /  na wstrzyknietym ZadanieService wykorzystuje to aby nadpisac zadanie z ustawionym
+		  /  rozpoczete na true aby metoda zwracajaca liste zadan nierozpoczetych nie zawierala
+		  /  juz tego zadania
+		  **
+
+		//5
+		-Metoda zwracajaca Zadanie na podstawie przyslanego id
+		  //public Zadanie getZadanie(Integer id) {
+		  //	return zadania.get(id);}
+		  **
+		  / Metoda pobiera z mapy zadanie z wybranym id na potrzeby formatera do html
+		  /  aby mogl on zwrocic na podstawie id przekazaego jako string Zadanie jako obiekt!
+		  **
+
+
+
+		//Service @Service
+
+		Umieszczam je w folderze com.firma.Projekt->services
+
+		Sa to klasy posredniczace pomiedzy kontrolerem a reposytiorum
+
+		Na poczatku wstrzykiwany jest zmienna wybranego Reposytorium na
+		 ktorym bede operowal w metodach
+		Moge takze dodac zmienna Reposytorium bez wstrzykiwania i dodac
+		 wstrzykiwanie @Autowired poprzez seter zmiennej repo ktory ustawi
+		 jej wartosc tak samo jak bezposrenie @Autowired do zmiennej
+		Robie drugim sposobem na potrzeby testow
+
+		Serwisy sluza do tego aby pobrac lub dodac cos do Reposytiorium oraz
+		 zaimplementowac posredniczace operacje na wstrzyknietych danych
+
+
+		SERVICE RYCERZA:
+
+		Wstrzykiwanie Repo
+		//@Autowired
+    	//RycerzRepository rycerzRepository;
+
+
+		Metody:
+
+		//1
+		-Metoda zwracajaca cala liste obiektow klasy domenowej
+		   //public List<Rycerz> getAllRycerze(){
+		  Metoda zwraca bezposrednio w return nowa liste i przypisuje jej wartosci
+		   korzystajac z metody pobrania listy wartosci z value mapy klasy repo
+            //return new ArrayList<>(rycerzRepository.getAllRycerze());}
+
+		//2
+		-Metoda dodania gotowego Rycerza do wstrzyknietej zmiennej repo
+		   //public void saveRycerz(Rycerz rycerz) {
+		  W ciele metody na wstrzyknietym repo wywoluje metode repo dodania
+		   obiektu do mapy i wysylam tam przyslany obiekt
+         	//rycerzRepository.createRycerz(rycerz);}
+
+		//3
+        -Metoda zwracajaca obiekt Rycerza na podstawie przyslanego id
+           //public Rycerz getRycerz(Integer id) {
+          Korzysta ona z metody pobrania obiektu na podstawie zmiennej "id" na
+           wstrzykniej zmiennej repo (metoda repo zaraca wartosc z mapy na podstwie
+           przyslanego klucza)
+            //return rycerzRepository.getRycerzById(id);}
+
+		//4
+         -Metoda usuniecia obiektu Rycerza na podstawie przyslanego id
+            //public void deleteRycerz(Integer id){
+           Metoda wywoluje na wstrzyknietym repo jego metode usuniecia obiektu
+            na postawie id i wysyla jako parametr przyslane id
+             //rycerzRepository.deleteRycerz(id);}
+
+		//5
+		-Metoda dodajaca Rycerza na podstawie przyslanego Rycerza
+		  //public void uaktualniRycerza(Rycerz rycerz) {
+		 Metoda na wstrzyknietej zmiennej repo wywoluje metode uaktualnienia
+		  (dodania - nadpisania) obiektu Rycerza do mapy
+		 Jako parametry wysylam id przyslanego obiektu (wywoluje geter na przyslanym
+		  obiekcie) oraz przyslany obiekt Rycerza
+		   //RycerzRepository.uaktualniRycerza(rycerz.getId(), rycerz);
+
+		//6
+		-Metoda zwracajaca nagrone (int) oraz ustawiajaca pole Zadanie rycerza na null
+		  jesli jest zakonczone
+		   //public int zdobadzNagrode() {
+
+		  Tworze zmienna Predicate<Rycerz> ktora z obiektu zrobi flage true/false i jest
+		   deklaracja warunkow, w moim przypadku jesli zadanie Rycerza nie jest nullem ustawi
+		   flage taka zwroci metoda isZakonczony() a jesli zadanie jest Nullem to zwroci
+		   false, Prdicate jest rodzajem filtru
+		    //Predicate<Rycerz> rycerzPredicate = x -> {
+		    //       if(x.getZadanie()!=null){
+		    //            return x.getZadanie().isZakonczony();
+		    //       }else{
+		    //            return false;
+		    //        }
+		    //   };
+
+		  Tworze zmienna int sumy i przypisuje jej wartosc poprzez wywolanie na wstrzyknietym
+		   repo rycerzy strumienia i filtracji rycerzy ktorych zadania sa zakonczone za pmoca
+		   wczesniej zadeklarowanej zmiennej Predicate a
+		   nastepnie mapowanie do inta poprzez pobranie zlota na zadaniu za pomoca geteru i
+		   na koniec sumowanie metoda .sum
+		    //int sum = rycerzRepository.getAllRycerze().stream()
+            //    .filter(rycerzPredicate)
+            //    .mapToInt(x -> x.getZadanie().getNagroda())
+            //    .sum();
+
+          Nastepnie na repo rycerzy pobieram wszytkich rycerzy i wywoluje strumien a na nim
+           filtracje rycerzy ktorych zadanie zostaly zakonczone (za pomoca Predicate) oraz
+           przeiterowanie foreach aby ustawic ich zadanie na null
+            //rycerzRepository.getAllRycerze().stream()
+            //    .filter(rycerzPredicate)
+            //    .forEach(x -> x.setZadanie(null));
+
+          Na koniec zwracam sume zlota
+           //return sum;
+
+		//7
+		-Metoda aktualizujaca zloto rycerza i zadania - Na poczatku dla kazdego Rycerza
+		  wywoluje metode isZakonczony (jesli Rycerz ma zadanie) - w tej metodzie jesli czas
+		  zadania minie to ustawia flage zakonczony na true. Metoda takze
+		  aktualizuje zloto za pomoca metody serwisu zwracajacej zloto jesli zadanie sie
+		  zakonczylo (zdobadzNagrode())
+		   //public void dajMojeZloto(){
+
+		 Tworze liste wszystkich Rycerzy
+		  //List<Rycerz> rycerze = rycerzService.getAllRycerze();
+
+		 Wywoluje petle foreach na liscie aby dla kazdego Rycerza sprawdzicz czy jego
+		  zadanie jest zakonczone(metoda isZakonczony sprawdza czas zadania minal i moze
+		  ustawic zadanie na zakonczone (true)
+		 Musze tez dla kazdego Rycerza sprawdzic czy jego zadanie nie jest nullem
+		   //rycerze.forEach(x -> {
+           // 	if(x.getZadanie()!=null){
+           //  	   x.getZadanie().isZakonczony();
+           //	 }
+           //});
+
+         Nastepnie tworze zmienna przechowujaca zloto Rycerza z RycerzaInformacje
+		   //int aktualneZloto = rycerzInformacje.getZloto();
+
+    	 NA koniec do wstrzyknietego RycerzInformacje ustawiam zloto
+    	  (do poprzedniej wartosci dodaje wartosc z metody tego serwisu zwracajacej zloto
+    	   jesli zadanie jest zakonczone)
+           //rycerzInformacje.setZloto(aktualneZloto + zdobadzNagrode());}
+
+
+
+		SERVICE ZADANIA:
+
+		Na potrzeby testow wstrzykuje zmienna zadaniaRepository za pomoca metody (setera)
+		 a nie bezposrednio do zmiennej repository
+		Na poczatku musze zadeklarowac zmienna zadaniaRepository BEZ WSTRZYKIWANIA!
+		 //ZadanieRepository zadanieRepository;
+		 //@Autowired
+		 //public void setZadanieRepository(ZadanieRepository zadanieRepository) {
+		 // 	this.zadanieRepository = zadanieRepository;}
+
+		DODATKOWO na potrzeby przypisania obiektu zadania wstrzykuje zmienna repo rycerza
+		 //@Autowired
+    	 //RycerzRepository rycerzRepository;
+
+
+    	Klasa posiada takze zmienna finalna statyczna random
+  		 //final static Random rand = new Random();
+
+		Metody:
+
+		//1
+		-Metoda losujaca zadanie i przypisujaca je do wybranego rycerza na podstawie
+		  przyslanego imienia (String)
+		   //public void assignRandomZadanieFinal(String imie){
+		 Metoda na poczatku tworzy nowa liste Zadan za pomoca wstrzyknietej zmiennej
+		  repo zadan i wywolaniu na niej metody pobrania wszystkich zadan
+		   //List<Zadanie> allZadanie = zadanieRepository.getZadanieLista();
+		 Nastepnie tworzy nowe zadanie i przypisuje do niego losowe zadanie z utworzonej
+		  listy
+		   //Zadanie randomZadanie = allZadanie.get(rand.nextInt(allZadanie.size()));
+		 Na koniec do wstrzyknietego repo rycerzy przypisuje wylosowane zadanie.
+		 Na repo rycerza wywoluje metode pobrania rycerza lecz zabezpieczam sie gdyby
+		  byl null metoda ifPresent - jesli jednak bedzie wykona sie Consumer tego interfacu
+		  i ustawie zadanie seterem
+		   //rycerzRepository.getRycerz(imie).ifPresent(x -> x.setZadanie(randomZadanie));
+
+		//2
+		-Metoda zwracajaca liste nierozpoczetych zadan
+    	   //public List<Zadanie> dajWszystkieNieRozpoczeteZadania() {
+    	  Metoda korzysta z wstrzyknietej zmiennej ZadanieRepository i wywolaniu na niej
+    	   metody pobrania listy zadan + strumien z filtrowaniem ktore zadania
+    	   nie sa rozpoczete a nastepnie metoda collect toList
+    	    //return zadanieRepository.getZadanieLista().stream()
+    	    //                .filter(x -> !x.isRozpoczety())
+    	    //                .collect(Collectors.toList());
+
+    	//3
+    	-Metoda zapisujaca przyslane zadanie do mapy repo
+    	  //public void uaktualnij(Zadanie zadanie) {
+    	 Metoda wywoluje na wstrzyknietym repo metode repo zapisujaca przyslane zadanie
+    	  do mapy (metoda repo nadpisuje w mapie zadnie poniewaz wysylam zadanie z id
+    	  ktore jest juz w mapie ale z Zadaniem bez ustawionej flagi rozpoczete na true)
+    	   //zadanieRepository.uaktualnij(zadanie);
+
+		//4
+		-Metoda zwracajaca flage czy przyslane Zadanie jest zakonczone
+		  //public boolean czyZadanieJestZakocznone(Zadanie zadanie){
+		  //   return zadanie.isZakonczony();}
+
+
+
+		SERWIS ZADANIA FORMATTER:
+
+		Tworze go na potrzeby zamiany w pliku html odwolania do pola Zadania.
+
+
+		W <select th:field="*{zadanie}"> bede przypisywal obiekt Zadania do pola Zadania
+		 Rycerza wiec wewnatrz robie pole wyboru z listy <option> z iterowaniem
+		 aby wypisac liste Zadan do wyboru
+		Podczas iterowania w <option th:each=${zadanie}> kazda iteracja bedzie stringiem
+		 wiec bede musial go zamienic na odpowiadajacy mu obiekt zadania aby przypisac
+		 go do pola obiektowego Zadania Rycerza (th:value jest wartoscia jaka bede
+		 przypisywal)
+
+		Tworze klase z adnotacje @Service i nazwa ZadanieFormatter
+
+		Implementuje ona interface formatter z typem generycznym wybranej klasy
+		 //public class ZadanieFormatter implements Formatter<Zadanie>
+
+		Klasa wstrzykuje repo wybranej klasy
+		 //@Autowired
+		 //ZadanieRepository zadanieRepository;
+
+		Klasa musi zaimplementowac metody interfacu
+
+
+		Metoda zwracajaca obiekt Zadanie na podstawie przyslnego Stringa (id) +
+		 przyslanie zmiennej Locale + wyrzucanie wyjatku ParseException
+		  //public Zadanie parse(String idJakoString, Locale locale) throws ParseException {
+		 Metoda tworzy zmienna id za pomoca sparsowanego przysnaego Stringa na id
+		  //Integer id = Integer.parseInt(idJakoString);
+		 Nastepnie tworze obiekt Zadania za pomoca wywolania na wstrzyknietej zmiennej
+		  repo metody pobrania Zadania za pomoca sparsowanego id
+		   //Zadanie zadanie = zadanieRepository.getZadanie(id);
+		 Na koniec zwracam nowy obiekt Zadania
+		  //return zadanie;
+
+		Klasa posiada tez metode drukujaca Stinga na podstawie przyslanego
+		 obiektu Zadania + zmienna Locale
+		  //public String print(Zadanie zadanie, Locale locale) {
+		 Metoda zwraca metode toString() na przyslanym obiekcie
+		  //return zadanie.toString();
+
+
+
+		//Componenty
+
+		Umieszczam w com.firma.Projekt -> components
+
+		Klasa ma adnotacja @Coponent
+
+		Componenty wstrzykuje bezposrenio w kontrolerze oraz dodaje je do modelu
+
+		Moge dodac zasieg @Scope pod adnotacja @Component aby okreslic kiedy
+		 ma byc wstrzykiwana wartosc
+
+		Zasiegu moge uzyc do CzasComponent/ProduktStan
+
+		@Scope(value = "session lub request", proxyMode = ScopedProxyMode.TARGET_CLASS)
+
+		W spring web uzywam w scope value oraz proxyMode i sa 2 typy value
+		 -session - obiekt jest wstrzykiwany raz przy otwartej sesji (otwarcie karty)
+		 -request - obiekt jest wstrzykiwany za kazdym zapytaniem po adres (dowolna operaca)
+
+
+		Moge uzyc "request" dla klasy czasu (component) aby byla ona wstrzykiwana co
+		 kazde zapytanie http
+
+		Natiomiast "session" moge dla szegolow produktu (component) aby wstrzykiwanie
+		 bylo tylko raz dla sesji (otwarcie karty)
+
+
+		TIME COPONENT
+
+		Zawierac ona bedzie zmienna czasu
+		 //private LocalDateTime time = LocalDateTime.now();
+		+geter seter;
+
+
+		RYCERZ INFORMACJE (bez scope)
+
+ 		//private int zloto = 0;
+
+ 		+geter seter
+
+
+
+
+
+
+        //Controller @Controller
+
+        Umieszczam w com.firma.Projekt -> controllers
+
+        Klasa taka laczy requesty http do odpowiednich plikow html
+
+        Nazwa analogiczna do klasy domenwoej (np. RycerzController)
+
+    	Klasa posiada metody z mapowaniem ktore obsluguja requesty http np:
+    	 @RequestMapping("/rycerze")
+		 public String getRycerze(Model model){
+			String napis = "Witaj swiecie";
+			model.addAttribute("hello", napis);
+			return "rycerze";}
+
+		Metody jesli cos maja wyswietlic przyjmuja Model i dodaja do niego
+		 atrybuty
+
+    	Metody zwracaja String z nazwa logiczna pliku html jaki ma zostac uruchomiony do
+    	 wyswietlenia po wykonaniu instrukcji metody
+    	 (return "rycerze";)
+    	Lub przekierowanie gdy nie przyjmuja modelu
+   		 ("redirect:/rycerze";)
+
+
+		Przyklady:
+
+		Prosta metoda wyswietlajaca:
+		 @RequestMapping("/rycerze")
+    		public String getRycerze(Model model){...}
+
+		Teraz dodaje do modelu wybrane elementy za pomoca metody
+		 addAttribute() ktora jako parametr wysyla do pliku html klucz oraz
+		 obiekt np:
+
+		 -model.addAttribute("hello", "Witaj swiecie");
+		   Jako klucz (nazwe) wysylam "hello" oraz obiekt String "Wietaj Swiecie"
+
+		 -List<Rycerz> allRycerze = rycerzService.getAllRycerze();
+		   Tworze nowa liste poprzez wywolanie na wstrzyknietej zmiennej
+		   metody service zwracajacej liste
+          model.addAttribute("rycerze", allRycerze);
+           Nastepnie wysylam do pliku html zmienna allRycerze pod kluczem
+           "rycerze"
+
+        Na koniec zwracam nazwe LOGICZNA pliku html jaki ma zostac uruchomiony
+          return "rycerze";
+
+
+        RODZAJE MAPOWAN:
+		 -proste na strone //@RequestMapping("/rycerze")
+		 -gdy przyjmuje dane z formularza okreslam wartosc value (adres) oraz metode:
+		   //@RequestMapping(value = "/rycerze", method = RequestMethod.POST)
+		   (metda przekierowuje i nie przyjmije modelu!)
+		  **
+		  / w pliku html:
+		  / <form class="form-horizontal" th:object="${rycerz}" th:action="@{/rycerze}"
+		  /  th:method="post">
+		  / (th:action="@{/rycerze} - okresla value)
+		  / (th:method="post" - okresla method))
+		  **
+		  -gdy chce przechwycic wartosc przez SCIEZKE
+		  	W adresie bedzie zmienna ktora przechwyce wpisujac w {} oraz caly
+		  	 adres bedzie w value
+			//@RequestMapping(value = "/rycerz/delete/{id}")
+		   **
+		   / W przyjmowanych parametrach metody odwoluje sie do zmiennej "id" poprzez adnotacje
+		   / @PathVariable("id) i przypisuje ja do nowej zmienej odpowiedniego typu np:
+		   / //public String deleteRycerz(@PathVariable("id")Integer id){
+		   /
+		   / w html: <a th:href="${'/rycerz/delete/'+x.id}"/> link
+		   **
+		  -gdy chce przechwycic wartoc przez URL
+		    Po adresie (po podanym w mapowanie) bedzie ? i po nim zmienna i przypsana jej wartosc =
+		     np /rycerz?id=2
+		    //@RequestMapping("/rycerz")
+		    **
+		    / W metodzie w parametrach korzystam z adnotacji @RequestParam("id") (id jest nazwa
+		    / zmiennej w adresie) po czym analogicznie przypisuje ja do zmiennej
+		    / //public String getKnight(@RequestParam("id") Integer id, Model model){
+		    /
+		    / W pliku html okreslam zmienna w adresie po ? id=
+		    / //<a th:href="${'/rycerz?id='+x.id}"/>link
+			**
+
+
+		CONTROLER RYCERZA:
+
+		Na poczatku wstrzykuje serwis rycerza, oraz component czasu i RycerzInfroamacje
+		 //@Autowired
+    	 //RycerzService rycerzService;
+
+    	 //@Autowired
+    	 //TimeComponent timeComponent;
+
+    	 //@Autowired
+    	 //RycerzInformacje rycerzInformacje;
+
+
+		Metody:
+
+		//1
+		-Mapowanie na glowna strone z wyswietleniem
+		   //@RequestMapping("/rycerze")
+		   //public String getRycerze(Model model){
+
+		  W ciele metody tworze liste Rycerzy i przypisuje jej wartosc poprzez
+		   wywolanie na wstrzyknietym serwisie Rycerzy metody zwracajacej liste Rycerzy
+			//List<Rycerz> allRycerze = rycerzService.getAllRycerze();
+
+		  Nastepnie dodaje nowa liste do modelu
+		   //model.addAttribute("rycerze", allRycerze);
+
+          Oraz wstrzyknieta zmienna komponentu czasu oraz klasy szczegolow obiektu
+           //model.addAttribute("timecomponent", timeComponent);
+           //model.addAttribute("rycerzinformacje", rycerzInformacje);
+
+          Na koniec zwracam logiczna nazwe pliku html
+          //return "rycerze";
+
+
+		//2
+		-Mapowanie na nowy adres + wyslanie pustego obiektu klasy domenowej na potrzeby
+		  zmian przez uzytkownika na stronie
+		   //@RequestMapping("/newrycerz")
+
+		  Metoda przyjmuje model poniewaz bedzie wyswietlac strone
+		   //public String createRycerz(Model model){
+
+		  Nastpenie dodaje do modelu pusty obiekt klasy domenowej z kluczem "rycerz"
+		   korzystajac z konstruktora bezparametrowego klasy domenowej
+		    //model.addAttribute("rycerz", new Rycerz());
+
+		  Nastepnie dodaje do modelu wstrzyknieta zmienna komponentu czasu oraz
+           klasy szczegolow obiektu
+            //model.addAttribute("timecomponent", timeComponent);
+            //model.addAttribute("rycerzinformacje", rycerzInformacje);
+
+          Na koniec zwracam nowa strone
+           //return "rycerzform"
+
+
+		//3
+		-Mapowanie przyjmujace dane uzupelnionego obiektu oraz metoda przekierowuje
+		  na strone bazowa, mapowanie przyjmue value oraz method i nie przyjmue
+		  Modelu poniewaz nie bedzie wyswietlac strony tylko przekierowuje na glowna
+		  strone.
+		 Value jest adresem jaki bedzie okreslony w html th:action
+		  aby wybrac konkretna metode mapowania
+		   //@RequestMapping(value = "/rycerze", method = RequestMethod.POST)
+		  **
+		  / W pliku html wszystko okreslam w <form>, jako value - th:action="@{/rycerze}"
+		  / natomiast method - th:method="post"
+		  **
+
+		  Metoda obluguje takze walidacje danych przyslanego obiektu za pomoca @Valid oraz
+		   za pomoca przyjetej zmiennej BindingResult
+		    //public String saveRycerz(@Valid Rycerz rycerz, BindingResult bindingResult){
+
+		  W ciele metody wykorzystje bindingResult i sprawdzam czy ma bledy w if
+		   //if(bindingResult.hasErrors()){
+
+		  Jesli tak to zwracam nazwe strony wprowadzania danych + opconalnie wyswietlenie
+		   bledow na konsoli
+		   //if(bindingResult.hasErrors()){
+           //	 bindingResult.getAllErrors().forEach(x->
+           //         System.out.println(x.getObjectName() + " "+
+           //         x.getDefaultMessage()));
+           // 	 return "rycerzform";}
+
+          Jesli nie bedzie bledow (else) to na wstrzyknietym serwisie Rycerza wywoluje metode
+           zapisu przyslanego obiektu do mapy repo, wysylam jako parametr przyslanego Rycerza
+            //rycerzService.saveRycerz(rycerz);
+
+          Oraz zwracam (tez w else) PRZEKIEROWANIE na glowna strone
+           //return "redirect:/rycerze";
+
+
+		//4
+		-Mapownie na nowa strone wyswietlajaca szczegoly obiektu z listy
+		   //@RequestMapping("/rycerz")
+
+		  Metoda przechwytuje z adresu wartosc zmiennej - w adresie po tym co
+		   mapuje jest ? jest jej nazwa + przypisana wartosc poprzez =
+		  (przykladowy adres /rycerz?id=2)
+		  **
+		  / w pliku html : a th:href="${'/rycerz?id='+x.id}"/>link
+		  **
+		  W parmatrach metody korzystam z adnotacji RequestParam("id") przed deklaracja
+		    zmiennej do jakiej bedzie przypisana przechwycona wartosc
+		  Metoda przyjmuje takze model poniewaz zwraca adres strony i wyswietla
+		   //public String getKnight(@RequestParam("id") Integer id, Model model){
+
+		  Nastepnie tworze obiekt klasy domenowej i przypisuje mu wartosc poprzez
+		   wywolanie na wstrzyknieje zmiennej serwisu metody zwracajacej obiek
+		   na podstawie przechwyconej zmiennej "id"
+		    //Rycerz rycerz = rycerzService.getRycerz(id);
+
+		  Teraz dodaje Rycerza do modelu
+           //model.addAttribute("rycerz", rycerz);
+
+          Nastepnie dodaje do modelu wstrzyknieta zmienna komponentu czasu oraz
+           klasy szczegolow obiektu
+            //model.addAttribute("timecomponent", timeComponent);
+            //model.addAttribute("rycerzinformacje", rycerzInformacje);
+
+		  Na koniec zwracam adres nowej strony
+		   //return "rycerz";
+
+
+		  //5
+		  -Mapwanie przekierowujace na glowna strone (nie zmienia strony) na potrzeby
+		    usuniecia obiektu
+
+		   Mapowanie przechwytuje zmienna takze z adresu lecz w mapowaniu podaje pozycje
+		    zmiennej w adresie w {} i w srodku podaje nowa nazwe ktora bede uzywal w przyjmowanych
+		    parametrach metody - wszystko przypisuje do value
+		     //@RequestMapping(value = "/rycerz/delete/{id}")
+		   (przykladowy adres /rycerz/delete/3 - zmienna id wynosi 3)
+		   **
+		   / w pliku html : <a th:href="${'/rycerz/delete/'+x.id}"/>
+		   **
+
+		   W parmatrach metody korzystam z adnotacji @PathVariable("id") przed deklaracja
+		    zmiennej do jakiej bedzie przypisana przechwycona wartosc
+		     //public String deleteRycerz(@PathVariable("id")Integer id){
+
+		   Nastepnie wywoluje na zmiennej serwisu metode usuniecia obiektu za pomoca
+		    przechwyconej zmiennej "id"
+		     //rycerzService.deleteRycerz(id);
+
+		   Na koniec przekierowuje do glownej strony (nie robi sie nic bo jestem na niej)
+		    //return "redirect:/rycerze";
+
+
+
+		CONTROLER ZADANIA:
+
+		Wstrzykuje zmienne serwisu Zadania
+		 //@Autowired
+		 //ZadanieService zadanieService;
+
+		Oraz rycerza na potrzeby dodawania zadan dla rycerzy
+		 //@Autowired
+		 //RycerzService rycerzService;
+
+		Oraz informacje o rycerzu
+		 //@Autowired
+    	 //RycerzInformacje rycerzInformacje;
+
+
+		Metody:
+
+		//1
+		-Mapowanie na nowa strona w ktorej bede konkretnemu obiektowi rycerza przypisywal
+		  zadanie, wysylam do modelu liste nierozpoczetych zadan ktore bede przypisywal na
+		  stronie.
+		 Adres przechwytuje id poprzez SCIEZKE
+		   //@RequestMapping(value = "/przypiszzadanie/idrycerza={id}")
+
+		 Przypisuje id oraz dodaje model bo stona bedzie wyswietlac
+		  //public String przypiszZadanie(@PathVariable("id")Integer id, Model model){
+
+		 Metoda na poczatku tworzy obiekt rycerza i przypisuje mu wartosc za pomoca
+		  metody pobrania rycerza na wstrzykniej zmiennej serwisu rycerza z uzyciem
+		  przechwyconego id
+		   //Rycerz rycerz = rycerzService.getRycerz(id);
+
+		 Nastepnie tworze nowa liste Zadan ktorej przypisze nieukonczone zadania poprzez
+		  wywoalnie UNIKLANEJ metody serwisu pobrania listy nierozpoczetych zadan na
+		  wstrzyknietej zmienej serwisu zadan (w serwisie mam zadeklarwoane dzialanie
+		  metody)
+		   //List<Zadanie> zadanieNieRozpoczete = zadanieService.dajWszystkieNieRozpoczeteZadania();
+
+		 Nastepnie dodaje do modelu stworzony obiekt na podstawie id z adresu oraz nowa liste
+		  nierozpoczetych zadan
+		  //model.addAttribute("rycerz", rycerz);
+          //model.addAttribute("zadanianierozpoczete", zadanieNieRozpoczete);
+
+         Na koniec zwracam nowa strone
+          //return "przypiszzadanie";
+
+
+        //2
+        -Mapowanie na otrzymany obiekt rycerza z przypisanym zadaniem z html oraz
+          uaktualnienie listy rycerzy oraz listy zadan i powrot na glowna strone
+
+         Przekierowuje na strone wiec nie ma podelu oraz dodaje value i method
+           //@RequestMapping(value = "/przypiszzadanie", method = RequestMethod.POST)
+          **
+		  / W pliku html wszystko okreslam w <form>, jako value - th:action="@{/przypiszzadanie}"
+		  / natomiast method - th:method="post"
+		  **
+
+		 Metda przyjmuje obiekt rycerza
+		  //public String przypiszZadanie(Rycerz rycerz){
+
+         Na serwisie rycerzy uaktualniam (zastepuje) rycerza ktory zostal przyslany z przypisanym
+          zadaniem korzystajac z wstrzyknietego serwisu i metody uaktualnienia Rycerza na podstawie
+          obiektu Rycerza
+           //rycerzService.uaktualniRycerza(rycerz);
+          **
+          / serwis pobiera jego id oraz przekazuje do repo id + obiekt rycerza ktory wklada
+          / do mapy (zastepuje bo jest juz rycerz z takim id)
+          **
+
+         Nastepnie tworze zadanie i przypisuje wartosc z przyslanego Rycerza - geter
+          (zadanie bedzie mialo flage rozpoczete na true - w pliku html przypisuje pole
+           zadanie - seter w klasie rycerza ustawie rozpoczete na true)
+            //Zadanie zadanie = rycerz.getZadanie();
+
+         Teraz do wstrzyknietego serwisu zadan dodaje zadanie za pomoca metody uaktualnij
+          ktore jako parametr wykorzystuje stworzone wczesniej zadanie
+          (zadanie zostanie nadpisane poniewaz jest juz z takim id ale terz jest z flaga
+          ropoczete na true)
+           //zadanieService.uaktualnij(zadanie);
+          **
+          / serwis przsyla to samo do repo, repo pobiera id tego zadania i dodaje je do
+          / mapy (zastepuje bo jest juz takie zadanie z takim id lecz teraz ma flage
+          / rozpoczete na true)
+          **
+
+         Na koniec przkierowuje na glowna strone rycerzy (po wcisnieciu submit)
+          //return "redirect:/rycerze";
+
+
+		//3
+		-Mapowanie aktualizujace strone glowna za pomoca nowego linku
+		  //@RequestMapping(value = "/sprawdzZadania")
+
+		 Metoda nie przyjmuje zadnych parametrow
+		  //public String sprawdzZadania(){
+
+		 W metodzie ne serwisie wywoluje metode dajMojeZloto aby kazdemu
+		  Rycerzowi zakutalizowac zloto oraz Zadania
+		  //rycerzService.dajMojeZloto();
+
+		 Na koniec przekierowuje do glownej strony
+		  //return "redirect/rycerze";
+
+
+
+
+
+		//Budowa strony html:
+
+		Pliki html thymeleaf umieszam w resources->templates
+
+		Jesli korzystam ze standardowych plikow html to w resources->static
+
+
+		Na poczatku pliku html dodaje przstrzen nazw thymeleaf,
+		 oraz w head tytul storny, kodowanie, biblioteki css oraz skrypty:
+
+		<!DOCTYPE HTML>
+		<html xmlns:th="http://www.thymeleaf.org">
+		<head>
+			<title>Zaczynam : Web Content</title>
+			<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8"/>
+
+			<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}"/>
+
+			<script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+			<script th:src="@{/webjars/bootstarp/4.1.3/bootstrap.min.js}"></script>
+		</head>
+
+
+		Korzystam z przyslanych elementow w body
+
+		Themeleaf operauje na znacznikach th w znacznikach html
+		 (div/p/tbody/form/input/span)
+
+		Elementy w kontrolerze wysylane sa za pomoca klucza i wartosci dodajac cos do modelu
+		 String napis = "Witaj swiecie";
+         model.addAttribute("hello", napis);
+         model.addAttribute("czascontoller", czasController);
+        Natomiast odwolanie proste do niech moze byc np:
+         <p th:text="${hello}"/> (obiekt prosty string wiec mozna wyswietlic)
+         <p th:test="${czascontroller}"/> (wyswietle adres obiektu lub metode toString klasy)
+         <p th:test="${czascontroller.czas}"/>
+         (odwoluje sie do zmiennej klasy - musi byc geter w klasie)
+
+
+        Znaczniki th:
+         -th:text (<p th:text="${hello}"/>) - przyjmuje obiekt o kluczu "hello" i wyswietlam
+           go w akapicie
+         -th:number - analogicznie
+         -th:object (th:object="${rycerz}") - dodaje w <form> i przypisuje otrzymany obiekt
+           o kluczu "rycerz" nastepnie w <input> odwoluje sie do niego
+         -th:th:action (th:action="@{/rycerze}") - dodaje w <form> aby w metodzie controllera
+           przechwycic nowy adres w value (@RequestMapping(value = "/rycerze")
+         -th:method (th:method="post") - dodaje w <form> okreslam metode zapisu danych aby w
+           metodzie controllera przechwycic przypisuje do method
+           @RequestMapping(value = "/rycerze", method = RequestMethod.POST)
+         -th:field (th:field="*{imie}") - uzywam w <form>-><div>-><input> aby zapisac
+           wprowadzone dane do formularza do okrelonego pola (wymagany seter w klasie bazowej)
+           Obiekt z jakiego bede korzystal okreslilem wczesniej w <form> (th:object="${rycerz}")
+         -th:each (<tbody th:each="x : ${rycerze}">) - sluzy do iterowania przyslanej listy
+           Za x bede mial kazdy element listy i odwoluje sie do niego z th+typ
+           (<tr><td th:text="${x.imie}"></td></tr>)
+         -th:href (<a th:href="${'/rycerz?id='+x.id}"/>) - sluzy do okreslenia linku z paramtrem
+           (wpisuje ? i po tym nazwe zmiennej np "id" i = w '') lub za pomoca URL
+           (<a th:href="${'/rycerz/delete/'+x.id}"/>)
+         -th:if (<p th:if="${#fields.hasErrors('wiek')}" th:errors="*{wiek}"/>) - sluzy do
+           walidacji formularzy, JESLI pole "wiek" z wybranego obiektu th:object bedzie mialo
+           niespelniony warunek (z adnotacji klasy bazowej) to wyswietli blad th:errors,
+           standardowy lub okreslony komunikat (okreslam w adnotacji w message)
+
+
+		Znacznik th moze
+			-odczytywac -$ //<p th:text="${hello}"/>
+			//<p th:test="${czascontroller.czas}"/>
+			//<form class="form-horizontal" th:object="${rycerz}" th:action="@{/rycerze}"
+			//    	   th:method="post">
+			-zapisywac -* //<input type="text" class="form-control" th:field="*{imie}"/>
+			-odnoscic sie do adresu -@ (w controlerze value="")
+			//<form class="form-horizontal" th:object="${rycerz}" th:action="@{/rycerze}"
+			//    	   th:method="post">
+
+
+		Przyklady operacj na obiektach z th:
+		 -bezposrenio do elementu np w akapicie "p" - okrelam typ
+		   <p th:text="${hello}"/>
+		   <p th:test="${czascontroller}"/>
+		   <p th:test="${czascontroller.czas}"/>
+		 -w iterowaniu (w petli foreach) th:each="x : ${produkty}"
+		   --w kontnerze
+		      <div th:each="x : ${produkty}"> (za x bede odwolywal sie do elementow)
+		       <h3 th:text="${x.nazwa}"/> (klasa bazowa musi miec geter do tej zmiennej!)
+		   --w tabeli (body)
+		      <table class="table">
+		      	<tbody th:each="x : ${rycerze}">
+		       		<tr>
+                    	<td th:text="${x.imie}"></td>
+         -w linkach
+           --z umieszczeniem parametru (zmiennej) w URL
+              <td><a th:href="${'/rycerz?id='+x.id}"/>Podglad</a></td>
+             Po kliknieciu zostanie wygenerowany adres ze zmienna
+              przykladowy adres:
+               /rycerz?id=2
+             przechwycenie w kontrolerze
+			  @RequestMapping("/rycerz")
+    		  public String getKnight(@RequestParam("id") Integer id, Model model){
+    		 Szuka we wpisanym linku "id" po ? i jego wartosci po =
+    		 Nastepnie przypisuje watosc w przyjetych parametrach metody
+    	   --z umieszczeniem paramtru w sciezce
+    	      <a th:href="${'/rycerz/delete/'+x.id}"/>Usun</td>
+    	     Po kliknieciu zostanie wygenerowany adres ze zmienna
+              przykladowy adres:
+               /rycerz/delete/0
+             przechwycenie w kontrolerze
+              @RequestMapping(value = "/rycerz/delete/{id}")
+    		  public String deleteRycerz(@PathVariable("id")Integer id){
+    		 W mapowaniu adresu czesc linku umieszczam w {} i nazywam po czym
+    		  przypisuje to do zmiennej @PathVariable("id") Integer id
+    	 -w formularzach
+    	 	<div class="container">
+        		<form class="form-horizontal" th:object="${rycerz}"
+        		 th:action="@{/rycerze}" th:method="post">
+            		<div class="form-group">
+                		<label class="control-label">Imie:</label>
+                		<input type="text" class="form-control" th:field="*{imie}"/>
+         -w sprawdzeniu bledow
+           <p th:if="${#fields.hasErrors('wiek')}" th:errors="*{wiek}"/>
+
+
+		Budowa tabeli
+		 1.<div class="container">
+		 2.<table class="table">
+		 3.1. <thead>
+		 		<tr>
+		 			<td>Imie
+		 3.2. <tbody th:each="x : ${rycerze}">
+		 		<tr>
+                    <td th:text="${x.imie}">
+
+        Linki (klasyczne bez th):
+         <div class="row">
+         	<a href="/newrycerz">Dodaj nowego rycerza</a>
+
+
+
+    	Formularze:
+
+    	 Tworze nowa strone dodajprodukt.hmtl i na poczatku dodaje odpowiednie
+    	  dane
+
+    	 1.<div class="container">
+    	 2.<form class="form-horizontal" th:object="${rycerz}" th:action="@{/rycerze}"
+    	   th:method="post">
+    	    -th:object jest to pusty obiekt jaki wysylam w metodzie kontrolera
+    	     @RequestMapping("/newrycerz")
+    		 public String createRycerz(Model model){
+        		model.addAttribute("rycerz", new Rycerz());
+        		return "rycerzform";}
+    	    -th:action="@{/rycerze}" jest to adres jaki musi zostac przechwycony w value
+    	      w nowej metodzie kontrolera ktora przyjmuje gotowy obiekt (zapisuje do value)
+    	       + metoda zapisu
+    	      @RequestMapping(value = "/rycerze", method = RequestMethod.POST)
+    		  public String saveRycerz(Rycerz rycerz){
+    		   		rycerzService.saveRycerz(rycerz);
+        			return "redirect:/rycerze";}
+    	 3.<div class="form-group">
+    	 4.1<label class="control-label">Imie:</label>
+		 4.2<input type="text" class="form-control" th:field="*{imie}"/>
+		 	-klasa bazowa musi miec seter do pola "imie"
+		 4.3<p th:if="${#fields.hasErrors('wiek')}" th:errors="*{wiek}"/>
+		    -sprawdzam czy pole wiek ma bledy i jesli tak to wyswietle komunikat
+		 5.<div class="row">
+                <button type="submit" class="btn btn-default">Utworz rycerza</button>
+         6.</form></div>
+
+
+
+
+		STRONA GLOWNA:
+
+		Na poczatku dodaje fromatke html
+
+		Nastepnie otwieram glowny kontener
+		 //<div class="container">
+
+		W nim umieszczam aktualny czas pobrany z dodanego do modelu obiektu timecomponent
+		 i odniesieniu sie do jego pola time
+		  //Aktualny czas<span th:text="${timecomponent.time}"/>
+
+		Nastepnie dodaje tabele z klasa bootstrapa
+		 //<table class="table">
+
+		Dodaje glowe tabeli
+		 //<thead>
+		I w srodku wiersz
+		 //<tr>
+		A w nim kolumny z nazwami pol (zwykly tekst) jakie bede uzywal w tabeli + dodaje dodatkowe
+		 koluny na potrzeby przyciskow nizej
+		  //<td>Imie</td>
+		  //<td>Poziom</td>
+		  //<td>Zadanie</td>
+		  //<td></td>
+		Zamykam wiersz i glowe tabeli
+		 //		</tr>
+		 //</thead>
+
+		 Dodaje cialo tabeli z petla foreach korzystajaca z dodanej do modelu listy obiektow
+		  Rycerzy, odwolywac sie bede w obrocie petli jako "x" i po . pole
+		   //<tbody th:each="x : ${rycerze}">
+		 Teraz dodaje wiersz ktory bedzie sie powielal z kazdym obrotem petli + kolumny
+		  //<tr>
+		 Pierwsze kolumny sa z prostymi odniesienieami do pola iterowanego obiektu z listy
+		  w formie th:text
+		   //<td th:text="${x.imie}"></td>
+		   //<td th:text="${x.level}"></td>
+		 Nastepnie dodaje kolumne ktora zawiera zagniezdzony napis (<span>) z warunkiem if ktory
+		  bedzie uzupelniac sie w zaleznosci czy pole x.zadanie bedzie puste
+		   //<td>
+		   //		<span th:if="${x.zadanie==null}">Brak Zadania
+		 Jesli puste - bedzie wyswietlac sie napis "Brak Zadania" oraz link do strony z wyciagnietym
+		  id z iterowanej zmiennej x.id - strona wybierania zadania dla Rycerza z wyciagnietym id
+		 Na koniec zamykam <span>
+		   //			<a th:href="${'/przypiszzadanie/idrycerza='+x.id}">Przypisz zadanie</a>
+		   //		</span>
+		 W tym samym wierszu dodaje kolejny <span> z warunkiem gdy zadanie NIE BEDZIE nullem czyli
+		  wykona sie tylko jak wczesniejszy bedzie false. Wewnatrz <span> dodaje to co ma sie
+		  wyswietlic czyli th:text i wartosc pola zadania iterowanego obiektu oraz z niego
+		  opis z klasy Zadanie
+		   //<span th:if="${x.zadanie!=null}" th:text="${x.zadanie.opis}"/>
+		 Na koniec zamykam wiersz
+		  //</td>
+		 Calosc:
+		   //<td>
+		   //	<span th:if="${x.zadanie==null}">Brak Zadania
+		   //        <a th:href="${'/przypiszzadanie/idrycerza='+x.id}">Przypisz zadanie</a>
+		   //   </span>
+		   //   <span th:if="${x.zadanie!=null}" th:text="${x.zadanie.opis}"/>
+		   //</td>
+
+		 Dodaje kolejna kolumne z linkiem do strony szczegolow obiektu na podstawie jego id
+		  (tutaj wykorzystam zmienna w adresie ?zmienna= - czyli przez URL)
+		   //<td><a th:href="${'/rycerz?id='+x.id}"/>Podglad</a></td>
+		 Kolejna kolumna zawiera link do usuniecia obiektu na podstawie jego id (tutaj uzyje zmienna
+		  zakodowana w adresie w formie bez zmiennej - czyli przez SCIEZKE)
+		  //<td><a th:href="${'/rycerz/delete/'+x.id}"/>Usun</td>
+		 Na koniec zamykam iterowany wiersz oraz cialo tabeli i tabele
+		  //		</tr>
+          //   </tbody>
+          //</table>
+
+          Dodaje kolejny kontner w formie wiersza
+           //<div class="row">
+          A w nim link do nowej strony
+           //<a href="/newrycerz">Dodaj nowego rycerza</a>
+          Nastepnie zamykam kontener
+           //</div>
+
+          Na koniec zamykam kontner glowny oraz body i html
+           //	</div>
+           //</body>
+           //</html>
+
+
+
+		STRONA SZCZEGOLOW RYCERZA:
+
+        Dodaje formatke html
+
+        W ciele dodaje kontener glowny
+         //div class="container">
+
+        W nim umieszczam aktualny czas pobrany z dodanego do modelu obiektu timecomponent
+		 i odniesieniu sie do jego pola time
+		  //Aktualny czas<span th:text="${timecomponent.time}"/>
+
+		Nastepnie dodaje akapity z wartosciami pol wyciagnietych z dodanego do modelu
+		 obiektu na podstawie id, robie to zapomoca prostego th:text i odwolania do pola
+		 obiektu po .
+		 //<p th:text="${'Imie rycerza : '+rycerz.imie}"></p>
+    	 //<p th:text="${'Wiek rycerza : '+rycerz.wiek}"></p>
+    	 //<p th:text="${'Level rycerza : '+rycerz.level}"></p>
+    	 //<p th:text="${'Zadanie rycerza : '+rycerz.zadanie}"></p>
+
+    	Na koniec zamykam kontener glowny, body i html
+    	 //		</div>
+		 //</body>
+		 //</html>
+
+
+
+		STRONA DODANIA RYCERZA
+
+		Dodaje formatke html
+
+		Otwieram kontener glowny
+		 //<div class="container">
+
+		Otwieram formularz zawieracy :
+		 -wskazanie do dodanego obiektu do modelu th:object="${rycerz}"
+		 -przkierowanie do adresu po wcisnieciu submit th:action="@{/rycerze}" na podstawie
+		   ktorego wybierana bedzie metoda kontrolera (wartosc value w parametrach req. mapping)
+		 -metode zapisu th:method="post" - tez do okreslenia w adnotacji kontrolera
+		   //<form class="form-horizontal" th:object="${rycerz}" th:action="@{/rycerze}"
+		   // th:method="post">
+
+		Dodany obiekt do modelu ma ZEROWANE POLA!
+
+		W srodku dodaje pojedynczy kontner do uzupelnienia wybranego pola
+		 //<div class="form-group">
+		Wewnatrz dodaje nazwy w formie prostego tekstu nad polem formularza
+		 //<label class="control-label">Imie:</label>
+		Oraz pole wporwadzenia ktore wkazuje do jakiego pola obiektu bede wprowadzal dane
+		 //<input type="text" class="form-control" th:field="*{imie}"/>
+		Dodaje takze akapit pod formularzem jesli wystapi blad
+		 //<p th:if="${#fields.hasErrors('imie')}" th:errors="*{imie}"/>
+		 **
+		 / w kontrolerze dodaje @Valid przed przyjmowanym argumentem obiektu oraz dodatkowy
+		 / argument BindingResult
+		 / W klasie domenowej przed polem dodaje adnotacje np @Range w ktorej okreslam message =""
+		 **
+		Teraz zamykam kontener uzupelniajacy to pole
+		 //</div>
+
+		Nastepnie moge dodac kolejny kontner z wprowadzaniem danych do kolejnego pola analogicznie
+		 //<div class="form-group">
+		 //    <label class="control-label">Wiek:</label>
+		 //    <input type="number" class="form-control" th:field="*{wiek}"/>
+		 //    <p th:if="${#fields.hasErrors('wiek')}" th:errors="*{wiek}"/>
+		 //</div>
+
+		Kolejnym kontnerem bedzie wiersz zawierajacy przycisk submit z napisem
+		 //<div class="row">
+		 //		<button type="submit" class="btn btn-default">Utworz rycerza</button>
+		 //</div>
+
+		Teraz zamykam formularz
+		 //</form>
+
+		Nastepnie zamykam kontner glowny, body i html
+		 //		</div>
+		 //</body>
+		 //</html>
+
+
+
+		STRONA PRZYPISYWANIA ZADANIA:
+
+		Dodaje formatke hmtl
+
+		Otwieram kontner glowny
+		 //<div class="container">
+
+		Otwieram formularz dla obiektu rycerza
+		 //<form class="form-horizontal" th:object="${rycerz}" th:action="@{/przypiszzadanie}"
+		 // th:method="post">
+		Ukrywam pola (zachowuje wartosci pol obiektu ktory zostal wyslany do modelu)
+		 poniewaz standardowo obiekt wysylany z htmla do controlera jest wysylany
+		 z polami zerowanymi chyba ze przypisze wartosci na stronie, moge dodac
+		 opcje aby automatycznie przypisywane byly wartosci takie jaki mial obiekt
+		 przypisany
+		  //<input type="hidden" th:field="*{id}"/>
+		  //<input type="hidden" th:field="*{imie}"/>
+		  //<input type="hidden" th:field="*{wiek}"/>
+		  //<input type="hidden" th:field="*{level}"/>
+
+		Nastepnie otwieram kontener do wprowadzania danych (okno formularza)
+		 //<div class="form-group">
+
+		Dodaje tytul nad formularzem
+		 //<label class="control-label">Wykonaj zadanie</label>
+
+		Dodaje liste pol do wyboru gdzie okreslam jakie pole bede zmienial (wybierajac z listy)
+		 w przyslanym obiekcie Rycerza (th:object="${rycerz}")
+		 //<select th:field="*{zadanie}">
+
+		Wewnatrza dodaje ROZWIJANA liste elementow do wyboru z listy (option) +
+		 -wykorzystuje petle foreach odnoszaca sie do listy zadan dodnaych do modelu,
+		   (th:each="x : ${zadanianierozpoczete}"
+		  Kazda iteracje bedzie OBIEKTEM!
+		 -okreslam wartosc jaka bedzie przypisana po wyborze (dla pola obiektowego Zadania rycerza)
+		   (th:value="${x.id}")
+		  Standardowo x.id zostanie przez html przerobione na STRING z id iterowanego Zadnia ktore
+		   jest intem!
+		  Teraz musze zmienic ten STRING na obiekt Zadania poniewaz przypisuje wybor do
+		   pola Zadania Rycerza
+		  Robie to za pomoca serwisu ZadanieFormatter
+		 -okrelam tez co bedzie wyswietlalo sie jako wybor elementu
+		   (th:text="${x.opis}">
+		  //<option th:each="x : ${zadanianierozpoczete}"
+		  //        th:value="${x.id}"
+		  //        th:text="${x.opis}">
+		  //</option>
+
+		 Teraz zamykam kontner pojedynczego formularza
+		  //</div>
+
+		 Dodaje kolejny formularz w kontnerze wiersza
+		  //<div class="row">
+          //  <button type="submit" class="btn btn-default">Wyslij rycerza</button>
+          //</div>
+
+         Zamykam formularz
+          //</form>
+
+         Zamykam kontner glowny, body i html
+          //	</div>
+		  //</body>
+		  //</html>
+
+
+
+
+		BAZY DANYCH
+
+		JPA - interfejsy
+
+		Hibernate - framework
+
+		H2 - prosty rodzaj bazy danych
+
+
+		Dzialanie JPA opiera sie na 2 obiektach:
+		 -EntityManagerRactory - singleton gdzie trzymana jest pula polaczen do
+		   bazy danych, odpowiada za tworzenie EntityManager i przekazuje mu
+		   jednogo polaczenia do bazy dancyh z puli
+		   W Hibernate nazywa sie SessionFactory
+		 -EntityManager - obiekt sesji ktory tworzymy za kazdym razem nowy gdy
+		   chce wykonac jakas operacje na bazie danych (zapisac obiekt/pobrac dane)
+		   W hibernate nazywa sie Session
+
+
+		Dodaje dependencje:
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+
+		Dodaje w glownym pliku properties linijke aby dzialala konsola w przegladarce
+		 //spring.h2.console.enabled=true
+
+
+		Klasa domenowa ktora bedzie korzystac z bazy danych musi miec pole id
+		Dodaje przed zmienna id klasy adnotacje
+		 @Id
+		oraz
+    	 @GeneratedValue(strategy = GenerationType.AUTO)
+    	Aby za kazdym razem gdy bede wstawial obiekt do bazy danych to to pole bedzie
+    	 mialo unikalna wartosc
+
+
+    	Hibernate wymaga pustego konstruktora klasy
+
+
+*/
+
+
+
+
+
 //WAZNE INFO OGOLNE DO ZAPAMIETANIA!!
 /*
 zmienna final OBIEKTOWA nie musi posiadac nadanwej wartosci
