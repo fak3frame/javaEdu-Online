@@ -560,8 +560,31 @@ public class Podsumowanie {
 
           Cykle zycia JPA:
 
-          - Nowa/przejściowa (new/transient) -
+          - Nowa/przejściowa (new/transient) - utworzony zostal obiekt danej encji ale moe kesy jest
+             jeszcze podlaczony pod zaden obiekt EM czyli istnieje tylko w aplikacji, w przypadku
+             wykonania danej transakcji, nie zostanie zapisany do bazy danych
 
+          - Zarządzany/trwały (managed/persisted) - obiekt jest podlaczony do EM za pomoca metody
+              persist i jest przez niego zarzadzany. Wykoanie transakcji zapisze obiekt do bazy danych
+             Jesli wykonam zmiany na obiekcie encji to zapisany obiekt do bazy danych takze bedzie
+              zawieral zmiany
+
+          - Oderwane (detached) - specjalny stan encji i nie jest ona zarzadzana przez EM ale dalej
+              reprezentuje obiekt w bazie danych. Uzywane sa jesli chce przekazac obiekt do
+              uzytkownika koncowego. Zmiany na takim obiekcie nie zostana zapisane do bazy dancych
+              chyba ze podlacze encje pod EM
+
+          - Usunięta (removed) - obiekt jest usuniety z bazy danych, tak jak metoda persist()
+             musi byc wykonana w trakcjie trwania transakcji
+
+
+          Nowa -persist-> Pod kontrola EM [ Zarzadzana <-remove/persist-> Usunieta]
+
+          baza<-commit- Zarzadzana <-find-baza      Zarzadzana-clear/close->Oderwana
+
+          Zarzadzana<-remove/persist->Usunieta
+
+          baza<-commit- Usunieta                    Usunieta-clear/close->Oderwana
 
 
 
