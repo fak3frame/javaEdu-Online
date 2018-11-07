@@ -540,7 +540,27 @@ public class Podsumowanie {
              entityManager.getTransaction.commit().
          – EM zarządzany przez kontener i o rozszerzonym zakresie
             (Container Managed and Extended Scope Entity Manager),
+            Polega ona na tym ze jesli w beanie wywolana zostanie metoda o tranzakcyjnym
+             zakresie to tranzakcja zostanie automatycznie rozpoczeta przez kontener
+             i zostanie utworzony nowy persistence context (do którego mam dostep przez EM)
+            Kiedy wykonywanie metody dobiegnie końca, transakcja oraz kontekst zostaną zamknięte
+             automatycznie, zaleta tego rodzaje EM jest bezpiczna praca z wieloma watkami
          – EM zarządzany przez aplikację (Application Managed Entity Manager).
+            W tym przypadku czas trwania persistance context jest powiazany do czasu trwania
+             beana, EM moze w tym czasie wykonac wiele metod tzn ze jest dzielony przez wszytkie
+             metody
+
+
+          persistent Fields (pola trwale) - dostep do danych odbywa sie bezposrenio przez
+           pola danej encji - pola z adnotacja @Transient zostana zapisane
+
+          persistent Properties (trwale wlasciwosci) - pola encji musza posiadac setery i getery
+           a adnotacje sa zakladane na getery pol
+
+
+          Cykle zycia JPA:
+
+          - Nowa/przejściowa (new/transient) -
 
 
 
