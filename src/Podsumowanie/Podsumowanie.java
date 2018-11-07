@@ -340,6 +340,13 @@ public class Podsumowanie {
         D - Dependency Inversion Principle (DIP) zasada osrocenia zaleznosci
 
 
+        Dependency Inversion Principle - Moduły wysokiego poziomu nie powinny zależeć
+         od modułów niskiego poziomu. Oba powinny zależeć od abstrakcji.
+         Abstrakcje nie powinny zależeć od detali. Detale powinny zależeć od abstrakcji.
+
+
+
+
 
 
 
@@ -588,7 +595,14 @@ public class Podsumowanie {
 
 
 
-
+          JPQL (Java Persistence Query Language) - jest to jezyk uzywany do operacji
+            na relacyjnych bazach danych i jest czescia JPA. Skladania jest podobna
+            do standardowego SQL
+           Wykorzystuje aby szybko stworzyc zapytanie do bazy danych bez potrzeby tworzenia
+            obiektu CriteriaBuilder i zapytan przy jego pomocy
+           Zapytania JPQL przechowujemy w adnotacji @NamedQuery, która zawiera się w @NamedQueries
+            i jest przechowywana w danej encji, którą ma zwracać zapytanie.
+           Zapytania wywoluje przy pomocy EntityManagera z uzyciem metody createNamedQuery().
 
 
 
