@@ -497,6 +497,20 @@ public class Podsumowanie {
 
 
 
+         //JPA
+
+         Jpa - Java Persistence API - jest to zbior interfejsow potrzebnych aby
+          przeprwadzac operacje na bazach danych
+
+         Jpa samo w sobie nie jest w stanie wykonac operacji na bazie danych
+
+         Jpa pozwala tez w wygody sposob na mapownie obiektow javy do relacyjnych
+          baz danych za pomoca adnotacji lub plikow konfiguracyjnych XML
+
+
+
+
+
 
 
         //------------------------------------------------------------------------
@@ -8504,8 +8518,6 @@ public class ProjektDekarApplication {
 
 
 */
-
-
 
 
 
