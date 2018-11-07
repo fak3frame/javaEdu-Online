@@ -508,6 +508,42 @@ public class Podsumowanie {
           baz danych za pomoca adnotacji lub plikow konfiguracyjnych XML
 
 
+         Hibernate jest najpopularniejsza implementacja standardu JPA
+
+         Plik XML zawiera informacje na temat bazy danych (np nazwa uzytkownika/haslo)
+          oraz zawiera informacje o encjach w aplikacji
+         Plik ten powinien być przechowywany w folderze META-INF w projekcie
+
+         Persistance context - zajmuje sie wstawianiem encji (entities) przechowujacych
+          dane ktore beda zapisane w bazie danych
+         Jego glywnym zadaniem jest sprawdznie czy w EntityManagerze wystepuje dokladnie
+          jeden obiekt danej encji
+
+         Jezeli klasa ma byc zachowana w bazie danych umieszczam przed nia adnotacje
+          @Entity. Obiekt tej klasy bedzie jednym rekordem w tabeli
+
+
+         Manager Encji (EntityManager) - jest posrenikiem pomiedzy aplikacja a baza danych
+
+         Dzieki niemu moge np wyszukac obiektu w bazie danych, dodac, usunac lub zrobic
+          update
+
+         Rodzaje EntityManager:
+         - EntityManager zarządzany przez kontener i o zakresie transakcyjnym
+            (Container Managed and Transaction Scoped Entity Manager),
+            EntityManger moze byc zarzadzany nie przez aplikacje ale przez
+             kontener np Springa np do utworzenia transakcji @Transactional
+            W przypadku gdy aplikacja mialaby to robic nalezaloby wywolac
+             odpowiednie metody EntityManagera np. by otworzyć transakcję musielibyśmy
+             wykorzystać entityManager.getTransaction.begin() (pobranie transakcji z EM
+             a następnie jej otwarcie), natomiast aby ją wykonać musielibyśmy wywołać
+             entityManager.getTransaction.commit().
+         – EM zarządzany przez kontener i o rozszerzonym zakresie
+            (Container Managed and Extended Scope Entity Manager),
+         – EM zarządzany przez aplikację (Application Managed Entity Manager).
+
+
+
 
 
 
