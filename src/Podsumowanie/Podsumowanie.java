@@ -8619,6 +8619,14 @@ public class ProjektDekarApplication {
 /*--------------------------------------------------------------------
 ------------------------------BAZY DANCYH-----------------------------
 
+Baza danych to zbiór danych zapisanych w odpowiednim formacie
+
+Format zapisu danych pozwala na dostęp do danych. W zależności od zastosowania dane zapisywane
+są w różny sposób. Sposób zapisu danych ma wpływ na wydajność poszczególnych operacji
+(zapisu, odczytu, usunięcia i modyfikacji danych)
+
+
+
 
 
 
