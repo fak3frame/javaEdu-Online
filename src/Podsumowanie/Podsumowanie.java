@@ -8614,6 +8614,18 @@ public class ProjektDekarApplication {
 
 
 
+
+
+/*--------------------------------------------------------------------
+------------------------------BAZY DANCYH-----------------------------
+
+
+
+
+ */
+
+
+
 //WAZNE INFO OGOLNE DO ZAPAMIETANIA!!
 /*
 zmienna final OBIEKTOWA nie musi posiadac nadanwej wartosci
