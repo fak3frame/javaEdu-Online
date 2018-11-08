@@ -8630,6 +8630,7 @@ są w różny sposób. Sposób zapisu danych ma wpływ na wydajność poszczegó
 
 
 
+
  */
 
 
