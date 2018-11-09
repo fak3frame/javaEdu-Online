@@ -8794,13 +8794,42 @@ TEXT - lancuch bez okreslenej dlugosci
 BOOLEAN - wartosc logiczne
 BLOB - dane binarne (binary large object)
 
+Wartosc NULL nie jest rowna pustej wartosci lancucha znakowego
+
 
 SELECT - SQL
 
 przyklad:
 SELECT *
 FROM genere
-WHERE name = 'Rock' AND genreid < 20;
+WHERE name = 'Rock' AND genreid < 20
+OR name != 'Pop; AND IS NOT NULL
+
+SELECT - wybiera kolumny z tableli
+FROM - wybiera tabele po nazwie
+WHERE - filtruje wiersze
+
+Instrukcje wykonane pomiedzy AND wykonaja sie wczesniej niz instrukcje pomiedzy OR
+
+Inne przyklady zapytan:
+
+SELECT billingcountry
+ FROM invoice
+ WHERE total < 10
+      AND invoicedate > '2013-12-05 00:00:00'
+      AND invoicedate < '2013-12-09 00:00:00';
+
+SELECT billingstate
+ FROM invoice
+ WHERE billingcountry = 'USA'
+      AND total > 15;
+
+SELECT billingcity, billingcountry
+ FROM invoice
+ WHERE (billingstate IS NULL AND total > 17)
+       OR (total < 1
+           AND billingstate IS NOT NULL
+           AND invoicedate > '2013-09-20 00:00:00');
 
 
 
