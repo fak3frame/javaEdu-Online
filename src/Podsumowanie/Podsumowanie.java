@@ -8621,14 +8621,50 @@ public class ProjektDekarApplication {
 
 Baza danych to zbiór danych zapisanych w odpowiednim formacie
 
-Format zapisu danych pozwala na dostęp do danych. W zależności od zastosowania dane zapisywane
-są w różny sposób. Sposób zapisu danych ma wpływ na wydajność poszczególnych operacji
+W zależności od zastosowania dane zapisywane są w różny sposób
+
+Sposób zapisu danych ma wpływ na wydajność poszczególnych operacji
 (zapisu, odczytu, usunięcia i modyfikacji danych)
 
+Najpopularniejszym rodzajem bazy danych jest relacyjna baza danych
+
+Dane zapisywane sa w krotkach ktore zawieraja swoje parametry oraz zapisane
+ sa w relacji
+
+Dodstep do bazy danych realizowany jest za pomoca jezyka SQL - Structured Query Language
 
 
+Najpopularniejszymy impelementacjami baz danych sa:
+- PostgreSQL
+- MySQL
+- SQLite
+- Oracle
+- SQL Server
+- HyperSQL
+
+Kazda implementacja rozni sie od siebie i ma inny rodzaj jezyka SQL (dialekt)
 
 
+Srodowisko z baza danych zawsze sklada sie z conajmniej jednego klienta
+ oraz serwera baz dancyh
+
+Serwer bazy danych jest to porgram ktory obsluguje zapytania wyslane przez klienta
+ oraz odpowiedzialny jest za zapisywanie i udostepnianie danych z bazy
+
+Zadania sa nasluchiwane na odpowiednim porcie np. PostgreSQL na 5432
+
+
+Serwer uzywa protokolow do komunikacji z klientem
+- ODBC (Open Database Connectivity) zapewnia on dostep do danych niezalezny od serwera
+   bazy danych
+- JDBC (Java Database Connectivity)
+
+
+Klient wskazuje serwer z ktorym chce sie polaczyc za pomoca URL np:
+jdbc:postgresql://some.server.host:5432/database_name
+
+Potrzebuje on takze strownika do obslugi polaczenia - klasy obslugujaca
+ polaczenie (producenci udostepniaja sterowniki)
 
 
  */
