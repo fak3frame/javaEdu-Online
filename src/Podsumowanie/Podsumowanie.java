@@ -8675,10 +8675,44 @@ Dane przekazywane sa zgodnie z protokolem np JDBC
 
 Encja - rodzaj obiektu w bazie danych
 
-Odpowiednikiem Encji w programowaniu jest
+Odpowiednikiem Encji w programowaniu jest klasa
 
 
+Atrybut - wlasciwosc encji (pole) ktore ma swoj typ, maja one swoje odpowiedniki z
+            programownia np w PostgreSQL:
+String  -	varchar
+boolean	-   boolean
+double  -   double precision
+byte[]  -	bytea
+int	    -   integer
 
+Sa tez rodzaje atrybutow ktore nie maja swojego odpowiednika w programowani np:
+- box
+- becimal(p,s)
+- polygon
+
+
+Krotka - zbior atrybutow, odpowiednik obiektu, wiersz w tabeli gdzie kazdym
+          wierszem jest inny atrybut
+
+
+Relacja - zbior krotek, tabela, nazywa sie jak nazwa encji w liczbie mnogiej np: firmy
+            Relacja to takze okreslenie zaleznosci pomiedzy tabelami np jeden do wielu
+
+W modelu relacyjnym kazda krotka jest unikalna ale SQL pozwala na duplikaty wierszy
+ w tabeli
+
+
+Klucz glowny - dodatkowy atrybut(kolumna) relacji (tabeli) ktory jest tworzony
+                dla krotek, jest on UNIKALNY, w wiekszosci przypadkow relacje maja
+                taki atrybut i jest on w postaci liczby numerowanej od 1
+                (primary key)
+
+Dodajac kolejne krotki do relacji przypisywana jest automatycznie wartosci klucza (Id) o jeden
+ wieksza od poprzedniego
+Jesli jest kilka atrubutow kluczy w jedenej relacji to znaczy ze relacja ma klucz zlozony
+Dzieki kluczom latwiej dostac sie do pojedynczej krotki relacji niz za pomoca zwyklego
+ atrubutu
 
 
 
