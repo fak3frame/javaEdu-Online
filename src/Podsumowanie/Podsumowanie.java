@@ -8631,7 +8631,16 @@ Najpopularniejszym rodzajem bazy danych jest relacyjna baza danych
 Dane zapisywane sa w krotkach ktore zawieraja swoje parametry oraz zapisane
  sa w relacji
 
-Dodstep do bazy danych realizowany jest za pomoca jezyka SQL - Structured Query Language
+SQL - Structured Query Language, jezyk zapytan realizujacy dostep do bazy danych
+ Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
+Jest to jezyk deklaratywny (co chcemy zrobic a nie jak)
+
+Dzieli sie on na rozne grupy rodzajow zapytan:
+- DQL (Data Query Language)
+- DML (Data Manipulation Language)
+- DDL (Data Definition Language)
+- DCL (Data Control Language)
+- TCL (Transaction Control Language)
 
 
 Najpopularniejszymy impelementacjami baz danych sa:
@@ -8730,6 +8739,18 @@ Zaleznosc wiele do wielu potrzebna jest dodatkowa tabela ktora nazywa sie po naz
  tabel (relacji) np. produkt_miejsce sprzedazy i zawiera ona atrybut klucza
  obcego tabel ktore ma powiazac o wartosci ich klucza glownego np. Produkt id(FK), Miejsce
  sprzedazy (FK) - jest to klucz zlozony
+
+
+
+SELECT - SQL
+
+przyklad:
+SELECT *
+FROM genere
+WHERE name = 'Rock' AND genreid < 20;
+
+SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
+Bazy danych ukrywaka sposob przechowywania danych
 
 
 
