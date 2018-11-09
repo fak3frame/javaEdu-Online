@@ -8634,6 +8634,10 @@ Dane zapisywane sa w krotkach ktore zawieraja swoje parametry oraz zapisane
 SQL - Structured Query Language, jezyk zapytan realizujacy dostep do bazy danych
  Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
 Jest to jezyk deklaratywny (co chcemy zrobic a nie jak)
+Wielkosc liter w zapytaniach nie ma znaczenia i zalecena jest aby pisanie slow
+ kluczowych jezyka SQL wielkimmi literami
+Przykladowe zapytanie :
+    SELECT * FROM genere WHERE genereid = 1;
 
 Dzieli sie on na rozne grupy rodzajow zapytan:
 - DQL (Data Query Language)
@@ -8641,6 +8645,21 @@ Dzieli sie on na rozne grupy rodzajow zapytan:
 - DDL (Data Definition Language)
 - DCL (Data Control Language)
 - TCL (Transaction Control Language)
+
+DQL - zawiera wylacznie zapytania (query) typu SELECT czyli pobieranie danych z bazy
+DML - zawiera zapytania tworzenia INSERT, modyfikownia UPDATE i ususania DELETE wierszy
+       w bazie danych
+DDL - zwiera zapytania tworzenia obieku w bazie CREATE, modyfikacji tabeli ALTER,
+        usuniecia obiektu z bazy DROP, usuniecia wszystkich danych z tabeli TRUNCATE
+DCL - sluzy do manipulacji prawami uzytkownikow majacych dostep do danych tnz
+        nadawanie uprawnien GRANT, usuwanie uprawnien REVOKE
+TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie transakcji COMMIT,
+        wywcofanie transakcji ROLLBACK, zapisanie punktu przywracania aktualnej
+        transakcji SAVEPOINT
+
+
+SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
+Bazy danych ukrywaka sposob przechowywania danych
 
 
 Najpopularniejszymy impelementacjami baz danych sa:
@@ -8730,6 +8749,10 @@ Klucz obcy - kazda relacja moze zawierac kilka atrubutow klucza obcego i jego wa
               (foreign key)
 
 
+Bazy danych moga zawierac takze obiekty takie jak indeksy (index), ograniczenia (constraint)
+ wyzwalacze (trigger), widoki (view)
+
+
 Rodzaje powiazan (zaleznosci)
 - jeden do jednego np. samochod - numer rejestracyjny
 - jeden do wilu np. prudcent - towar
@@ -8742,6 +8765,36 @@ Zaleznosc wiele do wielu potrzebna jest dodatkowa tabela ktora nazywa sie po naz
 
 
 
+OBSLUGA SQLite
+
+Nalezy pobrac klienta sqlite-tools
+
+Mozna pobrac przykladowy plik bazy danych
+    https://github.com/SamouczekProgramisty/chinook-database
+i ma ono rozszerzenie .sqlite
+
+aby otworzyc baze danych uruchamiam sqlite.exe i uzywam komendy
+    .open Chinook_Sqlite.sqlite
+
+
+KOMENDY:
+.tables - wyswietlenie listy tabel
+.schema NAZWATABELI - schemat tabeli (nazwa, typ i wlasciwosci atrybutow)
+
+
+
+TYPY W SQL
+
+DATE - data
+DATETIME - data i czas
+INTEGER - liczby calkowite
+NUMERIC(x, y) - liczba rzeczywista z iloscia x cyfr przed przecinkiem i y po
+NVARCGAR(x) - lancuch znakow o maksymalnej dlugosci x
+TEXT - lancuch bez okreslenej dlugosci
+BOOLEAN - wartosc logiczne
+BLOB - dane binarne (binary large object)
+
+
 SELECT - SQL
 
 przyklad:
@@ -8749,8 +8802,7 @@ SELECT *
 FROM genere
 WHERE name = 'Rock' AND genreid < 20;
 
-SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
-Bazy danych ukrywaka sposob przechowywania danych
+
 
 
 
