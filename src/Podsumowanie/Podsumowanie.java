@@ -8663,8 +8663,25 @@ Serwer uzywa protokolow do komunikacji z klientem
 Klient wskazuje serwer z ktorym chce sie polaczyc za pomoca URL np:
 jdbc:postgresql://some.server.host:5432/database_name
 
-Potrzebuje on takze strownika do obslugi polaczenia - klasy obslugujaca
- polaczenie (producenci udostepniaja sterowniki)
+Potrzebuje on takze strownika do obslugi polaczenia pomiedzy nim a serweram - klasy
+ obslugujacej polaczenie (producenci udostepniaja sterowniki)
+
+Klient uzywa jezyka SQL do zadan dotyczacych dostepu do danych po nawiazaniu
+ polaczenia za pomoca sterownika
+
+Serwer interpretuje zapytanie i pobiera lub zapisuje dane na dysku serwera
+Dane przekazywane sa zgodnie z protokolem np JDBC
+
+
+Encja - rodzaj obiektu w bazie danych
+
+Odpowiednikiem Encji w programowaniu jest
+
+
+
+
+
+
 
 
  */
