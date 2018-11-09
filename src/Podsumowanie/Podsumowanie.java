@@ -8712,8 +8712,24 @@ Dodajac kolejne krotki do relacji przypisywana jest automatycznie wartosci klucz
  wieksza od poprzedniego
 Jesli jest kilka atrubutow kluczy w jedenej relacji to znaczy ze relacja ma klucz zlozony
 Dzieki kluczom latwiej dostac sie do pojedynczej krotki relacji niz za pomoca zwyklego
- atrubutu
+ atrubutu np "nazwa"
 
+
+Klucz obcy - kazda relacja moze zawierac kilka atrubutow klucza obcego i jego wartosc wskazuje
+              na klucz glowny innej relacji i ten atrubut nazwya sie od nazwy encji
+              np "Producent Id", jeden klucz obcy moze byc dla wielu krotek ten sam
+              (foreign key)
+
+
+Rodzaje powiazan (zaleznosci)
+- jeden do jednego np. samochod - numer rejestracyjny
+- jeden do wilu np. prudcent - towar
+- wiele do wielu np. produkt - miejsce sprzedazy
+
+Zaleznosc wiele do wielu potrzebna jest dodatkowa tabela ktora nazywa sie po nazwach
+ tabel (relacji) np. produkt_miejsce sprzedazy i zawiera ona atrybut klucza
+ obcego tabel ktore ma powiazac o wartosci ich klucza glownego np. Produkt id(FK), Miejsce
+ sprzedazy (FK) - jest to klucz zlozony
 
 
 
