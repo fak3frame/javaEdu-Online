@@ -8884,6 +8884,18 @@ Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
  billingcountry = 'Poland' oraz pole invoicedate ma date pozniejsza niz 2012-05-26
 
 
+Moge tez skrocic date z - gdzie - uzupelnia minimalna wartoscia np:
+1960- = 1960-01-01
+
+SELECT firstname
+  FROM employee
+ WHERE birthdate BETWEEN '1960-' AND '1970-';
+
+Pokaz krotki z atrubutem imie z tabeli employee ktorych wartosc atrybuty
+ birthdate jest po 1960 i przed 1970-
+
+
+
 Pomiedzy BETWEEN / NOT BETWEEN:
 
 SELECT *
@@ -8976,6 +8988,22 @@ WHERE unitprice < 1
 AND name LIKE '%e%%' ESCAPE 'e'
 AND name LIKE '%e'
 
+2
+SELECT *
+FROM invoice
+WHERE billingstate IS NOT NULL
+AND billingstate != 'USA'
+
+3
+SELECT *
+FROM invoice
+WHERE country IN('pl', 'cz', 'hu')
+AND billing > 10;
+
+4
+SELECT name
+FROM employee
+WHERE dateofbitrh BETWEEN "1960-01-01" AND
 
 
 
