@@ -8737,7 +8737,9 @@ SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
 
 
 
-SQL - Structured Query Language, jezyk zapytan realizujacy dostep do bazy danych
+SQL - Structured Query Language
+
+Jest to jezyk zapytan realizujacy dostep do bazy danych
 Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
 Jest to jezyk deklaratywny (co chcemy zrobic a nie jak)
 Wielkosc liter w zapytaniach nie ma znaczenia i zalecena jest aby pisanie slow
@@ -8789,7 +8791,7 @@ DATE - data
 DATETIME - data i czas
 INTEGER - liczby calkowite
 NUMERIC(x, y) - liczba rzeczywista z iloscia x cyfr przed przecinkiem i y po
-NVARCGAR(x) - lancuch znakow o maksymalnej dlugosci x
+NVARCHAR(x) - lancuch znakow o maksymalnej dlugosci x
 TEXT - lancuch bez okreslenej dlugosci
 BOOLEAN - wartosc logiczne
 BLOB - dane binarne (binary large object)
@@ -8797,21 +8799,23 @@ BLOB - dane binarne (binary large object)
 Wartosc NULL nie jest rowna pustej wartosci lancucha znakowego
 
 
+
 SELECT - SQL
 
-przyklad:
-SELECT *
-FROM genere
-WHERE name = 'Rock' AND genreid < 20
-OR name != 'Pop; AND IS NOT NULL
-
-SELECT - wybiera kolumny (atrybuty) z tableli
+SELECT - wybiera kolumny (atrybuty) z tableli jakie beda mialy wyswietlone krotki
 FROM - wybiera tabele po nazwie
 WHERE - filtruje wiersze
 
 Instrukcje wykonane pomiedzy AND wykonaja sie wczesniej niz instrukcje pomiedzy OR
 
-Inne przyklady zapytan:
+przyklady:
+SELECT *
+FROM genere
+WHERE name = 'Rock' AND genreid < 20
+OR name != 'Pop; AND IS NOT NULL
+
+-Pokaz wszystkie atrybuty krotek z tabeli genere ktorych pole name = 'Rock' i pole
+ genereid < 20 LUB pole name jest rozne od 'Pop' i nie ma wartosci null
 
 SELECT billingcountry
  FROM invoice
@@ -8830,6 +8834,11 @@ SELECT billingcity, billingcountry
        OR (total < 1
            AND billingstate IS NOT NULL
            AND invoicedate > '2013-09-20 00:00:00');
+
+
+
+WHERE - SQL
+
 
 
 
