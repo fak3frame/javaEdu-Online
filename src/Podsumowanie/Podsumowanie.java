@@ -8632,7 +8632,7 @@ Dane zapisywane sa w krotkach ktore zawieraja swoje parametry oraz zapisane
  sa w relacji (tabeli)
 
 SQL - Structured Query Language, jezyk zapytan realizujacy dostep do bazy danych
- Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
+Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
 Jest to jezyk deklaratywny (co chcemy zrobic a nie jak)
 Wielkosc liter w zapytaniach nie ma znaczenia i zalecena jest aby pisanie slow
  kluczowych jezyka SQL wielkimmi literami
@@ -8649,8 +8649,8 @@ Dzieli sie on na rozne grupy rodzajow zapytan:
 DQL - zawiera wylacznie zapytania (query) typu SELECT czyli pobieranie danych z bazy
 DML - zawiera zapytania tworzenia INSERT, modyfikownia UPDATE i ususania DELETE wierszy
        w bazie danych
-DDL - zwiera zapytania tworzenia obieku w bazie CREATE, modyfikacji tabeli ALTER,
-        usuniecia obiektu z bazy DROP, usuniecia wszystkich danych z tabeli TRUNCATE
+DDL - zwiera zapytania tworzenia obieku/tabeli w bazie CREATE, modyfikacji tabeli ALTER,
+        usuniecia obiektu/tabeli z bazy DROP, usuniecia wszystkich danych z tabeli TRUNCATE
 DCL - sluzy do manipulacji prawami uzytkownikow majacych dostep do danych tnz
         nadawanie uprawnien GRANT, usuwanie uprawnien REVOKE
 TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie transakcji COMMIT,
