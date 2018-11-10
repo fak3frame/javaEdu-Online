@@ -8881,7 +8881,13 @@ Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu b
  zaczyna sie na litere 'A' lub 'B'
 
 
+SELECT *
+  FROM invoice
+ WHERE billingcountry = 'Poland'
+   AND invoicedate > '2012-05-26';
 
+Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
+ billingcountry = 'Poland' oraz pole invoicedate ma date pozniejsza niz 2012-05-26
 
 
 
