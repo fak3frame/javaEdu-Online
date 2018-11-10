@@ -8772,7 +8772,8 @@ OBSLUGA SQLite
 Nalezy pobrac klienta sqlite-tools
 
 Mozna pobrac przykladowy plik bazy danych
-    https://github.com/SamouczekProgramisty/chinook-database
+    https://github.com/SamouczekProgramisty/chinook-database/blob/master/
+    ChinookDatabase/DataSources/Chinook_Sqlite.sqlite?raw=true
 i ma ono rozszerzenie .sqlite
 
 aby otworzyc baze danych uruchamiam sqlite.exe i uzywam komendy
@@ -8807,6 +8808,7 @@ FROM - wybiera tabele po nazwie
 WHERE - filtruje wiersze
 
 Instrukcje wykonane pomiedzy AND wykonaja sie wczesniej niz instrukcje pomiedzy OR
+Instrukcje NOT maja wiekszy priorytet niz AND i OR
 
 przyklady:
 SELECT *
@@ -8838,6 +8840,48 @@ SELECT billingcity, billingcountry
 
 
 WHERE - SQL
+
+Uzywam w:
+-SELECT
+-UPDATE - ogranicza wiersze ktore maja byc zaaktualizowane
+-INSERT - uzywane z podzapytaniami
+-DELETE - ogranicza wiersze ktore maja byc uzuniete
+
+
+Znaki specjalne
+'
+Aby przefiltrowac wiersze w ktorych wybrany argument bedzie mial w
+ srodku ' musze dodac LIKE '%''%';
+
+SELECT *
+ FROM album
+ WHERE title LIKE '%''%';
+
+
+Operatory:
+<, <=, =, !=, >, >=
+
+
+SELECT invoiceid
+      ,total
+      ,billingcountry
+  FROM invoice
+ WHERE total = 21.86;
+
+Pokaz krotki z atrybutami invoiceid ,total i billingcountry z tabeli invoice ktorych wartosc
+ atrybutu total = 21.86
+
+
+SELECT *
+  FROM invoice
+ WHERE billingcountry > 'A'
+   AND billingcountry < 'C';
+
+Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu billingcountry
+ zaczyna sie na litere 'A' lub 'B'
+
+
+
 
 
 
