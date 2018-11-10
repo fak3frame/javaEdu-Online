@@ -8938,8 +8938,27 @@ Pokaz krotki z wszystkimi atrybutami z tabeli track ktorych wartosc atrybutu
  name zawiera w srodku swowjej wartosci %
 
 
-IS NULL
+IS NULL / IS NOT NULL
 
+Wartosc pola NULL nie jest rowna polu tekstowemu bez znakow ''
+IS NULL =/= ''
+
+SELECT *
+  FROM invoice
+ WHERE billingstate IS NULL;
+
+Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
+ billingstate wynosci NULL
+
+
+IN (lista wartosci jakie moze przyjac atrybut)
+
+Wartosci umieszam w () z '' oddzielonych ,
+
+SELECT *
+  FROM invoice
+ WHERE billingcountry = 'USA'
+   AND billingstate IN ('CA', 'TX');
 
 
 
