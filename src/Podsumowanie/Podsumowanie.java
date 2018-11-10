@@ -8872,6 +8872,8 @@ Pokaz krotki z atrybutami invoiceid ,total i billingcountry z tabeli invoice kto
  atrybutu total = 21.86
 
 
+Porownywanie:
+
 SELECT *
   FROM invoice
  WHERE billingcountry > 'A'
@@ -8880,6 +8882,8 @@ SELECT *
 Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu billingcountry
  zaczyna sie na litere 'A' lub 'B'
 
+
+Porownywanie + daty:
 
 SELECT *
   FROM invoice
@@ -8890,6 +8894,37 @@ Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
  billingcountry = 'Poland' oraz pole invoicedate ma date pozniejsza niz 2012-05-26
 
 
+Pomiedzy BETWEEN / NOT BETWEEN:
+
+SELECT *
+  FROM invoice
+ WHERE total BETWEEN 10.91 AND 11.96;
+
+Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
+ total jest pomiedzy 10.91 a 11.96 (rownoznaczne z total >= 10.91 AND total <= 11.96)
+Moge takze uzyc NOT BETWEEN
+
+
+LIKE
+
+% - oznacza dowolną liczbę znaków
+_ - oznacza jeden znak
+
+SELECT *
+  FROM invoice
+ WHERE billingcountry
+  LIKE '%land';
+
+Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
+ billingcountry konczy sie na 'land'
+
+SELECT *
+  FROM invoice
+ WHERE billingcountry
+  LIKE '%land%';
+
+Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
+ billingcountry ma w srodku wartosci wartosc 'land'
 
 
 
