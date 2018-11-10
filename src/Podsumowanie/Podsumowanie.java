@@ -8659,7 +8659,7 @@ TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie tra
 
 
 SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
-Bazy danych ukrywaka sposob przechowywania danych
+Bazy danych ukrywa sposob przechowywania danych
 
 
 Najpopularniejszymy impelementacjami baz danych sa:
