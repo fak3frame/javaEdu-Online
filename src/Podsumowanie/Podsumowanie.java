@@ -8629,7 +8629,7 @@ Sposób zapisu danych ma wpływ na wydajność poszczególnych operacji
 Najpopularniejszym rodzajem bazy danych jest relacyjna baza danych
 
 Dane zapisywane sa w krotkach ktore zawieraja swoje parametry oraz zapisane
- sa w relacji
+ sa w relacji (tabeli)
 
 SQL - Structured Query Language, jezyk zapytan realizujacy dostep do bazy danych
  Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
