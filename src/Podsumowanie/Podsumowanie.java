@@ -8803,7 +8803,7 @@ FROM genere
 WHERE name = 'Rock' AND genreid < 20
 OR name != 'Pop; AND IS NOT NULL
 
-SELECT - wybiera kolumny z tableli
+SELECT - wybiera kolumny (atrybuty) z tableli
 FROM - wybiera tabele po nazwie
 WHERE - filtruje wiersze
 
