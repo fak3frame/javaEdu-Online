@@ -8905,7 +8905,7 @@ Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
 Moge takze uzyc NOT BETWEEN
 
 
-LIKE
+LIKE x / NOT x LIKE y
 
 % - oznacza dowolną liczbę znaków
 _ - oznacza jeden znak
@@ -8925,6 +8925,21 @@ SELECT *
 
 Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
  billingcountry ma w srodku wartosci wartosc 'land'
+
+
+Aby uzyc w LIKE znaku _ lub % musze dodac litere przed tym znakiem a nastepnie
+ dodac ESCAPE 'litera'
+
+SELECT *
+  FROM track
+ WHERE name LIKE '%e%%' ESCAPE 'e';
+
+Pokaz krotki z wszystkimi atrybutami z tabeli track ktorych wartosc atrybutu
+ name zawiera w srodku swowjej wartosci %
+
+
+IS NULL
+
 
 
 
