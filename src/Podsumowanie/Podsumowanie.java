@@ -8701,9 +8701,7 @@ Serwer interpretuje zapytanie i pobiera lub zapisuje dane na dysku serwera
 Dane przekazywane sa zgodnie z protokolem np JDBC
 
 
-Encja - rodzaj obiektu w bazie danych
-
-Odpowiednikiem Encji w programowaniu jest klasa
+Encja - rodzaj obiektu w bazie danych jej odpowiednikiem w programowaniu jest klasa
 
 
 Atrybut - wlasciwosc encji (pole) ktore ma swoj typ, maja one swoje odpowiedniki z
@@ -8745,7 +8743,7 @@ Dzieki kluczom latwiej dostac sie do pojedynczej krotki relacji niz za pomoca zw
 
 Klucz obcy - kazda relacja moze zawierac kilka atrubutow klucza obcego i jego wartosc wskazuje
               na klucz glowny innej relacji i ten atrubut nazwya sie od nazwy encji
-              np "Producent Id", jeden klucz obcy moze byc dla wielu krotek ten sam
+              np "Producent Id", jeden klucz obcy (wartosc) moze byc dla wielu krotek ten sam
               (foreign key)
 
 
