@@ -8848,16 +8848,6 @@ Uzywam w:
 -DELETE - ogranicza wiersze ktore maja byc uzuniete
 
 
-Znaki specjalne
-'
-Aby przefiltrowac wiersze w ktorych wybrany argument bedzie mial w
- srodku ' musze dodac LIKE '%''%';
-
-SELECT *
- FROM album
- WHERE title LIKE '%''%';
-
-
 Operatory:
 <, <=, =, !=, >, >=
 
@@ -8872,7 +8862,7 @@ Pokaz krotki z atrybutami invoiceid ,total i billingcountry z tabeli invoice kto
  atrybutu total = 21.86
 
 
-Porownywanie:
+----Porownywanie:----
 
 SELECT *
   FROM invoice
@@ -8883,7 +8873,7 @@ Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu b
  zaczyna sie na litere 'A' lub 'B'
 
 
-Porownywanie + daty:
+----Porownywanie + daty:----
 
 SELECT *
   FROM invoice
@@ -8905,7 +8895,7 @@ Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
 Moge takze uzyc NOT BETWEEN
 
 
-LIKE x / NOT x LIKE y
+----LIKE x / NOT x LIKE y----
 
 % - oznacza dowolną liczbę znaków
 _ - oznacza jeden znak
@@ -8938,7 +8928,24 @@ Pokaz krotki z wszystkimi atrybutami z tabeli track ktorych wartosc atrybutu
  name zawiera w srodku swowjej wartosci %
 
 
-IS NULL / IS NOT NULL
+Znaki specjalne
+'
+Aby przefiltrowac wiersze w ktorych wybrany argument bedzie mial w
+ srodku ' musze dodac LIKE '%''%';
+
+SELECT *
+ FROM album
+ WHERE title LIKE '%''%';
+
+
+Warunki z LIKE moge laczyc np:
+
+LIKE '%x%%e' ESCAPE 'x';
+
+Pokaz wszystko co ma w srodku wartosci % i na koncu e
+
+
+----IS NULL / IS NOT NULL----
 
 Wartosc pola NULL nie jest rowna polu tekstowemu bez znakow ''
 IS NULL =/= ''
@@ -8951,7 +8958,7 @@ Pokaz krotki z wszystkimi atrybutami z tabeli invoice ktorych wartosc atrybutu
  billingstate wynosci NULL
 
 
-IN (lista wartosci jakie moze przyjac atrybut)
+----IN (lista wartosci jakie moze przyjac atrybut)----
 
 Wartosci umieszam w () z '' oddzielonych ,
 
@@ -8959,6 +8966,15 @@ SELECT *
   FROM invoice
  WHERE billingcountry = 'USA'
    AND billingstate IN ('CA', 'TX');
+
+
+
+1
+SELECT *
+FROM track
+WHERE unitprice < 1
+AND name LIKE '%e%%' ESCAPE 'e'
+AND name LIKE '%e'
 
 
 
