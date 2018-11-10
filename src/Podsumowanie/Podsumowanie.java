@@ -8631,36 +8631,6 @@ Najpopularniejszym rodzajem bazy danych jest relacyjna baza danych
 Dane zapisywane sa w krotkach ktore zawieraja swoje parametry oraz zapisane
  sa w relacji (tabeli)
 
-SQL - Structured Query Language, jezyk zapytan realizujacy dostep do bazy danych
-Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
-Jest to jezyk deklaratywny (co chcemy zrobic a nie jak)
-Wielkosc liter w zapytaniach nie ma znaczenia i zalecena jest aby pisanie slow
- kluczowych jezyka SQL wielkimmi literami
-Przykladowe zapytanie :
-    SELECT * FROM genere WHERE genereid = 1;
-
-Dzieli sie on na rozne grupy rodzajow zapytan:
-- DQL (Data Query Language)
-- DML (Data Manipulation Language)
-- DDL (Data Definition Language)
-- DCL (Data Control Language)
-- TCL (Transaction Control Language)
-
-DQL - zawiera wylacznie zapytania (query) typu SELECT czyli pobieranie danych z bazy
-DML - zawiera zapytania tworzenia INSERT, modyfikownia UPDATE i ususania DELETE wierszy
-       w bazie danych
-DDL - zwiera zapytania tworzenia obieku/tabeli w bazie CREATE, modyfikacji tabeli ALTER,
-        usuniecia obiektu/tabeli z bazy DROP, usuniecia wszystkich danych z tabeli TRUNCATE
-DCL - sluzy do manipulacji prawami uzytkownikow majacych dostep do danych tnz
-        nadawanie uprawnien GRANT, usuwanie uprawnien REVOKE
-TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie transakcji COMMIT,
-        wywcofanie transakcji ROLLBACK, zapisanie punktu przywracania aktualnej
-        transakcji SAVEPOINT
-
-
-SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
-Bazy danych ukrywa sposob przechowywania danych
-
 
 Najpopularniejszymy impelementacjami baz danych sa:
 - PostgreSQL
@@ -8760,6 +8730,38 @@ Zaleznosc wiele do wielu potrzebna jest dodatkowa tabela ktora nazywa sie po naz
  tabel (relacji) np. produkt_miejsce sprzedazy i zawiera ona atrybut klucza
  obcego tabel ktore ma powiazac o wartosci ich klucza glownego np. Produkt id(FK), Miejsce
  sprzedazy (FK) - jest to klucz zlozony
+
+
+Bazy danych ukrywa sposob przechowywania danych
+SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
+
+
+
+SQL - Structured Query Language, jezyk zapytan realizujacy dostep do bazy danych
+Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
+Jest to jezyk deklaratywny (co chcemy zrobic a nie jak)
+Wielkosc liter w zapytaniach nie ma znaczenia i zalecena jest aby pisanie slow
+ kluczowych jezyka SQL wielkimmi literami
+Przykladowe zapytanie :
+    SELECT * FROM genere WHERE genereid = 1;
+
+Dzieli sie on na rozne grupy rodzajow zapytan:
+- DQL (Data Query Language)
+- DML (Data Manipulation Language)
+- DDL (Data Definition Language)
+- DCL (Data Control Language)
+- TCL (Transaction Control Language)
+
+DQL - zawiera wylacznie zapytania (query) typu SELECT czyli pobieranie danych z bazy
+DML - zawiera zapytania tworzenia INSERT, modyfikownia UPDATE i ususania DELETE wierszy
+       w bazie danych
+DDL - zwiera zapytania tworzenia obieku/tabeli w bazie CREATE, modyfikacji tabeli ALTER,
+        usuniecia obiektu/tabeli z bazy DROP, usuniecia wszystkich danych z tabeli TRUNCATE
+DCL - sluzy do manipulacji prawami uzytkownikow majacych dostep do danych tnz
+        nadawanie uprawnien GRANT, usuwanie uprawnien REVOKE
+TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie transakcji COMMIT,
+        wywcofanie transakcji ROLLBACK, zapisanie punktu przywracania aktualnej
+        transakcji SAVEPOINT
 
 
 
