@@ -8621,10 +8621,9 @@ public class ProjektDekarApplication {
 
 Baza danych to zbiór danych zapisanych w odpowiednim formacie
 
-W zależności od zastosowania dane zapisywane są w różny sposób
-
-Sposób zapisu danych ma wpływ na wydajność poszczególnych operacji
-(zapisu, odczytu, usunięcia i modyfikacji danych)
+W zależności od zastosowania dane zapisywane są w różny sposób co ma
+ wplywn a wydajność poszczególnych operacji (zapisu, odczytu, usunięcia
+ i modyfikacji danych)
 
 Najpopularniejszym rodzajem bazy danych jest relacyjna baza danych
 
