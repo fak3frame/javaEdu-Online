@@ -8704,7 +8704,7 @@ W modelu relacyjnym kazda krotka jest unikalna ale SQL pozwala na duplikaty wier
 Klucz glowny - dodatkowy atrybut(kolumna) relacji (tabeli) ktory jest tworzony
                 dla krotek, jest on UNIKALNY, w wiekszosci przypadkow relacje maja
                 taki atrybut i jest on w postaci liczby numerowanej od 1
-                (primary key)
+                (primary key) nazwa jest brana z nazwy encji np: AlbumId
 
 Dodajac kolejne krotki do relacji przypisywana jest automatycznie wartosci klucza (Id) o jeden
  wieksza od poprzedniego
@@ -8715,7 +8715,7 @@ Dzieki kluczom latwiej dostac sie do pojedynczej krotki relacji niz za pomoca zw
 
 Klucz obcy - kazda relacja moze zawierac kilka atrubutow klucza obcego i jego wartosc wskazuje
               na klucz glowny innej relacji i ten atrubut nazwya sie od nazwy encji
-              np "Producent Id", jeden klucz obcy (wartosc) moze byc dla wielu krotek ten sam
+              np "ProducentId", jeden klucz obcy (wartosc) moze byc dla wielu krotek ten sam
               (foreign key)
 
 
@@ -8730,8 +8730,8 @@ Rodzaje powiazan (zaleznosci)
 
 Zaleznosc wiele do wielu potrzebna jest dodatkowa tabela ktora nazywa sie po nazwach
  tabel (relacji) np. produkt_miejsce sprzedazy i zawiera ona atrybut klucza
- obcego tabel ktore ma powiazac o wartosci ich klucza glownego np. Produkt id(FK), Miejsce
- sprzedazy (FK) - jest to klucz zlozony
+ obcego tabel ktore ma powiazac o wartosci ich klucza glownego np. ProduktId(FK),
+ Miejsce_sprzedazyID (FK) - jest to klucz zlozony
 
 
 Bazy danych ukrywa sposob przechowywania danych
