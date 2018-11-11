@@ -8779,8 +8779,9 @@ WHERE / x AND y / x OR y /x BETWEEN y AND z /x LIKE '%e%%x' ESCAPE 'e' (escape o
       x LIKE '%''%' (dla ') / x IS NULL / x IS NOT NULL
       / x IN ('CA', 'TX') (x ma wartosc CA lub TX)
 ORDER BY x ASC lub x ASC,y DESC... (ASC sortowanie rosnaco - standardowe dzialanie order by wiec
-            nie trzeba zapisywac, DESC - malejaco)
+            nie trzeba zapisywac, DESC - malejaco, nie musze sortowac wg tego co jest wyswietlone)
 LIMIT x OFFSET y (offser opcjonalne - pomija y pierwszych wynikow)
+UNION / UNION ALL (polaczenie wynikow zapytan z tabel, UNION tylko unikalne)
 
 
 
@@ -9164,8 +9165,60 @@ To zapytanie zwraca w jednej kolumnie xxx oba zapytania oraz jest
  nazwy tabeli
 
 
+----ZADANIA:----
+
+zwróci dziesięć najdłuższych ścieżek (tabela track), weź pod
+ uwagę tylko te, których kompozytor (kolumna composer) zawiera literę b,
+
+SELECT name
+FROM track
+WHERE composer LIKE '%b%'
+ORDER BY milliseconds DESC
+LIMIT 10
 
 
+zwróci pięć najtańszych ścieżek (tabela track) dłuższych niż minuta,
+
+SELECT name
+FROM track
+WHERE milliseconds > 60000
+ORDER BY price
+LIMIT 5
+
+
+zwróci unikalną listę dwudziestu kompozytorów których ścieżki kosztują
+ mniej niż 2$ posortowanych malejąco według identyfikatora gatunku
+ (kolumna genreid) i rosnąco według rozmiaru (kolumna bytes),
+
+SELECT DISTINCT composer
+FROM artist
+WHERE price < 2
+ORDER BY genreid DESC, bytes
+LIMIT 20;
+
+
+zwróci dwie kolumny. Pierwsza z nich powinna zawierać ścieżki droższe niż 1$
+ i poprawnych kompozytorów pod nazwą magic thingy. Druga powinna zawierać
+ liczbę bajtów. Wynik powinien zawierać dziesięć wierszy i być posortowany
+ rosnąco po liczbie bajtów
+
+SELECT name AS 'magic thingy', bytes
+FROM track
+WHERE price > 1
+UNION ALL
+SELECT composer, bytes
+FROM track
+ORDER BY bytes
+LIMIT 10;
+
+
+zwróci piątą stronę z fakturami (tabela invoice) zakładając, że na stronie
+ znajduje się dziesięć faktur i sortowane są według identyfikatora (kolumna invoiceid).
+
+SELECT *
+FROM invoice
+ORDER BY invoiceid
+LIMIT 10 OFFSET 40;
 
 
 
