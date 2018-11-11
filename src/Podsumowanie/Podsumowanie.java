@@ -8772,13 +8772,15 @@ TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie tra
 
 Lista podstawowych koment
 
-SELECT * lub x,y
+SELECT * lub x,y.. / SELECT DISTINCT * lub x,y.. (unikalne wyniki, dla kilku atrybutow unikalne
+ pary x|y)
 FROM nazwaRleacji
 WHERE / x AND y / x OR y /x BETWEEN y AND z /x LIKE '%e%%x' ESCAPE 'e' (escape odcjonalne)
       x LIKE '%''%' (dla ') / x IS NULL / x IS NOT NULL
       / x IN ('CA', 'TX') (x ma wartosc CA lub TX)
-ORDER BY
-LIMIT
+ORDER BY x ASC lub x ASC,y DESC... (ASC sortowanie rosnaco - standardowe dzialanie order by wiec
+            nie trzeba zapisywac, DESC - malejaco)
+LIMIT x OFFSET y (offser opcjonalne - pomija y pierwszych wynikow)
 
 
 
@@ -8862,6 +8864,16 @@ SELECT billingcity, billingcountry
        OR (total < 1
            AND billingstate IS NOT NULL
            AND invoicedate > '2013-09-20 00:00:00');
+
+
+Jesli mam wlaczone wyswietlanie nazw kolumn (.headers on)
+Jesli dodam po nazwie atrybutu SELECT komende AS x to zostanie
+ wyswietlony tytul kolumny wybranego pola jako x
+
+SELECT genreid AS id
+      ,name AS 'genre name'
+  FROM genre
+  LIMIT 5;
 
 
 
@@ -9115,6 +9127,44 @@ Moge posortowac wg atrybutu ktory nie zostanie wyswietlony
 SELECT DISTINCT billingcountry
     FROM invoice
     ORDER BY billingcity;
+
+
+
+----UNION / UNION ALL----
+
+Uzywane jest do scalania wynikow zapytan i musza byc uzyte dla pol
+ z TYM SAMYM TYPEM
+
+SELECT name AS xxx
+     FROM genre
+     UNION ALL
+SELECT DISTINCT billingcity
+     FROM invoice
+     LIMIT 10;
+
+xxx
+Alternative
+Alternative & Punk
+Amsterdam
+Berlin
+
+Zapytanie wyswietli wyniki jeden SELECT pod drugim
+
+
+SELECT name AS xxx
+     FROM genre
+     UNION ALL
+SELECT DISTINCT billingcity
+     FROM invoice
+     ORDER BY xxx
+     LIMIT 10;
+
+To zapytanie zwraca w jednej kolumnie xxx oba zapytania oraz jest
+ posortowane wedlug wszystkich pozycji za pomoca okreslenia
+ nazwy tabeli
+
+
+
 
 
 
