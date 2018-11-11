@@ -9090,6 +9090,21 @@ SELECT name
     ORDER BY name DESC;
 
 
+Moge dodac kilka pol w ORDER BY i po kazdym okrelam sortowanie
+ (konieczne tylko jesli malejace), pola wymieniam po przecinku
+
+SELECT DISTINCT billingcountry
+        ,billingstate
+    FROM invoice
+    ORDER BY billingcountry DESC
+        ,billingstate;
+
+Pobierze krotki z wyswietlonymi atrybutami x,y (wyswielone jako unikalne pary x|y)
+ z tabeli invoice gdzie x jest sortowane malejaco a y roznaco
+
+
+
+
 
 
  */
