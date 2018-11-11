@@ -8670,7 +8670,8 @@ Serwer interpretuje zapytanie i pobiera lub zapisuje dane na dysku serwera
 Dane przekazywane sa zgodnie z protokolem np JDBC
 
 
-Encja - rodzaj obiektu w bazie danych jej odpowiednikiem w programowaniu jest klasa
+Encja - rodzaj obiektu (krotki) w bazie danych jej odpowiednikiem w programowaniu
+         jest klasa
 
 
 Atrybut - wlasciwosc encji (pole) ktore ma swoj typ, maja one swoje odpowiedniki z
