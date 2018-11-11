@@ -8739,15 +8739,17 @@ SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
 
 
 
-SQL - Structured Query Language
+----SQL - Structured Query Language----
 
 Jest to jezyk zapytan realizujacy dostep do bazy danych
 Mozemy dzieki niemu pobierac i przetwarzac dane zapisane w bazie danych
 Jest to jezyk deklaratywny (co chcemy zrobic a nie jak)
 Wielkosc liter w zapytaniach nie ma znaczenia i zalecena jest aby pisanie slow
  kluczowych jezyka SQL wielkimmi literami
+
 Przykladowe zapytanie :
     SELECT * FROM genere WHERE genereid = 1;
+
 
 Dzieli sie on na rozne grupy rodzajow zapytan:
 - DQL (Data Query Language)
@@ -8768,8 +8770,17 @@ TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie tra
         transakcji SAVEPOINT
 
 
+Lista podstawowych koment
 
-OBSLUGA SQLite
+SELECT * lub x,y
+FROM nazwaRleacji
+WHERE / x AND y / x OR y /x BETWEEN y AND z /x LIKE '%e%%x' ESCAPE 'e' (escape odcjonalne)
+      x LIKE '%''%' (dla ') / x IS NULL / x IS NOT NULL
+      / x IN ('CA', 'TX') (x ma wartosc CA lub TX)
+
+
+
+----OBSLUGA SQLite----
 
 Nalezy pobrac klienta sqlite-tools
 
@@ -8788,26 +8799,30 @@ KOMENDY:
 
 
 
-TYPY W SQL
+----TYPY W SQL----
 
 DATE - data
 DATETIME - data i czas
+
 INTEGER - liczby calkowite
 NUMERIC(x, y) - liczba rzeczywista z iloscia x cyfr przed przecinkiem i y po
+
 NVARCHAR(x) - lancuch znakow o maksymalnej dlugosci x
 TEXT - lancuch bez okreslenej dlugosci
+
 BOOLEAN - wartosc logiczne
+
 BLOB - dane binarne (binary large object)
 
 Wartosc NULL nie jest rowna pustej wartosci lancucha znakowego
 
 
 
-SELECT - SQL
+----SELECT - SQL----
 
 SELECT - wybiera kolumny (atrybuty) z tableli jakie beda mialy wyswietlone krotki
 FROM - wybiera tabele po nazwie
-WHERE - filtruje wiersze
+WHERE - filtruje wiersze (krotki) jakie maja byc pobrane
 
 Instrukcje wykonane pomiedzy AND wykonaja sie wczesniej niz instrukcje pomiedzy OR
 Instrukcje NOT maja wiekszy priorytet niz AND i OR
@@ -8841,7 +8856,7 @@ SELECT billingcity, billingcountry
 
 
 
-WHERE - SQL
+----WHERE - SQL----
 
 Uzywam w:
 -SELECT
