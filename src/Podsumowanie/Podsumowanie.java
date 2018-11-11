@@ -8690,7 +8690,7 @@ Sa tez rodzaje atrybutow ktore nie maja swojego odpowiednika w programowani np:
 
 Krotka - zbior wszystkich atrybutow w kolumnie tabeli (relacji), odpowiednik obiektu,
           kazdy wiersz w tabeli to inna krotka, kazda posiada unikalna wartosc
-          atrybutu Id numerowanego od 1
+          atrybutu Id numerowanego od 1 (klucz glowny)
 
 
 Relacja - zbior krotek, tabela, nazywa sie jak nazwa encji w liczbie mnogiej np: firmy
