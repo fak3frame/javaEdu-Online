@@ -8777,6 +8777,8 @@ FROM nazwaRleacji
 WHERE / x AND y / x OR y /x BETWEEN y AND z /x LIKE '%e%%x' ESCAPE 'e' (escape odcjonalne)
       x LIKE '%''%' (dla ') / x IS NULL / x IS NOT NULL
       / x IN ('CA', 'TX') (x ma wartosc CA lub TX)
+ORDER BY
+LIMIT
 
 
 
@@ -9027,6 +9029,66 @@ zwróci imiona pracowników z tabeli employee, które dotyczą pracowników urod
 SELECT firstname
   FROM employee
   WHERE birthdate BETWEEN '1960-' AND '1970-';
+
+
+
+----LIMIT----
+
+SELECT *
+  FROM genre
+  LIMIT 5;
+
+
+Dodtkowo moge dac OFFSET ktory pominie okreslona liczbe wynikow od poczatku liczac
+
+SELECT *
+  FROM genre
+ LIMIT 5 OFFSET 10;
+
+
+----DISTINCT----
+
+DISTINCT x,y,z po SELECT pozwala pokazac atrybuty krotek bez duplikatow
+
+SELECT DISTINCT billingcountry
+  FROM invoice;
+
+To standardowo pokazaloby powielone kraje
+Jesli dam kilka atrubutow to unikalnosc bedzie wyswietlona jako para oddzielona |
+
+SELECT DISTINCT billingcountry
+      ,billingcity
+  FROM invoice;
+
+USA|Boston
+Germany|Frankfurt
+Germany|Berlin
+
+
+----SORTOWANIE----
+
+Do sortowania uzywam komendy ORDER BY oraz okreslam czy ma byc rosnaca
+ czy malejaca
+
+ASC po nazwie pola okresla rosnaco
+
+SELECT name
+    FROM genre
+    ORDER BY name ASC;
+
+Lecz moze zostac ono pomieniete
+
+  SELECT name
+    FROM genre
+    ORDER BY name;
+
+
+Moge odwrocic sortowanie dodajac po nawie pola DESC
+
+SELECT name
+    FROM genre
+    ORDER BY name DESC;
+
 
 
 
