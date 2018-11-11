@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 215">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 217">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,14 +138,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="46677" />
-          <entry key="txt" value="112" />
+          <entry key="java" value="47298" />
+          <entry key="txt" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="46677" />
-          <entry key="PLAIN_TEXT" value="112" />
+          <entry key="JAVA" value="47298" />
+          <entry key="PLAIN_TEXT" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -166,8 +165,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="9078" column="4" selection-start-line="9078" selection-start-column="4" selection-end-line="9078" selection-end-column="4" />
+            <state relative-caret-position="605">
+              <caret line="9104" lean-forward="true" selection-start-line="9104" selection-end-line="9104" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -521,20 +520,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01421" summary="PODSUMOWANIE 161">
-      <created>1541253611375</created>
-      <option name="number" value="01421" />
-      <option name="presentableId" value="LOCAL-01421" />
-      <option name="project" value="LOCAL" />
-      <updated>1541253611375</updated>
-    </task>
-    <task id="LOCAL-01422" summary="PODSUMOWANIE 162">
-      <created>1541255480151</created>
-      <option name="number" value="01422" />
-      <option name="presentableId" value="LOCAL-01422" />
-      <option name="project" value="LOCAL" />
-      <updated>1541255480151</updated>
-    </task>
     <task id="LOCAL-01423" summary="PODSUMOWANIE 163">
       <created>1541256235699</created>
       <option name="number" value="01423" />
@@ -864,7 +849,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541956096468</updated>
     </task>
-    <option name="localTasksCounter" value="1470" />
+    <task id="LOCAL-01470" summary="PODSUMOWANIE 216">
+      <created>1541957244428</created>
+      <option name="number" value="01470" />
+      <option name="presentableId" value="LOCAL-01470" />
+      <option name="project" value="LOCAL" />
+      <updated>1541957244428</updated>
+    </task>
+    <task id="LOCAL-01471" summary="PODSUMOWANIE 217">
+      <created>1541957514943</created>
+      <option name="number" value="01471" />
+      <option name="presentableId" value="LOCAL-01471" />
+      <option name="project" value="LOCAL" />
+      <updated>1541957514943</updated>
+    </task>
+    <option name="localTasksCounter" value="1472" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -945,8 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 191" />
-    <MESSAGE value="PODSUMOWANIE 192" />
     <MESSAGE value="PODSUMOWANIE 193" />
     <MESSAGE value="PODSUMOWANIE 194" />
     <MESSAGE value="PODSUMOWANIE 195" />
@@ -970,7 +967,9 @@
     <MESSAGE value="PODSUMOWANIE 213" />
     <MESSAGE value="PODSUMOWANIE 214" />
     <MESSAGE value="PODSUMOWANIE 215" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 215" />
+    <MESSAGE value="PODSUMOWANIE 216" />
+    <MESSAGE value="PODSUMOWANIE 217" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 217" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1195,8 +1194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="9078" column="4" selection-start-line="9078" selection-start-column="4" selection-end-line="9078" selection-end-column="4" />
+        <state relative-caret-position="605">
+          <caret line="9104" lean-forward="true" selection-start-line="9104" selection-end-line="9104" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

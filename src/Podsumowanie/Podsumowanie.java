@@ -8797,7 +8797,14 @@ aby otworzyc baze danych uruchamiam sqlite.exe i uzywam komendy
 
 KOMENDY:
 .tables - wyswietlenie listy tabel
+
 .schema NAZWATABELI - schemat tabeli (nazwa, typ i wlasciwosci atrybutow)
+
+.headers on - wlacza wyswietlanie nazwy atrybutu
+GenreId|Name
+1|Rock
+2|Jazz
+
 
 
 
@@ -9101,6 +9108,14 @@ SELECT DISTINCT billingcountry
 
 Pobierze krotki z wyswietlonymi atrybutami x,y (wyswielone jako unikalne pary x|y)
  z tabeli invoice gdzie x jest sortowane malejaco a y roznaco
+
+
+Moge posortowac wg atrybutu ktory nie zostanie wyswietlony
+
+SELECT DISTINCT billingcountry
+    FROM invoice
+    ORDER BY billingcity;
+
 
 
 
