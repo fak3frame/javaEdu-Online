@@ -8998,30 +8998,35 @@ SELECT *
 
 
 
-1
+ZADANIA:
+
+zwróci wszystkie wiersze z tabeli track, dla których: unitprice jest mniejsze niż 1
+ i znak % zawarty jest w kolumnie name oraz kolumna name kończy się na e
+
 SELECT *
-FROM track
-WHERE unitprice < 1
-AND name LIKE '%e%%' ESCAPE 'e'
-AND name LIKE '%e'
+  FROM track
+  WHERE unitprice < 1 AND name LIKE '%x%%e' ESCAPE 'x';
 
-2
-SELECT *
-FROM invoice
-WHERE billingstate IS NOT NULL
-AND billingstate != 'USA'
 
-3
-SELECT *
-FROM invoice
-WHERE country IN('pl', 'cz', 'hu')
-AND billing > 10;
+zwróci wszystkie wiersze z tabeli invoice, które mają uzupełnioną kolumnę billingstate
+ i nie są ze Stanów Zjednoczonych
 
-4
-SELECT name
-FROM employee
-WHERE dateofbitrh BETWEEN "1960-01-01" AND
+ SELECT *
+  FROM invoice
+  WHERE billingstate IS NOT NULL AND billingcountry != 'USA';
 
+
+zwróci wszystkie wiersze z tabeli invoice, które dotyczą Polski, Czech albo Węgier dla
+ których wartość faktury przekracza 10,
+ SELECT *
+  FROM invoice
+  WHERE billingcountry IN ('Poland', 'Czech Republic', 'Hungary') AND total > 10;
+
+
+zwróci imiona pracowników z tabeli employee, które dotyczą pracowników urodzonych w latach 60.
+SELECT firstname
+  FROM employee
+  WHERE birthdate BETWEEN '1960-' AND '1970-';
 
 
 
