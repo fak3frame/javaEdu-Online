@@ -8688,12 +8688,14 @@ Sa tez rodzaje atrybutow ktore nie maja swojego odpowiednika w programowani np:
 - polygon
 
 
-Krotka - zbior atrybutow, odpowiednik obiektu, wiersz w tabeli gdzie kazdym
-          wierszem jest inny atrybut
+Krotka - zbior wszystkich atrybutow w kolumnie tabeli (relacji), odpowiednik obiektu,
+          kazdy wiersz w tabeli to inna krotka, kazda posiada unikalna wartosc
+          atrybutu Id numerowanego od 1
 
 
 Relacja - zbior krotek, tabela, nazywa sie jak nazwa encji w liczbie mnogiej np: firmy
             Relacja to takze okreslenie zaleznosci pomiedzy tabelami np jeden do wielu
+
 
 W modelu relacyjnym kazda krotka jest unikalna ale SQL pozwala na duplikaty wierszy
  w tabeli
