@@ -9304,6 +9304,8 @@ Australia 13.86
 
 Bez grupowania pokazaloby by tylko 1 wiersz z maksymalna wartoscia dla kraju ktory
  go ma -> Czech Republic 25.86
+UWAGA w przypadku wyswietlenia kilku kolumna (SELECT x,y) w innych bazach danych
+ powinno byc grupowanie (GROUP BY)
 
 
 Moge grupowac wiele kolumn:
