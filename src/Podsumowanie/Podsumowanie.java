@@ -9193,9 +9193,10 @@ ORDER BY price
 LIMIT 5
 
 
-zwróci unikalną listę dwudziestu kompozytorów których ścieżki kosztują
+zwróci unikalną listę dwudziestu kompozytorów (artist) których ścieżki kosztują
  mniej niż 2$ posortowanych malejąco według identyfikatora gatunku
  (kolumna genreid) i rosnąco według rozmiaru (kolumna bytes),
+
 
 SELECT DISTINCT composer
 FROM artist
@@ -9209,14 +9210,17 @@ zwróci dwie kolumny. Pierwsza z nich powinna zawierać ścieżki droższe niż 
  liczbę bajtów. Wynik powinien zawierać dziesięć wierszy i być posortowany
  rosnąco po liczbie bajtów
 
-SELECT name AS 'magic thingy', bytes
-FROM track
-WHERE price > 1
-UNION ALL
-SELECT composer, bytes
-FROM track
-ORDER BY bytes
-LIMIT 10;
+SELECT name AS 'magic thingy'
+        ,bytes
+    FROM track
+   WHERE unitprice > 1
+   UNION
+  SELECT composer
+        ,bytes
+    FROM track
+   WHERE composer IS NOT NULL
+ORDER BY bytes ASC
+   LIMIT 10;
 
 
 zwróci piątą stronę z fakturami (tabela invoice) zakładając, że na stronie
@@ -9226,7 +9230,6 @@ SELECT *
 FROM invoice
 ORDER BY invoiceid
 LIMIT 10 OFFSET 40;
-
 
 
 
