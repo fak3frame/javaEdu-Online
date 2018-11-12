@@ -9156,7 +9156,7 @@ Alternative & Punk
 Amsterdam
 Berlin
 
-Zapytanie wyswietli wyniki jeden SELECT pod drugim
+Zapytanie wyswietli wyniki jeden SELECT pod drugim BEZ SORTOWANIA
 
 
 SELECT name AS xxx
