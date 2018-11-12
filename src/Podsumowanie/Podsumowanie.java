@@ -8727,11 +8727,11 @@ Bazy danych moga zawierac takze obiekty takie jak indeksy (index), ograniczenia 
 
 Rodzaje powiazan (zaleznosci)
 - jeden do jednego np. samochod - numer rejestracyjny
-- jeden do wilu np. prudcent - towar
+- jeden do wilu np. prudcent - samochod
 - wiele do wielu np. produkt - miejsce sprzedazy
 
 Zaleznosc wiele do wielu potrzebna jest dodatkowa tabela ktora nazywa sie po nazwach
- tabel (relacji) np. produkt_miejsce sprzedazy i zawiera ona atrybut klucza
+ tabel (relacji) np. produkt_miejsce_sprzedazy i zawiera ona atrybut klucza
  obcego tabel ktore ma powiazac o wartosci ich klucza glownego np. ProduktId(FK),
  Miejsce_sprzedazyID (FK) - jest to klucz zlozony
 
