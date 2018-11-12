@@ -9352,7 +9352,36 @@ SELECT COUNT(DISTINCT customerid)
 59 - liczba wierszy customerid bez null - lista wartosci (powtorzenia pominiete)
 
 
+----FUNKCJA HAVING----
 
+SELECT billingcountry
+        ,SUM(total)
+ FROM invoice
+ GROUP BY billingcountry;
+
+sumaryczny przychód dla poszczególnych krajów (jest kilka wpisow z tego samego
+ kraju i sumuje ich wartosci wyswietlajac w jednej kolumnie uniklany kraj i w
+ drugiej sume jego wartosci z total)
+
+
+SELECT billingcountry
+        ,SUM(total) AS summed_total
+ FROM invoice
+ GROUP BY billingcountry
+ HAVING summed_total > 100;
+
+sumaryczny przychód dla krajow lecz pokaz tylko tych co maja wiecej niz 100
+
+
+Klauzula WHERE filtruje pojedynczy wiersz a HAVING filtruje grupowane wartosci!
+
+
+SELECT billingcountry
+        ,SUM(total) AS summed_total
+ FROM invoice
+ WHERE billingcity != 'Ottawa'
+ GROUP BY billingcountry
+ HAVING summed_total > 100;
 
 
 
