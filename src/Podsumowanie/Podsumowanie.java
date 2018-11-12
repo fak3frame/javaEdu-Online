@@ -9045,6 +9045,7 @@ zwróci wszystkie wiersze z tabeli invoice, które mają uzupełnioną kolumnę 
 
 zwróci wszystkie wiersze z tabeli invoice, które dotyczą Polski, Czech albo Węgier dla
  których wartość faktury przekracza 10,
+
  SELECT *
   FROM invoice
   WHERE billingcountry IN ('Poland', 'Czech Republic', 'Hungary') AND total > 10;
