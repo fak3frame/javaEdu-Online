@@ -8848,8 +8848,10 @@ FROM genere
 WHERE name = 'Rock' AND genreid < 20
 OR name != 'Pop; AND IS NOT NULL
 
--Pokaz wszystkie atrybuty krotek z tabeli genere ktorych pole name = 'Rock' i pole
- genereid < 20 LUB pole name jest rozne od 'Pop' i nie ma wartosci null
+-Pokaz wszystkie atrybuty krotek (SELECT *) z tabeli genere (FROM genere) ktorych
+ pole name = 'Rock' i pole genereid < 20 (WHERE name = 'Rock' AND genreid < 20)
+ LUB pole name jest rozne od 'Pop' i nie ma wartosci null
+ (OR name != 'Pop; AND IS NOT NULL)
 
 SELECT billingcountry
  FROM invoice
