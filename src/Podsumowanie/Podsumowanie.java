@@ -9234,7 +9234,14 @@ LIMIT 10 OFFSET 40;
 
 ----FUNKCJE----
 
-LENGTH(dlugosc)
+ABS(x) - wartosc bezwzgledna z x
+LENGTH(x) - dlugosc lancucha znakow
+LOWER(x) - zwraca przyjety lancuch z wszystkimi malymi literami
+UPPER(x) - analogicznie na duze litery
+RANDOM - zwraca losowa liczbe calkowita
+SUBSTR(x, y, z) - pobiera ciag znakow x i wyswietla od y znaku do z (z opcjonalne)
+TRIM(x) - usuwa spacje z obu stron x
+
 
 
 SELECT LENGTH('abcd') //4
@@ -9274,6 +9281,13 @@ SELECT DISTINCT LENGTH (billingstate) AS len
 FROM invoice
 ORDER BY len
 
+
+Laczenie funkcji
+
+SELECT MAX(LENGTH(billingstate)) //max z wszystkich parametrow wybiera najwiekszy
+FROM invoice
+
+6
 
 
 
