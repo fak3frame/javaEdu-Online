@@ -9244,6 +9244,8 @@ TRIM(x) - usuwa spacje z obu stron x
 
 
 
+
+
 SELECT LENGTH('abcd') //4
 
 
@@ -9322,6 +9324,33 @@ Australia       NSW           13.86
 Austria                       18.86
 Belgium                       13.86
 Brazil          DF            13.86
+
+
+----FUNKCJE GRUPUJACE----
+
+AVG(elementy) - zwraca srednia wartosc z elementow
+MIN(elementy) - zwraca minimalna wartosc z elementow
+SUM(elementy) - zwraca sume elementow, jesli wszystkie elementy to NULL to zwroci NULL
+TOTAL(elementy) - jak SUM lecz TOTAL jesli wszystko bedzie NULL zwroci 0
+COUNT(elementy) - zwraca liczbe elementow ktore nie maja wartosc null
+
+SELECT COUNT(customerid)
+  FROM invoice;
+
+412 - liczba wierszy customerid bez NULL
+
+
+SELECT COUNT(*)
+  FROM invoice;
+
+412 - liczba wszystkich wierszy tabeli
+
+
+SELECT COUNT(DISTINCT customerid)
+  FROM invoice;
+
+59 - liczba wierszy customerid bez null - lista wartosci (powtorzenia pominiete)
+
 
 
 
