@@ -8772,7 +8772,7 @@ TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie tra
         transakcji SAVEPOINT
 
 
-Lista podstawowych koment
+Lista podstawowych komend
 
 SELECT * lub x,y.. / SELECT DISTINCT * lub x,y.. (unikalne wyniki, dla kilku atrybutow unikalne
  pary x|y)
