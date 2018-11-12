@@ -9284,6 +9284,14 @@ FROM invoice
 ORDER BY len
 
 
+RANDOM uzywam w order by
+
+SELECT *
+ FROM genre
+ ORDER BY RANDOM()
+ LIMIT 5;
+
+
 Laczenie funkcji
 
 SELECT MAX(LENGTH(billingstate)) //max z wszystkich parametrow wybiera najwiekszy
@@ -9376,6 +9384,10 @@ sumaryczny przychód dla krajow lecz pokaz tylko tych co maja wiecej niz 100
 Klauzula WHERE filtruje pojedynczy wiersz a HAVING filtruje grupowane wartosci!
 
 
+Pokaz dwie kolumny w ktorej pierwsza zawiera kraje - billingcountry
+ (bez miasta - billingcity Ottawa) a druga sume wartosci dla kazdego z nich
+ i tylko tych ktorych suma > 100;
+
 SELECT billingcountry
         ,SUM(total) AS summed_total
  FROM invoice
@@ -9384,7 +9396,62 @@ SELECT billingcountry
  HAVING summed_total > 100;
 
 
+ZADANIA:
 
+średnią, minimalną i maksymalną wartość kolumny total w tabeli invoice
+
+SELECT ABG(total),MIN(total),MAX(total)
+FROM invoice;
+
+
+liczbę wierszy w tabeli invoice w których długość kolumny billingcountry jest
+ większa niż 5
+
+SELECT COUNT(*)
+FROM invoice
+WHERE LENGTH(billingcountry) > 5
+
+
+liczbę unikalnych dat (kolumna invoicedate), w których wystawiono faktury
+ (tabela invoice)
+
+SELECT COUNT(DISTINCT invoicedate)
+FROM invoice
+
+
+daty (kolumna invoicedate), w których wystawiono co najmniej dwie faktury
+ (tabela invoice)
+
+SELECT invoicedate
+FROM invoice
+GROUP BY invoicedate
+HAVING count(*) >= 2;
+
+
+pięć losowych wierszy z tabeli genre
+
+SELECT RANDOM (*) //ZLE
+FROM genere
+LIMIT 5;
+
+SELECT *
+ FROM genre
+ ORDER BY RANDOM()
+ LIMIT 5;
+
+
+miesięczną (kolumna invoicedate) sumę faktur (kolumna total w tabeli invoice)
+ od kupujących z identyfikatorem (kolumna customerid) mniejszym niż 30, wynik
+ powinien być posortowany po miesięcznej sumie faktur i zawierać jedynie te
+ miesiące dla których suma jest większa od 40
+
+SELECT SUBSTR(invoicedate, 0, 8) AS date
+       , SUM(total) AS sum
+FROM invoice
+WHERE customerid < 30
+GROUP BY date
+HAVING sum > 40
+ORDER BY sum;
 
 
  */
