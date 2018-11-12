@@ -9232,6 +9232,50 @@ ORDER BY invoiceid
 LIMIT 10 OFFSET 40;
 
 
+----FUNKCJE----
+
+LENGTH(dlugosc)
+
+
+SELECT LENGTH('abcd') //4
+
+
+SELECET LENGTH (billingstate)
+FROM invoice
+LIMIT 5
+
+NULL //pokaze jako puste
+NULL
+2 //dlugosc wiersza 3
+2
+2
+
+
+Z unikalnymi wartosciami (null bedzie wliczany)
+
+SELECT DISTINCT LENGTH (billingstate)
+FROM invoice
+
+.
+2
+6
+3
+
+
+Z sortowaniem:
+
+SELECT DISTINCT LENGTH (billingstate)
+FROM invoice
+ORDER BY LENGTH (billing state)
+
+czytelniej z sortowaniem z uzyciem nazwy aliasu
+
+SELECT DISTINCT LENGTH (billingstate) AS len
+FROM invoice
+ORDER BY len
+
+
+
 
 
 
