@@ -9052,6 +9052,7 @@ zwróci wszystkie wiersze z tabeli invoice, które dotyczą Polski, Czech albo W
 
 
 zwróci imiona pracowników z tabeli employee, które dotyczą pracowników urodzonych w latach 60.
+
 SELECT firstname
   FROM employee
   WHERE birthdate BETWEEN '1960-' AND '1970-';
