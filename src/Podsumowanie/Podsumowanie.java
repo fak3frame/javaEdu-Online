@@ -9291,6 +9291,40 @@ FROM invoice
 
 
 
+----Grupowanie----
+
+SELECT billingcountry
+        ,MAX(total)
+ FROM invoice
+ GROUP BY billingcountry
+ LIMIT 2;
+
+Argentina 13.86
+Australia 13.86
+
+Bez grupowania pokazaloby by tylko 1 wiersz z maksymalna wartoscia dla kraju ktory
+ go ma -> Czech Republic 25.86
+
+
+Moge grupowac wiele kolumn:
+SELECT billingcountry
+        ,billingstate
+        ,MAX(total)
+ FROM invoice
+ GROUP BY billingcountry
+        ,billingstate
+ LIMIT 5;
+
+Argentina                     13.86
+Australia       NSW           13.86
+Austria                       18.86
+Belgium                       13.86
+Brazil          DF            13.86
+
+
+
+
+
 
 
  */
