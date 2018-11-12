@@ -330,15 +330,21 @@ public class Podsumowanie {
         Sa to zasady projektowania aplikacji
 
         S - Single Rensponsibility Principle (SRP) zasada jednej odpowidzialnosci
+            Klasa powinna realizowac jedna funkcjonalnosc
 
         O - Open Closed Desig Principle (OCD) zasada otwarty-zamkniety
+            Otwarty na rozszerzenia, zamkniety na modyfikacje
 
         L - Liskov Substitution Principle (LSP) zasada podstawienia Liskov
+            Funkcje przyjmujace jako argument klasy bazowe musza tez umiec
+             oblsluzyc obiekty klas pochodnych
 
         I - Interface Segregation Principle (ISP) zasada segregacji interfejsow
+            Powinno sie przygotowac kilka specyficznych inrefrejsow niz jeden
+             zbiorczy
 
         D - Dependency Inversion Principle (DIP) zasada osrocenia zaleznosci
-
+            Moduły wysokiego poziomu nie powinny zależeć od modułów niskiego poziomu
 
         Dependency Inversion Principle - Moduły wysokiego poziomu nie powinny zależeć
          od modułów niskiego poziomu. Oba powinny zależeć od abstrakcji.
@@ -1889,7 +1895,7 @@ class Wew4{
           innej klasy np
          class Czlowiek{
             public Zwierze zwierze;
-            public Budynek b = new Budynek;
+            public Budynek b = new Budynek();
          }
 
 
