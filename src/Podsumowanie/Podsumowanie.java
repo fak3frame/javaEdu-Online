@@ -8703,7 +8703,7 @@ W modelu relacyjnym kazda krotka jest unikalna ale SQL pozwala na duplikaty wier
  w tabeli
 
 
-Klucz glowny - dodatkowy atrybut(kolumna) relacji (tabeli) ktory jest tworzony
+Klucz glowny -  atrybut(kolumna) relacji (tabeli) ktory jest tworzony
                 dla krotek, jest on UNIKALNY, w wiekszosci przypadkow relacje maja
                 taki atrybut i jest on w postaci liczby numerowanej od 1
                 (primary key) nazwa jest brana z nazwy encji np: AlbumId
