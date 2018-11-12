@@ -8778,7 +8778,7 @@ SELECT * lub x,y.. / SELECT DISTINCT * lub x,y.. (unikalne wyniki, dla kilku atr
  pary x|y)
 FROM nazwaRleacji
 WHERE / xWARNEK AND yxWARNEK / xxWARNEK OR yxWARNEK
-      /x BETWEEN y AND z /x LIKE '%e%%x' ESCAPE 'e' (escape odcjonalne)
+      /x BETWEEN y AND z /x LIKE '%e%%x' ESCAPE 'e' (escape odcjonalne dla '%')
       x LIKE '%''%' (dla ') / x IS NULL / x IS NOT NULL
       / x IN ('CA', 'TX') (x ma wartosc CA lub TX)
 ORDER BY x ASC lub x ASC,y DESC... (ASC sortowanie rosnaco - standardowe dzialanie order by wiec
@@ -8829,7 +8829,7 @@ BOOLEAN - wartosc logiczne
 
 BLOB - dane binarne (binary large object)
 
-Wartosc NULL nie jest rowna pustej wartosci lancucha znakowego
+Wartosc NULL nie jest rowna pustej wartosci lancucha znakowego!
 
 
 
