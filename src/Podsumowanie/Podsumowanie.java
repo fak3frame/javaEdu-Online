@@ -8775,7 +8775,7 @@ TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie tra
 Lista podstawowych komend
 
 SELECT * lub x,y.. / SELECT DISTINCT * lub x,y.. (unikalne wyniki, dla kilku atrybutow unikalne
- pary x|y)
+ pary x|y) / x AS nazwaKolumny, y,z
 FROM nazwaRleacji
 WHERE / xWARNEK AND yxWARNEK / xxWARNEK OR yxWARNEK
       /x BETWEEN y AND z /x LIKE '%e%%x' ESCAPE 'e' (escape odcjonalne dla '%')
