@@ -8865,6 +8865,23 @@ Bazy danych ukrywa sposob przechowywania danych
 SQL ukrywa w jako sposob dane sa przetwarzane i zwraca tylko wynik
 
 
+Indeks to specjalna struktura danych mająca na celu zwiększenie prędkości wykonywania
+ operacji na tabeli, jest to pewnego rodzaju spis tresci bazy danych.
+
+CREATE INDEX UsersAgeIndex ON Users (age);
+
+Inteksy pozwalaja na szybsze pobieranie danych ale operacja dodawania (INSTERT) i aktualizacji
+ (UPDATE) staja sie wolniejsze
+
+
+Tworzenie indeksu na kilku kolumnacha
+CREATE INDEX UsersIdAgeIndex ON Users (id,age);
+
+
+Rodzaje zlaczen:
+- wenetrzne - inner join - domyslny typ zlaczen,
+
+
 
 ----SQL - Structured Query Language----
 
@@ -9359,6 +9376,8 @@ LIMIT 10 OFFSET 40;
 
 ----FUNKCJE----
 
+Funkcje agregujace dzialaja na grupie wartosci a nie na pojedynczym polu
+
 ABS(x) - wartosc bezwzgledna z x
 LENGTH(x) - dlugosc lancucha znakow
 LOWER(x) - zwraca przyjety lancuch z wszystkimi malymi literami
@@ -9577,6 +9596,36 @@ WHERE customerid < 30
 GROUP BY date
 HAVING sum > 40
 ORDER BY sum;
+
+
+----INSERT----
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+Nie musze podawac wszystkich kolumn
+
+
+----UPDATE----
+
+Zastapienie/zmiana wartosci
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+
+Moge podac bez Where to wszedzie wstawi wartosc
+
+
+----DELETE----
+
+DELETE FROM Customers
+WHERE CustomerName='Alfreds Futterkiste';
+
+Wpisanie samego DELETE FROM Tabela spowoduje usuniecie wszystkich wierszy
+ z tabeli
+
+
 
 
  */
