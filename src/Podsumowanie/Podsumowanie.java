@@ -345,10 +345,9 @@ public class Podsumowanie {
 
         D - Dependency Inversion Principle (DIP) zasada osrocenia zaleznosci
             Moduły wysokiego poziomu nie powinny zależeć od modułów niskiego poziomu
+            Detale powinny zależeć od abstrakcji a nie odwrtonie.
 
-        Dependency Inversion Principle - Moduły wysokiego poziomu nie powinny zależeć
-         od modułów niskiego poziomu. Oba powinny zależeć od abstrakcji.
-         Abstrakcje nie powinny zależeć od detali. Detale powinny zależeć od abstrakcji.
+        Dependency Inversion Principle -
 
 
 
