@@ -141,6 +141,24 @@ public class Podsumowanie {
         //------------------------------------------------------------------------
         ---------------------------WZORCE PROJEKTOWE------------------------------
 
+        Wzorce kreacyjne:
+        -budowniczy
+        -fabryka
+        -singleton
+
+        Wzorce strukturalne
+        -adapter
+        -dekorator
+        -fasada
+
+        Wzorce czynnościowe
+        -łańcuch odpowiedzialności
+        -iterator
+        -strategia
+        -obserwator
+
+
+
         Model MVC - Model View Controller
 
         Wsorzec dzieli sie na:
@@ -5955,6 +5973,15 @@ class Wew4{
 
 
     //ALGORYTMY:
+
+    //CIAG Fibonacciego
+
+    public static int fib(int n){
+        if ((n==1)||(n==2))
+            return 1;
+        else
+            return fib(n-1)+fib(n-2);
+    }
 
     //Metoda dzielaca liczbe na czesci i pokazujaca ja od tylu
     public void printCharPerLine(int number) {
