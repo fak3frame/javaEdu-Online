@@ -116,6 +116,14 @@ public class Podsumowanie {
         -Meotdy statyczne i podstawowe(default) w interfejsach
 
 
+        Rodzaje testow:
+
+        - Testy jednostkowe - sprawdzenie poprawnosci dzialania pojedynczego fragmentu kodu
+           (mozna wykorzystac biblioteke JUNIT)
+        - Testy integracyjne - weryfikacja dzialania polaczonych elementow aplikacji
+        - Testy akceptacyjne - nie wykrywaja bledu tylko potwierdzaja jakosc oprogramownia
+
+
 
         //------------------------------------------------------------------------
         ---------------------------PROTOKOL HTTP----------------------------------
