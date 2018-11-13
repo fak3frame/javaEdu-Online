@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 245">
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 246">
+      <change afterPath="$PROJECT_DIR$/src/_1_Obiekty/ZadanieRozmowa1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,38 +139,47 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="55987" />
-          <entry key="txt" value="147" />
+          <entry key="java" value="56010" />
+          <entry key="txt" value="148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="55987" />
-          <entry key="PLAIN_TEXT" value="147" />
+          <entry key="JAVA" value="56010" />
+          <entry key="PLAIN_TEXT" value="148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="15" />
+          <entry key="java" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="5958" column="14" selection-start-line="5958" selection-start-column="14" selection-end-line="5958" selection-end-column="14" />
+            <state relative-caret-position="433">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/ZadanieRozmowa1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -233,7 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Gotowe/GotoweMojaNauka/SubjectTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/GotoweMojeNauka/BasketTest.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/Basket.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/Gotowe/BasketTest.java" />
@@ -284,6 +293,7 @@
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja3.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/FabrykaRobotow.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/ZadanieRozmowa1.java" />
       </list>
     </option>
   </component>
@@ -362,7 +372,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Fak3Frame/IdeaProjects/javaEdu-Online/src/_1_Obiekty/FabrykaRobotow.java&#10;O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541256280079" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542122079334" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -519,13 +529,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01451" summary="PODSUMOWANIE 193">
-      <created>1541858619664</created>
-      <option name="number" value="01451" />
-      <option name="presentableId" value="LOCAL-01451" />
-      <option name="project" value="LOCAL" />
-      <updated>1541858619665</updated>
     </task>
     <task id="LOCAL-01452" summary="PODSUMOWANIE 194">
       <created>1541858952296</created>
@@ -863,7 +866,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542121728970</updated>
     </task>
-    <option name="localTasksCounter" value="1500" />
+    <task id="LOCAL-01500" summary="PODSUMOWANIE 246">
+      <created>1542122000714</created>
+      <option name="number" value="01500" />
+      <option name="presentableId" value="LOCAL-01500" />
+      <option name="project" value="LOCAL" />
+      <updated>1542122000716</updated>
+    </task>
+    <option name="localTasksCounter" value="1501" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -944,7 +954,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 221" />
     <MESSAGE value="PODSUMOWANIE 222" />
     <MESSAGE value="PODSUMOWANIE 223" />
     <MESSAGE value="PODSUMOWANIE 224" />
@@ -969,7 +978,8 @@
     <MESSAGE value="PODSUMOWANIE 243" />
     <MESSAGE value="PODSUMOWANIE 244" />
     <MESSAGE value="PODSUMOWANIE 245" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 245" />
+    <MESSAGE value="PODSUMOWANIE 246" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 246" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -988,31 +998,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6182</line>
+          <line>6207</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6181</line>
+          <line>6206</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>8866</line>
+          <line>8891</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9326</line>
+          <line>9351</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9428</line>
+          <line>9453</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
@@ -1020,7 +1030,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/Bank/Java8Collections.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Consumer.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Predicate.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/util/function/Function.java" />
@@ -1212,11 +1221,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="5958" column="14" selection-start-line="5958" selection-start-column="14" selection-end-line="5958" selection-end-column="14" />
+        <state relative-caret-position="433">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/ZadanieRozmowa1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
