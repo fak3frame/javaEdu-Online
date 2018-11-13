@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 248">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 249">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,13 +139,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="57169" />
-          <entry key="txt" value="150" />
+          <entry key="txt" value="151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="57169" />
-          <entry key="PLAIN_TEXT" value="150" />
+          <entry key="PLAIN_TEXT" value="151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -363,7 +362,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Fak3Frame/IdeaProjects/javaEdu-Online/src/_1_Obiekty/FabrykaRobotow.java&#10;O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542126475521" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542126595138" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -520,13 +519,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01454" summary="PODSUMOWANIE 197">
-      <created>1541859510751</created>
-      <option name="number" value="01454" />
-      <option name="presentableId" value="LOCAL-01454" />
-      <option name="project" value="LOCAL" />
-      <updated>1541859510751</updated>
     </task>
     <task id="LOCAL-01455" summary="PODSUMOWANIE 198">
       <created>1541862032740</created>
@@ -864,7 +856,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542122584764</updated>
     </task>
-    <option name="localTasksCounter" value="1503" />
+    <task id="LOCAL-01503" summary="PODSUMOWANIE 249">
+      <created>1542128047739</created>
+      <option name="number" value="01503" />
+      <option name="presentableId" value="LOCAL-01503" />
+      <option name="project" value="LOCAL" />
+      <updated>1542128047739</updated>
+    </task>
+    <option name="localTasksCounter" value="1504" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -945,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 224" />
     <MESSAGE value="PODSUMOWANIE 225" />
     <MESSAGE value="PODSUMOWANIE 226" />
     <MESSAGE value="PODSUMOWANIE 227" />
@@ -970,7 +968,8 @@
     <MESSAGE value="PODSUMOWANIE 246" />
     <MESSAGE value="PODSUMOWANIE 247" />
     <MESSAGE value="PODSUMOWANIE 248" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 248" />
+    <MESSAGE value="PODSUMOWANIE 249" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 249" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
