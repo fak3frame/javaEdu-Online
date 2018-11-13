@@ -345,7 +345,9 @@ public class Podsumowanie {
          bean/y np FakturaDAO.utworzFakture()
 
 
-        ----
+        //------------------------------------------------------------------------
+        --------------------------CLEAN CODE--------------------------------------
+
         SOLID
 
         Sa to zasady projektowania aplikacji
@@ -372,7 +374,14 @@ public class Podsumowanie {
          zmiennych poziomu nizszego tylko interfejsu jaki implementruje klasa
          nizszego posiomu
 
-        Inversion of Control - Odwrocenie kontroli
+        Inversion of Control - Odwrocenie kontroli, np cykl zycia serwletu - to kontener
+         wywoluje odpowiednie metody w odpowiednim czasie a nie ja np metoda init
+
+        Dependency Injection - wstrzykiwanie zaleznosci - jest to mechanizm pozwalajacy
+         na dostarczenie odpwiednich zaleznosci na potrzeby dzialania obiektu.
+         Moze to byc realizowane za pomoca adnotacji, seterow czy mechanizmow refleksji
+        Bez wstrzykiwania wszystkie zaleznosci trorzone sa przez obiekt przec co testownie
+         jest trudne
 
 
 
@@ -638,8 +647,12 @@ public class Podsumowanie {
 
         Serwlet to klasa, która implementuje interfejs Servlet. Instancje tej klasy tworzone są
          przez kontener serwletów (na przykład Jetty). Instancje te wiedzą jak odpowiadać na żądania,
-         które dostają od klienta. kontener zarządza cyklem życia serwletu używając metod z tego
-         interfejsu.
+         które dostają od klienta.
+
+        Kontener zarządza cyklem życia serwletu używając metod z tego interfejsu. Wyszukuje serwletow
+         w aplikacji i tworzy ich instancje - kontener moze wyszukac je takze za pomoca pliku XML
+         (potrzebna adnotacja)
+        Kontener takze zarzadza zyciem komponentow (np Listnery)
 
         Do obsługi żądania klienta służy metoda service. Metoda ta przyjmuje jako parametry żądanie
          i odpowiedź. Na podstawie parametrów żądania odpowiednio modyfikuje przekazany argument
@@ -662,6 +675,23 @@ public class Podsumowanie {
 
         - Obsluga zadan - kontener uzywa instancji do obslugi zadan czyli wywolania metody
            service
+
+        - Zniszczenie serwletu - przed zniszczeniem wywolywana jest metoda destroy ktora moze
+           np sluzyc do zamkniecia polaczenia z baza danyc, kontener decyduje jak dlugo zyje
+           serwlet
+
+
+        Plik WAR zawiera:
+
+        - serwlety
+        - strony jsp
+        - inne klasy Java
+        - zeleznosci aplikacji wbowej
+        - statyczne pliki (np html/css)
+        - pliki konfiguracyjne aplikacji webowej
+
+
+
 
 
 
