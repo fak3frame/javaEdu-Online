@@ -118,6 +118,27 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
+        ---------------------------PROTOKOL HTTP----------------------------------
+
+        Protokół HTTP jest oparty na komunikacji pomiędzy klientem a serwerem.
+        Klientem może być przegladarka internetowa a Serwerem aplikacja webowa
+         ktora odpowiada na zadania klienta
+
+        Zadanie (request) oraz odpowiedz (respones) moze zawierac naglowek - jest
+         to czesc infromacji np rodzaj przegladarki oraz tresc - moze to byc
+         np zawartosc strony internetowej
+
+        Protokol HTTP operty jest o "czasowniki HTTP" okreslajace rodzaj zadania
+         jakie wysyla klient np GET POST PUT DELETE
+
+        Najpopulrniejszymi rodzajami zapytania jest POST (np informacje wyslane w
+         formularzu) i GET (wpisanie adrsu strony URL i proba otworzenia strony)
+
+
+
+
+
+        //------------------------------------------------------------------------
         ---------------------------WZORCE PROJEKTOWE------------------------------
 
         Model MVC - Model View Controller
@@ -343,11 +364,15 @@ public class Podsumowanie {
             Powinno sie przygotowac kilka specyficznych inrefrejsow niz jeden
              zbiorczy
 
-        D - Dependency Inversion Principle (DIP) zasada osrocenia zaleznosci
+        D - Dependency Inversion Principle (DIP) zasada odwrocenia zaleznosci
             Moduły wysokiego poziomu nie powinny zależeć od modułów niskiego poziomu
             Detale powinny zależeć od abstrakcji a nie odwrtonie.
 
-        Dependency Inversion Principle -
+        Dependency Inversion Principle - Klasa niskiego poziomu nie powinna miec
+         zmiennych poziomu nizszego tylko interfejsu jaki implementruje klasa
+         nizszego posiomu
+
+        Inversion of Control - Odwrocenie kontroli
 
 
 
@@ -608,6 +633,36 @@ public class Podsumowanie {
            Zapytania JPQL przechowujemy w adnotacji @NamedQuery, która zawiera się w @NamedQueries
             i jest przechowywana w danej encji, którą ma zwracać zapytanie.
            Zapytania wywoluje przy pomocy EntityManagera z uzyciem metody createNamedQuery().
+
+
+
+        Serwlet to klasa, która implementuje interfejs Servlet. Instancje tej klasy tworzone są
+         przez kontener serwletów (na przykład Jetty). Instancje te wiedzą jak odpowiadać na żądania,
+         które dostają od klienta. kontener zarządza cyklem życia serwletu używając metod z tego
+         interfejsu.
+
+        Do obsługi żądania klienta służy metoda service. Metoda ta przyjmuje jako parametry żądanie
+         i odpowiedź. Na podstawie parametrów żądania odpowiednio modyfikuje przekazany argument
+         odpowiedzi.
+
+        Klasami upraszczajacymi tworzenie serwletow sa GenericServlet i HttpServlet - wazniejsza
+        Mozna dziedziczyc po tych klasach nie trzeba pisac metody service tylko np jesli
+         chce obluzyc zadanie GET pisze metode doGet (sa tez doPost, doPut)
+
+        W interfejsie serwletów znajdują się też metody, które są wykorzystywane w trakcie cyklu
+         życia serwletu
+
+
+        Cykle zycia Serwletu:
+
+        - Kontener szuka klas serwletow i tworzy ich instancje
+
+        - Inicjalizacja serwletu - kontener nie przekazuje paramtrow do konstruktora tych klas
+           Metoda init jest wywolywana przez kontener o inicjalizacji stanu
+
+        - Obsluga zadan - kontener uzywa instancji do obslugi zadan czyli wywolania metody
+           service
+
 
 
 
