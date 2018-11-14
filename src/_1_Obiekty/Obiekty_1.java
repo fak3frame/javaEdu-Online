@@ -428,6 +428,7 @@ class Pielegniarka extends Pracownik2{
     }
 }
 class Lekarz extends Pracownik2{
+
     private double premia;
 
     public Lekarz(){

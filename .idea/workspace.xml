@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 249">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 250">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -139,13 +139,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="57169" />
-          <entry key="txt" value="151" />
+          <entry key="txt" value="154" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="57169" />
-          <entry key="PLAIN_TEXT" value="151" />
+          <entry key="PLAIN_TEXT" value="154" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -165,7 +165,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
+            <state relative-caret-position="527">
               <caret line="9627" lean-forward="true" selection-start-line="9627" selection-end-line="9627" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -362,7 +362,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Fak3Frame/IdeaProjects/javaEdu-Online/src/_1_Obiekty/FabrykaRobotow.java&#10;O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542126595138" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542236198113" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -519,13 +519,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01455" summary="PODSUMOWANIE 198">
-      <created>1541862032740</created>
-      <option name="number" value="01455" />
-      <option name="presentableId" value="LOCAL-01455" />
-      <option name="project" value="LOCAL" />
-      <updated>1541862032740</updated>
     </task>
     <task id="LOCAL-01456" summary="PODSUMOWANIE 199">
       <created>1541864515849</created>
@@ -863,7 +856,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542128047739</updated>
     </task>
-    <option name="localTasksCounter" value="1504" />
+    <task id="LOCAL-01504" summary="PODSUMOWANIE 250">
+      <created>1542128065527</created>
+      <option name="number" value="01504" />
+      <option name="presentableId" value="LOCAL-01504" />
+      <option name="project" value="LOCAL" />
+      <updated>1542128065527</updated>
+    </task>
+    <option name="localTasksCounter" value="1505" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -944,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 225" />
     <MESSAGE value="PODSUMOWANIE 226" />
     <MESSAGE value="PODSUMOWANIE 227" />
     <MESSAGE value="PODSUMOWANIE 228" />
@@ -969,7 +968,8 @@
     <MESSAGE value="PODSUMOWANIE 247" />
     <MESSAGE value="PODSUMOWANIE 248" />
     <MESSAGE value="PODSUMOWANIE 249" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 249" />
+    <MESSAGE value="PODSUMOWANIE 250" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 250" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1222,7 +1222,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
+        <state relative-caret-position="527">
           <caret line="9627" lean-forward="true" selection-start-line="9627" selection-end-line="9627" />
           <folding>
             <element signature="imports" expanded="true" />
