@@ -93,6 +93,22 @@ public class Podsumowanie {
         np funkcja liczaca sume elementow tablicy o rozmiarze n
 
 
+        0(log(n))
+        Zlozonosc logarytmiczna, czas rozwiązania zależy od wyniku logarytmu z wielkości
+         danych wejściowych
+        np: Na wejściu programu jest posortowana tablica liczb o długości N. Sprawdź czy
+         liczba x istnieje w tablicy wejściowej. - algorytm przeszukiwania binarnego
+         (dzieli na pol i ustawia max lub min na wartosc srodkowa jesli szukana liczba
+         jest w przedziale przed polowa albo za)
+
+
+        Ο(nlog(n))
+        Złożoność liniowo-logarytmiczna. Czas rozwiązania problemu jest wprost proporcjonalny
+         do iloczynu wielkości danych wejściowych i ich logarytmu
+        np: Na wejściu programu jest tablica liczb. Zwróć tablicę, która będzie zawierała
+         te same elementy, które są w tablicy wejściowej. Tablica wynikowa powinna być
+         posortowana w porządku rosnącym. - algorytm sortowania przez scalania (merge sort)
+
 
 
 
