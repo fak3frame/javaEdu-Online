@@ -11,6 +11,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.*;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -482,15 +483,7 @@ public class Podsumowanie {
 
 
 
-
-
-
-
-
-
-
-
-        //------------------------------------------------------------------------
+    //------------------------------------------------------------------------
         --------------------------SPRING TEORIA ----------------------------------
 
         Bean jest to podstawowy obiekt do przekazywania danych pomiedzy poszczegolnymi
@@ -1228,6 +1221,44 @@ public class Podsumowanie {
 
         integer1.compareTo(integer2);
         //Zwroci 1 gdy integer2 wiekszy, -1 gdy mniejszy i 0 gdy rowny
+
+
+
+        //------------------------------------------------------------------------
+        //------------------------KLASA AtomicInteger-----------------------------
+
+        //java.util.concurrent.atomic
+
+        AtomicInteger atomicInteger = new AtomicInteger(123);
+        AtomicInteger atomicInteger2 = new AtomicInteger();
+        //moze miec pusty konstruktor i zmienna przyjmie 0
+
+        //Metody:
+        int theValue = atomicInteger.get();
+        //pobranie wartosci
+
+        atomicInteger.set(234);
+        //ustawienie wartosci poza konstruktorem
+
+        int expectedValue = 234;
+        int newValue = 222;
+        atomicInteger.compareAndSet(expectedValue, newValue);
+        //jesli wartosc atomicInteger bedzie rowna expectedValue to ustawi newValue
+        // jesli nie - nie zrobi nic
+
+
+        System.out.println("getAndAdd = "+atomicInteger.getAndAdd(10));
+        //.getAndAdd zwroci wartosc AI a nastepnie doda 10 (222, 222 + 10)
+
+        System.out.println("addAndGet = "+atomicInteger.addAndGet(10));
+        //.addAndGet doda 10 do wartosci AI i ja zwroci (232 + 10, 242
+
+
+        System.out.println("decrementAndGet = "+atomicInteger.decrementAndGet());
+        //.decrementAndGet zmniejszy AI o 1 i zwroci (242-1, 241)
+
+        System.out.println("getAndDecrement = "+atomicInteger.getAndDecrement());
+        //.getAndDecrement zwroci AI i zmniejszy o 1 (241, 241-1)
 
 
 
@@ -9699,35 +9730,17 @@ Wpisanie samego DELETE FROM Tabela spowoduje usuniecie wszystkich wierszy
 /*--------------------------------------------------------------------
 ----------------------Wyamagania COMARCH------------------------------
 
-Zlozonosc obiczeniowa
-Wielowatkowosc
-String / konkatenacja
-Optional
-Stream
-Lambda
+Zlozonosc obiczeniowa +
+Wielowatkowosc +
+String / konkatenacja +
+Optional +
+Stream +
+Lambda +
 
-AtomicInteger:
-java.util.concurrent.atomic
+AtomicInteger: +
 
-AtomicInteger atomicInteger = new AtomicInteger(123);
-AtomicInteger atomicInteger = new AtomicInteger();
-//moze miec pusty konstruktor i zmienna przyjmie 0
-
-//Metody:
-int theValue = atomicInteger.get();
-//pobranie wartosci
-
-atomicInteger.set(234);
-//ustawienie wartosci poza konstruktorem
-
-atomicInteger.compareAndSet(expectedValue, newValue);
-//jesli wartosc atomicInteger bedzie rowna expectedValue to ustawi newValue
-
-
-
-
-junit/mockito
-
+junit +
+mockito -
 
 
 Wzorce projektowe:
@@ -9741,7 +9754,9 @@ fabryka abstrakcyjna
 metoda szablonowa
 pyłek
 
-SOLID
+SOLID +
+
+ACID +
 
 ACID:
 Transakcja to ciąg operacji do wspólnego niepodzielnego wykonania.
