@@ -1227,6 +1227,7 @@ public class Podsumowanie {
         //------------------------------------------------------------------------
         //------------------------KLASA AtomicInteger-----------------------------
 
+        System.out.println();
         //java.util.concurrent.atomic
 
         AtomicInteger atomicInteger = new AtomicInteger(123);
@@ -1259,7 +1260,7 @@ public class Podsumowanie {
 
         System.out.println("getAndDecrement = "+atomicInteger.getAndDecrement());
         //.getAndDecrement zwroci AI i zmniejszy o 1 (241, 241-1)
-
+        System.out.println();
 
 
 
