@@ -58,7 +58,7 @@ public class Podsumowanie {
 
         Do funkcji zlozonosci obliczeniowej wykorzystuje liczbe operacji algorytmu
 
-        np funkcja liczaca elementy tablicy:
+        np funkcja liczaca sume elementow tablicy o rozmiarze n:
 
         public int sum(int[] numbers) {
             int sum = 0;
@@ -72,6 +72,7 @@ public class Podsumowanie {
         1 operacja zwrotu
 
         f(n) = 1 + n + 1 = n + 2
+        zloznosc 0(n)
 
 
         0(1)
@@ -85,6 +86,11 @@ public class Podsumowanie {
             return (numbers[0] + numbers[numbers.length - 1]) * numbers.length / 2;
         }
 
+
+        0(n)
+        Zlozonosc liniowa, czas rozwiązania problemu jest wprost proporcjonalny do
+         wielkości danych wejściowych
+        np funkcja liczaca sume elementow tablicy o rozmiarze n
 
 
 

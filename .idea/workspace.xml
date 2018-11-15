@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 251">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 252">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
@@ -139,14 +139,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="57286" />
-          <entry key="txt" value="155" />
+          <entry key="java" value="57681" />
+          <entry key="txt" value="156" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="57286" />
-          <entry key="PLAIN_TEXT" value="155" />
+          <entry key="JAVA" value="57681" />
+          <entry key="PLAIN_TEXT" value="156" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -166,8 +166,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="373">
+              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -528,13 +528,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01457" summary="PODSUMOWANIE 200">
-      <created>1541864639682</created>
-      <option name="number" value="01457" />
-      <option name="presentableId" value="LOCAL-01457" />
-      <option name="project" value="LOCAL" />
-      <updated>1541864639682</updated>
-    </task>
     <task id="LOCAL-01458" summary="PODSUMOWANIE 201">
       <created>1541864956031</created>
       <option name="number" value="01458" />
@@ -871,7 +864,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542236212261</updated>
     </task>
-    <option name="localTasksCounter" value="1506" />
+    <task id="LOCAL-01506" summary="PODSUMOWANIE 252">
+      <created>1542291298474</created>
+      <option name="number" value="01506" />
+      <option name="presentableId" value="LOCAL-01506" />
+      <option name="project" value="LOCAL" />
+      <updated>1542291298475</updated>
+    </task>
+    <option name="localTasksCounter" value="1507" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -952,7 +952,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 227" />
     <MESSAGE value="PODSUMOWANIE 228" />
     <MESSAGE value="PODSUMOWANIE 229" />
     <MESSAGE value="PODSUMOWANIE 230" />
@@ -977,7 +976,8 @@
     <MESSAGE value="PODSUMOWANIE 249" />
     <MESSAGE value="PODSUMOWANIE 250" />
     <MESSAGE value="PODSUMOWANIE 251" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 251" />
+    <MESSAGE value="PODSUMOWANIE 252" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 252" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,31 +996,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6223</line>
+          <line>6254</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6222</line>
+          <line>6253</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>8924</line>
+          <line>8955</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9384</line>
+          <line>9415</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9488</line>
+          <line>9519</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
@@ -1232,8 +1232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="373">
+          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
