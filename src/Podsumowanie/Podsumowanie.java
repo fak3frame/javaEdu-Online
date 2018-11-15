@@ -8847,6 +8847,30 @@ public class ProjektDekarApplication {
 /*--------------------------------------------------------------------
 ------------------------------BAZY DANCYH-----------------------------
 
+----ACID----
+
+ACID - zbiór właściwości, które pozwalają osiągnąć spójność danych
+
+Transakcja to ciąg operacji do wspólnego niepodzielnego wykonania.
+
+A (ang. atomicity) – atomowość
+Jeśli w ramach jednej transakcji wykonywane jest kilka operacji, nie
+ zostaną one wykonane jeśli jedna z operacji się nie wykona.
+
+C (ang. consistency) – spójność
+Zapewnia ona spójność danych poprzez zastosowanie mechanizmów, które
+ uniemożliwiają zmianę danych w nieautoryzowany sposób
+
+I (ang. isolation) – izolacja
+Transakcje powinny sobie wzajemnie nie  przeszkadzać w działaniu
+
+D (ang. durability) – trwałość
+Dane zatwierdzone przez transakcję powinny być dostępne nawet w sytuacji
+ awarii programu, komputera lub nośnika danych
+
+
+
+
 Baza danych to zbiór danych zapisanych w odpowiednim formacie
 
 W zależności od zastosowania dane zapisywane są w różny sposób co ma
@@ -9759,17 +9783,9 @@ SOLID +
 
 ACID +
 
-ACID:
-Transakcja to ciąg operacji do wspólnego niepodzielnego wykonania.
-
-Współbieżne wykonywanie transakcji wymaga zachowania własności ACID (Atomicity, Consistency, Isolation, Durability):
-- niepodzielności: ,,wszystko-lub-nic”, transakcja nie może być wykonana częściowo;
-- integralności: po zatwierdzeniu transakcji muszą być spełnione wszystkie warunki poprawności nałożone na bazę danych;
-- izolacji: efekt równoległego wykonania dwu lub więcej transakcji musi być szeregowalny;
-- trwałości: po udanym zakończeniu transakcji jej efekty na stałe pozostają w bazie danych.
-
 
 SQL Injection
+
 Indeks
 Joiny pomiedzy tabelami
 procedura
