@@ -9795,15 +9795,17 @@ fabryka abstrakcyjna
 metoda szablonowa
 pyłek
 
+
 SOLID +
 
 ACID +
 
-
-SQL Injection
+SQL Injection+
 
 Indeks
+
 Joiny pomiedzy tabelami
+
 procedura
 
 
