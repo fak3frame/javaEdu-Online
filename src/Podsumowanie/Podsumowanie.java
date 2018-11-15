@@ -8870,6 +8870,22 @@ Dane zatwierdzone przez transakcję powinny być dostępne nawet w sytuacji
 
 
 
+----SQL Injection----
+
+Jeden z podstawowych atakow na bazy danych
+Polega on na odpowiednim spreparowaniu danych wejściowych np podcza wprwadzenia
+ adresu email podczas rejestracji atakujacy wprowadzi w polu email komendy
+ dla operacji bazy danych np '; DELETE FROM users WHERE 1 = 1 OR email = '
+
+Aby zapobiec atakom nie stsosuje sie recznego budowania zapytan SQL poprzez
+ laczenie lancuchow znakow.
+Nalezy uzywac do tego zewnetrznych bibiotek np Hibernate
+Biblioteki te odpowiednio traktuja dane ktore sluza do wypelnienia szablonow
+ zapytan
+
+
+
+---OGOLNE INFO----
 
 Baza danych to zbiór danych zapisanych w odpowiednim formacie
 
