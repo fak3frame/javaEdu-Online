@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 252">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 254">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
@@ -139,14 +139,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="57681" />
-          <entry key="txt" value="156" />
+          <entry key="java" value="58112" />
+          <entry key="txt" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="57681" />
-          <entry key="PLAIN_TEXT" value="156" />
+          <entry key="JAVA" value="58112" />
+          <entry key="PLAIN_TEXT" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -166,8 +166,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+            <state relative-caret-position="-88695">
+              <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -528,20 +528,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
     </task>
-    <task id="LOCAL-01458" summary="PODSUMOWANIE 201">
-      <created>1541864956031</created>
-      <option name="number" value="01458" />
-      <option name="presentableId" value="LOCAL-01458" />
-      <option name="project" value="LOCAL" />
-      <updated>1541864956031</updated>
-    </task>
-    <task id="LOCAL-01459" summary="PODSUMOWANIE 202">
-      <created>1541865258507</created>
-      <option name="number" value="01459" />
-      <option name="presentableId" value="LOCAL-01459" />
-      <option name="project" value="LOCAL" />
-      <updated>1541865258508</updated>
-    </task>
     <task id="LOCAL-01460" summary="PODSUMOWANIE 203">
       <created>1541865590762</created>
       <option name="number" value="01460" />
@@ -871,7 +857,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542291298475</updated>
     </task>
-    <option name="localTasksCounter" value="1507" />
+    <task id="LOCAL-01507" summary="PODSUMOWANIE 253">
+      <created>1542292348131</created>
+      <option name="number" value="01507" />
+      <option name="presentableId" value="LOCAL-01507" />
+      <option name="project" value="LOCAL" />
+      <updated>1542292348132</updated>
+    </task>
+    <task id="LOCAL-01508" summary="PODSUMOWANIE 254">
+      <created>1542294051194</created>
+      <option name="number" value="01508" />
+      <option name="presentableId" value="LOCAL-01508" />
+      <option name="project" value="LOCAL" />
+      <updated>1542294051194</updated>
+    </task>
+    <option name="localTasksCounter" value="1509" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -952,8 +952,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 228" />
-    <MESSAGE value="PODSUMOWANIE 229" />
     <MESSAGE value="PODSUMOWANIE 230" />
     <MESSAGE value="PODSUMOWANIE 231" />
     <MESSAGE value="PODSUMOWANIE 232" />
@@ -977,7 +975,9 @@
     <MESSAGE value="PODSUMOWANIE 250" />
     <MESSAGE value="PODSUMOWANIE 251" />
     <MESSAGE value="PODSUMOWANIE 252" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 252" />
+    <MESSAGE value="PODSUMOWANIE 253" />
+    <MESSAGE value="PODSUMOWANIE 254" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 254" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,31 +996,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6254</line>
+          <line>6286</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6253</line>
+          <line>6285</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>8955</line>
+          <line>8987</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9415</line>
+          <line>9447</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9519</line>
+          <line>9551</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
@@ -1232,8 +1232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+        <state relative-caret-position="-88695">
+          <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

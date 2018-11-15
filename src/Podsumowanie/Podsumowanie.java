@@ -109,6 +109,17 @@ public class Podsumowanie {
          te same elementy, które są w tablicy wejściowej. Tablica wynikowa powinna być
          posortowana w porządku rosnącym. - algorytm sortowania przez scalania (merge sort)
 
+        Ο(n^2)
+        Złożoność kwadratowa np sortowanie babelkowe
+
+        Ο(n^x)
+        Złożoność wielomianowa
+
+        Ο(x^n)
+        Jest to złożoność wykładnicza, jej przykładem może być Ο(2^n)
+
+        Ο(n!)
+        Jest to złożoność typu silnia
 
 
 
