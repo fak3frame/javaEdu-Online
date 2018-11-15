@@ -54,6 +54,44 @@ public class Podsumowanie {
 
 
         //------------------------------------------------------------------------
+        -----------------------Zlozonosc obiczeniowa------------------------------
+
+        Do funkcji zlozonosci obliczeniowej wykorzystuje liczbe operacji algorytmu
+
+        np funkcja liczaca elementy tablicy:
+
+        public int sum(int[] numbers) {
+            int sum = 0;
+            for (int number : numbers) {
+                sum += number;
+            }
+            return sum;
+        }
+        1 operacja przypisania
+        n operacji liczenia (sum+=)
+        1 operacja zwrotu
+
+        f(n) = 1 + n + 1 = n + 2
+
+
+        0(1)
+        Zlozonosc stala niezalezna od danych wejsciowych
+        np: oblicznie sumy ciagu artmetycznego
+
+        public int sum(int[] numbers) {
+            if (numbers == null || numbers.length == 0) {
+                return 0;
+            }
+            return (numbers[0] + numbers[numbers.length - 1]) * numbers.length / 2;
+        }
+
+
+
+
+
+
+
+        //------------------------------------------------------------------------
         -------------------------------OGOLNE-------------------------------------
 
         Klasa - projekt/foremka/schemat
@@ -9625,7 +9663,77 @@ WHERE CustomerName='Alfreds Futterkiste';
 Wpisanie samego DELETE FROM Tabela spowoduje usuniecie wszystkich wierszy
  z tabeli
 
+/*--------------------------------------------------------------------
+----------------------Wyamagania COMARCH------------------------------
 
+Zlozonosc obiczeniowa
+Wielowatkowosc
+String / konkatenacja
+Optional
+Stream
+Lambda
+
+AtomicInteger:
+java.util.concurrent.atomic
+
+AtomicInteger atomicInteger = new AtomicInteger(123);
+AtomicInteger atomicInteger = new AtomicInteger();
+//moze miec pusty konstruktor i zmienna przyjmie 0
+
+//Metody:
+int theValue = atomicInteger.get();
+//pobranie wartosci
+
+atomicInteger.set(234);
+//ustawienie wartosci poza konstruktorem
+
+atomicInteger.compareAndSet(expectedValue, newValue);
+//jesli wartosc atomicInteger bedzie rowna expectedValue to ustawi newValue
+
+
+
+
+junit/mockito
+
+
+
+Wzorce projektowe:
+builder
+dekorator
+Singleton
+dao
+prototyp
+adapter
+fabryka abstrakcyjna
+metoda szablonowa
+pyłek
+
+SOLID
+
+ACID:
+Transakcja to ciąg operacji do wspólnego niepodzielnego wykonania.
+
+Współbieżne wykonywanie transakcji wymaga zachowania własności ACID (Atomicity, Consistency, Isolation, Durability):
+- niepodzielności: ,,wszystko-lub-nic”, transakcja nie może być wykonana częściowo;
+- integralności: po zatwierdzeniu transakcji muszą być spełnione wszystkie warunki poprawności nałożone na bazę danych;
+- izolacji: efekt równoległego wykonania dwu lub więcej transakcji musi być szeregowalny;
+- trwałości: po udanym zakończeniu transakcji jej efekty na stałe pozostają w bazie danych.
+
+
+SQL Injection
+Indeks
+Joiny pomiedzy tabelami
+procedura
+
+
+----
+struts2
+ejb
+jpa
+spring security
+oauth2
+jsp
+Angular/js/jquerry
 
 
  */
