@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 259">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 260">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,7 +108,7 @@
     <session id="265862958">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="39" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="3" />
@@ -116,6 +117,7 @@
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="3" />
@@ -133,19 +135,19 @@
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.opened" value="40" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="59038" />
-          <entry key="txt" value="163" />
+          <entry key="java" value="59044" />
+          <entry key="txt" value="165" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="59038" />
-          <entry key="PLAIN_TEXT" value="163" />
+          <entry key="JAVA" value="59044" />
+          <entry key="PLAIN_TEXT" value="165" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -165,10 +167,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="8883" column="8" selection-start-line="8883" selection-start-column="8" selection-end-line="8883" selection-end-column="8" />
+            <state relative-caret-position="428">
+              <caret line="9804" column="6" lean-forward="true" selection-start-line="9804" selection-start-column="6" selection-end-line="9804" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#123300#123301#0" expanded="true" />
+                <element signature="e#123367#123368#0" expanded="true" />
+                <element signature="e#199666#199667#0" expanded="true" />
+                <element signature="e#199720#199721#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,10 +195,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>...</find>
-      <find>kolekc</find>
-      <find>zbiorKluczy</find>
-      <find>zbiorWartosci</find>
       <find>klucza</find>
       <find>zbiorKluczWartosc</find>
       <find>Wyjatki</find>
@@ -219,6 +221,10 @@
       <find>BETWEEN</find>
       <find>LIKE</find>
       <find>COUNT</find>
+      <find>dekorator</find>
+      <find>prototyp</find>
+      <find>adapter</find>
+      <find>fabryka abstrakcyjna</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -293,7 +299,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="74" />
     <option name="y" value="23" />
     <option name="width" value="1361" />
@@ -324,6 +330,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -363,8 +371,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,13 +532,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01465" summary="PODSUMOWANIE 208">
-      <created>1541953910861</created>
-      <option name="number" value="01465" />
-      <option name="presentableId" value="LOCAL-01465" />
-      <option name="project" value="LOCAL" />
-      <updated>1541953910861</updated>
     </task>
     <task id="LOCAL-01466" summary="PODSUMOWANIE 209">
       <created>1541954093560</created>
@@ -870,7 +869,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542297136283</updated>
     </task>
-    <option name="localTasksCounter" value="1514" />
+    <task id="LOCAL-01514" summary="PODSUMOWANIE 260">
+      <created>1542297215441</created>
+      <option name="number" value="01514" />
+      <option name="presentableId" value="LOCAL-01514" />
+      <option name="project" value="LOCAL" />
+      <updated>1542297215442</updated>
+    </task>
+    <option name="localTasksCounter" value="1515" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -918,7 +924,7 @@
     <frame x="74" y="23" width="1361" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26914328" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27293405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -951,7 +957,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 235" />
     <MESSAGE value="PODSUMOWANIE 236" />
     <MESSAGE value="PODSUMOWANIE 237" />
     <MESSAGE value="PODSUMOWANIE 238" />
@@ -976,7 +981,8 @@
     <MESSAGE value="PODSUMOWANIE 257" />
     <MESSAGE value="PODSUMOWANIE 258" />
     <MESSAGE value="PODSUMOWANIE 259" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 259" />
+    <MESSAGE value="PODSUMOWANIE 260" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 260" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -992,36 +998,6 @@
           <line>3326</line>
           <properties />
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6318</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>6317</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9059</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9519</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java</url>
-          <line>9623</line>
-          <properties />
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1231,10 +1207,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="8883" column="8" selection-start-line="8883" selection-start-column="8" selection-end-line="8883" selection-end-column="8" />
+        <state relative-caret-position="428">
+          <caret line="9804" column="6" lean-forward="true" selection-start-line="9804" selection-start-column="6" selection-end-line="9804" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#123300#123301#0" expanded="true" />
+            <element signature="e#123367#123368#0" expanded="true" />
+            <element signature="e#199666#199667#0" expanded="true" />
+            <element signature="e#199720#199721#0" expanded="true" />
           </folding>
         </state>
       </provider>

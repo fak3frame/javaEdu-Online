@@ -1288,7 +1288,7 @@ public class Podsumowanie {
 
         //------------------------------------------------------------------------
         /*------------------------------KLASA RANDOM------------------------------
-        */
+         */
         Random random = new Random();
         boolean prawdaCzyFalsz = random.nextBoolean();
         double los = random.nextDouble();
@@ -3346,12 +3346,12 @@ class Wew4{
           2. Moge takze stworzyc unikalne sortowanie uzywjaac klasy anonimowej
            i definicje sortowania w wywolaniu metody sort*/
 
-          Collections.sort(listaDoSortowania, new Comparator<KlasaDoSortowania>() {
+        Collections.sort(listaDoSortowania, new Comparator<KlasaDoSortowania>() {
             @Override
             public int compare(KlasaDoSortowania o1, KlasaDoSortowania o2) {
                 return o1.napis.compareTo(o2.napis);
             }
-          });
+        });
 
 
 
@@ -6014,8 +6014,8 @@ class Wew4{
                 .filter(x->x.getImie().equals("Pwl"))
                 .map(x -> x.getImie())
                 .orElse("Brak pracownika");
-                //.orElseThrow(()-> new RuntimeException("brak prownika"));
-                //lub z wyrzuceniem wyjatku
+        //.orElseThrow(()-> new RuntimeException("brak prownika"));
+        //lub z wyrzuceniem wyjatku
 
 
         //Java 9:
@@ -9115,6 +9115,14 @@ BOOLEAN - wartosc logiczne
 BLOB - dane binarne (binary large object)
 
 Wartosc NULL nie jest rowna pustej wartosci lancucha znakowego!
+
+
+----Laczenie tabel, pobieranie z wielu zrodel - Indesk----
+
+Zeby pobrac dane z wielu tabel nalezy okreslic spsob ich polaczenia oraz warunki
+
+
+
 
 
 
