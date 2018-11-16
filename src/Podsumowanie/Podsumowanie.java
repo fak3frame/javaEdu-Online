@@ -9057,6 +9057,28 @@ TCL - sluzy do oblugi tranzakcji, rozpczecie transakcji BEGIN, zatwierdzenie tra
         transakcji SAVEPOINT
 
 
+Kwerenda, inaczej zapytanie to czynność polegająca na zbieraniu lub poszukiwaniu
+ informacji w bazach danych.
+
+KWERENDA MODYFIKUJĄCA:
+ Pozwala na wprowadzenie zmian w wielu rekordach. Istnieją cztery rodzaje kwerend
+  modyfikujących: usuwająca, aktualizująca, dołączająca i tworząca tabele.
+
+KWERENDA USUWAJĄCA:
+ Usuwa grupę rekordów z jednej lub kilku tabel. Użycie kwerendy usuwającej powoduje
+  usunięcie całych rekordów, nie zaś wybranych pól w rekordach.
+
+KWERENDA AKTUALIZUJĄCA:
+ Dokonuje globalnych zmian w grupie rekordów w tabeli lub kilku tabelach. Za pomocą
+  kwerend aktualizujących można zmienić dane w istniejacych tabelach.
+
+KWERENDA DOŁĄCZAJĄCA:
+ Dodaje grupę rekordów z tabeli lub tabel na końcu innej tabeli lub tabel. Kwerendy
+  dołaczające są również przydatne w następujących sytuacjach:
+   -dołączanie pól wybranych na podstawie kryteriów;
+   -dołączanie rekordów w sytuacjach, gdy część pól jednej tabeli nie ma swoich
+     odpowiedników w drugiej tabeli.
+
 Lista podstawowych komend
 
 SELECT * lub x,y.. / SELECT DISTINCT * lub x,y.. (unikalne wyniki, dla kilku atrybutow unikalne
