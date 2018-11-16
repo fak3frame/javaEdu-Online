@@ -9079,6 +9079,7 @@ KWERENDA DOŁĄCZAJĄCA:
    -dołączanie rekordów w sytuacjach, gdy część pól jednej tabeli nie ma swoich
      odpowiedników w drugiej tabeli.
 
+
 Lista podstawowych komend
 
 SELECT * lub x,y.. / SELECT DISTINCT * lub x,y.. (unikalne wyniki, dla kilku atrybutow unikalne
@@ -9142,6 +9143,9 @@ Wartosc NULL nie jest rowna pustej wartosci lancucha znakowego!
 ----Laczenie tabel, pobieranie z wielu zrodel - Indesk----
 
 Zeby pobrac dane z wielu tabel nalezy okreslic spsob ich polaczenia oraz warunki
+
+
+INNER JOIN - laczenie wewnetrzne
 
 
 
