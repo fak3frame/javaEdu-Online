@@ -9152,6 +9152,7 @@ INNER JOIN - laczenie wewnetrzne
 
 
 
+
 ----SELECT - SQL----
 
 SELECT - wybiera kolumny (atrybuty) z tableli jakie beda mialy wyswietlone krotki
