@@ -455,5 +455,4 @@ class Lekarz extends Pracownik2{
         }
         return suma;
     }
-
 }
