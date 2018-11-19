@@ -723,6 +723,16 @@ public class Podsumowanie {
           baza<-commit- Usunieta                    Usunieta-clear/close->Oderwana
 
 
+          W JPA przy kazdej transakcji tworzony jest obiek EntityManager przez EntityManagerFactory
+          EntityManagerFactory jest to obiekt typu singleton gdzie trzymana jest pula polaczen do
+           bazy danych
+          EntityManager jest to obiekt sesji ktory tworzy sie nowy za kazdym razem gdy ma sie wykonac
+           jakas operacja na bazie danych
+          W Hibernate EMF nazywa sie SessionFactory a EM Session
+          Spring sam umie zarzadzac SessionFactory i Session
+
+
+
 
           JPQL (Java Persistence Query Language) - jest to jezyk uzywany do operacji
             na relacyjnych bazach danych i jest czescia JPA. Skladania jest podobna
