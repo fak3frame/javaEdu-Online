@@ -7958,7 +7958,7 @@ public class ProjektDekarApplication {
 
 		SERWIS ZADANIA FORMATTER:
 
-		Tworze go na potrzeby zamiany w pliku html odwolania do pola Zadania.
+		Tworze go na potrzeby zamiany w pliku html - odwolania do pola Zadania.
 
 
 		W <select th:field="*{zadanie}"> bede przypisywal obiekt Zadania do pola Zadania
