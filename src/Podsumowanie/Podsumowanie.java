@@ -7402,7 +7402,7 @@ public class ProjektDekarApplication {
 
 		//plik pom.xml
 
-		GropuId - nazwa firmy np com.fak3frame lub nazwa projektu
+		GroupId - nazwa firmy np com.fak3frame lub nazwa projektu
 		ArtifactId - nazwa projektu np GraWCwiczenia lub nazwa modulu
 
 		<parent>
