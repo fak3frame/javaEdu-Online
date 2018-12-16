@@ -7400,6 +7400,7 @@ public class ProjektDekarApplication {
 					 Formatter (w services)
 
 
+
 		//plik pom.xml
 
 		GroupId - nazwa firmy np com.fak3frame lub nazwa projektu
