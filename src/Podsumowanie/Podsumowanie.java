@@ -7401,6 +7401,7 @@ public class ProjektDekarApplication {
 
 
 
+
 		//plik pom.xml
 
 		GroupId - nazwa firmy np com.fak3frame lub nazwa projektu
@@ -9810,6 +9811,46 @@ WHERE CustomerName='Alfreds Futterkiste';
 
 Wpisanie samego DELETE FROM Tabela spowoduje usuniecie wszystkich wierszy
  z tabeli
+
+
+
+
+----JOIN----
+
+Join - pozwala na laczenie danych z 2 tabel
+
+
+Iloczyn kartezjanski - zbior z 2 tabel "kazdy do kazdego" np z tabeli 3 elem z
+ druga tabela 3 elementowa bedzie tabela z 9 elementami
+
+SELECT * FROM imiona_meskie, imiona_zenskie;
+
+
+Aby wyswietlaly sie unikalne nazwy kolumn w SELECT moge uzyc AS
+W SELECT wybieram nazwe tabeli, po . nazwe kolumny po czym AS aby nadac jej nazwe
+Jesli wpisze nazwe tabeli . * wybierze wszystkie kolumny z tej tabeli
+
+SELECT imiona_meskie.id AS id_m
+      ,imiona_zenskie.imie AS imie_z
+      ,imiona_zenskie.*
+  FROM imiona_meskie
+      ,imiona_zenskie;
+
+To pokaze kolumny:
+1 - id z tabeli imiona_meskie (nazwa id_m)
+2 - imie z tablie imiona zenskie (nazwa imie_z)
+3,4 - wszystkie kolumny z tabeli imiona_zenskie
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------------
 ----------------------Wyamagania COMARCH------------------------------
