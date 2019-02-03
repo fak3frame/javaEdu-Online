@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 281">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 285">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="7416" column="18" lean-forward="true" selection-start-line="7416" selection-start-column="18" selection-end-line="7416" selection-end-column="18" />
+            <state relative-caret-position="537">
+              <caret line="9843" selection-start-line="9843" selection-end-line="9843" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,10 +144,10 @@
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja2.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Synchronizacja3.java" />
-        <option value="$PROJECT_DIR$/src/_1_Obiekty/FabrykaRobotow.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/ZadanieRozmowa1.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" />
+        <option value="$PROJECT_DIR$/src/_1_Obiekty/FabrykaRobotow.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
       </list>
     </option>
@@ -189,6 +189,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,13 +225,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Fak3Frame/IdeaProjects/javaEdu-Online/src/_1_Obiekty/FabrykaRobotow.java&#10;O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544290471941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549210789351" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -386,69 +386,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01487" summary="PODSUMOWANIE 234">
-      <created>1542034278194</created>
-      <option name="number" value="01487" />
-      <option name="presentableId" value="LOCAL-01487" />
-      <option name="project" value="LOCAL" />
-      <updated>1542034278195</updated>
-    </task>
-    <task id="LOCAL-01488" summary="PODSUMOWANIE 235">
-      <created>1542036299907</created>
-      <option name="number" value="01488" />
-      <option name="presentableId" value="LOCAL-01488" />
-      <option name="project" value="LOCAL" />
-      <updated>1542036299907</updated>
-    </task>
-    <task id="LOCAL-01489" summary="PODSUMOWANIE 236">
-      <created>1542037099650</created>
-      <option name="number" value="01489" />
-      <option name="presentableId" value="LOCAL-01489" />
-      <option name="project" value="LOCAL" />
-      <updated>1542037099650</updated>
-    </task>
-    <task id="LOCAL-01490" summary="PODSUMOWANIE 237">
-      <created>1542037625996</created>
-      <option name="number" value="01490" />
-      <option name="presentableId" value="LOCAL-01490" />
-      <option name="project" value="LOCAL" />
-      <updated>1542037625997</updated>
-    </task>
-    <task id="LOCAL-01491" summary="PODSUMOWANIE 238">
-      <created>1542038007187</created>
-      <option name="number" value="01491" />
-      <option name="presentableId" value="LOCAL-01491" />
-      <option name="project" value="LOCAL" />
-      <updated>1542038007187</updated>
-    </task>
-    <task id="LOCAL-01492" summary="PODSUMOWANIE 239">
-      <created>1542038187776</created>
-      <option name="number" value="01492" />
-      <option name="presentableId" value="LOCAL-01492" />
-      <option name="project" value="LOCAL" />
-      <updated>1542038187776</updated>
-    </task>
-    <task id="LOCAL-01493" summary="PODSUMOWANIE 240">
-      <created>1542038864509</created>
-      <option name="number" value="01493" />
-      <option name="presentableId" value="LOCAL-01493" />
-      <option name="project" value="LOCAL" />
-      <updated>1542038864509</updated>
-    </task>
-    <task id="LOCAL-01494" summary="PODSUMOWANIE 241">
-      <created>1542039336208</created>
-      <option name="number" value="01494" />
-      <option name="presentableId" value="LOCAL-01494" />
-      <option name="project" value="LOCAL" />
-      <updated>1542039336208</updated>
-    </task>
-    <task id="LOCAL-01495" summary="PODSUMOWANIE 242">
-      <created>1542041537798</created>
-      <option name="number" value="01495" />
-      <option name="presentableId" value="LOCAL-01495" />
-      <option name="project" value="LOCAL" />
-      <updated>1542041537799</updated>
     </task>
     <task id="LOCAL-01496" summary="PODSUMOWANIE 242">
       <created>1542042347372</created>
@@ -730,7 +667,70 @@
       <option name="project" value="LOCAL" />
       <updated>1544740924260</updated>
     </task>
-    <option name="localTasksCounter" value="1536" />
+    <task id="LOCAL-01536" summary="PODSUMOWANIE 284">
+      <created>1545003599701</created>
+      <option name="number" value="01536" />
+      <option name="presentableId" value="LOCAL-01536" />
+      <option name="project" value="LOCAL" />
+      <updated>1545003599702</updated>
+    </task>
+    <task id="LOCAL-01537" summary="PODSUMOWANIE 286">
+      <created>1545173696387</created>
+      <option name="number" value="01537" />
+      <option name="presentableId" value="LOCAL-01537" />
+      <option name="project" value="LOCAL" />
+      <updated>1545173696389</updated>
+    </task>
+    <task id="LOCAL-01538" summary="PODSUMOWANIE 286">
+      <created>1545594766462</created>
+      <option name="number" value="01538" />
+      <option name="presentableId" value="LOCAL-01538" />
+      <option name="project" value="LOCAL" />
+      <updated>1545594766463</updated>
+    </task>
+    <task id="LOCAL-01539" summary="PODSUMOWANIE 285">
+      <created>1546037902258</created>
+      <option name="number" value="01539" />
+      <option name="presentableId" value="LOCAL-01539" />
+      <option name="project" value="LOCAL" />
+      <updated>1546037902259</updated>
+    </task>
+    <task id="LOCAL-01540" summary="PODSUMOWANIE 286">
+      <created>1546189875198</created>
+      <option name="number" value="01540" />
+      <option name="presentableId" value="LOCAL-01540" />
+      <option name="project" value="LOCAL" />
+      <updated>1546189875198</updated>
+    </task>
+    <task id="LOCAL-01541" summary="PODSUMOWANIE 285">
+      <created>1546642510448</created>
+      <option name="number" value="01541" />
+      <option name="presentableId" value="LOCAL-01541" />
+      <option name="project" value="LOCAL" />
+      <updated>1546642510448</updated>
+    </task>
+    <task id="LOCAL-01542" summary="PODSUMOWANIE 285">
+      <created>1546706408630</created>
+      <option name="number" value="01542" />
+      <option name="presentableId" value="LOCAL-01542" />
+      <option name="project" value="LOCAL" />
+      <updated>1546706408631</updated>
+    </task>
+    <task id="LOCAL-01543" summary="PODSUMOWANIE 285">
+      <created>1547162049107</created>
+      <option name="number" value="01543" />
+      <option name="presentableId" value="LOCAL-01543" />
+      <option name="project" value="LOCAL" />
+      <updated>1547162049108</updated>
+    </task>
+    <task id="LOCAL-01544" summary="PODSUMOWANIE 285">
+      <created>1548505403642</created>
+      <option name="number" value="01544" />
+      <option name="presentableId" value="LOCAL-01544" />
+      <option name="project" value="LOCAL" />
+      <updated>1548505403643</updated>
+    </task>
+    <option name="localTasksCounter" value="1545" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -778,7 +778,7 @@
     <frame x="70" y="23" width="1370" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27484939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34638554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -809,9 +809,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 257" />
-    <MESSAGE value="PODSUMOWANIE 258" />
-    <MESSAGE value="PODSUMOWANIE 259" />
     <MESSAGE value="PODSUMOWANIE 260" />
     <MESSAGE value="PODSUMOWANIE 261" />
     <MESSAGE value="PODSUMOWANIE 262" />
@@ -834,7 +831,10 @@
     <MESSAGE value="PODSUMOWANIE 279" />
     <MESSAGE value="PODSUMOWANIE 280" />
     <MESSAGE value="PODSUMOWANIE 281" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 281" />
+    <MESSAGE value="PODSUMOWANIE 284" />
+    <MESSAGE value="PODSUMOWANIE 286" />
+    <MESSAGE value="PODSUMOWANIE 285" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 285" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1027,13 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/FabrykaRobotow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/Wyjatki_4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1071,11 +1064,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="7416" column="18" lean-forward="true" selection-start-line="7416" selection-start-column="18" selection-end-line="7416" selection-end-column="18" />
+        <state relative-caret-position="537">
+          <caret line="9843" selection-start-line="9843" selection-end-line="9843" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_Obiekty/FabrykaRobotow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
