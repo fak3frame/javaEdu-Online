@@ -9842,6 +9842,38 @@ To pokaze kolumny:
 3,4 - wszystkie kolumny z tabeli imiona_zenskie
 
 
+INNER JOIN
+
+SELECT *
+FROM bajka //tabela 1
+INNER JOIN postac //tabela 2
+ON bajka.id = postac.bajka_id;
+
+Pokaze kolumny tylko te gdzie wartosc ID z tabeli BAJKA ma wartosc rowna
+ wartosci BAJKA_ID z tabeli POSTAC
+
+Wyswietlone zostana wszystkie kulmy z obu tabel
+
+Rownawoazne zapytanie zwykle:
+SELECT *
+FROM bajka, postac
+WHERE bajka.id = postac.bajka_id;
+
+Moge sprecyzowac wyswietlane kolumny (nie dawac *)
+SELECT bajka.tytul, postac.imie
+FROM bajka //tabela 1
+INNER JOIN postac //tabela 2
+ON bajka.id = postac.bajka_id;
+
+
+OUTER JOIN
+-LEFT OUTER JOIN,
+-RIGHT OUTER JOIN,
+-FULL OUTER JOIN.
+
+
+
+
 
 
 
