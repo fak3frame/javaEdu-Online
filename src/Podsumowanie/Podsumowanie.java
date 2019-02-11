@@ -9817,6 +9817,11 @@ Wpisanie samego DELETE FROM Tabela spowoduje usuniecie wszystkich wierszy
 
 ----JOIN----
 
+INNER //zbiera tylko te kolumny gdzie warunek pasuje z obu
+LEFT/RIGHT/FULL OUTER JOIN //zbiera wszystkie kolumny z wybranego kierunku i wiersze
+ z drugiego kirunku gdzie warunek jest spelniony
+CROSS JOIN //iloczyn kartezjanski
+
 Join - pozwala na laczenie danych z 2 tabel
 
 
@@ -9872,6 +9877,69 @@ OUTER JOIN
 -FULL OUTER JOIN.
 
 
+ZADANIA:
+
+1. Liczbę wierszy w iloczynie kartezjańskim tabel track, invoice i invoiceline
+
+SELECT COUNT(*)
+  FROM track
+      ,invoice
+      ,invoiceline;
+
+2. tytuł albumu i nazwę artysty dla wszystkich nazw artystów zaczynających się od s,
+
+SELECT album.title
+      ,artist.name
+  FROM album JOIN artist
+             ON album.artistid = artist.artistid
+ WHERE artist.name LIKE 's%';
+
+3. identyfikator i nazwę list utworów, które są puste,
+
+SELECT playlist.*
+  FROM playlist LEFT JOIN playlisttrack
+                ON playlisttrack.playlistid = playlist.playlistid
+ WHERE playlisttrack.trackid IS NULL;
+
+4. nazwy trzech najczęściej występujących gatunków muzycznych wraz z odpowiadającą
+    im liczbą utworów posortowaną malejąco po liczbie utworów,
+
+SELECT genre.name
+        ,count(*) AS how_many
+    FROM genre LEFT JOIN track
+               ON genre.genreid = track.genreid
+GROUP BY genre.name
+ORDER BY how_many DESC
+   LIMIT 3;
+
+5. tytuły pięciu najdłuższych albumów posortowanych malejąco po ich długości,
+
+SELECT album.title
+    FROM track JOIN album
+               ON track.albumid = album.albumid
+GROUP BY album.albumid
+ORDER BY SUM(track.milliseconds) DESC
+   LIMIT 5;
+
+6. tytuły albumów, na których występują utwory z gatunku “Reggae”,
+
+SELECT DISTINCT album.title
+  FROM track JOIN genre
+             ON track.genreid = genre.genreid
+             JOIN album
+             ON track.albumid = album.albumid
+ WHERE genre.name = "Reggae";
+
+7. pięć nazw list utworów, które są najdroższe (suma cen wszystkich ścieżek jest największa),
+
+SELECT playlist.name
+  FROM playlist JOIN playlisttrack
+                ON playlist.playlistid = playlisttrack.playlistid
+                JOIN track
+                ON playlisttrack.trackid = track.trackid
+GROUP BY playlist.name
+ORDER BY SUM(track.unitprice) DESC
+   LIMIT 5;
 
 
 
