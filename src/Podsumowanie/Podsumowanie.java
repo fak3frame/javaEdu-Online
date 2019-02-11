@@ -9214,7 +9214,7 @@ SELECT genreid AS id
 
 ----WHERE - SQL----
 
-Uzywam w:
+Where moge uzyc w:
 -SELECT
 -UPDATE - ogranicza wiersze ktore maja byc zaaktualizowane
 -INSERT - uzywane z podzapytaniami
