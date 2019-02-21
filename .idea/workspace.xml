@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="9374" selection-start-line="9374" selection-end-line="9375" selection-end-column="39" />
+            <state relative-caret-position="146535">
+              <caret line="9908" selection-start-line="9908" selection-end-line="9908" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PodsumowanieSkrot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="438">
+              <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -65,7 +65,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dziedziczenie</find>
       <find>hashcode</find>
       <find>file</find>
       <find>while</find>
@@ -95,6 +94,7 @@
       <find>serwlet</find>
       <find>groupid</find>
       <find>union</find>
+      <find>zwróci piątą stronę z fakturami (tabela invoice) zakł</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/src/_1_Obiekty/Obiekty_1.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Ojciec.java" />
         <option value="$PROJECT_DIR$/src/_1_Obiekty/FabrykaRobotow.java" />
-        <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/PodsumowanieSkrot.java" />
+        <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
       </list>
     </option>
   </component>
@@ -201,6 +201,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,12 +224,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Fak3Frame/IdeaProjects/javaEdu-Online/src/_1_Obiekty/FabrykaRobotow.java&#10;O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549212078726" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549904390108" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -386,13 +386,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01499" summary="PODSUMOWANIE 245">
-      <created>1542121728970</created>
-      <option name="number" value="01499" />
-      <option name="presentableId" value="LOCAL-01499" />
-      <option name="project" value="LOCAL" />
-      <updated>1542121728970</updated>
     </task>
     <task id="LOCAL-01500" summary="PODSUMOWANIE 246">
       <created>1542122000714</created>
@@ -730,7 +723,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549897854078</updated>
     </task>
-    <option name="localTasksCounter" value="1548" />
+    <task id="LOCAL-01548" summary="PODSUMOWANIE 290">
+      <created>1549901056842</created>
+      <option name="number" value="01548" />
+      <option name="presentableId" value="LOCAL-01548" />
+      <option name="project" value="LOCAL" />
+      <updated>1549901056842</updated>
+    </task>
+    <option name="localTasksCounter" value="1549" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -776,9 +776,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="23" width="1370" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21611446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22213855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -832,9 +831,9 @@
     <MESSAGE value="PODSUMOWANIE 284" />
     <MESSAGE value="PODSUMOWANIE 286" />
     <MESSAGE value="PODSUMOWANIE 285" />
-    <MESSAGE value="PODSUMOWANIE 290" />
     <MESSAGE value="PODSUMOWANIE 291" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 291" />
+    <MESSAGE value="PODSUMOWANIE 290" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 290" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1070,8 +1069,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="9374" selection-start-line="9374" selection-end-line="9375" selection-end-column="39" />
+        <state relative-caret-position="146535">
+          <caret line="9908" selection-start-line="9908" selection-end-line="9908" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1080,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PodsumowanieSkrot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="438">
+          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
         </state>
       </provider>
     </entry>

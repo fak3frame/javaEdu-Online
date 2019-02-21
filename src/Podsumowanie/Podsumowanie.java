@@ -9906,7 +9906,7 @@ SELECT playlist.*
 
 SELECT genre.name
         ,count(*) AS how_many
-    FROM genre LEFT JOIN track
+FROM genre LEFT JOIN track
                ON genre.genreid = track.genreid
 GROUP BY genre.name
 ORDER BY how_many DESC
@@ -9981,6 +9981,9 @@ pyłek
 
 
 SOLID +
+
+
+
 
 ACID +
 
