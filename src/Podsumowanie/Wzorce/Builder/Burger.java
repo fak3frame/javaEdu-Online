@@ -1,4 +1,4 @@
-package Podsumowanie.Wzorce;
+package Podsumowanie.Wzorce.Builder;
 
 class Burger {
     private String meat = null;
@@ -29,7 +29,7 @@ class Burger {
     }
 }
 
-class BurgerBuilderImp implements BurgerBuilder{
+class BurgerBuilderImp implements BurgerBuilder {
 
     private Burger burger;
 

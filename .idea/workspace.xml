@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 290">
-      <change afterPath="$PROJECT_DIR$/src/Podsumowanie/PodsumowanieFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Burger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/BurgerBuilder.java" afterDir="false" />
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 291">
+      <change afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/PodsumowanieSkrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/PodsumowanieZadaniaBazyDanych.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/BurgerBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/BurgerBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/Robot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="647">
-              <caret line="479" column="20" lean-forward="true" selection-start-line="475" selection-start-column="8" selection-end-line="479" selection-end-column="20" />
+              <caret line="479" column="20" selection-start-line="475" selection-start-column="8" selection-end-line="479" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,52 +52,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PodsumowanieFinal.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Burger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            <state relative-caret-position="470">
+              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
               <folding>
-                <element signature="e#146#147#0" expanded="true" />
-                <element signature="e#173#174#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Robot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/BurgerBuilder.java">
+        <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="675">
+              <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -165,12 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Gotowe/Subject.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_11_TestyJednostkowe/_2/Gotowe/SubjectTest.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_12_WyrazeniaRegularne1/One.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie1.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie2.java" />
-        <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_13_Lambda/Zadanie3.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Test1/TestProtected2.java" />
         <option value="$PROJECT_DIR$/src/SamouczekProgramisty/Zadania/_14_Modyfikatory_dostepu/Account.java" />
@@ -216,6 +183,12 @@
         <option value="$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/BurgerBuilder.java" />
         <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Burger.java" />
+        <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Robot.java" />
+        <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java" />
+        <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/LazyRobot.java" />
+        <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/FunnyRobot.java" />
+        <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/Fabryka.java" />
+        <option value="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java" />
       </list>
     </option>
   </component>
@@ -289,7 +262,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Podsumowanie" type="462c0819:PsiDirectoryNode" />
               <item name="Wzorce" type="462c0819:PsiDirectoryNode" />
+              <item name="Builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Podsumowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="Wzorce" type="462c0819:PsiDirectoryNode" />
+              <item name="Builder" type="462c0819:PsiDirectoryNode" />
               <item name="Burger.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Podsumowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="Wzorce" type="462c0819:PsiDirectoryNode" />
+              <item name="Fabryka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaEdu-Online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaEdu-Online" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Podsumowanie" type="462c0819:PsiDirectoryNode" />
+              <item name="Wzorce" type="462c0819:PsiDirectoryNode" />
+              <item name="Fabryka" type="462c0819:PsiDirectoryNode" />
+              <item name="RobotFactory.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -299,7 +298,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Fak3Frame/IdeaProjects/javaEdu-Online/src/_1_Obiekty/FabrykaRobotow.java&#10;O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551289001581" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551289699767" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -336,14 +335,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build">
-    <configuration name="Aplikacja" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.Aplikacja" />
+  <component name="RunManager" selected="Application.Fabryka">
+    <configuration name="Build (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Podsumowanie.Wzorce.Builder.Build" />
       <module name="javaStartMojSkrypt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_Obiekty.*" />
+          <option name="PATTERN" value="Podsumowanie.Wzorce.Builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -357,7 +356,21 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Podsumowanie.Wzorce.*" />
+          <option name="PATTERN" value="Podsumowanie.Wzorce.Builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fabryka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Podsumowanie.Wzorce.Fabryka.Fabryka" />
+      <module name="javaStartMojSkrypt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Podsumowanie.Wzorce.Fabryka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -393,20 +406,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZadanieRozmowa1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Obiekty.ZadanieRozmowa1" />
-      <module name="javaStartMojSkrypt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_1_Obiekty.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -431,19 +430,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Aplikacja" />
       <item itemvalue="Application.Ojciec" />
       <item itemvalue="Application.Podsumowanie" />
-      <item itemvalue="Application.ZadanieRozmowa1" />
       <item itemvalue="Application.Build" />
+      <item itemvalue="Application.Build (1)" />
+      <item itemvalue="Application.Fabryka" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fabryka" />
+        <item itemvalue="Application.Build (1)" />
         <item itemvalue="Application.Build" />
         <item itemvalue="Application.Ojciec" />
         <item itemvalue="Application.Podsumowanie" />
-        <item itemvalue="Application.ZadanieRozmowa1" />
-        <item itemvalue="Application.Aplikacja" />
       </list>
     </recent_temporary>
   </component>
@@ -457,13 +456,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01501" summary="PODSUMOWANIE 247">
-      <created>1542122088003</created>
-      <option name="number" value="01501" />
-      <option name="presentableId" value="LOCAL-01501" />
-      <option name="project" value="LOCAL" />
-      <updated>1542122088003</updated>
     </task>
     <task id="LOCAL-01502" summary="PODSUMOWANIE 248">
       <created>1542122584764</created>
@@ -801,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550767576573</updated>
     </task>
-    <option name="localTasksCounter" value="1550" />
+    <task id="LOCAL-01550" summary="PODSUMOWANIE 291">
+      <created>1551289037946</created>
+      <option name="number" value="01550" />
+      <option name="presentableId" value="LOCAL-01550" />
+      <option name="project" value="LOCAL" />
+      <updated>1551289037947</updated>
+    </task>
+    <option name="localTasksCounter" value="1551" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -847,6 +846,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="23" width="1370" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24021085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -857,7 +857,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" weight="0.37834394" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854863" visible="true" weight="0.26751593" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39756283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -902,9 +902,9 @@
     <MESSAGE value="PODSUMOWANIE 284" />
     <MESSAGE value="PODSUMOWANIE 286" />
     <MESSAGE value="PODSUMOWANIE 285" />
-    <MESSAGE value="PODSUMOWANIE 291" />
     <MESSAGE value="PODSUMOWANIE 290" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 290" />
+    <MESSAGE value="PODSUMOWANIE 291" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 291" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -925,10 +925,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/Test1/RandomTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.java" />
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Stringi.txt" />
-    <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/FactoryEntryCategory.java" />
     <entry file="file://$PROJECT_DIR$/src/SamouczekProgramisty/AplikacjaDoNauki/KategorieData/Strumienie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1128,17 +1124,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PodsumowanieZadaniaBazyDanych.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Podsumowanie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
-          <caret line="479" column="20" lean-forward="true" selection-start-line="475" selection-start-column="8" selection-end-line="479" selection-end-column="20" />
+          <caret line="479" column="20" selection-start-line="475" selection-start-column="8" selection-end-line="479" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1152,38 +1141,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/BurgerBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Burger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding>
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Robot.java">
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/LazyRobot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/FunnyRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/Fabryka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/BurgerBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/PodsumowanieZadaniaBazyDanych.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

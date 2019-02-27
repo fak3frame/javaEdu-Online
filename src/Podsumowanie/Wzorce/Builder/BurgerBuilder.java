@@ -1,4 +1,4 @@
-package Podsumowanie.Wzorce;
+package Podsumowanie.Wzorce.Builder;
 
 public interface BurgerBuilder {
     Burger build();
