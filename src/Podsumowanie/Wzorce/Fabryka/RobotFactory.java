@@ -1,5 +1,14 @@
 package Podsumowanie.Wzorce.Fabryka;
 
+/*
+
+
+public interface Robot {
+    public void work();
+}
+
+ */
+
 class LazyRobot implements Robot {
     @Override
     public void work() {

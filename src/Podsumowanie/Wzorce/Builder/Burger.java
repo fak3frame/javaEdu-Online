@@ -1,5 +1,16 @@
 package Podsumowanie.Wzorce.Builder;
 
+/*
+
+public interface BurgerBuilder {
+    Burger build();
+
+    BurgerBuilder setMeat(final String meat);
+    BurgerBuilder setBread(final String bread);
+}
+
+ */
+
 class Burger {
     private String meat = null;
     private String bread = null;
