@@ -1,6 +1,6 @@
 package Podsumowanie;
 
-public class PodsumowanieSkrot {
+public class PodsumowanieZadaniaBazyDanych {
 
     /*
 

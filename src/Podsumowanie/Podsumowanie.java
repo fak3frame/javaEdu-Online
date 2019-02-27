@@ -131,7 +131,7 @@ public class Podsumowanie {
         Klasa - projekt/foremka/schemat
 
         Na jej podstawie tworzone sa jej obiekty, zawiera pola oraz metody
-         jakie bedzie mozna wykonywac np przez jej obiekt
+         jakie bede mogl wywolywac na jej obiekcie
 
 
         Obiekt/instancja - produkt
@@ -151,8 +151,8 @@ public class Podsumowanie {
 
         JVM - maszyna witrualna javy np Oracle, jest to "procesor" wykonujacy
                skompilowany kod javy (kod bajtowy), dziala ona wyzej niz poziom
-               maszynowy aby mogla byc uruchomiona na kazdej platformie
-               Jest w niej np Garbage Collector
+               maszynowy aby mogla byc uruchomiona na kazdej platformie, pomaga zarzadzac pamiecia
+               Jest w niej np Garbage Collector,
 
         JRE - maszyna wirtualna w ktorej programy javy sa uruchamiane
 
@@ -162,10 +162,7 @@ public class Podsumowanie {
 
         IDE (ang. Integrated Development Environment)
 
-        GarbageCollector wykonywany w maszynie wirtualnej Javy JVM i pozbywa sie
-         nieuzwyanych przez aplikacje obiektow aby zwolnic pamiec dla nowych.
-        Kompaktowanie pamieci jest to ustawienie w pamieci obiektow obok siebie
-         aby dostep do nich szybki i prosty
+
 
 
         Hermetyzajca/Enkapsulacja - ustawianie pol klas jako prywatne/protected
@@ -204,7 +201,7 @@ public class Podsumowanie {
         Klientem może być przegladarka internetowa a Serwerem aplikacja webowa
          ktora odpowiada na zadania klienta
 
-        Zadanie (request) oraz odpowiedz (respones) moze zawierac naglowek - jest
+        Zapytanie (request) oraz odpowiedz (respones) moze zawierac naglowek - jest
          to czesc infromacji np rodzaj przegladarki oraz tresc - moze to byc
          np zawartosc strony internetowej
 
@@ -241,7 +238,7 @@ public class Podsumowanie {
 
         Model MVC - Model View Controller
 
-        Wsorzec dzieli sie na:
+        Wzorzec dzieli sie na:
 
         -View - to co widac na stronie, odpowiada za interakcje z uzytkownikiem,
                  wyswietla dane z Modelu
@@ -347,17 +344,18 @@ public class Podsumowanie {
 
 
         Implementacja:
-        Klaca bazowa ma unikalna metode klasy po ktorej dziedziczy lub interfejsu
-         (metody w klasach maja unikalna funkcjonalnosc) np work()
+        Klaca bazowa np "Robot" ma unikalna metode ktora nie robi nic np "work()"
 
-        Tworze klase Fabryki np RobotFactory w ktorej dodaje publiczna
-         metode np makeRobot zwracajaca obiekt typu interfejsu lub klasy po kotrej
-         moje klasy dziedzicza np Robot ktora jaka poarametr przyjmuje zmienna
+        Tworze klase Fabryki np "RobotFactory" w ktorej dodaje publiczna
+         metode np "makeRobot" zwracajaca obiekt typu interfejsu lub klasy po ktorej
+         moje klasy dziedzicza np "Robot" ktora jaka poarametr przyjmuje zmienna
          ktorej wartosc bedzie okreslala jaki obiekt zwrocic metoda
         //pubic Robot makeRobot(String robotType){
+
         W ciele metody podaje warunku dla zmiennej robotType aby wybrac jakiego
          typu ma zostac obiekt obiekt zwrocony np:
         //if(robotType == "DRILLING ROBOT"){ return new DrillingRobot();}
+
         Po za warunkami daje return null
 
         W klasie gdzie tworze obiekty - tworze jeden obiekt klasy fabryki
