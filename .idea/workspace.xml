@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 292">
+    <list default="true" id="218a5c83-3e68-4213-9767-986d9da776a8" name="Default" comment="PODSUMOWANIE 293">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-62">
               <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
               <folding>
                 <element signature="e#172#173#0" expanded="true" />
@@ -68,7 +66,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="-386">
               <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#156#157#0" expanded="true" />
@@ -292,7 +290,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Fak3Frame/IdeaProjects/javaEdu-Online/src/_1_Obiekty/FabrykaRobotow.java&#10;O&#9;PSI&#9;JAVA://PrzydatneKlasy.ObjectMoj" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551289810915" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551290484466" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -450,13 +448,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526720028244</updated>
-    </task>
-    <task id="LOCAL-01503" summary="PODSUMOWANIE 249">
-      <created>1542128047739</created>
-      <option name="number" value="01503" />
-      <option name="presentableId" value="LOCAL-01503" />
-      <option name="project" value="LOCAL" />
-      <updated>1542128047739</updated>
     </task>
     <task id="LOCAL-01504" summary="PODSUMOWANIE 250">
       <created>1542128065527</created>
@@ -794,7 +785,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551289755701</updated>
     </task>
-    <option name="localTasksCounter" value="1552" />
+    <task id="LOCAL-01552" summary="PODSUMOWANIE 293">
+      <created>1551290079651</created>
+      <option name="number" value="01552" />
+      <option name="presentableId" value="LOCAL-01552" />
+      <option name="project" value="LOCAL" />
+      <updated>1551290079651</updated>
+    </task>
+    <option name="localTasksCounter" value="1553" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -873,7 +871,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PODSUMOWANIE 263" />
     <MESSAGE value="PODSUMOWANIE 264" />
     <MESSAGE value="PODSUMOWANIE 265" />
     <MESSAGE value="PODSUMOWANIE 266" />
@@ -898,7 +895,8 @@
     <MESSAGE value="PODSUMOWANIE 290" />
     <MESSAGE value="PODSUMOWANIE 291" />
     <MESSAGE value="PODSUMOWANIE 292" />
-    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 292" />
+    <MESSAGE value="PODSUMOWANIE 293" />
+    <option name="LAST_COMMIT_MESSAGE" value="PODSUMOWANIE 293" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1170,9 +1168,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/BurgerBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Fabryka/RobotFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-62">
           <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
           <folding>
             <element signature="e#172#173#0" expanded="true" />
@@ -1183,16 +1188,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/BurgerBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Podsumowanie/Wzorce/Builder/Burger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-386">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#156#157#0" expanded="true" />
